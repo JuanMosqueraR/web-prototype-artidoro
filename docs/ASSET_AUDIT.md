@@ -1,0 +1,50 @@
+# Asset audit — consolidación para el handoff
+
+Inventario del proyecto entregado, revisado el 23 de septiembre de 2026. Las rutas de las tablas son relativas a la raíz del proyecto, no a `/docs`.
+
+[Audit original](../audit/ASSETS.md) conserva el resumen inicial. [Manifest de fuentes](../audit/assets.json) es la referencia para URLs exactas de CDN, tamaños originales, timecode y preparación; no se duplica íntegramente aquí. Este documento añade el mapa de archivos actualmente presentes y su condición de uso.
+
+**REAL_ASSET indica procedencia real, no aprobación definitiva para producción.** USABLE_WITH_PREPARATION identifica un material derivado/preparado para el lab. MISSING_ASSET significa que el archivo necesario no está disponible en este proyecto; no afirma que la marca no lo posea.
+
+## REAL_ASSET
+
+| Asset | Dónde se encontró | Archivo en el proyecto | Uso | Condición |
+|---|---|---|---|---|
+| Foto oficial de bolsa Amazonas 250 g | [Ficha de café Amazonas](https://www.artidororodriguez.com/products/cafe-amazonas), archivo CDN `250GAMAZONAS.jpg` | `audit/source/amazonas-original.jpg` | A y B, mediante recorte preparado | Fuente real del producto común. Seleccionada para el experimento; no implica aprobación de producción. |
+| Logotipos blanco y negro | Web oficial; URLs individuales en el manifest, id `logos` | `public/assets/logo-white.png`, `public/assets/logo-black.png` | Blanco en A; negro en B | Assets reales, sin marcador provisional; márgenes transparentes recortados. |
+| Ilustración botánica de la bolsa habitual | Integrada en la foto oficial del packaging | Dentro de `audit/source/amazonas-original.jpg` y `public/assets/amazonas-250g.webp` | A y B | Real y conservada en la foto. No existe un archivo independiente del dibujo en el proyecto. |
+| Chivo regular y bold | Fuentes servidas por la web oficial; id `body-type` | `public/assets/chivo-regular.woff2`, `public/assets/chivo-bold.woff2` | A y B | Tipografía real reutilizada localmente, sin marcador provisional. |
+
+## USABLE_WITH_PREPARATION
+
+| Asset preparado | Origen y preparación | Archivo en el proyecto | Uso | Condición |
+|---|---|---|---|---|
+| Bolsa recortada con transparencia | Foto oficial; máscara de silueta y WebP, sin cambiar etiqueta ni contenido fotografiado | `public/assets/amazonas-250g.webp` | A y B | Recorte final de este lab. Fuente limitada: la bolsa ocupa aproximadamente 310 × 747 px en la foto original. No es una nueva fotografía de alta resolución. |
+| Cafetal, plano lejano | Fotograma 00:02.500 de video de la [home oficial](https://www.artidororodriguez.com/), 1280 × 720 | `audit/source/artidoro-landscape-still.jpg`; `public/assets/cafetal-provisional.webp` | A | **PROVISIONAL_ASSET. Ubicación geográfica sin confirmar.** |
+| Cafetal, plano cercano | Recorte con transparencia gradual de la misma foto, no una segunda toma ni vegetación inventada | `public/assets/cafetal-foreground.webp` | A | **Provisional**, con la misma incertidumbre geográfica. El video original no forma parte del proyecto distribuido. |
+| Otorongo extraído y trazado | Foto pública `LATASCONJUNTO…png` de [Travel Line](https://www.artidororodriguez.com/products/la-expedicion-coleccion-travel-line-preventa). Recorte de 164 × 195 px sobre una lata curva, extracción de tinta y trazado determinista | `audit/source/otorongo-curved-tin-detail.png`; intermedio `audit/source/otorongo-extract.webp`; utilizado `public/assets/otorongo-traced.svg` | B | **PROVISIONAL_ASSET.** El SVG deriva de una imagen pequeña e incompleta; no es el arte maestro. No se reconstruyó anatomía faltante. La foto conjunta completa no se incluyó en el paquete final; su URL sí consta en el manifest. |
+| Verde Amazonas y tinta | Aproximación a partir del packaging Travel Line | Variables `--green: #30bc4e` y `--ink: #0f1d12` en `src/common.css` | B como lenguaje gráfico | **Provisional como especificación cromática.** No es un brandbook oficial ni color homologado. No tiene archivo raster independiente. |
+
+## MISSING_ASSET
+
+| Material faltante | Situación / fuente necesaria | Archivo local | Dirección | Estado |
+|---|---|---|---|---|
+| Paisaje atribuido a Rodríguez de Mendoza / Amazonas | Falta evidencia de localización y material adecuado con profundidad/separación de planos | No disponible; se usa el fotograma señalado arriba | A | Pendiente. El nombre del origen del producto no prueba dónde se filmó el video. |
+| Arte maestro completo del otorongo | No se obtuvo vector original ni imagen completa de alta resolución | No disponible; `otorongo-traced.svg` no cubre este gap | B | Pendiente. Requiere original para juzgar acabado definitivo. |
+| Arte botánico independiente del packaging | Solo se dispone de la ilustración dentro de la fotografía de la bolsa | No disponible como archivo independiente | Referencia potencial para ambas; no se utiliza separado | Pendiente, no necesario para ejecutar este lab. |
+| Mapas o texturas propios en archivos independientes | No se obtuvieron materiales verificables de esta clase en el paquete | No disponibles | Ninguno incorporado | Gap del inventario; no implica aprobar su producción o uso posterior. |
+
+## Elecciones del lab que no son assets oficiales de Artidoro
+
+- **Barlow Condensed ExtraBold:** `public/assets/barlow-condensed-800.ttf`, procedente de Google Fonts; URL en el manifest, id `display-type`. Se utiliza en ambas direcciones. Es una elección tipográfica nueva del experimento, no una fuente preexistente de marca que hayamos verificado.
+- Verde oscuro de A (`#102e25`), crema (`#f4f0e5`), degradados, sombras, líneas de anotación y pequeño icono SVG de confianza: recursos de interfaz del laboratorio. No se presentan como texturas, ilustraciones o sellos oficiales. El icono no representa una certificación externa.
+
+## Acceso, atribución y límites
+
+Instagram tuvo acceso parcial/login. No se afirma una auditoría completa de publicaciones, reels o stories; no se utilizaron assets exclusivos del feed.
+
+No se generaron imágenes mediante IA. Extraer un fotograma, recortar la bolsa o trazar determinísticamente tinta existente no constituye una generación de arte nuevo. La eventual utilización de IA sigue abierta y no está autorizada como siguiente acción automática.
+
+No presentar el paisaje como una fotografía confirmada de Rodríguez de Mendoza, ni el trazado como vector oficial definitivo. Mantener los avisos `PROVISIONAL_ASSET` mientras persistan esos gaps. Que un asset provenga de una publicación oficial no convierte su derivado preparado en arte maestro aprobado.
+
+Los scripts [prepare-assets.py](../scripts/prepare-assets.py) y [trace-otorongo.py](../scripts/trace-otorongo.py) documentan las transformaciones realizadas. No es necesario ejecutarlos para abrir el Hero Lab.
