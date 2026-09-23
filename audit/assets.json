@@ -1,0 +1,115 @@
+{
+  "review_date": "2026-09-23",
+  "scope": "Public Artidoro material; no generated imagery. Only the two heroes.",
+  "assets": [
+    {
+      "id": "amazonas-bag",
+      "status": "REAL_ASSET",
+      "source": "https://www.artidororodriguez.com/cdn/shop/files/250GAMAZONAS.jpg?v=1789063765&width=2000",
+      "original_size": "1080 × 1080; bag occupies ~310 × 747 px",
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "used_file": "amazonas-250g.webp",
+      "preparation": "Silhouette mask, transparent crop, WebP. Original photographed pixels; no retouching of labels."
+    },
+    {
+      "id": "logos",
+      "status": "REAL_ASSET",
+      "sources": [
+        "https://www.artidororodriguez.com/cdn/shop/files/Untitled_design_-_2024-10-08T183234.229.png?v=1728430381&width=600",
+        "https://www.artidororodriguez.com/cdn/shop/files/Untitled_design_-_2024-10-08T183016.612.png?v=1728430240&width=600"
+      ],
+      "used_files": [
+        "logo-black.png",
+        "logo-white.png"
+      ],
+      "preparation": "Trim empty transparent margins."
+    },
+    {
+      "id": "otorongo",
+      "status": "USABLE_WITH_PREPARATION",
+      "source": "https://www.artidororodriguez.com/cdn/shop/files/LATASCONJUNTO_5cdbd70d-d645-452f-a03f-49fbc8d52530.png?v=1782425823&width=2048",
+      "source_page": "https://www.artidororodriguez.com/products/la-expedicion-coleccion-travel-line-preventa",
+      "extracted_size": "164 × 195 px, curved tin, incomplete left edge",
+      "used_file": "otorongo-traced.svg",
+      "preparation": "Crop real animal ink; remove green background; deterministic contour tracing. No reconstructed anatomy or new drawing. Low-resolution approximation; not a master vector.",
+      "visual_mark": "PROVISIONAL_ASSET"
+    },
+    {
+      "id": "cafetal",
+      "status": "USABLE_WITH_PREPARATION",
+      "source": "https://www.artidororodriguez.com/cdn/shop/videos/c/vp/d07460932f804b9b99bc6e65e051a2a9/d07460932f804b9b99bc6e65e051a2a9.HD-720p-4.5Mbps-78008347.mp4?v=0",
+      "source_page": "https://www.artidororodriguez.com/",
+      "timecode": "00:02.500",
+      "size": "1280 × 720",
+      "used_files": [
+        "cafetal-provisional.webp",
+        "cafetal-foreground.webp"
+      ],
+      "preparation": "Single still. Foreground is a feathered crop from the same photograph. No video ships. Geographic attribution unconfirmed.",
+      "visual_mark": "PROVISIONAL_ASSET"
+    },
+    {
+      "id": "packaging-illustration",
+      "status": "REAL_ASSET",
+      "used_file": "amazonas-250g.webp",
+      "note": "Botanical illustration retained in the photographed everyday bag; no separate botanical master obtained."
+    },
+    {
+      "id": "amazonas-palette",
+      "status": "USABLE_WITH_PREPARATION",
+      "source": "Travel Line Amazonas green packaging",
+      "used_values": {
+        "green": "#30bc4e",
+        "ink": "#0f1d12",
+        "kraft": "Actual bag pixels"
+      },
+      "note": "Lab color approximation from public packaging, not a brand color specification."
+    },
+    {
+      "id": "body-type",
+      "status": "REAL_ASSET",
+      "sources": [
+        "https://www.artidororodriguez.com/cdn/fonts/chivo/chivo_n4.059fadbbf52d9f02350103459eb216e4b24c4661.woff2",
+        "https://www.artidororodriguez.com/cdn/fonts/chivo/chivo_n7.4d81c6f06c2ff78ed42169d6ec4aefa6d5cb0ff0.woff2"
+      ],
+      "used_files": [
+        "chivo-regular.woff2",
+        "chivo-bold.woff2"
+      ]
+    },
+    {
+      "id": "display-type",
+      "status": "LAB_TYPOGRAPHIC_CHOICE",
+      "family": "Barlow Condensed ExtraBold",
+      "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1_3E.ttf",
+      "note": "New typographic choice for this lab; not presented as an existing Artidoro asset."
+    }
+  ],
+  "gaps": [
+    {
+      "status": "MISSING_ASSET",
+      "id": "otorongo-master",
+      "need": "Complete high-resolution original or vector; current traced extraction is limited by curvature and low resolution."
+    },
+    {
+      "status": "MISSING_ASSET",
+      "id": "attributed-landscape",
+      "need": "Photograph verified as Rodríguez de Mendoza / Amazonas with sufficient resolution and separable near/far planes."
+    },
+    {
+      "status": "MISSING_ASSET",
+      "id": "standalone-packaging-art",
+      "need": "Original botanical art and brand texture/map files; not required to make this lab work."
+    }
+  ],
+  "instagram": {
+    "url": "https://www.instagram.com/artidorocoffee",
+    "result": "Public inspection limited by login/access; no full feed audit claimed and no Instagram-only imagery used."
+  },
+  "verified_copy": {
+    "product": "https://www.artidororodriguez.com/products/cafe-amazonas",
+    "weekly_roast": "https://www.artidororodriguez.com/",
+    "physical_stores": "https://www.artidororodriguez.com/pages/locales"
+  },
+  "ai_generated_assets": []
+}

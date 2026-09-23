@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es" data-direction="a">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>document.documentElement.dataset.direction=(location.hash==='#b'||new URLSearchParams(location.search).get('direction')==='b'||/\/b\/?$/.test(location.pathname))?'b':document.documentElement.dataset.direction;</script>
+  <meta name="theme-color" content="#102e25" />
+  <title>Artidoro — Hero Lab</title>
+  <link rel="icon" href="data:," />
+  <link rel="preload" href="/assets/chivo-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/barlow-condensed-800.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="stylesheet" href="/src/common.css" />
+  <link rel="stylesheet" href="/src/peru.css" />
+  <link rel="stylesheet" href="/src/lata.css" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <aside class="lab-bar" aria-label="Controles del laboratorio">
+    <span class="lab-name">ARTIDORO <span>HERO LAB</span></span>
+    <div class="lab-directions" aria-label="Dirección creativa">
+      <a href="#a" data-direction-link="a" aria-current="page"><span>A</span><span class="direction-name">Perú, en profundidad</span></a>
+      <a href="#b" data-direction-link="b"><span>B</span><span class="direction-name">Fuera de la lata</span></a>
+    </div>
+    <div class="lab-options"><span class="frame-indicator" aria-live="polite">FRAME A</span><label><input type="checkbox" id="reduce-motion" /><span>Sin motion</span></label></div>
+  </aside>
+  <main>
+    <section class="hero hero-peru" id="direction-a" aria-labelledby="title-a" data-expanded="false">
+      <div class="landscape" aria-hidden="true">
+        <img class="landscape-far" src="/assets/cafetal-provisional.webp" alt="" width="1280" height="720" fetchpriority="high" />
+        <div class="landscape-shade"></div>
+        <img class="landscape-near" src="/assets/cafetal-foreground.webp" alt="" width="470" height="440" />
+      </div>
+      <img class="brand-logo" src="/assets/logo-white.png" alt="Artidoro Rodríguez — Peruvian Coffee" width="358" height="127" />
+      <div class="edition"><span>ORIGEN 01 / 05</span><span>AMAZONAS, PERÚ</span></div>
+      <div class="peru-copy">
+        <p class="eyebrow">Café peruano de especialidad</p>
+        <h1 id="title-a">EL ORIGEN<br />SE SIENTE.</h1>
+        <p class="value-proposition">Cinco orígenes peruanos. Recién tostados,<br class="desktop-break" /> con molienda a tu medida.</p>
+      </div>
+      <div class="commerce">
+        <a class="buy-button" href="https://www.artidororodriguez.com/products/cafe-amazonas" target="_blank" rel="noopener">Comprar café de Amazonas <span aria-hidden="true">↗</span></a>
+        <p class="trust"><svg viewBox="0 0 20 20" width="18" height="18" fill="none" aria-hidden="true"><path d="M10 1.8 16.7 5v5.4c0 3.4-4.4 6.8-6.7 7.8-2.3-1-6.7-4.4-6.7-7.8V5L10 1.8Z" stroke="currentColor" stroke-width="1.3"/><path d="m6.7 9.6 2.2 2.3 4.6-4.7" stroke="currentColor" stroke-width="1.3"/></svg><span>Tostamos cada semana<span class="trust-divider"> · </span><span class="trust-location">Cafeterías en Miraflores</span></span></p>
+      </div>
+      <div class="product product-peru">
+        <img src="/assets/amazonas-250g.webp" alt="Bolsa habitual de café Amazonas de Artidoro Rodríguez, 250 g" width="326" height="761" fetchpriority="high" />
+      </div>
+      <div class="origin-annotation" id="peru-detail" aria-hidden="true">
+        <span class="detail-kicker">MÁS CERCA DEL ORIGEN</span>
+        <h2>Rodríguez<br />de Mendoza</h2>
+        <p>1 700–1 900 m s. n. m.</p>
+        <div class="annotation-line" aria-hidden="true"></div>
+        <p class="notes"><span>EN TAZA</span>Naranja<br />y melaza</p>
+      </div>
+      <button class="origin-button" type="button" data-reveal="a" aria-expanded="false" aria-controls="peru-detail"><span class="origin-button-label">Acercar origen</span><span class="interaction-icon" aria-hidden="true">+</span></button>
+      <div class="origin-caption"><span>AMAZONAS</span><span>Rodríguez de Mendoza</span><span>250 g</span></div>
+      <p class="asset-status"><span>PROVISIONAL_ASSET</span> Cafetal de Artidoro · ubicación por confirmar</p>
+    </section>
+    <section class="hero hero-lata" id="direction-b" aria-labelledby="title-b" data-expanded="false" hidden>
+      <img class="brand-logo" src="/assets/logo-black.png" alt="Artidoro Rodríguez — Peruvian Coffee" width="358" height="127" />
+      <div class="edition"><span>ORIGEN 01 / 05</span><span>AMAZONAS, PERÚ</span></div>
+      <p class="eyebrow lata-eyebrow">Café peruano de especialidad</p>
+      <h1 class="monument" id="title-b">AMAZONAS</h1>
+      <div class="animal-window" aria-hidden="true"><img class="otorongo" src="/assets/otorongo-traced.svg" alt="" width="656" height="780" /></div>
+      <div class="product product-lata"><img src="/assets/amazonas-250g.webp" alt="Bolsa habitual de café Amazonas de Artidoro Rodríguez, 250 g" width="326" height="761" fetchpriority="high" /></div>
+      <div class="lata-copy"><h2>Café con<br />carácter propio.</h2><p class="value-proposition">Cinco orígenes. Tostado semanal<br class="desktop-break" /> y molienda a tu medida.</p></div>
+      <div class="commerce">
+        <a class="buy-button" href="https://www.artidororodriguez.com/products/cafe-amazonas" target="_blank" rel="noopener">Comprar café de Amazonas <span aria-hidden="true">↗</span></a>
+        <p class="trust"><svg viewBox="0 0 20 20" width="18" height="18" fill="none" aria-hidden="true"><path d="M10 1.8 16.7 5v5.4c0 3.4-4.4 6.8-6.7 7.8-2.3-1-6.7-4.4-6.7-7.8V5L10 1.8Z" stroke="currentColor" stroke-width="1.3"/><path d="m6.7 9.6 2.2 2.3 4.6-4.7" stroke="currentColor" stroke-width="1.3"/></svg><span>Tostamos cada semana<span class="trust-divider"> · </span><span class="trust-location">Cafeterías en Miraflores</span></span></p>
+      </div>
+      <div class="flavor-annotation" id="lata-detail" aria-hidden="true"><span>NOTAS EN TAZA</span><p>NARANJA<br /><span>Y MELAZA</span></p></div>
+      <button class="origin-button" type="button" data-reveal="b" aria-expanded="false" aria-controls="lata-detail"><span class="origin-button-label">Desplegar origen</span><span class="interaction-icon" aria-hidden="true">+</span></button>
+      <div class="origin-caption"><span>AMAZONAS</span><span>Rodríguez de Mendoza</span><span>250 g</span></div>
+      <p class="asset-status"><span>PROVISIONAL_ASSET</span> Otorongo extraído del packaging · falta arte maestro</p>
+    </section>
+  </main>
+</body>
+</html>
