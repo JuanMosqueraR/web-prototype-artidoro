@@ -1,66 +1,27 @@
+@AGENTS.md
+
 # CLAUDE.md
 
-# Claude Code Instructions — Artidoro Hero Lab
+Claude Code specifics only. `AGENTS.md` (imported above) holds the project rules, including authority, change classes, findings and reporting; if anything here conflicts with it, `AGENTS.md` wins.
 
-Before working in this repository, read `AGENTS.md`.
+## Approval mechanism
 
-Then read all files under `/docs`, especially:
+Where `AGENTS.md` requires approval before a change, use plan mode, or propose and wait. Class 0–1 work proceeds within the task's scope.
 
-- `docs/PROJECT_BRIEF.md`
-- `docs/CREATIVE_DIRECTIONS.md`
-- `docs/ASSET_AUDIT.md`
-- `docs/IMPLEMENTATION_STATUS.md`
-- `docs/DECISIONS.md`
+## Visual inspection
 
-## Working style
+- Use the dev server only if the environment check from `AGENTS.md` passes. Otherwise inspect `deliverables/*.html`, first confirming they still match `src/` by re-deriving the export in memory or scratch output. Do not run the export script for this.
+- Use an installed Chromium-based browser in headless mode at pixel ratio 1.
+- For narrow widths, load the page in an exact-width iframe from a scratch wrapper page, as `qa.html` does. In the environment where this was observed, a narrow headless window was widened and then cropped (see KI-73 in `docs/KNOWN_ISSUES.md`). Do not assume that applies elsewhere; check that the captured viewport is the one you intended.
+- Cover both directions and both keyframes at the baseline viewports; `?frame=b` opens the expanded state. Label anything else exploratory and state its conditions.
+- View captures with the image reader.
 
-This repository already contains an implemented Hero Lab.
+## Scratch files, memory and cost
 
-Do not assume the task is greenfield.
+- Put temporary scripts and exploratory captures in the session scratchpad or another location outside tracked files. Never in the repository.
+- Claude's chat and auto memory are invisible to Codex. Do not keep project state or decisions there.
+- Do not spawn subagents unless the task warrants it, and say why.
 
-Inspect existing code before proposing replacements.
+## Stopping
 
-Prefer editing the current implementation over rebuilding it unless the user explicitly requests a rewrite.
-
-Keep changes tightly scoped.
-
-Do not proactively:
-- redesign;
-- combine creative directions;
-- add sections;
-- migrate frameworks;
-- introduce large dependencies;
-- generate substitute brand assets;
-- continue toward a production ecommerce.
-
-## Visual work
-
-When modifying visuals or interaction:
-
-- preserve the documented creative intent;
-- validate desktop 1440×900;
-- validate mobile 390×844;
-- check both interaction states where relevant;
-- preserve reduced-motion behavior;
-- report visual regressions or compromises explicitly.
-
-Do not compensate for a weak asset by silently changing the creative concept.
-
-## Documentation
-
-If implementation changes invalidate repository documentation, update the relevant `/docs` file in the same task.
-
-Do not duplicate project history inside this file.
-
-`AGENTS.md` and `/docs` remain the source of truth for project rules and decisions.
-
-## Completion
-
-At the end of a task, summarize:
-
-- what changed;
-- what was tested;
-- what remains provisional;
-- whether any `OPEN` decision now requires user review.
-
-Stop at the requested checkpoint.
+Stop at the requested checkpoint. Propose a next step if useful, then wait.
