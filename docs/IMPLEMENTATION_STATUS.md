@@ -12,6 +12,9 @@ HTML semántico, CSS y JavaScript vanilla, con **Vite 7.1.3** como dependencia d
 | `src/common.css` | Tipografía, controles, CTA/confianza, estilos compartidos y reduced motion |
 | `src/peru.css` / `src/lata.css` | Composición y transición específicas de cada dirección |
 | `src/main.js` | Cambio de dirección, estado desplegado y casilla Sin motion |
+| `src/origin.css` / `src/origin.js` | Escena 02 “Encontrar tu origen” (solo visible en A): estilos aislados y estado propio de origen (Amazonas/Cajamarca). No comparten estado con el hero |
+| `public/assets/cajamarca-250g.webp` / `scripts/prepare-cajamarca.py` | Bolsa Cajamarca derivada del original en `audit/source/cajamarca-original.jpg`; Pillow |
+| `qa/2026-09-24-origin-02/` | Evidencia fechada de 02 y regresión de heroes (capturas + mediciones + `QA-origin-02.md`) |
 | `public/assets/` | Recursos visuales y tipográficos utilizados por la web |
 | `audit/` | Fuentes, clasificación y materiales de preparación conservados |
 | `qa.html` | Contenedor de revisión con iframe de dimensiones fijas |
@@ -47,6 +50,12 @@ npm run dev -- --host 127.0.0.1 --port 4173
 Para revisar sin servidor, abrir `deliverables/A-peru-en-profundidad.html` o `deliverables/B-fuera-de-la-lata.html` en el navegador. Incluyen los recursos y el selector. No abrir el `index.html` de desarrollo por `file://`: utiliza rutas servidas por Vite.
 
 El CTA abre la ficha pública del café Amazonas en una pestaña nueva. No agrega una variante al carrito ni ejecuta una compra dentro del lab.
+
+## Escena 02 (checkpoint del 24 de septiembre de 2026)
+
+Tras el Hero A, `index.html` incluye la sección `#origin-scene` con `aside.origin-lab-note`. Solo se muestran con la dirección A; con B se ocultan por CSS (`display:none`) y quedan fuera del orden de tabulación. Su origen (Amazonas/Cajamarca) es independiente del estado Acercar/Alejar. Villa Rica, Cusco y Puno son filas informativas sin selección. La altura del documento en A ahora es la del hero más la de 02 (más la nota de laboratorio). Descripción y evidencia: [CREATIVE_DIRECTIONS.md](CREATIVE_DIRECTIONS.md) y [qa/2026-09-24-origin-02/QA-origin-02.md](../qa/2026-09-24-origin-02/QA-origin-02.md). Para abrir A → 02: la URL de A (`/a/`) y bajar; `?motion=off` inicia sin movimiento. Con el hero desplegado, `/a/?frame=b`.
+
+El build y el servidor de Vite **no se verificaron** en este entorno (Node 18; ver KI-01). La escena se comprobó con un servidor estático temporal fuera del repo, que no sustituye esa validación.
 
 ## Direcciones, keyframes y estado
 

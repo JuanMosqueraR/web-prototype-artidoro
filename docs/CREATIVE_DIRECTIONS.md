@@ -106,6 +106,15 @@ AMAZONAS monumental, fondo gráfico plano, bolsa habitual como protagonista, oto
 
 Fuentes de implementación: [lata.css](../src/lata.css), [index.html](../index.html). Capturas: `deliverables/B-desktop-keyframe-A.jpg`, `B-desktop-keyframe-B.jpg` y `B-mobile.jpg`.
 
+## Escena 02 — “Encontrar tu origen” (continuación de A, checkpoint del 24 de septiembre de 2026)
+
+Sección independiente tras el Hero A; solo visible con A. No forma parte de la comparación A/B ni cambia el hero. Storyboard de trabajo: 01 El origen se siente (hero), **02 Encontrar tu origen**, 03–05 sin implementar.
+
+- **Composición.** Franja verde `#102e25` (64 px desktop, 32 px mobile) que continúa el verde del hero, borde limpio a crema `#f4f0e5`, encabezado “ENCUENTRA TU ORIGEN.” (Barlow 80/48), índice de cinco filas, información del origen y bolsa. Desktop ≥ 1360 px: tres columnas ancladas a 1440 × 900 (índice x86 · información x548 · bolsa centrada en el 75%). Por debajo de 1360 px se reorganiza en la composición vertical de mobile (390 × 844).
+- **Estados.** Solo Amazonas (inicial) y Cajamarca son seleccionables (botones con `aria-pressed`). Villa Rica, Cusco y Puno son filas informativas con sus notas. Un único CTA persistente cambia texto y destino con el origen, y el enlace “Ver todos los cafés ↗” apunta a la colección oficial. Datos comerciales y sus fuentes: `audit/assets.json` (`verified_copy.origin_scene_02`).
+- **Cambio de origen.** Información y bolsa se desvanecen como un conjunto (≈ 90 ms + 90 ms); el commit (selección, información, bolsa, CTA) es síncrono y solo ocurre con la imagen entrante decodificada y la solicitud vigente. Sin motion / `prefers-reduced-motion`: cambio inmediato, sin saltarse la preparación de la imagen. Ante error o timeout de 4 s se conserva el origen mostrado y aparece un aviso breve.
+- **Hero → 02.** Solo por scroll; sin sticky, parallax, video ni crossfade. La bolsa no viaja: reaparece en el mismo eje (desktop, 75%).
+
 ## Condiciones compartidas de revisión
 
 Mantener el producto, CTA y confianza comunes y un nivel de acabado comparable. No penalizar ni validar definitivamente una tesis solo por la calidad de sus assets provisionales. Las capturas mobile entregadas muestran Keyframe B. El modo sin movimiento debe mantener los dos estados utilizables. Ninguna dirección está elegida para producción.

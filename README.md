@@ -31,6 +31,7 @@ El selector de laboratorio queda fuera de la composición. Cada dirección conse
 - `src/lata.css`: composición B y despliegue del otorongo.
 - `src/common.css`: tipografía, producto, CTA y controles compartidos.
 - `src/main.js`: selector, revelado y preferencia de movimiento.
+- `src/origin.css` y `src/origin.js`: escena 02 “Encontrar tu origen” (solo con A).
 - `audit/ASSETS.md` y `audit/assets.json`: clasificación, fuentes y gaps.
 - `qa/QA.md` y `qa/measurements.json`: comprobaciones del checkpoint.
 - `deliverables/*.jpg`: capturas finales.

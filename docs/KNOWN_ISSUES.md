@@ -174,6 +174,31 @@ Ya clasificados en [ASSET_AUDIT.md](ASSET_AUDIT.md) y [audit/assets.json](../aud
 - Evidencia: con `--window-size=390,844` en Chrome headless, el selector superior y la palabra «AMAZONAS» aparecieron recortados, como si el diseño se hubiera calculado más ancho que la captura. Un iframe de ancho exacto (como hace `qa.html`) renderizó correctamente. La hipótesis de un ancho mínimo de ventana de unos 500 px es una deducción específica de este entorno y de esta herramienta; no se midió y no debe tomarse como comportamiento general de Chromium.
 - Condiciones: Chrome de escritorio en Windows 10, modo headless, 2026-09-23. Basis: observed (recorte); inferred (causa). Lo metodológico que se conserva: comprobar siempre que el viewport capturado es el previsto.
 
+## 9. Escena 02 (A → 02)
+
+Observaciones del 24 de septiembre de 2026 al implementar la escena 02 (ver [qa/2026-09-24-origin-02/QA-origin-02.md](../qa/2026-09-24-origin-02/QA-origin-02.md)). Chrome 153 headless, iframe de ancho exacto, píxel ratio 1, servidor estático temporal (no Vite). Ninguna es tarea aprobada.
+
+**KI-80 · Con barra de desplazamiento clásica, el Hero A cambia de geometría**
+- Estado: `OBSERVED` · Afecta: A · Alcance: baseline contract · Tarea: no aprobada
+- Evidencia: antes de 02, A medía exactamente el alto del viewport (sin scroll vertical). Con 02 el documento es más largo. Con barra clásica de 15 px (`Emulation.setScrollbarsHidden=false`), A pasa a 1425 px de ancho útil en 1440 × 900: bolsa x 962.41 (antes 973.66), CTA x 85.50 (antes 86.39). En 390 × 844 con barra clásica el ancho útil es 375 y el CTA mide 331 px (antes 346). Con barras superpuestas/ocultas (comportamiento del baseline y de móviles) no hay cambio. B no cambia (su documento sigue midiendo un viewport).
+- Condiciones: 1440 × 900 y 390 × 844, motion on, hero inicial. No se ocultaron barras ni se cambió CSS compartido. Datos: `qa/2026-09-24-origin-02/data/exploratory-classic-scrollbar.json`. Basis: observed.
+
+**KI-81 · `export-standalone.py` no incorpora la escena 02 completa**
+- Estado: `OBSERVED` · Afecta: shared · Alcance: environment · Tarea: no aprobada
+- Evidencia (por lectura del script, no ejecutado): lee el `index.html` actual, así que incluiría el markup de 02. Su lista de CSS es fija (`common.css`, `peru.css`, `lata.css`) y elimina todos los `<link rel="stylesheet">`, de modo que `origin.css` se descartaría sin embeberse; solo embebe `main.js`, y el `<script type="module" src="/src/origin.js">` quedaría como referencia externa sin resolver en `file://`. Basis: read.
+
+**KI-82 · Entregables y `artifact-build/` no representan A → 02**
+- Estado: `OBSERVED` · Afecta: shared · Alcance: documentation · Tarea: no aprobada
+- Evidencia: `deliverables/*.html` y `artifact-build/hero-lab-artifact.html` no contienen 02. Las capturas y mediciones históricas del hero siguen siendo evidencia válida para el hero. Aparte, los HTML y capturas de B (baseline `59320ee`) son anteriores al commit `e5a0b9e` (`lata.css`); esa desactualización es previa a 02 (a 1440 × 900 y 390 × 844 las mediciones de B no cambiaron respecto a `qa/measurements.json`). Basis: read, observed.
+
+**KI-83 · En A la bolsa de Cajamarca se pide al cargar**
+- Estado: `OBSERVED` · Afecta: A · Alcance: baseline contract · Tarea: no aprobada
+- Evidencia: `cajamarca-250g.webp` (≈ 93 KiB) lleva `loading="lazy"`, pero en 1440 × 900 y 390 × 844 queda dentro de la distancia de carga diferida de Chrome y se solicita al abrir A. Abriendo B directamente, o pasando de A a B, no se solicita ni se genera ninguna petición nueva. Registro del servidor en `qa/2026-09-24-origin-02/data/network-*.json`. Basis: observed.
+
+**KI-84 · Texto pequeño y filas informativas en 02**
+- Estado: `OBSERVED` · Afecta: A (02) · Alcance: baseline contract · Tarea: no aprobada
+- Evidencia: la especificación de 02 fija Chivo 10–13 px en etiquetas y notas (mobile: 10, 12; desktop: 11–14). Villa Rica, Cusco y Puno usan el mismo tratamiento tipográfico que las filas seleccionables y solo se distinguen por el cursor por defecto y la ausencia de foco; no se evaluó si un usuario las entiende como no interactivas. Basis: read, observed.
+
 ## Verification notes
 
 No son issues; se conservan para no repetir trabajo. Cada nota deja de valer cuando cambie lo que verifica.

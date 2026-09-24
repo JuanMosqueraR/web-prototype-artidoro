@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="/src/common.css" />
   <link rel="stylesheet" href="/src/peru.css" />
   <link rel="stylesheet" href="/src/lata.css" />
+  <link rel="stylesheet" href="/src/origin.css" />
   <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/origin.js"></script>
 </head>
 <body>
   <aside class="lab-bar" aria-label="Controles del laboratorio">
@@ -72,6 +74,57 @@
       <div class="origin-caption"><span>AMAZONAS</span><span>Rodríguez de Mendoza</span><span>250 g</span></div>
       <p class="asset-status"><span>PROVISIONAL_ASSET</span> Otorongo extraído del packaging · falta arte maestro</p>
     </section>
+    <section class="origin-scene" id="origin-scene" aria-labelledby="origin-title" data-origin="amazonas">
+      <div class="origin-inner">
+        <header class="origin-head">
+          <p class="origin-kicker">Cinco orígenes peruanos</p>
+          <h2 id="origin-title">Encuentra<br class="origin-br" /> tu origen.</h2>
+          <p class="origin-instruction" id="origin-instruction">Elige un origen para conocer su café</p>
+        </header>
+        <div class="origin-body">
+          <div class="origin-index-col">
+            <ul class="origin-index" aria-labelledby="origin-instruction">
+          <li class="origin-row"><button class="origin-row-main" type="button" data-origin="amazonas" data-name="Amazonas" data-href="https://www.artidororodriguez.com/products/cafe-amazonas" aria-pressed="true"><span class="origin-dot" aria-hidden="true"></span><span class="origin-title"><span class="origin-num">01 ·</span><span class="origin-name">Amazonas</span></span><span class="origin-note">Naranja y melaza</span></button></li>
+          <li class="origin-row"><button class="origin-row-main" type="button" data-origin="cajamarca" data-name="Cajamarca" data-href="https://www.artidororodriguez.com/products/cafe-cajamarca" aria-pressed="false"><span class="origin-dot" aria-hidden="true"></span><span class="origin-title"><span class="origin-num">02 ·</span><span class="origin-name">Cajamarca</span></span><span class="origin-note">Frutos secos y chancaca</span></button></li>
+          <li class="origin-row origin-row--info"><div class="origin-row-main"><span class="origin-dot" aria-hidden="true"></span><span class="origin-title"><span class="origin-num">03 ·</span><span class="origin-name">Villa Rica</span></span><span class="origin-note">Frutos rojos, pasas, dulce</span></div></li>
+          <li class="origin-row origin-row--info"><div class="origin-row-main"><span class="origin-dot" aria-hidden="true"></span><span class="origin-title"><span class="origin-num">04 ·</span><span class="origin-name">Cusco</span></span><span class="origin-note">Chocolate y nueces</span></div></li>
+          <li class="origin-row origin-row--info"><div class="origin-row-main"><span class="origin-dot" aria-hidden="true"></span><span class="origin-title"><span class="origin-num">05 ·</span><span class="origin-name">Puno</span></span><span class="origin-note">Chocolate y frutos secos</span></div></li>
+            </ul>
+            <p class="origin-status" role="status"></p>
+          </div>
+          <div class="origin-panel">
+            <div class="origin-info origin-fade">
+          <div class="origin-record" data-origin="amazonas">
+            <p class="origin-rec-kicker">01 / 05 · AMAZONAS</p>
+            <p class="origin-rec-place">Rodríguez de Mendoza</p>
+            <p class="origin-rec-label">EN TAZA</p>
+            <p class="origin-rec-notes">Naranja<br />y melaza</p>
+            <span class="origin-rec-line" aria-hidden="true"></span>
+            <p class="origin-rec-size">250 g</p>
+            <p class="origin-rec-price">S/ 39.90</p>
+          </div>
+          <div class="origin-record" data-origin="cajamarca">
+            <p class="origin-rec-kicker">02 / 05 · CAJAMARCA</p>
+            <p class="origin-rec-place">San Ignacio</p>
+            <p class="origin-rec-label">EN TAZA</p>
+            <p class="origin-rec-notes">Frutos secos<br />y chancaca</p>
+            <span class="origin-rec-line" aria-hidden="true"></span>
+            <p class="origin-rec-size">250 g</p>
+            <p class="origin-rec-price">S/ 39.90</p>
+          </div>
+            </div>
+            <div class="origin-bags origin-fade">
+              <img class="origin-bag" data-origin="amazonas" src="/assets/amazonas-250g.webp" alt="Bolsa de café Amazonas de Artidoro Rodríguez, 250 g" width="326" height="761" decoding="async" />
+              <img class="origin-bag" data-origin="cajamarca" src="/assets/cajamarca-250g.webp" alt="Bolsa de café Cajamarca de Artidoro Rodríguez, 250 g" width="326" height="761" loading="lazy" decoding="async" />
+            </div>
+            <a class="origin-buy" href="https://www.artidororodriguez.com/products/cafe-amazonas" target="_blank" rel="noopener"><span>Comprar café de <span data-cta-name>Amazonas</span></span> <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <a class="origin-catalog" href="https://www.artidororodriguez.com/collections/cafe" target="_blank" rel="noopener">Ver todos los cafés ↗</a>
+      </div>
+      <p class="origin-sr" aria-live="polite"></p>
+    </section>
+    <aside class="origin-lab-note" aria-label="Contexto de revisión del laboratorio"><strong>REVISIÓN · ESCENA 02</strong> — En este checkpoint solo Amazonas y Cajamarca son seleccionables. Villa Rica, Cusco y Puno se muestran como filas informativas con sus notas; su selección no está implementada. Precio de referencia S/ 39.90 (250 g), verificado el 24 de septiembre de 2026 en las fichas oficiales.</aside>
   </main>
 </body>
 </html>
