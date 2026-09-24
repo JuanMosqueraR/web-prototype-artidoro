@@ -1,0 +1,40 @@
+{
+ "B_direct": [
+  "/b/",
+  "/assets/chivo-regular.woff2",
+  "/src/peru.css",
+  "/assets/barlow-condensed-800.ttf",
+  "/src/common.css",
+  "/src/lata.css",
+  "/src/origin.css",
+  "/src/main.js",
+  "/assets/amazonas-250g.webp",
+  "/assets/cafetal-provisional.webp",
+  "/src/origin.js",
+  "/assets/cafetal-foreground.webp",
+  "/assets/logo-white.png",
+  "/assets/otorongo-traced.svg",
+  "/assets/logo-black.png",
+  "/assets/chivo-bold.woff2"
+ ],
+ "A_open": [
+  "/a/",
+  "/assets/barlow-condensed-800.ttf",
+  "/assets/chivo-regular.woff2",
+  "/src/common.css",
+  "/src/peru.css",
+  "/src/lata.css",
+  "/src/origin.css",
+  "/assets/cafetal-provisional.webp",
+  "/src/main.js",
+  "/src/origin.js",
+  "/assets/amazonas-250g.webp",
+  "/assets/cafetal-foreground.webp",
+  "/assets/logo-white.png",
+  "/assets/logo-black.png",
+  "/assets/otorongo-traced.svg",
+  "/assets/chivo-bold.woff2",
+  "/assets/cajamarca-250g.webp"
+ ],
+ "A_to_B_switch": []
+}

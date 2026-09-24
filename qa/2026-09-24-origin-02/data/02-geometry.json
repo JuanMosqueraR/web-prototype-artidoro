@@ -1,0 +1,1698 @@
+[
+ {
+  "origin": "amazonas",
+  "scene": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 900
+  },
+  "kicker": {
+   "x": 86.4,
+   "y": 106,
+   "w": 1267.2,
+   "h": 16
+  },
+  "h2": {
+   "x": 86.4,
+   "y": 138,
+   "w": 1267.2,
+   "h": 70
+  },
+  "instruction": {
+   "x": 86.4,
+   "y": 238,
+   "w": 1267.2,
+   "h": 20
+  },
+  "index": {
+   "x": 86.4,
+   "y": 284,
+   "w": 382,
+   "h": 420
+  },
+  "rows": [
+   {
+    "x": 86.4,
+    "y": 284,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 368,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 452,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 536,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 620,
+    "w": 382,
+    "h": 84
+   }
+  ],
+  "status": {
+   "x": 86.4,
+   "y": 716,
+   "w": 382,
+   "h": 16
+  },
+  "info": {
+   "kicker": {
+    "x": 548.4,
+    "y": 284,
+    "w": 330,
+    "h": 16
+   },
+   "place": {
+    "x": 548.4,
+    "y": 336,
+    "w": 330,
+    "h": 56
+   },
+   "label": {
+    "x": 548.4,
+    "y": 432,
+    "w": 330,
+    "h": 14
+   },
+   "notes": {
+    "x": 548.4,
+    "y": 456,
+    "w": 330,
+    "h": 64
+   },
+   "line": {
+    "x": 548.4,
+    "y": 548,
+    "w": 145,
+    "h": 1
+   },
+   "size": {
+    "x": 548.4,
+    "y": 578,
+    "w": 330,
+    "h": 20
+   },
+   "price": {
+    "x": 548.4,
+    "y": 606,
+    "w": 330,
+    "h": 36
+   }
+  },
+  "bagBox": {
+   "x": 973.8,
+   "y": 270,
+   "w": 212.5,
+   "h": 496
+  },
+  "bagImg": {
+   "x": 973.8,
+   "y": 270,
+   "w": 212.5,
+   "h": 496
+  },
+  "cta": {
+   "x": 548.4,
+   "y": 676,
+   "w": 330,
+   "h": 58
+  },
+  "catalog": {
+   "x": 86.4,
+   "y": 784,
+   "w": 140,
+   "h": 44
+  },
+  "labNote": {
+   "x": 0,
+   "y": 900,
+   "w": 1440,
+   "h": 61
+  },
+  "ctaText": "Comprar caf\u00e9 de Amazonas \u2197",
+  "ctaHref": "https://www.artidororodriguez.com/products/cafe-amazonas",
+  "catalogHref": "https://www.artidororodriguez.com/collections/cafe",
+  "pressed": [
+   "amazonas:true",
+   "cajamarca:false"
+  ],
+  "imgs": [
+   {
+    "o": "amazonas",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/amazonas-250g.webp"
+   },
+   {
+    "o": "cajamarca",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/cajamarca-250g.webp"
+   }
+  ],
+  "fonts": {
+   "h2": "80px",
+   "name": "44px",
+   "note": "14px",
+   "place": "24px",
+   "notes": "28px",
+   "price": "32px"
+  },
+  "doc": {
+   "iw": 1440,
+   "ih": 900,
+   "cw": 1440,
+   "sw": 1440,
+   "sh": 1861,
+   "sy": 900
+  },
+  "overflowX": false,
+  "rowsCursor": [
+   "pointer",
+   "pointer",
+   "default",
+   "default",
+   "default"
+  ],
+  "rowsTag": [
+   "BUTTON:tab0",
+   "BUTTON:tab0",
+   "DIV",
+   "DIV",
+   "DIV"
+  ],
+  "size": "desktop",
+  "motion": "on",
+  "viewport": {
+   "iw": 1440,
+   "ih": 900,
+   "dpr": 1,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 1861,
+   "sy": 900
+  },
+  "test": "02-desktop-amazonas-motionon"
+ },
+ {
+  "origin": "cajamarca",
+  "scene": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 900
+  },
+  "kicker": {
+   "x": 86.4,
+   "y": 106,
+   "w": 1267.2,
+   "h": 16
+  },
+  "h2": {
+   "x": 86.4,
+   "y": 138,
+   "w": 1267.2,
+   "h": 70
+  },
+  "instruction": {
+   "x": 86.4,
+   "y": 238,
+   "w": 1267.2,
+   "h": 20
+  },
+  "index": {
+   "x": 86.4,
+   "y": 284,
+   "w": 382,
+   "h": 420
+  },
+  "rows": [
+   {
+    "x": 86.4,
+    "y": 284,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 368,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 452,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 536,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 620,
+    "w": 382,
+    "h": 84
+   }
+  ],
+  "status": {
+   "x": 86.4,
+   "y": 716,
+   "w": 382,
+   "h": 16
+  },
+  "info": {
+   "kicker": {
+    "x": 548.4,
+    "y": 284,
+    "w": 330,
+    "h": 16
+   },
+   "place": {
+    "x": 548.4,
+    "y": 336,
+    "w": 330,
+    "h": 56
+   },
+   "label": {
+    "x": 548.4,
+    "y": 432,
+    "w": 330,
+    "h": 14
+   },
+   "notes": {
+    "x": 548.4,
+    "y": 456,
+    "w": 330,
+    "h": 64
+   },
+   "line": {
+    "x": 548.4,
+    "y": 548,
+    "w": 145,
+    "h": 1
+   },
+   "size": {
+    "x": 548.4,
+    "y": 578,
+    "w": 330,
+    "h": 20
+   },
+   "price": {
+    "x": 548.4,
+    "y": 606,
+    "w": 330,
+    "h": 36
+   }
+  },
+  "bagBox": {
+   "x": 973.8,
+   "y": 270,
+   "w": 212.5,
+   "h": 496
+  },
+  "bagImg": {
+   "x": 973.8,
+   "y": 270,
+   "w": 212.5,
+   "h": 496
+  },
+  "cta": {
+   "x": 548.4,
+   "y": 676,
+   "w": 330,
+   "h": 58
+  },
+  "catalog": {
+   "x": 86.4,
+   "y": 784,
+   "w": 140,
+   "h": 44
+  },
+  "labNote": {
+   "x": 0,
+   "y": 900,
+   "w": 1440,
+   "h": 61
+  },
+  "ctaText": "Comprar caf\u00e9 de Cajamarca \u2197",
+  "ctaHref": "https://www.artidororodriguez.com/products/cafe-cajamarca",
+  "catalogHref": "https://www.artidororodriguez.com/collections/cafe",
+  "pressed": [
+   "amazonas:false",
+   "cajamarca:true"
+  ],
+  "imgs": [
+   {
+    "o": "amazonas",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/amazonas-250g.webp"
+   },
+   {
+    "o": "cajamarca",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/cajamarca-250g.webp"
+   }
+  ],
+  "fonts": {
+   "h2": "80px",
+   "name": "44px",
+   "note": "14px",
+   "place": "24px",
+   "notes": "28px",
+   "price": "32px"
+  },
+  "doc": {
+   "iw": 1440,
+   "ih": 900,
+   "cw": 1440,
+   "sw": 1440,
+   "sh": 1861,
+   "sy": 900
+  },
+  "overflowX": false,
+  "rowsCursor": [
+   "pointer",
+   "pointer",
+   "default",
+   "default",
+   "default"
+  ],
+  "rowsTag": [
+   "BUTTON:tab0",
+   "BUTTON:tab0",
+   "DIV",
+   "DIV",
+   "DIV"
+  ],
+  "size": "desktop",
+  "motion": "on",
+  "viewport": {
+   "iw": 1440,
+   "ih": 900,
+   "dpr": 1,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 1861,
+   "sy": 900
+  },
+  "test": "02-desktop-cajamarca-motionon"
+ },
+ {
+  "origin": "amazonas",
+  "scene": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 900
+  },
+  "kicker": {
+   "x": 86.4,
+   "y": 106,
+   "w": 1267.2,
+   "h": 16
+  },
+  "h2": {
+   "x": 86.4,
+   "y": 138,
+   "w": 1267.2,
+   "h": 70
+  },
+  "instruction": {
+   "x": 86.4,
+   "y": 238,
+   "w": 1267.2,
+   "h": 20
+  },
+  "index": {
+   "x": 86.4,
+   "y": 284,
+   "w": 382,
+   "h": 420
+  },
+  "rows": [
+   {
+    "x": 86.4,
+    "y": 284,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 368,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 452,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 536,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 620,
+    "w": 382,
+    "h": 84
+   }
+  ],
+  "status": {
+   "x": 86.4,
+   "y": 716,
+   "w": 382,
+   "h": 16
+  },
+  "info": {
+   "kicker": {
+    "x": 548.4,
+    "y": 284,
+    "w": 330,
+    "h": 16
+   },
+   "place": {
+    "x": 548.4,
+    "y": 336,
+    "w": 330,
+    "h": 56
+   },
+   "label": {
+    "x": 548.4,
+    "y": 432,
+    "w": 330,
+    "h": 14
+   },
+   "notes": {
+    "x": 548.4,
+    "y": 456,
+    "w": 330,
+    "h": 64
+   },
+   "line": {
+    "x": 548.4,
+    "y": 548,
+    "w": 145,
+    "h": 1
+   },
+   "size": {
+    "x": 548.4,
+    "y": 578,
+    "w": 330,
+    "h": 20
+   },
+   "price": {
+    "x": 548.4,
+    "y": 606,
+    "w": 330,
+    "h": 36
+   }
+  },
+  "bagBox": {
+   "x": 973.8,
+   "y": 270,
+   "w": 212.5,
+   "h": 496
+  },
+  "bagImg": {
+   "x": 973.8,
+   "y": 270,
+   "w": 212.5,
+   "h": 496
+  },
+  "cta": {
+   "x": 548.4,
+   "y": 676,
+   "w": 330,
+   "h": 58
+  },
+  "catalog": {
+   "x": 86.4,
+   "y": 784,
+   "w": 140,
+   "h": 44
+  },
+  "labNote": {
+   "x": 0,
+   "y": 900,
+   "w": 1440,
+   "h": 61
+  },
+  "ctaText": "Comprar caf\u00e9 de Amazonas \u2197",
+  "ctaHref": "https://www.artidororodriguez.com/products/cafe-amazonas",
+  "catalogHref": "https://www.artidororodriguez.com/collections/cafe",
+  "pressed": [
+   "amazonas:true",
+   "cajamarca:false"
+  ],
+  "imgs": [
+   {
+    "o": "amazonas",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/amazonas-250g.webp"
+   },
+   {
+    "o": "cajamarca",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/cajamarca-250g.webp"
+   }
+  ],
+  "fonts": {
+   "h2": "80px",
+   "name": "44px",
+   "note": "14px",
+   "place": "24px",
+   "notes": "28px",
+   "price": "32px"
+  },
+  "doc": {
+   "iw": 1440,
+   "ih": 900,
+   "cw": 1440,
+   "sw": 1440,
+   "sh": 1861,
+   "sy": 900
+  },
+  "overflowX": false,
+  "rowsCursor": [
+   "pointer",
+   "pointer",
+   "default",
+   "default",
+   "default"
+  ],
+  "rowsTag": [
+   "BUTTON:tab0",
+   "BUTTON:tab0",
+   "DIV",
+   "DIV",
+   "DIV"
+  ],
+  "size": "desktop",
+  "motion": "off",
+  "viewport": {
+   "iw": 1440,
+   "ih": 900,
+   "dpr": 1,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 1861,
+   "sy": 900
+  },
+  "test": "02-desktop-amazonas-motionoff"
+ },
+ {
+  "origin": "cajamarca",
+  "scene": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 900
+  },
+  "kicker": {
+   "x": 86.4,
+   "y": 106,
+   "w": 1267.2,
+   "h": 16
+  },
+  "h2": {
+   "x": 86.4,
+   "y": 138,
+   "w": 1267.2,
+   "h": 70
+  },
+  "instruction": {
+   "x": 86.4,
+   "y": 238,
+   "w": 1267.2,
+   "h": 20
+  },
+  "index": {
+   "x": 86.4,
+   "y": 284,
+   "w": 382,
+   "h": 420
+  },
+  "rows": [
+   {
+    "x": 86.4,
+    "y": 284,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 368,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 452,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 536,
+    "w": 382,
+    "h": 84
+   },
+   {
+    "x": 86.4,
+    "y": 620,
+    "w": 382,
+    "h": 84
+   }
+  ],
+  "status": {
+   "x": 86.4,
+   "y": 716,
+   "w": 382,
+   "h": 16
+  },
+  "info": {
+   "kicker": {
+    "x": 548.4,
+    "y": 284,
+    "w": 330,
+    "h": 16
+   },
+   "place": {
+    "x": 548.4,
+    "y": 336,
+    "w": 330,
+    "h": 56
+   },
+   "label": {
+    "x": 548.4,
+    "y": 432,
+    "w": 330,
+    "h": 14
+   },
+   "notes": {
+    "x": 548.4,
+    "y": 456,
+    "w": 330,
+    "h": 64
+   },
+   "line": {
+    "x": 548.4,
+    "y": 548,
+    "w": 145,
+    "h": 1
+   },
+   "size": {
+    "x": 548.4,
+    "y": 578,
+    "w": 330,
+    "h": 20
+   },
+   "price": {
+    "x": 548.4,
+    "y": 606,
+    "w": 330,
+    "h": 36
+   }
+  },
+  "bagBox": {
+   "x": 973.8,
+   "y": 270,
+   "w": 212.5,
+   "h": 496
+  },
+  "bagImg": {
+   "x": 973.8,
+   "y": 270,
+   "w": 212.5,
+   "h": 496
+  },
+  "cta": {
+   "x": 548.4,
+   "y": 676,
+   "w": 330,
+   "h": 58
+  },
+  "catalog": {
+   "x": 86.4,
+   "y": 784,
+   "w": 140,
+   "h": 44
+  },
+  "labNote": {
+   "x": 0,
+   "y": 900,
+   "w": 1440,
+   "h": 61
+  },
+  "ctaText": "Comprar caf\u00e9 de Cajamarca \u2197",
+  "ctaHref": "https://www.artidororodriguez.com/products/cafe-cajamarca",
+  "catalogHref": "https://www.artidororodriguez.com/collections/cafe",
+  "pressed": [
+   "amazonas:false",
+   "cajamarca:true"
+  ],
+  "imgs": [
+   {
+    "o": "amazonas",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/amazonas-250g.webp"
+   },
+   {
+    "o": "cajamarca",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/cajamarca-250g.webp"
+   }
+  ],
+  "fonts": {
+   "h2": "80px",
+   "name": "44px",
+   "note": "14px",
+   "place": "24px",
+   "notes": "28px",
+   "price": "32px"
+  },
+  "doc": {
+   "iw": 1440,
+   "ih": 900,
+   "cw": 1440,
+   "sw": 1440,
+   "sh": 1861,
+   "sy": 900
+  },
+  "overflowX": false,
+  "rowsCursor": [
+   "pointer",
+   "pointer",
+   "default",
+   "default",
+   "default"
+  ],
+  "rowsTag": [
+   "BUTTON:tab0",
+   "BUTTON:tab0",
+   "DIV",
+   "DIV",
+   "DIV"
+  ],
+  "size": "desktop",
+  "motion": "off",
+  "viewport": {
+   "iw": 1440,
+   "ih": 900,
+   "dpr": 1,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 1861,
+   "sy": 900
+  },
+  "test": "02-desktop-cajamarca-motionoff"
+ },
+ {
+  "origin": "amazonas",
+  "scene": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844
+  },
+  "kicker": {
+   "x": 22,
+   "y": 52,
+   "w": 346,
+   "h": 16
+  },
+  "h2": {
+   "x": 22,
+   "y": 76,
+   "w": 346,
+   "h": 88
+  },
+  "instruction": {
+   "x": 22,
+   "y": 170,
+   "w": 346,
+   "h": 18
+  },
+  "index": {
+   "x": 22,
+   "y": 192,
+   "w": 346,
+   "h": 240
+  },
+  "rows": [
+   {
+    "x": 22,
+    "y": 192,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 240,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 288,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 336,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 384,
+    "w": 346,
+    "h": 48
+   }
+  ],
+  "status": {
+   "x": 22,
+   "y": 440,
+   "w": 346,
+   "h": 16
+  },
+  "info": {
+   "kicker": {
+    "x": 22,
+    "y": 466,
+    "w": 190,
+    "h": 16
+   },
+   "place": {
+    "x": 22,
+    "y": 492,
+    "w": 190,
+    "h": 48
+   },
+   "label": {
+    "x": 22,
+    "y": 550,
+    "w": 190,
+    "h": 14
+   },
+   "notes": {
+    "x": 22,
+    "y": 568,
+    "w": 190,
+    "h": 48
+   },
+   "line": {
+    "x": 22,
+    "y": 630,
+    "w": 90,
+    "h": 1
+   },
+   "size": {
+    "x": 22,
+    "y": 641,
+    "w": 190,
+    "h": 16
+   },
+   "price": {
+    "x": 22,
+    "y": 661,
+    "w": 190,
+    "h": 28
+   }
+  },
+  "bagBox": {
+   "x": 244,
+   "y": 466,
+   "w": 96,
+   "h": 224
+  },
+  "bagImg": {
+   "x": 244,
+   "y": 466,
+   "w": 96,
+   "h": 224
+  },
+  "cta": {
+   "x": 22,
+   "y": 724,
+   "w": 346,
+   "h": 54
+  },
+  "catalog": {
+   "x": 22,
+   "y": 786,
+   "w": 140,
+   "h": 44
+  },
+  "labNote": {
+   "x": 0,
+   "y": 844,
+   "w": 390,
+   "h": 109
+  },
+  "ctaText": "Comprar caf\u00e9 de Amazonas \u2197",
+  "ctaHref": "https://www.artidororodriguez.com/products/cafe-amazonas",
+  "catalogHref": "https://www.artidororodriguez.com/collections/cafe",
+  "pressed": [
+   "amazonas:true",
+   "cajamarca:false"
+  ],
+  "imgs": [
+   {
+    "o": "amazonas",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/amazonas-250g.webp"
+   },
+   {
+    "o": "cajamarca",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/cajamarca-250g.webp"
+   }
+  ],
+  "fonts": {
+   "h2": "48px",
+   "name": "26px",
+   "note": "12px",
+   "place": "20px",
+   "notes": "20px",
+   "price": "24px"
+  },
+  "doc": {
+   "iw": 390,
+   "ih": 844,
+   "cw": 390,
+   "sw": 390,
+   "sh": 1797,
+   "sy": 844
+  },
+  "overflowX": false,
+  "rowsCursor": [
+   "pointer",
+   "pointer",
+   "default",
+   "default",
+   "default"
+  ],
+  "rowsTag": [
+   "BUTTON:tab0",
+   "BUTTON:tab0",
+   "DIV",
+   "DIV",
+   "DIV"
+  ],
+  "size": "mobile",
+  "motion": "on",
+  "viewport": {
+   "iw": 390,
+   "ih": 844,
+   "dpr": 1,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 1797,
+   "sy": 844
+  },
+  "test": "02-mobile-amazonas-motionon"
+ },
+ {
+  "origin": "cajamarca",
+  "scene": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844
+  },
+  "kicker": {
+   "x": 22,
+   "y": 52,
+   "w": 346,
+   "h": 16
+  },
+  "h2": {
+   "x": 22,
+   "y": 76,
+   "w": 346,
+   "h": 88
+  },
+  "instruction": {
+   "x": 22,
+   "y": 170,
+   "w": 346,
+   "h": 18
+  },
+  "index": {
+   "x": 22,
+   "y": 192,
+   "w": 346,
+   "h": 240
+  },
+  "rows": [
+   {
+    "x": 22,
+    "y": 192,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 240,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 288,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 336,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 384,
+    "w": 346,
+    "h": 48
+   }
+  ],
+  "status": {
+   "x": 22,
+   "y": 440,
+   "w": 346,
+   "h": 16
+  },
+  "info": {
+   "kicker": {
+    "x": 22,
+    "y": 466,
+    "w": 190,
+    "h": 16
+   },
+   "place": {
+    "x": 22,
+    "y": 492,
+    "w": 190,
+    "h": 48
+   },
+   "label": {
+    "x": 22,
+    "y": 550,
+    "w": 190,
+    "h": 14
+   },
+   "notes": {
+    "x": 22,
+    "y": 568,
+    "w": 190,
+    "h": 48
+   },
+   "line": {
+    "x": 22,
+    "y": 630,
+    "w": 90,
+    "h": 1
+   },
+   "size": {
+    "x": 22,
+    "y": 641,
+    "w": 190,
+    "h": 16
+   },
+   "price": {
+    "x": 22,
+    "y": 661,
+    "w": 190,
+    "h": 28
+   }
+  },
+  "bagBox": {
+   "x": 244,
+   "y": 466,
+   "w": 96,
+   "h": 224
+  },
+  "bagImg": {
+   "x": 244,
+   "y": 466,
+   "w": 96,
+   "h": 224
+  },
+  "cta": {
+   "x": 22,
+   "y": 724,
+   "w": 346,
+   "h": 54
+  },
+  "catalog": {
+   "x": 22,
+   "y": 786,
+   "w": 140,
+   "h": 44
+  },
+  "labNote": {
+   "x": 0,
+   "y": 844,
+   "w": 390,
+   "h": 109
+  },
+  "ctaText": "Comprar caf\u00e9 de Cajamarca \u2197",
+  "ctaHref": "https://www.artidororodriguez.com/products/cafe-cajamarca",
+  "catalogHref": "https://www.artidororodriguez.com/collections/cafe",
+  "pressed": [
+   "amazonas:false",
+   "cajamarca:true"
+  ],
+  "imgs": [
+   {
+    "o": "amazonas",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/amazonas-250g.webp"
+   },
+   {
+    "o": "cajamarca",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/cajamarca-250g.webp"
+   }
+  ],
+  "fonts": {
+   "h2": "48px",
+   "name": "26px",
+   "note": "12px",
+   "place": "20px",
+   "notes": "20px",
+   "price": "24px"
+  },
+  "doc": {
+   "iw": 390,
+   "ih": 844,
+   "cw": 390,
+   "sw": 390,
+   "sh": 1797,
+   "sy": 844
+  },
+  "overflowX": false,
+  "rowsCursor": [
+   "pointer",
+   "pointer",
+   "default",
+   "default",
+   "default"
+  ],
+  "rowsTag": [
+   "BUTTON:tab0",
+   "BUTTON:tab0",
+   "DIV",
+   "DIV",
+   "DIV"
+  ],
+  "size": "mobile",
+  "motion": "on",
+  "viewport": {
+   "iw": 390,
+   "ih": 844,
+   "dpr": 1,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 1797,
+   "sy": 844
+  },
+  "test": "02-mobile-cajamarca-motionon"
+ },
+ {
+  "origin": "amazonas",
+  "scene": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844
+  },
+  "kicker": {
+   "x": 22,
+   "y": 52,
+   "w": 346,
+   "h": 16
+  },
+  "h2": {
+   "x": 22,
+   "y": 76,
+   "w": 346,
+   "h": 88
+  },
+  "instruction": {
+   "x": 22,
+   "y": 170,
+   "w": 346,
+   "h": 18
+  },
+  "index": {
+   "x": 22,
+   "y": 192,
+   "w": 346,
+   "h": 240
+  },
+  "rows": [
+   {
+    "x": 22,
+    "y": 192,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 240,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 288,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 336,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 384,
+    "w": 346,
+    "h": 48
+   }
+  ],
+  "status": {
+   "x": 22,
+   "y": 440,
+   "w": 346,
+   "h": 16
+  },
+  "info": {
+   "kicker": {
+    "x": 22,
+    "y": 466,
+    "w": 190,
+    "h": 16
+   },
+   "place": {
+    "x": 22,
+    "y": 492,
+    "w": 190,
+    "h": 48
+   },
+   "label": {
+    "x": 22,
+    "y": 550,
+    "w": 190,
+    "h": 14
+   },
+   "notes": {
+    "x": 22,
+    "y": 568,
+    "w": 190,
+    "h": 48
+   },
+   "line": {
+    "x": 22,
+    "y": 630,
+    "w": 90,
+    "h": 1
+   },
+   "size": {
+    "x": 22,
+    "y": 641,
+    "w": 190,
+    "h": 16
+   },
+   "price": {
+    "x": 22,
+    "y": 661,
+    "w": 190,
+    "h": 28
+   }
+  },
+  "bagBox": {
+   "x": 244,
+   "y": 466,
+   "w": 96,
+   "h": 224
+  },
+  "bagImg": {
+   "x": 244,
+   "y": 466,
+   "w": 96,
+   "h": 224
+  },
+  "cta": {
+   "x": 22,
+   "y": 724,
+   "w": 346,
+   "h": 54
+  },
+  "catalog": {
+   "x": 22,
+   "y": 786,
+   "w": 140,
+   "h": 44
+  },
+  "labNote": {
+   "x": 0,
+   "y": 844,
+   "w": 390,
+   "h": 109
+  },
+  "ctaText": "Comprar caf\u00e9 de Amazonas \u2197",
+  "ctaHref": "https://www.artidororodriguez.com/products/cafe-amazonas",
+  "catalogHref": "https://www.artidororodriguez.com/collections/cafe",
+  "pressed": [
+   "amazonas:true",
+   "cajamarca:false"
+  ],
+  "imgs": [
+   {
+    "o": "amazonas",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/amazonas-250g.webp"
+   },
+   {
+    "o": "cajamarca",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/cajamarca-250g.webp"
+   }
+  ],
+  "fonts": {
+   "h2": "48px",
+   "name": "26px",
+   "note": "12px",
+   "place": "20px",
+   "notes": "20px",
+   "price": "24px"
+  },
+  "doc": {
+   "iw": 390,
+   "ih": 844,
+   "cw": 390,
+   "sw": 390,
+   "sh": 1797,
+   "sy": 844
+  },
+  "overflowX": false,
+  "rowsCursor": [
+   "pointer",
+   "pointer",
+   "default",
+   "default",
+   "default"
+  ],
+  "rowsTag": [
+   "BUTTON:tab0",
+   "BUTTON:tab0",
+   "DIV",
+   "DIV",
+   "DIV"
+  ],
+  "size": "mobile",
+  "motion": "off",
+  "viewport": {
+   "iw": 390,
+   "ih": 844,
+   "dpr": 1,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 1797,
+   "sy": 844
+  },
+  "test": "02-mobile-amazonas-motionoff"
+ },
+ {
+  "origin": "cajamarca",
+  "scene": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 844
+  },
+  "kicker": {
+   "x": 22,
+   "y": 52,
+   "w": 346,
+   "h": 16
+  },
+  "h2": {
+   "x": 22,
+   "y": 76,
+   "w": 346,
+   "h": 88
+  },
+  "instruction": {
+   "x": 22,
+   "y": 170,
+   "w": 346,
+   "h": 18
+  },
+  "index": {
+   "x": 22,
+   "y": 192,
+   "w": 346,
+   "h": 240
+  },
+  "rows": [
+   {
+    "x": 22,
+    "y": 192,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 240,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 288,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 336,
+    "w": 346,
+    "h": 48
+   },
+   {
+    "x": 22,
+    "y": 384,
+    "w": 346,
+    "h": 48
+   }
+  ],
+  "status": {
+   "x": 22,
+   "y": 440,
+   "w": 346,
+   "h": 16
+  },
+  "info": {
+   "kicker": {
+    "x": 22,
+    "y": 466,
+    "w": 190,
+    "h": 16
+   },
+   "place": {
+    "x": 22,
+    "y": 492,
+    "w": 190,
+    "h": 48
+   },
+   "label": {
+    "x": 22,
+    "y": 550,
+    "w": 190,
+    "h": 14
+   },
+   "notes": {
+    "x": 22,
+    "y": 568,
+    "w": 190,
+    "h": 48
+   },
+   "line": {
+    "x": 22,
+    "y": 630,
+    "w": 90,
+    "h": 1
+   },
+   "size": {
+    "x": 22,
+    "y": 641,
+    "w": 190,
+    "h": 16
+   },
+   "price": {
+    "x": 22,
+    "y": 661,
+    "w": 190,
+    "h": 28
+   }
+  },
+  "bagBox": {
+   "x": 244,
+   "y": 466,
+   "w": 96,
+   "h": 224
+  },
+  "bagImg": {
+   "x": 244,
+   "y": 466,
+   "w": 96,
+   "h": 224
+  },
+  "cta": {
+   "x": 22,
+   "y": 724,
+   "w": 346,
+   "h": 54
+  },
+  "catalog": {
+   "x": 22,
+   "y": 786,
+   "w": 140,
+   "h": 44
+  },
+  "labNote": {
+   "x": 0,
+   "y": 844,
+   "w": 390,
+   "h": 109
+  },
+  "ctaText": "Comprar caf\u00e9 de Cajamarca \u2197",
+  "ctaHref": "https://www.artidororodriguez.com/products/cafe-cajamarca",
+  "catalogHref": "https://www.artidororodriguez.com/collections/cafe",
+  "pressed": [
+   "amazonas:false",
+   "cajamarca:true"
+  ],
+  "imgs": [
+   {
+    "o": "amazonas",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/amazonas-250g.webp"
+   },
+   {
+    "o": "cajamarca",
+    "complete": true,
+    "nw": 326,
+    "nh": 761,
+    "src": "/assets/cajamarca-250g.webp"
+   }
+  ],
+  "fonts": {
+   "h2": "48px",
+   "name": "26px",
+   "note": "12px",
+   "place": "20px",
+   "notes": "20px",
+   "price": "24px"
+  },
+  "doc": {
+   "iw": 390,
+   "ih": 844,
+   "cw": 390,
+   "sw": 390,
+   "sh": 1797,
+   "sy": 844
+  },
+  "overflowX": false,
+  "rowsCursor": [
+   "pointer",
+   "pointer",
+   "default",
+   "default",
+   "default"
+  ],
+  "rowsTag": [
+   "BUTTON:tab0",
+   "BUTTON:tab0",
+   "DIV",
+   "DIV",
+   "DIV"
+  ],
+  "size": "mobile",
+  "motion": "off",
+  "viewport": {
+   "iw": 390,
+   "ih": 844,
+   "dpr": 1,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 1797,
+   "sy": 844
+  },
+  "test": "02-mobile-cajamarca-motionoff"
+ }
+]

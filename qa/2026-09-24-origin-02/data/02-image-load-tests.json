@@ -1,0 +1,172 @@
+[
+ {
+  "test": "desktop: B opened directly: no request for cajamarca-250g.webp",
+  "ok": true,
+  "detail": "[\"/b/\", \"/assets/chivo-regular.woff2\", \"/src/peru.css\", \"/src/common.css\", \"/assets/barlow-condensed-800.ttf\", \"/src/lata.css\", \"/src/origin.css\", \"/src/main.js\", \"/src/origin.js\", \"/assets/amazonas-250g.webp\", \"/assets/cafetal-provisional.webp\", \"/assets/cafetal-foreground.webp\", \"/assets/logo-white.png\", \"/assets/logo-black.png\", \"/assets/otorongo-traced.svg\", \"/assets/chivo-bold.woff2\"]"
+ },
+ {
+  "test": "desktop: A opened then switched to B: no new requests caused by switching",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "test": "desktop: first switch to Cajamarca in A: bag loaded/decoded at commit, no empty frame",
+  "ok": true,
+  "detail": "{\"preloaded\": true, \"s\": {\"origin\": \"cajamarca\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-cajamarca\", \"text\": \"Comprar caf\\u00e9 de Cajamarca \\u2197\", \"pressed\": [\"amazonas:false\", \"cajamarca:true\"], \"status\": \"\", \"m\": {\"changes\": [\"cajamarca\"], \"clicks\": [], \"rej\": 0, \"minOp\": 0, \"outSeen\": true}, \"cajComplete\": true, \"cajNW\": 326}}"
+ },
+ {
+  "test": "desktop: slow load pending: Amazonas, its info and CTA stay shown; no fade; selection unchanged",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": false, \"cajNW\": 0}"
+ },
+ {
+  "test": "desktop: CTA operable while image pending (opens shown origin: Amazonas)",
+  "ok": true,
+  "detail": "[{\"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"shown\": \"amazonas\"}]"
+ },
+ {
+  "test": "desktop: slow load then back to Amazonas: late load does not change selection",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"\", \"m\": {\"changes\": [], \"clicks\": [{\"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"shown\": \"amazonas\"}], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": true, \"cajNW\": 326}"
+ },
+ {
+  "test": "desktop: image load error: current origin/CTA kept, opacity normal, brief message, no unhandled rejection",
+  "ok": true,
+  "detail": "{\"s\": {\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"No se pudo cargar este origen. Int\\u00e9ntalo de nuevo.\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": false, \"cajNW\": 0}, \"exc\": 0}"
+ },
+ {
+  "test": "desktop: after a failure, a new request retries and succeeds",
+  "ok": true,
+  "detail": "{\"retryRequests\": 1, \"s\": {\"origin\": \"cajamarca\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-cajamarca\", \"text\": \"Comprar caf\\u00e9 de Cajamarca \\u2197\", \"pressed\": [\"amazonas:false\", \"cajamarca:true\"], \"status\": \"\", \"m\": {\"changes\": [\"cajamarca\"], \"clicks\": [], \"rej\": 0, \"minOp\": 0, \"outSeen\": true}, \"cajComplete\": true, \"cajNW\": 326}}"
+ },
+ {
+  "test": "desktop: before the 4 s timeout: still waiting, current state intact",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": false, \"cajNW\": 0}"
+ },
+ {
+  "test": "desktop: after the 4 s timeout: current origin kept, message shown, no indefinite wait",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"No se pudo cargar este origen. Int\\u00e9ntalo de nuevo.\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": false, \"cajNW\": 0}"
+ },
+ {
+  "test": "desktop: late load after timeout does not change the selection",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"No se pudo cargar este origen. Int\\u00e9ntalo de nuevo.\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": true, \"cajNW\": 326}"
+ },
+ {
+  "test": "desktop: C\u2192A\u2192C while image pending: nothing changes yet",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": false, \"cajNW\": 0}"
+ },
+ {
+  "test": "desktop: after release the last request (Cajamarca) wins, exactly one change",
+  "ok": true,
+  "detail": "{\"origin\": \"cajamarca\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-cajamarca\", \"text\": \"Comprar caf\\u00e9 de Cajamarca \\u2197\", \"pressed\": [\"amazonas:false\", \"cajamarca:true\"], \"status\": \"\", \"m\": {\"changes\": [\"cajamarca\"], \"clicks\": [], \"rej\": 0, \"minOp\": 0, \"outSeen\": true}, \"cajComplete\": true, \"cajNW\": 326}"
+ },
+ {
+  "test": "desktop: Sin motion ON while image pending: no incoherent state (still Amazonas, no bag gap)",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": false, \"cajNW\": 0}"
+ },
+ {
+  "test": "desktop: image arrives: immediate commit (no fade phase), coherent",
+  "ok": true,
+  "detail": "{\"origin\": \"cajamarca\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-cajamarca\", \"text\": \"Comprar caf\\u00e9 de Cajamarca \\u2197\", \"pressed\": [\"amazonas:false\", \"cajamarca:true\"], \"status\": \"\", \"m\": {\"changes\": [\"cajamarca\"], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": true, \"cajNW\": 326}"
+ },
+ {
+  "test": "desktop: Sin motion already on + image held: click changes nothing, no empty bag",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": false, \"cajNW\": 0}"
+ },
+ {
+  "test": "desktop: then image ready: immediate coherent change",
+  "ok": true,
+  "detail": "{\"origin\": \"cajamarca\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-cajamarca\", \"text\": \"Comprar caf\\u00e9 de Cajamarca \\u2197\", \"pressed\": [\"amazonas:false\", \"cajamarca:true\"], \"status\": \"\", \"m\": {\"changes\": [\"cajamarca\"], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": true, \"cajNW\": 326}"
+ },
+ {
+  "test": "mobile: B opened directly: no request for cajamarca-250g.webp",
+  "ok": true,
+  "detail": "[\"/b/\", \"/assets/chivo-regular.woff2\", \"/src/peru.css\", \"/assets/barlow-condensed-800.ttf\", \"/src/common.css\", \"/src/lata.css\", \"/src/origin.css\", \"/src/main.js\", \"/assets/amazonas-250g.webp\", \"/assets/cafetal-provisional.webp\", \"/src/origin.js\", \"/assets/cafetal-foreground.webp\", \"/assets/logo-white.png\", \"/assets/otorongo-traced.svg\", \"/assets/logo-black.png\", \"/assets/chivo-bold.woff2\"]"
+ },
+ {
+  "test": "mobile: A opened then switched to B: no new requests caused by switching",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "test": "mobile: first switch to Cajamarca in A: bag loaded/decoded at commit, no empty frame",
+  "ok": true,
+  "detail": "{\"preloaded\": true, \"s\": {\"origin\": \"cajamarca\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-cajamarca\", \"text\": \"Comprar caf\\u00e9 de Cajamarca \\u2197\", \"pressed\": [\"amazonas:false\", \"cajamarca:true\"], \"status\": \"\", \"m\": {\"changes\": [\"cajamarca\"], \"clicks\": [], \"rej\": 0, \"minOp\": 0, \"outSeen\": true}, \"cajComplete\": true, \"cajNW\": 326}}"
+ },
+ {
+  "test": "mobile: slow load pending: Amazonas, its info and CTA stay shown; no fade; selection unchanged",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": false, \"cajNW\": 0}"
+ },
+ {
+  "test": "mobile: CTA operable while image pending (opens shown origin: Amazonas)",
+  "ok": true,
+  "detail": "[{\"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"shown\": \"amazonas\"}]"
+ },
+ {
+  "test": "mobile: slow load then back to Amazonas: late load does not change selection",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"\", \"m\": {\"changes\": [], \"clicks\": [{\"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"shown\": \"amazonas\"}], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": true, \"cajNW\": 326}"
+ },
+ {
+  "test": "mobile: image load error: current origin/CTA kept, opacity normal, brief message, no unhandled rejection",
+  "ok": true,
+  "detail": "{\"s\": {\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"No se pudo cargar este origen. Int\\u00e9ntalo de nuevo.\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": false, \"cajNW\": 0}, \"exc\": 0}"
+ },
+ {
+  "test": "mobile: after a failure, a new request retries and succeeds",
+  "ok": true,
+  "detail": "{\"retryRequests\": 1, \"s\": {\"origin\": \"cajamarca\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-cajamarca\", \"text\": \"Comprar caf\\u00e9 de Cajamarca \\u2197\", \"pressed\": [\"amazonas:false\", \"cajamarca:true\"], \"status\": \"\", \"m\": {\"changes\": [\"cajamarca\"], \"clicks\": [], \"rej\": 0, \"minOp\": 0, \"outSeen\": true}, \"cajComplete\": true, \"cajNW\": 326}}"
+ },
+ {
+  "test": "mobile: before the 4 s timeout: still waiting, current state intact",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": false, \"cajNW\": 0}"
+ },
+ {
+  "test": "mobile: after the 4 s timeout: current origin kept, message shown, no indefinite wait",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"No se pudo cargar este origen. Int\\u00e9ntalo de nuevo.\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": false, \"cajNW\": 0}"
+ },
+ {
+  "test": "mobile: late load after timeout does not change the selection",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"No se pudo cargar este origen. Int\\u00e9ntalo de nuevo.\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": true, \"cajNW\": 326}"
+ },
+ {
+  "test": "mobile: C\u2192A\u2192C while image pending: nothing changes yet",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": false, \"cajNW\": 0}"
+ },
+ {
+  "test": "mobile: after release the last request (Cajamarca) wins, exactly one change",
+  "ok": true,
+  "detail": "{\"origin\": \"cajamarca\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-cajamarca\", \"text\": \"Comprar caf\\u00e9 de Cajamarca \\u2197\", \"pressed\": [\"amazonas:false\", \"cajamarca:true\"], \"status\": \"\", \"m\": {\"changes\": [\"cajamarca\"], \"clicks\": [], \"rej\": 0, \"minOp\": 0, \"outSeen\": true}, \"cajComplete\": true, \"cajNW\": 326}"
+ },
+ {
+  "test": "mobile: Sin motion ON while image pending: no incoherent state (still Amazonas, no bag gap)",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": false, \"cajNW\": 0}"
+ },
+ {
+  "test": "mobile: image arrives: immediate commit (no fade phase), coherent",
+  "ok": true,
+  "detail": "{\"origin\": \"cajamarca\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-cajamarca\", \"text\": \"Comprar caf\\u00e9 de Cajamarca \\u2197\", \"pressed\": [\"amazonas:false\", \"cajamarca:true\"], \"status\": \"\", \"m\": {\"changes\": [\"cajamarca\"], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": true, \"cajNW\": 326}"
+ },
+ {
+  "test": "mobile: Sin motion already on + image held: click changes nothing, no empty bag",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-amazonas\", \"text\": \"Comprar caf\\u00e9 de Amazonas \\u2197\", \"pressed\": [\"amazonas:true\", \"cajamarca:false\"], \"status\": \"\", \"m\": {\"changes\": [], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": false, \"cajNW\": 0}"
+ },
+ {
+  "test": "mobile: then image ready: immediate coherent change",
+  "ok": true,
+  "detail": "{\"origin\": \"cajamarca\", \"isOut\": false, \"op\": \"1\", \"href\": \"https://www.artidororodriguez.com/products/cafe-cajamarca\", \"text\": \"Comprar caf\\u00e9 de Cajamarca \\u2197\", \"pressed\": [\"amazonas:false\", \"cajamarca:true\"], \"status\": \"\", \"m\": {\"changes\": [\"cajamarca\"], \"clicks\": [], \"rej\": 0, \"minOp\": 1, \"outSeen\": false}, \"cajComplete\": true, \"cajNW\": 326}"
+ }
+]

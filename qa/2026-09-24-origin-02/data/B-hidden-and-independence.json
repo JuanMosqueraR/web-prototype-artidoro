@@ -1,0 +1,82 @@
+[
+ {
+  "test": "desktop: B: 02 and lab note are display:none, no layout box, document height = 1 viewport",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"disp\": \"none\", \"noteDisp\": \"none\", \"offsetParent\": true, \"rect\": 0, \"hero\": [\"direction-a:false:hidden\", \"direction-b:false:shown\"], \"dir\": \"b\", \"doc\": 900}"
+ },
+ {
+  "test": "desktop: B: 30 Tab presses never reach #origin-scene or its lab note",
+  "ok": true,
+  "detail": "[\"A|\", \"A|\", \"INPUT|\", \"buy-button|\", \"origin-button|\", \"BODY|\", \"A|\", \"A|\", \"INPUT|\", \"buy-button|\", \"origin-button|\", \"A|\", \"A|\", \"INPUT|\"]"
+ },
+ {
+  "test": "desktop: B (motion off): 02 and lab note are display:none, no layout box, document height = 1 viewport",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"disp\": \"none\", \"noteDisp\": \"none\", \"offsetParent\": true, \"rect\": 0, \"hero\": [\"direction-a:false:hidden\", \"direction-b:false:shown\"], \"dir\": \"b\", \"doc\": 900}"
+ },
+ {
+  "test": "desktop: B (motion off): 30 Tab presses never reach #origin-scene or its lab note",
+  "ok": true,
+  "detail": "[\"A|\", \"A|\", \"INPUT|\", \"buy-button|\", \"origin-button|\", \"BODY|\", \"A|\", \"A|\", \"INPUT|\", \"buy-button|\", \"origin-button|\", \"A|\", \"A|\", \"INPUT|\"]"
+ },
+ {
+  "test": "desktop: hero Acercar does not reset 02 (Cajamarca kept)",
+  "ok": true,
+  "detail": "{\"origin\": \"cajamarca\", \"disp\": \"block\", \"noteDisp\": \"block\", \"offsetParent\": false, \"rect\": 900, \"hero\": [\"direction-a:true:shown\", \"direction-b:false:hidden\"], \"dir\": \"a\", \"doc\": 1861}"
+ },
+ {
+  "test": "desktop: switching to B hides 02",
+  "ok": true,
+  "detail": "{\"origin\": \"cajamarca\", \"disp\": \"none\", \"noteDisp\": \"none\", \"offsetParent\": true, \"rect\": 0, \"hero\": [\"direction-a:true:hidden\", \"direction-b:false:shown\"], \"dir\": \"b\", \"doc\": 900}"
+ },
+ {
+  "test": "desktop: back to A: 02 shown again with Cajamarca and hero still expanded",
+  "ok": true,
+  "detail": "{\"origin\": \"cajamarca\", \"disp\": \"block\", \"noteDisp\": \"block\", \"offsetParent\": false, \"rect\": 900, \"hero\": [\"direction-a:true:shown\", \"direction-b:false:hidden\"], \"dir\": \"a\", \"doc\": 1861}"
+ },
+ {
+  "test": "desktop: 02 selection does not change the hero state",
+  "ok": true,
+  "detail": "{\"hero\": \"false\", \"s\": {\"origin\": \"amazonas\", \"disp\": \"block\", \"noteDisp\": \"block\", \"offsetParent\": false, \"rect\": 900, \"hero\": [\"direction-a:false:shown\", \"direction-b:false:hidden\"], \"dir\": \"a\", \"doc\": 1861}}"
+ },
+ {
+  "test": "mobile: B: 02 and lab note are display:none, no layout box, document height = 1 viewport",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"disp\": \"none\", \"noteDisp\": \"none\", \"offsetParent\": true, \"rect\": 0, \"hero\": [\"direction-a:false:hidden\", \"direction-b:false:shown\"], \"dir\": \"b\", \"doc\": 844}"
+ },
+ {
+  "test": "mobile: B: 30 Tab presses never reach #origin-scene or its lab note",
+  "ok": true,
+  "detail": "[\"A|\", \"A|\", \"INPUT|\", \"buy-button|\", \"origin-button|\", \"BODY|\", \"A|\", \"A|\", \"INPUT|\", \"buy-button|\", \"origin-button|\", \"A|\", \"A|\", \"INPUT|\"]"
+ },
+ {
+  "test": "mobile: B (motion off): 02 and lab note are display:none, no layout box, document height = 1 viewport",
+  "ok": true,
+  "detail": "{\"origin\": \"amazonas\", \"disp\": \"none\", \"noteDisp\": \"none\", \"offsetParent\": true, \"rect\": 0, \"hero\": [\"direction-a:false:hidden\", \"direction-b:false:shown\"], \"dir\": \"b\", \"doc\": 844}"
+ },
+ {
+  "test": "mobile: B (motion off): 30 Tab presses never reach #origin-scene or its lab note",
+  "ok": true,
+  "detail": "[\"A|\", \"A|\", \"INPUT|\", \"buy-button|\", \"origin-button|\", \"BODY|\", \"A|\", \"A|\", \"INPUT|\", \"buy-button|\", \"origin-button|\", \"A|\", \"A|\", \"INPUT|\"]"
+ },
+ {
+  "test": "mobile: hero Acercar does not reset 02 (Cajamarca kept)",
+  "ok": true,
+  "detail": "{\"origin\": \"cajamarca\", \"disp\": \"block\", \"noteDisp\": \"block\", \"offsetParent\": false, \"rect\": 844, \"hero\": [\"direction-a:true:shown\", \"direction-b:false:hidden\"], \"dir\": \"a\", \"doc\": 1797}"
+ },
+ {
+  "test": "mobile: switching to B hides 02",
+  "ok": true,
+  "detail": "{\"origin\": \"cajamarca\", \"disp\": \"none\", \"noteDisp\": \"none\", \"offsetParent\": true, \"rect\": 0, \"hero\": [\"direction-a:true:hidden\", \"direction-b:false:shown\"], \"dir\": \"b\", \"doc\": 844}"
+ },
+ {
+  "test": "mobile: back to A: 02 shown again with Cajamarca and hero still expanded",
+  "ok": true,
+  "detail": "{\"origin\": \"cajamarca\", \"disp\": \"block\", \"noteDisp\": \"block\", \"offsetParent\": false, \"rect\": 844, \"hero\": [\"direction-a:true:shown\", \"direction-b:false:hidden\"], \"dir\": \"a\", \"doc\": 1797}"
+ },
+ {
+  "test": "mobile: 02 selection does not change the hero state",
+  "ok": true,
+  "detail": "{\"hero\": \"false\", \"s\": {\"origin\": \"amazonas\", \"disp\": \"block\", \"noteDisp\": \"block\", \"offsetParent\": false, \"rect\": 844, \"hero\": [\"direction-a:false:shown\", \"direction-b:false:hidden\"], \"dir\": \"a\", \"doc\": 1797}}"
+ }
+]

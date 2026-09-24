@@ -1,0 +1,1058 @@
+[
+ {
+  "test": "A-desktop-initial-motionon",
+  "direction": "a",
+  "size": "desktop",
+  "frame": "initial",
+  "motion": "on",
+  "viewport": {
+   "iw": 1440,
+   "ih": 900,
+   "dpr": 1,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 1861,
+   "sy": 0
+  },
+  "scene": "direction-a",
+  "expanded": "false",
+  "bag": {
+   "x": 973.66,
+   "y": 249.44,
+   "w": 212.67,
+   "h": 496.47
+  },
+  "cta": {
+   "x": 86.39,
+   "y": 660.31,
+   "w": 330,
+   "h": 58
+  },
+  "trust": {
+   "x": 86.39,
+   "y": 735.31,
+   "w": 330,
+   "h": 18.69
+  },
+  "interaction": {
+   "x": 705.59,
+   "y": 686,
+   "w": 190,
+   "h": 48
+  },
+  "hero": {
+   "w": 1440,
+   "h": 856,
+   "sw": 1440,
+   "sh": 856,
+   "top": 44
+  },
+  "doc": {
+   "iw": 1440,
+   "ih": 900,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 1861,
+   "bodySW": 1440,
+   "bodySH": 1861,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": "0.8s",
+   "animal": null
+  },
+  "origin": "block"
+ },
+ {
+  "test": "A-desktop-expanded-motionon",
+  "direction": "a",
+  "size": "desktop",
+  "frame": "expanded",
+  "motion": "on",
+  "viewport": {
+   "iw": 1440,
+   "ih": 900,
+   "dpr": 1,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 1861,
+   "sy": 0
+  },
+  "scene": "direction-a",
+  "expanded": "true",
+  "bag": {
+   "x": 973.66,
+   "y": 249.44,
+   "w": 212.67,
+   "h": 496.47
+  },
+  "cta": {
+   "x": 86.39,
+   "y": 660.31,
+   "w": 330,
+   "h": 58
+  },
+  "trust": {
+   "x": 86.39,
+   "y": 735.31,
+   "w": 330,
+   "h": 18.69
+  },
+  "interaction": {
+   "x": 705.59,
+   "y": 686,
+   "w": 190,
+   "h": 48
+  },
+  "hero": {
+   "w": 1440,
+   "h": 856,
+   "sw": 1440,
+   "sh": 856,
+   "top": 44
+  },
+  "doc": {
+   "iw": 1440,
+   "ih": 900,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 1861,
+   "bodySW": 1440,
+   "bodySH": 1861,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": "0.8s",
+   "animal": null
+  },
+  "origin": "block"
+ },
+ {
+  "test": "A-desktop-initial-motionoff",
+  "direction": "a",
+  "size": "desktop",
+  "frame": "initial",
+  "motion": "off",
+  "viewport": {
+   "iw": 1440,
+   "ih": 900,
+   "dpr": 1,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 1861,
+   "sy": 0
+  },
+  "scene": "direction-a",
+  "expanded": "false",
+  "bag": {
+   "x": 973.66,
+   "y": 249.44,
+   "w": 212.67,
+   "h": 496.47
+  },
+  "cta": {
+   "x": 86.39,
+   "y": 660.31,
+   "w": 330,
+   "h": 58
+  },
+  "trust": {
+   "x": 86.39,
+   "y": 735.31,
+   "w": 330,
+   "h": 18.69
+  },
+  "interaction": {
+   "x": 705.59,
+   "y": 686,
+   "w": 190,
+   "h": 48
+  },
+  "hero": {
+   "w": 1440,
+   "h": 856,
+   "sw": 1440,
+   "sh": 856,
+   "top": 44
+  },
+  "doc": {
+   "iw": 1440,
+   "ih": 900,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 1861,
+   "bodySW": 1440,
+   "bodySH": 1861,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": "0s",
+   "animal": null
+  },
+  "origin": "block"
+ },
+ {
+  "test": "A-desktop-expanded-motionoff",
+  "direction": "a",
+  "size": "desktop",
+  "frame": "expanded",
+  "motion": "off",
+  "viewport": {
+   "iw": 1440,
+   "ih": 900,
+   "dpr": 1,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 1861,
+   "sy": 0
+  },
+  "scene": "direction-a",
+  "expanded": "true",
+  "bag": {
+   "x": 973.66,
+   "y": 249.44,
+   "w": 212.67,
+   "h": 496.47
+  },
+  "cta": {
+   "x": 86.39,
+   "y": 660.31,
+   "w": 330,
+   "h": 58
+  },
+  "trust": {
+   "x": 86.39,
+   "y": 735.31,
+   "w": 330,
+   "h": 18.69
+  },
+  "interaction": {
+   "x": 705.59,
+   "y": 686,
+   "w": 190,
+   "h": 48
+  },
+  "hero": {
+   "w": 1440,
+   "h": 856,
+   "sw": 1440,
+   "sh": 856,
+   "top": 44
+  },
+  "doc": {
+   "iw": 1440,
+   "ih": 900,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 1861,
+   "bodySW": 1440,
+   "bodySH": 1861,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": "0s",
+   "animal": null
+  },
+  "origin": "block"
+ },
+ {
+  "test": "A-mobile-initial-motionon",
+  "direction": "a",
+  "size": "mobile",
+  "frame": "initial",
+  "motion": "on",
+  "viewport": {
+   "iw": 390,
+   "ih": 844,
+   "dpr": 1,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 1797,
+   "sy": 0
+  },
+  "scene": "direction-a",
+  "expanded": "false",
+  "bag": {
+   "x": 226.22,
+   "y": 317,
+   "w": 116.94,
+   "h": 273
+  },
+  "cta": {
+   "x": 22,
+   "y": 629,
+   "w": 346,
+   "h": 54
+  },
+  "trust": {
+   "x": 22,
+   "y": 700,
+   "w": 346,
+   "h": 32
+  },
+  "interaction": {
+   "x": 22,
+   "y": 529,
+   "w": 168,
+   "h": 46
+  },
+  "hero": {
+   "w": 390,
+   "h": 800,
+   "sw": 390,
+   "sh": 800,
+   "top": 44
+  },
+  "doc": {
+   "iw": 390,
+   "ih": 844,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 1797,
+   "bodySW": 390,
+   "bodySH": 1797,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": "0.8s",
+   "animal": null
+  },
+  "origin": "block"
+ },
+ {
+  "test": "A-mobile-expanded-motionon",
+  "direction": "a",
+  "size": "mobile",
+  "frame": "expanded",
+  "motion": "on",
+  "viewport": {
+   "iw": 390,
+   "ih": 844,
+   "dpr": 1,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 1797,
+   "sy": 0
+  },
+  "scene": "direction-a",
+  "expanded": "true",
+  "bag": {
+   "x": 226.22,
+   "y": 317,
+   "w": 116.94,
+   "h": 273
+  },
+  "cta": {
+   "x": 22,
+   "y": 629,
+   "w": 346,
+   "h": 54
+  },
+  "trust": {
+   "x": 22,
+   "y": 700,
+   "w": 346,
+   "h": 32
+  },
+  "interaction": {
+   "x": 22,
+   "y": 529,
+   "w": 168,
+   "h": 46
+  },
+  "hero": {
+   "w": 390,
+   "h": 800,
+   "sw": 390,
+   "sh": 800,
+   "top": 44
+  },
+  "doc": {
+   "iw": 390,
+   "ih": 844,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 1797,
+   "bodySW": 390,
+   "bodySH": 1797,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": "0.8s",
+   "animal": null
+  },
+  "origin": "block"
+ },
+ {
+  "test": "A-mobile-initial-motionoff",
+  "direction": "a",
+  "size": "mobile",
+  "frame": "initial",
+  "motion": "off",
+  "viewport": {
+   "iw": 390,
+   "ih": 844,
+   "dpr": 1,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 1797,
+   "sy": 0
+  },
+  "scene": "direction-a",
+  "expanded": "false",
+  "bag": {
+   "x": 226.22,
+   "y": 317,
+   "w": 116.94,
+   "h": 273
+  },
+  "cta": {
+   "x": 22,
+   "y": 629,
+   "w": 346,
+   "h": 54
+  },
+  "trust": {
+   "x": 22,
+   "y": 700,
+   "w": 346,
+   "h": 32
+  },
+  "interaction": {
+   "x": 22,
+   "y": 529,
+   "w": 168,
+   "h": 46
+  },
+  "hero": {
+   "w": 390,
+   "h": 800,
+   "sw": 390,
+   "sh": 800,
+   "top": 44
+  },
+  "doc": {
+   "iw": 390,
+   "ih": 844,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 1797,
+   "bodySW": 390,
+   "bodySH": 1797,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": "0s",
+   "animal": null
+  },
+  "origin": "block"
+ },
+ {
+  "test": "A-mobile-expanded-motionoff",
+  "direction": "a",
+  "size": "mobile",
+  "frame": "expanded",
+  "motion": "off",
+  "viewport": {
+   "iw": 390,
+   "ih": 844,
+   "dpr": 1,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 1797,
+   "sy": 0
+  },
+  "scene": "direction-a",
+  "expanded": "true",
+  "bag": {
+   "x": 226.22,
+   "y": 317,
+   "w": 116.94,
+   "h": 273
+  },
+  "cta": {
+   "x": 22,
+   "y": 629,
+   "w": 346,
+   "h": 54
+  },
+  "trust": {
+   "x": 22,
+   "y": 700,
+   "w": 346,
+   "h": 32
+  },
+  "interaction": {
+   "x": 22,
+   "y": 529,
+   "w": 168,
+   "h": 46
+  },
+  "hero": {
+   "w": 390,
+   "h": 800,
+   "sw": 390,
+   "sh": 800,
+   "top": 44
+  },
+  "doc": {
+   "iw": 390,
+   "ih": 844,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 1797,
+   "bodySW": 390,
+   "bodySH": 1797,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": "0s",
+   "animal": null
+  },
+  "origin": "block"
+ },
+ {
+  "test": "B-desktop-initial-motionon",
+  "direction": "b",
+  "size": "desktop",
+  "frame": "initial",
+  "motion": "on",
+  "viewport": {
+   "iw": 1440,
+   "ih": 900,
+   "dpr": 1,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 900,
+   "sy": 0
+  },
+  "scene": "direction-b",
+  "expanded": "false",
+  "bag": {
+   "x": 671.26,
+   "y": 258,
+   "w": 212.67,
+   "h": 496.47
+  },
+  "cta": {
+   "x": 86.39,
+   "y": 660.31,
+   "w": 330,
+   "h": 58
+  },
+  "trust": {
+   "x": 86.39,
+   "y": 735.31,
+   "w": 330,
+   "h": 18.69
+  },
+  "interaction": {
+   "x": 1163.61,
+   "y": 566.16,
+   "w": 190,
+   "h": 48
+  },
+  "hero": {
+   "w": 1440,
+   "h": 856,
+   "sw": 1454,
+   "sh": 890,
+   "top": 44
+  },
+  "doc": {
+   "iw": 1440,
+   "ih": 900,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 900,
+   "bodySW": 1440,
+   "bodySH": 900,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": null,
+   "animal": "0.65s, 0.65s"
+  },
+  "origin": "none"
+ },
+ {
+  "test": "B-desktop-expanded-motionon",
+  "direction": "b",
+  "size": "desktop",
+  "frame": "expanded",
+  "motion": "on",
+  "viewport": {
+   "iw": 1440,
+   "ih": 900,
+   "dpr": 1,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 900,
+   "sy": 0
+  },
+  "scene": "direction-b",
+  "expanded": "true",
+  "bag": {
+   "x": 671.26,
+   "y": 258,
+   "w": 212.67,
+   "h": 496.47
+  },
+  "cta": {
+   "x": 86.39,
+   "y": 660.31,
+   "w": 330,
+   "h": 58
+  },
+  "trust": {
+   "x": 86.39,
+   "y": 735.31,
+   "w": 330,
+   "h": 18.69
+  },
+  "interaction": {
+   "x": 1163.61,
+   "y": 566.16,
+   "w": 190,
+   "h": 48
+  },
+  "hero": {
+   "w": 1440,
+   "h": 856,
+   "sw": 1440,
+   "sh": 890,
+   "top": 44
+  },
+  "doc": {
+   "iw": 1440,
+   "ih": 900,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 900,
+   "bodySW": 1440,
+   "bodySH": 900,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": null,
+   "animal": "0.65s, 0.65s"
+  },
+  "origin": "none"
+ },
+ {
+  "test": "B-desktop-initial-motionoff",
+  "direction": "b",
+  "size": "desktop",
+  "frame": "initial",
+  "motion": "off",
+  "viewport": {
+   "iw": 1440,
+   "ih": 900,
+   "dpr": 1,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 900,
+   "sy": 0
+  },
+  "scene": "direction-b",
+  "expanded": "false",
+  "bag": {
+   "x": 671.26,
+   "y": 258,
+   "w": 212.67,
+   "h": 496.47
+  },
+  "cta": {
+   "x": 86.39,
+   "y": 660.31,
+   "w": 330,
+   "h": 58
+  },
+  "trust": {
+   "x": 86.39,
+   "y": 735.31,
+   "w": 330,
+   "h": 18.69
+  },
+  "interaction": {
+   "x": 1163.61,
+   "y": 566.16,
+   "w": 190,
+   "h": 48
+  },
+  "hero": {
+   "w": 1440,
+   "h": 856,
+   "sw": 1454,
+   "sh": 890,
+   "top": 44
+  },
+  "doc": {
+   "iw": 1440,
+   "ih": 900,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 900,
+   "bodySW": 1440,
+   "bodySH": 900,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": null,
+   "animal": "0s"
+  },
+  "origin": "none"
+ },
+ {
+  "test": "B-desktop-expanded-motionoff",
+  "direction": "b",
+  "size": "desktop",
+  "frame": "expanded",
+  "motion": "off",
+  "viewport": {
+   "iw": 1440,
+   "ih": 900,
+   "dpr": 1,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 900,
+   "sy": 0
+  },
+  "scene": "direction-b",
+  "expanded": "true",
+  "bag": {
+   "x": 671.26,
+   "y": 258,
+   "w": 212.67,
+   "h": 496.47
+  },
+  "cta": {
+   "x": 86.39,
+   "y": 660.31,
+   "w": 330,
+   "h": 58
+  },
+  "trust": {
+   "x": 86.39,
+   "y": 735.31,
+   "w": 330,
+   "h": 18.69
+  },
+  "interaction": {
+   "x": 1163.61,
+   "y": 566.16,
+   "w": 190,
+   "h": 48
+  },
+  "hero": {
+   "w": 1440,
+   "h": 856,
+   "sw": 1440,
+   "sh": 890,
+   "top": 44
+  },
+  "doc": {
+   "iw": 1440,
+   "ih": 900,
+   "cw": 1440,
+   "ch": 900,
+   "sw": 1440,
+   "sh": 900,
+   "bodySW": 1440,
+   "bodySH": 900,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": null,
+   "animal": "0s"
+  },
+  "origin": "none"
+ },
+ {
+  "test": "B-mobile-initial-motionon",
+  "direction": "b",
+  "size": "mobile",
+  "frame": "initial",
+  "motion": "on",
+  "viewport": {
+   "iw": 390,
+   "ih": 844,
+   "dpr": 1,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 844,
+   "sy": 0
+  },
+  "scene": "direction-b",
+  "expanded": "false",
+  "bag": {
+   "x": 38.17,
+   "y": 225,
+   "w": 118.66,
+   "h": 277
+  },
+  "cta": {
+   "x": 22,
+   "y": 629,
+   "w": 346,
+   "h": 54
+  },
+  "trust": {
+   "x": 22,
+   "y": 700,
+   "w": 346,
+   "h": 32
+  },
+  "interaction": {
+   "x": 198,
+   "y": 467,
+   "w": 170,
+   "h": 46
+  },
+  "hero": {
+   "w": 390,
+   "h": 800,
+   "sw": 425,
+   "sh": 800,
+   "top": 44
+  },
+  "doc": {
+   "iw": 390,
+   "ih": 844,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 844,
+   "bodySW": 390,
+   "bodySH": 844,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": null,
+   "animal": "0.65s, 0.65s"
+  },
+  "origin": "none"
+ },
+ {
+  "test": "B-mobile-expanded-motionon",
+  "direction": "b",
+  "size": "mobile",
+  "frame": "expanded",
+  "motion": "on",
+  "viewport": {
+   "iw": 390,
+   "ih": 844,
+   "dpr": 1,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 844,
+   "sy": 0
+  },
+  "scene": "direction-b",
+  "expanded": "true",
+  "bag": {
+   "x": 38.17,
+   "y": 225,
+   "w": 118.66,
+   "h": 277
+  },
+  "cta": {
+   "x": 22,
+   "y": 629,
+   "w": 346,
+   "h": 54
+  },
+  "trust": {
+   "x": 22,
+   "y": 700,
+   "w": 346,
+   "h": 32
+  },
+  "interaction": {
+   "x": 198,
+   "y": 467,
+   "w": 170,
+   "h": 46
+  },
+  "hero": {
+   "w": 390,
+   "h": 800,
+   "sw": 390,
+   "sh": 800,
+   "top": 44
+  },
+  "doc": {
+   "iw": 390,
+   "ih": 844,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 844,
+   "bodySW": 390,
+   "bodySH": 844,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": null,
+   "animal": "0.65s, 0.65s"
+  },
+  "origin": "none"
+ },
+ {
+  "test": "B-mobile-initial-motionoff",
+  "direction": "b",
+  "size": "mobile",
+  "frame": "initial",
+  "motion": "off",
+  "viewport": {
+   "iw": 390,
+   "ih": 844,
+   "dpr": 1,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 844,
+   "sy": 0
+  },
+  "scene": "direction-b",
+  "expanded": "false",
+  "bag": {
+   "x": 38.17,
+   "y": 225,
+   "w": 118.66,
+   "h": 277
+  },
+  "cta": {
+   "x": 22,
+   "y": 629,
+   "w": 346,
+   "h": 54
+  },
+  "trust": {
+   "x": 22,
+   "y": 700,
+   "w": 346,
+   "h": 32
+  },
+  "interaction": {
+   "x": 198,
+   "y": 467,
+   "w": 170,
+   "h": 46
+  },
+  "hero": {
+   "w": 390,
+   "h": 800,
+   "sw": 425,
+   "sh": 800,
+   "top": 44
+  },
+  "doc": {
+   "iw": 390,
+   "ih": 844,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 844,
+   "bodySW": 390,
+   "bodySH": 844,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": null,
+   "animal": "0s"
+  },
+  "origin": "none"
+ },
+ {
+  "test": "B-mobile-expanded-motionoff",
+  "direction": "b",
+  "size": "mobile",
+  "frame": "expanded",
+  "motion": "off",
+  "viewport": {
+   "iw": 390,
+   "ih": 844,
+   "dpr": 1,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 844,
+   "sy": 0
+  },
+  "scene": "direction-b",
+  "expanded": "true",
+  "bag": {
+   "x": 38.17,
+   "y": 225,
+   "w": 118.66,
+   "h": 277
+  },
+  "cta": {
+   "x": 22,
+   "y": 629,
+   "w": 346,
+   "h": 54
+  },
+  "trust": {
+   "x": 22,
+   "y": 700,
+   "w": 346,
+   "h": 32
+  },
+  "interaction": {
+   "x": 198,
+   "y": 467,
+   "w": 170,
+   "h": 46
+  },
+  "hero": {
+   "w": 390,
+   "h": 800,
+   "sw": 390,
+   "sh": 800,
+   "top": 44
+  },
+  "doc": {
+   "iw": 390,
+   "ih": 844,
+   "cw": 390,
+   "ch": 844,
+   "sw": 390,
+   "sh": 844,
+   "bodySW": 390,
+   "bodySH": 844,
+   "scrollbar": 0
+  },
+  "trans": {
+   "landscapeFar": null,
+   "animal": "0s"
+  },
+  "origin": "none"
+ }
+]
