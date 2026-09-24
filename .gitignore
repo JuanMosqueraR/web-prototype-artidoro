@@ -2,3 +2,5 @@ node_modules/
 dist/
 qa/*-raw.jpg
 qa/draft-*
+tools/apimart/.env
+tools/apimart/data/

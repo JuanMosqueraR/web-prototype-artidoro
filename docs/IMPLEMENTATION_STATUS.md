@@ -22,6 +22,7 @@ HTML semántico, CSS y JavaScript vanilla, con **Vite 7.1.3** como dependencia d
 | `deliverables/` | Dos HTML autónomos y seis capturas finales |
 | `scripts/export-standalone.py` | Exportación HTML con CSS, JS y assets embebidos; Python estándar |
 | `scripts/prepare-assets.py` / `scripts/trace-otorongo.py` | Preparación determinista opcional; requieren Pillow y NumPy |
+| `tools/apimart/` | Tooling local reutilizable para generar assets vía APIMart; Node core, sin dependencias; `.env` y `data/` ignorados. Ver su [README](../tools/apimart/README.md). |
 | `package.json`, `package-lock.json`, `vite.config.js` | Scripts, dependencias y configuración de desarrollo |
 
 El [README original](../README.md) sigue siendo la referencia operativa general. Los enlaces relativos de este handoff asumen `/docs` directamente dentro de la raíz del proyecto.
