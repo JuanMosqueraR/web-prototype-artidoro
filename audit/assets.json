@@ -12,6 +12,21 @@
       "preparation": "Silhouette mask, transparent crop, WebP. Original photographed pixels; no retouching of labels."
     },
     {
+      "id": "cajamarca-bag",
+      "status": "REAL_ASSET",
+      "source": "https://www.artidororodriguez.com/cdn/shop/files/250GCAJAMARCA.jpg?v=1789063400",
+      "source_page": "https://www.artidororodriguez.com/products/cafe-cajamarca",
+      "retrieved": "2026-09-24",
+      "original_file": "audit/source/cajamarca-original.jpg",
+      "original_sha256": "441e29a21178fed17c62d86c4b0556c8e3695f045cf4efc905445cb36a7115c2",
+      "original_size": "1080 × 1080; bag occupies ~310 × 747 px (same framing and silhouette as the Amazonas photo)",
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "used_file": "cajamarca-250g.webp",
+      "script": "scripts/prepare-cajamarca.py",
+      "used_in": "Scene 02 only (direction A continuation); not used by the heroes",
+      "preparation": "Silhouette mask, transparent crop (352,179,678,940), WebP. Same polygon as the Amazonas bag; validated against the Cajamarca photo (kraft-mask IoU with the Amazonas photo 0.998; polygon leaves the same 2 057 px of shadow/edge outside and the same halo count as on Amazonas; top, sides and base checked in enlarged overlays on cream and green). Original photographed pixels; label, illustration and colour untouched."
+    },
+    {
       "id": "logos",
       "status": "REAL_ASSET",
       "sources": [
@@ -109,7 +124,39 @@
   "verified_copy": {
     "product": "https://www.artidororodriguez.com/products/cafe-amazonas",
     "weekly_roast": "https://www.artidororodriguez.com/",
-    "physical_stores": "https://www.artidororodriguez.com/pages/locales"
+    "physical_stores": "https://www.artidororodriguez.com/pages/locales",
+    "origin_scene_02": {
+      "verified_on": "2026-09-24",
+      "method": "Public product JSON (/products/cafe-<origin>.json) and the product page metafields (procedencia, notas)",
+      "collection": "https://www.artidororodriguez.com/collections/cafe",
+      "origins": {
+        "amazonas": {
+          "page": "https://www.artidororodriguez.com/products/cafe-amazonas",
+          "procedencia": "Rodríguez de Mendoza",
+          "notas": "Naranja y melaza",
+          "price_250g_PEN": "39.90"
+        },
+        "cajamarca": {
+          "page": "https://www.artidororodriguez.com/products/cafe-cajamarca",
+          "procedencia": "San Ignacio",
+          "notas": "Frutos secos y chancaca",
+          "price_250g_PEN": "39.90"
+        },
+        "villa-rica": {
+          "page": "https://www.artidororodriguez.com/products/cafe-villa-rica",
+          "notas": "Frutos rojos, pasas, dulce"
+        },
+        "cusco": {
+          "page": "https://www.artidororodriguez.com/products/cafe-cusco",
+          "notas": "Chocolate y nueces"
+        },
+        "puno": {
+          "page": "https://www.artidororodriguez.com/products/cafe-puno",
+          "notas": "Chocolate y frutos secos"
+        }
+      },
+      "note": "S/ 39.90 is the 250 g price on the official pages on the verification date (same as the checkpoint reference). Availability and promotions were not verified and are not stated in the scene."
+    }
   },
   "ai_generated_assets": []
 }

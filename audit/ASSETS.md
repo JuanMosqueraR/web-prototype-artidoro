@@ -3,6 +3,7 @@
 | Material | Clasificación | Uso en el lab |
 |---|---|---|
 | Foto oficial de Amazonas 250 g | REAL_ASSET → USABLE_WITH_PREPARATION | Misma bolsa recortada en A y B |
+| Foto oficial de Cajamarca 250 g | REAL_ASSET → USABLE_WITH_PREPARATION | Bolsa recortada; solo escena 02 |
 | Logotipos blanco/negro y Chivo | REAL_ASSET | Marca y texto |
 | Ilustración botánica del packaging | REAL_ASSET | Conservada en la bolsa fotografiada |
 | Fotograma de cafetal de Artidoro | USABLE_WITH_PREPARATION | Dos planos en A; PROVISIONAL_ASSET, ubicación no confirmada |
