@@ -1,6 +1,6 @@
 {
   "review_date": "2026-09-23",
-  "scope": "Public Artidoro material; no generated imagery. Only the two heroes.",
+  "scope": "Public Artidoro material; no generated imagery. Only the two heroes. Exception for CP04 only (L15): two CONCEPTUAL_ASSET images adopted 2026-09-24.",
   "assets": [
     {
       "id": "amazonas-bag",
@@ -98,6 +98,132 @@
       "family": "Barlow Condensed ExtraBold",
       "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1_3E.ttf",
       "note": "New typographic choice for this lab; not presented as an existing Artidoro asset."
+    },
+    {
+      "id": "cp04-entrada",
+      "status": "CONCEPTUAL_ASSET",
+      "decision": "L15, L16, L17 (docs/DECISIONS.md)",
+      "adopted": "2026-09-24",
+      "used_in": "CP04 “Tomar asiento” (direction A continuation) only; not implemented yet",
+      "model": "gemini-3-pro-image-preview (Nano Banana Pro) via tools/apimart edit-image; working tree with uncommitted tooling changes",
+      "base_photo_condition": "Google Maps reference photo, authorship unconfirmed; used only for this demo/prototype. Base file lives in untracked reference/tarata/, not in audit/source/.",
+      "not_evidence": "AI-intervened image: not documentary evidence of the venue; must stay identified as conceptual/provisional.",
+      "reproducibility": "Manual / non-reproducible: generative steps are non-deterministic; branding restoration done with an ad-hoc local script (not in scripts/).",
+      "state": "Estado 1 “Desde la entrada”",
+      "used_file": "cp04-entrada.jpg",
+      "size": "1792 × 2400 (3:4) JPEG",
+      "sha256": "2145d14a030028f7d62abb8bc1ff74ad6938649dcb168d23b74fea7878deb72f",
+      "base": {
+        "file": "reference/tarata/02-facade.webp",
+        "note": "Doorway view looking in (despite the file name); WebP 1152 × 1530",
+        "sha256": "09e2a73329c700cefbf7203ac56ac3f7d0badcf020d12ab0aee82bd8f7d59921"
+      },
+      "steps": [
+        {
+          "task_id": "task_01M3AQ5SX3PRNN65HNCXSAY1RW",
+          "operation": "edit-image",
+          "input": "base photo",
+          "output": "2K 3:4",
+          "prompt": "Edit this photo: make it evening. Make only these concrete changes:\n1. The foreground floor near the camera falls into soft shadow, because the street behind the camera is now dark.\n2. Overall exposure is about one stop darker; the ceiling and white surfaces become dimmer and warmer.\n3. The three black dome pendant lamps over the counter are clearly switched on: bright warm bulbs visible inside, warm cones of light falling onto the counter top and onto the blue tiles below them.\n4. The wall sconces on the right glow and cast warm light onto the wall.\n5. Warm tungsten colour temperature overall, with deep blacks.\nKeep everything else identical: same camera, framing, architecture, objects, people and materials. Do not change any text, sign, sack, logo or the flag. Do not add anything.\nPhotorealistic interior photograph, portrait 3:4.",
+          "step": "1 evening light"
+        },
+        {
+          "task_id": "task_01M3AQDSZ6DP0PDF48H6NX86KS",
+          "operation": "edit-image",
+          "input": "output of step 1",
+          "output": "2K 3:4",
+          "prompt": "Clean up this photo. Keep the camera, framing, light, colours, architecture and every remaining object exactly as they are.\nRemove only these items and continue the surface behind each one naturally:\n1. the white air-conditioning unit high on the left wall;\n2. the black chalkboard sign with coloured handwriting standing on the counter;\n3. the two pet bowls and the black mat on the blue tile floor;\n4. the backpack on the floor next to the bar stools;\n5. the small framed motorcycle photo and the two framed certificates on the dark left wall;\n6. the helmet on the black metal shelf behind the counter;\n7. the woman standing at the back behind the counter who is looking at the camera.\nKeep the man seated at the counter, the barista and the person at the back table.\nDo not add anything. Do not change any text, sign, sack, logo or the flag.\nPhotorealistic interior photograph, portrait 3:4.",
+          "step": "2 cleanup"
+        }
+      ],
+      "branding_restoration": {
+        "method": "Real base-photo pixels pasted over AI-rendered regions: base upscaled to output width, position found by grayscale NCC search, per-channel colour statistics matched to the edit, feathered rectangular mask. Regions in base coordinates (x0,y0,x1,y1).",
+        "regions": {
+          "sack AMAZONAS": [
+            118,
+            180,
+            268,
+            305
+          ],
+          "sack CAJAMARCA": [
+            338,
+            158,
+            498,
+            275
+          ],
+          "sack CUSCO": [
+            878,
+            82,
+            1072,
+            212
+          ],
+          "hexagon sign, back wall": [
+            718,
+            728,
+            846,
+            802
+          ],
+          "small hexagon plaque, shelf behind bar": [
+            312,
+            785,
+            356,
+            822
+          ]
+        },
+        "note": "The model garbled every text and turned the shelf plaque into an invented helmet; all five regions restored from the base photo. The plaque used colour statistics from a wider context box because its target region was an invented object."
+      },
+      "known_limits": "Coffee bags on the back shelf keep AI-garbled small text; two real helmets on the back shelf remain, barely visible; the hook-rack helmet by the door was removed by the cleanup; original framing (shutter edge at the top)."
+    },
+    {
+      "id": "cp04-mesa",
+      "status": "CONCEPTUAL_ASSET",
+      "decision": "L15, L16, L17 (docs/DECISIONS.md)",
+      "adopted": "2026-09-24",
+      "used_in": "CP04 “Tomar asiento” (direction A continuation) only; not implemented yet",
+      "model": "gemini-3-pro-image-preview (Nano Banana Pro) via tools/apimart edit-image; working tree with uncommitted tooling changes",
+      "base_photo_condition": "Google Maps reference photo, authorship unconfirmed; used only for this demo/prototype. Base file lives in untracked reference/tarata/, not in audit/source/.",
+      "not_evidence": "AI-intervened image: not documentary evidence of the venue; must stay identified as conceptual/provisional.",
+      "reproducibility": "Manual / non-reproducible: generative steps are non-deterministic; branding restoration done with an ad-hoc local script (not in scripts/).",
+      "state": "Estado 2 “Desde la mesa”, version A",
+      "used_file": "cp04-mesa.jpg",
+      "size": "1792 × 2400 (3:4) JPEG",
+      "sha256": "d53d44416415f34937c576d158eec444e395579ff18c97ccde4036b51ac0b098",
+      "base": {
+        "file": "reference/tarata/03-counter-perspective-3.webp",
+        "note": "Seated view from a table by the storefront; WebP 1148 × 1530",
+        "sha256": "59e6681cf4162249e53737932b73d5112b0fcb6f2e99770b6ab100f1169da8f2"
+      },
+      "steps": [
+        {
+          "task_id": "task_01M3AS8Y1VMKMD4Z8TP87MCB42",
+          "operation": "edit-image",
+          "input": "base photo",
+          "output": "2K 3:4",
+          "prompt": "Edit this photo: make it evening. Make only these concrete changes:\n1. The street seen through the glass storefront on the left becomes dusk: deep blue evening light, street lamps on, the trees darker.\n2. Inside, overall exposure is about one stop darker; the ceiling and the white tiled wall become dimmer and warmer.\n3. The black dome pendant lamps are clearly switched on: bright warm bulbs visible inside, warm light falling onto the counter top, the wood slats and the blue tiles.\n4. Warm tungsten colour temperature inside, with deep blacks and soft shadows.\nKeep everything else identical: same camera, framing, architecture, objects, people and materials. Do not change any text, sign or logo. Do not add anything.\nPhotorealistic interior photograph, portrait 3:4.",
+          "step": "1 evening light"
+        },
+        {
+          "task_id": "task_01M3ASJWZEZ7F2P298RFK66AET",
+          "operation": "edit-image",
+          "input": "output of step 1",
+          "output": "2K 3:4",
+          "prompt": "Clean up this photo. Keep the camera, framing, light, colours, architecture and every remaining object exactly as they are.\nRemove only these items and continue the surface behind each one naturally:\n1. the two black menu boards on the white tiled wall;\n2. the large white lettering on the glass storefront and the small black sign on the glass door, keeping the clear glass and the street behind it;\n3. the price tags and small chalk labels on the shelf, the counter and the display case;\n4. the small display of coffee packets on the front of the counter;\n5. the doormat on the floor near the door;\n6. the white print on the barista's T-shirt: make it a plain black T-shirt.\nKeep the barista, the pastries and the display case.\nDo not add anything. Do not change the black hexagonal sign on the counter.\nPhotorealistic interior photograph, portrait 3:4.",
+          "step": "2 cleanup (version A)"
+        }
+      ],
+      "branding_restoration": {
+        "method": "Real base-photo pixels pasted over AI-rendered regions: base upscaled to output width, position found by grayscale NCC search, per-channel colour statistics matched to the edit, feathered rectangular mask. Regions in base coordinates (x0,y0,x1,y1).",
+        "regions": {
+          "hexagon sign on the slatted counter front": [
+            495,
+            745,
+            682,
+            885
+          ]
+        },
+        "note": "Large mirrored lettering on the storefront glass was removed in the cleanup, not restored."
+      },
+      "known_limits": "Small price tag remains at the top right; the street lamp seen through the glass was probably added by the light step; no helmets in frame (L17)."
     }
   ],
   "gaps": [
@@ -158,5 +284,8 @@
       "note": "S/ 39.90 is the 250 g price on the official pages on the verification date (same as the checkpoint reference). Availability and promotions were not verified and are not stated in the scene."
     }
   },
-  "ai_generated_assets": []
+  "ai_generated_assets": [
+    "cp04-entrada",
+    "cp04-mesa"
+  ]
 }

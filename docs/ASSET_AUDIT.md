@@ -27,6 +27,17 @@ Inventario del proyecto entregado, revisado el 23 de septiembre de 2026. Las rut
 | Otorongo extraído y trazado | Foto pública `LATASCONJUNTO…png` de [Travel Line](https://www.artidororodriguez.com/products/la-expedicion-coleccion-travel-line-preventa). Recorte de 164 × 195 px sobre una lata curva, extracción de tinta y trazado determinista | `audit/source/otorongo-curved-tin-detail.png`; intermedio `audit/source/otorongo-extract.webp`; utilizado `public/assets/otorongo-traced.svg` | B | **PROVISIONAL_ASSET.** El SVG deriva de una imagen pequeña e incompleta; no es el arte maestro. No se reconstruyó anatomía faltante. La foto conjunta completa no se incluyó en el paquete final; su URL sí consta en el manifest. |
 | Verde Amazonas y tinta | Aproximación a partir del packaging Travel Line | Variables `--green: #30bc4e` y `--ink: #0f1d12` en `src/common.css` | B como lenguaje gráfico | **Provisional como especificación cromática.** No es un brandbook oficial ni color homologado. No tiene archivo raster independiente. |
 
+## CONCEPTUAL_ASSET (solo CP04, L15–L17)
+
+Imágenes intervenidas con IA a partir de fotos de referencia del local de Tarata. **No son evidencia documental del local** y deben seguir identificadas como conceptuales/provisionales. Las fotos base proceden de Google Maps, con **autoría sin confirmar**, y se usan solo para esta demo; están en `reference/tarata/` (sin versionar), no en `audit/source/`. Modelo, task_id, prompts y regiones de branding restauradas: `audit/assets.json` (ids `cp04-entrada`, `cp04-mesa`).
+
+| Asset | Base | Archivo en el proyecto | Uso | Condición |
+|---|---|---|---|---|
+| CP04 estado 1 “Desde la entrada” | `reference/tarata/02-facade.webp` (vista desde la puerta) | `public/assets/cp04-entrada.jpg` | CP04 (aún sin implementar) | Luz de tarde y limpieza con IA. Rótulos de los sacos, hexágono del fondo y placa hexagonal de la estantería restaurados con píxeles de la foto base. Quedan textos pequeños deformados en bolsas del fondo. Sin guiño visible a los cascos (L17). |
+| CP04 estado 2 “Desde la mesa”, versión A | `reference/tarata/03-counter-perspective-3.webp` | `public/assets/cp04-mesa.jpg` | CP04 (aún sin implementar) | Luz de tarde y limpieza con IA. Hexágono de la barra restaurado con píxeles de la foto base. Sin cascos (L17). |
+
+Preparación manual y no reproducible: los pasos generativos no son deterministas y la restauración se hizo con un script local ad hoc que no está en `scripts/`.
+
 ## MISSING_ASSET
 
 | Material faltante | Situación / fuente necesaria | Archivo local | Dirección | Estado |
@@ -45,7 +56,7 @@ Inventario del proyecto entregado, revisado el 23 de septiembre de 2026. Las rut
 
 Instagram tuvo acceso parcial/login. No se afirma una auditoría completa de publicaciones, reels o stories; no se utilizaron assets exclusivos del feed.
 
-No se generaron imágenes mediante IA. Extraer un fotograma, recortar la bolsa o trazar determinísticamente tinta existente no constituye una generación de arte nuevo. La eventual utilización de IA sigue abierta y no está autorizada como siguiente acción automática.
+Fuera de CP04 no se generaron imágenes mediante IA; las dos excepciones de CP04 (L15) se listan arriba como CONCEPTUAL_ASSET. Extraer un fotograma, recortar la bolsa o trazar determinísticamente tinta existente no constituye una generación de arte nuevo. La eventual utilización de IA sigue abierta y no está autorizada como siguiente acción automática.
 
 No presentar el paisaje como una fotografía confirmada de Rodríguez de Mendoza, ni el trazado como vector oficial definitivo. Mantener los avisos `PROVISIONAL_ASSET` mientras persistan esos gaps. Que un asset provenga de una publicación oficial no convierte su derivado preparado en arte maestro aprobado.
 
