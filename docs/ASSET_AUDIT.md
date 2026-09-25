@@ -33,8 +33,8 @@ Imágenes intervenidas con IA a partir de fotos de referencia del local de Tarat
 
 | Asset | Base | Archivo en el proyecto | Uso | Condición |
 |---|---|---|---|---|
-| CP04 estado 1 “Desde la entrada” | `reference/tarata/02-facade.webp` (vista desde la puerta) | `public/assets/cp04-entrada.jpg` | CP04 (aún sin implementar) | Luz de tarde y limpieza con IA. Rótulos de los sacos, hexágono del fondo y placa hexagonal de la estantería restaurados con píxeles de la foto base. Quedan textos pequeños deformados en bolsas del fondo. Sin guiño visible a los cascos (L17). |
-| CP04 estado 2 “Desde la mesa”, versión A | `reference/tarata/03-counter-perspective-3.webp` | `public/assets/cp04-mesa.jpg` | CP04 (aún sin implementar) | Luz de tarde y limpieza con IA. Hexágono de la barra restaurado con píxeles de la foto base. Sin cascos (L17). |
+| CP04 estado 1 “Desde la entrada” | `reference/tarata/02-facade.webp` (vista desde la puerta) | `public/assets/cp04-entrada.jpg` | CP04 (escena 04) | Luz de tarde y limpieza con IA. Rótulos de los sacos, hexágono del fondo y placa hexagonal de la estantería restaurados con píxeles de la foto base. Quedan textos pequeños deformados en bolsas del fondo. Sin guiño visible a los cascos (L17). |
+| CP04 estado 2 “Desde la mesa”, versión A | `reference/tarata/03-counter-perspective-3.webp` | `public/assets/cp04-mesa.jpg` | CP04 (escena 04) | Luz de tarde y limpieza con IA. Hexágono de la barra restaurado con píxeles de la foto base. Sin cascos (L17). |
 
 Preparación manual y no reproducible: los pasos generativos no son deterministas y la restauración se hizo con un script local ad hoc que no está en `scripts/`.
 

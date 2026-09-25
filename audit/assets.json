@@ -104,7 +104,7 @@
       "status": "CONCEPTUAL_ASSET",
       "decision": "L15, L16, L17 (docs/DECISIONS.md)",
       "adopted": "2026-09-24",
-      "used_in": "CP04 “Tomar asiento” (direction A continuation) only; not implemented yet",
+      "used_in": "CP04 “Tomar asiento” (direction A, after scene 02; #seat-scene). Implemented 2026-09-24; direction B does not include it",
       "model": "gemini-3-pro-image-preview (Nano Banana Pro) via tools/apimart edit-image; working tree with uncommitted tooling changes",
       "base_photo_condition": "Google Maps reference photo, authorship unconfirmed; used only for this demo/prototype. Base file lives in untracked reference/tarata/, not in audit/source/.",
       "not_evidence": "AI-intervened image: not documentary evidence of the venue; must stay identified as conceptual/provisional.",
@@ -179,7 +179,7 @@
       "status": "CONCEPTUAL_ASSET",
       "decision": "L15, L16, L17 (docs/DECISIONS.md)",
       "adopted": "2026-09-24",
-      "used_in": "CP04 “Tomar asiento” (direction A continuation) only; not implemented yet",
+      "used_in": "CP04 “Tomar asiento” (direction A, after scene 02; #seat-scene). Implemented 2026-09-24; direction B does not include it",
       "model": "gemini-3-pro-image-preview (Nano Banana Pro) via tools/apimart edit-image; working tree with uncommitted tooling changes",
       "base_photo_condition": "Google Maps reference photo, authorship unconfirmed; used only for this demo/prototype. Base file lives in untracked reference/tarata/, not in audit/source/.",
       "not_evidence": "AI-intervened image: not documentary evidence of the venue; must stay identified as conceptual/provisional.",
@@ -282,6 +282,19 @@
         }
       },
       "note": "S/ 39.90 is the 250 g price on the official pages on the verification date (same as the checkpoint reference). Availability and promotions were not verified and are not stated in the scene."
+    },
+    "cp04_tarata": {
+      "verified_on": "2026-09-24",
+      "method": "Official stores page fetched over HTTP (server-rendered HTML: visible text, page meta description and the card markup)",
+      "source_page": "https://www.artidororodriguez.com/pages/locales",
+      "local": "Cafetería Tarata",
+      "direccion": "Calle Tarata 285, Miraflores",
+      "horarios": [
+        "Lunes a Sábado: 08:00 a.m. – 09:00 p.m.",
+        "Domingo: 09:00 a.m. – 03:00 p.m."
+      ],
+      "como_llegar_href": "https://maps.app.goo.gl/8obmU6zC2Uh49pyy8",
+      "note": "Strings copied verbatim from the Tarata card. The link is the href of that card’s “Cómo llegar” button; it was not followed or resolved here. The page also lists Cafetería La Mar (out of scope; not used). Hours and address can change on the official page; this is the state on the verification date."
     }
   },
   "ai_generated_assets": [

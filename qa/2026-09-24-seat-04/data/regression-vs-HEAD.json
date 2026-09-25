@@ -1,0 +1,138 @@
+{
+ "results": {
+  "browser": "Chrome 153.0.8010.53 headless, Playwright viewport emulation, dpr 1, ?motion=off",
+  "desktop: A-initial: geometry deltas 0 and pixels identical to HEAD (viewport capture)": {
+   "ok": true,
+   "detail": {
+    "rect_deltas_nonzero": {},
+    "pixel_diff": {
+     "differing_pixels": 0
+    },
+    "docH_head": 1861,
+    "docH_now": 2822,
+    "docSW==CW_now": true
+   }
+  },
+  "desktop: A-expanded: geometry deltas 0 and pixels identical to HEAD (viewport capture)": {
+   "ok": true,
+   "detail": {
+    "rect_deltas_nonzero": {},
+    "pixel_diff": {
+     "differing_pixels": 0
+    },
+    "docH_head": 1861,
+    "docH_now": 2822,
+    "docSW==CW_now": true
+   }
+  },
+  "desktop: B-initial: geometry deltas 0 and pixels identical to HEAD (viewport capture)": {
+   "ok": true,
+   "detail": {
+    "rect_deltas_nonzero": {},
+    "pixel_diff": {
+     "differing_pixels": 0
+    },
+    "docH_head": 900,
+    "docH_now": 900,
+    "docSW==CW_now": true
+   }
+  },
+  "desktop: B-expanded: geometry deltas 0 and pixels identical to HEAD (viewport capture)": {
+   "ok": true,
+   "detail": {
+    "rect_deltas_nonzero": {},
+    "pixel_diff": {
+     "differing_pixels": 0
+    },
+    "docH_head": 900,
+    "docH_now": 900,
+    "docSW==CW_now": true
+   }
+  },
+  "desktop: 02: geometry deltas 0 and pixels identical to HEAD (viewport capture)": {
+   "ok": true,
+   "detail": {
+    "rect_deltas_nonzero": {},
+    "pixel_diff": {
+     "differing_pixels": 0
+    }
+   }
+  },
+  "desktop: 02-lab-note: geometry deltas 0 and pixels identical to HEAD (viewport capture)": {
+   "ok": true,
+   "detail": {
+    "rect_deltas_nonzero": {},
+    "pixel_diff": {
+     "differing_pixels": 0
+    }
+   }
+  },
+  "mobile: A-initial: geometry deltas 0 and pixels identical to HEAD (viewport capture)": {
+   "ok": true,
+   "detail": {
+    "rect_deltas_nonzero": {},
+    "pixel_diff": {
+     "differing_pixels": 0
+    },
+    "docH_head": 1797,
+    "docH_now": 2959,
+    "docSW==CW_now": true
+   }
+  },
+  "mobile: A-expanded: geometry deltas 0 and pixels identical to HEAD (viewport capture)": {
+   "ok": true,
+   "detail": {
+    "rect_deltas_nonzero": {},
+    "pixel_diff": {
+     "differing_pixels": 0
+    },
+    "docH_head": 1797,
+    "docH_now": 2959,
+    "docSW==CW_now": true
+   }
+  },
+  "mobile: B-initial: geometry deltas 0 and pixels identical to HEAD (viewport capture)": {
+   "ok": true,
+   "detail": {
+    "rect_deltas_nonzero": {},
+    "pixel_diff": {
+     "differing_pixels": 0
+    },
+    "docH_head": 844,
+    "docH_now": 844,
+    "docSW==CW_now": true
+   }
+  },
+  "mobile: B-expanded: geometry deltas 0 and pixels identical to HEAD (viewport capture)": {
+   "ok": true,
+   "detail": {
+    "rect_deltas_nonzero": {},
+    "pixel_diff": {
+     "differing_pixels": 0
+    },
+    "docH_head": 844,
+    "docH_now": 844,
+    "docSW==CW_now": true
+   }
+  },
+  "mobile: 02: geometry deltas 0 and pixels identical to HEAD (viewport capture)": {
+   "ok": true,
+   "detail": {
+    "rect_deltas_nonzero": {},
+    "pixel_diff": {
+     "differing_pixels": 0
+    }
+   }
+  },
+  "mobile: 02-lab-note: geometry deltas 0 and pixels identical to HEAD (viewport capture)": {
+   "ok": true,
+   "detail": {
+    "rect_deltas_nonzero": {},
+    "pixel_diff": {
+     "differing_pixels": 0
+    }
+   }
+  }
+ },
+ "failed": []
+}

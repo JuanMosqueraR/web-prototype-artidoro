@@ -1,0 +1,1149 @@
+{
+ "results": {
+  "browser": "Chrome 153.0.8010.53 headless (Windows 10), Playwright viewport emulation, dpr 1",
+  "desktop: viewport is 1440x900 at dpr 1": {
+   "ok": true,
+   "detail": [
+    1440,
+    900,
+    1
+   ]
+  },
+  "desktop: initial state entrada, aria-pressed true/false, entrada image only": {
+   "ok": true,
+   "detail": {
+    "view": "entrada",
+    "out": false,
+    "pressed": [
+     "true",
+     "false"
+    ],
+    "visible": [
+     "entrada"
+    ],
+    "live": "",
+    "error": "",
+    "active": "",
+    "sy": 1861
+   }
+  },
+  "desktop: no horizontal overflow (state 1)": {
+   "ok": true,
+   "detail": [
+    1440,
+    1440
+   ]
+  },
+  "desktop: state 2 mesa, aria-pressed false/true, mesa image only": {
+   "ok": true,
+   "detail": {
+    "view": "mesa",
+    "out": false,
+    "pressed": [
+     "false",
+     "true"
+    ],
+    "visible": [
+     "mesa"
+    ],
+    "live": "Vista: Desde la mesa",
+    "error": "",
+    "active": "mesa",
+    "sy": 1861
+   }
+  },
+  "desktop: live region announces the view": {
+   "ok": true,
+   "detail": "Vista: Desde la mesa"
+  },
+  "desktop: no horizontal overflow (state 2)": {
+   "ok": true,
+   "detail": [
+    1440,
+    1440
+   ]
+  },
+  "desktop: UI stable between states (all rect deltas 0)": {
+   "ok": true,
+   "detail": {
+    "scene": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "kicker": [
+     0.0,
+     0,
+     0,
+     0
+    ],
+    "h2": [
+     0.0,
+     0,
+     0,
+     0
+    ],
+    "figure": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "views": [
+     0.0,
+     0,
+     0,
+     0
+    ],
+    "v1": [
+     0.0,
+     0,
+     0,
+     0
+    ],
+    "v2": [
+     0.0,
+     0,
+     0,
+     0
+    ],
+    "error": [
+     0.0,
+     0,
+     0,
+     0
+    ],
+    "name": [
+     0.0,
+     0,
+     0,
+     0
+    ],
+    "dl": [
+     0.0,
+     0,
+     0,
+     0
+    ],
+    "cta": [
+     0.0,
+     0,
+     0,
+     0
+    ],
+    "status": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "desktop: no overlapping text/control boxes": {
+   "ok": true,
+   "detail": []
+  },
+  "desktop: every box inside 0..1440": {
+   "ok": true,
+   "detail": {
+    "kicker": [
+     86.4,
+     106,
+     560,
+     16
+    ],
+    "h2": [
+     86.4,
+     138,
+     560,
+     70
+    ],
+    "views": [
+     86.4,
+     246,
+     560,
+     129
+    ],
+    "name": [
+     86.4,
+     429,
+     560,
+     44
+    ],
+    "dl": [
+     86.4,
+     491,
+     560,
+     132
+    ],
+    "cta": [
+     86.4,
+     657,
+     330,
+     58
+    ],
+    "status": [
+     86.4,
+     868.5,
+     353.1,
+     13.5
+    ],
+    "figure": [
+     765,
+     0,
+     675,
+     900
+    ]
+   }
+  },
+  "desktop: rects state1": {
+   "scene": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "kicker": [
+    86.4,
+    106,
+    560,
+    16
+   ],
+   "h2": [
+    86.4,
+    138,
+    560,
+    70
+   ],
+   "figure": [
+    765,
+    0,
+    675,
+    900
+   ],
+   "views": [
+    86.4,
+    246,
+    560,
+    129
+   ],
+   "v1": [
+    86.4,
+    247,
+    560,
+    64
+   ],
+   "v2": [
+    86.4,
+    311,
+    560,
+    64
+   ],
+   "error": [
+    86.4,
+    383,
+    560,
+    16
+   ],
+   "name": [
+    86.4,
+    429,
+    560,
+    44
+   ],
+   "dl": [
+    86.4,
+    491,
+    560,
+    132
+   ],
+   "cta": [
+    86.4,
+    657,
+    330,
+    58
+   ],
+   "status": [
+    86.4,
+    868.5,
+    353.1,
+    13.5
+   ],
+   "docSW": 1440,
+   "docCW": 1440,
+   "iw": 1440,
+   "ih": 900,
+   "dpr": 1
+  },
+  "desktop: rects state2": {
+   "scene": [
+    0,
+    0,
+    1440,
+    900
+   ],
+   "kicker": [
+    86.4,
+    106,
+    560,
+    16
+   ],
+   "h2": [
+    86.4,
+    138,
+    560,
+    70
+   ],
+   "figure": [
+    765,
+    0,
+    675,
+    900
+   ],
+   "views": [
+    86.4,
+    246,
+    560,
+    129
+   ],
+   "v1": [
+    86.4,
+    247,
+    560,
+    64
+   ],
+   "v2": [
+    86.4,
+    311,
+    560,
+    64
+   ],
+   "error": [
+    86.4,
+    383,
+    560,
+    16
+   ],
+   "name": [
+    86.4,
+    429,
+    560,
+    44
+   ],
+   "dl": [
+    86.4,
+    491,
+    560,
+    132
+   ],
+   "cta": [
+    86.4,
+    657,
+    330,
+    58
+   ],
+   "status": [
+    86.4,
+    868.5,
+    353.1,
+    13.5
+   ],
+   "docSW": 1440,
+   "docCW": 1440,
+   "iw": 1440,
+   "ih": 900,
+   "dpr": 1
+  },
+  "desktop: CTA href/target/rel/text": {
+   "ok": true,
+   "detail": {
+    "href": "https://maps.app.goo.gl/8obmU6zC2Uh49pyy8",
+    "target": "_blank",
+    "rel": "noopener",
+    "text": "Cómo llegar ↗",
+    "aria": "Cómo llegar a la cafetería Tarata"
+   }
+  },
+  "desktop: CTA opens the official destination in a new tab (external request blocked in test)": {
+   "ok": true,
+   "detail": {
+    "reqs": [
+     "https://maps.app.goo.gl/8obmU6zC2Uh49pyy8"
+    ],
+    "popup": "chrome-error://chromewebdata/"
+   }
+  },
+  "desktop: CTA does not change the view": {
+   "ok": true,
+   "detail": null
+  },
+  "desktop: Tab order inside scene = entrada, mesa, CTA": {
+   "ok": true,
+   "detail": [
+    "entrada",
+    "mesa",
+    "seat-cta"
+   ]
+  },
+  "desktop: Enter on 'Desde la mesa' selects it; focus stays": {
+   "ok": true,
+   "detail": {
+    "view": "mesa",
+    "out": false,
+    "pressed": [
+     "false",
+     "true"
+    ],
+    "visible": [
+     "mesa"
+    ],
+    "live": "Vista: Desde la mesa",
+    "error": "",
+    "active": "mesa",
+    "sy": 1861
+   }
+  },
+  "desktop: Space on 'Desde la entrada' selects it; focus stays": {
+   "ok": true,
+   "detail": {
+    "view": "entrada",
+    "out": false,
+    "pressed": [
+     "true",
+     "false"
+    ],
+    "visible": [
+     "entrada"
+    ],
+    "live": "Vista: Desde la entrada",
+    "error": "",
+    "active": "entrada",
+    "sy": 1861
+   }
+  },
+  "desktop: focus ring visible on keyboard focus": {
+   "ok": true,
+   "detail": "solid 2px rgb(244, 240, 229)"
+  },
+  "desktop: mouse click selection: no scroll jump": {
+   "ok": true,
+   "detail": [
+    1861,
+    1861
+   ]
+  },
+  "desktop: motion on: fades out, commits at ~90 ms, fades back in": {
+   "ok": true,
+   "detail": {
+    "commit_ms": 114,
+    "saw_out": true,
+    "final_opacity": "1"
+   }
+  },
+  "desktop: prefers-reduced-motion emulated: change is immediate, never fades": {
+   "ok": true,
+   "detail": {
+    "commit_ms": 27
+   }
+  },
+  "desktop: Sin motion (?motion=off): change is immediate, never fades": {
+   "ok": true,
+   "detail": {
+    "commit_ms": 19
+   }
+  },
+  "desktop: Sin motion switched on mid-fade finishes at once and coherently": {
+   "ok": true,
+   "detail": {
+    "before": [
+     true,
+     "entrada"
+    ],
+    "after": [
+     false,
+     "mesa",
+     "1"
+    ]
+   }
+  },
+  "desktop: 12 rapid toggles: last wins; image = aria-pressed = data-view every frame": {
+   "ok": true,
+   "detail": {
+    "viol": 0,
+    "view": "entrada",
+    "out": false
+   }
+  },
+  "desktop: mesa image fails: entrada kept, message shown, opacity normal": {
+   "ok": true,
+   "detail": {
+    "view": "entrada",
+    "out": false,
+    "pressed": [
+     "true",
+     "false"
+    ],
+    "visible": [
+     "entrada"
+    ],
+    "live": "",
+    "error": "No se pudo cargar esta vista. Inténtalo de nuevo.",
+    "active": "mesa",
+    "sy": 1861
+   }
+  },
+  "desktop: retry after failure works and clears the message": {
+   "ok": true,
+   "detail": {
+    "view": "mesa",
+    "out": false,
+    "pressed": [
+     "false",
+     "true"
+    ],
+    "visible": [
+     "mesa"
+    ],
+    "live": "Vista: Desde la mesa",
+    "error": "",
+    "active": "mesa",
+    "sy": 1861
+   }
+  },
+  "mobile: viewport is 390x844 at dpr 1": {
+   "ok": true,
+   "detail": [
+    390,
+    844,
+    1
+   ]
+  },
+  "mobile: initial state entrada, aria-pressed true/false, entrada image only": {
+   "ok": true,
+   "detail": {
+    "view": "entrada",
+    "out": false,
+    "pressed": [
+     "true",
+     "false"
+    ],
+    "visible": [
+     "entrada"
+    ],
+    "live": "",
+    "error": "",
+    "active": "",
+    "sy": 1797
+   }
+  },
+  "mobile: no horizontal overflow (state 1)": {
+   "ok": true,
+   "detail": [
+    390,
+    390
+   ]
+  },
+  "mobile: state 2 mesa, aria-pressed false/true, mesa image only": {
+   "ok": true,
+   "detail": {
+    "view": "mesa",
+    "out": false,
+    "pressed": [
+     "false",
+     "true"
+    ],
+    "visible": [
+     "mesa"
+    ],
+    "live": "Vista: Desde la mesa",
+    "error": "",
+    "active": "mesa",
+    "sy": 1797
+   }
+  },
+  "mobile: live region announces the view": {
+   "ok": true,
+   "detail": "Vista: Desde la mesa"
+  },
+  "mobile: no horizontal overflow (state 2)": {
+   "ok": true,
+   "detail": [
+    390,
+    390
+   ]
+  },
+  "mobile: UI stable between states (all rect deltas 0)": {
+   "ok": true,
+   "detail": {
+    "scene": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "kicker": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "h2": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "figure": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "views": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "v1": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "v2": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "error": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "name": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "dl": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "cta": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "status": [
+     0,
+     0.0,
+     0,
+     0.0
+    ]
+   }
+  },
+  "mobile: no overlapping text/control boxes": {
+   "ok": true,
+   "detail": []
+  },
+  "mobile: every box inside 0..390": {
+   "ok": true,
+   "detail": {
+    "kicker": [
+     22,
+     52,
+     346,
+     16
+    ],
+    "h2": [
+     22,
+     76,
+     346,
+     44
+    ],
+    "views": [
+     22,
+     586,
+     346,
+     95
+    ],
+    "name": [
+     22,
+     719,
+     346,
+     34
+    ],
+    "dl": [
+     22,
+     765,
+     346,
+     112
+    ],
+    "cta": [
+     22,
+     903,
+     346,
+     54
+    ],
+    "status": [
+     22,
+     991.4,
+     346,
+     14.6
+    ],
+    "figure": [
+     0,
+     142,
+     390,
+     430
+    ]
+   }
+  },
+  "mobile: rects state1": {
+   "scene": [
+    0,
+    0,
+    390,
+    1021
+   ],
+   "kicker": [
+    22,
+    52,
+    346,
+    16
+   ],
+   "h2": [
+    22,
+    76,
+    346,
+    44
+   ],
+   "figure": [
+    0,
+    142,
+    390,
+    430
+   ],
+   "views": [
+    22,
+    586,
+    346,
+    95
+   ],
+   "v1": [
+    22,
+    587,
+    346,
+    47
+   ],
+   "v2": [
+    22,
+    634,
+    346,
+    47
+   ],
+   "error": [
+    22,
+    689,
+    346,
+    16
+   ],
+   "name": [
+    22,
+    719,
+    346,
+    34
+   ],
+   "dl": [
+    22,
+    765,
+    346,
+    112
+   ],
+   "cta": [
+    22,
+    903,
+    346,
+    54
+   ],
+   "status": [
+    22,
+    991.4,
+    346,
+    14.6
+   ],
+   "docSW": 390,
+   "docCW": 390,
+   "iw": 390,
+   "ih": 844,
+   "dpr": 1
+  },
+  "mobile: rects state2": {
+   "scene": [
+    0,
+    0,
+    390,
+    1021
+   ],
+   "kicker": [
+    22,
+    52,
+    346,
+    16
+   ],
+   "h2": [
+    22,
+    76,
+    346,
+    44
+   ],
+   "figure": [
+    0,
+    142,
+    390,
+    430
+   ],
+   "views": [
+    22,
+    586,
+    346,
+    95
+   ],
+   "v1": [
+    22,
+    587,
+    346,
+    47
+   ],
+   "v2": [
+    22,
+    634,
+    346,
+    47
+   ],
+   "error": [
+    22,
+    689,
+    346,
+    16
+   ],
+   "name": [
+    22,
+    719,
+    346,
+    34
+   ],
+   "dl": [
+    22,
+    765,
+    346,
+    112
+   ],
+   "cta": [
+    22,
+    903,
+    346,
+    54
+   ],
+   "status": [
+    22,
+    991.4,
+    346,
+    14.6
+   ],
+   "docSW": 390,
+   "docCW": 390,
+   "iw": 390,
+   "ih": 844,
+   "dpr": 1
+  },
+  "mobile: CTA href/target/rel/text": {
+   "ok": true,
+   "detail": {
+    "href": "https://maps.app.goo.gl/8obmU6zC2Uh49pyy8",
+    "target": "_blank",
+    "rel": "noopener",
+    "text": "Cómo llegar ↗",
+    "aria": "Cómo llegar a la cafetería Tarata"
+   }
+  },
+  "mobile: CTA opens the official destination in a new tab (external request blocked in test)": {
+   "ok": true,
+   "detail": {
+    "reqs": [
+     "https://maps.app.goo.gl/8obmU6zC2Uh49pyy8"
+    ],
+    "popup": "chrome-error://chromewebdata/"
+   }
+  },
+  "mobile: CTA does not change the view": {
+   "ok": true,
+   "detail": null
+  },
+  "mobile: Tab order inside scene = entrada, mesa, CTA": {
+   "ok": true,
+   "detail": [
+    "entrada",
+    "mesa",
+    "seat-cta"
+   ]
+  },
+  "mobile: Enter on 'Desde la mesa' selects it; focus stays": {
+   "ok": true,
+   "detail": {
+    "view": "mesa",
+    "out": false,
+    "pressed": [
+     "false",
+     "true"
+    ],
+    "visible": [
+     "mesa"
+    ],
+    "live": "Vista: Desde la mesa",
+    "error": "",
+    "active": "mesa",
+    "sy": 2115
+   }
+  },
+  "mobile: Space on 'Desde la entrada' selects it; focus stays": {
+   "ok": true,
+   "detail": {
+    "view": "entrada",
+    "out": false,
+    "pressed": [
+     "true",
+     "false"
+    ],
+    "visible": [
+     "entrada"
+    ],
+    "live": "Vista: Desde la entrada",
+    "error": "",
+    "active": "entrada",
+    "sy": 2115
+   }
+  },
+  "mobile: focus ring visible on keyboard focus": {
+   "ok": true,
+   "detail": "solid 2px rgb(244, 240, 229)"
+  },
+  "mobile: touch tap selection: no scroll jump": {
+   "ok": true,
+   "detail": [
+    1797,
+    1797
+   ]
+  },
+  "mobile: motion on: fades out, commits at ~90 ms, fades back in": {
+   "ok": true,
+   "detail": {
+    "commit_ms": 105,
+    "saw_out": true,
+    "final_opacity": "1"
+   }
+  },
+  "mobile: prefers-reduced-motion emulated: change is immediate, never fades": {
+   "ok": true,
+   "detail": {
+    "commit_ms": 20
+   }
+  },
+  "mobile: Sin motion (?motion=off): change is immediate, never fades": {
+   "ok": true,
+   "detail": {
+    "commit_ms": 18
+   }
+  },
+  "mobile: Sin motion switched on mid-fade finishes at once and coherently": {
+   "ok": true,
+   "detail": {
+    "before": [
+     true,
+     "entrada"
+    ],
+    "after": [
+     false,
+     "mesa",
+     "1"
+    ]
+   }
+  },
+  "mobile: 12 rapid toggles: last wins; image = aria-pressed = data-view every frame": {
+   "ok": true,
+   "detail": {
+    "viol": 0,
+    "view": "entrada",
+    "out": false
+   }
+  },
+  "mobile: mesa image fails: entrada kept, message shown, opacity normal": {
+   "ok": true,
+   "detail": {
+    "view": "entrada",
+    "out": false,
+    "pressed": [
+     "true",
+     "false"
+    ],
+    "visible": [
+     "entrada"
+    ],
+    "live": "",
+    "error": "No se pudo cargar esta vista. Inténtalo de nuevo.",
+    "active": "mesa",
+    "sy": 1797
+   }
+  },
+  "mobile: retry after failure works and clears the message": {
+   "ok": true,
+   "detail": {
+    "view": "mesa",
+    "out": false,
+    "pressed": [
+     "false",
+     "true"
+    ],
+    "visible": [
+     "mesa"
+    ],
+    "live": "Vista: Desde la mesa",
+    "error": "",
+    "active": "mesa",
+    "sy": 1797
+   }
+  },
+  "exploratory widths (observations only)": {
+   "768x1024": {
+    "docSW": 768,
+    "docCW": 768,
+    "scene_h": 1098.1,
+    "cta": [
+     46.1,
+     972.1,
+     593.8,
+     54
+    ],
+    "figure": [
+     46.1,
+     166,
+     593.8,
+     475.1
+    ]
+   },
+   "1024x768": {
+    "docSW": 1024,
+    "docCW": 1024,
+    "scene_h": 1073.5,
+    "cta": [
+     61.4,
+     947.5,
+     563.1,
+     54
+    ],
+    "figure": [
+     61.4,
+     166,
+     563.1,
+     450.5
+    ]
+   },
+   "1280x800": {
+    "docSW": 1280,
+    "docCW": 1280,
+    "scene_h": 1048.9,
+    "cta": [
+     76.8,
+     922.9,
+     532.4,
+     54
+    ],
+    "figure": [
+     76.8,
+     166,
+     532.4,
+     425.9
+    ]
+   },
+   "1359x900": {
+    "docSW": 1359,
+    "docCW": 1359,
+    "scene_h": 1041.3,
+    "cta": [
+     81.5,
+     915.3,
+     522.9,
+     54
+    ],
+    "figure": [
+     81.5,
+     166,
+     522.9,
+     418.3
+    ]
+   },
+   "1360x900": {
+    "docSW": 1360,
+    "docCW": 1360,
+    "scene_h": 900,
+    "cta": [
+     81.6,
+     657,
+     330,
+     58
+    ],
+    "figure": [
+     685,
+     0,
+     675,
+     900
+    ]
+   }
+  },
+  "B desktop: seat scene and its note are display:none; document is one viewport": {
+   "ok": true,
+   "detail": {
+    "scene": "none",
+    "note": "none",
+    "h": 900,
+    "sw": 1440,
+    "cw": 1440
+   }
+  },
+  "B desktop: 30 Tab presses never enter CP04": {
+   "ok": true,
+   "detail": 0
+  },
+  "B desktop: CP04 images are not requested": {
+   "ok": true,
+   "detail": []
+  },
+  "B mobile: seat scene and its note are display:none; document is one viewport": {
+   "ok": true,
+   "detail": {
+    "scene": "none",
+    "note": "none",
+    "h": 844,
+    "sw": 390,
+    "cw": 390
+   }
+  },
+  "B mobile: 30 Tab presses never enter CP04": {
+   "ok": true,
+   "detail": 0
+  },
+  "B mobile: CP04 images are not requested": {
+   "ok": true,
+   "detail": []
+  }
+ },
+ "failed": []
+}

@@ -13,8 +13,10 @@
   <link rel="stylesheet" href="/src/peru.css" />
   <link rel="stylesheet" href="/src/lata.css" />
   <link rel="stylesheet" href="/src/origin.css" />
+  <link rel="stylesheet" href="/src/seat.css" />
   <script type="module" src="/src/main.js"></script>
   <script type="module" src="/src/origin.js"></script>
+  <script type="module" src="/src/seat.js"></script>
 </head>
 <body>
   <aside class="lab-bar" aria-label="Controles del laboratorio">
@@ -125,6 +127,38 @@
       <p class="origin-sr" aria-live="polite"></p>
     </section>
     <aside class="origin-lab-note" aria-label="Contexto de revisión del laboratorio"><strong>REVISIÓN · ESCENA 02</strong> — En este checkpoint solo Amazonas y Cajamarca son seleccionables. Villa Rica, Cusco y Puno se muestran como filas informativas con sus notas; su selección no está implementada. Precio de referencia S/ 39.90 (250 g), verificado el 24 de septiembre de 2026 en las fichas oficiales.</aside>
+    <section class="seat-scene" id="seat-scene" aria-labelledby="seat-title" data-view="entrada">
+      <div class="seat-inner">
+        <header class="seat-head">
+          <p class="seat-kicker">Cafetería Artidoro Rodríguez</p>
+          <h2 id="seat-title">Toma asiento.</h2>
+        </header>
+        <figure class="seat-figure">
+          <div class="seat-frame seat-fade">
+            <img class="seat-img" data-view="entrada" src="/assets/cp04-entrada.jpg" alt="Vista desde la entrada de la cafetería Tarata: suelo de mosaico ondulado blanco y negro, barra con base de azulejo azul, lámparas colgantes negras y sacos de yute con los orígenes colgados en el entrepiso. Imagen conceptual." width="1792" height="2400" loading="lazy" decoding="async" />
+            <img class="seat-img" data-view="mesa" src="/assets/cp04-mesa.jpg" alt="Vista desde una mesa de la cafetería Tarata: la barra con frente de listones de madera y rótulo hexagonal de Artidoro Rodríguez, base de azulejo azul y suelo de mosaico ondulado. Imagen conceptual." width="1792" height="2400" loading="lazy" decoding="async" />
+          </div>
+        </figure>
+        <div class="seat-views" role="group" aria-label="Vista de la cafetería">
+          <button class="seat-view" type="button" data-view="entrada" data-label="Desde la entrada" aria-pressed="true"><span class="seat-dot" aria-hidden="true"></span><span class="seat-view-name">Desde la entrada</span></button>
+          <button class="seat-view" type="button" data-view="mesa" data-label="Desde la mesa" aria-pressed="false"><span class="seat-dot" aria-hidden="true"></span><span class="seat-view-name">Desde la mesa</span></button>
+        </div>
+        <p class="seat-error" role="status"></p>
+        <div class="seat-place">
+          <p class="seat-name">Tarata</p>
+          <dl class="seat-data">
+            <dt>Dirección</dt>
+            <dd>Calle Tarata 285, Miraflores</dd>
+            <dt>Horarios</dt>
+            <dd>Lunes a Sábado: 08:00 a.m. – 09:00 p.m.<br />Domingo: 09:00 a.m. – 03:00 p.m.</dd>
+          </dl>
+        </div>
+        <a class="seat-cta" href="https://maps.app.goo.gl/8obmU6zC2Uh49pyy8" target="_blank" rel="noopener" aria-label="Cómo llegar a la cafetería Tarata"><span>Cómo llegar</span> <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="asset-status"><span>CONCEPTUAL_ASSET</span> Imagen conceptual con IA · no es un documento del local</p>
+      <p class="origin-sr seat-sr" aria-live="polite"></p>
+    </section>
+    <aside class="origin-lab-note seat-lab-note" aria-label="Contexto de revisión del laboratorio"><strong>REVISIÓN · ESCENA 04</strong> — Las dos imágenes son CONCEPTUAL_ASSET (L15–L17): intervenidas con IA a partir de fotos de Google Maps de autoría sin confirmar, solo para esta demo; no son evidencia documental del local. Local, dirección, horarios y enlace de «Cómo llegar» de la cafetería Tarata, verificados el 24 de septiembre de 2026 en la página oficial de locales. Sin guiño de cascos en esta escena (L17).</aside>
   </main>
 </body>
 </html>

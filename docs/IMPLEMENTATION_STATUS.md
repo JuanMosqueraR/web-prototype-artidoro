@@ -13,6 +13,9 @@ HTML semántico, CSS y JavaScript vanilla, con **Vite 7.1.3** como dependencia d
 | `src/peru.css` / `src/lata.css` | Composición y transición específicas de cada dirección |
 | `src/main.js` | Cambio de dirección, estado desplegado y casilla Sin motion |
 | `src/origin.css` / `src/origin.js` | Escena 02 “Encontrar tu origen” (solo visible en A): estilos aislados y estado propio de origen (Amazonas/Cajamarca). No comparten estado con el hero |
+| `src/seat.css` / `src/seat.js` | Escena 04 “Toma asiento” / CP04 (solo visible en A): estilos aislados y estado propio de vista (entrada/mesa). No comparten estado con el hero ni con 02 |
+| `public/assets/cp04-entrada.jpg` / `cp04-mesa.jpg` | `CONCEPTUAL_ASSET` de CP04 (L15–L17). Producción manual/no reproducible (edición con IA + restauración de rótulos con píxeles reales); procedencia, modelo, task_id y prompts en `audit/assets.json` |
+| `qa/2026-09-24-seat-04/` | Evidencia fechada de CP04 y regresión contra HEAD (capturas + `data/*.json`) |
 | `public/assets/cajamarca-250g.webp` / `scripts/prepare-cajamarca.py` | Bolsa Cajamarca derivada del original en `audit/source/cajamarca-original.jpg`; Pillow |
 | `qa/2026-09-24-origin-02/` | Evidencia fechada de 02 y regresión de heroes (capturas + mediciones + `QA-origin-02.md`) |
 | `public/assets/` | Recursos visuales y tipográficos utilizados por la web |
@@ -57,6 +60,16 @@ El CTA abre la ficha pública del café Amazonas en una pestaña nueva. No agreg
 Tras el Hero A, `index.html` incluye la sección `#origin-scene` con `aside.origin-lab-note`. Solo se muestran con la dirección A; con B se ocultan por CSS (`display:none`) y quedan fuera del orden de tabulación. Su origen (Amazonas/Cajamarca) es independiente del estado Acercar/Alejar. Villa Rica, Cusco y Puno son filas informativas sin selección. La altura del documento en A ahora es la del hero más la de 02 (más la nota de laboratorio). Descripción y evidencia: [CREATIVE_DIRECTIONS.md](CREATIVE_DIRECTIONS.md) y [qa/2026-09-24-origin-02/QA-origin-02.md](../qa/2026-09-24-origin-02/QA-origin-02.md). Para abrir A → 02: la URL de A (`/a/`) y bajar; `?motion=off` inicia sin movimiento. Con el hero desplegado, `/a/?frame=b`.
 
 El build y el servidor de Vite **no se verificaron** en este entorno (Node 18; ver KI-01). La escena se comprobó con un servidor estático temporal fuera del repo, que no sustituye esa validación.
+
+## Escena 04 — CP04 “Toma asiento” (checkpoint del 24 de septiembre de 2026)
+
+Tras la escena 02 y su nota de laboratorio, `index.html` incluye `#seat-scene` y `aside.seat-lab-note` (esta reutiliza la clase `origin-lab-note`). Solo se muestran con la dirección A; con B se ocultan por CSS (`display:none`) y sus imágenes no se solicitan. Estado propio (`data-view`: `entrada` / `mesa`), independiente del hero y de 02. `seat.js` repite el flujo de 02 (imagen decodificada → desvanecer ~90 ms → cambio síncrono → volver), con una diferencia: una imagen rota se vuelve a pedir al empezar cada intento, de modo que el primer reintento tras un fallo funciona. 02 no se tocó ni se refactorizó.
+
+Contenido factual (local Tarata, dirección, horarios, destino de «Cómo llegar») verificado el 24 de septiembre de 2026 en la [página oficial de locales](https://www.artidororodriguez.com/pages/locales); textos y enlace exactos en `audit/assets.json` (`verified_copy.cp04_tarata`). El enlace de «Cómo llegar» es el `href` de esa tarjeta y no se resolvió ni se siguió. Cafetería La Mar, que la misma página lista, no se usa.
+
+Para abrir A → 02 → 04: la URL de A (`/a/`) y bajar; `?motion=off` inicia sin movimiento. La altura del documento en A pasa de 1861 a 2822 px (desktop) y de 1797 a 2959 px (mobile).
+
+**Validación:** servidor estático temporal fuera del repo (no Vite); `npm run dev`, `npm run build` y `export-standalone.py` **no se ejecutaron** (Node 18; KI-01), por lo que el build real de CP04 no está verificado. `deliverables/*.html` no incluyen CP04: son snapshots anteriores. QA en Chrome 153 headless, dpr 1, viewports emulados 1440 × 900 y 390 × 844: 54 comprobaciones de CP04 y 12 casos de regresión contra HEAD en `qa/2026-09-24-seat-04/data/`. No hubo dispositivo táctil físico, Safari/iOS ni lectores de pantalla.
 
 ## Direcciones, keyframes y estado
 
