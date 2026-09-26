@@ -1,0 +1,238 @@
+{
+  "conditions": "Same Chromium148, DPR1, 1440x900 and390x844; both hero keyframes motion/reduced; relative to September25 snapshot.",
+  "hero_captures": [
+    {
+      "capture": "a-desktop-motion-expanded.png",
+      "identical_to_2026_09_25": true,
+      "changed_bounds": null
+    },
+    {
+      "capture": "a-desktop-motion-initial.png",
+      "identical_to_2026_09_25": true,
+      "changed_bounds": null
+    },
+    {
+      "capture": "a-desktop-reduced-expanded.png",
+      "identical_to_2026_09_25": true,
+      "changed_bounds": null
+    },
+    {
+      "capture": "a-desktop-reduced-initial.png",
+      "identical_to_2026_09_25": true,
+      "changed_bounds": null
+    },
+    {
+      "capture": "a-mobile-motion-expanded.png",
+      "identical_to_2026_09_25": true,
+      "changed_bounds": null
+    },
+    {
+      "capture": "a-mobile-motion-initial.png",
+      "identical_to_2026_09_25": true,
+      "changed_bounds": null
+    },
+    {
+      "capture": "a-mobile-reduced-expanded.png",
+      "identical_to_2026_09_25": true,
+      "changed_bounds": null
+    },
+    {
+      "capture": "a-mobile-reduced-initial.png",
+      "identical_to_2026_09_25": true,
+      "changed_bounds": null
+    },
+    {
+      "capture": "b-desktop-motion-expanded.png",
+      "identical_to_2026_09_25": true,
+      "changed_bounds": null
+    },
+    {
+      "capture": "b-desktop-motion-initial.png",
+      "identical_to_2026_09_25": true,
+      "changed_bounds": null
+    },
+    {
+      "capture": "b-desktop-reduced-expanded.png",
+      "identical_to_2026_09_25": false,
+      "changed_bounds": [
+        640,
+        242,
+        1337,
+        471
+      ],
+      "changed_pixels": 409,
+      "max_channel_difference": 14
+    },
+    {
+      "capture": "b-desktop-reduced-initial.png",
+      "identical_to_2026_09_25": true,
+      "changed_bounds": null
+    },
+    {
+      "capture": "b-mobile-motion-expanded.png",
+      "identical_to_2026_09_25": true,
+      "changed_bounds": null
+    },
+    {
+      "capture": "b-mobile-motion-initial.png",
+      "identical_to_2026_09_25": true,
+      "changed_bounds": null
+    },
+    {
+      "capture": "b-mobile-reduced-expanded.png",
+      "identical_to_2026_09_25": true,
+      "changed_bounds": null
+    },
+    {
+      "capture": "b-mobile-reduced-initial.png",
+      "identical_to_2026_09_25": true,
+      "changed_bounds": null
+    }
+  ],
+  "hero_cta_deltas": [
+    {
+      "check": "a-desktop-motion-initial: CTA within viewport",
+      "delta": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "check": "a-desktop-motion-expanded: CTA within viewport",
+      "delta": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "check": "a-desktop-reduced-initial: CTA within viewport",
+      "delta": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "check": "a-desktop-reduced-expanded: CTA within viewport",
+      "delta": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "check": "b-desktop-motion-initial: CTA within viewport",
+      "delta": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "check": "b-desktop-motion-expanded: CTA within viewport",
+      "delta": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "check": "b-desktop-reduced-initial: CTA within viewport",
+      "delta": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "check": "b-desktop-reduced-expanded: CTA within viewport",
+      "delta": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "check": "a-mobile-motion-initial: CTA within viewport",
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "check": "a-mobile-motion-expanded: CTA within viewport",
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "check": "a-mobile-reduced-initial: CTA within viewport",
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "check": "a-mobile-reduced-expanded: CTA within viewport",
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "check": "b-mobile-motion-initial: CTA within viewport",
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "check": "b-mobile-motion-expanded: CTA within viewport",
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "check": "b-mobile-reduced-initial: CTA within viewport",
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "check": "b-mobile-reduced-expanded: CTA within viewport",
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}

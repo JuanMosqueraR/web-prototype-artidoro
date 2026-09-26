@@ -1,3 +1,20 @@
+# Actualización de Tarata — 26 de septiembre de 2026
+
+L19 implementado sobre el checkpoint `3830028` de la home, sin commit final de esta revisión. 04 ahora combina dos fotografías existentes, animación de entrada única, carga diferida a 800 px y fallback sin JS. Mobile prioriza fachada/moto; desktop, interior/personal/cascos. No se cambian 01/02/03/05 ni B. La documentación del 25 de septiembre de abajo es el estado anterior de 04.
+
+| Ruta nueva o afectada | Función |
+|---|---|
+| `index.html`, `src/home.css`, `src/home.js` | Composición, fuentes responsive, motion y carga de 04; aviso de procedencia actualizado |
+| `audit/source/tarata-*-original.jpg` | Copias exactas de las dos referencias seleccionadas; las originales no se modifican |
+| `public/assets/tarata-facade.webp`, `tarata-interior.webp`, `tarata-interior-mobile.webp` | Derivados WebP sin generación ni retoque |
+| `scripts/prepare-tarata-editorial.py` | Preparación reproducible con Pillow desde audit/source |
+| `qa/2026-09-26-tarata/` | 117 comprobaciones del recorrido + 30 específicas, capturas y regresión |
+| `deliverables/tarata-review.html`, `docs/TARATA_REVIEW.md` | Entrega visual vigente para 04 |
+
+Build verificado con el mismo Node aislado 22.23.1 y Vite 7.1.3. Demo actual: http://127.0.0.1:4174/. Scripts de QA usan Python Playwright/Chromium148, DPR1, 1440×900 y390×844. Safari/iOS físico y autoría de referencias siguen pendientes. Los snapshots del 25 no se sobrescribieron y ya no describen la composición actual de 04.
+
+---
+
 # Estado actual — home 01–05, 25 de septiembre de 2026
 
 La fase autorizada L18 ya está implementada sobre `0a1da04`, sin commit final. A es ahora la home; B conserva su hero. El snapshot del 23/24 de septiembre, los HTML autónomos anteriores y las capturas antiguas se conservan como evidencia histórica y **no representan la home actual**. El exportador autónomo anterior no se ejecutó ni se adaptó a esta home con video.

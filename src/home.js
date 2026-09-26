@@ -31,3 +31,24 @@ document.querySelectorAll('.home-only a[href^="#"], .hero-peru a[href^="#"]').fo
     target.focus({preventScroll:true});
   });
 });
+
+// Tarata: a single entrance, then still photographs. Visible without JS; no scroll pinning.
+const seat = document.querySelector('#seat-scene');
+function loadSeatPhotos() {
+  seat.querySelectorAll('[data-seat-srcset]').forEach(source => { source.srcset = source.dataset.seatSrcset; });
+  seat.querySelectorAll('[data-seat-src]').forEach(img => { img.src = img.dataset.seatSrc; });
+}
+if (seat && 'IntersectionObserver' in window) {
+  const photoObserver = new IntersectionObserver(entries => {
+    if (!entries[0].isIntersecting || root.dataset.direction !== 'a') return;
+    loadSeatPhotos();
+    photoObserver.disconnect();
+  }, {rootMargin:'800px 0px'});
+  photoObserver.observe(seat);
+  const seatObserver = new IntersectionObserver(entries => {
+    if (!entries[0].isIntersecting || root.dataset.direction !== 'a') return;
+    if (!reduced.matches && !root.classList.contains('no-motion')) seat.classList.add('seat-entered');
+    seatObserver.disconnect();
+  }, {rootMargin:'0px 0px -32px 0px', threshold:0});
+  seatObserver.observe(seat);
+} else if (seat) loadSeatPhotos();

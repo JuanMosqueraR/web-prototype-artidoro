@@ -1,0 +1,23 @@
+{
+  "conditions": "Final build, Chromium148, DPR1, motion on, initial hash #seat-scene. Confirms single header offset.",
+  "checks": [
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "section_y": 87.5,
+      "nav_height": 72,
+      "passed": true
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "section_y": 75.609375,
+      "nav_height": 64,
+      "passed": true
+    }
+  ]
+}

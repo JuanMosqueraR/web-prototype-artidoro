@@ -1,0 +1,160 @@
+{
+  "date": "2026-09-26",
+  "browser": "148.0.7778.96",
+  "dpr": 1,
+  "conditions": "Chromium headless emulated 1440x900 and 390x844, local production preview, exact viewport checked. No map navigation or purchase. Motion settled after 1.35s; complete journey captured separately with reduced motion.",
+  "checks": [
+    {
+      "name": "desktop: Tarata photographs deferred at initial load",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "desktop: entrance animation runs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: entrance settles",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: photographs visible after entrance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: correct responsive photograph",
+      "passed": true,
+      "detail": "http://127.0.0.1:4174/assets/tarata-interior.webp"
+    },
+    {
+      "name": "desktop: two photographs, no video/selector",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: free document flow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: map link retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: viewport correct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: no replay on return",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: site reduced motion removes entrance animation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "desktop: OS reduced motion no entrance animation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: no-JS images and link visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: Tarata photographs deferred at initial load",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "mobile: entrance animation runs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: entrance settles",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: photographs visible after entrance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: correct responsive photograph",
+      "passed": true,
+      "detail": "http://127.0.0.1:4174/assets/tarata-interior-mobile.webp"
+    },
+    {
+      "name": "mobile: two photographs, no video/selector",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: free document flow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: map link retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: viewport correct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: no replay on return",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: site reduced motion removes entrance animation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "mobile: OS reduced motion no entrance animation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: no-JS images and link visible",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 30,
+  "failed": 0
+}

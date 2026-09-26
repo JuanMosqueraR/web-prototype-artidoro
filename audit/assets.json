@@ -1,6 +1,6 @@
 {
-  "review_date": "2026-09-25",
-  "scope": "Authorized A home 01-05 (L18), five real product bags, generated conceptual scene03 media and existing conceptual CP04; B hero retained. Original Hero Lab constraints are recorded in historical_scope.",
+  "review_date": "2026-09-26",
+  "scope": "Authorized A home 01-05 (L18), five real product bags, generated conceptual scene03 media and existing conceptual CP04; B hero retained. Original Hero Lab constraints are recorded in historical_scope. Tarata editorial revision L19 uses two user-provided reference photographs (not AI) with unconfirmed authorship.",
   "assets": [
     {
       "id": "amazonas-bag",
@@ -655,8 +655,83 @@
       },
       "script": "scripts/prepare-home-assets.py",
       "preparation": "Resize and WebP compression only. UI crops with object-fit; original retained.",
-      "used_in": "A scene 04, one static view",
+      "used_in": "Archived September25 home poster; not rendered after L19 editorial revision.",
       "not_evidence": "Retains original CP04 conceptual status and Google Maps authorship gap."
+    },
+    {
+      "id": "tarata-facade-photo",
+      "status": "USABLE_WITH_PREPARATION",
+      "provisional": true,
+      "source_type": "User-provided reference photograph; not generated, not independently verified official brand photography.",
+      "source": "reference/tarata/02-facade-motorcycle.jpg",
+      "approval": "2026-09-26: user approved option1 interior+facade, visible motorcycle/helmet detail, photographic entrance motion, then said de acuerdo. go!",
+      "original": {
+        "file": "audit/source/tarata-facade-motorcycle-original.jpg",
+        "dimensions": [
+          972,
+          1216
+        ],
+        "bytes": 413078,
+        "sha256": "b2e89d847eed52030b299f0afc206f43d8ed73b82c623608d87de688e50d185d"
+      },
+      "prepared": [
+        {
+          "file": "public/assets/tarata-facade.webp",
+          "dimensions": [
+            780,
+            976
+          ],
+          "bytes": 185388,
+          "sha256": "26be0cd4ec067d991c4d089a93baa6520e0842ab202cd4ca951e7991a02e3258"
+        }
+      ],
+      "preparation": "Byte-identical source copy outside reference/. Pillow EXIF orientation, resize and WebP83 only; no retouching, generation, removal or brand reconstruction. Object-fit crop and overlapping layout via CSS.",
+      "script": "scripts/prepare-tarata-editorial.py",
+      "used_in": "A home04, Tarata editorial composition",
+      "known_limits": "Authorship/licence and capture date unconfirmed. Prototype use only, visible reference/provisional notice retained. Source resolution limits enlargement.",
+      "generation_cost_usd": 0
+    },
+    {
+      "id": "tarata-interior-photo",
+      "status": "USABLE_WITH_PREPARATION",
+      "provisional": true,
+      "source_type": "User-provided reference photograph; not generated, not independently verified official brand photography.",
+      "source": "reference/tarata/05-counter-staff-2.jpg",
+      "approval": "2026-09-26: user approved option1 interior+facade, visible motorcycle/helmet detail, photographic entrance motion, then said de acuerdo. go!",
+      "original": {
+        "file": "audit/source/tarata-counter-staff-original.jpg",
+        "dimensions": [
+          765,
+          1020
+        ],
+        "bytes": 151082,
+        "sha256": "08ba98bb82c90dbed2e1175ac856f8f85bd865fc6e8e68d81173ff4ef83897b1"
+      },
+      "prepared": [
+        {
+          "file": "public/assets/tarata-interior.webp",
+          "dimensions": [
+            765,
+            1020
+          ],
+          "bytes": 144828,
+          "sha256": "b9106053f4adcefe16b1e6da1444bfe70e2f3b1d7b2b0c94b2964aecde9deeac"
+        },
+        {
+          "file": "public/assets/tarata-interior-mobile.webp",
+          "dimensions": [
+            420,
+            560
+          ],
+          "bytes": 49192,
+          "sha256": "e8e6e94ada45f3f7947f163157c4c6c91826593cca9465ebeebb3cf6f8a70036"
+        }
+      ],
+      "preparation": "Byte-identical source copy outside reference/. Pillow EXIF orientation, resize and WebP83 only; no retouching, generation, removal or brand reconstruction. Object-fit crop and overlapping layout via CSS.",
+      "script": "scripts/prepare-tarata-editorial.py",
+      "used_in": "A home04, Tarata editorial composition",
+      "known_limits": "Authorship/licence and capture date unconfirmed. Prototype use only, visible reference/provisional notice retained. Source resolution limits enlargement.",
+      "generation_cost_usd": 0
     }
   ],
   "gaps": [
@@ -750,6 +825,11 @@
       "faq_link": "https://www.artidororodriguez.com/pages/preguntas-frecuentes",
       "fresh_roast_home_copy": "https://www.artidororodriguez.com/collections/cafe",
       "not_claimed": "No invented rating, reviews, guarantee, certification, discount, scarcity or delivery promise."
+    },
+    "tarata_editorial_2026_09_26": {
+      "address_link_source": "verified_copy.cp04_tarata (existing September24 official-location verification); no new address/hours/service claims.",
+      "tagline": "Tu próxima taza también puede ser aquí. Editorial invitation, not a new factual product/service claim.",
+      "private_design_context": "User stated on2026-09-26 that the owner is a motorcycle enthusiast and explicitly approved the visual motorcycle/helmet detail. Not used as public factual copy."
     }
   },
   "ai_generated_assets": [
@@ -768,5 +848,6 @@
   "historical_scope": {
     "review_date": "2026-09-23",
     "scope": "Public Artidoro material; no generated imagery. Only the two heroes. Exception for CP04 only (L15): two CONCEPTUAL_ASSET images adopted 2026-09-24."
-  }
+  },
+  "tarata_editorial_review_date": "2026-09-26"
 }

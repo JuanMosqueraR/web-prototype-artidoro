@@ -1,5 +1,7 @@
 # Artidoro — demo de la home 01–05
 
+**Actualización del 26 de septiembre:** [Tarata editorial — entrega y QA](docs/TARATA_REVIEW.md) · [Galería actual](deliverables/tarata-review.html). Checkpoint previo `3830028`; revisión sin commit final. La home sigue en `http://127.0.0.1:4174/`.
+
 Estado actual, 25 de septiembre de 2026: dirección A «Perú, en profundidad», con cinco orígenes, momento cinematográfico 03, pausa breve en Tarata y cierre comercial. Checkpoint recuperable `0a1da04`; esta fase queda sin commit final para revisión.
 
 - [Galería visual, videos y capturas](deliverables/home-review.html)

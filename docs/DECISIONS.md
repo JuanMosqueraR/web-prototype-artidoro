@@ -1,4 +1,6 @@
-# Alcance actual autorizado — 25 de septiembre de 2026
+# Alcance autorizado — home y revisión de Tarata
+
+Actualización del 26 de septiembre: L19, al final de este registro, documenta la nueva composición de 04. L18 conserva el alcance de la home.
 
 **L18 — Registro de la autorización explícita de la fase actual.** La instrucción del usuario es: «Continúa directamente con la fase de producción e implementación ya autorizada». Fuentes de verdad indicadas por el usuario: checkpoint `0a1da04`, dirección A — «Perú, en profundidad», referencias cinematográficas/motion y condiciones CRO del PDF existente.
 
@@ -70,3 +72,14 @@ No se resuelve ninguna cuestión OPEN en este handoff. Los límites técnicos re
 ## Fuentes del registro
 
 El contrato de alcance proviene de las instrucciones de la sesión. El baseline concreto se contrastó con `index.html`, `src/`, `README.md`, `audit/`, `qa/`, `deliverables/` y el ZIP final. Las referencias operativas y de evidencia permanecen en sus archivos originales; estos cinco documentos aportan contexto para retomar la conversación en VS Code.
+
+
+## L19 — Tarata editorial, 26 de septiembre de 2026
+
+El usuario aprobó explícitamente la opción 1 propuesta —interior grande y fachada con moto como fotografía secundaria superpuesta, con composición propia mobile—: «de acuerdo con la primera, aporta tener el guiño a la moto y cascos ya que el dueño es motero y aficionado por las motos». Tras concretar motion sobre fotografías reales, sin generar video para 04, confirmó: «de acuerdo. go!».
+
+Alcance: revisar únicamente 04 dentro de la home A; dos fotografías existentes, titular expresivo, copy breve, dirección y Cómo llegar. Entrada suave una vez, con desfase entre interior/fachada/titular; después reposo, scroll libre y reduced motion. Desktop prioriza interior; mobile prioriza fachada y conserva el detalle interior. 03 mantiene el video central y 05 el cierre comercial. Se conservan los archivos originales de reference/ y no se modifican herramientas APIMart ni el PDF CRO.
+
+Esta aprobación sustituye para 04 la exclusión anterior del guiño a cascos en L17 y la resolución con una sola imagen de L18. No autoriza transformar la cafetería en un concepto temático de motos ni inventar nuevos elementos del local. El interés del dueño es contexto aportado por el usuario, no un claim añadido a la web.
+
+Checkpoint previo de la implementación actual: `3830028`, continuando la autorización de conservar un estado recuperable antes de cambios. Esta revisión queda sin commit final. Clasificación/fuentes: audit/assets.json. Evidencia: qa/2026-09-26-tarata/.

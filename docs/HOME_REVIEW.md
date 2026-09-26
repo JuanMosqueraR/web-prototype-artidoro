@@ -1,3 +1,5 @@
+> **Snapshot del 25 de septiembre.** 04 se revisó después: [entrega actual de Tarata, 26 de septiembre](TARATA_REVIEW.md). Las capturas y mediciones de este informe describen la home anterior a esa revisión. El checkpoint de esta entrega es ahora `3830028`.
+
 # Home Artidoro — entrega para revisión visual
 
 25 de septiembre de 2026. Dirección A — «Perú, en profundidad». Implementación sobre el checkpoint recuperable `0a1da04`, sin commit final.
