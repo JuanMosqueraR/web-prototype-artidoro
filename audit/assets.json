@@ -1,6 +1,6 @@
 {
-  "review_date": "2026-09-23",
-  "scope": "Public Artidoro material; no generated imagery. Only the two heroes. Exception for CP04 only (L15): two CONCEPTUAL_ASSET images adopted 2026-09-24.",
+  "review_date": "2026-09-25",
+  "scope": "Authorized A home 01-05 (L18), five real product bags, generated conceptual scene03 media and existing conceptual CP04; B hero retained. Original Hero Lab constraints are recorded in historical_scope.",
   "assets": [
     {
       "id": "amazonas-bag",
@@ -23,7 +23,7 @@
       "prepared_status": "USABLE_WITH_PREPARATION",
       "used_file": "cajamarca-250g.webp",
       "script": "scripts/prepare-cajamarca.py",
-      "used_in": "Scene 02 only (direction A continuation); not used by the heroes",
+      "used_in": "A home scenes 02, 03 (real separate overlay) and 05. Earlier 02-only status is historical.",
       "preparation": "Silhouette mask, transparent crop (352,179,678,940), WebP. Same polygon as the Amazonas bag; validated against the Cajamarca photo (kraft-mask IoU with the Amazonas photo 0.998; polygon leaves the same 2 057 px of shadow/edge outside and the same halo count as on Amazonas; top, sides and base checked in enlarged overlays on cream and green). Original photographed pixels; label, illustration and colour untouched."
     },
     {
@@ -104,7 +104,7 @@
       "status": "CONCEPTUAL_ASSET",
       "decision": "L15, L16, L17 (docs/DECISIONS.md)",
       "adopted": "2026-09-24",
-      "used_in": "CP04 “Tomar asiento” (direction A, after scene 02; #seat-scene). Implemented 2026-09-24; direction B does not include it",
+      "used_in": "Archived CP04 source retained; not requested/rendered by the 2026-09-25 home.",
       "model": "gemini-3-pro-image-preview (Nano Banana Pro) via tools/apimart edit-image; working tree with uncommitted tooling changes",
       "base_photo_condition": "Google Maps reference photo, authorship unconfirmed; used only for this demo/prototype. Base file lives in untracked reference/tarata/, not in audit/source/.",
       "not_evidence": "AI-intervened image: not documentary evidence of the venue; must stay identified as conceptual/provisional.",
@@ -179,7 +179,7 @@
       "status": "CONCEPTUAL_ASSET",
       "decision": "L15, L16, L17 (docs/DECISIONS.md)",
       "adopted": "2026-09-24",
-      "used_in": "CP04 “Tomar asiento” (direction A, after scene 02; #seat-scene). Implemented 2026-09-24; direction B does not include it",
+      "used_in": "Retained master for derived tarata-home image in the simplified scene 04.",
       "model": "gemini-3-pro-image-preview (Nano Banana Pro) via tools/apimart edit-image; working tree with uncommitted tooling changes",
       "base_photo_condition": "Google Maps reference photo, authorship unconfirmed; used only for this demo/prototype. Base file lives in untracked reference/tarata/, not in audit/source/.",
       "not_evidence": "AI-intervened image: not documentary evidence of the venue; must stay identified as conceptual/provisional.",
@@ -224,6 +224,439 @@
         "note": "Large mirrored lettering on the storefront glass was removed in the cleanup, not restored."
       },
       "known_limits": "Small price tag remains at the top right; the street lamp seen through the glass was probably added by the light step; no helmets in frame (L17)."
+    },
+    {
+      "id": "villa-rica-bag",
+      "status": "REAL_ASSET",
+      "source": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GVILLARICA.jpg?v=1789063456",
+      "source_page": "https://www.artidororodriguez.com/products/cafe-villa-rica",
+      "retrieved": "2026-09-25",
+      "original": {
+        "file": "audit/source/villa-rica-original.jpg",
+        "bytes": 119120,
+        "sha256": "786bfe24c047dcd099dd060ecfab29223566ef643fab87766a8e61967033adc4",
+        "dimensions": [
+          1080,
+          1080
+        ]
+      },
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "prepared": {
+        "file": "public/assets/villa-rica-250g.webp",
+        "bytes": 95106,
+        "sha256": "8e113a6a774af952ff8e2b290094aedf302799091f21a4542aaf91167a75d80d",
+        "dimensions": [
+          326,
+          761
+        ]
+      },
+      "script": "scripts/prepare-home-assets.py",
+      "used_in": "A home scenes 02 and 05",
+      "preparation": "Same visually checked bag template polygon as existing Amazonas/Cajamarca. Alpha silhouette and crop only; original packaging artwork, text and colours retained."
+    },
+    {
+      "id": "cusco-bag",
+      "status": "REAL_ASSET",
+      "source": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCUSCO.jpg?v=1789063651",
+      "source_page": "https://www.artidororodriguez.com/products/cafe-cusco",
+      "retrieved": "2026-09-25",
+      "original": {
+        "file": "audit/source/cusco-original.jpg",
+        "bytes": 107837,
+        "sha256": "5819951a54edb6b386e8e009764424bd99d57968c8eef1c64569c8278ec9d987",
+        "dimensions": [
+          1080,
+          1080
+        ]
+      },
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "prepared": {
+        "file": "public/assets/cusco-250g.webp",
+        "bytes": 81050,
+        "sha256": "fa44565abeddbc6a3c82f3d92d781b1c2c7c0c44ea56f4c5ad97445017d7a95b",
+        "dimensions": [
+          326,
+          761
+        ]
+      },
+      "script": "scripts/prepare-home-assets.py",
+      "used_in": "A home scenes 02 and 05",
+      "preparation": "Same visually checked bag template polygon as existing Amazonas/Cajamarca. Alpha silhouette and crop only; original packaging artwork, text and colours retained."
+    },
+    {
+      "id": "puno-bag",
+      "status": "REAL_ASSET",
+      "source": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262",
+      "source_page": "https://www.artidororodriguez.com/products/cafe-puno",
+      "retrieved": "2026-09-25",
+      "original": {
+        "file": "audit/source/puno-original.jpg",
+        "bytes": 129099,
+        "sha256": "aada44e2ece29c4ff92af020ca3a84eb27411515c358623a1f1b31caaf9f0fc1",
+        "dimensions": [
+          1080,
+          1080
+        ]
+      },
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "prepared": {
+        "file": "public/assets/puno-250g.webp",
+        "bytes": 98846,
+        "sha256": "05682856ba67221686c3aa99d1fe1e3249464ba7c4fc8cad76e8a3a3576a6b27",
+        "dimensions": [
+          326,
+          761
+        ]
+      },
+      "script": "scripts/prepare-home-assets.py",
+      "used_in": "A home scenes 02 and 05",
+      "preparation": "Same visually checked bag template polygon as existing Amazonas/Cajamarca. Alpha silhouette and crop only; original packaging artwork, text and colours retained."
+    },
+    {
+      "id": "scene03-desktop-end",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "task_id": "task_01M3CN3TTG0XWGX46M42YXSW46",
+      "created": "2026-09-25",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Use case: ads-marketing. Create a premium cinematic coffee campaign photograph, landscape 16:9. Camera almost overhead, about 65 degrees down, very close to a low wide handmade ivory ceramic cup filled with freshly served BLACK FILTER COFFEE, translucent deep mahogany black liquid, with one subtle copper-gold crescent reflection and delicate concentric ripples. NO crema, no milk, no latte art. The entire cup and small elegant handle are visible, sitting on a very dark walnut table. Cup centered at 62 percent from the left, 56 percent from the top, occupies 45 percent of image height. Warm grazing sunlight from upper left, shadows with deep forest-green tonality, surrounding space falls into almost black. The frame should feel tactile, intimate, sculptural, expensive, like a large-format food cinematography film still, authentic ceramic glaze and luminous liquid with restrained steam. Strong chiaroscuro, high photographic realism, beautifully resolved fine texture. Left third kept dark and quiet for editorial type added later. Table edge not visible. Single cup, no saucer, no spoon, no beans scattered, no fruits, no ingredients, no hands, no people, no café interior, no packaging, no logo, no text, no typography, no watermark. This is the final frame of a camera pulling back from an extreme macro of the coffee surface.",
+        "size": "16:9",
+        "resolution": "2K",
+        "quality": null,
+        "n": 1,
+        "image_urls": [],
+        "image_files": [],
+        "reference_order": "local files, then remote URLs",
+        "mask_url": null,
+        "mask_file": null
+      },
+      "original": {
+        "file": "audit/source/scene03-desktop-end.jpg",
+        "bytes": 2443556,
+        "sha256": "f0c133d29752c6abec797710b33e3b419812d3d308c50e19f202860689a0d136",
+        "dimensions": [
+          2752,
+          1536
+        ]
+      },
+      "prepared": {
+        "file": "public/assets/scene03-desktop-end.webp",
+        "bytes": 46544,
+        "sha256": "ce8bc82c212e7475f717a2866c4c24c1a59d0014db5da825ae7c541b27d04eae",
+        "dimensions": [
+          1600,
+          893
+        ]
+      },
+      "script": "scripts/prepare-home-assets.py",
+      "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
+      "used_in": "A home scene 03, independent of scene 02 selection",
+      "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy."
+    },
+    {
+      "id": "scene03-desktop-start",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "task_id": "task_01M3CN9DX8D1E6N2ZVV1DZJDT3",
+      "created": "2026-09-25",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Extreme macro cinematography of the dark surface of black filter coffee. Entire landscape image is ONLY coffee liquid, viewed diagonally from very close; no cup edge visible anywhere. A sculptural ring ripple with a thin copper and amber reflected highlight arcs across the right two thirds like a landscape contour. Rich glossy dark mahogany and nearly black forest green reflected shadows, subtle microtexture, luminous sliver of amber light, cinematic chiaroscuro, extremely realistic liquid, elegant restrained luxury coffee advertising shot. Left quarter dark and relatively quiet. Absolutely no cup, no foam, no crema, no milk, no latte art, no pouring stream, no splashes, no mountains or actual landscape, no fruit or other ingredients, no text, no logo. Precise focus on the beautiful curved ripple, shallow depth of field. The opening frame of a camera pulling back to reveal a coffee cup, intimate and tactile, premium optical food cinematography.",
+        "size": "16:9",
+        "resolution": "2K",
+        "quality": null,
+        "n": 1,
+        "image_urls": [],
+        "image_files": [],
+        "reference_order": "local files, then remote URLs",
+        "mask_url": null,
+        "mask_file": null
+      },
+      "original": {
+        "file": "audit/source/scene03-desktop-start.jpg",
+        "bytes": 2304092,
+        "sha256": "a447d2220b5efac2984a3cecc61c15b73108894ecb4482e0cf95361d87cce5af",
+        "dimensions": [
+          2752,
+          1536
+        ]
+      },
+      "prepared": {
+        "file": "public/assets/scene03-desktop-start.webp",
+        "bytes": 31664,
+        "sha256": "672789ec997c3c8c1b44f04533fe9f53981576eb7561e601a1f4864016786c79",
+        "dimensions": [
+          1600,
+          893
+        ]
+      },
+      "script": "scripts/prepare-home-assets.py",
+      "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
+      "used_in": "A home scene 03, independent of scene 02 selection",
+      "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy."
+    },
+    {
+      "id": "scene03-mobile-end",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "task_id": "task_01M3CN9F19E18M5SPNT44Z8TCX",
+      "created": "2026-09-25",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Premium cinematic coffee campaign photograph in a vertical 9:16 composition. A low wide handmade ivory ceramic cup filled with BLACK FILTER COFFEE, clear dark mahogany liquid, no crema or milk. Camera looks down at about 65 degrees, entire cup and handle visible. Cup centered horizontally, at 58 percent image height, occupying 72 percent image width. Dark walnut tabletop, warm grazing sunlight from upper left, beautiful soft natural steam and slight concentric ripples in coffee, one copper-gold crescent reflection. Shadows have deep forest-green tonality fading to almost black. Top third dark empty negative space for title added later. Bottom fifth quiet dark wood for UI added later. A tactile intimate sculptural expensive large-format food cinematography film still, highly photographic, fine ceramic glaze texture, strong chiaroscuro. Single cup, no saucer, no spoon, no beans scattered, no fruit, no ingredients, no hands, no people, no interior, no packaging, no logos, no text, no watermarks. Final frame of a continuous camera pullback from an extreme coffee macro.",
+        "size": "9:16",
+        "resolution": "2K",
+        "quality": null,
+        "n": 1,
+        "image_urls": [],
+        "image_files": [],
+        "reference_order": "local files, then remote URLs",
+        "mask_url": null,
+        "mask_file": null
+      },
+      "original": {
+        "file": "audit/source/scene03-mobile-end.jpg",
+        "bytes": 2874879,
+        "sha256": "b260e23b074000736ecabcc677b7e1ae986ce1bd0ad8ed0093982580b52432d2",
+        "dimensions": [
+          1536,
+          2752
+        ]
+      },
+      "prepared": {
+        "file": "public/assets/scene03-mobile-end.webp",
+        "bytes": 55170,
+        "sha256": "a22c3a6a46c0adcc694967bf05f3e2603230f0e52000fc55dbf3f783a8f5583b",
+        "dimensions": [
+          893,
+          1600
+        ]
+      },
+      "script": "scripts/prepare-home-assets.py",
+      "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
+      "used_in": "A home scene 03, independent of scene 02 selection",
+      "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy."
+    },
+    {
+      "id": "scene03-mobile-start",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "task_id": "task_01M3CN9FYWMC008BB972DF258D",
+      "created": "2026-09-25",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Vertical 9:16 extreme macro cinematography of the dark surface of black filter coffee. The entire image shows ONLY coffee liquid with no cup edge visible. A sculptural ring ripple with a thin copper and amber reflected highlight curves through the middle and lower frame like a landscape contour. Rich glossy deep mahogany and near-black forest green reflected shadows, luminous thin amber highlight, tiny natural surface texture. Top third darker and quiet for future typography. Beautiful physically realistic coffee liquid photographed with a cinema macro lens and shallow depth of field. Intimate, tactile, premium coffee advertising, dramatic chiaroscuro. No actual landscape, no foam, no crema, no milk, no cup, no pour, no splashes, no fruit, no ingredients, no text, no logos, no watermark. This is the beginning of a camera move back out of the coffee.",
+        "size": "9:16",
+        "resolution": "2K",
+        "quality": null,
+        "n": 1,
+        "image_urls": [],
+        "image_files": [],
+        "reference_order": "local files, then remote URLs",
+        "mask_url": null,
+        "mask_file": null
+      },
+      "original": {
+        "file": "audit/source/scene03-mobile-start.jpg",
+        "bytes": 2324242,
+        "sha256": "0208ef1a28987068014f0ed6bf6aef2fa3d5967e55a68cffcc3dd99115dcfc28",
+        "dimensions": [
+          1536,
+          2752
+        ]
+      },
+      "prepared": {
+        "file": "public/assets/scene03-mobile-start.webp",
+        "bytes": 33770,
+        "sha256": "307af60638fef8956aeaaba218f3b698bcc8b5e4d6acf928ff558741743b74ec",
+        "dimensions": [
+          893,
+          1600
+        ]
+      },
+      "script": "scripts/prepare-home-assets.py",
+      "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
+      "used_in": "A home scene 03, independent of scene 02 selection",
+      "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy."
+    },
+    {
+      "id": "scene03-desktop-video",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "kling-v3",
+      "task_id": "task_01M3CNFYF52ZVSRD1GN10SDVWR",
+      "created": "2026-09-25",
+      "actual_cost_usd": 0.4704,
+      "params": {
+        "prompt": "One continuous premium coffee cinematography shot. Start exactly on the extreme macro first image: we are inside the dark surface of black filter coffee, a copper-gold ring ripple moving very gently. The camera smoothly dollies backward and rises, a dramatic but beautifully fluid change of scale. The coffee surface gets smaller, the real ivory ceramic cup rim gradually enters frame, then reveal the whole cup on the dark walnut table, arriving exactly at the supplied final frame. The liquid is always inside the SAME cup: no morph, no dissolve, no cut, no new objects. Subtle physically plausible surface ripples settling and delicate steam. Warm raking sunlight, deep forest-green shadows, cinematic chiaroscuro, photorealistic optical macro to medium shot. Keep the coffee dark, without crema, foam or milk. Cup remains stationary. No hands, no pouring, no ingredients, no text, no logos, no packaging, no sound. Camera eases to a complete rest in the last second. Preserve composition and lighting of the end frame.",
+        "duration": 7,
+        "aspect_ratio": "16:9",
+        "frame_task_ids": [
+          "task_01M3CN9DX8D1E6N2ZVV1DZJDT3",
+          "task_01M3CN3TTG0XWGX46M42YXSW46"
+        ],
+        "mode": "std (provider default)",
+        "audio": false,
+        "pricing_source": "https://apimart.ai/blog/kling-3-0-fast-api-pricing-features-how-to-access-2026"
+      },
+      "original": {
+        "file": "audit/source/scene03-desktop-original.mp4",
+        "bytes": 3523759,
+        "sha256": "e95ac01eb7e2b775123558a2e2f4f91e58e990a7d8887954ce4afa77a5d68277"
+      },
+      "prepared": {
+        "file": "public/assets/scene03-desktop.mp4",
+        "bytes": 1678264,
+        "sha256": "ea5d6bcfb662cc8fa407a2ef060621f9082ff2346701f60f7a014ce69ac75ba6"
+      },
+      "script": "scripts/prepare-scene03-video.py",
+      "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
+      "used_in": "A home scene 03, independent of scene 02 selection",
+      "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy.",
+      "duration_seconds": 7.041667,
+      "fps": 24,
+      "delivery": "Silent H.264 yuv420p, CRF21, GOP8, faststart; one responsive source; deferred until near viewport."
+    },
+    {
+      "id": "scene03-mobile-video",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "kling-v3",
+      "task_id": "task_01M3CNG48RNVPTE96DK9ERRSP9",
+      "created": "2026-09-25",
+      "actual_cost_usd": 0.4704,
+      "params": {
+        "prompt": "One continuous premium coffee cinematography shot. Start exactly on the extreme macro first image: we are inside the dark surface of black filter coffee, a copper-gold ring ripple moving very gently. The camera smoothly dollies backward and rises, a dramatic but beautifully fluid change of scale. The coffee surface gets smaller, the real ivory ceramic cup rim gradually enters frame, then reveal the whole cup on the dark walnut table, arriving exactly at the supplied final frame. The liquid is always inside the SAME cup: no morph, no dissolve, no cut, no new objects. Subtle physically plausible surface ripples settling and delicate steam. Warm raking sunlight, deep forest-green shadows, cinematic chiaroscuro, photorealistic optical macro to medium shot. Keep the coffee dark, without crema, foam or milk. Cup remains stationary. No hands, no pouring, no ingredients, no text, no logos, no packaging, no sound. Camera eases to a complete rest in the last second. Preserve composition and lighting of the end frame.",
+        "duration": 7,
+        "aspect_ratio": "9:16",
+        "frame_task_ids": [
+          "task_01M3CN9FYWMC008BB972DF258D",
+          "task_01M3CN9F19E18M5SPNT44Z8TCX"
+        ],
+        "mode": "std (provider default)",
+        "audio": false,
+        "pricing_source": "https://apimart.ai/blog/kling-3-0-fast-api-pricing-features-how-to-access-2026"
+      },
+      "original": {
+        "file": "audit/source/scene03-mobile-original.mp4",
+        "bytes": 4905798,
+        "sha256": "d5306f48d73da276ec9c284c697a666ccc0edb18fac80c29c2b5aed6516900fd"
+      },
+      "prepared": {
+        "file": "public/assets/scene03-mobile.mp4",
+        "bytes": 2224802,
+        "sha256": "f79f33fe9ac516004d97b6d0b5edeb69434c38a361f711b2b85a67f060f4d4b6"
+      },
+      "script": "scripts/prepare-scene03-video.py",
+      "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
+      "used_in": "A home scene 03, independent of scene 02 selection",
+      "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy.",
+      "duration_seconds": 7.041667,
+      "fps": 24,
+      "delivery": "Silent H.264 yuv420p, CRF21, GOP8, faststart; one responsive source; deferred until near viewport."
+    },
+    {
+      "id": "cafetal-home-desktop",
+      "status": "USABLE_WITH_PREPARATION",
+      "notice": "PROVISIONAL_ASSET",
+      "source_id": "cafetal",
+      "original": {
+        "file": "audit/source/artidoro-landscape-still.jpg",
+        "bytes": 246971,
+        "sha256": "b056c547497dc19b89d50c95afc65bd6a3f29c618e67394eab52e9854ef05fa6",
+        "dimensions": [
+          1280,
+          720
+        ]
+      },
+      "prepared": {
+        "file": "public/assets/cafetal-home-desktop.webp",
+        "bytes": 105808,
+        "sha256": "11e19ada793b01b46cb89b2faa373d69bd6452b799e8e762314827b7eb8754a5",
+        "dimensions": [
+          1280,
+          720
+        ]
+      },
+      "script": "scripts/prepare-home-assets.py",
+      "preparation": "Same original source, resized (mobile) and WebP quality75. No geographic attribution added.",
+      "used_in": "A hero responsive landscape"
+    },
+    {
+      "id": "cafetal-home-mobile",
+      "status": "USABLE_WITH_PREPARATION",
+      "notice": "PROVISIONAL_ASSET",
+      "source_id": "cafetal",
+      "original": {
+        "file": "audit/source/artidoro-landscape-still.jpg",
+        "bytes": 246971,
+        "sha256": "b056c547497dc19b89d50c95afc65bd6a3f29c618e67394eab52e9854ef05fa6",
+        "dimensions": [
+          1280,
+          720
+        ]
+      },
+      "prepared": {
+        "file": "public/assets/cafetal-home-mobile.webp",
+        "bytes": 52720,
+        "sha256": "65837f96e1f1da6b0ca0b988edc599315d6639442c3100bffcaa4139b9a1e5be",
+        "dimensions": [
+          768,
+          432
+        ]
+      },
+      "script": "scripts/prepare-home-assets.py",
+      "preparation": "Same original source, resized (mobile) and WebP quality75. No geographic attribution added.",
+      "used_in": "A hero responsive landscape"
+    },
+    {
+      "id": "barlow-home-woff2",
+      "status": "LAB_TYPOGRAPHIC_CHOICE",
+      "original": {
+        "file": "audit/source/barlow-condensed-800-original.ttf",
+        "bytes": 87556,
+        "sha256": "73bc9e17231e9073780d3c81574c7253cecd5645c93544df1a935054b39a364f"
+      },
+      "prepared": {
+        "file": "public/assets/barlow-condensed-800.woff2",
+        "bytes": 33136,
+        "sha256": "167d90a204a2258ff4fa17c8a2f3a4acec63d0778129e7aeeff9e6a98d879267"
+      },
+      "script": "scripts/prepare-home-assets.py",
+      "preparation": "FontTools lossless container conversion, no subset, all glyphs and metrics retained.",
+      "used_in": "Shared display typography; regression QA includes B."
+    },
+    {
+      "id": "tarata-home",
+      "status": "CONCEPTUAL_ASSET",
+      "source_id": "cp04-mesa",
+      "original": {
+        "file": "public/assets/cp04-mesa.jpg",
+        "bytes": 1219978,
+        "sha256": "d53d44416415f34937c576d158eec444e395579ff18c97ccde4036b51ac0b098",
+        "dimensions": [
+          1792,
+          2400
+        ]
+      },
+      "prepared": {
+        "file": "public/assets/tarata-mesa-home.webp",
+        "bytes": 199722,
+        "sha256": "e1b53489f2da7c0652c348c8be391e94aac8eee608e31cf3483e83247b994da4",
+        "dimensions": [
+          1000,
+          1339
+        ]
+      },
+      "script": "scripts/prepare-home-assets.py",
+      "preparation": "Resize and WebP compression only. UI crops with object-fit; original retained.",
+      "used_in": "A scene 04, one static view",
+      "not_evidence": "Retains original CP04 conceptual status and Google Maps authorship gap."
     }
   ],
   "gaps": [
@@ -295,10 +728,45 @@
       ],
       "como_llegar_href": "https://maps.app.goo.gl/8obmU6zC2Uh49pyy8",
       "note": "Strings copied verbatim from the Tarata card. The link is the href of that card’s “Cómo llegar” button; it was not followed or resolved here. The page also lists Cafetería La Mar (out of scope; not used). Hours and address can change on the official page; this is the state on the verification date."
+    },
+    "home_2026_09_25": {
+      "source_snapshot": "audit/source/home-catalog-2026-09-25.json",
+      "source": "https://www.artidororodriguez.com/collections/cafe/products.json?limit=100",
+      "verified_on": "2026-09-25",
+      "price_250g_PEN": "39.90 for all five origins",
+      "sizes": [
+        "250 g",
+        "454 g",
+        "1 kg"
+      ],
+      "preparations": [
+        "Grano",
+        "Molido Fino",
+        "Molido Medio",
+        "Molido Grueso"
+      ],
+      "notes": "Retained source-backed notes from verified_copy.origin_scene_02. Villa Rica label says frutos rojos y pasas; website source also includes dulce. No ingredient photography inferred from tasting notes.",
+      "shipping_policy_link": "https://www.artidororodriguez.com/policies/shipping-policy",
+      "faq_link": "https://www.artidororodriguez.com/pages/preguntas-frecuentes",
+      "fresh_roast_home_copy": "https://www.artidororodriguez.com/collections/cafe",
+      "not_claimed": "No invented rating, reviews, guarantee, certification, discount, scarcity or delivery promise."
     }
   },
   "ai_generated_assets": [
     "cp04-entrada",
-    "cp04-mesa"
-  ]
+    "cp04-mesa",
+    "scene03-desktop-end",
+    "scene03-desktop-start",
+    "scene03-mobile-end",
+    "scene03-mobile-start",
+    "scene03-desktop-video",
+    "scene03-mobile-video",
+    "tarata-home"
+  ],
+  "home_review_date": "2026-09-25",
+  "home_scope": "Authorized A home 01-05; checkpoint 0a1da04 preserved, no final commit.",
+  "historical_scope": {
+    "review_date": "2026-09-23",
+    "scope": "Public Artidoro material; no generated imagery. Only the two heroes. Exception for CP04 only (L15): two CONCEPTUAL_ASSET images adopted 2026-09-24."
+  }
 }

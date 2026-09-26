@@ -7,7 +7,8 @@ const queries = new URLSearchParams(location.search);
 let current = 'a';
 function updateIndicator() { indicator.textContent = scenes[current].dataset.expanded === 'true' ? 'FRAME B' : 'FRAME A'; }
 function setDirection() {
-  const requested = location.hash.replace('#', '').toLowerCase() || queries.get('direction') || (location.pathname.match(/\/b\/?$/) ? 'b' : root.dataset.direction);
+  const hashDirection = location.hash === '#a' || location.hash === '#b' ? location.hash.slice(1) : null;
+  const requested = hashDirection || queries.get('direction') || (location.pathname.match(/\/b\/?$/) ? 'b' : root.dataset.direction);
   current = requested === 'b' ? 'b' : 'a';
   root.dataset.direction = current;
   Object.entries(scenes).forEach(([key, scene]) => { scene.hidden = key !== current; });

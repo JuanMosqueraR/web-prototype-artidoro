@@ -1,0 +1,174 @@
+{
+  "baseline": "qa/measurements.json",
+  "conditions": "DPR1, Chromium, motion off, current A home vs historic hero-only. CTA bounding boxes are viewport-relative.",
+  "cta_deltas": [
+    {
+      "test": "A desktop before",
+      "before": {
+        "height": 58,
+        "width": 330,
+        "x": 86.390625,
+        "y": 660.3125
+      },
+      "current": {
+        "x": 86.390625,
+        "y": 657.1875,
+        "width": 330,
+        "height": 58
+      },
+      "delta": {
+        "height": 0,
+        "width": 0,
+        "x": 0.0,
+        "y": -3.125
+      }
+    },
+    {
+      "test": "A desktop after",
+      "before": {
+        "height": 58,
+        "width": 330,
+        "x": 86.390625,
+        "y": 660.3125
+      },
+      "current": {
+        "x": 86.390625,
+        "y": 657.1875,
+        "width": 330,
+        "height": 58
+      },
+      "delta": {
+        "height": 0,
+        "width": 0,
+        "x": 0.0,
+        "y": -3.125
+      }
+    },
+    {
+      "test": "B desktop before",
+      "before": {
+        "height": 58,
+        "width": 330,
+        "x": 86.390625,
+        "y": 660.3125
+      },
+      "current": {
+        "x": 86.390625,
+        "y": 660.3125,
+        "width": 330,
+        "height": 58
+      },
+      "delta": {
+        "height": 0,
+        "width": 0,
+        "x": 0.0,
+        "y": 0.0
+      }
+    },
+    {
+      "test": "B desktop after",
+      "before": {
+        "height": 58,
+        "width": 330,
+        "x": 86.390625,
+        "y": 660.3125
+      },
+      "current": {
+        "x": 86.390625,
+        "y": 660.3125,
+        "width": 330,
+        "height": 58
+      },
+      "delta": {
+        "height": 0,
+        "width": 0,
+        "x": 0.0,
+        "y": 0.0
+      }
+    },
+    {
+      "test": "A mobile before",
+      "before": {
+        "height": 54,
+        "width": 346,
+        "x": 22,
+        "y": 629
+      },
+      "current": {
+        "x": 22,
+        "y": 637,
+        "width": 346,
+        "height": 54
+      },
+      "delta": {
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 8
+      }
+    },
+    {
+      "test": "A mobile after",
+      "before": {
+        "height": 54,
+        "width": 346,
+        "x": 22,
+        "y": 629
+      },
+      "current": {
+        "x": 22,
+        "y": 637,
+        "width": 346,
+        "height": 54
+      },
+      "delta": {
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 8
+      }
+    },
+    {
+      "test": "B mobile before",
+      "before": {
+        "height": 54,
+        "width": 346,
+        "x": 22,
+        "y": 629
+      },
+      "current": {
+        "x": 22,
+        "y": 629,
+        "width": 346,
+        "height": 54
+      },
+      "delta": {
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "test": "B mobile after",
+      "before": {
+        "height": 54,
+        "width": 346,
+        "x": 22,
+        "y": 629
+      },
+      "current": {
+        "x": 22,
+        "y": 629,
+        "width": 346,
+        "height": 54
+      },
+      "delta": {
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

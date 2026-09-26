@@ -1,0 +1,676 @@
+{
+  "date": "2026-09-25",
+  "url": "http://127.0.0.1:4174",
+  "browser": "148.0.7778.96",
+  "dpr": 1,
+  "conditions": "Desktop 1440x900 and mobile 390x844, emulated Chromium. Full home captures use OS reduced motion and decoded images; 03 stage captures use scroll video. No purchase executed.",
+  "checks": [
+    {
+      "name": "a-desktop-motion-initial: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 657.1875,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "a-desktop-motion-initial: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-desktop-motion-expanded: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 657.1875,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "a-desktop-motion-expanded: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-desktop-motion: no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "a-desktop-reduced-initial: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 657.1875,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "a-desktop-reduced-initial: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-desktop-reduced-expanded: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 657.1875,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "a-desktop-reduced-expanded: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-desktop-reduced: no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "b-desktop-motion-initial: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 660.3125,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "b-desktop-motion-initial: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-desktop-motion-expanded: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 660.3125,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "b-desktop-motion-expanded: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-desktop-motion: home hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-desktop-motion: no video request",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-desktop-motion: no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "b-desktop-reduced-initial: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 660.3125,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "b-desktop-reduced-initial: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-desktop-reduced-expanded: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 660.3125,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "b-desktop-reduced-expanded: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-desktop-reduced: home hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-desktop-reduced: no video request",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-desktop-reduced: no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "desktop: video absent on initial load",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: hero price visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: cajamarca updates purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: cajamarca bag decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: villa-rica updates purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: villa-rica bag decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: cusco updates purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: cusco bag decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: puno updates purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: puno bag decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: amazonas updates purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: amazonas bag decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: 05 independent of 02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: responsive video selected",
+      "passed": true,
+      "detail": "/assets/scene03-desktop.mp4"
+    },
+    {
+      "name": "desktop: scroll seeks start",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "desktop: scroll seeks middle",
+      "passed": true,
+      "detail": 3.495143
+    },
+    {
+      "name": "desktop: scroll seeks end",
+      "passed": true,
+      "detail": 6.981667
+    },
+    {
+      "name": "desktop: scroll seeks reverse",
+      "passed": true,
+      "detail": 1.754036
+    },
+    {
+      "name": "desktop: reverse decreases time",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: purchase shortcut available during 03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: purchase shortcut reaches 05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: five commercial products",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: all prices and purchase links",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: no cafeteria selector",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: no JS errors across journey",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "desktop: system reduced motion does not request video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: system reduced motion does not pin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: poster decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: failed video collapses to poster",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: failed video leaves purchase reachable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: no-JS purchase links",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: no-JS video absent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-mobile-motion-initial: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 637,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "a-mobile-motion-initial: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-mobile-motion-expanded: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 637,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "a-mobile-motion-expanded: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-mobile-motion: no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "a-mobile-reduced-initial: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 637,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "a-mobile-reduced-initial: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-mobile-reduced-expanded: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 637,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "a-mobile-reduced-expanded: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-mobile-reduced: no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "b-mobile-motion-initial: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 629,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "b-mobile-motion-initial: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-mobile-motion-expanded: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 629,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "b-mobile-motion-expanded: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-mobile-motion: home hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-mobile-motion: no video request",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-mobile-motion: no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "b-mobile-reduced-initial: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 629,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "b-mobile-reduced-initial: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-mobile-reduced-expanded: CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 629,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "b-mobile-reduced-expanded: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-mobile-reduced: home hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-mobile-reduced: no video request",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-mobile-reduced: no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "mobile: video absent on initial load",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: hero price visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: cajamarca updates purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: cajamarca bag decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: villa-rica updates purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: villa-rica bag decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: cusco updates purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: cusco bag decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: puno updates purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: puno bag decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: amazonas updates purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: amazonas bag decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: 05 independent of 02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: responsive video selected",
+      "passed": true,
+      "detail": "/assets/scene03-mobile.mp4"
+    },
+    {
+      "name": "mobile: scroll seeks start",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "mobile: scroll seeks middle",
+      "passed": true,
+      "detail": 3.498955
+    },
+    {
+      "name": "mobile: scroll seeks end",
+      "passed": true,
+      "detail": 6.981667
+    },
+    {
+      "name": "mobile: scroll seeks reverse",
+      "passed": true,
+      "detail": 1.750585
+    },
+    {
+      "name": "mobile: reverse decreases time",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: purchase shortcut available during 03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: purchase shortcut reaches 05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: five commercial products",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: all prices and purchase links",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: no cafeteria selector",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: no JS errors across journey",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "mobile: system reduced motion does not request video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: system reduced motion does not pin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: poster decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: failed video collapses to poster",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: failed video leaves purchase reachable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: no-JS purchase links",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: no-JS video absent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exploratory 320x740: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exploratory 360x800: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exploratory 768x1024: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exploratory 1024x768: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exploratory 1920x1080: no horizontal overflow",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 117,
+  "failed": 0
+}

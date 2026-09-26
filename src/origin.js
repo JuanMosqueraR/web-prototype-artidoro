@@ -17,6 +17,7 @@ if (scene) {
   // Resolves true once the incoming bag is decodable; false on error or timeout. Never rejects.
   function prepare(key) {
     const img = bags[key];
+    if (img.dataset.src && !img.getAttribute('src')) img.src = img.dataset.src;
     if (img.loading === 'lazy' && !ready(img)) img.loading = 'eager';
     return new Promise(resolve => {
       let done = false;

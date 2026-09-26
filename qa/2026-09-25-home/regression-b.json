@@ -1,0 +1,63 @@
+{
+  "date": "2026-09-25",
+  "conditions": "Chromium, DPR1, reduced motion, initial keyframe, same viewport; snapshot before current phase in scratch. No new A/B concept comparison.",
+  "b": [
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "commerce_before": {
+        "x": 86.390625,
+        "y": 660.3125,
+        "width": 330,
+        "height": 93.6875
+      },
+      "commerce_after": {
+        "x": 86.390625,
+        "y": 660.3125,
+        "width": 330,
+        "height": 93.6875
+      },
+      "commerce_delta": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0.0
+      },
+      "pixel_equal": true,
+      "pixel_difference_bounds": null
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "commerce_before": {
+        "x": 22,
+        "y": 629,
+        "width": 346,
+        "height": 103
+      },
+      "commerce_after": {
+        "x": 22,
+        "y": 629,
+        "width": 346,
+        "height": 103
+      },
+      "commerce_delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "pixel_equal": true,
+      "pixel_difference_bounds": null
+    }
+  ],
+  "font_conversion": {
+    "glyph_order_equal": true,
+    "horizontal_metrics_equal": true,
+    "unicode_map_equal": true
+  }
+}

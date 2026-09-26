@@ -1,3 +1,23 @@
+# Dirección A — home implementada, 25 de septiembre de 2026
+
+La fase L18 desarrolla «Perú, en profundidad» desde el checkpoint `0a1da04`. El código actual prevalece sobre el snapshot del Hero Lab conservado más abajo. B continúa accesible en `/b/`; no recibe un rediseño y no se formula una nueva comparación A/B.
+
+- **01 / presencia:** conserva el cafetal, la bolsa Amazonas y el acercamiento reversible. Añade navegación propia de home, precio visible y CTA comercial desde el primer viewport. Paisaje responsive y tipografía local comprimida; aviso de procedencia geográfica provisional conservado.
+- **02 / elección:** cinco orígenes con packaging real, notas, 250 g, precio y enlace a su ficha. La selección afecta únicamente a 02. La bolsa se solicita al elegirla; 03 y 05 no heredan un origen.
+- **03 / deseo:** macro de la superficie del café que se abre hacia una taza, con clips propios horizontal y vertical de siete segundos. El scroll controla el tiempo de un video silencioso y reversible. Solo esta escena tiene permanencia sticky. La tipografía cambia de escala y aparecen dos bolsas reales al cerrar el movimiento; marca, packaging, textos y enlace comercial permanecen fuera del video. El enlace «Llévalo a la taza» salta directamente a 05.
+- **04 / cercanía:** una sola imagen de «Desde la mesa», texto breve, dirección y enlace de ubicación de Tarata. Sin selector, segunda escena ni video. Su menor superficie y el cambio de fondo dan una pausa entre el clímax y la compra.
+- **05 / compra:** composición editorial de cinco bolsas en desktop; Amazonas abre y las otras cuatro forman dos columnas en mobile. Cada café tiene notas, gramaje, precio y enlace «Comprar» a su PDP oficial. El cierre conduce al catálogo completo y muestra enlaces de envíos y preguntas frecuentes.
+
+**Motion y carga:** CSS/JS conservan las interacciones de 01/02; no se añadió una librería de animación. 03 solicita solo el MP4 correspondiente al viewport al acercarse a 450 px, sin autoplay ni descarga inicial. Scroll normal en el resto de la página. Preferencia del sistema, control de movimiento o ahorro de datos evitan el video; fallo o espera de 15 s lo sustituyen por el poster y eliminan la permanencia. Los CTAs siguen disponibles. La transición a Tarata es la salida natural del tramo sticky y un cambio de superficie, sin otra secuencia de video.
+
+**Mobile tiene composición propia:** clip vertical, titular superior, taza más baja, compra siempre enlazada; 04 pone la imagen antes del texto y 05 organiza los productos de forma distinta. No es un recorte único del desktop.
+
+Media de 03 y Tarata conceptual, identificada en la interfaz y en `audit/assets.json`. No representa un proceso documentado de un origen ni una taza oficial de la marca. [Galería de revisión](../deliverables/home-review.html) · [QA](../qa/2026-09-25-home/README.md).
+
+---
+
+## Snapshot histórico del Hero Lab — no describe la home actual
+
 # Direcciones creativas — estado implementado
 
 Este documento registra el Hero Lab entregado, no una evolución propuesta. **Dirección A/B** identifica un concepto; **Keyframe A/B** identifica el estado inicial/desplegado dentro de cualquiera de ellos.

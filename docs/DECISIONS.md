@@ -1,3 +1,29 @@
+# Alcance actual autorizado — 25 de septiembre de 2026
+
+**L18 — Registro de la autorización explícita de la fase actual.** La instrucción del usuario es: «Continúa directamente con la fase de producción e implementación ya autorizada». Fuentes de verdad indicadas por el usuario: checkpoint `0a1da04`, dirección A — «Perú, en profundidad», referencias cinematográficas/motion y condiciones CRO del PDF existente.
+
+La autorización incluye estas instrucciones literales:
+
+- «La dirección base sigue siendo A — “Perú, en profundidad”.»
+- «La selección de origen en 02 NO debe gobernar toda la narrativa posterior.»
+- «Quiero terminar con una demo navegable de la home: 01 → 02 → 03 → 04 → 05».
+- «03 debe convertirse en el gran momento wow de la home.»
+- «04 debe quedar reducido y mejor proporcionado.»
+- «05 debe cerrar claramente en clave ecommerce.»
+- «Puedes generar los assets y videos necesarios.»
+- «Para el problema Node/Vite usa la solución aislada compatible que propones.»
+- «No hagas commit final.»
+
+Alcance: ejecutar esta fase de la demo A, con composiciones desktop/mobile, media, preparación de assets, implementación y QA. El usuario autoriza criterio de ejecución y no pide otra ronda de planning. No autoriza una publicación, checkout nuevo, migración Shopify ni una nueva fase posterior. Deben conservarse `reference/`, el PDF CRO y los cambios preexistentes ajenos de `tools/apimart/*`. El checkpoint indicado ya existe y se preserva sin reescribir historial.
+
+**Relación con el registro anterior:** para esta fase, L18 sustituye las restricciones de alcance de L02/L14 y los límites de media de L06/L10/L11 en aquello que la home y su 03 autorizado requieren. La simplificación aprobada de 04 sustituye el selector de dos estados de L16/L17 por una sola presencia «Desde la mesa»; se conservan las fuentes anteriores. A es la base expresamente indicada para continuar; no se declara una victoria experimental sobre B ni se realiza una comparación de conversión. Los cuadros LOCKED/OPEN de abajo quedan como registro histórico del Hero Lab, sin reclasificación documental de sus filas. Las referencias O01/O05/O06 de ese snapshot no describen la autorización actual. Las incertidumbres sobre paisaje, autoría y arte maestro siguen abiertas; ninguna generación es material oficial.
+
+Implementación y evidencia de esta fase: [HOME_REVIEW.md](HOME_REVIEW.md). La implementación es revisable, no una aprobación creativa final inferida por el agente.
+
+---
+
+## Snapshot histórico — 23/24 de septiembre de 2026
+
 # Decisions — cierre del checkpoint Hero Lab
 
 Registro de decisiones efectivamente tomadas y asuntos aún abiertos. Fecha de corte: 23 de septiembre de 2026. LOCKED se refiere al contrato del experimento actual, no a una aprobación irrevocable para producción.

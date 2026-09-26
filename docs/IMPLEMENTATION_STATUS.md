@@ -1,3 +1,45 @@
+# Estado actual — home 01–05, 25 de septiembre de 2026
+
+La fase autorizada L18 ya está implementada sobre `0a1da04`, sin commit final. A es ahora la home; B conserva su hero. El snapshot del 23/24 de septiembre, los HTML autónomos anteriores y las capturas antiguas se conservan como evidencia histórica y **no representan la home actual**. El exportador autónomo anterior no se ejecutó ni se adaptó a esta home con video.
+
+Stack actual: HTML/CSS/JS, Vite 7.1.3, videos H.264 silenciosos con posters WebP y fuentes locales. Sin librería de animación, WebGL, backend ni checkout propio. Los enlaces de compra conducen a las fichas oficiales, donde se elige molienda/tamaño.
+
+| Ruta | Responsabilidad / producción |
+|---|---|
+| `index.html` | A 01–05, navegación, cinco productos y compra; B retenido |
+| `src/home.css`, `src/home.js` | Composición responsive, 04/05, navegación y preferencia de motion |
+| `src/sensory.css`, `src/sensory.js` | 03, scroll reversible, carga diferida, cambio de composición y fallbacks |
+| `src/origin.js` | Selección local de cinco orígenes, carga de bolsas bajo demanda |
+| `src/main.js` | Cambio A/B explícito; anchors de home no cambian la dirección |
+| `src/common.css` | Mismos glifos Barlow en WOFF2 en vez de TTF |
+| `src/seat.css`, `src/seat.js` | Archivos anteriores conservados, ya no importados por la home |
+| `audit/source/home-catalog-2026-09-25.json` | Snapshot de cinco productos oficiales con variantes y fuentes |
+| `audit/source/scene03-generation.json` | Seis tareas generativas, prompts, parámetros, costes, hashes y fuentes guardadas; generación no determinista |
+| `audit/source/scene03-*.jpg`, `scene03-*-original.mp4` | Originales de cuatro stills y dos videos; no reconstruibles de forma determinista solo con el prompt |
+| `audit/source/{villa-rica,cusco,puno}-original.jpg` | Tres fotos reales adicionales del catálogo |
+| `audit/source/barlow-condensed-800-original.ttf` | Fuente original retenida para conversión local de formato |
+| `scripts/prepare-home-assets.py` | Pillow/fontTools: tres recortes de bolsa, cuatro posters, dos paisajes, Tarata y WOFF2; fuentes guardadas |
+| `scripts/produce-scene03.cjs` | Orquestación específica de los dos videos mediante el cliente APIMart existente; generar tiene coste, consultar estado no regenera |
+| `scripts/prepare-scene03-video.py` | FFmpeg: H.264, faststart y GOP corto para seek; seis frames de revisión |
+| `public/assets/scene03-*` | Dos MP4 y cuatro WebP preparados; la home usa el poster final como fallback |
+| `public/assets/{villa-rica,cusco,puno}-250g.webp` | Recortes reales preparados, sin redibujar packaging |
+| `public/assets/cafetal-home-*.webp`, `tarata-mesa-home.webp`, `barlow-condensed-800.woff2` | Derivados optimizados; conservan las limitaciones de sus fuentes |
+| `qa/2026-09-25-home/` | Capturas, frames, comprobaciones y medición local; scripts Playwright reproducibles |
+| `deliverables/home-review.html`, `docs/HOME_REVIEW.md` | Galería visual local y entrega de esta fase |
+
+**Entorno verificado:** Windows PowerShell 5.1, locale es-PE, Python 3.10, Node aislado 22.23.1. El Node 18 global no satisface Vite 7.1.3. Se utilizó el binario compatible ya existente en `C:/tmp/node22/node-v22.23.1-win-x64/node.exe`; no se cambió Node global, package.json, lockfile ni configuración de Vite.
+
+```powershell
+& 'C:/tmp/node22/node-v22.23.1-win-x64/node.exe' node_modules/vite/bin/vite.js build
+& 'C:/tmp/node22/node-v22.23.1-win-x64/node.exe' node_modules/vite/bin/vite.js preview --host 127.0.0.1 --port 4174
+```
+
+Build correcto. Evidencia de 117 comprobaciones en Chromium 148, desktop/mobile, keyframes on/off, fallbacks y navegación. Condiciones y límites completos: [QA](../qa/2026-09-25-home/README.md). La medición local no es una auditoría de campo ni un resultado CRO comercial. Aún faltan pruebas en Safari/iOS y dispositivos físicos; el paisaje continúa sin localización confirmada y Tarata tiene limitación de autoría en su material de referencia.
+
+---
+
+## Snapshot histórico del Hero Lab — 23/24 de septiembre de 2026
+
 # Implementation status — Hero Lab
 
 Estado revisado contra código, documentación y paquete final el 23 de septiembre de 2026. Los 39 archivos del ZIP entregado coinciden byte a byte con sus originales locales antes de añadir este handoff. Esta entrega agrega únicamente cinco Markdown en `/docs`; no reconstruye ni modifica el laboratorio.

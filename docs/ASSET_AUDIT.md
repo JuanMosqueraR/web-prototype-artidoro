@@ -1,3 +1,19 @@
+# Assets de la home — revisión del 25 de septiembre de 2026
+
+Actualización descriptiva de la fase L18. `audit/assets.json` sigue siendo el registro canónico de fuentes, dimensiones, preparación, clasificación y hashes. La tabla histórica que sigue conserva los usos anteriores; esta sección registra los usos actuales sin convertir material provisional en oficial.
+
+- **Producto real:** Amazonas y Cajamarca conservados; Villa Rica, Cusco y Puno descargados de las fotos oficiales del catálogo, con snapshot fuente en `audit/source/home-catalog-2026-09-25.json`. Los cinco recortes de bolsa son derivados preparados, sin redibujo ni alteración de las etiquetas. Cajamarca ya no se limita a 02: también aparece en 03/05. Precios/variantes y enlaces verificados el 25 de septiembre; notas con fuentes en `verified_copy`. La nota «dulce» de Villa Rica procede de la web, mientras la etiqueta visible enumera frutos rojos y pasas; se registra la diferencia.
+- **03 conceptual:** cuatro stills Nano Banana Pro y dos clips Kling V3 mediante APIMart, autorizados para esta demo. Packaging, logotipo, copy y UI quedan fuera del video generado. No es evidencia de origen, proceso, local o menaje oficial. Prompts, parámetros, tareas, costes y originales: `audit/source/scene03-generation.json`. La generación es no determinista; la compresión y extracción de frames sí son reproducibles desde los archivos retenidos.
+- **Tarata:** `tarata-mesa-home.webp` deriva de la imagen conceptual existente de mesa. Conserva su clasificación y la incertidumbre de autoría de Google Maps. La imagen de entrada y los originales quedan archivados, no renderizados en la home. No se tocó `reference/`.
+- **Paisaje:** dos WebP responsive desde el fotograma ya auditado. Misma localización sin confirmar y aviso `PROVISIONAL_ASSET`; no son nuevas fotografías ni prueba geográfica.
+- **Tipografía:** Barlow Condensed se convierte de TTF a WOFF2 con fontTools, conservando los glifos y métricas. Chivo y logos existentes se reutilizan sin reconstrucción.
+
+Derivados preparados mediante `scripts/prepare-home-assets.py` y `scripts/prepare-scene03-video.py`; rutas y funciones en [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md). Costes de producción y límites: [HOME_REVIEW.md](HOME_REVIEW.md). Ningún material conceptual se reclasifica como `REAL_ASSET`.
+
+---
+
+## Snapshot histórico del inventario — 23/24 de septiembre de 2026
+
 # Asset audit — consolidación para el handoff
 
 Inventario del proyecto entregado, revisado el 23 de septiembre de 2026. Las rutas de las tablas son relativas a la raíz del proyecto, no a `/docs`.

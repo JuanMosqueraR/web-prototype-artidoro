@@ -1,0 +1,2657 @@
+{
+  "source": "https://www.artidororodriguez.com/collections/cafe/products.json?limit=100",
+  "checked_at": "2026-09-25",
+  "products": [
+    {
+      "id": 8906415603955,
+      "title": "Café Origen Puno",
+      "handle": "cafe-puno",
+      "body_html": "<p>En las alturas de Puno, es tierra de caficultores que han dedicado generaciones al cultivo de un café excepcional. Cada grano que llega a tus manos proviene directamente de productores con quienes trabajamos codo a codo, asegurando un precio justo y un proceso transparente de inicio a fin.</p>\n<p><em>Grano a grano, construimos juntos un café con propósito.</em></p>",
+      "published_at": "2024-09-10T19:33:38-05:00",
+      "created_at": "2024-09-10T19:32:16-05:00",
+      "updated_at": "2026-09-25T11:08:39-05:00",
+      "vendor": "Artidoro Rodriguez",
+      "product_type": "",
+      "tags": [
+        "250gr",
+        "Café"
+      ],
+      "variants": [
+        {
+          "id": 48748737298675,
+          "title": "250gr / Grano",
+          "option1": "250gr",
+          "option2": "Grano",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336485642483,
+            "product_id": 8906415603955,
+            "position": 1,
+            "created_at": "2026-09-10T13:01:01-05:00",
+            "updated_at": "2026-09-10T13:01:02-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262",
+            "variant_ids": [
+              48748737298675,
+              48748737331443,
+              48748737364211,
+              48748737396979
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 1000,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 8906415603955,
+          "created_at": "2026-03-24T16:12:50-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48748737331443,
+          "title": "250gr / Molido Fino",
+          "option1": "250gr",
+          "option2": "Molido Fino",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336485642483,
+            "product_id": 8906415603955,
+            "position": 1,
+            "created_at": "2026-09-10T13:01:01-05:00",
+            "updated_at": "2026-09-10T13:01:02-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262",
+            "variant_ids": [
+              48748737298675,
+              48748737331443,
+              48748737364211,
+              48748737396979
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 1000,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 8906415603955,
+          "created_at": "2026-03-24T16:12:50-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48748737364211,
+          "title": "250gr / Molido Medio",
+          "option1": "250gr",
+          "option2": "Molido Medio",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336485642483,
+            "product_id": 8906415603955,
+            "position": 1,
+            "created_at": "2026-09-10T13:01:01-05:00",
+            "updated_at": "2026-09-10T13:01:02-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262",
+            "variant_ids": [
+              48748737298675,
+              48748737331443,
+              48748737364211,
+              48748737396979
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 1000,
+          "compare_at_price": null,
+          "position": 3,
+          "product_id": 8906415603955,
+          "created_at": "2026-03-24T16:12:50-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48748737396979,
+          "title": "250gr / Molido Grueso",
+          "option1": "250gr",
+          "option2": "Molido Grueso",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336485642483,
+            "product_id": 8906415603955,
+            "position": 1,
+            "created_at": "2026-09-10T13:01:01-05:00",
+            "updated_at": "2026-09-10T13:01:02-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262",
+            "variant_ids": [
+              48748737298675,
+              48748737331443,
+              48748737364211,
+              48748737396979
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 1000,
+          "compare_at_price": null,
+          "position": 4,
+          "product_id": 8906415603955,
+          "created_at": "2026-03-24T16:12:50-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572397682931,
+          "title": "454gr / Grano",
+          "option1": "454gr",
+          "option2": "Grano",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336485708019,
+            "product_id": 8906415603955,
+            "position": 3,
+            "created_at": "2026-09-10T13:01:08-05:00",
+            "updated_at": "2026-09-10T13:01:10-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270",
+            "variant_ids": [
+              48572397682931,
+              48572397715699,
+              48572397748467,
+              48572397781235
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 1000,
+          "compare_at_price": null,
+          "position": 5,
+          "product_id": 8906415603955,
+          "created_at": "2026-02-24T10:00:45-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572397715699,
+          "title": "454gr / Molido Fino",
+          "option1": "454gr",
+          "option2": "Molido Fino",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336485708019,
+            "product_id": 8906415603955,
+            "position": 3,
+            "created_at": "2026-09-10T13:01:08-05:00",
+            "updated_at": "2026-09-10T13:01:10-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270",
+            "variant_ids": [
+              48572397682931,
+              48572397715699,
+              48572397748467,
+              48572397781235
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 6,
+          "product_id": 8906415603955,
+          "created_at": "2026-02-24T10:00:45-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572397748467,
+          "title": "454gr / Molido Medio",
+          "option1": "454gr",
+          "option2": "Molido Medio",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336485708019,
+            "product_id": 8906415603955,
+            "position": 3,
+            "created_at": "2026-09-10T13:01:08-05:00",
+            "updated_at": "2026-09-10T13:01:10-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270",
+            "variant_ids": [
+              48572397682931,
+              48572397715699,
+              48572397748467,
+              48572397781235
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 7,
+          "product_id": 8906415603955,
+          "created_at": "2026-02-24T10:00:45-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572397781235,
+          "title": "454gr / Molido Grueso",
+          "option1": "454gr",
+          "option2": "Molido Grueso",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336485708019,
+            "product_id": 8906415603955,
+            "position": 3,
+            "created_at": "2026-09-10T13:01:08-05:00",
+            "updated_at": "2026-09-10T13:01:10-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270",
+            "variant_ids": [
+              48572397682931,
+              48572397715699,
+              48572397748467,
+              48572397781235
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 8,
+          "product_id": 8906415603955,
+          "created_at": "2026-02-24T10:00:45-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48748737429747,
+          "title": "1kg / Grano",
+          "option1": "1kg",
+          "option2": "Grano",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336488263923,
+            "product_id": 8906415603955,
+            "position": 4,
+            "created_at": "2026-09-10T13:01:25-05:00",
+            "updated_at": "2026-09-10T13:01:27-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287",
+            "variant_ids": [
+              48748737429747,
+              48748737462515,
+              48748737495283,
+              48748737528051
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 9,
+          "product_id": 8906415603955,
+          "created_at": "2026-03-24T16:12:50-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48748737462515,
+          "title": "1kg / Molido Fino",
+          "option1": "1kg",
+          "option2": "Molido Fino",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336488263923,
+            "product_id": 8906415603955,
+            "position": 4,
+            "created_at": "2026-09-10T13:01:25-05:00",
+            "updated_at": "2026-09-10T13:01:27-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287",
+            "variant_ids": [
+              48748737429747,
+              48748737462515,
+              48748737495283,
+              48748737528051
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 10,
+          "product_id": 8906415603955,
+          "created_at": "2026-03-24T16:12:50-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48748737495283,
+          "title": "1kg / Molido Medio",
+          "option1": "1kg",
+          "option2": "Molido Medio",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336488263923,
+            "product_id": 8906415603955,
+            "position": 4,
+            "created_at": "2026-09-10T13:01:25-05:00",
+            "updated_at": "2026-09-10T13:01:27-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287",
+            "variant_ids": [
+              48748737429747,
+              48748737462515,
+              48748737495283,
+              48748737528051
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 11,
+          "product_id": 8906415603955,
+          "created_at": "2026-03-24T16:12:50-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48748737528051,
+          "title": "1kg / Molido Grueso",
+          "option1": "1kg",
+          "option2": "Molido Grueso",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336488263923,
+            "product_id": 8906415603955,
+            "position": 4,
+            "created_at": "2026-09-10T13:01:25-05:00",
+            "updated_at": "2026-09-10T13:01:27-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287",
+            "variant_ids": [
+              48748737429747,
+              48748737462515,
+              48748737495283,
+              48748737528051
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 12,
+          "product_id": 8906415603955,
+          "created_at": "2026-03-24T16:12:50-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 49336485642483,
+          "created_at": "2026-09-10T13:01:01-05:00",
+          "position": 1,
+          "updated_at": "2026-09-10T13:01:02-05:00",
+          "product_id": 8906415603955,
+          "variant_ids": [
+            48748737298675,
+            48748737331443,
+            48748737364211,
+            48748737396979
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 47089079320819,
+          "created_at": "2024-11-21T20:30:26-05:00",
+          "position": 2,
+          "updated_at": "2024-11-21T20:30:27-05:00",
+          "product_id": 8906415603955,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Puno-2x2.png?v=1732239027",
+          "width": 2000,
+          "height": 2000
+        },
+        {
+          "id": 49336485708019,
+          "created_at": "2026-09-10T13:01:08-05:00",
+          "position": 3,
+          "updated_at": "2026-09-10T13:01:10-05:00",
+          "product_id": 8906415603955,
+          "variant_ids": [
+            48572397682931,
+            48572397715699,
+            48572397748467,
+            48572397781235
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 49336488263923,
+          "created_at": "2026-09-10T13:01:25-05:00",
+          "position": 4,
+          "updated_at": "2026-09-10T13:01:27-05:00",
+          "product_id": 8906415603955,
+          "variant_ids": [
+            48748737429747,
+            48748737462515,
+            48748737495283,
+            48748737528051
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 47089011851507,
+          "created_at": "2026-06-30T16:27:07-05:00",
+          "position": 5,
+          "updated_at": "2026-06-30T16:27:10-05:00",
+          "product_id": 8906415603955,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/PUNO_91e32767-6745-4488-9e2b-17e63474e7e9.png?v=1782854830",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "options": [
+        {
+          "name": "Tamaño",
+          "position": 1,
+          "values": [
+            "250gr",
+            "454gr",
+            "1kg"
+          ]
+        },
+        {
+          "name": "Tipo",
+          "position": 2,
+          "values": [
+            "Grano",
+            "Molido Fino",
+            "Molido Medio",
+            "Molido Grueso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8906414817523,
+      "title": "Café Origen Cajamarca",
+      "handle": "cafe-cajamarca",
+      "body_html": "<p>Un viaje directo a las alturas de Cajamarca en cada taza. Este single origin de tostado medio te sorprende con notas de frutos secos y chancaca, cultivado a 1800 msnm por manos peruanas que cuidan cada detalle. Puro, auténtico y con el sabor de nuestra tierra en las variedades Caturra, Típica y Catimor.</p>",
+      "published_at": "2024-09-10T19:31:28-05:00",
+      "created_at": "2024-09-10T19:30:13-05:00",
+      "updated_at": "2026-09-25T11:08:39-05:00",
+      "vendor": "Artidoro Rodriguez",
+      "product_type": "",
+      "tags": [
+        "250gr",
+        "Cafeteras",
+        "Café"
+      ],
+      "variants": [
+        {
+          "id": 48568214028531,
+          "title": "250g / Grano",
+          "option1": "250g",
+          "option2": "Grano",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336505860339,
+            "product_id": 8906414817523,
+            "position": 1,
+            "created_at": "2026-09-10T13:03:19-05:00",
+            "updated_at": "2026-09-10T13:03:20-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400",
+            "variant_ids": [
+              48568214028531,
+              48568214061299,
+              48568214094067,
+              48568214126835
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 250,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 8906414817523,
+          "created_at": "2026-02-23T17:34:46-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48568214061299,
+          "title": "250g / Molido Fino",
+          "option1": "250g",
+          "option2": "Molido Fino",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336505860339,
+            "product_id": 8906414817523,
+            "position": 1,
+            "created_at": "2026-09-10T13:03:19-05:00",
+            "updated_at": "2026-09-10T13:03:20-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400",
+            "variant_ids": [
+              48568214028531,
+              48568214061299,
+              48568214094067,
+              48568214126835
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 250,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 8906414817523,
+          "created_at": "2026-02-23T17:34:46-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48568214094067,
+          "title": "250g / Molido Medio",
+          "option1": "250g",
+          "option2": "Molido Medio",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336505860339,
+            "product_id": 8906414817523,
+            "position": 1,
+            "created_at": "2026-09-10T13:03:19-05:00",
+            "updated_at": "2026-09-10T13:03:20-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400",
+            "variant_ids": [
+              48568214028531,
+              48568214061299,
+              48568214094067,
+              48568214126835
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 250,
+          "compare_at_price": null,
+          "position": 3,
+          "product_id": 8906414817523,
+          "created_at": "2026-02-23T17:34:46-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48568214126835,
+          "title": "250g / Molido Grueso",
+          "option1": "250g",
+          "option2": "Molido Grueso",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336505860339,
+            "product_id": 8906414817523,
+            "position": 1,
+            "created_at": "2026-09-10T13:03:19-05:00",
+            "updated_at": "2026-09-10T13:03:20-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400",
+            "variant_ids": [
+              48568214028531,
+              48568214061299,
+              48568214094067,
+              48568214126835
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 250,
+          "compare_at_price": null,
+          "position": 4,
+          "product_id": 8906414817523,
+          "created_at": "2026-02-23T17:34:46-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572339257587,
+          "title": "454gr / Grano",
+          "option1": "454gr",
+          "option2": "Grano",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336503075059,
+            "product_id": 8906414817523,
+            "position": 3,
+            "created_at": "2026-09-10T13:03:06-05:00",
+            "updated_at": "2026-09-10T13:03:07-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387",
+            "variant_ids": [
+              48572339257587,
+              48572339290355,
+              48572339323123,
+              48572339355891
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 5,
+          "product_id": 8906414817523,
+          "created_at": "2026-02-24T09:23:34-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572339290355,
+          "title": "454gr / Molido Fino",
+          "option1": "454gr",
+          "option2": "Molido Fino",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336503075059,
+            "product_id": 8906414817523,
+            "position": 3,
+            "created_at": "2026-09-10T13:03:06-05:00",
+            "updated_at": "2026-09-10T13:03:07-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387",
+            "variant_ids": [
+              48572339257587,
+              48572339290355,
+              48572339323123,
+              48572339355891
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 6,
+          "product_id": 8906414817523,
+          "created_at": "2026-02-24T09:23:34-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572339323123,
+          "title": "454gr / Molido Medio",
+          "option1": "454gr",
+          "option2": "Molido Medio",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336503075059,
+            "product_id": 8906414817523,
+            "position": 3,
+            "created_at": "2026-09-10T13:03:06-05:00",
+            "updated_at": "2026-09-10T13:03:07-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387",
+            "variant_ids": [
+              48572339257587,
+              48572339290355,
+              48572339323123,
+              48572339355891
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 7,
+          "product_id": 8906414817523,
+          "created_at": "2026-02-24T09:23:34-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572339355891,
+          "title": "454gr / Molido Grueso",
+          "option1": "454gr",
+          "option2": "Molido Grueso",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336503075059,
+            "product_id": 8906414817523,
+            "position": 3,
+            "created_at": "2026-09-10T13:03:06-05:00",
+            "updated_at": "2026-09-10T13:03:07-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387",
+            "variant_ids": [
+              48572339257587,
+              48572339290355,
+              48572339323123,
+              48572339355891
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 8,
+          "product_id": 8906414817523,
+          "created_at": "2026-02-24T09:23:34-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48568214159603,
+          "title": "1kg / Grano",
+          "option1": "1kg",
+          "option2": "Grano",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336501076211,
+            "product_id": 8906414817523,
+            "position": 4,
+            "created_at": "2026-09-10T13:02:57-05:00",
+            "updated_at": "2026-09-10T13:02:58-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378",
+            "variant_ids": [
+              48568214159603,
+              48568214192371,
+              48568214225139,
+              48568214257907
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 9,
+          "product_id": 8906414817523,
+          "created_at": "2026-02-23T17:34:46-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48568214192371,
+          "title": "1kg / Molido Fino",
+          "option1": "1kg",
+          "option2": "Molido Fino",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336501076211,
+            "product_id": 8906414817523,
+            "position": 4,
+            "created_at": "2026-09-10T13:02:57-05:00",
+            "updated_at": "2026-09-10T13:02:58-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378",
+            "variant_ids": [
+              48568214159603,
+              48568214192371,
+              48568214225139,
+              48568214257907
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 10,
+          "product_id": 8906414817523,
+          "created_at": "2026-02-23T17:34:46-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48568214225139,
+          "title": "1kg / Molido Medio",
+          "option1": "1kg",
+          "option2": "Molido Medio",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336501076211,
+            "product_id": 8906414817523,
+            "position": 4,
+            "created_at": "2026-09-10T13:02:57-05:00",
+            "updated_at": "2026-09-10T13:02:58-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378",
+            "variant_ids": [
+              48568214159603,
+              48568214192371,
+              48568214225139,
+              48568214257907
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 11,
+          "product_id": 8906414817523,
+          "created_at": "2026-02-23T17:34:46-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48568214257907,
+          "title": "1kg / Molido Grueso",
+          "option1": "1kg",
+          "option2": "Molido Grueso",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336501076211,
+            "product_id": 8906414817523,
+            "position": 4,
+            "created_at": "2026-09-10T13:02:57-05:00",
+            "updated_at": "2026-09-10T13:02:58-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378",
+            "variant_ids": [
+              48568214159603,
+              48568214192371,
+              48568214225139,
+              48568214257907
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 12,
+          "product_id": 8906414817523,
+          "created_at": "2026-02-23T17:34:46-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 49336505860339,
+          "created_at": "2026-09-10T13:03:19-05:00",
+          "position": 1,
+          "updated_at": "2026-09-10T13:03:20-05:00",
+          "product_id": 8906414817523,
+          "variant_ids": [
+            48568214028531,
+            48568214061299,
+            48568214094067,
+            48568214126835
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 47089080500467,
+          "created_at": "2024-11-21T20:30:26-05:00",
+          "position": 2,
+          "updated_at": "2024-11-21T20:30:27-05:00",
+          "product_id": 8906414817523,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Cajamarca-2x2.png?v=1732239027",
+          "width": 2000,
+          "height": 2000
+        },
+        {
+          "id": 49336503075059,
+          "created_at": "2026-09-10T13:03:06-05:00",
+          "position": 3,
+          "updated_at": "2026-09-10T13:03:07-05:00",
+          "product_id": 8906414817523,
+          "variant_ids": [
+            48572339257587,
+            48572339290355,
+            48572339323123,
+            48572339355891
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 49336501076211,
+          "created_at": "2026-09-10T13:02:57-05:00",
+          "position": 4,
+          "updated_at": "2026-09-10T13:02:58-05:00",
+          "product_id": 8906414817523,
+          "variant_ids": [
+            48568214159603,
+            48568214192371,
+            48568214225139,
+            48568214257907
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 47089055138035,
+          "created_at": "2026-06-30T16:38:26-05:00",
+          "position": 5,
+          "updated_at": "2026-06-30T16:38:27-05:00",
+          "product_id": 8906414817523,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/CAJAMARCA_5e155e17-56c5-45cf-aa83-e1eed0018123.png?v=1782855507",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "options": [
+        {
+          "name": "Tamaño",
+          "position": 1,
+          "values": [
+            "250g",
+            "454gr",
+            "1kg"
+          ]
+        },
+        {
+          "name": "Tipo de molido",
+          "position": 2,
+          "values": [
+            "Grano",
+            "Molido Fino",
+            "Molido Medio",
+            "Molido Grueso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8906414194931,
+      "title": "Café Origen Villa Rica",
+      "handle": "cafe-villa-rica",
+      "body_html": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Villa Rica, en el corazón de la selva central peruana, es tierra de caficultores que han dedicado generaciones al cultivo de un café excepcional. Cada grano que llega a tus manos proviene directamente de productores con quienes trabajamos codo a codo, asegurando un precio justo y un proceso transparente de inicio a fin.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\"><em>Grano a grano, construimos juntos un café con propósito.</em></p>",
+      "published_at": "2024-09-10T19:29:15-05:00",
+      "created_at": "2024-09-10T19:28:09-05:00",
+      "updated_at": "2026-09-25T11:08:39-05:00",
+      "vendor": "Artidoro Rodriguez",
+      "product_type": "",
+      "tags": [
+        "250gr",
+        "Café"
+      ],
+      "variants": [
+        {
+          "id": 48502461989107,
+          "title": "250g / Grano",
+          "option1": "250g",
+          "option2": "Grano",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336515199219,
+            "product_id": 8906414194931,
+            "position": 1,
+            "created_at": "2026-09-10T13:04:14-05:00",
+            "updated_at": "2026-09-10T13:04:16-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GVILLARICA.jpg?v=1789063456",
+            "variant_ids": [
+              48502461989107,
+              48502462021875,
+              48530793300211,
+              48530793332979
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 250,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 8906414194931,
+          "created_at": "2026-02-12T17:41:06-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48502462021875,
+          "title": "250g / Molido Fino",
+          "option1": "250g",
+          "option2": "Molido Fino",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336515199219,
+            "product_id": 8906414194931,
+            "position": 1,
+            "created_at": "2026-09-10T13:04:14-05:00",
+            "updated_at": "2026-09-10T13:04:16-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GVILLARICA.jpg?v=1789063456",
+            "variant_ids": [
+              48502461989107,
+              48502462021875,
+              48530793300211,
+              48530793332979
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 250,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 8906414194931,
+          "created_at": "2026-02-12T17:41:06-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48530793300211,
+          "title": "250g / Molido Medio",
+          "option1": "250g",
+          "option2": "Molido Medio",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336515199219,
+            "product_id": 8906414194931,
+            "position": 1,
+            "created_at": "2026-09-10T13:04:14-05:00",
+            "updated_at": "2026-09-10T13:04:16-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GVILLARICA.jpg?v=1789063456",
+            "variant_ids": [
+              48502461989107,
+              48502462021875,
+              48530793300211,
+              48530793332979
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 250,
+          "compare_at_price": null,
+          "position": 3,
+          "product_id": 8906414194931,
+          "created_at": "2026-02-20T16:30:33-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48530793332979,
+          "title": "250g / Molido Grueso",
+          "option1": "250g",
+          "option2": "Molido Grueso",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336515199219,
+            "product_id": 8906414194931,
+            "position": 1,
+            "created_at": "2026-09-10T13:04:14-05:00",
+            "updated_at": "2026-09-10T13:04:16-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GVILLARICA.jpg?v=1789063456",
+            "variant_ids": [
+              48502461989107,
+              48502462021875,
+              48530793300211,
+              48530793332979
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 250,
+          "compare_at_price": null,
+          "position": 4,
+          "product_id": 8906414194931,
+          "created_at": "2026-02-20T16:30:33-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572417540339,
+          "title": "454gr / Grano",
+          "option1": "454gr",
+          "option2": "Grano",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336515985651,
+            "product_id": 8906414194931,
+            "position": 3,
+            "created_at": "2026-09-10T13:04:19-05:00",
+            "updated_at": "2026-09-10T13:04:20-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBVILLARICA.jpg?v=1789063460",
+            "variant_ids": [
+              48572417540339,
+              48572417573107,
+              48572417605875,
+              48572417638643
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 5,
+          "product_id": 8906414194931,
+          "created_at": "2026-02-24T10:26:16-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572417573107,
+          "title": "454gr / Molido Fino",
+          "option1": "454gr",
+          "option2": "Molido Fino",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336515985651,
+            "product_id": 8906414194931,
+            "position": 3,
+            "created_at": "2026-09-10T13:04:19-05:00",
+            "updated_at": "2026-09-10T13:04:20-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBVILLARICA.jpg?v=1789063460",
+            "variant_ids": [
+              48572417540339,
+              48572417573107,
+              48572417605875,
+              48572417638643
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 6,
+          "product_id": 8906414194931,
+          "created_at": "2026-02-24T10:26:16-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572417605875,
+          "title": "454gr / Molido Medio",
+          "option1": "454gr",
+          "option2": "Molido Medio",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336515985651,
+            "product_id": 8906414194931,
+            "position": 3,
+            "created_at": "2026-09-10T13:04:19-05:00",
+            "updated_at": "2026-09-10T13:04:20-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBVILLARICA.jpg?v=1789063460",
+            "variant_ids": [
+              48572417540339,
+              48572417573107,
+              48572417605875,
+              48572417638643
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 7,
+          "product_id": 8906414194931,
+          "created_at": "2026-02-24T10:26:16-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572417638643,
+          "title": "454gr / Molido Grueso",
+          "option1": "454gr",
+          "option2": "Molido Grueso",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336515985651,
+            "product_id": 8906414194931,
+            "position": 3,
+            "created_at": "2026-09-10T13:04:19-05:00",
+            "updated_at": "2026-09-10T13:04:20-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBVILLARICA.jpg?v=1789063460",
+            "variant_ids": [
+              48572417540339,
+              48572417573107,
+              48572417605875,
+              48572417638643
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 8,
+          "product_id": 8906414194931,
+          "created_at": "2026-02-24T10:26:16-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48502462054643,
+          "title": "1kg / Grano",
+          "option1": "1kg",
+          "option2": "Grano",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336517427443,
+            "product_id": 8906414194931,
+            "position": 4,
+            "created_at": "2026-09-10T13:04:29-05:00",
+            "updated_at": "2026-09-10T13:04:30-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KVILLARICA.jpg?v=1789063470",
+            "variant_ids": [
+              48502462054643,
+              48502462087411,
+              48530793365747,
+              48530793398515
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 9,
+          "product_id": 8906414194931,
+          "created_at": "2026-02-12T17:41:06-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48502462087411,
+          "title": "1kg / Molido Fino",
+          "option1": "1kg",
+          "option2": "Molido Fino",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336517427443,
+            "product_id": 8906414194931,
+            "position": 4,
+            "created_at": "2026-09-10T13:04:29-05:00",
+            "updated_at": "2026-09-10T13:04:30-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KVILLARICA.jpg?v=1789063470",
+            "variant_ids": [
+              48502462054643,
+              48502462087411,
+              48530793365747,
+              48530793398515
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 10,
+          "product_id": 8906414194931,
+          "created_at": "2026-02-12T17:41:06-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48530793365747,
+          "title": "1kg / Molido Medio",
+          "option1": "1kg",
+          "option2": "Molido Medio",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336517427443,
+            "product_id": 8906414194931,
+            "position": 4,
+            "created_at": "2026-09-10T13:04:29-05:00",
+            "updated_at": "2026-09-10T13:04:30-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KVILLARICA.jpg?v=1789063470",
+            "variant_ids": [
+              48502462054643,
+              48502462087411,
+              48530793365747,
+              48530793398515
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 11,
+          "product_id": 8906414194931,
+          "created_at": "2026-02-20T16:30:33-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48530793398515,
+          "title": "1kg / Molido Grueso",
+          "option1": "1kg",
+          "option2": "Molido Grueso",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336517427443,
+            "product_id": 8906414194931,
+            "position": 4,
+            "created_at": "2026-09-10T13:04:29-05:00",
+            "updated_at": "2026-09-10T13:04:30-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KVILLARICA.jpg?v=1789063470",
+            "variant_ids": [
+              48502462054643,
+              48502462087411,
+              48530793365747,
+              48530793398515
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 12,
+          "product_id": 8906414194931,
+          "created_at": "2026-02-20T16:30:33-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 49336515199219,
+          "created_at": "2026-09-10T13:04:14-05:00",
+          "position": 1,
+          "updated_at": "2026-09-10T13:04:16-05:00",
+          "product_id": 8906414194931,
+          "variant_ids": [
+            48502461989107,
+            48502462021875,
+            48530793300211,
+            48530793332979
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GVILLARICA.jpg?v=1789063456",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 47089081843955,
+          "created_at": "2024-11-21T20:30:26-05:00",
+          "position": 2,
+          "updated_at": "2024-11-21T20:30:27-05:00",
+          "product_id": 8906414194931,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_VillaRica-2x2.png?v=1732239027",
+          "width": 2000,
+          "height": 2000
+        },
+        {
+          "id": 49336515985651,
+          "created_at": "2026-09-10T13:04:19-05:00",
+          "position": 3,
+          "updated_at": "2026-09-10T13:04:20-05:00",
+          "product_id": 8906414194931,
+          "variant_ids": [
+            48572417540339,
+            48572417573107,
+            48572417605875,
+            48572417638643
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBVILLARICA.jpg?v=1789063460",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 49336517427443,
+          "created_at": "2026-09-10T13:04:29-05:00",
+          "position": 4,
+          "updated_at": "2026-09-10T13:04:30-05:00",
+          "product_id": 8906414194931,
+          "variant_ids": [
+            48502462054643,
+            48502462087411,
+            48530793365747,
+            48530793398515
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KVILLARICA.jpg?v=1789063470",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 47089056186611,
+          "created_at": "2026-06-30T16:38:49-05:00",
+          "position": 5,
+          "updated_at": "2026-06-30T16:38:51-05:00",
+          "product_id": 8906414194931,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/VILLARICA.png?v=1782855531",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "options": [
+        {
+          "name": "Tamaño",
+          "position": 1,
+          "values": [
+            "250g",
+            "454gr",
+            "1kg"
+          ]
+        },
+        {
+          "name": "Tipo",
+          "position": 2,
+          "values": [
+            "Grano",
+            "Molido Fino",
+            "Molido Medio",
+            "Molido Grueso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8906412949747,
+      "title": "Café Origen Cusco",
+      "handle": "cafe-cusco",
+      "body_html": "<p><span>Un viaje directo a Cusco en cada taza. Este single origin de variedades Caturra y Típica te regala notas suaves de chocolate y nueces con un tostado medio que equilibra tradición y carácter. Café consciente que conecta tu mañana con las manos que lo cultivaron en los Andes peruanos.</span></p>",
+      "published_at": "2024-09-10T19:27:03-05:00",
+      "created_at": "2024-09-10T19:25:39-05:00",
+      "updated_at": "2026-09-25T11:08:39-05:00",
+      "vendor": "Artidoro Rodriguez",
+      "product_type": "",
+      "tags": [
+        "250gr",
+        "Café"
+      ],
+      "variants": [
+        {
+          "id": 48502476734707,
+          "title": "250g / Grano",
+          "option1": "250g",
+          "option2": "Grano",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336555929843,
+            "product_id": 8906412949747,
+            "position": 1,
+            "created_at": "2026-09-10T13:07:30-05:00",
+            "updated_at": "2026-09-10T13:07:31-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCUSCO.jpg?v=1789063651",
+            "variant_ids": [
+              48502476701939,
+              48502476734707,
+              48572387786995,
+              48572387819763
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 1000,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 8906412949747,
+          "created_at": "2026-02-12T17:47:10-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48502476701939,
+          "title": "250g / Molido Fino",
+          "option1": "250g",
+          "option2": "Molido Fino",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336555929843,
+            "product_id": 8906412949747,
+            "position": 1,
+            "created_at": "2026-09-10T13:07:30-05:00",
+            "updated_at": "2026-09-10T13:07:31-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCUSCO.jpg?v=1789063651",
+            "variant_ids": [
+              48502476701939,
+              48502476734707,
+              48572387786995,
+              48572387819763
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 1000,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 8906412949747,
+          "created_at": "2026-02-12T17:47:10-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572387786995,
+          "title": "250g / Molido Medio",
+          "option1": "250g",
+          "option2": "Molido Medio",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336555929843,
+            "product_id": 8906412949747,
+            "position": 1,
+            "created_at": "2026-09-10T13:07:30-05:00",
+            "updated_at": "2026-09-10T13:07:31-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCUSCO.jpg?v=1789063651",
+            "variant_ids": [
+              48502476701939,
+              48502476734707,
+              48572387786995,
+              48572387819763
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 1000,
+          "compare_at_price": null,
+          "position": 3,
+          "product_id": 8906412949747,
+          "created_at": "2026-02-24T09:49:47-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572387819763,
+          "title": "250g / Molido Grueso",
+          "option1": "250g",
+          "option2": "Molido Grueso",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336555929843,
+            "product_id": 8906412949747,
+            "position": 1,
+            "created_at": "2026-09-10T13:07:30-05:00",
+            "updated_at": "2026-09-10T13:07:31-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCUSCO.jpg?v=1789063651",
+            "variant_ids": [
+              48502476701939,
+              48502476734707,
+              48572387786995,
+              48572387819763
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 1000,
+          "compare_at_price": null,
+          "position": 4,
+          "product_id": 8906412949747,
+          "created_at": "2026-02-24T09:49:47-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572387885299,
+          "title": "454gr / Grano",
+          "option1": "454gr",
+          "option2": "Grano",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336557109491,
+            "product_id": 8906412949747,
+            "position": 3,
+            "created_at": "2026-09-10T13:07:37-05:00",
+            "updated_at": "2026-09-10T13:07:39-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCUSCO.jpg?v=1789063659",
+            "variant_ids": [
+              48572387852531,
+              48572387885299,
+              48572387918067,
+              48572387950835
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 5,
+          "product_id": 8906412949747,
+          "created_at": "2026-02-24T09:49:47-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572387852531,
+          "title": "454gr / Molido Fino",
+          "option1": "454gr",
+          "option2": "Molido Fino",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336557109491,
+            "product_id": 8906412949747,
+            "position": 3,
+            "created_at": "2026-09-10T13:07:37-05:00",
+            "updated_at": "2026-09-10T13:07:39-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCUSCO.jpg?v=1789063659",
+            "variant_ids": [
+              48572387852531,
+              48572387885299,
+              48572387918067,
+              48572387950835
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 6,
+          "product_id": 8906412949747,
+          "created_at": "2026-02-24T09:49:47-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572387918067,
+          "title": "454gr / Molido Medio",
+          "option1": "454gr",
+          "option2": "Molido Medio",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336557109491,
+            "product_id": 8906412949747,
+            "position": 3,
+            "created_at": "2026-09-10T13:07:37-05:00",
+            "updated_at": "2026-09-10T13:07:39-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCUSCO.jpg?v=1789063659",
+            "variant_ids": [
+              48572387852531,
+              48572387885299,
+              48572387918067,
+              48572387950835
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 7,
+          "product_id": 8906412949747,
+          "created_at": "2026-02-24T09:49:47-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572387950835,
+          "title": "454gr / Molido Grueso",
+          "option1": "454gr",
+          "option2": "Molido Grueso",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336557109491,
+            "product_id": 8906412949747,
+            "position": 3,
+            "created_at": "2026-09-10T13:07:37-05:00",
+            "updated_at": "2026-09-10T13:07:39-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCUSCO.jpg?v=1789063659",
+            "variant_ids": [
+              48572387852531,
+              48572387885299,
+              48572387918067,
+              48572387950835
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 8,
+          "product_id": 8906412949747,
+          "created_at": "2026-02-24T09:49:47-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48502476669171,
+          "title": "1kg / Grano",
+          "option1": "1kg",
+          "option2": "Grano",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336554782963,
+            "product_id": 8906412949747,
+            "position": 4,
+            "created_at": "2026-09-10T13:07:26-05:00",
+            "updated_at": "2026-09-10T13:07:27-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCUSCO.jpg?v=1789063647",
+            "variant_ids": [
+              48502476636403,
+              48502476669171,
+              48572387721459,
+              48572387754227
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 250,
+          "compare_at_price": "110.00",
+          "position": 9,
+          "product_id": 8906412949747,
+          "created_at": "2026-02-12T17:47:10-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48502476636403,
+          "title": "1kg / Molido Fino",
+          "option1": "1kg",
+          "option2": "Molido Fino",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336554782963,
+            "product_id": 8906412949747,
+            "position": 4,
+            "created_at": "2026-09-10T13:07:26-05:00",
+            "updated_at": "2026-09-10T13:07:27-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCUSCO.jpg?v=1789063647",
+            "variant_ids": [
+              48502476636403,
+              48502476669171,
+              48572387721459,
+              48572387754227
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 250,
+          "compare_at_price": "110.00",
+          "position": 10,
+          "product_id": 8906412949747,
+          "created_at": "2026-02-12T17:47:10-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572387721459,
+          "title": "1kg / Molido Medio",
+          "option1": "1kg",
+          "option2": "Molido Medio",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336554782963,
+            "product_id": 8906412949747,
+            "position": 4,
+            "created_at": "2026-09-10T13:07:26-05:00",
+            "updated_at": "2026-09-10T13:07:27-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCUSCO.jpg?v=1789063647",
+            "variant_ids": [
+              48502476636403,
+              48502476669171,
+              48572387721459,
+              48572387754227
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 250,
+          "compare_at_price": "110.00",
+          "position": 11,
+          "product_id": 8906412949747,
+          "created_at": "2026-02-24T09:49:47-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572387754227,
+          "title": "1kg / Molido Grueso",
+          "option1": "1kg",
+          "option2": "Molido Grueso",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336554782963,
+            "product_id": 8906412949747,
+            "position": 4,
+            "created_at": "2026-09-10T13:07:26-05:00",
+            "updated_at": "2026-09-10T13:07:27-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCUSCO.jpg?v=1789063647",
+            "variant_ids": [
+              48502476636403,
+              48502476669171,
+              48572387721459,
+              48572387754227
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 250,
+          "compare_at_price": "110.00",
+          "position": 12,
+          "product_id": 8906412949747,
+          "created_at": "2026-02-24T09:49:47-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 49336555929843,
+          "created_at": "2026-09-10T13:07:30-05:00",
+          "position": 1,
+          "updated_at": "2026-09-10T13:07:31-05:00",
+          "product_id": 8906412949747,
+          "variant_ids": [
+            48502476701939,
+            48502476734707,
+            48572387786995,
+            48572387819763
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCUSCO.jpg?v=1789063651",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 47089082499315,
+          "created_at": "2024-11-21T20:30:26-05:00",
+          "position": 2,
+          "updated_at": "2024-11-21T20:30:27-05:00",
+          "product_id": 8906412949747,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Cusco-2x2.png?v=1732239027",
+          "width": 2000,
+          "height": 2000
+        },
+        {
+          "id": 49336557109491,
+          "created_at": "2026-09-10T13:07:37-05:00",
+          "position": 3,
+          "updated_at": "2026-09-10T13:07:39-05:00",
+          "product_id": 8906412949747,
+          "variant_ids": [
+            48572387852531,
+            48572387885299,
+            48572387918067,
+            48572387950835
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCUSCO.jpg?v=1789063659",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 49336554782963,
+          "created_at": "2026-09-10T13:07:26-05:00",
+          "position": 4,
+          "updated_at": "2026-09-10T13:07:27-05:00",
+          "product_id": 8906412949747,
+          "variant_ids": [
+            48502476636403,
+            48502476669171,
+            48572387721459,
+            48572387754227
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCUSCO.jpg?v=1789063647",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 47089057431795,
+          "created_at": "2026-06-30T16:39:09-05:00",
+          "position": 5,
+          "updated_at": "2026-06-30T16:39:11-05:00",
+          "product_id": 8906412949747,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/CUSCO.png?v=1782855551",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "options": [
+        {
+          "name": "Tamaño",
+          "position": 1,
+          "values": [
+            "250g",
+            "454gr",
+            "1kg"
+          ]
+        },
+        {
+          "name": "Tipo de molido",
+          "position": 2,
+          "values": [
+            "Grano",
+            "Molido Fino",
+            "Molido Medio",
+            "Molido Grueso"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8906412294387,
+      "title": "Café Origen Amazonas",
+      "handle": "cafe-amazonas",
+      "body_html": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">En lo profundo del nororiente peruano, donde la cordillera se encuentra con la selva, Amazonas guarda uno de los secretos mejor guardados del café de especialidad. A entre 1,700 y 1,900 metros sobre el nivel del mar, las variedades Caturra, Típica y Catimor crecen con la calma que solo la altura y la humedad de esta tierra pueden dar.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">El resultado es un café de tueste medio con notas vibrantes a naranjas y un fondo de melazas que le da cuerpo y dulzor. Una taza cítrica, envolvente y con carácter — tan diversa como la región que la vio nacer.</p>",
+      "published_at": "2024-09-10T19:24:04-05:00",
+      "created_at": "2024-09-10T19:24:04-05:00",
+      "updated_at": "2026-09-25T11:08:39-05:00",
+      "vendor": "Artidoro Rodriguez",
+      "product_type": "Origenes",
+      "tags": [
+        "250gr",
+        "Café"
+      ],
+      "variants": [
+        {
+          "id": 48502437282035,
+          "title": "250g / Grano",
+          "option1": "250g",
+          "option2": "Grano",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336579096819,
+            "product_id": 8906412294387,
+            "position": 1,
+            "created_at": "2026-09-10T13:09:23-05:00",
+            "updated_at": "2026-09-10T13:09:25-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+            "variant_ids": [
+              48502437282035,
+              48502437314803,
+              48572414460147,
+              48572414492915
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 250,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 8906412294387,
+          "created_at": "2026-02-12T17:11:02-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48502437314803,
+          "title": "250g / Molido Fino",
+          "option1": "250g",
+          "option2": "Molido Fino",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336579096819,
+            "product_id": 8906412294387,
+            "position": 1,
+            "created_at": "2026-09-10T13:09:23-05:00",
+            "updated_at": "2026-09-10T13:09:25-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+            "variant_ids": [
+              48502437282035,
+              48502437314803,
+              48572414460147,
+              48572414492915
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 250,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 8906412294387,
+          "created_at": "2026-02-12T17:11:02-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572414460147,
+          "title": "250g / Molido Medio",
+          "option1": "250g",
+          "option2": "Molido Medio",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336579096819,
+            "product_id": 8906412294387,
+            "position": 1,
+            "created_at": "2026-09-10T13:09:23-05:00",
+            "updated_at": "2026-09-10T13:09:25-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+            "variant_ids": [
+              48502437282035,
+              48502437314803,
+              48572414460147,
+              48572414492915
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 250,
+          "compare_at_price": null,
+          "position": 3,
+          "product_id": 8906412294387,
+          "created_at": "2026-02-24T10:22:59-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572414492915,
+          "title": "250g / Molido Grueso",
+          "option1": "250g",
+          "option2": "Molido Grueso",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336579096819,
+            "product_id": 8906412294387,
+            "position": 1,
+            "created_at": "2026-09-10T13:09:23-05:00",
+            "updated_at": "2026-09-10T13:09:25-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+            "variant_ids": [
+              48502437282035,
+              48502437314803,
+              48572414460147,
+              48572414492915
+            ]
+          },
+          "available": true,
+          "price": "39.90",
+          "grams": 250,
+          "compare_at_price": null,
+          "position": 4,
+          "product_id": 8906412294387,
+          "created_at": "2026-02-24T10:22:59-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572414591219,
+          "title": "454gr / Grano",
+          "option1": "454gr",
+          "option2": "Grano",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336576835827,
+            "product_id": 8906412294387,
+            "position": 4,
+            "created_at": "2026-09-10T13:09:12-05:00",
+            "updated_at": "2026-09-10T13:09:14-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+            "variant_ids": [
+              48572414591219,
+              48572414623987,
+              48572414656755,
+              48572414689523
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 5,
+          "product_id": 8906412294387,
+          "created_at": "2026-02-24T10:22:59-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572414623987,
+          "title": "454gr / Molido Fino",
+          "option1": "454gr",
+          "option2": "Molido Fino",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336576835827,
+            "product_id": 8906412294387,
+            "position": 4,
+            "created_at": "2026-09-10T13:09:12-05:00",
+            "updated_at": "2026-09-10T13:09:14-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+            "variant_ids": [
+              48572414591219,
+              48572414623987,
+              48572414656755,
+              48572414689523
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 6,
+          "product_id": 8906412294387,
+          "created_at": "2026-02-24T10:22:59-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572414656755,
+          "title": "454gr / Molido Medio",
+          "option1": "454gr",
+          "option2": "Molido Medio",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336576835827,
+            "product_id": 8906412294387,
+            "position": 4,
+            "created_at": "2026-09-10T13:09:12-05:00",
+            "updated_at": "2026-09-10T13:09:14-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+            "variant_ids": [
+              48572414591219,
+              48572414623987,
+              48572414656755,
+              48572414689523
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 7,
+          "product_id": 8906412294387,
+          "created_at": "2026-02-24T10:22:59-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572414689523,
+          "title": "454gr / Molido Grueso",
+          "option1": "454gr",
+          "option2": "Molido Grueso",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336576835827,
+            "product_id": 8906412294387,
+            "position": 4,
+            "created_at": "2026-09-10T13:09:12-05:00",
+            "updated_at": "2026-09-10T13:09:14-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+            "variant_ids": [
+              48572414591219,
+              48572414623987,
+              48572414656755,
+              48572414689523
+            ]
+          },
+          "available": true,
+          "price": "60.00",
+          "grams": 500,
+          "compare_at_price": null,
+          "position": 8,
+          "product_id": 8906412294387,
+          "created_at": "2026-02-24T10:22:59-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48502451077363,
+          "title": "1kg / Grano",
+          "option1": "1kg",
+          "option2": "Grano",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336580800755,
+            "product_id": 8906412294387,
+            "position": 3,
+            "created_at": "2026-09-10T13:09:29-05:00",
+            "updated_at": "2026-09-10T13:09:30-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+            "variant_ids": [
+              48502451077363,
+              48502451110131,
+              48572414525683,
+              48572414558451
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 9,
+          "product_id": 8906412294387,
+          "created_at": "2026-02-12T17:25:15-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48502451110131,
+          "title": "1kg / Molido Fino",
+          "option1": "1kg",
+          "option2": "Molido Fino",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336580800755,
+            "product_id": 8906412294387,
+            "position": 3,
+            "created_at": "2026-09-10T13:09:29-05:00",
+            "updated_at": "2026-09-10T13:09:30-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+            "variant_ids": [
+              48502451077363,
+              48502451110131,
+              48572414525683,
+              48572414558451
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 10,
+          "product_id": 8906412294387,
+          "created_at": "2026-02-12T17:25:15-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572414525683,
+          "title": "1kg / Molido Medio",
+          "option1": "1kg",
+          "option2": "Molido Medio",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336580800755,
+            "product_id": 8906412294387,
+            "position": 3,
+            "created_at": "2026-09-10T13:09:29-05:00",
+            "updated_at": "2026-09-10T13:09:30-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+            "variant_ids": [
+              48502451077363,
+              48502451110131,
+              48572414525683,
+              48572414558451
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 11,
+          "product_id": 8906412294387,
+          "created_at": "2026-02-24T10:22:59-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        },
+        {
+          "id": 48572414558451,
+          "title": "1kg / Molido Grueso",
+          "option1": "1kg",
+          "option2": "Molido Grueso",
+          "option3": null,
+          "sku": null,
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 49336580800755,
+            "product_id": 8906412294387,
+            "position": 3,
+            "created_at": "2026-09-10T13:09:29-05:00",
+            "updated_at": "2026-09-10T13:09:30-05:00",
+            "alt": null,
+            "width": 1080,
+            "height": 1080,
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+            "variant_ids": [
+              48502451077363,
+              48502451110131,
+              48572414525683,
+              48572414558451
+            ]
+          },
+          "available": true,
+          "price": "99.00",
+          "grams": 1000,
+          "compare_at_price": "110.00",
+          "position": 12,
+          "product_id": 8906412294387,
+          "created_at": "2026-02-24T10:22:59-05:00",
+          "updated_at": "2026-09-25T11:08:39-05:00"
+        }
+      ],
+      "images": [
+        {
+          "id": 49336579096819,
+          "created_at": "2026-09-10T13:09:23-05:00",
+          "position": 1,
+          "updated_at": "2026-09-10T13:09:25-05:00",
+          "product_id": 8906412294387,
+          "variant_ids": [
+            48502437282035,
+            48502437314803,
+            48572414460147,
+            48572414492915
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 46375434617075,
+          "created_at": "2026-03-24T18:09:57-05:00",
+          "position": 2,
+          "updated_at": "2026-03-24T18:22:45-05:00",
+          "product_id": 8906412294387,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Mapas_ee227914-4e73-4484-9fda-758d740295e5.png?v=1774394565",
+          "width": 2000,
+          "height": 2000
+        },
+        {
+          "id": 49336580800755,
+          "created_at": "2026-09-10T13:09:29-05:00",
+          "position": 3,
+          "updated_at": "2026-09-10T13:09:30-05:00",
+          "product_id": 8906412294387,
+          "variant_ids": [
+            48502451077363,
+            48502451110131,
+            48572414525683,
+            48572414558451
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 49336576835827,
+          "created_at": "2026-09-10T13:09:12-05:00",
+          "position": 4,
+          "updated_at": "2026-09-10T13:09:14-05:00",
+          "product_id": 8906412294387,
+          "variant_ids": [
+            48572414591219,
+            48572414623987,
+            48572414656755,
+            48572414689523
+          ],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "id": 47089057857779,
+          "created_at": "2026-06-30T16:39:29-05:00",
+          "position": 5,
+          "updated_at": "2026-06-30T16:39:31-05:00",
+          "product_id": 8906412294387,
+          "variant_ids": [],
+          "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/AMAZONAS.png?v=1782855571",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "options": [
+        {
+          "name": "Tamaño",
+          "position": 1,
+          "values": [
+            "250g",
+            "454gr",
+            "1kg"
+          ]
+        },
+        {
+          "name": "Tipo de molido",
+          "position": 2,
+          "values": [
+            "Grano",
+            "Molido Fino",
+            "Molido Medio",
+            "Molido Grueso"
+          ]
+        }
+      ]
+    }
+  ]
+}

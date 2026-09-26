@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Artidoro — Revisión de la home 01–05</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3efe4;color:#123328;font:16px/1.6 system-ui,sans-serif}main{max-width:1220px;margin:auto;padding:45px 24px 70px}h1{font-size:clamp(36px,5vw,64px);line-height:1.05;letter-spacing:-.05em;margin:14px 0 24px}h2{margin:42px 0 14px;font-size:25px}p{max-width:800px}a{color:inherit;text-underline-offset:4px}.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase}.button{display:inline-block;background:#123328;color:#fff;padding:14px 24px;text-decoration:none;margin:8px 12px 8px 0}.muted{color:#52695e;font-size:14px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.card{border-top:1px solid #bcc8ba;padding-top:14px}video{display:block;width:100%;background:#101c16;max-height:560px;object-fit:contain}figure{margin:0}figcaption{font-size:13px;margin:8px 0 14px}.captures{grid-template-columns:3fr 1fr;align-items:start}.captures img{display:block;width:100%;height:auto}.frames{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.frames img{width:100%;max-height:310px;object-fit:contain;background:#101c16}code{font-size:13px}footer{border-top:1px solid #bcc8ba;margin-top:40px;padding-top:20px}@media(max-width:700px){.grid{grid-template-columns:1fr}.captures{grid-template-columns:2fr 1fr}main{padding:28px 18px}.frames{gap:6px}}
+</style>
+</head>
+<body><main>
+<p class="eyebrow">Artidoro Rodríguez / Revisión · 25.09.2026</p>
+<h1>Perú, en profundidad.<br>La home completa.</h1>
+<p>01 presencia → 02 elección → 03 deseo → 04 cercanía → 05 compra. Cinco cafés, un momento cinematográfico común y compra accesible durante todo el recorrido.</p>
+<a class="button" href="http://127.0.0.1:4174/" target="_blank" rel="noopener">Abrir demo navegable ↗</a>
+<a href="../docs/HOME_REVIEW.md">Entrega, QA y archivos</a>
+<p class="muted">El servidor local debe estar activo. Los videos y capturas de esta página también funcionan al abrir este archivo localmente. No se hizo commit final.</p>
+
+<h2>03 — De la superficie a la taza</h2>
+<p>Dos clips de siete segundos, horizontal y vertical. En la home el scroll controla el avance y permite retroceder. Packaging, marca, texto y enlaces son elementos reales de la interfaz, fuera del video generado.</p>
+<div class="grid">
+<figure class="card"><video controls muted playsinline preload="none" poster="../public/assets/scene03-desktop-end.webp" src="../public/assets/scene03-desktop.mp4"></video><figcaption>Desktop · 1284 × 716 · 1.68 MB</figcaption></figure>
+<figure class="card"><video controls muted playsinline preload="none" poster="../public/assets/scene03-mobile-end.webp" src="../public/assets/scene03-mobile.mp4"></video><figcaption>Mobile · 716 × 1284 · 2.22 MB · composición vertical propia</figcaption></figure>
+</div>
+<p class="muted">Media conceptual generada, no documentación de un origen ni de un proceso de preparación. Cuatro stills Nano Banana Pro + dos videos Kling V3 mediante APIMart. Coste de esta fase: <strong>US$1.0608</strong>. <a href="../audit/source/scene03-generation.json">Prompts, tareas, fuentes y costes</a>.</p>
+
+<h2>Frames clave del video</h2>
+<div class="frames">
+<figure><a href="../qa/2026-09-25-home/frames/desktop-start.jpg"><img loading="lazy" src="../qa/2026-09-25-home/frames/desktop-start.jpg" alt="Inicio desktop: superficie del café"></a><figcaption>Desktop · inicio</figcaption></figure>
+<figure><a href="../qa/2026-09-25-home/frames/desktop-middle.jpg"><img loading="lazy" src="../qa/2026-09-25-home/frames/desktop-middle.jpg" alt="Mitad desktop: cambia la escala"></a><figcaption>Desktop · mitad</figcaption></figure>
+<figure><a href="../qa/2026-09-25-home/frames/desktop-end.jpg"><img loading="lazy" src="../qa/2026-09-25-home/frames/desktop-end.jpg" alt="Final desktop: taza completa"></a><figcaption>Desktop · final</figcaption></figure>
+<figure><a href="../qa/2026-09-25-home/frames/mobile-start.jpg"><img loading="lazy" src="../qa/2026-09-25-home/frames/mobile-start.jpg" alt="Inicio mobile"></a><figcaption>Mobile · inicio</figcaption></figure>
+<figure><a href="../qa/2026-09-25-home/frames/mobile-middle.jpg"><img loading="lazy" src="../qa/2026-09-25-home/frames/mobile-middle.jpg" alt="Mitad mobile"></a><figcaption>Mobile · mitad</figcaption></figure>
+<figure><a href="../qa/2026-09-25-home/frames/mobile-end.jpg"><img loading="lazy" src="../qa/2026-09-25-home/frames/mobile-end.jpg" alt="Final mobile"></a><figcaption>Mobile · final</figcaption></figure>
+</div>
+<p><a href="../qa/2026-09-25-home/captures/desktop-03-middle.png">03 con interfaz desktop</a> · <a href="../qa/2026-09-25-home/captures/mobile-03-middle.png">03 con interfaz mobile</a></p>
+
+<h2>Home completa</h2>
+<p class="muted">Capturas Chromium, DPR 1, viewport 1440 × 900 y 390 × 844. Movimiento reducido activo para capturar todo el recorrido con el poster de 03. La animación se revisa en la demo o en los clips de arriba. Pulsa una captura para verla a tamaño completo.</p>
+<div class="grid captures">
+<figure><a href="../qa/2026-09-25-home/captures/desktop-home-complete.png"><img loading="lazy" src="../qa/2026-09-25-home/captures/desktop-home-complete.png" alt="Home completa desktop"></a><figcaption>Desktop · home completa</figcaption></figure>
+<figure><a href="../qa/2026-09-25-home/captures/mobile-home-complete.png"><img loading="lazy" src="../qa/2026-09-25-home/captures/mobile-home-complete.png" alt="Home completa mobile"></a><figcaption>Mobile · home completa</figcaption></figure>
+</div>
+<footer><strong>Build correcto · 117 comprobaciones pasan.</strong><p class="muted">Incluye selección de los cinco orígenes, scroll reversible, ausencia de video en la carga inicial, poster ante fallo, movimiento reducido, compra accesible y regresión de B. No cubre Safari/iOS real, checkout ni conversión. <a href="../qa/2026-09-25-home/README.md">Condiciones y límites del QA</a>.</p></footer>
+</main></body></html>
