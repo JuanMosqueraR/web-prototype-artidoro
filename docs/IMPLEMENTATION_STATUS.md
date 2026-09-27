@@ -1,3 +1,19 @@
+# Selector horizontal de 02 — rama de revisión, 26 de septiembre de 2026
+
+Implementado en `feat/origin-selector` desde `7b122b9`, por aprobación explícita del plan del usuario. Solo 02 cambia: cinco nombres y carrusel de bolsas, composición mobile compacta y dos columnas desde 1024 px. Sin dependencias ni assets nuevos. Versionado en esa rama por petición del usuario, sin merge a `master`; la publicación en Pages la hace el usuario con `scripts/build-pages.py` y este documento no registra si ya ocurrió. [Entrega y QA](ORIGIN_SELECTOR_REVIEW.md).
+
+| Ruta nueva o afectada | Función / producción |
+|---|---|
+| `index.html`, `src/origin.css`, `src/origin.js` | HTML comercial de 02, estilos propios, selección atómica, preparación de vecinos y gestos |
+| `src/home.css` | Retira únicamente los overrides anteriores de 02; las reglas nuevas están en origin.css |
+| `qa/2026-09-26-origin-selector/` | Capturas antes/después del contrato, secuencia, geometría, fallos de carga y regresión; Python Playwright/Chromium, scripts incluidos |
+| `deliverables/origin-selector-review.html` | Galería escrita manualmente sobre las capturas del nuevo QA; servir desde Vite dev para resolver rutas relativas |
+| `docs/ORIGIN_SELECTOR_REVIEW.md` | Resultado, condiciones, comandos y límites de esta iteración |
+
+Node aislado 22.23.1, Vite 7.1.3, Python 3.10 y Windows. Preview local de esta sesión en `http://127.0.0.1:4175/`. Los snapshots anteriores conservan el listado vertical de 02: son históricos y no se sobrescriben. La publicación y la validación física de iPhone descritas debajo corresponden a la versión anterior, no a esta rama.
+
+---
+
 # Publicación en GitHub Pages — 26 de septiembre de 2026
 
 Sobre `581e24f`. La revisión pública pasa del Artifact a GitHub Pages. El Artifact se retiró por decisión del usuario (borrado; enlace inválido, historial no recuperable) tras fallar el video 03 en Chrome y Safari de iPhone dentro de su contenedor; ver KI-61 y [VIDEO_RECOVERY](VIDEO_RECOVERY.md). Según el usuario, el sitio en Pages funciona en Chrome y Safari de iPhone y el video arranca solo.

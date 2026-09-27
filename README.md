@@ -1,5 +1,7 @@
 # Artidoro — demo de la home 01–05
 
+**Revisión local de 02 (26 de septiembre):** [selector horizontal — entrega y QA](docs/ORIGIN_SELECTOR_REVIEW.md) · [antes/después y secuencia](deliverables/origin-selector-review.html). Rama `feat/origin-selector` (checkpoint `7b122b9`), versionada por petición del usuario y sin merge a `master`. Preview de esta sesión: `http://127.0.0.1:4175/#origin-scene`. La publicación en Pages la hace el usuario con `scripts/build-pages.py`; este README no registra si ya ocurrió (hasta entonces Pages conserva el selector anterior).
+
 **Publicación de revisión:** GitHub Pages ([cómo publicar](#publicar-en-github-pages)). El Artifact que se había publicado se retiró el 26 de septiembre de 2026; ver [recuperación de video y resultado](docs/VIDEO_RECOVERY.md).
 
 **Actualización del 26 de septiembre:** [Tarata editorial — entrega y QA](docs/TARATA_REVIEW.md) · [Galería actual](deliverables/tarata-review.html). Checkpoint previo `3830028`; revisión sin commit final. La home sigue en `http://127.0.0.1:4174/`.
