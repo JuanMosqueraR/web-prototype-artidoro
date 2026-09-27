@@ -25,6 +25,11 @@
 .sensory-meter{width:180px;height:1px;background:#f4f0e555;margin-top:10px}
 .sensory-meter span{display:block;width:100%;height:1px;background:#e6c494;transform:scaleX(var(--scene-progress));transform-origin:left}
 .sensory-control{color:inherit;border:0;background:transparent;font:inherit;text-decoration:underline;text-underline-offset:4px;min-height:40px;padding:0 8px;cursor:pointer}
+.sensory-actions{display:flex;align-items:center;gap:14px}
+.sensory-retry{border:1px solid #d1af7e;background:#102e25eb;color:#f4f0e5;font:inherit;padding:10px 14px;min-height:44px;cursor:pointer;white-space:nowrap}
+.sensory-retry[hidden]{display:none}
+.no-motion .sensory-retry{display:none!important}
+@media(prefers-reduced-motion:reduce){.sensory-retry{display:none!important}}
 .sensory-credit{font-size:8px;letter-spacing:.3px;opacity:.72;margin-top:6px}
 .sensory-scroll-hint{display:none}.is-cinematic .sensory-scroll-hint{display:block}
 .sensory-static-hint{display:block}.is-cinematic .sensory-static-hint{display:none}
@@ -36,5 +41,6 @@
  .sensory-copy{left:22px;right:22px;top:100px;width:auto;transform:translateY(calc(var(--scene-close)*-24px))}.sensory-copy .home-kicker{font-size:8px;letter-spacing:1.2px;margin-bottom:15px}.sensory-copy h2{font-size:clamp(65px,20.5vw,110px);line-height:.88;letter-spacing:-.015em}.sensory-copy>p:last-child{display:none}
  .sensory-products{right:24px;bottom:82px;gap:8px}.sensory-products img{height:107px}.sensory-products img:first-child{height:95px}
  .sensory-bottom{left:22px;right:22px;bottom:16px;font-size:9px;align-items:flex-end;gap:10px}.sensory-meter{width:120px}.sensory-credit{font-size:7px;max-width:210px;margin-top:8px}.sensory-control{font-size:9px;min-width:84px;text-align:right;padding:0}
+ .sensory-actions{flex-direction:column;align-items:flex-end;gap:0}.sensory-retry{font-size:9px;min-height:40px;padding:8px 10px}
 }
 @media(prefers-reduced-motion:reduce){.sensory-scene{height:auto!important}.sensory-stage{position:relative!important;top:0!important}.sensory-video{display:none!important}.sensory-products{opacity:1!important;transform:none!important}.sensory-scroll-hint{display:none}.sensory-static-hint{display:block}}
