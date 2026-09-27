@@ -1,0 +1,2301 @@
+{
+  "browser": "148.0.7778.96",
+  "dpr": 1,
+  "url": "http://127.0.0.1:4175",
+  "checks": [
+    {
+      "name": "baseline pixels a-mobile-False-False.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 0,
+        "max_channel_delta": 0,
+        "crop_height": 844
+      }
+    },
+    {
+      "name": "baseline CTA a-mobile-False-False.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pixels a-mobile-False-True.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 0,
+        "max_channel_delta": 0,
+        "crop_height": 844
+      }
+    },
+    {
+      "name": "baseline CTA a-mobile-False-True.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pixels a-mobile-True-False.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 0,
+        "max_channel_delta": 0,
+        "crop_height": 844
+      }
+    },
+    {
+      "name": "baseline CTA a-mobile-True-False.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pixels a-mobile-True-True.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 0,
+        "max_channel_delta": 0,
+        "crop_height": 844
+      }
+    },
+    {
+      "name": "baseline CTA a-mobile-True-True.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pixels b-mobile-False-False.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 0,
+        "max_channel_delta": 0,
+        "crop_height": 844
+      }
+    },
+    {
+      "name": "baseline CTA b-mobile-False-False.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pixels b-mobile-False-True.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 0,
+        "max_channel_delta": 0,
+        "crop_height": 844
+      }
+    },
+    {
+      "name": "baseline CTA b-mobile-False-True.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "B hides 02 mobileFalse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pixels b-mobile-True-False.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 0,
+        "max_channel_delta": 0,
+        "crop_height": 844
+      }
+    },
+    {
+      "name": "baseline CTA b-mobile-True-False.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pixels b-mobile-True-True.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 0,
+        "max_channel_delta": 0,
+        "crop_height": 844
+      }
+    },
+    {
+      "name": "baseline CTA b-mobile-True-True.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "B hides 02 mobileTrue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pixels a-desktop-False-False.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 0,
+        "max_channel_delta": 0,
+        "crop_height": 900
+      }
+    },
+    {
+      "name": "baseline CTA a-desktop-False-False.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pixels a-desktop-False-True.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 0,
+        "max_channel_delta": 0,
+        "crop_height": 900
+      }
+    },
+    {
+      "name": "baseline CTA a-desktop-False-True.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pixels a-desktop-True-False.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 0,
+        "max_channel_delta": 0,
+        "crop_height": 900
+      }
+    },
+    {
+      "name": "baseline CTA a-desktop-True-False.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pixels a-desktop-True-True.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 0,
+        "max_channel_delta": 0,
+        "crop_height": 900
+      }
+    },
+    {
+      "name": "baseline CTA a-desktop-True-True.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pixels b-desktop-False-False.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 0,
+        "max_channel_delta": 0,
+        "crop_height": 900
+      }
+    },
+    {
+      "name": "baseline CTA b-desktop-False-False.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pixels b-desktop-False-True.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 0,
+        "max_channel_delta": 0,
+        "crop_height": 900
+      }
+    },
+    {
+      "name": "baseline CTA b-desktop-False-True.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "B hides 02 desktopFalse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pixels b-desktop-True-False.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 0,
+        "max_channel_delta": 0,
+        "crop_height": 900
+      }
+    },
+    {
+      "name": "baseline CTA b-desktop-True-False.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pixels b-desktop-True-True.png",
+      "passed": true,
+      "detail": {
+        "changed_pixels": 89,
+        "max_channel_delta": 7,
+        "crop_height": 900
+      }
+    },
+    {
+      "name": "baseline CTA b-desktop-True-True.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "B hides 02 desktopTrue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 CTA fits",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 654.875,
+        "width": 346,
+        "height": 52,
+        "bottom": 706.875
+      }
+    },
+    {
+      "name": "390x844 full central bag fits",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 five names in one row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 controls at least 44px",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 purchase amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 matching bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 decoded bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 stable CTA amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 stable price amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 purchase cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 matching bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 decoded bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 stable CTA cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 stable price cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 purchase villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 matching bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 decoded bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 stable CTA villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 stable price villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 purchase cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 matching bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 decoded bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 stable CTA cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 stable price cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 purchase puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 matching bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 decoded bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 stable CTA puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 stable price puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 wrap Puno to Amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 neighbor click",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 keyboard right/end/home",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 drag advances exactly one",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "1440x900 no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 CTA fits",
+      "passed": true,
+      "detail": {
+        "x": 874.71875,
+        "y": 629.921875,
+        "width": 425,
+        "height": 58,
+        "bottom": 687.921875
+      }
+    },
+    {
+      "name": "1440x900 full central bag fits",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 five names in one row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 controls at least 44px",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 purchase amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 matching bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 decoded bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 stable CTA amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 stable price amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 purchase cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 matching bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 decoded bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 stable CTA cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 stable price cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 purchase villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 matching bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 decoded bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 stable CTA villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 stable price villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 purchase cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 matching bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 decoded bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 stable CTA cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 stable price cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 purchase puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 matching bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 decoded bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 stable CTA puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 stable price puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 wrap Puno to Amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 neighbor click",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 keyboard right/end/home",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 drag advances exactly one",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "390x700 no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 CTA fits",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 574.875,
+        "width": 346,
+        "height": 52,
+        "bottom": 626.875
+      }
+    },
+    {
+      "name": "390x700 full central bag fits",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 five names in one row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 controls at least 44px",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 purchase amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 matching bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 decoded bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 stable CTA amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 stable price amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 purchase cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 matching bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 decoded bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 stable CTA cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 stable price cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 purchase villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 matching bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 decoded bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 stable CTA villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 stable price villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 purchase cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 matching bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 decoded bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 stable CTA cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 stable price cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 purchase puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 matching bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 decoded bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 stable CTA puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 stable price puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 wrap Puno to Amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "360x740 no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 CTA fits",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 602.125,
+        "width": 316,
+        "height": 52,
+        "bottom": 654.125
+      }
+    },
+    {
+      "name": "360x740 full central bag fits",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 five names in one row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 controls at least 44px",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 purchase amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 matching bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 decoded bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 stable CTA amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 stable price amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 purchase cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 matching bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 decoded bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 stable CTA cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 stable price cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 purchase villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 matching bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 decoded bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 stable CTA villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 stable price villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 purchase cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 matching bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 decoded bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 stable CTA cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 stable price cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 purchase puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 matching bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 decoded bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 stable CTA puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 stable price puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 wrap Puno to Amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "768x1024 no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 five names in one row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 controls at least 44px",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 purchase amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 matching bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 decoded bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 stable CTA amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 stable price amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 purchase cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 matching bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 decoded bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 stable CTA cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 stable price cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 purchase villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 matching bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 decoded bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 stable CTA villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 stable price villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 purchase cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 matching bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 decoded bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 stable CTA cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 stable price cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 purchase puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 matching bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 decoded bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 stable CTA puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 stable price puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 wrap Puno to Amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "1023x900 no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 five names in one row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 controls at least 44px",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 purchase amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 matching bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 decoded bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 stable CTA amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 stable price amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 purchase cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 matching bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 decoded bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 stable CTA cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 stable price cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 purchase villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 matching bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 decoded bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 stable CTA villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 stable price villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 purchase cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 matching bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 decoded bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 stable CTA cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 stable price cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 purchase puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 matching bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 decoded bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 stable CTA puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 stable price puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 wrap Puno to Amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1023x900 no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "1024x768 no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 five names in one row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 controls at least 44px",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 purchase amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 matching bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 decoded bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 stable CTA amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 stable price amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 purchase cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 matching bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 decoded bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 stable CTA cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 stable price cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 purchase villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 matching bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 decoded bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 stable CTA villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 stable price villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 purchase cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 matching bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 decoded bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 stable CTA cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 stable price cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 purchase puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 matching bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 decoded bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 stable CTA puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 stable price puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 wrap Puno to Amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768 no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "320x740 no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 five names in one row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 controls at least 44px",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 purchase amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 matching bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 decoded bag amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 stable CTA amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 stable price amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 purchase cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 matching bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 decoded bag cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 stable CTA cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 stable price cajamarca",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 purchase villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 matching bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 decoded bag villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 stable CTA villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 stable price villa-rica",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 purchase cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 matching bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 decoded bag cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 stable CTA cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 stable price cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 purchase puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 matching bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 decoded bag puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 stable CTA puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 stable price puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 wrap Puno to Amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "320x740 no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "touch horizontal swipe selects one",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "touch vertical gesture scrolls page",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "touch vertical gesture keeps selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error holds old product while pending",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error holds old CTA while pending",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error keeps old state after failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "error explicit retry succeeds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow holds old product while pending",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slow holds old CTA while pending",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "last request wins despite late decode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "timeout holds old product while pending",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "timeout holds old CTA while pending",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "timeout keeps old state after failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "timeout explicit retry succeeds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "system reduced motion immediate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "toggle reduced motion immediate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no-JS Amazonas purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no-JS inactive controls hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no-JS bag visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "200% text grows section",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "200% text no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "200% text CTA reachable",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "geometry": [
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "section": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 734.875,
+        "bottom": 798.875
+      },
+      "cta": {
+        "x": 22,
+        "y": 654.875,
+        "width": 346,
+        "height": 52,
+        "bottom": 706.875
+      },
+      "bag": {
+        "x": 139.3125,
+        "y": 236.875,
+        "width": 111.375,
+        "height": 260,
+        "bottom": 496.875
+      },
+      "price": {
+        "x": 266.8125,
+        "y": 534.875,
+        "width": 101.1875,
+        "height": 30,
+        "bottom": 564.875
+      },
+      "tabs": [
+        {
+          "y": 167.875,
+          "width": 76.015625,
+          "height": 44
+        },
+        {
+          "y": 167.875,
+          "width": 78.65625,
+          "height": 44
+        },
+        {
+          "y": 167.875,
+          "width": 68.046875,
+          "height": 44
+        },
+        {
+          "y": 167.875,
+          "width": 53.640625,
+          "height": 44
+        },
+        {
+          "y": 167.875,
+          "width": 53.640625,
+          "height": 44
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "section": {
+        "x": 0,
+        "y": 72,
+        "width": 1440,
+        "height": 781,
+        "bottom": 853
+      },
+      "cta": {
+        "x": 874.71875,
+        "y": 629.921875,
+        "width": 425,
+        "height": 58,
+        "bottom": 687.921875
+      },
+      "bag": {
+        "x": 355.875,
+        "y": 369,
+        "width": 171.34375,
+        "height": 400,
+        "bottom": 769
+      },
+      "price": {
+        "x": 1181.65625,
+        "y": 392.078125,
+        "width": 118.0625,
+        "height": 51.84375,
+        "bottom": 443.921875
+      },
+      "tabs": [
+        {
+          "y": 268,
+          "width": 144.03125,
+          "height": 56
+        },
+        {
+          "y": 268,
+          "width": 157.59375,
+          "height": 56
+        },
+        {
+          "y": 268,
+          "width": 146.28125,
+          "height": 56
+        },
+        {
+          "y": 268,
+          "width": 101.453125,
+          "height": 56
+        },
+        {
+          "y": 268,
+          "width": 90.640625,
+          "height": 56
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "viewport": [
+        390,
+        700
+      ],
+      "section": {
+        "x": 0,
+        "y": 64,
+        "width": 390,
+        "height": 654.875,
+        "bottom": 718.875
+      },
+      "cta": {
+        "x": 22,
+        "y": 574.875,
+        "width": 346,
+        "height": 52,
+        "bottom": 626.875
+      },
+      "bag": {
+        "x": 156.453125,
+        "y": 236.875,
+        "width": 77.09375,
+        "height": 180,
+        "bottom": 416.875
+      },
+      "price": {
+        "x": 266.8125,
+        "y": 454.875,
+        "width": 101.1875,
+        "height": 30,
+        "bottom": 484.875
+      },
+      "tabs": [
+        {
+          "y": 167.875,
+          "width": 76.015625,
+          "height": 44
+        },
+        {
+          "y": 167.875,
+          "width": 78.65625,
+          "height": 44
+        },
+        {
+          "y": 167.875,
+          "width": 68.046875,
+          "height": 44
+        },
+        {
+          "y": 167.875,
+          "width": 53.640625,
+          "height": 44
+        },
+        {
+          "y": 167.875,
+          "width": 53.640625,
+          "height": 44
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "viewport": [
+        360,
+        740
+      ],
+      "section": {
+        "x": 0,
+        "y": 64,
+        "width": 360,
+        "height": 682.125,
+        "bottom": 746.125
+      },
+      "cta": {
+        "x": 22,
+        "y": 602.125,
+        "width": 316,
+        "height": 52,
+        "bottom": 654.125
+      },
+      "bag": {
+        "x": 135.03125,
+        "y": 234.125,
+        "width": 89.953125,
+        "height": 210,
+        "bottom": 444.125
+      },
+      "price": {
+        "x": 236.8125,
+        "y": 482.125,
+        "width": 101.1875,
+        "height": 30,
+        "bottom": 512.125
+      },
+      "tabs": [
+        {
+          "y": 165.125,
+          "width": 70.015625,
+          "height": 44
+        },
+        {
+          "y": 165.125,
+          "width": 72.65625,
+          "height": 44
+        },
+        {
+          "y": 165.125,
+          "width": 62.046875,
+          "height": 44
+        },
+        {
+          "y": 165.125,
+          "width": 47.640625,
+          "height": 44
+        },
+        {
+          "y": 165.125,
+          "width": 47.640625,
+          "height": 44
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "section": {
+        "x": 0,
+        "y": 72,
+        "width": 768,
+        "height": 847,
+        "bottom": 919
+      },
+      "cta": {
+        "x": 96,
+        "y": 763,
+        "width": 576,
+        "height": 52,
+        "bottom": 815
+      },
+      "bag": {
+        "x": 319.75,
+        "y": 287,
+        "width": 128.5,
+        "height": 300,
+        "bottom": 587
+      },
+      "price": {
+        "x": 570.8125,
+        "y": 635,
+        "width": 101.1875,
+        "height": 38,
+        "bottom": 673
+      },
+      "tabs": [
+        {
+          "y": 206,
+          "width": 125.484375,
+          "height": 44
+        },
+        {
+          "y": 206,
+          "width": 128.5625,
+          "height": 44
+        },
+        {
+          "y": 206,
+          "width": 116.171875,
+          "height": 44
+        },
+        {
+          "y": 206,
+          "width": 96.734375,
+          "height": 44
+        },
+        {
+          "y": 206,
+          "width": 93.046875,
+          "height": 44
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "viewport": [
+        1023,
+        900
+      ],
+      "section": {
+        "x": 0,
+        "y": 72,
+        "width": 1023,
+        "height": 847,
+        "bottom": 919
+      },
+      "cta": {
+        "x": 223.5,
+        "y": 763,
+        "width": 576,
+        "height": 52,
+        "bottom": 815
+      },
+      "bag": {
+        "x": 447.25,
+        "y": 287,
+        "width": 128.5,
+        "height": 300,
+        "bottom": 587
+      },
+      "price": {
+        "x": 698.3125,
+        "y": 635,
+        "width": 101.1875,
+        "height": 38,
+        "bottom": 673
+      },
+      "tabs": [
+        {
+          "y": 206,
+          "width": 125.484375,
+          "height": 44
+        },
+        {
+          "y": 206,
+          "width": 128.5625,
+          "height": 44
+        },
+        {
+          "y": 206,
+          "width": 116.171875,
+          "height": 44
+        },
+        {
+          "y": 206,
+          "width": 96.734375,
+          "height": 44
+        },
+        {
+          "y": 206,
+          "width": 93.046875,
+          "height": 44
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "section": {
+        "x": 0,
+        "y": 72,
+        "width": 1024,
+        "height": 781,
+        "bottom": 853
+      },
+      "cta": {
+        "x": 630.109375,
+        "y": 626.390625,
+        "width": 332.453125,
+        "height": 58,
+        "bottom": 684.390625
+      },
+      "bag": {
+        "x": 221.09375,
+        "y": 369,
+        "width": 171.34375,
+        "height": 400,
+        "bottom": 769
+      },
+      "price": {
+        "x": 844.5,
+        "y": 395.59375,
+        "width": 118.0625,
+        "height": 44.796875,
+        "bottom": 440.390625
+      },
+      "tabs": [
+        {
+          "y": 268,
+          "width": 144.03125,
+          "height": 56
+        },
+        {
+          "y": 268,
+          "width": 157.59375,
+          "height": 56
+        },
+        {
+          "y": 268,
+          "width": 146.28125,
+          "height": 56
+        },
+        {
+          "y": 268,
+          "width": 101.453125,
+          "height": 56
+        },
+        {
+          "y": 268,
+          "width": 90.640625,
+          "height": 56
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "viewport": [
+        320,
+        740
+      ],
+      "section": {
+        "x": 0,
+        "y": 64,
+        "width": 320,
+        "height": 701,
+        "bottom": 765
+      },
+      "cta": {
+        "x": 16,
+        "y": 621,
+        "width": 288,
+        "height": 52,
+        "bottom": 673
+      },
+      "bag": {
+        "x": 115.03125,
+        "y": 233,
+        "width": 89.953125,
+        "height": 210,
+        "bottom": 443
+      },
+      "price": {
+        "x": 202.8125,
+        "y": 481,
+        "width": 101.1875,
+        "height": 30,
+        "bottom": 511
+      },
+      "tabs": [
+        {
+          "y": 164,
+          "width": 65.21875,
+          "height": 44
+        },
+        {
+          "y": 164,
+          "width": 67.859375,
+          "height": 44
+        },
+        {
+          "y": 164,
+          "width": 57.234375,
+          "height": 44
+        },
+        {
+          "y": 164,
+          "width": 48.84375,
+          "height": 44
+        },
+        {
+          "y": 164,
+          "width": 48.84375,
+          "height": 44
+        }
+      ],
+      "overflow": false
+    }
+  ],
+  "historical_lab_deltas": [
+    {
+      "state": "a-mobile-False-False.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0,
+        "y": 8,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "a-mobile-False-True.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0,
+        "y": 8,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "a-mobile-True-False.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0,
+        "y": 8,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "a-mobile-True-True.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0,
+        "y": 8,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-mobile-False-False.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-mobile-False-True.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-mobile-True-False.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-mobile-True-True.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "a-desktop-False-False.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0.0,
+        "y": -3.125,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "a-desktop-False-True.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0.0,
+        "y": -3.125,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "a-desktop-True-False.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0.0,
+        "y": -3.125,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "a-desktop-True-True.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0.0,
+        "y": -3.125,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-desktop-False-False.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-desktop-False-True.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-desktop-True-False.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-desktop-True-True.png",
+      "cta_delta_from_historical_lab": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ],
+  "passed": 312,
+  "failed": 0
+}

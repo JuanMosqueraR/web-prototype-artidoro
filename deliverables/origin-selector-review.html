@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Artidoro · Revisión del selector 02</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f0e5;color:#102e25;font:16px/1.55 system-ui,sans-serif}main{max-width:1320px;margin:auto;padding:48px 24px}h1{font-size:clamp(32px,5vw,64px);line-height:1.05;letter-spacing:-2px;margin:12px 0 20px}h2{margin:56px 0 20px;font-size:28px}p{max-width:800px}.kicker{letter-spacing:2px;font-size:12px;text-transform:uppercase}a{color:inherit}.demo{display:inline-block;padding:14px 24px;background:#102e25;color:#f4f0e5;text-decoration:none;margin:12px 0}.pair{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}.mobile{max-width:820px}.pair figure,.frames figure{margin:0}figcaption{font-size:13px;margin:0 0 10px}img{display:block;width:100%;height:auto;border:1px solid #102e2522}.frames{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.conditions{border-top:1px solid #102e2540;margin-top:48px;padding-top:20px;font-size:13px}code{font-size:13px}@media(max-width:640px){main{padding:32px 16px}.pair{gap:12px}.frames{grid-template-columns:1fr 1fr;gap:12px}h1{letter-spacing:-1px}figcaption{font-size:11px}}
+</style></head>
+<body><main>
+<p class="kicker">Artidoro / Perú, en profundidad / 02</p><h1>Elegir un café.<br>Verlo. Llevártelo.</h1>
+<p>Carrusel de bolsas y cinco orígenes por nombre. Composición propia en móvil y desktop, selección local y compra visible. Rama <code>feat/origin-selector</code>, sobre <code>7b122b9</code>. Sin publicar ni hacer commit final.</p>
+<a class="demo" href="/#origin-scene">Abrir la demo en 02 ↗</a>
+<h2>Móvil · antes / después</h2><p>390 × 844. La sección pasa de 954 a 735 px. El CTA completo termina en y ≈ 707 px, con la sección alineada bajo la navegación de 64 px.</p>
+<div class="pair mobile"><figure><figcaption>Antes · listado vertical</figcaption><a href="../qa/2026-09-26-origin-selector/before/02-mobile.png"><img src="../qa/2026-09-26-origin-selector/before/02-mobile.png" alt="Selector anterior en móvil"></a></figure><figure><figcaption>Después · producto y compra juntos</figcaption><a href="../qa/2026-09-26-origin-selector/after/02-mobile.png"><img src="../qa/2026-09-26-origin-selector/after/02-mobile.png" alt="Nuevo selector horizontal en móvil"></a></figure></div>
+<h2>Desktop · antes / después</h2>
+<div class="pair"><figure><figcaption>Antes · tres columnas</figcaption><a href="../qa/2026-09-26-origin-selector/before/02-desktop.png"><img loading="lazy" src="../qa/2026-09-26-origin-selector/before/02-desktop.png" alt="Selector anterior en desktop"></a></figure><figure><figcaption>Después · carrusel y ficha comercial</figcaption><a href="../qa/2026-09-26-origin-selector/after/02-desktop.png"><img loading="lazy" src="../qa/2026-09-26-origin-selector/after/02-desktop.png" alt="Nuevo selector en desktop"></a></figure></div>
+<h2>Amazonas → Cajamarca</h2><p>Cuatro capturas durante el cambio. Las bolsas se desplazan durante 320 ms; la ficha cambia cuando la nueva imagen está preparada. El tiempo exacto entre capturas incluye la ejecución del navegador.</p>
+<div class="frames">
+<figure><figcaption>01 · Amazonas</figcaption><img loading="lazy" src="../qa/2026-09-26-origin-selector/after/sequence-mobile-0.png" alt="Estado inicial Amazonas"></figure>
+<figure><figcaption>02 · Entrada</figcaption><img loading="lazy" src="../qa/2026-09-26-origin-selector/after/sequence-mobile-1.png" alt="Inicio del cambio a Cajamarca"></figure>
+<figure><figcaption>03 · Desplazamiento</figcaption><img loading="lazy" src="../qa/2026-09-26-origin-selector/after/sequence-mobile-2.png" alt="Bolsas desplazándose"></figure>
+<figure><figcaption>04 · Cajamarca</figcaption><img loading="lazy" src="../qa/2026-09-26-origin-selector/after/sequence-mobile-3.png" alt="Cajamarca seleccionada con su enlace de compra"></figure>
+</div>
+<p class="conditions">Evidencia: Chromium 148, DPR 1; desktop 1440 × 900 y móvil 390 × 844, movimiento activado, bolsas decodificadas. Antes: checkpoint 7b122b9. Después: working tree de esta rama. Gestos táctiles emulados; pendiente revisión en iPhone físico. No es una medición de conversión. <a href="../docs/ORIGIN_SELECTOR_REVIEW.md">Entrega y condiciones de QA</a>.</p>
+</main></body></html>
