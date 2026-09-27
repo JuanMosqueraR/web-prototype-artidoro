@@ -40,9 +40,10 @@ Observaciones de la auditoría del 23 de septiembre de 2026, sobre el commit `99
 - Basis: read. No es un defecto: es un riesgo de uso.
 
 **KI-05 · Repositorio sin remoto**
-- Estado: `OBSERVED` · Afecta: shared · Alcance: environment · Tarea: no aprobada
+- Estado: `SUPERSEDED` · Afecta: shared · Alcance: environment · Tarea: no aprobada
 - Evidencia: `git remote -v` vacío; una sola rama (`master`); sin tags. El único respaldo es el `.git` local.
 - Condiciones: 2026-09-23. Basis: observed.
+- Actualización 2026-09-26: el usuario informa que subió el repositorio a `https://github.com/JuanMosqueraR/web-prototype-artidoro` y que publicó una rama `gh-pages` con el build (ver IMPLEMENTATION_STATUS). El agente no hizo esos push y no verificó el remoto. Ya no es cierto que el `.git` local sea el único respaldo.
 
 ## 2. Documentation ↔ implementation discrepancies
 
@@ -166,6 +167,17 @@ Ya clasificados en [ASSET_AUDIT.md](ASSET_AUDIT.md) y [audit/assets.json](../aud
 - Estado: `OBSERVED` · Afecta: shared · Alcance: documentation · Tarea: no aprobada
 - Evidencia: el fragmento elimina `<!doctype>`, `<html>`, `<head>` y `<body>`; un script inicial fija `lang` y `data-direction` (por defecto A). `<meta name="theme-color">`, `<title>` y `<link rel="icon">` quedan como etiquetas sueltas fuera de `<head>`. `src/main.js:18` accede a `meta[name="theme-color"]` sin comprobar `null`; si el anfitrión lo elimina, `setDirection()` lanzaría un `TypeError` tras conmutar las escenas y antes de `updateIndicator()` y de aplicar `?frame=b`. La URL del Artifact publicado no consta en el repo.
 - Basis: read. No se probó en el anfitrión del Artifact.
+- Actualización 2026-09-26: el Artifact publicado a partir de esta copia (y sus versiones posteriores) se retiró por decisión del usuario; ver KI-61. El archivo se conserva como histórico y figura ahora en la tabla de IMPLEMENTATION_STATUS.
+
+**KI-61 · El video 03 no arrancaba en Chrome/Safari de iPhone dentro del contenedor del Artifact**
+- Estado: `OBSERVED` · Afecta: A (03) · Alcance: environment · Tarea: no aprobada
+- Evidencia: el usuario reporta que en el Artifact (v3, con la recuperación de `891bbc4`) Chrome y Safari de iPhone mostraban solo el póster con «Reintentar movimiento», y que el reintento no lo resolvía; el mismo Artifact funcionaba en el app de Claude y en la web de escritorio. Una página de diagnóstico publicada como Artifact aparte y abierta en Chrome iOS (CriOS 154, iOS 26.6.2; la batería de la captura sugiere modo de bajo consumo) mostró: origen `*.frame.claudeusercontent.com/_f/<versión>/`; una petición Range a `scene03-mobile.mp4` devolvió 206; `<video src>` con el archivo llegó a `readyState` 4 y avanzó (1,48 s); `fetch → Blob`, `data:` URI y base64 → Blob llegaron a `readyState` 2 pero `play()` fue rechazado con `NotAllowedError`; ningún bloqueo de CSP registrado. Una petición anónima directa con `curl` a un archivo del mismo origen devolvió 403 (2026-09-26). Una v4 con adaptador `fetch → Blob` (solo en el Artifact, no en este repo) aún exigía tocar «Activar movimiento» en Chrome iPhone, según el usuario. Con el build del repo en GitHub Pages el usuario reporta que funciona en Chrome y Safari de iPhone y que el video arranca solo.
+- Condiciones: capturas y textos del usuario; sin acceso al host del Artifact ni a sus registros. No se conservan las capturas. La página de diagnóstico se borró el 2026-09-26 y su código no está en el repo. Basis: observed (resultados de la sonda), user-reported (comportamiento por navegador y resultado en Pages). La causa dentro del contenedor no se aisló: el 403 anónimo no demuestra fallo de la petición contextual del reproductor.
+
+**KI-62 · El build de Pages publica assets de `public/` que la home no usa**
+- Estado: `OBSERVED` · Afecta: shared · Alcance: environment · Tarea: no aprobada
+- Evidencia: Vite copia todo `public/` a la salida. Siete de los 28 archivos copiados de `public/assets/` no están referenciados por `index.html`, el CSS ni el JS compilados: `barlow-condensed-800.ttf`, `cafetal-provisional.webp`, `cp04-entrada.jpg`, `cp04-mesa.jpg`, `scene03-desktop-start.webp`, `scene03-mobile-start.webp` y `tarata-mesa-home.webp`; suman 2 653 633 bytes de 7 881 945 publicados. `cp04-*` y `cafetal-provisional.webp` son de fases anteriores; los `cp04-*` son `CONCEPTUAL_ASSET`.
+- Basis: computed (comparación de nombres de archivo con el texto compilado sobre `581e24f`). No se evaluó el efecto en la carga real, ni si conviene publicarlos.
 
 ## 8. QA coverage / method
 

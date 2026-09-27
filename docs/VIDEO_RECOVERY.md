@@ -22,13 +22,15 @@ Contexto técnico, no diagnóstico del teléfono: [MDN — loadeddata](https://d
 
 ## Qué necesita actualizar Claude
 
+*Histórico: el Artifact se retiró; ver «Resultado en GitHub Pages y retiro del Artifact» al final.*
+
 Para una nueva exportación, compilar/exportar **el working tree actual**, incluyendo los cambios en `index.html`, `src/sensory.js` y `src/sensory.css`; conservar ambos MP4, posters y el resto de assets. Adaptar las rutas de `data-desktop`/`data-mobile` y comprobar en el host real que apuntan a archivos accesibles. No basta con volver a subir los videos o sustituir una captura. La v4 reportada incorpora además el adaptador Blob externo descrito arriba; no se puede regenerar ese adaptador desde este repositorio.
 
 Verificar desde el celular tanto el arranque normal como «Activar movimiento» y «Reintentar movimiento». Si también falla tras un toque, revisar la respuesta de los MP4, restricciones del iframe/CSP y entrega de rangos del host; no atribuirlo automáticamente a autoplay. La recuperación local no puede arreglar una URL inaccesible o un recurso bloqueado por el host.
 
 No se publicó ni modificó el Artifact desde esta sesión, ni se generó media. Coste adicional US$0. Checkpoint previo `8d24ed9`, excluyendo reference/, PDF CRO y cambios ajenos APIMart. La corrección quedó inicialmente sin commit y se versionó posteriormente por instrucción explícita del usuario; referencias de commits al inicio.
 
-## Posible prueba en GitHub Pages — todavía no implementada
+## Posible prueba en GitHub Pages — plan original (ya realizada; ver «Resultado» al final)
 
 Pages serviría el build estático como sitio independiente y permitiría evaluar la implementación del repo sin las transformaciones, iframe y adaptación Blob de Artifacts. Eso cambia el contexto de entrega, pero no elimina las restricciones de reproducción del navegador/iOS ni garantiza arranque automático. Es una prueba útil para separar ambas causas.
 
@@ -37,3 +39,11 @@ Antes de publicar bajo `/<repo>/`, se necesita configurar la base de Vite y revi
 Fuentes: [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages), [Vite — despliegue en Pages](https://vite.dev/guide/static-deploy#github-pages), [MDN — permisos de play()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play).
 
 Archivos funcionales modificados: `index.html`, `src/sensory.js`, `src/sensory.css`. Documentación actualizada: este informe, README, CREATIVE_DIRECTIONS e IMPLEMENTATION_STATUS. Nueva evidencia en `qa/2026-09-26-video-recovery/`. No se alteran 01/02/04/05, packaging, textos comerciales ni la coreografía del clip.
+
+## Resultado en GitHub Pages y retiro del Artifact — 26 de septiembre de 2026
+
+- **Qué se publicó:** el build de `581e24f`, sin adaptador Blob y con el botón «Activar movimiento» disponible, en la rama `gh-pages` del repositorio de GitHub, que subió el usuario (el agente no hizo push). Se genera con `scripts/build-pages.py`; ver [README](../README.md#publicar-en-github-pages).
+- **Resultado que reporta el usuario:** en Chrome y Safari de iPhone el sitio funciona y el video arranca solo. No se registraron las versiones de Safari/iOS, si el modo de bajo consumo estaba activo, ni se conservan capturas.
+- **Qué separa:** la misma implementación del repo funciona como sitio independiente. Dentro del Artifact falló en navegadores móviles, aunque funcionaba en el app de Claude y en la web de escritorio. La causa dentro del contenedor no se aisló; datos y condiciones en KI-61. En Pages, según el usuario, no hizo falta tocar «Activar movimiento»; eso no prueba qué ocurriría en otros dispositivos.
+- **Retiro:** el usuario decidió retirar el Artifact y se borró (enlace inválido, comentarios e historial no recuperables). Las secciones anteriores de este informe sobre actualizar el Artifact y sobre la prueba en Pages quedan como historial. `artifact-build/` sigue en el repo como copia histórica.
+- **Validación local del sitio de Pages** (Chromium 148, DPR 1, 1440×900 y 390×844, servidor estático con Range bajo `/web-prototype-artidoro/`; no es GitHub Pages): 8 estados idénticos al build original, 0 peticiones fallidas, cinco orígenes bajo demanda, imágenes de Tarata, video con `readyState` 4 y suite de recuperación 20/20. No se conserva en el repo. **No cubierto:** cabeceras reales de Pages, otras versiones de iOS, Android, rutas «Activar»/«Reintentar» en dispositivo.

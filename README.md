@@ -1,6 +1,6 @@
 # Artidoro — demo de la home 01–05
 
-**Corrección de video móvil:** [recuperación y pasos para actualizar el Artifact](docs/VIDEO_RECOVERY.md). El Artifact publicado no se actualiza automáticamente con estos archivos locales.
+**Publicación de revisión:** GitHub Pages ([cómo publicar](#publicar-en-github-pages)). El Artifact que se había publicado se retiró el 26 de septiembre de 2026; ver [recuperación de video y resultado](docs/VIDEO_RECOVERY.md).
 
 **Actualización del 26 de septiembre:** [Tarata editorial — entrega y QA](docs/TARATA_REVIEW.md) · [Galería actual](deliverables/tarata-review.html). Checkpoint previo `3830028`; revisión sin commit final. La home sigue en `http://127.0.0.1:4174/`.
 
@@ -23,6 +23,19 @@ Vite 7.1.3 requiere Node 20.19+ o 22.12+. En esta máquina se usó Node 22.23.1 
 Home: `http://127.0.0.1:4174/`. Hero B conservado: `/b/`. Con un Node compatible, también funcionan `npm run build` y `npm run preview -- --host 127.0.0.1 --port 4174`. Las dependencias ya estaban instaladas en el entorno revisado.
 
 03 tiene video horizontal/vertical diferido, poster y reduced motion. Compra y catálogo enlazan a la tienda oficial; no hay checkout propio ni integración Shopify. La página `deliverables/home-review.html` se puede abrir como archivo local para revisar capturas y clips; la home interactiva requiere el servidor Vite.
+
+## Publicar en GitHub Pages
+
+`scripts/build-pages.py` compila con Vite, hace relativas las rutas `/assets/…` (incluidos los atributos `data-*` que lee el JS), cambia los enlaces `/b/` y `/?motion=off` del pie por `#b` y `?motion=off`, y añade `.nojekyll`. Escribe en `dist/pages/` (ignorado por git) y, con `--branch-dir`, prepara un commit `gh-pages` en un repositorio local **fuera** de este. No añade remotos ni hace push: publicar es una acción manual. Se niega a compilar si `index.html`, `src/`, `public/` o los archivos de paquete tienen cambios sin commit (`--allow-dirty` lo permite; el commit registra el hash de origen).
+
+```powershell
+python scripts/build-pages.py --node 'C:/tmp/node22/node-v22.23.1-win-x64/node.exe' --branch-dir 'C:/ruta/fuera/del/repo/gh-pages'
+cd 'C:/ruta/fuera/del/repo/gh-pages'
+git remote add origin https://github.com/JuanMosqueraR/web-prototype-artidoro.git   # solo la primera vez
+git push -u origin gh-pages
+```
+
+En GitHub: Settings → Pages → Deploy from a branch → `gh-pages` / `(root)`. La URL es `https://juanmosquerar.github.io/web-prototype-artidoro/`, con la barra final. Con el Node 18 global el script se detiene con un aviso; usa `--node` con Node 20.19+ o 22.12+. En Pages funcionan `#a`, `#b` y `?motion=off`; no existen rutas `/a/` ni `/b/`. El build publica también los assets de `public/` que la home no usa (KI-62).
 
 **Las instrucciones, HTML autónomos y capturas del Hero Lab de abajo son históricos.** No representan esta home y su exportador no se ejecutó ni actualizó para incluir el video. No regenerar los baselines anteriores para revisar esta fase.
 

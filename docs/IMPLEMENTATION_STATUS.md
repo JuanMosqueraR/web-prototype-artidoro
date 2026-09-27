@@ -1,4 +1,21 @@
-> **Corrección posterior de video03 (26 de septiembre):** recuperación tras carga lenta, activación/reintento por toque y eventos de disponibilidad alternativos. [Estado, QA y diferencias con el Artifact](VIDEO_RECOVERY.md). Checkpoint previo `8d24ed9`; corrección versionada en `891bbc4`, QA en `94fa987`, por petición explícita del usuario. No validado directamente en el host real de Artifacts ni en iPhone físico. La v4 de Claude incorpora un adaptador Blob que no está en este repo.
+# Publicación en GitHub Pages — 26 de septiembre de 2026
+
+Sobre `581e24f`. La revisión pública pasa del Artifact a GitHub Pages. El Artifact se retiró por decisión del usuario (borrado; enlace inválido, historial no recuperable) tras fallar el video 03 en Chrome y Safari de iPhone dentro de su contenedor; ver KI-61 y [VIDEO_RECOVERY](VIDEO_RECOVERY.md). Según el usuario, el sitio en Pages funciona en Chrome y Safari de iPhone y el video arranca solo.
+
+| Ruta | Función / producción |
+|---|---|
+| `scripts/build-pages.py` | Herramienta (Clase 2, aprobada por el usuario). Python estándar más el Node de Vite: compila, hace relativas las rutas `/assets/…` (también los `data-*` que lee el JS), cambia `/b/` y `/?motion=off` del pie por `#b` y `?motion=off`, añade `.nojekyll`. Se detiene si `index.html`, `src/`, `public/` o los archivos de paquete tienen cambios sin commit (`--allow-dirty`). Con `--branch-dir` prepara un commit `gh-pages` en un repositorio local fuera de este. No añade remotos ni hace push |
+| `dist/pages/` | Salida generada; ignorada por git (`dist/`) |
+| rama `gh-pages` (remoto) | Build publicado por el usuario; no forma parte del historial de `master`. El árbol que produce el script coincide con el del commit preparado en la sesión (`f35b4d7`); no se verificó el remoto |
+| `artifact-build/hero-lab-artifact.html` | Histórico: primera exportación como Artifact (`18b122d`). No representa la home actual (KI-82) y el Artifact asociado se retiró |
+
+Uso y comandos: [README](../README.md#publicar-en-github-pages). **Entorno:** con el Node 18 global el script se detiene; se usó el Node 22.23.1 aislado (`--node`), Vite 7.1.3, Python 3.10, Windows.
+
+**Validación (Chromium 148, DPR 1, 1440×900 y 390×844, servidor estático con Range bajo `/web-prototype-artidoro/`; no es GitHub Pages ni se conserva en el repo):** 8 estados (A/B × keyframe A/B × desktop/mobile) idénticos píxel a píxel al build original; 0 peticiones fallidas; los cinco orígenes cargan bajo demanda; imágenes de Tarata cargadas; video 03 con `readyState` 4 en desktop y mobile; suite de recuperación 20/20. El script se ejecutó dos veces: mismos bytes que el sitio verificado y segunda ejecución sin commit nuevo. **No cubierto:** cabeceras reales de Pages (Range, caché), otras versiones de iOS, Android, modo de bajo consumo, capturas del iPhone (el resultado es lo que informa el usuario).
+
+---
+
+> **Corrección posterior de video03 (26 de septiembre):** recuperación tras carga lenta, activación/reintento por toque y eventos de disponibilidad alternativos. [Estado, QA y diferencias con el Artifact](VIDEO_RECOVERY.md). Checkpoint previo `8d24ed9`; corrección versionada en `891bbc4`, QA en `94fa987`, por petición explícita del usuario. No validado directamente en el host real de Artifacts; en iPhone solo consta el arranque automático que el usuario reporta en Pages, no las rutas «Activar» y «Reintentar movimiento». La v4 de Claude incorporaba un adaptador Blob que no estuvo en este repo; el Artifact se retiró el 26 de septiembre de 2026 (KI-61).
 
 # Actualización de Tarata — 26 de septiembre de 2026
 
