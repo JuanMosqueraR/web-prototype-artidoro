@@ -1,0 +1,87 @@
+{
+  "conditions": "Chromium 148.0.7778.96, DPR1; local production preview, 17s first-MP4 delay, aborted network then manual retry, reduced-motion change, loadeddata listener suppression. No real iOS/Artifacts validation.",
+  "checks": [
+    {
+      "name": "mobile: activation offered during stalled startup",
+      "passed": true
+    },
+    {
+      "name": "desktop: activation offered during stalled startup",
+      "passed": true
+    },
+    {
+      "name": "mobile: timeout retains media request",
+      "passed": true
+    },
+    {
+      "name": "desktop: timeout retains media request",
+      "passed": true
+    },
+    {
+      "name": "desktop: late video recovers without reload",
+      "passed": true
+    },
+    {
+      "name": "mobile: late video recovers without reload",
+      "passed": true
+    },
+    {
+      "name": "desktop: activation hidden after recovery",
+      "passed": true
+    },
+    {
+      "name": "mobile: activation hidden after recovery",
+      "passed": true
+    },
+    {
+      "name": "mobile: network error offers retry",
+      "passed": true
+    },
+    {
+      "name": "desktop: network error offers retry",
+      "passed": true
+    },
+    {
+      "name": "mobile: reduced motion hides retry",
+      "passed": true
+    },
+    {
+      "name": "mobile: retry survives preference round trip",
+      "passed": true
+    },
+    {
+      "name": "desktop: reduced motion hides retry",
+      "passed": true
+    },
+    {
+      "name": "desktop: retry survives preference round trip",
+      "passed": true
+    },
+    {
+      "name": "mobile: retry resumes scroll, not continuous playback",
+      "passed": true
+    },
+    {
+      "name": "desktop: retry resumes scroll, not continuous playback",
+      "passed": true
+    },
+    {
+      "name": "mobile: recovered video follows scroll",
+      "passed": true
+    },
+    {
+      "name": "desktop: recovered video follows scroll",
+      "passed": true
+    },
+    {
+      "name": "mobile: startup works without loadeddata handler",
+      "passed": true
+    },
+    {
+      "name": "desktop: startup works without loadeddata handler",
+      "passed": true
+    }
+  ],
+  "passed": 20,
+  "failed": 0
+}
