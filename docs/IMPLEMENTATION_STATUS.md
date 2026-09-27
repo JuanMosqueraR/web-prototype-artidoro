@@ -1,3 +1,5 @@
+> **Corrección posterior de video03 (26 de septiembre):** recuperación tras carga lenta, activación/reintento por toque y eventos de disponibilidad alternativos. [Estado, QA y diferencias con el Artifact](VIDEO_RECOVERY.md). Checkpoint previo `8d24ed9`; corrección versionada en `891bbc4`, QA en `94fa987`, por petición explícita del usuario. No validado directamente en el host real de Artifacts ni en iPhone físico. La v4 de Claude incorpora un adaptador Blob que no está en este repo.
+
 # Actualización de Tarata — 26 de septiembre de 2026
 
 L19 implementado sobre el checkpoint `3830028` de la home, sin commit final de esta revisión. 04 ahora combina dos fotografías existentes, animación de entrada única, carga diferida a 800 px y fallback sin JS. Mobile prioriza fachada/moto; desktop, interior/personal/cascos. No se cambian 01/02/03/05 ni B. La documentación del 25 de septiembre de abajo es el estado anterior de 04.
