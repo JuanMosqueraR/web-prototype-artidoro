@@ -1,0 +1,39 @@
+/* Pack offer: scoped additions, no new motion or changes to 03/Tarata. */
+.hero-peru .hero-pack-entry{display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:5px;border-top:1px solid #f4f0e544;border-bottom:0;margin-top:12px;padding-top:9px;min-height:52px;max-width:390px;text-decoration:none;font-size:12px}
+.hero-pack-entry>span{display:flex;align-items:center;justify-content:space-between;gap:16px}.hero-pack-entry>span:last-child{font-size:11px}.hero-pack-entry strong{font-weight:700}.hero-pack-entry:hover>span:last-child{text-decoration:underline;text-underline-offset:4px}
+.origin-pack-entry{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:3px;text-decoration:none;line-height:17px;min-height:48px;padding:6px 0}.origin-pack-entry>span{font-size:10px}.origin-pack-entry strong{font-size:11px;text-decoration:underline;text-underline-offset:4px}
+.pack-led{margin-top:30px;grid-template-columns:1.15fr 1fr}
+.pack-feature{background:#e1e4d5}
+.pack-feature>.catalog-photo{background:#e1e4d5;height:310px}
+.pack-bags{display:flex;align-items:center;justify-content:center;gap:5px;isolation:isolate}
+.pack-bags img{object-fit:contain;mix-blend-mode:multiply;width:29%;height:auto;max-height:100%}
+.pack-feature .catalog-feature-bottom{display:block}
+.pack-feature .catalog-product-action{display:flex;align-items:center;justify-content:space-between;text-align:left;margin-top:14px}
+.pack-feature .catalog-product-action .catalog-link{background:#102e25;color:#f4f0e5;padding:10px 24px;text-decoration:none;font-weight:700}
+.pack-feature h3{font-size:66px}
+.pack-led .catalog-travel .catalog-feature-bottom{display:block}.pack-led .catalog-travel .catalog-product-action{display:flex;justify-content:space-between;align-items:center;text-align:left;margin-top:14px}
+.pack-complements{grid-template-columns:1fr 1fr;grid-template-rows:auto;gap:32px;margin-top:12px}
+.catalog-single{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0 0;font-size:12px}
+.pack-visual{background:#e1e4d5;flex-direction:column;justify-content:center}
+.pack-visual>.pack-bags{height:410px;width:100%;background:#e1e4d5}
+.pack-visual-label{position:absolute;top:28px;left:24px;right:24px;font-family:Barlow,'Arial Narrow',sans-serif;font-size:clamp(36px,3vw,48px);line-height:1;text-align:center;letter-spacing:-.5px}
+.pack-visual figcaption{max-width:420px;margin:0 auto;font-size:10px;line-height:1.6}
+.pack-page .product-title-row{display:block}.pack-page .product-title-row h1{font-size:clamp(52px,4.5vw,72px)}.pack-page .product-price{display:block;margin-top:12px}
+.pack-intro{font-size:14px;line-height:1.6;margin:16px 0 24px}
+.pack-options{display:grid;gap:12px}.pack-choice{display:grid;grid-template-columns:80px minmax(0,1fr);align-items:center;gap:20px;cursor:pointer}.pack-choice>span{font-size:13px}.pack-choice small{display:block;font-size:10px;margin-top:5px;color:#52675c}
+.pack-choice select{width:100%;min-width:0;min-height:48px;border:1px solid #102e2555;border-radius:0;padding:10px 12px;font:inherit;font-size:16px;background:#f4f0e5;color:#102e25;cursor:pointer}.pack-choice select:focus-visible{outline:2px solid #102e25;outline-offset:3px}
+.pack-total{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid #102e2533;padding-top:18px;margin:20px 0 10px;font-size:12px}.pack-total strong{font-size:23px;font-weight:400}
+.pack-selection{min-height:30px;line-height:1.6}
+@media(max-width:1023px) and (min-width:761px){.pack-complements .catalog-small{grid-template-columns:1fr 1fr;gap:16px}.pack-visual>.pack-bags{height:320px}.pack-visual-label{font-size:32px}.pack-page .product-title-row h1{font-size:52px}}
+@media(max-width:760px){
+ .hero-peru .hero-pack-entry{font-size:11px;margin-top:8px;padding-top:8px;min-height:49px;gap:4px}.hero-pack-entry>span:last-child{font-size:10px}
+ .pack-led{margin-top:22px}.pack-feature>.catalog-photo{height:202px;margin-top:16px;margin-bottom:16px}.pack-feature h3{font-size:50px}.pack-feature .catalog-product-action{margin-top:12px}.pack-feature .catalog-product-action .catalog-link{padding:10px 16px}
+ .pack-led .catalog-travel{margin-top:16px;padding:0 0 16px;background:transparent;border-bottom:1px solid #102e2533}.pack-led .catalog-travel .catalog-feature-head{display:none}.pack-led .catalog-travel>.catalog-photo{height:122px;margin:0 0 8px;background:#f4f0e5}.pack-led .catalog-travel h3{font-size:38px}.pack-led .catalog-travel .catalog-feature-bottom{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end}.pack-led .catalog-travel .catalog-product-action{display:block;text-align:right;margin:0}.pack-led .catalog-travel .catalog-product-action strong{font-size:21px}.pack-led .catalog-travel .catalog-link{font-size:10px}
+ .pack-complements{display:grid;grid-template-columns:1fr;gap:0;margin-top:0}.pack-complements .catalog-small>.catalog-photo{height:106px}.pack-complements .catalog-small{padding-top:12px;padding-bottom:10px}.pack-complements .catalog-small .catalog-label{font-size:8px}
+ .catalog-single{font-size:11px;padding-top:12px;flex-wrap:wrap;gap:0 12px}.catalog-single .catalog-link{font-size:11px}
+ .pack-page .pack-visual{height:clamp(145px,21svh,180px);margin-bottom:16px}.pack-visual-label{top:10px;font-size:21px;left:10px;right:10px}.pack-visual>.pack-bags{height:calc(100% - 60px);margin-top:12px;gap:5px;flex-shrink:0}.pack-visual .pack-bags img{width:auto;height:100%;max-width:29%}.pack-visual figcaption{position:absolute;bottom:5px;left:8px;right:8px;max-width:none;font-size:8px;margin:0;text-align:center}
+ .pack-page .product-title-row{display:flex;align-items:baseline;gap:4px 12px}.pack-page .product-title-row h1{font-size:44px}.pack-page .product-price{font-size:22px;margin:0}.pack-intro{font-size:12px;margin:9px 0 16px}
+ .pack-options{gap:10px}.pack-choice{grid-template-columns:66px minmax(0,1fr);gap:12px}.pack-choice>span{font-size:12px}.pack-choice small{font-size:10px;margin-top:3px}.pack-choice select{min-height:46px;padding:9px 10px}
+ .pack-total{padding-top:12px;margin-top:16px;margin-bottom:8px;font-size:11px}.pack-total strong{font-size:21px}.pack-selection{font-size:10px;min-height:24px}
+}
+@media(max-width:370px){.pack-page .product-title-row h1{font-size:39px}.pack-page .product-price{font-size:21px}.pack-feature h3{font-size:46px}.pack-led .catalog-travel .catalog-feature-bottom{grid-template-columns:1fr}.pack-led .catalog-travel .catalog-product-action{display:flex;text-align:left}.pack-choice{grid-template-columns:58px 1fr}}

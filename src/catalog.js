@@ -1,6 +1,7 @@
 import snapshot from './amazonas-variants.json';
+import packSnapshot from './ahorrador-variants.json';
 
-// One representative PDP. Existing product links remain useful without JavaScript.
+// Two representative PDPs. Existing official links remain useful without JavaScript.
 const root = document.documentElement;
 const home = document.querySelector('#home-main');
 const product = document.querySelector('#producto-amazonas');
@@ -9,9 +10,13 @@ const form = product.querySelector('form');
 const cta = product.querySelector('.product-continue');
 const route = '#producto-amazonas';
 const official = 'https://www.artidororodriguez.com/products/cafe-amazonas';
+const packOfficial = 'https://www.artidororodriguez.com/products/pack-3kg-origenes-1';
+const pack = document.querySelector('#producto-ahorrador');
+const packForm = pack.querySelector('form');
+const pages = { [route]: product, '#producto-ahorrador': pack };
 const homeTitle = document.title;
 // Native lazy loading can fetch 05 while the visitor is still at the hero.
-// Prepare these three photos only as their section approaches the viewport.
+// Prepare catalog photos only as their section approaches the viewport.
 const catalog = document.querySelector('#shop');
 function loadCatalog() {
   catalog.querySelectorAll('[data-catalog-src]').forEach(img => { img.src = img.dataset.catalogSrc; });
@@ -46,6 +51,24 @@ function updateVariant() {
 form.addEventListener('change', updateVariant);
 form.addEventListener('submit', event => event.preventDefault());
 
+function updatePack() {
+  const chosen = [...packForm.querySelectorAll('select')].map(select => select.value);
+  const variant = packSnapshot.variants.find(v => v.options.every((origin, index) => origin === chosen[index]));
+  const available = Boolean(variant?.available);
+  const price = variant ? `S/ ${(variant.price / 100).toFixed(2)}` : 'No disponible';
+  pack.querySelector('.product-price').textContent = price;
+  pack.querySelector('.pack-total strong').textContent = price;
+  pack.querySelector('.pack-selection').textContent = variant
+    ? chosen.join(' · ') + (available ? '' : ' · Agotado')
+    : 'Esta combinación no está disponible.';
+  const link = pack.querySelector('.pack-continue');
+  link.setAttribute('aria-disabled', String(!available));
+  if (available) link.href = `${packOfficial}?variant=${variant.id}`;
+  else link.removeAttribute('href');
+}
+packForm.addEventListener('change', updatePack);
+packForm.addEventListener('submit', event => event.preventDefault());
+
 function closeMenu(focus = false) {
   menu.open = false;
   if (focus) menu.querySelector('summary').focus();
@@ -63,17 +86,21 @@ menu.addEventListener('click', event => { if (event.target.closest('a')) closeMe
 
 function render() {
   const token = ++viewToken;
-  const show = location.hash === route;
+  const active = pages[location.hash];
+  const show = Boolean(active);
   home.hidden = show;
-  product.hidden = !show;
-  document.title = show ? 'Café Amazonas — Artidoro Rodríguez' : homeTitle;
+  Object.values(pages).forEach(page => { page.hidden = page !== active; });
+  document.title = show ? `${active === pack ? 'Pack El Ahorrador' : 'Café Amazonas'} — Artidoro Rodríguez` : homeTitle;
   if (show) {
     root.dataset.direction = 'a';
+    if (active === pack) pack.querySelectorAll('[data-pack-src]').forEach(img => {
+      if (!img.getAttribute('src')) img.src = img.dataset.packSrc;
+    });
     // Hidden home retains 02 state. Its media never intersects on a direct PDP visit.
     requestAnimationFrame(() => {
       if (token !== viewToken) return;
       scrollTo({top: 0, behavior: 'instant'});
-      if (opener) product.querySelector('h1').focus({preventScroll: true});
+      if (opener) active.querySelector('h1').focus({preventScroll: true});
     });
   } else if (wasProduct) {
     requestAnimationFrame(() => {
@@ -101,19 +128,21 @@ document.addEventListener('click', event => {
   if (!link) return;
   const href = link.getAttribute('href');
   const coffeeEntry = link.matches('.hero-peru .buy-button, .origin-buy, [data-pdp]') && href === official;
-  if (coffeeEntry) {
+  const packEntry = link.hasAttribute('data-pack-pdp') && href === packOfficial;
+  const inProduct = Boolean(pages[location.hash]);
+  if (coffeeEntry || packEntry) {
     event.preventDefault();
     event.stopImmediatePropagation();
     opener = link;
-    history.replaceState({...history.state, catalogHomeY: scrollY}, '', location.href);
-    history.pushState({catalogProduct: true, catalogReturn: true}, '', route);
+    if (!inProduct) history.replaceState({...history.state, catalogHomeY: scrollY}, '', location.href);
+    history.pushState({catalogProduct: true, catalogReturn: true}, '', packEntry ? '#producto-ahorrador' : route);
     render();
-  } else if (!product.hidden && link.hasAttribute('data-product-back')) {
+  } else if (inProduct && link.hasAttribute('data-product-back')) {
     event.preventDefault();
     event.stopImmediatePropagation();
     if (history.state?.catalogReturn) history.back();
-    else { history.replaceState(null, '', '#origin-scene'); render(); }
-  } else if (!product.hidden && href?.startsWith('#') && href !== route) {
+    else { history.replaceState(null, '', href); render(); }
+  } else if (inProduct && href?.startsWith('#') && href !== location.hash) {
     // Return before the existing home anchor handler measures the hidden section.
     event.preventDefault();
     event.stopImmediatePropagation();
@@ -123,4 +152,5 @@ document.addEventListener('click', event => {
 }, true);
 window.addEventListener('hashchange', render);
 updateVariant();
+updatePack();
 render();
