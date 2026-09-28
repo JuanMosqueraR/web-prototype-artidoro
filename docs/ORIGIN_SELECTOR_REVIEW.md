@@ -37,7 +37,7 @@ Contra `qa/measurements.json` histórico, B mantiene la geometría del CTA. A pr
 
 Probados: cinco productos, enlaces y decodificación; estabilidad de precio/CTA; vuelta Puno→Amazonas; teclado; mouse y tacto emulado; gesto vertical; fallo, lentitud, timeout y reintento; carrera de solicitudes; reduced motion; sin JS; ampliación de texto al 200 % mediante estilos de prueba. El recorrido completo también verifica seek de 03 en ambos sentidos, poster/fallo, compra y autonomía de 05.
 
-**Pendiente:** revisión física de esta rama en Safari y Chrome de iPhone. El éxito reportado por el usuario en Pages pertenece a la versión anterior. La emulación táctil y de texto no sustituye esa revisión. No se modificó ni se publicó Pages.
+**Validación del usuario, 28 de septiembre de 2026:** confirma que esta iteración funciona bien en iPhone. No especificó navegador ni versión; se registra como comprobación del usuario, no como una prueba instrumental adicional de Safari y Chrome. No se modificó ni se publicó Pages desde esta revisión.
 
 ## Archivos y estado
 
