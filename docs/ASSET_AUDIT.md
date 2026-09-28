@@ -1,3 +1,11 @@
+# Catálogo/PDP — actualización del 28 de septiembre de 2026
+
+Tres fotografías oficiales adicionales: Colección Travel Line, Pack El Explorador y Miel Perfil Frutal de 300 g. `REAL_ASSET`, con derivados `USABLE_WITH_PREPARATION`: solo recorte de espacio vacío, reducción proporcional y WebP. El fondo blanco se integra por CSS en una superficie aislada; no hay reconstrucción de packaging ni generación. Originales, fuentes, recortes, dimensiones y hashes están en `audit/assets.json`; reproducción mediante `scripts/prepare-catalog-assets.py`. La PDP reutiliza la foto de Amazonas de 250 g e identifica esa presentación, aunque el visitante seleccione otro tamaño.
+
+`verified_copy.catalog_pdp_2026_09_28` registra los cuatro productos, variantes, precios, FAQ, categorías y dos reseñas. La reseña de El Ahorrador conserva su atribución y no se presenta como una opinión de El Explorador. Los datos son un snapshot de demostración; no representan stock en tiempo real. Ningún aviso provisional anterior se retira. En el nuevo 05 ya no se muestran las cinco bolsas individuales; los usos de 05 descritos debajo corresponden al cierre anterior. [Entrega](CATALOG_PDP_REVIEW.md).
+
+---
+
 # Assets de la home — revisión del 26 de septiembre de 2026
 
 Actualización descriptiva de la fase L18. `audit/assets.json` sigue siendo el registro canónico de fuentes, dimensiones, preparación, clasificación y hashes. La tabla histórica que sigue conserva los usos anteriores; esta sección registra los usos actuales sin convertir material provisional en oficial.

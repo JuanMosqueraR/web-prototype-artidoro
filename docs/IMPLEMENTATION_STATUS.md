@@ -1,3 +1,21 @@
+# Revisión catálogo/PDP — 28 de septiembre de 2026
+
+Rama `feat/catalogo-pdp` desde `38a209f`, versionada por petición del usuario y sin merge ni publicación desde esta revisión. [Entrega actual](CATALOG_PDP_REVIEW.md). Home local `http://127.0.0.1:4175/`; PDP `http://127.0.0.1:4175/#producto-amazonas`. Las URLs requieren el servidor de preview activo. El 28 de septiembre el usuario confirma que esta versión se ve bien en iPhone, sin especificar navegador o versión; no es una validación instrumental completa de iOS.
+
+| Ruta nueva o afectada | Función / producción |
+|---|---|
+| `index.html`, `src/catalog.css`, `src/catalog.js` | 05, menú Tienda, FAQ/reseñas y PDP de Amazonas con navegación por hash; sin dependencias nuevas |
+| `src/amazonas-variants.json` | Doce variantes estáticas; generado por `scripts/prepare-catalog-assets.py` desde el snapshot oficial |
+| `audit/source/catalog-pdp-2026-09-28.json` | Respuestas originales de cuatro endpoints públicos `.js` de producto, guardadas el 28 de septiembre |
+| `audit/source/catalog-reviews-2026-09-28.json` | Dos reseñas publicadas; texto, HTML fuente, URL y fecha capturados mediante Playwright |
+| `audit/source/catalog-*-original.*` | Tres fotografías originales descargadas sin alteración de los productos oficiales |
+| `public/assets/catalog-*.webp`, `scripts/prepare-catalog-assets.py` | Recortes/compresión reproducibles desde originales; no generación ni redibujo |
+| `qa/2026-09-28-catalog-pdp/` | Capturas directas antes/después, QA principal, comprobaciones adicionales y lecturas de destinos oficiales |
+
+Build verificado con Node aislado 22.23.1, Vite 7.1.3. QA Chromium 148, DPR 1: 211/211 + cinco comprobaciones adicionales y dos destinos externos. Fuentes y clasificación en `audit/assets.json`. Las entregas inferiores son históricas; no se sobrescribieron sus capturas ni se generó otra galería.
+
+---
+
 # Selector horizontal de 02 — rama de revisión, 26 de septiembre de 2026
 
 Implementado en `feat/origin-selector` desde `7b122b9`, por aprobación explícita del plan del usuario. Solo 02 cambia: cinco nombres y carrusel de bolsas, composición mobile compacta y dos columnas desde 1024 px. Sin dependencias ni assets nuevos. Versionado en esa rama por petición del usuario, sin merge a `master`; la publicación en Pages la hace el usuario con `scripts/build-pages.py` y este documento no registra si ya ocurrió. [Entrega y QA](ORIGIN_SELECTOR_REVIEW.md).

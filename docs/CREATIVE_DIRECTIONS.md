@@ -1,3 +1,9 @@
+# Actualización descriptiva — 28 de septiembre de 2026
+
+A conserva 01–04 y renueva 05: entrada compacta a Amazonas/02, Travel Line protagonista, pack y miel complementarios, categorías explícitas, dos reseñas atribuidas y cuatro FAQ. Tienda es un desplegable accesible. La PDP de Amazonas usa `#producto-amazonas`, datos locales de variantes y continuación a la ficha oficial; mantiene la selección de 02 al volver. B conserva su hero. No se añade motion a 05/PDP ni se modifica el de 03. Composición, QA y límites actuales: [CATALOG_PDP_REVIEW.md](CATALOG_PDP_REVIEW.md). Las descripciones inferiores de cinco tarjetas en 05 y compra exclusivamente externa desde Amazonas son snapshots anteriores.
+
+---
+
 # Dirección A — home implementada, revisión del 26 de septiembre de 2026
 
 La fase L18 desarrolla «Perú, en profundidad» desde el checkpoint `0a1da04`. El código actual prevalece sobre el snapshot del Hero Lab conservado más abajo. B continúa accesible en `/b/`; no recibe un rediseño y no se formula una nueva comparación A/B.
