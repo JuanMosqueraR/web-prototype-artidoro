@@ -1,3 +1,11 @@
+# El Ahorrador — actualización del 28 de septiembre de 2026
+
+Se incorporan tres fotografías oficiales de bolsas de 1 kg para componer El Ahorrador en 05 y su PDP. La fotografía grupal del producto muestra etiquetas de 454 g, pese a vender tres kilos: se conserva como evidencia, fuera de la interfaz. La discrepancia fue comunicada al usuario. La composición usa las fotografías individuales reales de 1 kg de Amazonas, Cajamarca y Puno; no se altera ni reconstruye ninguna etiqueta. En la PDP se identifica como ejemplo de combinación.
+
+Fuentes, clasificación, recortes, hashes y dimensiones: `audit/assets.json`. Derivados reproducibles con `scripts/prepare-ahorrador.py`; copy y variantes en `verified_copy.ahorrador_2026_09_28`. Sin generación ni coste de media. Se conservan todos los avisos provisionales anteriores. [Entrega actual](AHORRADOR_REVIEW.md).
+
+---
+
 # Catálogo/PDP — actualización del 28 de septiembre de 2026
 
 Tres fotografías oficiales adicionales: Colección Travel Line, Pack El Explorador y Miel Perfil Frutal de 300 g. `REAL_ASSET`, con derivados `USABLE_WITH_PREPARATION`: solo recorte de espacio vacío, reducción proporcional y WebP. El fondo blanco se integra por CSS en una superficie aislada; no hay reconstrucción de packaging ni generación. Originales, fuentes, recortes, dimensiones y hashes están en `audit/assets.json`; reproducción mediante `scripts/prepare-catalog-assets.py`. La PDP reutiliza la foto de Amazonas de 250 g e identifica esa presentación, aunque el visitante seleccione otro tamaño.

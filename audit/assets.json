@@ -822,6 +822,93 @@
       ],
       "preparation": "Rectangular whitespace crop; proportional downsize (never upscale); WebP quality 90, method 6. No redraw or generative processing. Runtime CSS multiply on an isolated cream surface integrates the white photographic background; source colors are unchanged in the asset.",
       "used_in": "A home 05 only"
+    },
+    {
+      "id": "ahorrador-amazonas-1kg",
+      "status": "REAL_ASSET",
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "source": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+      "source_page": "https://www.artidororodriguez.com/products/cafe-amazonas",
+      "retrieved": "2026-09-28",
+      "original_file": "audit/source/ahorrador-amazonas-1kg-original.jpg",
+      "original_size": [
+        1080,
+        1080
+      ],
+      "original_sha256": "44cd820ce33ca8a0e84341cec9127f7da6a6939a8898c14d90b3512f508250d2",
+      "used_file": "public/assets/ahorrador-amazonas-1kg.webp",
+      "prepared_size": [
+        410,
+        840
+      ],
+      "prepared_bytes": 51704,
+      "prepared_sha256": "87e1938d83bb6ed64d1449c3929e95ad929126e413f5708ba33b7c9e9a1fce4f",
+      "script": "scripts/prepare-ahorrador.py",
+      "preparation": "Crop [325,140,735,980]; WebP quality90 method6. No redrawing, retouching, synthetic image or upscale. HTML/CSS places three independent real 1kg photos on one surface.",
+      "used_in": "A 05 and Ahorrador PDP. Representative combination, explicitly captioned on PDP; photo does not change with the selectors."
+    },
+    {
+      "id": "ahorrador-cajamarca-1kg",
+      "status": "REAL_ASSET",
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "source": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378",
+      "source_page": "https://www.artidororodriguez.com/products/cafe-cajamarca",
+      "retrieved": "2026-09-28",
+      "original_file": "audit/source/ahorrador-cajamarca-1kg-original.jpg",
+      "original_size": [
+        1080,
+        1080
+      ],
+      "original_sha256": "a2f571f57fe0db7ac82daa6dae4fed3e64a601c20b132a94710503458e005233",
+      "used_file": "public/assets/ahorrador-cajamarca-1kg.webp",
+      "prepared_size": [
+        410,
+        840
+      ],
+      "prepared_bytes": 52150,
+      "prepared_sha256": "97c62b9fda668f8a1b4b2e134162fa52c6afde261d4f8149b5637430b2885686",
+      "script": "scripts/prepare-ahorrador.py",
+      "preparation": "Crop [325,140,735,980]; WebP quality90 method6. No redrawing, retouching, synthetic image or upscale. HTML/CSS places three independent real 1kg photos on one surface.",
+      "used_in": "A 05 and Ahorrador PDP. Representative combination, explicitly captioned on PDP; photo does not change with the selectors."
+    },
+    {
+      "id": "ahorrador-puno-1kg",
+      "status": "REAL_ASSET",
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "source": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287",
+      "source_page": "https://www.artidororodriguez.com/products/cafe-puno",
+      "retrieved": "2026-09-28",
+      "original_file": "audit/source/ahorrador-puno-1kg-original.jpg",
+      "original_size": [
+        1080,
+        1080
+      ],
+      "original_sha256": "c6fc2038943280f9849de69bb6479a7a08ca8df1397e954de5d3fd545d282c04",
+      "used_file": "public/assets/ahorrador-puno-1kg.webp",
+      "prepared_size": [
+        410,
+        840
+      ],
+      "prepared_bytes": 51726,
+      "prepared_sha256": "dc0098890696558a1ce40e02920bde3bea57cc9facac71b1640ec242fc988d27",
+      "script": "scripts/prepare-ahorrador.py",
+      "preparation": "Crop [325,140,735,980]; WebP quality90 method6. No redrawing, retouching, synthetic image or upscale. HTML/CSS places three independent real 1kg photos on one surface.",
+      "used_in": "A 05 and Ahorrador PDP. Representative combination, explicitly captioned on PDP; photo does not change with the selectors."
+    },
+    {
+      "id": "ahorrador-group-unused",
+      "status": "REAL_ASSET",
+      "source": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/packelahorrador.jpg?v=1789062040",
+      "source_page": "https://www.artidororodriguez.com/products/pack-3kg-origenes-1",
+      "retrieved": "2026-09-28",
+      "original_file": "audit/source/ahorrador-original.jpg",
+      "original_size": [
+        1080,
+        1080
+      ],
+      "original_sha256": "f2eb762cb3c94da2da403a065715349a08b5dd09d658950aa6ec42fbb604354f",
+      "used_in": "Not rendered. Retained discrepancy evidence.",
+      "discrepancy": "Labels visible in the official group photograph say 454g; the sold product is 3 x 1kg. Reported to user. Replaced in this demo by separately sourced actual 1kg product photos, without altering the group photo."
     }
   ],
   "gaps": [
@@ -951,6 +1038,21 @@
         "other": "https://www.artidororodriguez.com/collections/nuevos-ingresos"
       },
       "availability_limit": "Static demo snapshot, not live stock or pricing. Final availability, shipping and payment are confirmed in the official shop."
+    },
+    "ahorrador_2026_09_28": {
+      "verified": "2026-09-28",
+      "source": "https://www.artidororodriguez.com/products/pack-3kg-origenes-1.js",
+      "snapshot": "audit/source/ahorrador-2026-09-28.json",
+      "derived_variants": "src/ahorrador-variants.json",
+      "script": "scripts/prepare-ahorrador.py",
+      "offer": "Pack El Ahorrador: 3 bags x 1kg, each origin selectable independently. Repetition explicitly allowed in the product description. S/280.00, 125 available combinations in the snapshot.",
+      "grinding": "The official product page provides a note field for grinding/preparation. It is not a variant option; demo only hands off the three actual origin options. Grinding is entered on the official page.",
+      "grinding_source": "https://www.artidororodriguez.com/products/pack-3kg-origenes-1",
+      "review": "Existing attributed Sandy Yris Fernandez Urrutia review from audit/source/catalog-reviews-2026-09-28.json, now also on this product PDP.",
+      "excluded_claims": "No discount, crossed-out price, best seller, saving percentage, inventory scarcity or advertising-performance claim. Live JSON compare_at was 33000 while cached HTML showed 312; neither is used.",
+      "advertising_context": "User selected this pack as the one with active ads. Campaign activity/performance not independently verified; no such claim in the interface.",
+      "handoff_verification": "qa/2026-09-28-ahorrador/external-links.json: mixed origins and repeated Cusco return selected variant IDs in official purchase forms. Read-only, no cart or payment.",
+      "limits": "Static price/availability snapshot, not runtime stock. Official shop confirms current terms."
     }
   },
   "ai_generated_assets": [
@@ -971,5 +1073,6 @@
     "scope": "Public Artidoro material; no generated imagery. Only the two heroes. Exception for CP04 only (L15): two CONCEPTUAL_ASSET images adopted 2026-09-24."
   },
   "tarata_editorial_review_date": "2026-09-26",
-  "catalog_pdp_review_date": "2026-09-28"
+  "catalog_pdp_review_date": "2026-09-28",
+  "ahorrador_review_date": "2026-09-28"
 }

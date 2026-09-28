@@ -1,0 +1,2523 @@
+{
+  "retrieved": "2026-09-28",
+  "products": {
+    "amazonas": {
+      "source": "https://www.artidororodriguez.com/products/cafe-amazonas.js",
+      "image": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+      "product": {
+        "id": 8906412294387,
+        "title": "Café Origen Amazonas",
+        "handle": "cafe-amazonas",
+        "description": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">En lo profundo del nororiente peruano, donde la cordillera se encuentra con la selva, Amazonas guarda uno de los secretos mejor guardados del café de especialidad. A entre 1,700 y 1,900 metros sobre el nivel del mar, las variedades Caturra, Típica y Catimor crecen con la calma que solo la altura y la humedad de esta tierra pueden dar.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">El resultado es un café de tueste medio con notas vibrantes a naranjas y un fondo de melazas que le da cuerpo y dulzor. Una taza cítrica, envolvente y con carácter — tan diversa como la región que la vio nacer.</p>",
+        "published_at": "2024-09-10T19:24:04-05:00",
+        "created_at": "2024-09-10T19:24:04-05:00",
+        "vendor": "Artidoro Rodriguez",
+        "type": "Origenes",
+        "tags": [
+          "250gr",
+          "Café"
+        ],
+        "price": 3990,
+        "price_min": 3990,
+        "price_max": 9900,
+        "available": true,
+        "price_varies": true,
+        "compare_at_price": 11000,
+        "compare_at_price_min": 11000,
+        "compare_at_price_max": 11000,
+        "compare_at_price_varies": false,
+        "variants": [
+          {
+            "id": 48502437282035,
+            "title": "250g / Grano",
+            "option1": "250g",
+            "option2": "Grano",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336579096819,
+              "product_id": 8906412294387,
+              "position": 1,
+              "created_at": "2026-09-10T13:09:23-05:00",
+              "updated_at": "2026-09-10T13:09:25-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+              "variant_ids": [
+                48502437282035,
+                48502437314803,
+                48572414460147,
+                48572414492915
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 250g / Grano",
+            "public_title": "250g / Grano",
+            "options": [
+              "250g",
+              "Grano"
+            ],
+            "price": 3990,
+            "weight": 250,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842599137523,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48502437314803,
+            "title": "250g / Molido Fino",
+            "option1": "250g",
+            "option2": "Molido Fino",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336579096819,
+              "product_id": 8906412294387,
+              "position": 1,
+              "created_at": "2026-09-10T13:09:23-05:00",
+              "updated_at": "2026-09-10T13:09:25-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+              "variant_ids": [
+                48502437282035,
+                48502437314803,
+                48572414460147,
+                48572414492915
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 250g / Molido Fino",
+            "public_title": "250g / Molido Fino",
+            "options": [
+              "250g",
+              "Molido Fino"
+            ],
+            "price": 3990,
+            "weight": 250,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842599137523,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414460147,
+            "title": "250g / Molido Medio",
+            "option1": "250g",
+            "option2": "Molido Medio",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336579096819,
+              "product_id": 8906412294387,
+              "position": 1,
+              "created_at": "2026-09-10T13:09:23-05:00",
+              "updated_at": "2026-09-10T13:09:25-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+              "variant_ids": [
+                48502437282035,
+                48502437314803,
+                48572414460147,
+                48572414492915
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 250g / Molido Medio",
+            "public_title": "250g / Molido Medio",
+            "options": [
+              "250g",
+              "Molido Medio"
+            ],
+            "price": 3990,
+            "weight": 250,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842599137523,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414492915,
+            "title": "250g / Molido Grueso",
+            "option1": "250g",
+            "option2": "Molido Grueso",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336579096819,
+              "product_id": 8906412294387,
+              "position": 1,
+              "created_at": "2026-09-10T13:09:23-05:00",
+              "updated_at": "2026-09-10T13:09:25-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+              "variant_ids": [
+                48502437282035,
+                48502437314803,
+                48572414460147,
+                48572414492915
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 250g / Molido Grueso",
+            "public_title": "250g / Molido Grueso",
+            "options": [
+              "250g",
+              "Molido Grueso"
+            ],
+            "price": 3990,
+            "weight": 250,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842599137523,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414591219,
+            "title": "454gr / Grano",
+            "option1": "454gr",
+            "option2": "Grano",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336576835827,
+              "product_id": 8906412294387,
+              "position": 4,
+              "created_at": "2026-09-10T13:09:12-05:00",
+              "updated_at": "2026-09-10T13:09:14-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+              "variant_ids": [
+                48572414591219,
+                48572414623987,
+                48572414656755,
+                48572414689523
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 454gr / Grano",
+            "public_title": "454gr / Grano",
+            "options": [
+              "454gr",
+              "Grano"
+            ],
+            "price": 6000,
+            "weight": 500,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842596876531,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414623987,
+            "title": "454gr / Molido Fino",
+            "option1": "454gr",
+            "option2": "Molido Fino",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336576835827,
+              "product_id": 8906412294387,
+              "position": 4,
+              "created_at": "2026-09-10T13:09:12-05:00",
+              "updated_at": "2026-09-10T13:09:14-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+              "variant_ids": [
+                48572414591219,
+                48572414623987,
+                48572414656755,
+                48572414689523
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 454gr / Molido Fino",
+            "public_title": "454gr / Molido Fino",
+            "options": [
+              "454gr",
+              "Molido Fino"
+            ],
+            "price": 6000,
+            "weight": 500,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842596876531,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414656755,
+            "title": "454gr / Molido Medio",
+            "option1": "454gr",
+            "option2": "Molido Medio",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336576835827,
+              "product_id": 8906412294387,
+              "position": 4,
+              "created_at": "2026-09-10T13:09:12-05:00",
+              "updated_at": "2026-09-10T13:09:14-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+              "variant_ids": [
+                48572414591219,
+                48572414623987,
+                48572414656755,
+                48572414689523
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 454gr / Molido Medio",
+            "public_title": "454gr / Molido Medio",
+            "options": [
+              "454gr",
+              "Molido Medio"
+            ],
+            "price": 6000,
+            "weight": 500,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842596876531,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414689523,
+            "title": "454gr / Molido Grueso",
+            "option1": "454gr",
+            "option2": "Molido Grueso",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336576835827,
+              "product_id": 8906412294387,
+              "position": 4,
+              "created_at": "2026-09-10T13:09:12-05:00",
+              "updated_at": "2026-09-10T13:09:14-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+              "variant_ids": [
+                48572414591219,
+                48572414623987,
+                48572414656755,
+                48572414689523
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 454gr / Molido Grueso",
+            "public_title": "454gr / Molido Grueso",
+            "options": [
+              "454gr",
+              "Molido Grueso"
+            ],
+            "price": 6000,
+            "weight": 500,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842596876531,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48502451077363,
+            "title": "1kg / Grano",
+            "option1": "1kg",
+            "option2": "Grano",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336580800755,
+              "product_id": 8906412294387,
+              "position": 3,
+              "created_at": "2026-09-10T13:09:29-05:00",
+              "updated_at": "2026-09-10T13:09:30-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+              "variant_ids": [
+                48502451077363,
+                48502451110131,
+                48572414525683,
+                48572414558451
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 1kg / Grano",
+            "public_title": "1kg / Grano",
+            "options": [
+              "1kg",
+              "Grano"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842600841459,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48502451110131,
+            "title": "1kg / Molido Fino",
+            "option1": "1kg",
+            "option2": "Molido Fino",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336580800755,
+              "product_id": 8906412294387,
+              "position": 3,
+              "created_at": "2026-09-10T13:09:29-05:00",
+              "updated_at": "2026-09-10T13:09:30-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+              "variant_ids": [
+                48502451077363,
+                48502451110131,
+                48572414525683,
+                48572414558451
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 1kg / Molido Fino",
+            "public_title": "1kg / Molido Fino",
+            "options": [
+              "1kg",
+              "Molido Fino"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842600841459,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414525683,
+            "title": "1kg / Molido Medio",
+            "option1": "1kg",
+            "option2": "Molido Medio",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336580800755,
+              "product_id": 8906412294387,
+              "position": 3,
+              "created_at": "2026-09-10T13:09:29-05:00",
+              "updated_at": "2026-09-10T13:09:30-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+              "variant_ids": [
+                48502451077363,
+                48502451110131,
+                48572414525683,
+                48572414558451
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 1kg / Molido Medio",
+            "public_title": "1kg / Molido Medio",
+            "options": [
+              "1kg",
+              "Molido Medio"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842600841459,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414558451,
+            "title": "1kg / Molido Grueso",
+            "option1": "1kg",
+            "option2": "Molido Grueso",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336580800755,
+              "product_id": 8906412294387,
+              "position": 3,
+              "created_at": "2026-09-10T13:09:29-05:00",
+              "updated_at": "2026-09-10T13:09:30-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+              "variant_ids": [
+                48502451077363,
+                48502451110131,
+                48572414525683,
+                48572414558451
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 1kg / Molido Grueso",
+            "public_title": "1kg / Molido Grueso",
+            "options": [
+              "1kg",
+              "Molido Grueso"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842600841459,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          }
+        ],
+        "images": [
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Mapas_ee227914-4e73-4484-9fda-758d740295e5.png?v=1774394565",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/AMAZONAS.png?v=1782855571"
+        ],
+        "featured_image": "//cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+        "options": [
+          {
+            "name": "Tamaño",
+            "position": 1,
+            "values": [
+              "250g",
+              "454gr",
+              "1kg"
+            ]
+          },
+          {
+            "name": "Tipo de molido",
+            "position": 2,
+            "values": [
+              "Grano",
+              "Molido Fino",
+              "Molido Medio",
+              "Molido Grueso"
+            ]
+          }
+        ],
+        "url": "/products/cafe-amazonas",
+        "media": [
+          {
+            "alt": null,
+            "id": 40842599137523,
+            "position": 1,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 37992130969843,
+            "position": 2,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 2000,
+              "width": 2000,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Mapas_ee227914-4e73-4484-9fda-758d740295e5.png?v=1774394565"
+            },
+            "aspect_ratio": 1.0,
+            "height": 2000,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Mapas_ee227914-4e73-4484-9fda-758d740295e5.png?v=1774394565",
+            "width": 2000
+          },
+          {
+            "alt": null,
+            "id": 40842600841459,
+            "position": 3,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 40842596876531,
+            "position": 4,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 38626393751795,
+            "position": 5,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/AMAZONAS.png?v=1782855571"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/AMAZONAS.png?v=1782855571",
+            "width": 1080
+          }
+        ],
+        "requires_selling_plan": false,
+        "selling_plan_groups": []
+      }
+    },
+    "cajamarca": {
+      "source": "https://www.artidororodriguez.com/products/cafe-cajamarca.js",
+      "image": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378",
+      "product": {
+        "id": 8906414817523,
+        "title": "Café Origen Cajamarca",
+        "handle": "cafe-cajamarca",
+        "description": "<p>Un viaje directo a las alturas de Cajamarca en cada taza. Este single origin de tostado medio te sorprende con notas de frutos secos y chancaca, cultivado a 1800 msnm por manos peruanas que cuidan cada detalle. Puro, auténtico y con el sabor de nuestra tierra en las variedades Caturra, Típica y Catimor.</p>",
+        "published_at": "2024-09-10T19:31:28-05:00",
+        "created_at": "2024-09-10T19:30:13-05:00",
+        "vendor": "Artidoro Rodriguez",
+        "type": "",
+        "tags": [
+          "250gr",
+          "Cafeteras",
+          "Café"
+        ],
+        "price": 3990,
+        "price_min": 3990,
+        "price_max": 9900,
+        "available": true,
+        "price_varies": true,
+        "compare_at_price": 11000,
+        "compare_at_price_min": 11000,
+        "compare_at_price_max": 11000,
+        "compare_at_price_varies": false,
+        "variants": [
+          {
+            "id": 48568214028531,
+            "title": "250g / Grano",
+            "option1": "250g",
+            "option2": "Grano",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336505860339,
+              "product_id": 8906414817523,
+              "position": 1,
+              "created_at": "2026-09-10T13:03:19-05:00",
+              "updated_at": "2026-09-10T13:03:20-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400",
+              "variant_ids": [
+                48568214028531,
+                48568214061299,
+                48568214094067,
+                48568214126835
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Cajamarca - 250g / Grano",
+            "public_title": "250g / Grano",
+            "options": [
+              "250g",
+              "Grano"
+            ],
+            "price": 3990,
+            "weight": 250,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842525901043,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48568214061299,
+            "title": "250g / Molido Fino",
+            "option1": "250g",
+            "option2": "Molido Fino",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336505860339,
+              "product_id": 8906414817523,
+              "position": 1,
+              "created_at": "2026-09-10T13:03:19-05:00",
+              "updated_at": "2026-09-10T13:03:20-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400",
+              "variant_ids": [
+                48568214028531,
+                48568214061299,
+                48568214094067,
+                48568214126835
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Cajamarca - 250g / Molido Fino",
+            "public_title": "250g / Molido Fino",
+            "options": [
+              "250g",
+              "Molido Fino"
+            ],
+            "price": 3990,
+            "weight": 250,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842525901043,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48568214094067,
+            "title": "250g / Molido Medio",
+            "option1": "250g",
+            "option2": "Molido Medio",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336505860339,
+              "product_id": 8906414817523,
+              "position": 1,
+              "created_at": "2026-09-10T13:03:19-05:00",
+              "updated_at": "2026-09-10T13:03:20-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400",
+              "variant_ids": [
+                48568214028531,
+                48568214061299,
+                48568214094067,
+                48568214126835
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Cajamarca - 250g / Molido Medio",
+            "public_title": "250g / Molido Medio",
+            "options": [
+              "250g",
+              "Molido Medio"
+            ],
+            "price": 3990,
+            "weight": 250,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842525901043,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48568214126835,
+            "title": "250g / Molido Grueso",
+            "option1": "250g",
+            "option2": "Molido Grueso",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336505860339,
+              "product_id": 8906414817523,
+              "position": 1,
+              "created_at": "2026-09-10T13:03:19-05:00",
+              "updated_at": "2026-09-10T13:03:20-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400",
+              "variant_ids": [
+                48568214028531,
+                48568214061299,
+                48568214094067,
+                48568214126835
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Cajamarca - 250g / Molido Grueso",
+            "public_title": "250g / Molido Grueso",
+            "options": [
+              "250g",
+              "Molido Grueso"
+            ],
+            "price": 3990,
+            "weight": 250,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842525901043,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572339257587,
+            "title": "454gr / Grano",
+            "option1": "454gr",
+            "option2": "Grano",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336503075059,
+              "product_id": 8906414817523,
+              "position": 3,
+              "created_at": "2026-09-10T13:03:06-05:00",
+              "updated_at": "2026-09-10T13:03:07-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387",
+              "variant_ids": [
+                48572339257587,
+                48572339290355,
+                48572339323123,
+                48572339355891
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Cajamarca - 454gr / Grano",
+            "public_title": "454gr / Grano",
+            "options": [
+              "454gr",
+              "Grano"
+            ],
+            "price": 6000,
+            "weight": 500,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842523115763,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572339290355,
+            "title": "454gr / Molido Fino",
+            "option1": "454gr",
+            "option2": "Molido Fino",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336503075059,
+              "product_id": 8906414817523,
+              "position": 3,
+              "created_at": "2026-09-10T13:03:06-05:00",
+              "updated_at": "2026-09-10T13:03:07-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387",
+              "variant_ids": [
+                48572339257587,
+                48572339290355,
+                48572339323123,
+                48572339355891
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Cajamarca - 454gr / Molido Fino",
+            "public_title": "454gr / Molido Fino",
+            "options": [
+              "454gr",
+              "Molido Fino"
+            ],
+            "price": 6000,
+            "weight": 500,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842523115763,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572339323123,
+            "title": "454gr / Molido Medio",
+            "option1": "454gr",
+            "option2": "Molido Medio",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336503075059,
+              "product_id": 8906414817523,
+              "position": 3,
+              "created_at": "2026-09-10T13:03:06-05:00",
+              "updated_at": "2026-09-10T13:03:07-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387",
+              "variant_ids": [
+                48572339257587,
+                48572339290355,
+                48572339323123,
+                48572339355891
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Cajamarca - 454gr / Molido Medio",
+            "public_title": "454gr / Molido Medio",
+            "options": [
+              "454gr",
+              "Molido Medio"
+            ],
+            "price": 6000,
+            "weight": 500,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842523115763,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572339355891,
+            "title": "454gr / Molido Grueso",
+            "option1": "454gr",
+            "option2": "Molido Grueso",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336503075059,
+              "product_id": 8906414817523,
+              "position": 3,
+              "created_at": "2026-09-10T13:03:06-05:00",
+              "updated_at": "2026-09-10T13:03:07-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387",
+              "variant_ids": [
+                48572339257587,
+                48572339290355,
+                48572339323123,
+                48572339355891
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Cajamarca - 454gr / Molido Grueso",
+            "public_title": "454gr / Molido Grueso",
+            "options": [
+              "454gr",
+              "Molido Grueso"
+            ],
+            "price": 6000,
+            "weight": 500,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842523115763,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48568214159603,
+            "title": "1kg / Grano",
+            "option1": "1kg",
+            "option2": "Grano",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336501076211,
+              "product_id": 8906414817523,
+              "position": 4,
+              "created_at": "2026-09-10T13:02:57-05:00",
+              "updated_at": "2026-09-10T13:02:58-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378",
+              "variant_ids": [
+                48568214159603,
+                48568214192371,
+                48568214225139,
+                48568214257907
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Cajamarca - 1kg / Grano",
+            "public_title": "1kg / Grano",
+            "options": [
+              "1kg",
+              "Grano"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842521116915,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48568214192371,
+            "title": "1kg / Molido Fino",
+            "option1": "1kg",
+            "option2": "Molido Fino",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336501076211,
+              "product_id": 8906414817523,
+              "position": 4,
+              "created_at": "2026-09-10T13:02:57-05:00",
+              "updated_at": "2026-09-10T13:02:58-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378",
+              "variant_ids": [
+                48568214159603,
+                48568214192371,
+                48568214225139,
+                48568214257907
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Cajamarca - 1kg / Molido Fino",
+            "public_title": "1kg / Molido Fino",
+            "options": [
+              "1kg",
+              "Molido Fino"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842521116915,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48568214225139,
+            "title": "1kg / Molido Medio",
+            "option1": "1kg",
+            "option2": "Molido Medio",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336501076211,
+              "product_id": 8906414817523,
+              "position": 4,
+              "created_at": "2026-09-10T13:02:57-05:00",
+              "updated_at": "2026-09-10T13:02:58-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378",
+              "variant_ids": [
+                48568214159603,
+                48568214192371,
+                48568214225139,
+                48568214257907
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Cajamarca - 1kg / Molido Medio",
+            "public_title": "1kg / Molido Medio",
+            "options": [
+              "1kg",
+              "Molido Medio"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842521116915,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48568214257907,
+            "title": "1kg / Molido Grueso",
+            "option1": "1kg",
+            "option2": "Molido Grueso",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336501076211,
+              "product_id": 8906414817523,
+              "position": 4,
+              "created_at": "2026-09-10T13:02:57-05:00",
+              "updated_at": "2026-09-10T13:02:58-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378",
+              "variant_ids": [
+                48568214159603,
+                48568214192371,
+                48568214225139,
+                48568214257907
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Cajamarca - 1kg / Molido Grueso",
+            "public_title": "1kg / Molido Grueso",
+            "options": [
+              "1kg",
+              "Molido Grueso"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842521116915,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          }
+        ],
+        "images": [
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Cajamarca-2x2.png?v=1732239027",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/CAJAMARCA_5e155e17-56c5-45cf-aa83-e1eed0018123.png?v=1782855507"
+        ],
+        "featured_image": "//cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400",
+        "options": [
+          {
+            "name": "Tamaño",
+            "position": 1,
+            "values": [
+              "250g",
+              "454gr",
+              "1kg"
+            ]
+          },
+          {
+            "name": "Tipo de molido",
+            "position": 2,
+            "values": [
+              "Grano",
+              "Molido Fino",
+              "Molido Medio",
+              "Molido Grueso"
+            ]
+          }
+        ],
+        "url": "/products/cafe-cajamarca",
+        "media": [
+          {
+            "alt": null,
+            "id": 40842525901043,
+            "position": 1,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GCAJAMARCA.jpg?v=1789063400",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 35094059090163,
+            "position": 2,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 2000,
+              "width": 2000,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Cajamarca-2x2.png?v=1732239027"
+            },
+            "aspect_ratio": 1.0,
+            "height": 2000,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Cajamarca-2x2.png?v=1732239027",
+            "width": 2000
+          },
+          {
+            "alt": null,
+            "id": 40842523115763,
+            "position": 3,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBCAJAMARCA.jpg?v=1789063387",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 40842521116915,
+            "position": 4,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCAJAMARCA.jpg?v=1789063378",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 38626390933747,
+            "position": 5,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/CAJAMARCA_5e155e17-56c5-45cf-aa83-e1eed0018123.png?v=1782855507"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/CAJAMARCA_5e155e17-56c5-45cf-aa83-e1eed0018123.png?v=1782855507",
+            "width": 1080
+          }
+        ],
+        "requires_selling_plan": false,
+        "selling_plan_groups": []
+      }
+    },
+    "puno": {
+      "source": "https://www.artidororodriguez.com/products/cafe-puno.js",
+      "image": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287",
+      "product": {
+        "id": 8906415603955,
+        "title": "Café Origen Puno",
+        "handle": "cafe-puno",
+        "description": "<p>En las alturas de Puno, es tierra de caficultores que han dedicado generaciones al cultivo de un café excepcional. Cada grano que llega a tus manos proviene directamente de productores con quienes trabajamos codo a codo, asegurando un precio justo y un proceso transparente de inicio a fin.</p>\n<p><em>Grano a grano, construimos juntos un café con propósito.</em></p>",
+        "published_at": "2024-09-10T19:33:38-05:00",
+        "created_at": "2024-09-10T19:32:16-05:00",
+        "vendor": "Artidoro Rodriguez",
+        "type": "",
+        "tags": [
+          "250gr",
+          "Café"
+        ],
+        "price": 3990,
+        "price_min": 3990,
+        "price_max": 9900,
+        "available": true,
+        "price_varies": true,
+        "compare_at_price": 11000,
+        "compare_at_price_min": 11000,
+        "compare_at_price_max": 11000,
+        "compare_at_price_varies": false,
+        "variants": [
+          {
+            "id": 48748737298675,
+            "title": "250gr / Grano",
+            "option1": "250gr",
+            "option2": "Grano",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336485642483,
+              "product_id": 8906415603955,
+              "position": 1,
+              "created_at": "2026-09-10T13:01:01-05:00",
+              "updated_at": "2026-09-10T13:01:02-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262",
+              "variant_ids": [
+                48748737298675,
+                48748737331443,
+                48748737364211,
+                48748737396979
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Puno - 250gr / Grano",
+            "public_title": "250gr / Grano",
+            "options": [
+              "250gr",
+              "Grano"
+            ],
+            "price": 3990,
+            "weight": 1000,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842505683187,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48748737331443,
+            "title": "250gr / Molido Fino",
+            "option1": "250gr",
+            "option2": "Molido Fino",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336485642483,
+              "product_id": 8906415603955,
+              "position": 1,
+              "created_at": "2026-09-10T13:01:01-05:00",
+              "updated_at": "2026-09-10T13:01:02-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262",
+              "variant_ids": [
+                48748737298675,
+                48748737331443,
+                48748737364211,
+                48748737396979
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Puno - 250gr / Molido Fino",
+            "public_title": "250gr / Molido Fino",
+            "options": [
+              "250gr",
+              "Molido Fino"
+            ],
+            "price": 3990,
+            "weight": 1000,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842505683187,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48748737364211,
+            "title": "250gr / Molido Medio",
+            "option1": "250gr",
+            "option2": "Molido Medio",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336485642483,
+              "product_id": 8906415603955,
+              "position": 1,
+              "created_at": "2026-09-10T13:01:01-05:00",
+              "updated_at": "2026-09-10T13:01:02-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262",
+              "variant_ids": [
+                48748737298675,
+                48748737331443,
+                48748737364211,
+                48748737396979
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Puno - 250gr / Molido Medio",
+            "public_title": "250gr / Molido Medio",
+            "options": [
+              "250gr",
+              "Molido Medio"
+            ],
+            "price": 3990,
+            "weight": 1000,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842505683187,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48748737396979,
+            "title": "250gr / Molido Grueso",
+            "option1": "250gr",
+            "option2": "Molido Grueso",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336485642483,
+              "product_id": 8906415603955,
+              "position": 1,
+              "created_at": "2026-09-10T13:01:01-05:00",
+              "updated_at": "2026-09-10T13:01:02-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262",
+              "variant_ids": [
+                48748737298675,
+                48748737331443,
+                48748737364211,
+                48748737396979
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Puno - 250gr / Molido Grueso",
+            "public_title": "250gr / Molido Grueso",
+            "options": [
+              "250gr",
+              "Molido Grueso"
+            ],
+            "price": 3990,
+            "weight": 1000,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842505683187,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572397682931,
+            "title": "454gr / Grano",
+            "option1": "454gr",
+            "option2": "Grano",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336485708019,
+              "product_id": 8906415603955,
+              "position": 3,
+              "created_at": "2026-09-10T13:01:08-05:00",
+              "updated_at": "2026-09-10T13:01:10-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270",
+              "variant_ids": [
+                48572397682931,
+                48572397715699,
+                48572397748467,
+                48572397781235
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Puno - 454gr / Grano",
+            "public_title": "454gr / Grano",
+            "options": [
+              "454gr",
+              "Grano"
+            ],
+            "price": 6000,
+            "weight": 1000,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842505748723,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572397715699,
+            "title": "454gr / Molido Fino",
+            "option1": "454gr",
+            "option2": "Molido Fino",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336485708019,
+              "product_id": 8906415603955,
+              "position": 3,
+              "created_at": "2026-09-10T13:01:08-05:00",
+              "updated_at": "2026-09-10T13:01:10-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270",
+              "variant_ids": [
+                48572397682931,
+                48572397715699,
+                48572397748467,
+                48572397781235
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Puno - 454gr / Molido Fino",
+            "public_title": "454gr / Molido Fino",
+            "options": [
+              "454gr",
+              "Molido Fino"
+            ],
+            "price": 6000,
+            "weight": 500,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842505748723,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572397748467,
+            "title": "454gr / Molido Medio",
+            "option1": "454gr",
+            "option2": "Molido Medio",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336485708019,
+              "product_id": 8906415603955,
+              "position": 3,
+              "created_at": "2026-09-10T13:01:08-05:00",
+              "updated_at": "2026-09-10T13:01:10-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270",
+              "variant_ids": [
+                48572397682931,
+                48572397715699,
+                48572397748467,
+                48572397781235
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Puno - 454gr / Molido Medio",
+            "public_title": "454gr / Molido Medio",
+            "options": [
+              "454gr",
+              "Molido Medio"
+            ],
+            "price": 6000,
+            "weight": 500,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842505748723,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572397781235,
+            "title": "454gr / Molido Grueso",
+            "option1": "454gr",
+            "option2": "Molido Grueso",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336485708019,
+              "product_id": 8906415603955,
+              "position": 3,
+              "created_at": "2026-09-10T13:01:08-05:00",
+              "updated_at": "2026-09-10T13:01:10-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270",
+              "variant_ids": [
+                48572397682931,
+                48572397715699,
+                48572397748467,
+                48572397781235
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Puno - 454gr / Molido Grueso",
+            "public_title": "454gr / Molido Grueso",
+            "options": [
+              "454gr",
+              "Molido Grueso"
+            ],
+            "price": 6000,
+            "weight": 500,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842505748723,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48748737429747,
+            "title": "1kg / Grano",
+            "option1": "1kg",
+            "option2": "Grano",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336488263923,
+              "product_id": 8906415603955,
+              "position": 4,
+              "created_at": "2026-09-10T13:01:25-05:00",
+              "updated_at": "2026-09-10T13:01:27-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287",
+              "variant_ids": [
+                48748737429747,
+                48748737462515,
+                48748737495283,
+                48748737528051
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Puno - 1kg / Grano",
+            "public_title": "1kg / Grano",
+            "options": [
+              "1kg",
+              "Grano"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842508304627,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48748737462515,
+            "title": "1kg / Molido Fino",
+            "option1": "1kg",
+            "option2": "Molido Fino",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336488263923,
+              "product_id": 8906415603955,
+              "position": 4,
+              "created_at": "2026-09-10T13:01:25-05:00",
+              "updated_at": "2026-09-10T13:01:27-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287",
+              "variant_ids": [
+                48748737429747,
+                48748737462515,
+                48748737495283,
+                48748737528051
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Puno - 1kg / Molido Fino",
+            "public_title": "1kg / Molido Fino",
+            "options": [
+              "1kg",
+              "Molido Fino"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842508304627,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48748737495283,
+            "title": "1kg / Molido Medio",
+            "option1": "1kg",
+            "option2": "Molido Medio",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336488263923,
+              "product_id": 8906415603955,
+              "position": 4,
+              "created_at": "2026-09-10T13:01:25-05:00",
+              "updated_at": "2026-09-10T13:01:27-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287",
+              "variant_ids": [
+                48748737429747,
+                48748737462515,
+                48748737495283,
+                48748737528051
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Puno - 1kg / Molido Medio",
+            "public_title": "1kg / Molido Medio",
+            "options": [
+              "1kg",
+              "Molido Medio"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842508304627,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48748737528051,
+            "title": "1kg / Molido Grueso",
+            "option1": "1kg",
+            "option2": "Molido Grueso",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336488263923,
+              "product_id": 8906415603955,
+              "position": 4,
+              "created_at": "2026-09-10T13:01:25-05:00",
+              "updated_at": "2026-09-10T13:01:27-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287",
+              "variant_ids": [
+                48748737429747,
+                48748737462515,
+                48748737495283,
+                48748737528051
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Puno - 1kg / Molido Grueso",
+            "public_title": "1kg / Molido Grueso",
+            "options": [
+              "1kg",
+              "Molido Grueso"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842508304627,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          }
+        ],
+        "images": [
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Puno-2x2.png?v=1732239027",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/PUNO_91e32767-6745-4488-9e2b-17e63474e7e9.png?v=1782854830"
+        ],
+        "featured_image": "//cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262",
+        "options": [
+          {
+            "name": "Tamaño",
+            "position": 1,
+            "values": [
+              "250gr",
+              "454gr",
+              "1kg"
+            ]
+          },
+          {
+            "name": "Tipo",
+            "position": 2,
+            "values": [
+              "Grano",
+              "Molido Fino",
+              "Molido Medio",
+              "Molido Grueso"
+            ]
+          }
+        ],
+        "url": "/products/cafe-puno",
+        "media": [
+          {
+            "alt": null,
+            "id": 40842505683187,
+            "position": 1,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GPUNOO.jpg?v=1789063262",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 35094059155699,
+            "position": 2,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 2000,
+              "width": 2000,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Puno-2x2.png?v=1732239027"
+            },
+            "aspect_ratio": 1.0,
+            "height": 2000,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Puno-2x2.png?v=1732239027",
+            "width": 2000
+          },
+          {
+            "alt": null,
+            "id": 40842505748723,
+            "position": 3,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBPUNO.jpg?v=1789063270",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 40842508304627,
+            "position": 4,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KPUNO.jpg?v=1789063287",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 38626348171507,
+            "position": 5,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/PUNO_91e32767-6745-4488-9e2b-17e63474e7e9.png?v=1782854830"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/PUNO_91e32767-6745-4488-9e2b-17e63474e7e9.png?v=1782854830",
+            "width": 1080
+          }
+        ],
+        "requires_selling_plan": false,
+        "selling_plan_groups": []
+      }
+    }
+  }
+}
