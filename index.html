@@ -16,10 +16,13 @@
   <link rel="stylesheet" href="/src/origin.css" />
   <link rel="stylesheet" href="/src/home.css" />
   <link rel="stylesheet" href="/src/sensory.css" />
+  <link rel="stylesheet" href="/src/catalog.css" />
   <script type="module" src="/src/main.js"></script>
   <script type="module" src="/src/origin.js"></script>
   <script type="module" src="/src/home.js"></script>
   <script type="module" src="/src/sensory.js"></script>
+  <script type="module" src="/src/catalog.js"></script>
+  <noscript><style>[data-catalog-src]{display:none!important}.catalog-photo noscript{display:contents!important}</style></noscript>
 </head>
 <body>
   <aside class="lab-bar" aria-label="Controles del laboratorio">
@@ -34,11 +37,11 @@
   <header class="home-nav home-only">
     <a href="#direction-a" aria-label="Artidoro Rodríguez, inicio"><img class="home-nav-logo" src="/assets/logo-white.png" alt="Artidoro Rodríguez Coffee" width="358" height="127" /></a>
     <nav class="home-nav-links" aria-label="Navegación principal">
-      <a href="#origin-scene">Los orígenes</a><a class="nav-cafe" href="#seat-scene">Tarata</a>
+      <details class="store-menu"><summary>Tienda <span aria-hidden="true">⌄</span></summary><nav aria-label="Categorías de la tienda"><a href="#origin-scene">Cafés de origen <span>01 — 05</span></a><a href="https://www.artidororodriguez.com/products/la-expedicion-coleccion-travel-line-preventa" target="_blank" rel="noopener">Travel Line ↗</a><a href="https://www.artidororodriguez.com/collections/packs-de-cafe" target="_blank" rel="noopener">Packs ↗</a><a href="https://www.artidororodriguez.com/collections/nanolotes-artidoro-rodriguez" target="_blank" rel="noopener">Nanolotes ↗</a><a href="https://www.artidororodriguez.com/collections/nuevos-ingresos" target="_blank" rel="noopener">Mieles, infusiones y más ↗</a></nav></details><a class="nav-cafe" href="#seat-scene">Tarata</a>
       <a class="nav-buy" href="#shop">Comprar café <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
-  <main>
+  <main id="home-main">
     <section class="hero hero-peru" id="direction-a" aria-labelledby="title-a" data-expanded="false">
       <div class="landscape" aria-hidden="true">
         <picture><source media="(max-width:760px)" srcset="/assets/cafetal-home-mobile.webp" /><img class="landscape-far" src="/assets/cafetal-home-desktop.webp" alt="" width="1280" height="720" fetchpriority="high" /></picture>
@@ -204,49 +207,71 @@
         <p class="seat-photo-credit">PROVISIONAL_ASSET · Fotografías de referencia.</p>
       </div>
     </section>
-    <section class="home-shop home-only" id="shop" aria-labelledby="shop-title">
-      <header class="shop-head"><div><p class="home-kicker">05 / Del origen a tu casa</p><h2 class="home-section-title" id="shop-title">Tu próxima<br />taza.</h2></div><p class="shop-intro"><strong>Cinco formas de empezar.</strong>Cada origen tiene su carácter.<br />Encuentra el que va contigo.</p></header>
-      <div class="shop-assurances"><span>Café peruano de especialidad</span><span>En grano o molido</span><span>250 g · 454 g · 1 kg</span></div>
-      <div class="shop-lineup">
-        <article class="shop-coffee" aria-labelledby="shop-amazonas">
-          <a class="shop-coffee-image" href="https://www.artidororodriguez.com/products/cafe-amazonas" target="_blank" rel="noopener" aria-label="Ver café Amazonas"><img src="/assets/amazonas-250g.webp" alt="Bolsa de café Amazonas Artidoro Rodríguez" width="326" height="761" loading="lazy" decoding="async" /></a>
-          <h3 id="shop-amazonas">Amazonas</h3><p class="shop-coffee-notes">Naranja y melaza</p>
-          <p class="shop-coffee-meta"><strong>S/ 39.90</strong><span>250 g</span></p>
-          <a class="shop-buy" href="https://www.artidororodriguez.com/products/cafe-amazonas" target="_blank" rel="noopener" aria-label="Comprar café Amazonas, 250 g, S/ 39.90">Comprar <span aria-hidden="true">↗</span></a>
-        </article>
-        <article class="shop-coffee" aria-labelledby="shop-cajamarca">
-          <a class="shop-coffee-image" href="https://www.artidororodriguez.com/products/cafe-cajamarca" target="_blank" rel="noopener" aria-label="Ver café Cajamarca"><img src="/assets/cajamarca-250g.webp" alt="Bolsa de café Cajamarca Artidoro Rodríguez" width="326" height="761" loading="lazy" decoding="async" /></a>
-          <h3 id="shop-cajamarca">Cajamarca</h3><p class="shop-coffee-notes">Frutos secos y chancaca</p>
-          <p class="shop-coffee-meta"><strong>S/ 39.90</strong><span>250 g</span></p>
-          <a class="shop-buy" href="https://www.artidororodriguez.com/products/cafe-cajamarca" target="_blank" rel="noopener" aria-label="Comprar café Cajamarca, 250 g, S/ 39.90">Comprar <span aria-hidden="true">↗</span></a>
-        </article>
-        <article class="shop-coffee" aria-labelledby="shop-villa-rica">
-          <a class="shop-coffee-image" href="https://www.artidororodriguez.com/products/cafe-villa-rica" target="_blank" rel="noopener" aria-label="Ver café Villa Rica"><img src="/assets/villa-rica-250g.webp" alt="Bolsa de café Villa Rica Artidoro Rodríguez" width="326" height="761" loading="lazy" decoding="async" /></a>
-          <h3 id="shop-villa-rica">Villa Rica</h3><p class="shop-coffee-notes">Frutos rojos, pasas, dulce</p>
-          <p class="shop-coffee-meta"><strong>S/ 39.90</strong><span>250 g</span></p>
-          <a class="shop-buy" href="https://www.artidororodriguez.com/products/cafe-villa-rica" target="_blank" rel="noopener" aria-label="Comprar café Villa Rica, 250 g, S/ 39.90">Comprar <span aria-hidden="true">↗</span></a>
-        </article>
-        <article class="shop-coffee" aria-labelledby="shop-cusco">
-          <a class="shop-coffee-image" href="https://www.artidororodriguez.com/products/cafe-cusco" target="_blank" rel="noopener" aria-label="Ver café Cusco"><img src="/assets/cusco-250g.webp" alt="Bolsa de café Cusco Artidoro Rodríguez" width="326" height="761" loading="lazy" decoding="async" /></a>
-          <h3 id="shop-cusco">Cusco</h3><p class="shop-coffee-notes">Chocolate y nueces</p>
-          <p class="shop-coffee-meta"><strong>S/ 39.90</strong><span>250 g</span></p>
-          <a class="shop-buy" href="https://www.artidororodriguez.com/products/cafe-cusco" target="_blank" rel="noopener" aria-label="Comprar café Cusco, 250 g, S/ 39.90">Comprar <span aria-hidden="true">↗</span></a>
-        </article>
-        <article class="shop-coffee" aria-labelledby="shop-puno">
-          <a class="shop-coffee-image" href="https://www.artidororodriguez.com/products/cafe-puno" target="_blank" rel="noopener" aria-label="Ver café Puno"><img src="/assets/puno-250g.webp" alt="Bolsa de café Puno Artidoro Rodríguez" width="326" height="761" loading="lazy" decoding="async" /></a>
-          <h3 id="shop-puno">Puno</h3><p class="shop-coffee-notes">Chocolate y frutos secos</p>
-          <p class="shop-coffee-meta"><strong>S/ 39.90</strong><span>250 g</span></p>
-          <a class="shop-buy" href="https://www.artidororodriguez.com/products/cafe-puno" target="_blank" rel="noopener" aria-label="Comprar café Puno, 250 g, S/ 39.90">Comprar <span aria-hidden="true">↗</span></a>
-        </article>
+    <section class="home-shop home-only catalog-shop" id="shop" aria-labelledby="shop-title">
+      <header class="catalog-heading"><div><p class="home-kicker">05 / Del origen a tu casa</p><h2 class="home-section-title" id="shop-title">Hazlo parte<br />de tus días.</h2></div><p>Un café para empezar.<br /> Más formas de disfrutar Artidoro.</p></header>
+      <div class="catalog-coffee">
+        <img src="/assets/amazonas-250g.webp" alt="Café Amazonas, bolsa de 250 g" width="326" height="761" loading="lazy" />
+        <div><p class="catalog-label">Cafés de origen</p><h3>Empieza por Amazonas</h3><p>Naranja y melaza <span>· 250 g</span></p></div>
+        <div class="catalog-coffee-action"><a class="catalog-button" data-pdp href="https://www.artidororodriguez.com/products/cafe-amazonas">Elegir Amazonas <span>S/ 39.90 →</span></a><a class="catalog-link" href="#origin-scene">Elegir otro origen ↑</a></div>
       </div>
-      <p class="shop-options-note">Elige tu molienda: grano, fino, medio o grueso.<br /><a href="https://www.artidororodriguez.com/policies/shipping-policy" target="_blank" rel="noopener">Envíos y entregas ↗</a> · <a href="https://www.artidororodriguez.com/pages/preguntas-frecuentes" target="_blank" rel="noopener">Preguntas frecuentes ↗</a></p>
-      <div class="shop-more"><p><strong>Hay más por descubrir.</strong>Explora los cafés, packs y lotes especiales de Artidoro.</p><a class="home-text-link" href="https://www.artidororodriguez.com/collections/cafe" target="_blank" rel="noopener">Explorar todo el catálogo <span aria-hidden="true">↗</span></a></div>
+      <div class="catalog-edit">
+        <article class="catalog-feature">
+          <div class="catalog-feature-head"><p class="catalog-label">Para descubrir y regalar</p><span>01 — 05</span></div>
+          <a class="catalog-photo" href="https://www.artidororodriguez.com/products/la-expedicion-coleccion-travel-line-preventa" target="_blank" rel="noopener" aria-label="Ver Colección Travel Line"><img data-catalog-src="/assets/catalog-travel.webp" alt="Las cinco latas ilustradas de la Colección Travel Line" width="890" height="440" loading="lazy" decoding="async" /><noscript><img src="/assets/catalog-travel.webp" alt="Las cinco latas ilustradas de la Colección Travel Line" width="890" height="440" loading="lazy" decoding="async" /></noscript></a>
+          <div class="catalog-feature-bottom"><div><p class="catalog-label">Colección</p><h3>Travel Line</h3><p>Cinco orígenes. Cinco latas de 200 g.</p></div><div class="catalog-product-action"><strong>S/ 260.00</strong><a class="catalog-link" href="https://www.artidororodriguez.com/products/la-expedicion-coleccion-travel-line-preventa" target="_blank" rel="noopener">Comprar colección ↗</a></div></div>
+        </article>
+        <div class="catalog-companions">
+          <article class="catalog-small">
+            <a class="catalog-photo" href="https://www.artidororodriguez.com/products/pack-el-explorador-250gr-de-cada-origen" target="_blank" rel="noopener" aria-label="Ver Pack El Explorador"><img data-catalog-src="/assets/catalog-explorador.webp" alt="Pack El Explorador: cinco bolsas, una por origen" width="700" height="434" loading="lazy" decoding="async" /><noscript><img src="/assets/catalog-explorador.webp" alt="Pack El Explorador: cinco bolsas, una por origen" width="700" height="434" loading="lazy" decoding="async" /></noscript></a>
+            <div><p class="catalog-label">Para encontrar tu favorito</p><h3>El Explorador</h3><p>5 cafés de origen × 250 g</p><strong>S/ 180.00</strong><a class="catalog-link" href="https://www.artidororodriguez.com/products/pack-el-explorador-250gr-de-cada-origen" target="_blank" rel="noopener">Comprar pack ↗</a></div>
+          </article>
+          <article class="catalog-small catalog-honey">
+            <a class="catalog-photo" href="https://www.artidororodriguez.com/products/miel-de-abeja-perfil-frutal?variant=48575684378867" target="_blank" rel="noopener" aria-label="Ver Miel de Abeja Perfil Frutal, 300 g"><img data-catalog-src="/assets/catalog-miel.webp" alt="Miel de Abeja Artidoro, Perfil Frutal, frasco de 300 g" width="364" height="460" loading="lazy" decoding="async" /><noscript><img src="/assets/catalog-miel.webp" alt="Miel de Abeja Artidoro, Perfil Frutal, frasco de 300 g" width="364" height="460" loading="lazy" decoding="async" /></noscript></a>
+            <div><p class="catalog-label">Para acompañar tu mesa</p><h3>Miel de abeja</h3><p>Perfil Frutal · 300 g</p><strong>S/ 25.00</strong><a class="catalog-link" href="https://www.artidororodriguez.com/products/miel-de-abeja-perfil-frutal?variant=48575684378867" target="_blank" rel="noopener">Comprar miel ↗</a></div>
+          </article>
+        </div>
+      </div>
+      <nav class="catalog-categories" aria-label="Explora la tienda"><span>Sigue descubriendo</span><a href="https://www.artidororodriguez.com/collections/cafe" target="_blank" rel="noopener">Todos los cafés ↗</a><a href="https://www.artidororodriguez.com/collections/packs-de-cafe" target="_blank" rel="noopener">Packs ↗</a><a href="https://www.artidororodriguez.com/collections/nanolotes-artidoro-rodriguez" target="_blank" rel="noopener">Nanolotes ↗</a><a href="https://www.artidororodriguez.com/collections/nuevos-ingresos" target="_blank" rel="noopener">Mieles, infusiones y más ↗</a></nav>
+      <div class="catalog-trust">
+        <section class="catalog-reviews" aria-labelledby="reviews-title"><p class="catalog-label" id="reviews-title">En sus propias palabras</p><div class="catalog-quotes">
+          <figure><blockquote>“Con cuerpo y acidez agradable. Incluso queda muy bien con un latte.”</blockquote><figcaption>Jorge Terrones <span>Café Origen Amazonas</span></figcaption></figure>
+          <figure><blockquote>“Delicioso, taza a taza!!!!”</blockquote><figcaption>Sandy Yris Fernandez Urrutia <span>Pack «El Ahorrador» 3 kg</span></figcaption></figure>
+        </div><a class="catalog-link catalog-source" href="https://www.artidororodriguez.com/" target="_blank" rel="noopener">Reseñas publicadas en la tienda oficial ↗</a></section>
+        <section class="catalog-faq" aria-labelledby="faq-title"><h3 id="faq-title">Antes de tu primera taza.</h3>
+          <details><summary>¿Qué molienda elijo?</summary><p>Grano si tienes molino. Fina para espresso o moka; media para filtro, V60, Chemex o Aeropress; gruesa para prensa francesa o cold brew.</p></details>
+          <details><summary>¿Las notas son ingredientes?</summary><p>No. Describen aromas y sabores propios del café. Las notas de naranja y melaza de Amazonas no significan que se le añadan esos ingredientes.</p></details>
+          <details><summary>¿Cómo conservo mi café?</summary><p>Cierra bien la bolsa o usa un recipiente hermético. Guárdalo lejos de la luz, el calor y la humedad; evita la refrigeradora.</p></details>
+          <details><summary>¿Hacen envíos a mi ciudad?</summary><p>La tienda envía a Lima Metropolitana y a provincias mediante Shalom u Olva. Coste y plazo dependen del destino. <a href="https://www.artidororodriguez.com/policies/shipping-policy" target="_blank" rel="noopener">Consultar envíos ↗</a></p></details>
+          <a class="catalog-link catalog-source" href="https://www.artidororodriguez.com/pages/preguntas-frecuentes" target="_blank" rel="noopener">Más preguntas y respuestas ↗</a>
+        </section>
+      </div>
     </section>
+  </main>
+  <main class="product-page" id="producto-amazonas" aria-labelledby="product-title" hidden>
+    <a class="product-back catalog-link" href="#origin-scene" data-product-back>← Volver a explorar</a>
+    <div class="product-layout">
+      <figure class="product-visual"><span class="product-origin-word" aria-hidden="true">AMAZONAS</span><img src="/assets/amazonas-250g.webp" alt="Bolsa Artidoro de café Amazonas de 250 g" width="326" height="761" /><figcaption>Presentación fotografiada: 250 g</figcaption></figure>
+      <div class="product-decision">
+        <p class="catalog-label">Café peruano de especialidad</p><div class="product-title-row"><h1 id="product-title" tabindex="-1">Amazonas</h1><strong class="product-price">S/ 39.90</strong></div>
+        <p class="product-place">Rodríguez de Mendoza, Perú</p><p class="product-taste">Naranja y melaza.<span>Tueste medio.</span></p>
+        <form class="product-options" aria-label="Configura tu café">
+          <fieldset><legend>01 / Elige tu tamaño</legend><div class="product-sizes"><label><input type="radio" name="size" value="250g" checked /><span>250 g</span></label><label><input type="radio" name="size" value="454gr" /><span>454 g</span></label><label><input type="radio" name="size" value="1kg" /><span>1 kg</span></label></div></fieldset>
+          <fieldset><legend>02 / ¿Cómo lo preparas?</legend><div class="product-grinds"><label><input type="radio" name="grind" value="Grano" checked /><span>En grano<small>Tengo molino</small></span></label><label><input type="radio" name="grind" value="Molido Fino" /><span>Fino<small>Espresso / moka</small></span></label><label><input type="radio" name="grind" value="Molido Medio" /><span>Medio<small>Filtro / V60</small></span></label><label><input type="radio" name="grind" value="Molido Grueso" /><span>Grueso<small>Prensa / cold brew</small></span></label></div></fieldset>
+        </form>
+        <p class="product-selection" role="status" aria-live="polite" aria-atomic="true">250 g · En grano · S/ 39.90</p>
+        <a class="catalog-button product-continue" href="https://www.artidororodriguez.com/products/cafe-amazonas?variant=48502437282035" target="_blank" rel="noopener">Continuar en la tienda <span aria-hidden="true">↗</span></a>
+        <p class="product-handoff">Abriremos la tienda oficial con tu selección.<br />Allí podrás añadir al carrito y finalizar tu compra.</p>
+      </div>
+    </div>
+    <div class="product-details">
+      <section><p class="catalog-label">Conoce tu origen</p><h2>El carácter<br />de Amazonas.</h2><p>Un café de Rodríguez de Mendoza con notas cítricas de naranja y dulzor que recuerda a la melaza.</p><dl><div><dt>Altitud</dt><dd>1.700–1.900 m s. n. m.</dd></div><div><dt>Variedades</dt><dd>Caturra, Típica y Catimor</dd></div><div><dt>Tueste</dt><dd>Medio</dd></div></dl></section>
+      <section class="catalog-faq"><h3>Prepara tu próxima taza.</h3><details><summary>Ayuda para elegir molienda</summary><p>Elige grano si tienes molino. La molienda fina sirve para espresso y moka; la media para V60, Chemex, Aeropress y cafetera de filtro; la gruesa para prensa francesa y cold brew.</p></details><details><summary>Conservación y envíos</summary><p>Mantén el café cerrado, en un lugar seco y sin luz directa. <a href="https://www.artidororodriguez.com/pages/preguntas-frecuentes" target="_blank" rel="noopener">Consulta las recomendaciones oficiales ↗</a></p><p>La tienda realiza envíos a Lima y provincias. <a href="https://www.artidororodriguez.com/policies/shipping-policy" target="_blank" rel="noopener">Ver condiciones de entrega ↗</a></p></details><figure class="product-review"><blockquote>“Con cuerpo y acidez agradable. Incluso queda muy bien con un latte.”</blockquote><figcaption>Jorge Terrones · Café Origen Amazonas</figcaption></figure><a class="catalog-link catalog-source" href="https://www.artidororodriguez.com/" target="_blank" rel="noopener">Reseña publicada en la tienda oficial ↗</a></section>
+    </div>
   </main>
   <footer class="home-footer home-only">
     <div class="footer-top"><a href="#direction-a" aria-label="Volver al inicio"><img src="/assets/logo-white.png" alt="Artidoro Rodríguez Coffee" width="358" height="127" loading="lazy" /></a><p>El origen se siente.</p></div>
     <nav class="footer-links" aria-label="Enlaces del pie"><a href="#origin-scene">Los cinco orígenes</a><a href="https://www.artidororodriguez.com/collections/cafe" target="_blank" rel="noopener">Tienda ↗</a><a href="https://www.artidororodriguez.com/pages/locales" target="_blank" rel="noopener">Cafeterías ↗</a><button type="button" data-home-motion aria-pressed="false">Reducir movimiento</button><span>Artidoro Rodríguez · Café peruano</span></nav>
-    <details class="review-details"><summary>Acerca de esta demo</summary><p>Prototipo independiente de la tienda. Precios de 250 g y opciones consultados en el catálogo oficial el 25 de septiembre de 2026. El paisaje tiene ubicación por confirmar. 03 es una escena conceptual generada. Tarata utiliza fotografías de referencia con autoría pendiente de confirmar. Los enlaces de compra abren la tienda oficial.</p><p><a href="/b/">Ver dirección B del laboratorio ↗</a> · <a href="/?motion=off">Ver sin movimiento ↗</a></p></details>
+    <details class="review-details"><summary>Acerca de esta demo</summary><p>Prototipo independiente de la tienda. Precios de 250 g y opciones consultados en el catálogo oficial el 25 de septiembre de 2026. El paisaje tiene ubicación por confirmar. 03 es una escena conceptual generada. Tarata utiliza fotografías de referencia con autoría pendiente de confirmar. Amazonas dispone de una ficha de demostración; el pago se realiza en la tienda oficial. Catálogo y variantes de esta revisión consultados el 28 de septiembre de 2026.</p><p><a href="/b/">Ver dirección B del laboratorio ↗</a> · <a href="/?motion=off">Ver sin movimiento ↗</a></p></details>
   </footer>
 </body>
 </html>
