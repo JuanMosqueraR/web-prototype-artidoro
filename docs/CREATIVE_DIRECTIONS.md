@@ -1,3 +1,11 @@
+# El Ahorrador — revisión descriptiva del 28 de septiembre de 2026
+
+A incorpora acceso al pack de 3 kg desde 01, 02 y Tienda. Se conservan el CTA y el precio individual de Amazonas en 01 y toda la interacción de 02; la selección de origen no configura el pack. 05 da protagonismo a El Ahorrador, mantiene Travel Line como segunda propuesta y Explorador/miel como complementos. El bloque repetido de Amazonas en 05 se sustituye por un enlace a los cinco orígenes.
+
+La PDP `#producto-ahorrador` permite elegir tres orígenes independientemente y repetirlos. Total y enlace corresponden a una de las 125 variantes del snapshot oficial; molienda y pago se completan allí. Imagen de combinación representativa, etiquetada. La PDP de Amazonas permanece. Sin motion nuevo, cambios en 03/Tarata o rediseño de B. [Entrega actual](AHORRADOR_REVIEW.md). Las descripciones inferiores son snapshots históricos.
+
+---
+
 # Actualización descriptiva — 28 de septiembre de 2026
 
 A conserva 01–04 y renueva 05: entrada compacta a Amazonas/02, Travel Line protagonista, pack y miel complementarios, categorías explícitas, dos reseñas atribuidas y cuatro FAQ. Tienda es un desplegable accesible. La PDP de Amazonas usa `#producto-amazonas`, datos locales de variantes y continuación a la ficha oficial; mantiene la selección de 02 al volver. B conserva su hero. No se añade motion a 05/PDP ni se modifica el de 03. Composición, QA y límites actuales: [CATALOG_PDP_REVIEW.md](CATALOG_PDP_REVIEW.md). Las descripciones inferiores de cinco tarjetas en 05 y compra exclusivamente externa desde Amazonas son snapshots anteriores.

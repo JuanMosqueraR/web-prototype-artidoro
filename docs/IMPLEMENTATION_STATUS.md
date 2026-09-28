@@ -1,3 +1,20 @@
+# El Ahorrador — revisión del 28 de septiembre de 2026
+
+Rama `feat/catalogo-pdp`, checkpoint `87ea725`. Esta iteración queda sin commit, merge ni publicación. [Entrega actual](AHORRADOR_REVIEW.md). Home local `http://127.0.0.1:4175/`; ficha `http://127.0.0.1:4175/#producto-ahorrador`. La confirmación anterior de iPhone corresponde al checkpoint, no a esta iteración.
+
+| Ruta nueva o afectada | Función / producción |
+|---|---|
+| `index.html`, `src/catalog.js`, `src/ahorrador.css` | Accesos al pack, jerarquía de 05 y segunda PDP; CSS/JS propios, sin librerías |
+| `src/ahorrador-variants.json` | 125 variantes, generadas desde el snapshot oficial |
+| `audit/source/ahorrador-*.json`, `audit/source/ahorrador-*-original.jpg`, `audit/source/ahorrador-original.jpg` | Respuestas oficiales, tres fotos individuales y foto grupal descartada por discrepancia de gramaje |
+| `public/assets/ahorrador-*-1kg.webp`, `scripts/prepare-ahorrador.py` | Tres recortes WebP reproducibles; script también genera variantes |
+| `qa/2026-09-28-ahorrador/` | Regresión, pruebas de combinación, destinos oficiales y capturas directas |
+| `dist/ahorrador-pages/` | Build local ignorado, generado por `scripts/build-pages.py --allow-dirty --out dist/ahorrador-pages`; sin staging de rama ni publicación |
+
+Node aislado 22.23.1/Vite 7.1.3, sin cambio de tooling. Las entregas inferiores y sus evidencias se conservan como históricas.
+
+---
+
 # Revisión catálogo/PDP — 28 de septiembre de 2026
 
 Rama `feat/catalogo-pdp` desde `38a209f`, versionada por petición del usuario y sin merge ni publicación desde esta revisión. [Entrega actual](CATALOG_PDP_REVIEW.md). Home local `http://127.0.0.1:4175/`; PDP `http://127.0.0.1:4175/#producto-amazonas`. Las URLs requieren el servidor de preview activo. El 28 de septiembre el usuario confirma que esta versión se ve bien en iPhone, sin especificar navegador o versión; no es una validación instrumental completa de iOS.
