@@ -1,0 +1,1739 @@
+{
+  "date": "2026-09-28",
+  "browser": "148.0.7778.96",
+  "dpr": 1,
+  "url": "http://127.0.0.1:4175",
+  "checks": [
+    {
+      "name": "a-desktop-motion-initial CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 657.1875,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "a-desktop-motion-initial no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-desktop-motion-initial hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "a-desktop-motion-initial",
+        "changed": 0,
+        "max_channel": 0,
+        "crop": [
+          0,
+          72,
+          1440,
+          900
+        ]
+      }
+    },
+    {
+      "name": "a-desktop-motion-expanded CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 657.1875,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "a-desktop-motion-expanded no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-desktop-motion-expanded hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "a-desktop-motion-expanded",
+        "changed": 0,
+        "max_channel": 0,
+        "crop": [
+          0,
+          72,
+          1440,
+          900
+        ]
+      }
+    },
+    {
+      "name": "desktop a errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "a-desktop-reduced-initial CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 657.1875,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "a-desktop-reduced-initial no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-desktop-reduced-initial hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "a-desktop-reduced-initial",
+        "changed": 0,
+        "max_channel": 0,
+        "crop": [
+          0,
+          72,
+          1440,
+          900
+        ]
+      }
+    },
+    {
+      "name": "a-desktop-reduced-expanded CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 657.1875,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "a-desktop-reduced-expanded no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-desktop-reduced-expanded hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "a-desktop-reduced-expanded",
+        "changed": 0,
+        "max_channel": 0,
+        "crop": [
+          0,
+          72,
+          1440,
+          900
+        ]
+      }
+    },
+    {
+      "name": "desktop a errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "b-desktop-motion-initial CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 660.3125,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "b-desktop-motion-initial no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-desktop-motion-initial hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "b-desktop-motion-initial",
+        "changed": 0,
+        "max_channel": 0,
+        "crop": [
+          0,
+          0,
+          1440,
+          900
+        ]
+      }
+    },
+    {
+      "name": "b-desktop-motion-expanded CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 660.3125,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "b-desktop-motion-expanded no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-desktop-motion-expanded hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "b-desktop-motion-expanded",
+        "changed": 0,
+        "max_channel": 0,
+        "crop": [
+          0,
+          0,
+          1440,
+          900
+        ]
+      }
+    },
+    {
+      "name": "desktop B home/PDP hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop B media absent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop b errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "b-desktop-reduced-initial CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 660.3125,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "b-desktop-reduced-initial no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-desktop-reduced-initial hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "b-desktop-reduced-initial",
+        "changed": 0,
+        "max_channel": 0,
+        "crop": [
+          0,
+          0,
+          1440,
+          900
+        ]
+      }
+    },
+    {
+      "name": "b-desktop-reduced-expanded CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 660.3125,
+        "width": 330,
+        "height": 58
+      }
+    },
+    {
+      "name": "b-desktop-reduced-expanded no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-desktop-reduced-expanded hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "b-desktop-reduced-expanded",
+        "changed": 409,
+        "max_channel": 14,
+        "crop": [
+          0,
+          0,
+          1440,
+          900
+        ]
+      }
+    },
+    {
+      "name": "desktop B home/PDP hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop B media absent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop b errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "desktop hero opens PDP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop return hero restores focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop cajamarca correct destination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop cajamarca decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop villa-rica correct destination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop villa-rica decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop cusco correct destination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop cusco decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop puno correct destination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop puno decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop amazonas correct destination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop amazonas decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48502437282035",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48502437314803",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48572414460147",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48572414492915",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48572414591219",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48572414623987",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48572414656755",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48572414689523",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48502451077363",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48502451110131",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48572414525683",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48572414558451",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop back preserves 02 scroll",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop back preserves 02 selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop forward retains variant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop PDP header buy reaches 05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop store menu keyboard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop store menu Escape focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop store menu outside close",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop store origins link",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop 03 seeks 0.1",
+      "passed": true,
+      "detail": 0.698166
+    },
+    {
+      "name": "desktop 03 seeks 0.75",
+      "passed": true,
+      "detail": 5.240559
+    },
+    {
+      "name": "desktop 03 seeks 0.3",
+      "passed": true,
+      "detail": 2.0945
+    },
+    {
+      "name": "desktop 03 reaches purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop fallback HTML not exposed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop breadth links",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop reviews attributed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop FAQ keyboard \u00bfQu\u00e9 molienda elijo?",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop FAQ keyboard \u00bfLas notas son ingredientes?",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop FAQ keyboard \u00bfC\u00f3mo conservo mi caf\u00e9?",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop FAQ keyboard \u00bfHacen env\u00edos a mi ciudad?",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop 05 independent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop PDP preserves non-Amazonas selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop no journey JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "desktop reduced motion no video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop no JS coffee purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop no JS catalog/reviews/FAQ",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop no JS catalog photos visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-mobile-motion-initial CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 637,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "a-mobile-motion-initial no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-mobile-motion-initial hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "a-mobile-motion-initial",
+        "changed": 0,
+        "max_channel": 0,
+        "crop": [
+          0,
+          64,
+          390,
+          844
+        ]
+      }
+    },
+    {
+      "name": "a-mobile-motion-expanded CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 637,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "a-mobile-motion-expanded no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-mobile-motion-expanded hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "a-mobile-motion-expanded",
+        "changed": 0,
+        "max_channel": 0,
+        "crop": [
+          0,
+          64,
+          390,
+          844
+        ]
+      }
+    },
+    {
+      "name": "mobile a errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "a-mobile-reduced-initial CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 637,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "a-mobile-reduced-initial no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-mobile-reduced-initial hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "a-mobile-reduced-initial",
+        "changed": 0,
+        "max_channel": 0,
+        "crop": [
+          0,
+          64,
+          390,
+          844
+        ]
+      }
+    },
+    {
+      "name": "a-mobile-reduced-expanded CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 637,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "a-mobile-reduced-expanded no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "a-mobile-reduced-expanded hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "a-mobile-reduced-expanded",
+        "changed": 0,
+        "max_channel": 0,
+        "crop": [
+          0,
+          64,
+          390,
+          844
+        ]
+      }
+    },
+    {
+      "name": "mobile a errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "b-mobile-motion-initial CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 629,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "b-mobile-motion-initial no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-mobile-motion-initial hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "b-mobile-motion-initial",
+        "changed": 0,
+        "max_channel": 0,
+        "crop": [
+          0,
+          0,
+          390,
+          844
+        ]
+      }
+    },
+    {
+      "name": "b-mobile-motion-expanded CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 629,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "b-mobile-motion-expanded no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-mobile-motion-expanded hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "b-mobile-motion-expanded",
+        "changed": 0,
+        "max_channel": 0,
+        "crop": [
+          0,
+          0,
+          390,
+          844
+        ]
+      }
+    },
+    {
+      "name": "mobile B home/PDP hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile B media absent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile b errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "b-mobile-reduced-initial CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 629,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "b-mobile-reduced-initial no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-mobile-reduced-initial hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "b-mobile-reduced-initial",
+        "changed": 0,
+        "max_channel": 0,
+        "crop": [
+          0,
+          0,
+          390,
+          844
+        ]
+      }
+    },
+    {
+      "name": "b-mobile-reduced-expanded CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 629,
+        "width": 346,
+        "height": 54
+      }
+    },
+    {
+      "name": "b-mobile-reduced-expanded no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "b-mobile-reduced-expanded hero unchanged",
+      "passed": true,
+      "detail": {
+        "state": "b-mobile-reduced-expanded",
+        "changed": 0,
+        "max_channel": 0,
+        "crop": [
+          0,
+          0,
+          390,
+          844
+        ]
+      }
+    },
+    {
+      "name": "mobile B home/PDP hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile B media absent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile b errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "mobile hero opens PDP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile return hero restores focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile cajamarca correct destination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile cajamarca decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile villa-rica correct destination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile villa-rica decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile cusco correct destination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile cusco decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile puno correct destination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile puno decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile amazonas correct destination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile amazonas decoded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48502437282035",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48502437314803",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48572414460147",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48572414492915",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48572414591219",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48572414623987",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48572414656755",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48572414689523",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48502451077363",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48502451110131",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48572414525683",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48572414558451",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile back preserves 02 scroll",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile back preserves 02 selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile forward retains variant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile PDP header buy reaches 05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile store menu keyboard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile store menu Escape focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile store menu outside close",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile store origins link",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile 03 seeks 0.1",
+      "passed": true,
+      "detail": 0.698462
+    },
+    {
+      "name": "mobile 03 seeks 0.75",
+      "passed": true,
+      "detail": 5.234773
+    },
+    {
+      "name": "mobile 03 seeks 0.3",
+      "passed": true,
+      "detail": 2.092432
+    },
+    {
+      "name": "mobile 03 reaches purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile fallback HTML not exposed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile decoded 05 height budget",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile breadth links",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile reviews attributed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile FAQ keyboard \u00bfQu\u00e9 molienda elijo?",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile FAQ keyboard \u00bfLas notas son ingredientes?",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile FAQ keyboard \u00bfC\u00f3mo conservo mi caf\u00e9?",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile FAQ keyboard \u00bfHacen env\u00edos a mi ciudad?",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile 05 independent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile PDP preserves non-Amazonas selection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile no journey JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "mobile reduced motion no video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile no JS coffee purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile no JS catalog/reviews/FAQ",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile no JS catalog photos visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 direct PDP no video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 PDP CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 805.453125,
+        "y": 609.09375,
+        "width": 548.140625,
+        "height": 56
+      }
+    },
+    {
+      "name": "1440x900 PDP no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 variant keyboard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 reload default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 direct return origins",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 home no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 direct PDP no video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 PDP CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 660.953125,
+        "width": 346,
+        "height": 52
+      }
+    },
+    {
+      "name": "390x844 PDP no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 variant keyboard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 reload default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 direct return origins",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 05 height budget",
+      "passed": true,
+      "detail": 1832.15625
+    },
+    {
+      "name": "390x844 home no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PDP 200% text no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 direct PDP no video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 PDP CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 629.28125,
+        "width": 346,
+        "height": 52
+      }
+    },
+    {
+      "name": "390x700 PDP no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 variant keyboard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 reload default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 direct return origins",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 05 height budget",
+      "passed": true,
+      "detail": 1832.15625
+    },
+    {
+      "name": "390x700 home no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 direct PDP no video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 PDP CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 18,
+        "y": 630.265625,
+        "width": 324,
+        "height": 52
+      }
+    },
+    {
+      "name": "360x740 PDP no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 variant keyboard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 reload default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 direct return origins",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 05 height budget",
+      "passed": true,
+      "detail": 1812.28125
+    },
+    {
+      "name": "360x740 home no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 direct PDP no video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 PDP CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 423.28125,
+        "y": 650.390625,
+        "width": 298.625,
+        "height": 56
+      }
+    },
+    {
+      "name": "768x1024 PDP no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 variant keyboard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 reload default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 direct return origins",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 home no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x900 direct PDP no video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x900 PDP CTA within viewport",
+      "passed": true,
+      "detail": {
+        "x": 572.765625,
+        "y": 607.390625,
+        "width": 389.78125,
+        "height": 56
+      }
+    },
+    {
+      "name": "1024x900 PDP no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x900 variant keyboard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x900 reload default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x900 direct return origins",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x900 home no overflow",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 211,
+  "failed": 0,
+  "geometry": [
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "shopHeight": 1461.1875,
+      "pdpCTA": {
+        "x": 805.453125,
+        "y": 609.09375,
+        "width": 548.140625,
+        "height": 56
+      }
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "shopHeight": 1832.15625,
+      "pdpCTA": {
+        "x": 22,
+        "y": 660.953125,
+        "width": 346,
+        "height": 52
+      }
+    },
+    {
+      "viewport": [
+        390,
+        700
+      ],
+      "shopHeight": 1832.15625,
+      "pdpCTA": {
+        "x": 22,
+        "y": 629.28125,
+        "width": 346,
+        "height": 52
+      }
+    },
+    {
+      "viewport": [
+        360,
+        740
+      ],
+      "shopHeight": 1812.28125,
+      "pdpCTA": {
+        "x": 18,
+        "y": 630.265625,
+        "width": 324,
+        "height": 52
+      }
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "shopHeight": 1620.1875,
+      "pdpCTA": {
+        "x": 423.28125,
+        "y": 650.390625,
+        "width": 298.625,
+        "height": 56
+      }
+    },
+    {
+      "viewport": [
+        1024,
+        900
+      ],
+      "shopHeight": 1478.1875,
+      "pdpCTA": {
+        "x": 572.765625,
+        "y": 607.390625,
+        "width": 389.78125,
+        "height": 56
+      }
+    }
+  ],
+  "hero_pixel_comparison": [
+    {
+      "state": "a-desktop-motion-initial",
+      "changed": 0,
+      "max_channel": 0,
+      "crop": [
+        0,
+        72,
+        1440,
+        900
+      ]
+    },
+    {
+      "state": "a-desktop-motion-expanded",
+      "changed": 0,
+      "max_channel": 0,
+      "crop": [
+        0,
+        72,
+        1440,
+        900
+      ]
+    },
+    {
+      "state": "a-desktop-reduced-initial",
+      "changed": 0,
+      "max_channel": 0,
+      "crop": [
+        0,
+        72,
+        1440,
+        900
+      ]
+    },
+    {
+      "state": "a-desktop-reduced-expanded",
+      "changed": 0,
+      "max_channel": 0,
+      "crop": [
+        0,
+        72,
+        1440,
+        900
+      ]
+    },
+    {
+      "state": "b-desktop-motion-initial",
+      "changed": 0,
+      "max_channel": 0,
+      "crop": [
+        0,
+        0,
+        1440,
+        900
+      ]
+    },
+    {
+      "state": "b-desktop-motion-expanded",
+      "changed": 0,
+      "max_channel": 0,
+      "crop": [
+        0,
+        0,
+        1440,
+        900
+      ]
+    },
+    {
+      "state": "b-desktop-reduced-initial",
+      "changed": 0,
+      "max_channel": 0,
+      "crop": [
+        0,
+        0,
+        1440,
+        900
+      ]
+    },
+    {
+      "state": "b-desktop-reduced-expanded",
+      "changed": 409,
+      "max_channel": 14,
+      "crop": [
+        0,
+        0,
+        1440,
+        900
+      ]
+    },
+    {
+      "state": "a-mobile-motion-initial",
+      "changed": 0,
+      "max_channel": 0,
+      "crop": [
+        0,
+        64,
+        390,
+        844
+      ]
+    },
+    {
+      "state": "a-mobile-motion-expanded",
+      "changed": 0,
+      "max_channel": 0,
+      "crop": [
+        0,
+        64,
+        390,
+        844
+      ]
+    },
+    {
+      "state": "a-mobile-reduced-initial",
+      "changed": 0,
+      "max_channel": 0,
+      "crop": [
+        0,
+        64,
+        390,
+        844
+      ]
+    },
+    {
+      "state": "a-mobile-reduced-expanded",
+      "changed": 0,
+      "max_channel": 0,
+      "crop": [
+        0,
+        64,
+        390,
+        844
+      ]
+    },
+    {
+      "state": "b-mobile-motion-initial",
+      "changed": 0,
+      "max_channel": 0,
+      "crop": [
+        0,
+        0,
+        390,
+        844
+      ]
+    },
+    {
+      "state": "b-mobile-motion-expanded",
+      "changed": 0,
+      "max_channel": 0,
+      "crop": [
+        0,
+        0,
+        390,
+        844
+      ]
+    },
+    {
+      "state": "b-mobile-reduced-initial",
+      "changed": 0,
+      "max_channel": 0,
+      "crop": [
+        0,
+        0,
+        390,
+        844
+      ]
+    },
+    {
+      "state": "b-mobile-reduced-expanded",
+      "changed": 0,
+      "max_channel": 0,
+      "crop": [
+        0,
+        0,
+        390,
+        844
+      ]
+    }
+  ],
+  "historical_cta_deltas": [
+    {
+      "state": "a-desktop-motion-initial",
+      "cta_delta": {
+        "x": 0.0,
+        "y": -3.125,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "a-desktop-motion-expanded",
+      "cta_delta": {
+        "x": 0.0,
+        "y": -3.125,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "a-desktop-reduced-initial",
+      "cta_delta": {
+        "x": 0.0,
+        "y": -3.125,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "a-desktop-reduced-expanded",
+      "cta_delta": {
+        "x": 0.0,
+        "y": -3.125,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-desktop-motion-initial",
+      "cta_delta": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-desktop-motion-expanded",
+      "cta_delta": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-desktop-reduced-initial",
+      "cta_delta": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-desktop-reduced-expanded",
+      "cta_delta": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "a-mobile-motion-initial",
+      "cta_delta": {
+        "x": 0,
+        "y": 8,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "a-mobile-motion-expanded",
+      "cta_delta": {
+        "x": 0,
+        "y": 8,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "a-mobile-reduced-initial",
+      "cta_delta": {
+        "x": 0,
+        "y": 8,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "a-mobile-reduced-expanded",
+      "cta_delta": {
+        "x": 0,
+        "y": 8,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-mobile-motion-initial",
+      "cta_delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-mobile-motion-expanded",
+      "cta_delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-mobile-reduced-initial",
+      "cta_delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "state": "b-mobile-reduced-expanded",
+      "cta_delta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}

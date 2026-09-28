@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-28",
+  "conditions": "Read-only official product page visit. No cart or purchase. Chromium mobile viewport; not a physical iPhone.",
+  "results": [
+    {
+      "url": "https://www.artidororodriguez.com/products/cafe-amazonas?variant=48572414558451",
+      "status": 200,
+      "variant_inputs": [
+        "48572414558451",
+        "48572414558451",
+        "50290320802035",
+        "48618945020147",
+        "49298912936179"
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://www.artidororodriguez.com/products/miel-de-abeja-perfil-frutal?variant=48575684378867",
+      "status": 200,
+      "variant_inputs": [
+        "48575684378867",
+        "48575684378867",
+        "48778620240115"
+      ],
+      "passed": true
+    }
+  ]
+}

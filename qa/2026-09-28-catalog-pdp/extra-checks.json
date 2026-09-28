@@ -1,0 +1,80 @@
+[
+  {
+    "name": "No new catalog photos or MP4 on initial mobile load",
+    "passed": true,
+    "detail": [
+      {
+        "name": "/assets/chivo-regular.woff2",
+        "bytes": 17720
+      },
+      {
+        "name": "/assets/barlow-condensed-800.woff2",
+        "bytes": 33436
+      },
+      {
+        "name": "/assets/index-CJvvUKEF.js",
+        "bytes": 16648
+      },
+      {
+        "name": "/assets/logo-white.png",
+        "bytes": 9114
+      },
+      {
+        "name": "/assets/index-D_pjUo15.css",
+        "bytes": 57268
+      },
+      {
+        "name": "/assets/cafetal-home-mobile.webp",
+        "bytes": 53020
+      },
+      {
+        "name": "/assets/cafetal-foreground.webp",
+        "bytes": 24460
+      },
+      {
+        "name": "/assets/amazonas-250g.webp",
+        "bytes": 87994
+      },
+      {
+        "name": "/assets/chivo-bold.woff2",
+        "bytes": 17440
+      },
+      {
+        "name": "/assets/scene03-mobile-end.webp",
+        "bytes": 55470
+      },
+      {
+        "name": "/assets/cajamarca-250g.webp",
+        "bytes": 95354
+      },
+      {
+        "name": "/assets/puno-250g.webp",
+        "bytes": 99146
+      }
+    ]
+  },
+  {
+    "name": "05 200% text no horizontal overflow",
+    "passed": true,
+    "detail": {
+      "width": 390,
+      "scroll": 390,
+      "els": []
+    }
+  },
+  {
+    "name": "Video failure keeps poster",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Video failure still reaches configured purchase",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Unknown variant cannot continue",
+    "passed": true,
+    "detail": null
+  }
+]
