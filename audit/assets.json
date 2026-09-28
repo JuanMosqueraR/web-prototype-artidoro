@@ -732,6 +732,96 @@
       "used_in": "A home04, Tarata editorial composition",
       "known_limits": "Authorship/licence and capture date unconfirmed. Prototype use only, visible reference/provisional notice retained. Source resolution limits enlargement.",
       "generation_cost_usd": 0
+    },
+    {
+      "id": "catalog-travel",
+      "status": "REAL_ASSET",
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "source_page": "https://www.artidororodriguez.com/products/la-expedicion-coleccion-travel-line-preventa",
+      "source": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/LATASCONJUNTO_5cdbd70d-d645-452f-a03f-49fbc8d52530.png?v=1782425823",
+      "retrieved": "2026-09-28",
+      "original_file": "audit/source/catalog-travel-original.png",
+      "original_size": [
+        1080,
+        1080
+      ],
+      "original_sha256": "5d3b92388c8f00af66240f39b684f7b36917f8b3e120832d77a18c0d71f28786",
+      "used_file": "public/assets/catalog-travel.webp",
+      "prepared_size": [
+        890,
+        440
+      ],
+      "prepared_bytes": 50582,
+      "prepared_sha256": "e932384f1a6fbb1091237481d2bf38241d027f2a2d3b68171addf6fd937b25f2",
+      "script": "scripts/prepare-catalog-assets.py",
+      "crop_box": [
+        90,
+        385,
+        980,
+        825
+      ],
+      "preparation": "Rectangular whitespace crop; proportional downsize (never upscale); WebP quality 90, method 6. No redraw or generative processing. Runtime CSS multiply on an isolated cream surface integrates the white photographic background; source colors are unchanged in the asset.",
+      "used_in": "A home 05 only"
+    },
+    {
+      "id": "catalog-explorador",
+      "status": "REAL_ASSET",
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "source_page": "https://www.artidororodriguez.com/products/pack-el-explorador-250gr-de-cada-origen",
+      "source": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Packelexplorador2_530b849d-44ff-443b-9916-870fdedeba60.jpg?v=1789062397",
+      "retrieved": "2026-09-28",
+      "original_file": "audit/source/catalog-explorador-original.jpg",
+      "original_size": [
+        1080,
+        1080
+      ],
+      "original_sha256": "2f4f46ae972a72a26f4c55ec9b6b9d6995eb2fdb80e8b4907d273ec4a1d770f7",
+      "used_file": "public/assets/catalog-explorador.webp",
+      "prepared_size": [
+        700,
+        434
+      ],
+      "prepared_bytes": 96670,
+      "prepared_sha256": "1800fd7f8e9856ebf1f2db14401381967875de81d37a0a2c5ab7b8c8909048b3",
+      "script": "scripts/prepare-catalog-assets.py",
+      "crop_box": [
+        90,
+        330,
+        960,
+        870
+      ],
+      "preparation": "Rectangular whitespace crop; proportional downsize (never upscale); WebP quality 90, method 6. No redraw or generative processing. Runtime CSS multiply on an isolated cream surface integrates the white photographic background; source colors are unchanged in the asset.",
+      "used_in": "A home 05 only"
+    },
+    {
+      "id": "catalog-miel",
+      "status": "REAL_ASSET",
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "source_page": "https://www.artidororodriguez.com/products/miel-de-abeja-perfil-frutal",
+      "source": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/MIEL-FRUTAL300G.jpg?v=1789062525",
+      "retrieved": "2026-09-28",
+      "original_file": "audit/source/catalog-miel-original.jpg",
+      "original_size": [
+        1080,
+        1080
+      ],
+      "original_sha256": "fb28c815f391a01dee7f40a8d72397d9342926c25b3323cb00170f59f7b8eaab",
+      "used_file": "public/assets/catalog-miel.webp",
+      "prepared_size": [
+        364,
+        460
+      ],
+      "prepared_bytes": 32874,
+      "prepared_sha256": "ba1ecf8a723807233fb2b5fc4feea69fb276998c5267b6b4866aad1e96c86bf3",
+      "script": "scripts/prepare-catalog-assets.py",
+      "crop_box": [
+        335,
+        385,
+        750,
+        910
+      ],
+      "preparation": "Rectangular whitespace crop; proportional downsize (never upscale); WebP quality 90, method 6. No redraw or generative processing. Runtime CSS multiply on an isolated cream surface integrates the white photographic background; source colors are unchanged in the asset.",
+      "used_in": "A home 05 only"
     }
   ],
   "gaps": [
@@ -830,6 +920,37 @@
       "address_link_source": "verified_copy.cp04_tarata (existing September24 official-location verification); no new address/hours/service claims.",
       "tagline": "Tu próxima taza también puede ser aquí. Editorial invitation, not a new factual product/service claim.",
       "private_design_context": "User stated on2026-09-26 that the owner is a motorcycle enthusiast and explicitly approved the visual motorcycle/helmet detail. Not used as public factual copy."
+    },
+    "catalog_pdp_2026_09_28": {
+      "verified": "2026-09-28",
+      "snapshot": "audit/source/catalog-pdp-2026-09-28.json",
+      "product_sources": {
+        "amazonas": "https://www.artidororodriguez.com/products/cafe-amazonas.js",
+        "travel": "https://www.artidororodriguez.com/products/la-expedicion-coleccion-travel-line-preventa.js",
+        "explorador": "https://www.artidororodriguez.com/products/pack-el-explorador-250gr-de-cada-origen.js",
+        "miel": "https://www.artidororodriguez.com/products/miel-de-abeja-perfil-frutal.js"
+      },
+      "displayed_offers": {
+        "amazonas": "250 g S/39.90; 454 g S/60.00; 1 kg S/99.00. Four actual grinds and 12 variant IDs, generated into src/amazonas-variants.json. Photo remains 250 g, explicitly captioned.",
+        "travel": "5 tins x 200 g; S/260.00",
+        "explorador": "5 origins x 250 g; S/180.00",
+        "miel": "300 g S/25.00; variant 48575684378867, matching the photographed label. Other sizes exist but are not priced in this card."
+      },
+      "amazonas_details_source": "https://www.artidororodriguez.com/products/cafe-amazonas",
+      "amazonas_details": "Rodriguez de Mendoza; orange/molasses tasting notes; medium roast; 1700-1900 masl; Caturra, Tipica, Catimor.",
+      "faq_source": "https://www.artidororodriguez.com/pages/preguntas-frecuentes",
+      "faq_scope": "Grind by method; notes are naturally occurring sensations, not physical added ingredients; closed/dry/dark storage without refrigeration; Lima/provinces via Shalom/Olva. No shipping threshold, fixed delivery time, health or process claim added.",
+      "shipping_link": "https://www.artidororodriguez.com/policies/shipping-policy",
+      "reviews_source": "https://www.artidororodriguez.com/",
+      "reviews_evidence": "audit/source/catalog-reviews-2026-09-28.json",
+      "reviews_usage": "Two verbatim published texts with unchanged author and product. Jorge Terrones/Amazonas also appears on its PDP. Sandy Yris Fernandez Urrutia belongs to Pack El Ahorrador, explicitly labeled, never attributed to Explorador. No stars, averages, verified-purchase badge or invented count.",
+      "categories": {
+        "coffee": "https://www.artidororodriguez.com/collections/cafe",
+        "packs": "https://www.artidororodriguez.com/collections/packs-de-cafe",
+        "nanolots": "https://www.artidororodriguez.com/collections/nanolotes-artidoro-rodriguez",
+        "other": "https://www.artidororodriguez.com/collections/nuevos-ingresos"
+      },
+      "availability_limit": "Static demo snapshot, not live stock or pricing. Final availability, shipping and payment are confirmed in the official shop."
     }
   },
   "ai_generated_assets": [
@@ -849,5 +970,6 @@
     "review_date": "2026-09-23",
     "scope": "Public Artidoro material; no generated imagery. Only the two heroes. Exception for CP04 only (L15): two CONCEPTUAL_ASSET images adopted 2026-09-24."
   },
-  "tarata_editorial_review_date": "2026-09-26"
+  "tarata_editorial_review_date": "2026-09-26",
+  "catalog_pdp_review_date": "2026-09-28"
 }

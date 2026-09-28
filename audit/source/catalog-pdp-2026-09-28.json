@@ -1,0 +1,1300 @@
+{
+  "retrieved": "2026-09-28",
+  "products": {
+    "amazonas": {
+      "source": "https://www.artidororodriguez.com/products/cafe-amazonas.js",
+      "product": {
+        "id": 8906412294387,
+        "title": "Café Origen Amazonas",
+        "handle": "cafe-amazonas",
+        "description": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">En lo profundo del nororiente peruano, donde la cordillera se encuentra con la selva, Amazonas guarda uno de los secretos mejor guardados del café de especialidad. A entre 1,700 y 1,900 metros sobre el nivel del mar, las variedades Caturra, Típica y Catimor crecen con la calma que solo la altura y la humedad de esta tierra pueden dar.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">El resultado es un café de tueste medio con notas vibrantes a naranjas y un fondo de melazas que le da cuerpo y dulzor. Una taza cítrica, envolvente y con carácter — tan diversa como la región que la vio nacer.</p>",
+        "published_at": "2024-09-10T19:24:04-05:00",
+        "created_at": "2024-09-10T19:24:04-05:00",
+        "vendor": "Artidoro Rodriguez",
+        "type": "Origenes",
+        "tags": [
+          "250gr",
+          "Café"
+        ],
+        "price": 3990,
+        "price_min": 3990,
+        "price_max": 9900,
+        "available": true,
+        "price_varies": true,
+        "compare_at_price": 11000,
+        "compare_at_price_min": 11000,
+        "compare_at_price_max": 11000,
+        "compare_at_price_varies": false,
+        "variants": [
+          {
+            "id": 48502437282035,
+            "title": "250g / Grano",
+            "option1": "250g",
+            "option2": "Grano",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336579096819,
+              "product_id": 8906412294387,
+              "position": 1,
+              "created_at": "2026-09-10T13:09:23-05:00",
+              "updated_at": "2026-09-10T13:09:25-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+              "variant_ids": [
+                48502437282035,
+                48502437314803,
+                48572414460147,
+                48572414492915
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 250g / Grano",
+            "public_title": "250g / Grano",
+            "options": [
+              "250g",
+              "Grano"
+            ],
+            "price": 3990,
+            "weight": 250,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842599137523,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48502437314803,
+            "title": "250g / Molido Fino",
+            "option1": "250g",
+            "option2": "Molido Fino",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336579096819,
+              "product_id": 8906412294387,
+              "position": 1,
+              "created_at": "2026-09-10T13:09:23-05:00",
+              "updated_at": "2026-09-10T13:09:25-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+              "variant_ids": [
+                48502437282035,
+                48502437314803,
+                48572414460147,
+                48572414492915
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 250g / Molido Fino",
+            "public_title": "250g / Molido Fino",
+            "options": [
+              "250g",
+              "Molido Fino"
+            ],
+            "price": 3990,
+            "weight": 250,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842599137523,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414460147,
+            "title": "250g / Molido Medio",
+            "option1": "250g",
+            "option2": "Molido Medio",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336579096819,
+              "product_id": 8906412294387,
+              "position": 1,
+              "created_at": "2026-09-10T13:09:23-05:00",
+              "updated_at": "2026-09-10T13:09:25-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+              "variant_ids": [
+                48502437282035,
+                48502437314803,
+                48572414460147,
+                48572414492915
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 250g / Molido Medio",
+            "public_title": "250g / Molido Medio",
+            "options": [
+              "250g",
+              "Molido Medio"
+            ],
+            "price": 3990,
+            "weight": 250,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842599137523,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414492915,
+            "title": "250g / Molido Grueso",
+            "option1": "250g",
+            "option2": "Molido Grueso",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336579096819,
+              "product_id": 8906412294387,
+              "position": 1,
+              "created_at": "2026-09-10T13:09:23-05:00",
+              "updated_at": "2026-09-10T13:09:25-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+              "variant_ids": [
+                48502437282035,
+                48502437314803,
+                48572414460147,
+                48572414492915
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 250g / Molido Grueso",
+            "public_title": "250g / Molido Grueso",
+            "options": [
+              "250g",
+              "Molido Grueso"
+            ],
+            "price": 3990,
+            "weight": 250,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842599137523,
+              "position": 1,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414591219,
+            "title": "454gr / Grano",
+            "option1": "454gr",
+            "option2": "Grano",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336576835827,
+              "product_id": 8906412294387,
+              "position": 4,
+              "created_at": "2026-09-10T13:09:12-05:00",
+              "updated_at": "2026-09-10T13:09:14-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+              "variant_ids": [
+                48572414591219,
+                48572414623987,
+                48572414656755,
+                48572414689523
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 454gr / Grano",
+            "public_title": "454gr / Grano",
+            "options": [
+              "454gr",
+              "Grano"
+            ],
+            "price": 6000,
+            "weight": 500,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842596876531,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414623987,
+            "title": "454gr / Molido Fino",
+            "option1": "454gr",
+            "option2": "Molido Fino",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336576835827,
+              "product_id": 8906412294387,
+              "position": 4,
+              "created_at": "2026-09-10T13:09:12-05:00",
+              "updated_at": "2026-09-10T13:09:14-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+              "variant_ids": [
+                48572414591219,
+                48572414623987,
+                48572414656755,
+                48572414689523
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 454gr / Molido Fino",
+            "public_title": "454gr / Molido Fino",
+            "options": [
+              "454gr",
+              "Molido Fino"
+            ],
+            "price": 6000,
+            "weight": 500,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842596876531,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414656755,
+            "title": "454gr / Molido Medio",
+            "option1": "454gr",
+            "option2": "Molido Medio",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336576835827,
+              "product_id": 8906412294387,
+              "position": 4,
+              "created_at": "2026-09-10T13:09:12-05:00",
+              "updated_at": "2026-09-10T13:09:14-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+              "variant_ids": [
+                48572414591219,
+                48572414623987,
+                48572414656755,
+                48572414689523
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 454gr / Molido Medio",
+            "public_title": "454gr / Molido Medio",
+            "options": [
+              "454gr",
+              "Molido Medio"
+            ],
+            "price": 6000,
+            "weight": 500,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842596876531,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414689523,
+            "title": "454gr / Molido Grueso",
+            "option1": "454gr",
+            "option2": "Molido Grueso",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336576835827,
+              "product_id": 8906412294387,
+              "position": 4,
+              "created_at": "2026-09-10T13:09:12-05:00",
+              "updated_at": "2026-09-10T13:09:14-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+              "variant_ids": [
+                48572414591219,
+                48572414623987,
+                48572414656755,
+                48572414689523
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 454gr / Molido Grueso",
+            "public_title": "454gr / Molido Grueso",
+            "options": [
+              "454gr",
+              "Molido Grueso"
+            ],
+            "price": 6000,
+            "weight": 500,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842596876531,
+              "position": 4,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48502451077363,
+            "title": "1kg / Grano",
+            "option1": "1kg",
+            "option2": "Grano",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336580800755,
+              "product_id": 8906412294387,
+              "position": 3,
+              "created_at": "2026-09-10T13:09:29-05:00",
+              "updated_at": "2026-09-10T13:09:30-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+              "variant_ids": [
+                48502451077363,
+                48502451110131,
+                48572414525683,
+                48572414558451
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 1kg / Grano",
+            "public_title": "1kg / Grano",
+            "options": [
+              "1kg",
+              "Grano"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842600841459,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48502451110131,
+            "title": "1kg / Molido Fino",
+            "option1": "1kg",
+            "option2": "Molido Fino",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336580800755,
+              "product_id": 8906412294387,
+              "position": 3,
+              "created_at": "2026-09-10T13:09:29-05:00",
+              "updated_at": "2026-09-10T13:09:30-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+              "variant_ids": [
+                48502451077363,
+                48502451110131,
+                48572414525683,
+                48572414558451
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 1kg / Molido Fino",
+            "public_title": "1kg / Molido Fino",
+            "options": [
+              "1kg",
+              "Molido Fino"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842600841459,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414525683,
+            "title": "1kg / Molido Medio",
+            "option1": "1kg",
+            "option2": "Molido Medio",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336580800755,
+              "product_id": 8906412294387,
+              "position": 3,
+              "created_at": "2026-09-10T13:09:29-05:00",
+              "updated_at": "2026-09-10T13:09:30-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+              "variant_ids": [
+                48502451077363,
+                48502451110131,
+                48572414525683,
+                48572414558451
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 1kg / Molido Medio",
+            "public_title": "1kg / Molido Medio",
+            "options": [
+              "1kg",
+              "Molido Medio"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842600841459,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48572414558451,
+            "title": "1kg / Molido Grueso",
+            "option1": "1kg",
+            "option2": "Molido Grueso",
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": {
+              "id": 49336580800755,
+              "product_id": 8906412294387,
+              "position": 3,
+              "created_at": "2026-09-10T13:09:29-05:00",
+              "updated_at": "2026-09-10T13:09:30-05:00",
+              "alt": null,
+              "width": 1080,
+              "height": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+              "variant_ids": [
+                48502451077363,
+                48502451110131,
+                48572414525683,
+                48572414558451
+              ]
+            },
+            "available": true,
+            "name": "Café Origen Amazonas - 1kg / Molido Grueso",
+            "public_title": "1kg / Molido Grueso",
+            "options": [
+              "1kg",
+              "Molido Grueso"
+            ],
+            "price": 9900,
+            "weight": 1000,
+            "compare_at_price": 11000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "featured_media": {
+              "alt": null,
+              "id": 40842600841459,
+              "position": 3,
+              "preview_image": {
+                "aspect_ratio": 1.0,
+                "height": 1080,
+                "width": 1080,
+                "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770"
+              }
+            },
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          }
+        ],
+        "images": [
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Mapas_ee227914-4e73-4484-9fda-758d740295e5.png?v=1774394565",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/AMAZONAS.png?v=1782855571"
+        ],
+        "featured_image": "//cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+        "options": [
+          {
+            "name": "Tamaño",
+            "position": 1,
+            "values": [
+              "250g",
+              "454gr",
+              "1kg"
+            ]
+          },
+          {
+            "name": "Tipo de molido",
+            "position": 2,
+            "values": [
+              "Grano",
+              "Molido Fino",
+              "Molido Medio",
+              "Molido Grueso"
+            ]
+          }
+        ],
+        "url": "/products/cafe-amazonas",
+        "media": [
+          {
+            "alt": null,
+            "id": 40842599137523,
+            "position": 1,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/250GAMAZONAS.jpg?v=1789063765",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 37992130969843,
+            "position": 2,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 2000,
+              "width": 2000,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Mapas_ee227914-4e73-4484-9fda-758d740295e5.png?v=1774394565"
+            },
+            "aspect_ratio": 1.0,
+            "height": 2000,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Mapas_ee227914-4e73-4484-9fda-758d740295e5.png?v=1774394565",
+            "width": 2000
+          },
+          {
+            "alt": null,
+            "id": 40842600841459,
+            "position": 3,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KAMAZONAS.jpg?v=1789063770",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 40842596876531,
+            "position": 4,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1LBAMAZONAS.jpg?v=1789063754",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 38626393751795,
+            "position": 5,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/AMAZONAS.png?v=1782855571"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/AMAZONAS.png?v=1782855571",
+            "width": 1080
+          }
+        ],
+        "requires_selling_plan": false,
+        "selling_plan_groups": []
+      }
+    },
+    "travel": {
+      "source": "https://www.artidororodriguez.com/products/la-expedicion-coleccion-travel-line-preventa.js",
+      "product": {
+        "id": 9633166622963,
+        "title": "Colección Travel Line",
+        "handle": "la-expedicion-coleccion-travel-line-preventa",
+        "description": "<p class=\"font-claude-response-body break-words whitespace-normal\"><strong>Unidades Limitadas</strong></p>\n<p class=\"font-claude-response-body break-words whitespace-normal\">Explorar el café peruano es descubrir las montañas, las selvas y los animales que le dan identidad a cada origen.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal\">La colección <strong>Travel Line</strong> reúne nuestros cinco orígenes en latas diseñadas para viajar y para quedarse. Cada una guarda 200gr de café de especialidad de un solo origen, dentro de una lata que protege el aroma y la frescura hasta tu última taza.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal\">Y cada lata cuenta una historia: un lugar que define su región y un animal endémico que la habita. El otorongo de Amazonas, el gallito de las rocas de Villa Rica, la pacarana de Cajamarca, el mono ardilla de Cusco y el oso de anteojos de Puno. Cinco territorios del Perú, ilustrados para tenerlos juntos.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal\">Detrás de cada origen hay familias agricultoras con las que trabajamos hace años, respetando sus procesos y pagando un precio justo por su café. Cada lata que te llevas sostiene ese trabajo.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal\"><meta charset=\"utf-8\"><strong>Ya está a la venta.</strong> Es una edición limitada, así que las unidades no se van a reponer. Llévate las cinco latas mientras queden disponibles.</p>",
+        "published_at": "2026-06-25T17:36:16-05:00",
+        "created_at": "2026-06-25T17:01:55-05:00",
+        "vendor": "Artidoro Rodriguez Café",
+        "type": "Origenes",
+        "tags": [
+          "Orígenes",
+          "Pack",
+          "Travel Line"
+        ],
+        "price": 26000,
+        "price_min": 26000,
+        "price_max": 26000,
+        "available": true,
+        "price_varies": false,
+        "compare_at_price": 30000,
+        "compare_at_price_min": 30000,
+        "compare_at_price_max": 30000,
+        "compare_at_price_varies": false,
+        "variants": [
+          {
+            "id": 49298912936179,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "name": "Colección Travel Line",
+            "public_title": null,
+            "options": [
+              "Default Title"
+            ],
+            "price": 26000,
+            "weight": 1500,
+            "compare_at_price": 30000,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          }
+        ],
+        "images": [
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/LATASCONJUNTO_5cdbd70d-d645-452f-a03f-49fbc8d52530.png?v=1782425823",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/LATASGIF1080X1080.gif?v=1782425795",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/AMAZONAS_FRONT.jpg?v=1782425863",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/CAJAMARCA_FRONT.jpg?v=1782425879",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/CUSCO_FRONT.jpg?v=1782425876",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/PUNO_FRONT.jpg?v=1782425883",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/VILLA_RICA_FRONT.jpg?v=1782425895"
+        ],
+        "featured_image": "//cdn.shopify.com/s/files/1/0718/7395/4035/files/LATASCONJUNTO_5cdbd70d-d645-452f-a03f-49fbc8d52530.png?v=1782425823",
+        "options": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "url": "/products/la-expedicion-coleccion-travel-line-preventa",
+        "media": [
+          {
+            "alt": null,
+            "id": 38594746974451,
+            "position": 1,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/LATASCONJUNTO_5cdbd70d-d645-452f-a03f-49fbc8d52530.png?v=1782425823"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/LATASCONJUNTO_5cdbd70d-d645-452f-a03f-49fbc8d52530.png?v=1782425823",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 38594745270515,
+            "position": 2,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/LATASGIF1080X1080.gif?v=1782425795"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/LATASGIF1080X1080.gif?v=1782425795",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 38594749104371,
+            "position": 3,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/AMAZONAS_FRONT.jpg?v=1782425863"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/AMAZONAS_FRONT.jpg?v=1782425863",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 38594749366515,
+            "position": 4,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/CAJAMARCA_FRONT.jpg?v=1782425879"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/CAJAMARCA_FRONT.jpg?v=1782425879",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 38594749595891,
+            "position": 5,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/CUSCO_FRONT.jpg?v=1782425876"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/CUSCO_FRONT.jpg?v=1782425876",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 38594749825267,
+            "position": 6,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/PUNO_FRONT.jpg?v=1782425883"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/PUNO_FRONT.jpg?v=1782425883",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 38594750021875,
+            "position": 7,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/VILLA_RICA_FRONT.jpg?v=1782425895"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/VILLA_RICA_FRONT.jpg?v=1782425895",
+            "width": 1080
+          }
+        ],
+        "requires_selling_plan": false,
+        "selling_plan_groups": []
+      }
+    },
+    "explorador": {
+      "source": "https://www.artidororodriguez.com/products/pack-el-explorador-250gr-de-cada-origen.js",
+      "product": {
+        "id": 9415147127027,
+        "title": "Pack \"El Explorador\" 250gr de cada origen",
+        "handle": "pack-el-explorador-250gr-de-cada-origen",
+        "description": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Cinco orígenes. Cinco de las mejores zonas cafetaleras del Perú. Todo en un solo pedido.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">El Pack El Explorador es el punto de partida perfecto para quien quiere conocer de verdad el café peruano. Recibes 250gr de cada uno de nuestros orígenes: Amazonas, Villa Rica, Cajamarca, Cusco y Puno.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Cada bolsa es una región distinta, una altitud diferente, una comunidad caficultora con su propia manera de trabajar la tierra. Juntas, cuentan la historia completa de lo que Artidoro lleva años construyendo con más de 150 familias comprometidas con la calidad y el comercio justo.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Pruébalos todos. Descubre tu sabor. Y cuando lo encuentres, ya sabes dónde volver.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\"><strong>¿Qué incluye?</strong> Una bolsa de 250gr de cada origen: Amazonas, Villa Rica, Cajamarca, Cusco y Puno. En total, 1.25kg de café peruano para explorar.</p>",
+        "published_at": "2026-03-24T16:08:36-05:00",
+        "created_at": "2026-03-10T16:20:50-05:00",
+        "vendor": "Artidoro Rodriguez Café",
+        "type": "Origenes",
+        "tags": [
+          "Orígenes",
+          "Pack"
+        ],
+        "price": 18000,
+        "price_min": 18000,
+        "price_max": 18000,
+        "available": true,
+        "price_varies": false,
+        "compare_at_price": 19950,
+        "compare_at_price_min": 19950,
+        "compare_at_price_max": 19950,
+        "compare_at_price_varies": false,
+        "variants": [
+          {
+            "id": 48618945020147,
+            "title": "Default Title",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": false,
+            "featured_image": null,
+            "available": true,
+            "name": "Pack \"El Explorador\" 250gr de cada origen",
+            "public_title": null,
+            "options": [
+              "Default Title"
+            ],
+            "price": 18000,
+            "weight": 1500,
+            "compare_at_price": 19950,
+            "inventory_management": null,
+            "barcode": null,
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          }
+        ],
+        "images": [
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/Packelexplorador2_530b849d-44ff-443b-9916-870fdedeba60.jpg?v=1789062397"
+        ],
+        "featured_image": "//cdn.shopify.com/s/files/1/0718/7395/4035/files/Packelexplorador2_530b849d-44ff-443b-9916-870fdedeba60.jpg?v=1789062397",
+        "options": [
+          {
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "url": "/products/pack-el-explorador-250gr-de-cada-origen",
+        "media": [
+          {
+            "alt": null,
+            "id": 40842427138291,
+            "position": 1,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Packelexplorador2_530b849d-44ff-443b-9916-870fdedeba60.jpg?v=1789062397"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Packelexplorador2_530b849d-44ff-443b-9916-870fdedeba60.jpg?v=1789062397",
+            "width": 1080
+          }
+        ],
+        "requires_selling_plan": false,
+        "selling_plan_groups": []
+      }
+    },
+    "miel": {
+      "source": "https://www.artidororodriguez.com/products/miel-de-abeja-perfil-frutal.js",
+      "product": {
+        "id": 9397936128243,
+        "title": "Miel de Abeja - Perfil Frutal",
+        "handle": "miel-de-abeja-perfil-frutal",
+        "description": "<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Con notas frutales que sorprenden desde el primer momento, esta miel tiene carácter propio. Más viva, más expresiva — el tipo de dulzor que despierta el paladar en lugar de adormecerlo.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\">Perfecta para acompañar tu café de proceso natural o honey, donde la fruta ya está presente y esta miel la eleva. También para quesos frescos, yogurt o simplemente la cuchara directo al frasco — sin juzgar.</p>\n<p class=\"font-claude-response-body break-words whitespace-normal leading-[1.7]\"><em>De quienes cuidan el origen, para quienes valoran lo que toman.</em></p>",
+        "published_at": "2026-03-24T16:08:33-05:00",
+        "created_at": "2026-02-25T13:20:55-05:00",
+        "vendor": "Artidoro Rodriguez Café",
+        "type": "Miel",
+        "tags": [
+          "Miel"
+        ],
+        "price": 1500,
+        "price_min": 1500,
+        "price_max": 3900,
+        "available": true,
+        "price_varies": true,
+        "compare_at_price": null,
+        "compare_at_price_min": 0,
+        "compare_at_price_max": 0,
+        "compare_at_price_varies": false,
+        "variants": [
+          {
+            "id": 48575684346099,
+            "title": "175gr",
+            "option1": "175gr",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": null,
+            "available": true,
+            "name": "Miel de Abeja - Perfil Frutal - 175gr",
+            "public_title": "175gr",
+            "options": [
+              "175gr"
+            ],
+            "price": 1500,
+            "weight": 175,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48575684378867,
+            "title": "300gr",
+            "option1": "300gr",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": null,
+            "available": true,
+            "name": "Miel de Abeja - Perfil Frutal - 300gr",
+            "public_title": "300gr",
+            "options": [
+              "300gr"
+            ],
+            "price": 2500,
+            "weight": 175,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          },
+          {
+            "id": 48575684411635,
+            "title": "600gr",
+            "option1": "600gr",
+            "option2": null,
+            "option3": null,
+            "sku": null,
+            "requires_shipping": true,
+            "taxable": true,
+            "featured_image": null,
+            "available": true,
+            "name": "Miel de Abeja - Perfil Frutal - 600gr",
+            "public_title": "600gr",
+            "options": [
+              "600gr"
+            ],
+            "price": 3900,
+            "weight": 175,
+            "compare_at_price": null,
+            "inventory_management": "shopify",
+            "barcode": null,
+            "quantity_rule": {
+              "min": 1,
+              "max": null,
+              "increment": 1
+            },
+            "quantity_price_breaks": [],
+            "requires_selling_plan": false,
+            "selling_plan_allocations": []
+          }
+        ],
+        "images": [
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/MIEL-FRUTAL300G.jpg?v=1789062525",
+          "//cdn.shopify.com/s/files/1/0718/7395/4035/files/MIEL-FRUTAL600G.jpg?v=1789062566"
+        ],
+        "featured_image": "//cdn.shopify.com/s/files/1/0718/7395/4035/files/MIEL-FRUTAL300G.jpg?v=1789062525",
+        "options": [
+          {
+            "name": "Tamaño",
+            "position": 1,
+            "values": [
+              "175gr",
+              "300gr",
+              "600gr"
+            ]
+          }
+        ],
+        "url": "/products/miel-de-abeja-perfil-frutal",
+        "media": [
+          {
+            "alt": null,
+            "id": 40842439229683,
+            "position": 1,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/MIEL-FRUTAL300G.jpg?v=1789062525"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/MIEL-FRUTAL300G.jpg?v=1789062525",
+            "width": 1080
+          },
+          {
+            "alt": null,
+            "id": 40842443227379,
+            "position": 2,
+            "preview_image": {
+              "aspect_ratio": 1.0,
+              "height": 1080,
+              "width": 1080,
+              "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/MIEL-FRUTAL600G.jpg?v=1789062566"
+            },
+            "aspect_ratio": 1.0,
+            "height": 1080,
+            "media_type": "image",
+            "src": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/MIEL-FRUTAL600G.jpg?v=1789062566",
+            "width": 1080
+          }
+        ],
+        "requires_selling_plan": false,
+        "selling_plan_groups": []
+      }
+    }
+  }
+}

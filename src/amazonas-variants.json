@@ -1,0 +1,90 @@
+{
+  "checked": "2026-09-28",
+  "source": "https://www.artidororodriguez.com/products/cafe-amazonas.js",
+  "variants": [
+    {
+      "id": 48502437282035,
+      "option1": "250g",
+      "option2": "Grano",
+      "price": 3990,
+      "available": true
+    },
+    {
+      "id": 48502437314803,
+      "option1": "250g",
+      "option2": "Molido Fino",
+      "price": 3990,
+      "available": true
+    },
+    {
+      "id": 48572414460147,
+      "option1": "250g",
+      "option2": "Molido Medio",
+      "price": 3990,
+      "available": true
+    },
+    {
+      "id": 48572414492915,
+      "option1": "250g",
+      "option2": "Molido Grueso",
+      "price": 3990,
+      "available": true
+    },
+    {
+      "id": 48572414591219,
+      "option1": "454gr",
+      "option2": "Grano",
+      "price": 6000,
+      "available": true
+    },
+    {
+      "id": 48572414623987,
+      "option1": "454gr",
+      "option2": "Molido Fino",
+      "price": 6000,
+      "available": true
+    },
+    {
+      "id": 48572414656755,
+      "option1": "454gr",
+      "option2": "Molido Medio",
+      "price": 6000,
+      "available": true
+    },
+    {
+      "id": 48572414689523,
+      "option1": "454gr",
+      "option2": "Molido Grueso",
+      "price": 6000,
+      "available": true
+    },
+    {
+      "id": 48502451077363,
+      "option1": "1kg",
+      "option2": "Grano",
+      "price": 9900,
+      "available": true
+    },
+    {
+      "id": 48502451110131,
+      "option1": "1kg",
+      "option2": "Molido Fino",
+      "price": 9900,
+      "available": true
+    },
+    {
+      "id": 48572414525683,
+      "option1": "1kg",
+      "option2": "Molido Medio",
+      "price": 9900,
+      "available": true
+    },
+    {
+      "id": 48572414558451,
+      "option1": "1kg",
+      "option2": "Molido Grueso",
+      "price": 9900,
+      "available": true
+    }
+  ]
+}
