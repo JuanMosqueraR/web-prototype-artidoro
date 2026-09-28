@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-28",
+  "conditions": "Read-only official product page visit. No cart or purchase. Chromium mobile viewport; not a physical iPhone.",
+  "results": [
+    {
+      "url": "https://www.artidororodriguez.com/products/pack-3kg-origenes-1?variant=48578579431667",
+      "status": 200,
+      "variant_inputs": [
+        "48578579431667",
+        "48578579431667",
+        "48618945020147",
+        "48778620240115"
+      ],
+      "passed": true
+    },
+    {
+      "url": "https://www.artidororodriguez.com/products/pack-3kg-origenes-1?variant=48578657255667",
+      "status": 200,
+      "variant_inputs": [
+        "48578657255667",
+        "48578657255667",
+        "48618945020147",
+        "48778620240115"
+      ],
+      "passed": true
+    }
+  ]
+}

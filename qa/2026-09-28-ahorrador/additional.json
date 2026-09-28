@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Pages subpath pack photo and CTA",
+    "passed": true,
+    "failed_requests": []
+  },
+  {
+    "name": "(390, 844) origin buy fits",
+    "passed": true,
+    "sectionHeight": 739.875,
+    "cta": {
+      "x": 22,
+      "y": 654.875,
+      "width": 346,
+      "height": 52
+    },
+    "packOffer": {
+      "x": 22,
+      "y": 730.875,
+      "width": 346,
+      "height": 49
+    }
+  },
+  {
+    "name": "(390, 700) origin buy fits",
+    "passed": true,
+    "sectionHeight": 659.875,
+    "cta": {
+      "x": 22,
+      "y": 574.875,
+      "width": 346,
+      "height": 52
+    },
+    "packOffer": {
+      "x": 22,
+      "y": 650.875,
+      "width": 346,
+      "height": 49
+    }
+  },
+  {
+    "name": "(360, 740) origin buy fits",
+    "passed": true,
+    "sectionHeight": 687.125,
+    "cta": {
+      "x": 22,
+      "y": 602.125,
+      "width": 316,
+      "height": 52
+    },
+    "packOffer": {
+      "x": 22,
+      "y": 678.125,
+      "width": 316,
+      "height": 49
+    }
+  }
+]
