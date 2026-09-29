@@ -1,6 +1,8 @@
 # Artidoro — demo de la home 01–05
 
-**Revisión actual — El Ahorrador:** [demo, capturas y validación](docs/AHORRADOR_REVIEW.md). Acceso al pack desde 01/02/Tienda, protagonista en 05 y ficha con tres orígenes configurables: `http://127.0.0.1:4175/#producto-ahorrador`. Desde checkpoint `87ea725`, sin commit final ni publicación. Las revisiones inferiores son históricas.
+**Estado actual — integrado en `master` (28 de septiembre):** selector 02, catálogo y ambas PDP, incluido El Ahorrador. Integración local por fast-forward hasta `a5512e2`, sin push ni nueva publicación. [Handoff para retomar](docs/HANDOFF.md) · [Prompt de presentación y propuesta para Claude](docs/CLAUDE_PRESENTACION_PROMPT.md).
+
+**Revisión actual — El Ahorrador:** [demo, capturas y validación](docs/AHORRADOR_REVIEW.md). Acceso al pack desde 01/02/Tienda, protagonista en 05 y ficha con tres orígenes configurables: `http://127.0.0.1:4175/#producto-ahorrador`. Checkpoint previo `87ea725`; cambios versionados e integrados por petición del usuario. La prueba física de iPhone de esta última iteración sigue pendiente. Las revisiones inferiores son históricas.
 
 **Revisión anterior — catálogo y PDP (28 de septiembre):** [entrega y capturas directas](docs/CATALOG_PDP_REVIEW.md). Rama `feat/catalogo-pdp` desde `38a209f`, versionada por petición del usuario tras confirmar que se ve bien en iPhone; sin merge ni publicación desde esta revisión. Home `http://127.0.0.1:4175/`; ficha Amazonas `http://127.0.0.1:4175/#producto-amazonas`. Incluye 05 renovado, categorías, reseñas, FAQ y una PDP con doce variantes reales y continuación a la tienda oficial. Las revisiones de abajo son históricas. La propuesta no implementa un carrito o checkout propio.
 

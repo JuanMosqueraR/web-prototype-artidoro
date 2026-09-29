@@ -1,6 +1,6 @@
 # El Ahorrador — revisión del 28 de septiembre de 2026
 
-Rama `feat/catalogo-pdp`, checkpoint `87ea725`. Esta iteración queda sin commit, merge ni publicación. [Entrega actual](AHORRADOR_REVIEW.md). Home local `http://127.0.0.1:4175/`; ficha `http://127.0.0.1:4175/#producto-ahorrador`. La confirmación anterior de iPhone corresponde al checkpoint, no a esta iteración.
+Desarrollada en `feat/catalogo-pdp` desde checkpoint `87ea725`; versionada e integrada localmente en `master` por fast-forward hasta `a5512e2`, por instrucción del usuario (L22). Sin push ni nueva publicación. [Handoff actual](HANDOFF.md) · [Entrega](AHORRADOR_REVIEW.md). Home local `http://127.0.0.1:4175/`; ficha `http://127.0.0.1:4175/#producto-ahorrador`. La confirmación anterior de iPhone corresponde al checkpoint, no a esta iteración.
 
 | Ruta nueva o afectada | Función / producción |
 |---|---|
@@ -10,6 +10,7 @@ Rama `feat/catalogo-pdp`, checkpoint `87ea725`. Esta iteración queda sin commit
 | `public/assets/ahorrador-*-1kg.webp`, `scripts/prepare-ahorrador.py` | Tres recortes WebP reproducibles; script también genera variantes |
 | `qa/2026-09-28-ahorrador/` | Regresión, pruebas de combinación, destinos oficiales y capturas directas |
 | `dist/ahorrador-pages/` | Build local ignorado, generado por `scripts/build-pages.py --allow-dirty --out dist/ahorrador-pages`; sin staging de rama ni publicación |
+| `docs/HANDOFF.md`, `docs/CLAUDE_PRESENTACION_PROMPT.md` | Handoff escrito manualmente y prompt para redactar presentación/propuesta; no son una cotización aprobada |
 
 Node aislado 22.23.1/Vite 7.1.3, sin cambio de tooling. Las entregas inferiores y sus evidencias se conservan como históricas.
 

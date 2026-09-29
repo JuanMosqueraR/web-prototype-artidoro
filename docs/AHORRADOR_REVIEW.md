@@ -2,7 +2,7 @@
 
 Demo local: http://127.0.0.1:4175/ · Ficha directa: http://127.0.0.1:4175/#producto-ahorrador
 
-Rama `feat/catalogo-pdp`, checkpoint recuperable `87ea725`. Implementación sin commit final, merge ni publicación. Requiere el preview activo. Autorización L21; la confirmación anterior del usuario en iPhone correspondía al checkpoint, no a estos cambios.
+Desarrollada en `feat/catalogo-pdp`, checkpoint recuperable `87ea725`. El usuario autorizó después el cierre y merge (L22): cambios versionados e integrados en `master` local por fast-forward hasta `a5512e2`, sin push ni publicación. [Handoff](HANDOFF.md). La demo local requiere el preview activo. Autorización de implementación L21; la confirmación anterior del usuario en iPhone correspondía al checkpoint, no a estos cambios.
 
 ## Qué cambió
 

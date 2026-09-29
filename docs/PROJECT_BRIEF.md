@@ -1,5 +1,9 @@
 # Artidoro — Project brief
 
+**Lectura actual, 28 de septiembre de 2026:** el brief inferior es el snapshot histórico del Hero Lab. Las autorizaciones posteriores L18–L22 en [DECISIONS.md](DECISIONS.md) desarrollan A como demo de home 01–05 y dos PDP, ahora integradas localmente en `master`. El objetivo actual es presentar al dueño una experiencia de ecommerce diferenciada y facilitar la contratación de la siguiente fase; no se ha contratado ni implementado una tienda de producción. Estado y límites: [HANDOFF.md](HANDOFF.md). No interpretar el alcance histórico inferior como el estado implementado actual.
+
+---
+
 Handoff del checkpoint Hero Lab. Fecha de corte: 23 de septiembre de 2026. Colocar estos cinco documentos en `/docs` de la raíz del proyecto extraído.
 
 ## Marca y contexto
