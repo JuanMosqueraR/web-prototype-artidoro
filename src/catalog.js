@@ -58,6 +58,15 @@ function updatePack() {
   const price = variant ? `S/ ${(variant.price / 100).toFixed(2)}` : 'No disponible';
   pack.querySelector('.product-price').textContent = price;
   pack.querySelector('.pack-total strong').textContent = price;
+  const compareAt = Number(pack.dataset.compareAt);
+  const saving = variant && compareAt > variant.price ? compareAt - variant.price : 0;
+  pack.querySelector('[data-pack-saving]').hidden = !saving;
+  pack.querySelector('[data-pack-total-saving]').hidden = !saving;
+  if (saving) {
+    const amount = `S/ ${Number.isInteger(saving / 100) ? saving / 100 : (saving / 100).toFixed(2)}`;
+    pack.querySelector('[data-pack-saving]').lastChild.textContent = ` · Ahorras ${amount}`;
+    pack.querySelector('[data-pack-total-saving]').textContent = ` · Ahorras ${amount}`;
+  }
   pack.querySelector('.pack-selection').textContent = variant
     ? chosen.join(' · ') + (available ? '' : ' · Agotado')
     : 'Esta combinación no está disponible.';
