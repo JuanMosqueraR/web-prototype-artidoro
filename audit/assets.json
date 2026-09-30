@@ -909,6 +909,37 @@
       "original_sha256": "f2eb762cb3c94da2da403a065715349a08b5dd09d658950aa6ec42fbb604354f",
       "used_in": "Not rendered. Retained discrepancy evidence.",
       "discrepancy": "Labels visible in the official group photograph say 454g; the sold product is 3 x 1kg. Reported to user. Replaced in this demo by separately sourced actual 1kg product photos, without altering the group photo."
+    },
+    {
+      "id": "nanolote-tin",
+      "status": "REAL_ASSET",
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "source_page": "https://www.artidororodriguez.com/collections/nanolotes-artidoro-rodriguez",
+      "source": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/REDHONEYVERDE1.jpg?v=1787155328",
+      "product": "NanoLote Typica, Bourbon y Caturra (cafe-nanolote-cr95), first product image of the official Nanolotes collection",
+      "retrieved": "2026-09-30",
+      "original_file": "audit/source/nanolote-original.jpg",
+      "original_size": [
+        1080,
+        1080
+      ],
+      "original_sha256": "1ec34e406c7162f2a65d9812d3175c240bd4272b100fdb80e717d51d6876ed05",
+      "used_file": "public/assets/nanolote-tin.webp",
+      "prepared_size": [
+        489,
+        563
+      ],
+      "prepared_bytes": 43926,
+      "prepared_sha256": "eae6a4575a6edc1a90e0075162bdab62d664855686319985c30f3ee3bac4dea6",
+      "script": "scripts/prepare-nanolotes.py",
+      "crop_box": [
+        306,
+        255,
+        795,
+        818
+      ],
+      "preparation": "Rectangular whitespace crop; proportional downsize (never upscale); WebP quality 90, method 6. No redraw or generative processing. Runtime CSS multiply on the light tile integrates the white photographic background.",
+      "used_in": "A home closing band, Nanolotes tile only. Illustrates the collection with one of its three official tins; other nanolotes exist (cr95, cr97) and are not shown."
     }
   ],
   "gaps": [
@@ -1037,7 +1068,8 @@
         "nanolots": "https://www.artidororodriguez.com/collections/nanolotes-artidoro-rodriguez",
         "other": "https://www.artidororodriguez.com/collections/nuevos-ingresos"
       },
-      "availability_limit": "Static demo snapshot, not live stock or pricing. Final availability, shipping and payment are confirmed in the official shop."
+      "availability_limit": "Static demo snapshot, not live stock or pricing. Final availability, shipping and payment are confirmed in the official shop.",
+      "reviews_usage_2026_09_30": "L27: the home now shows the 5 stars stored in audit/source/catalog-reviews-2026-09-28.json for each of the two published reviews. No average, count or verified-purchase badge. Explore tiles reuse existing assets (amazonas-250g, ahorrador-amazonas-1kg, catalog-miel); Nanolotes has no image (missing asset)."
     },
     "ahorrador_2026_09_28": {
       "verified": "2026-09-28",
