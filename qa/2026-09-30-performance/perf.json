@@ -1,0 +1,94 @@
+{
+ "mobile-slow4g-cpu4x": {
+  "median": {
+   "fcp": 1296,
+   "lcp": 1668,
+   "cls": 0,
+   "tbt": 9,
+   "load": 2902,
+   "kb": 513,
+   "requests": 13
+  },
+  "runs": [
+   {
+    "fcp": 3608,
+    "lcp": 3992,
+    "cls": 0,
+    "tbt": 21,
+    "load": 5258,
+    "kb": 513,
+    "requests": 13,
+    "bad": [],
+    "lcpEl": "landscape-far https://juanmosquerar.github.io/web-prototype-artidoro/assets/cafetal-home-m"
+   },
+   {
+    "fcp": 1296,
+    "lcp": 1588,
+    "cls": 0,
+    "tbt": 0,
+    "load": 2902,
+    "kb": 513,
+    "requests": 13,
+    "bad": [],
+    "lcpEl": "landscape-far https://juanmosquerar.github.io/web-prototype-artidoro/assets/cafetal-home-m"
+   },
+   {
+    "fcp": 1272,
+    "lcp": 1668,
+    "cls": 0,
+    "tbt": 9,
+    "load": 2900,
+    "kb": 513,
+    "requests": 13,
+    "bad": [],
+    "lcpEl": "landscape-far https://juanmosquerar.github.io/web-prototype-artidoro/assets/cafetal-home-m"
+   }
+  ]
+ },
+ "desktop-unthrottled": {
+  "median": {
+   "fcp": 188,
+   "lcp": 208,
+   "cls": 0.0,
+   "tbt": 0,
+   "load": 192,
+   "kb": 556,
+   "requests": 13
+  },
+  "runs": [
+   {
+    "fcp": 172,
+    "lcp": 532,
+    "cls": 0.0,
+    "tbt": 0,
+    "load": 490,
+    "kb": 556,
+    "requests": 13,
+    "bad": [],
+    "lcpEl": "landscape-far https://juanmosquerar.github.io/web-prototype-artidoro/assets/cafetal-home-d"
+   },
+   {
+    "fcp": 208,
+    "lcp": 208,
+    "cls": 0.0,
+    "tbt": 0,
+    "load": 192,
+    "kb": 556,
+    "requests": 13,
+    "bad": [],
+    "lcpEl": "landscape-far https://juanmosquerar.github.io/web-prototype-artidoro/assets/cafetal-home-d"
+   },
+   {
+    "fcp": 188,
+    "lcp": 188,
+    "cls": 0.0,
+    "tbt": 0,
+    "load": 177,
+    "kb": 556,
+    "requests": 13,
+    "bad": [],
+    "lcpEl": "landscape-far https://juanmosquerar.github.io/web-prototype-artidoro/assets/cafetal-home-d"
+   }
+  ]
+ }
+}
