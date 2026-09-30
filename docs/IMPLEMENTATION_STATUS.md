@@ -94,6 +94,23 @@ Node aislado 22.23.1, Vite 7.1.3, Python 3.10 y Windows. Preview local de esta s
 
 ---
 
+# Despliegue automático con GitHub Actions — 30 de septiembre de 2026
+
+Sobre `2e93f2f`. La publicación en Pages deja de ser manual: `.github/workflows/pages.yml` compila y despliega en cada push a `master`, sin build local, sin clon aparte de `gh-pages` y sin segundo `git push`. La rama `gh-pages` del remoto (fuente de la sección anterior) queda sin actualizar desde el 26 de septiembre; ya no es la fuente que sirve Pages.
+
+| Ruta | Función / producción |
+|---|---|
+| `.github/workflows/pages.yml` | Herramienta (Clase 2, aprobada por el usuario). `push` a `master` → job `build` (Node 22 del runner, `npm ci`, `python3 scripts/build-pages.py --node node --out dist/pages`) → `upload-pages-artifact` → job `deploy` (`deploy-pages`) |
+| `scripts/build-pages.py` | Sin cambios de comportamiento salvo lo de abajo; ahora lo ejecuta también el workflow, no solo el uso local |
+
+**Cambio en `build-pages.py`** (mismo commit `ce2e56d`, antes de este despliegue): los enlaces `/b/` y `/?motion=off` del pie dejaron de existir en `index.html` (cambio de contenido de L24-L27, no de este commit). El script exigía exactamente una ocurrencia de cada uno y se detenía si no la encontraba; ahora los reescribe solo si aparecen (0 o 1 vez) y sigue deteniéndose si aparecen 2+ veces (caso ambiguo). El resto de comprobaciones (ninguna ruta raíz-absoluta sin resolver en el HTML/CSS/JS compilado) no cambió.
+
+**Hallazgo de entorno, no de código:** el primer despliegue con Actions falló en el job `deploy` — GitHub crea automáticamente un ambiente `github-pages` con una regla de qué ramas pueden desplegar ahí, y por defecto no incluía `master`. Se corrigió agregando `master` en Settings → Environments → `github-pages` → *Deployment branches and tags*; no requirió cambios en el repo. Detalle y condiciones en KI-90.
+
+**Validación:** el job `build` corrió `scripts/build-pages.py` sin intervención y sin errores (39 archivos). Tras corregir la regla de ambiente, el job `deploy` terminó en verde y la URL pública respondió con el contenido esperado (título, los cinco orígenes, El Ahorrador, Travel Line, Tarata, FAQ) verificado por fetch externo. **No cubierto:** capturas visuales de la página desplegada, comparación píxel a píxel contra el build local, ni revisión en iPhone de esta ronda.
+
+---
+
 # Publicación en GitHub Pages — 26 de septiembre de 2026
 
 Sobre `581e24f`. La revisión pública pasa del Artifact a GitHub Pages. El Artifact se retiró por decisión del usuario (borrado; enlace inválido, historial no recuperable) tras fallar el video 03 en Chrome y Safari de iPhone dentro de su contenedor; ver KI-61 y [VIDEO_RECOVERY](VIDEO_RECOVERY.md). Según el usuario, el sitio en Pages funciona en Chrome y Safari de iPhone y el video arranca solo.

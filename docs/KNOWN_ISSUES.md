@@ -44,6 +44,7 @@ Observaciones de la auditoría del 23 de septiembre de 2026, sobre el commit `99
 - Evidencia: `git remote -v` vacío; una sola rama (`master`); sin tags. El único respaldo es el `.git` local.
 - Condiciones: 2026-09-23. Basis: observed.
 - Actualización 2026-09-26: el usuario informa que subió el repositorio a `https://github.com/JuanMosqueraR/web-prototype-artidoro` y que publicó una rama `gh-pages` con el build (ver IMPLEMENTATION_STATUS). El agente no hizo esos push y no verificó el remoto. Ya no es cierto que el `.git` local sea el único respaldo.
+- Actualización 2026-09-30: el repositorio es público (`gh repo view`, `visibility: PUBLIC`). La publicación en Pages pasó de la rama `gh-pages` a GitHub Actions; ver IMPLEMENTATION_STATUS y KI-90. `gh-pages` quedó sin actualizar desde el 26 de septiembre.
 
 ## 2. Documentation ↔ implementation discrepancies
 
@@ -210,6 +211,18 @@ Observaciones del 24 de septiembre de 2026 al implementar la escena 02 (ver [qa/
 **KI-84 · Texto pequeño y filas informativas en 02**
 - Estado: `OBSERVED` · Afecta: A (02) · Alcance: baseline contract · Tarea: no aprobada
 - Evidencia: la especificación de 02 fija Chivo 10–13 px en etiquetas y notas (mobile: 10, 12; desktop: 11–14). Villa Rica, Cusco y Puno usan el mismo tratamiento tipográfico que las filas seleccionables y solo se distinguen por el cursor por defecto y la ausencia de foco; no se evaluó si un usuario las entiende como no interactivas. Basis: read, observed.
+
+## 10. GitHub Pages / CI (30 de septiembre de 2026)
+
+**KI-90 · El ambiente `github-pages` de Actions no permitía desplegar `master` por defecto**
+- Estado: `OBSERVED` · Afecta: shared · Alcance: environment · Tarea: no aprobada
+- Evidencia: al cambiar Settings → Pages → Source a «GitHub Actions», GitHub crea un ambiente `github-pages` con una regla de «Deployment branches and tags». El primer `push` a `master` con `.github/workflows/pages.yml` completó el job `build` pero el job `deploy` falló: *"Branch 'master' is not allowed to deploy to github-pages due to environment protection rules."* Se corrigió en Settings → Environments → `github-pages` → *Deployment branches and tags* → agregar `master` a la lista (`gh-pages` ya figuraba). Tras el ajuste, un *re-run* del mismo job (sin nuevo commit) terminó en verde.
+- Condiciones: primera activación de Pages vía Actions en este repositorio, 2026-09-30. No se determinó si el valor por defecto depende de la visibilidad del repo (es público) o de otro ajuste de la cuenta; no se probó en otro repositorio. Basis: observed.
+
+**KI-91 · Procesos `esbuild.exe` huérfanos bloquean `npm ci` en Windows**
+- Estado: `OBSERVED` · Afecta: shared · Alcance: environment · Tarea: no aprobada
+- Evidencia: `npm ci` falló con `EPERM: operation not permitted, unlink '...@rollup\rollup-win32-x64-msvc\rollup.win32-x64-msvc.node'`, y dejó `node_modules` a medio borrar (4 carpetas en vez del árbol completo). Un `Remove-Item -Recurse -Force node_modules` posterior falló igual, ahora sobre `@esbuild\win32-x64\esbuild.exe`, con `UnauthorizedAccessException`. `Get-CimInstance Win32_Process -Filter "Name='esbuild.exe'"` mostró dos procesos ejecutando el `esbuild.exe` de este proyecto, hijos de dos procesos `node.exe` del Node 22 aislado con fecha de inicio de sesiones anteriores (26 y 29 de septiembre) — service processes de esbuild que Vite deja corriendo para acelerar builds repetidos, y que no terminaron cuando el comando `vite build` que los originó salió. Terminarlos (`Stop-Process -Force`) liberó los archivos; `Remove-Item` y `npm ci` funcionaron después sin cambios adicionales.
+- Condiciones: Windows 10, varias invocaciones de `node_modules/vite/bin/vite.js build` en la misma sesión a lo largo de varios días. Basis: observed. No se determinó por qué esos procesos no terminaron con su comando padre (posible interacción con el entorno donde se ejecutó cada build), ni si ocurre también fuera de esa forma de invocar Vite.
 
 ## Verification notes
 

@@ -41,16 +41,25 @@ Home: `http://127.0.0.1:4174/`. Hero B conservado: `/b/`. Con un Node compatible
 
 ## Publicar en GitHub Pages
 
-`scripts/build-pages.py` compila con Vite, hace relativas las rutas `/assets/…` (incluidos los atributos `data-*` que lee el JS), cambia los enlaces `/b/` y `/?motion=off` del pie por `#b` y `?motion=off`, y añade `.nojekyll`. Escribe en `dist/pages/` (ignorado por git) y, con `--branch-dir`, prepara un commit `gh-pages` en un repositorio local **fuera** de este. No añade remotos ni hace push: publicar es una acción manual. Se niega a compilar si `index.html`, `src/`, `public/` o los archivos de paquete tienen cambios sin commit (`--allow-dirty` lo permite; el commit registra el hash de origen).
+Desde el 30 de septiembre de 2026 la publicación es automática: `.github/workflows/pages.yml` compila con Vite (Node 22 del runner) y despliega en cada push a `master`. Basta con:
 
 ```powershell
-python scripts/build-pages.py --node 'C:/tmp/node22/node-v22.23.1-win-x64/node.exe' --branch-dir 'C:/ruta/fuera/del/repo/gh-pages'
-cd 'C:/ruta/fuera/del/repo/gh-pages'
-git remote add origin https://github.com/JuanMosqueraR/web-prototype-artidoro.git   # solo la primera vez
-git push -u origin gh-pages
+git push origin master
 ```
 
-En GitHub: Settings → Pages → Deploy from a branch → `gh-pages` / `(root)`. La URL es `https://juanmosquerar.github.io/web-prototype-artidoro/`, con la barra final. Con el Node 18 global el script se detiene con un aviso; usa `--node` con Node 20.19+ o 22.12+. En Pages funcionan `#a`, `#b` y `?motion=off`; no existen rutas `/a/` ni `/b/`. El build publica también los assets de `public/` que la home no usa (KI-62).
+y revisar la pestaña **Actions** del repo (job `deploy`) hasta que quede en verde, un par de minutos. La URL es `https://juanmosquerar.github.io/web-prototype-artidoro/`, con la barra final.
+
+**Configuración de Pages en GitHub (ya hecha, una sola vez):** Settings → Pages → Source → `GitHub Actions`. La primera vez el ambiente `github-pages` que crea GitHub puede traer una regla de protección que no incluya `master`; si el job `deploy` falla con *"Branch 'master' is not allowed to deploy..."*, se corrige en Settings → Environments → `github-pages` → *Deployment branches and tags* → agregar `master` (ver KI-90). No hace falta repetirlo en despliegues siguientes.
+
+El workflow corre el mismo `scripts/build-pages.py` que compila localmente: hace relativas las rutas `/assets/…` (incluidos los atributos `data-*` que lee el JS) y, si existen, los enlaces `/b/` y `/?motion=off` del pie los cambia por `#b` y `?motion=off` — son opcionales; si la página no los tiene, el script sigue igual (ver `docs/IMPLEMENTATION_STATUS.md`). `#a`, `#b` y `?motion=off` siguen funcionando siempre vía `src/main.js`, tengan o no un enlace visible que apunte a ellos. No existen rutas `/a/` ni `/b/` en Pages. El build publica también los assets de `public/` que la home no usa (KI-62).
+
+**Build local, para previsualizar sin publicar** (no es necesario para desplegar):
+
+```powershell
+python scripts/build-pages.py --node 'C:/tmp/node22/node-v22.23.1-win-x64/node.exe' --out 'dist/pages'
+```
+
+Con el Node 18 global el script se detiene con un aviso; usa `--node` con Node 20.19+ o 22.12+. `--branch-dir` (crea o actualiza un commit `gh-pages` en un repositorio local fuera de este) sigue disponible pero ya no hace falta: la rama `gh-pages` del remoto dejó de ser la fuente de Pages y no se actualiza sola.
 
 **Las instrucciones, HTML autónomos y capturas del Hero Lab de abajo son históricos.** No representan esta home y su exportador no se ejecutó ni actualizó para incluir el video. No regenerar los baselines anteriores para revisar esta fase.
 
