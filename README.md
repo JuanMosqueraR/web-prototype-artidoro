@@ -1,5 +1,12 @@
 # Artidoro — demo de la home 01–05
 
+**Actualización — 29 de septiembre:**
+- La tarjeta del pack en 05 y la ficha de El Ahorrador muestran el precio normal tachado S/ 330.00 y «Ahorras S/ 50» (L23). QA: [qa/2026-09-29-ahorro](qa/2026-09-29-ahorro/README.md).
+- El usuario confirmó la iteración anterior del pack en un iPhone físico y la publicó en GitHub Pages. Pages **no** incluye todavía el cambio del ahorro.
+- Presentación para la reunión: [deliverables/presentacion-artidoro.html](deliverables/presentacion-artidoro.html); la copia publicable se genera con `python scripts/build-presentation-artifact.py`.
+- Propuesta en borrador: [docs/PROPUESTA_ETAPA1.md](docs/PROPUESTA_ETAPA1.md).
+- Menciones de más abajo a una prueba de iPhone pendiente o a que no hubo publicación: superadas.
+
 **Estado actual — integrado en `master` (28 de septiembre):** selector 02, catálogo y ambas PDP, incluido El Ahorrador. Integración local por fast-forward hasta `a5512e2`, sin push ni nueva publicación. [Handoff para retomar](docs/HANDOFF.md) · [Prompt de presentación y propuesta para Claude](docs/CLAUDE_PRESENTACION_PROMPT.md).
 
 **Revisión actual — El Ahorrador:** [demo, capturas y validación](docs/AHORRADOR_REVIEW.md). Acceso al pack desde 01/02/Tienda, protagonista en 05 y ficha con tres orígenes configurables: `http://127.0.0.1:4175/#producto-ahorrador`. Checkpoint previo `87ea725`; cambios versionados e integrados por petición del usuario. La prueba física de iPhone de esta última iteración sigue pendiente. Las revisiones inferiores son históricas.

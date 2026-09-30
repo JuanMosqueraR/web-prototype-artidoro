@@ -1,3 +1,20 @@
+# Ahorro visible, propuesta y script de publicación — 29 de septiembre de 2026
+
+Autorización L23. Checkpoint previo `41d0cf1`. El usuario confirma que la iteración del 28 de septiembre funciona en un iPhone físico y que la publicó en GitHub Pages; Pages no incluye estos cambios. Las menciones de las secciones inferiores a una prueba de iPhone pendiente o a que no hubo publicación quedan superadas.
+
+| Ruta nueva o afectada | Función / producción |
+|---|---|
+| `index.html`, `src/catalog.js`, `src/ahorrador.css` | Precio normal tachado y ahorro en la tarjeta del pack de 05 y en su PDP; el cálculo usa `data-compare-at` y el precio de la variante elegida |
+| `audit/source/ahorrador-2026-09-29.json`, `audit/assets.json` | Snapshot oficial con `compare_at_price` y registro `verified_copy.ahorrador_saving_2026_09_29` |
+| `qa/2026-09-29-ahorro/` | Regresión 211/211, pack 316/316, ahorro 20/20 y capturas; condiciones en su README |
+| `scripts/build-presentation-artifact.py` | Herramienta (Clase 2, L23). Python estándar: quita el esqueleto HTML, incrusta las fuentes y copia las imágenes referenciadas. Escribe solo en `--out` (por defecto `dist/presentation-artifact/`, ignorado por Git) y no publica |
+| `deliverables/presentacion-artidoro.html` | Capturas de `qa/2026-09-29-ahorro/after/` y referencia al ahorro en la parada 2 y la tabla de estrategia |
+| `docs/PROPUESTA_ETAPA1.md`, `docs/PROPUESTA_NOTA_INTERNA.md` | Propuesta en borrador y su nota interna, escritas manualmente; no son una cotización aprobada |
+
+Entorno: Node 22.23.1 aislado, Vite 7.1.3, Python 3.10, Playwright Chromium 148, Windows. Sin cambios de dependencias.
+
+---
+
 # El Ahorrador — revisión del 28 de septiembre de 2026
 
 Desarrollada en `feat/catalogo-pdp` desde checkpoint `87ea725`; versionada e integrada localmente en `master` por fast-forward hasta `a5512e2`, por instrucción del usuario (L22). Sin push ni nueva publicación. [Handoff actual](HANDOFF.md) · [Entrega](AHORRADOR_REVIEW.md). Home local `http://127.0.0.1:4175/`; ficha `http://127.0.0.1:4175/#producto-ahorrador`. La confirmación anterior de iPhone corresponde al checkpoint, no a esta iteración.
@@ -11,7 +28,7 @@ Desarrollada en `feat/catalogo-pdp` desde checkpoint `87ea725`; versionada e int
 | `qa/2026-09-28-ahorrador/` | Regresión, pruebas de combinación, destinos oficiales y capturas directas |
 | `dist/ahorrador-pages/` | Build local ignorado, generado por `scripts/build-pages.py --allow-dirty --out dist/ahorrador-pages`; sin staging de rama ni publicación |
 | `docs/HANDOFF.md`, `docs/CLAUDE_PRESENTACION_PROMPT.md` | Handoff escrito manualmente y prompt para redactar presentación/propuesta; no son una cotización aprobada |
-| `deliverables/presentacion-artidoro.html` | Presentación de 12 diapositivas para la reunión con el dueño (29 de septiembre), escrita manualmente; incluye la revisión propia de la tienda (evidencia exploratoria en `qa/draft-2026-09-29-tienda-actual/`, ignorada por Git). Sin assets nuevos: usa `public/assets/` y capturas de `qa/2026-09-28-ahorrador/after/` por ruta relativa y recorte CSS; abrir desde el repositorio. Enlaza a la demo en GitHub Pages; imprimible a PDF (una diapositiva por página). Copia publicada como Artifact privado; enlace y transformación en `docs/HANDOFF.md` |
+| `deliverables/presentacion-artidoro.html` | Presentación de 12 diapositivas para la reunión con el dueño (29 de septiembre), escrita manualmente; incluye la revisión propia de la tienda (evidencia exploratoria en `qa/draft-2026-09-29-tienda-actual/`, ignorada por Git). Sin assets nuevos: usa `public/assets/` y capturas de `qa/2026-09-28-ahorrador/after/` por ruta relativa y recorte CSS; abrir desde el repositorio. Enlaza a la demo en GitHub Pages; imprimible a PDF (una diapositiva por página). Copia publicable generada con `scripts/build-presentation-artifact.py` y publicada como Artifact (enlace en `docs/HANDOFF.md`) |
 
 Node aislado 22.23.1/Vite 7.1.3, sin cambio de tooling. Las entregas inferiores y sus evidencias se conservan como históricas.
 

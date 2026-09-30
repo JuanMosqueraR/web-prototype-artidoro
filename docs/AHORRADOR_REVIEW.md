@@ -1,3 +1,5 @@
+> **Actualización del 29 de septiembre de 2026.** El usuario confirmó esta iteración en un iPhone físico y la publicó en GitHub Pages. Después se añadió el ahorro visible del pack (L23; [QA](../qa/2026-09-29-ahorro/README.md)), que Pages no incluye todavía. El resto de este informe describe la entrega del 28 de septiembre.
+
 # El Ahorrador — revisión del 28 de septiembre de 2026
 
 Demo local: http://127.0.0.1:4175/ · Ficha directa: http://127.0.0.1:4175/#producto-ahorrador

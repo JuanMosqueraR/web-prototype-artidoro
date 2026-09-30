@@ -1,3 +1,9 @@
+# Ahorro visible del pack — 29 de septiembre de 2026
+
+La tarjeta de El Ahorrador en 05 y su PDP muestran, bajo el precio de S/ 280.00, el precio normal tachado S/ 330.00 y «Ahorras S/ 50». En la PDP el ahorro también aparece en la fila del total y se oculta si la combinación no existe. Es una línea secundaria, más pequeña que el precio y en el verde apagado del texto de apoyo; en celular baja a 12 px para que «Continuar con mi pack» siga visible a 390 × 700. 01 y 02 conservan solo S/ 280, y el hero no cambia (0 píxeles distintos). Sin motion nuevo. Autorización L23; [QA](../qa/2026-09-29-ahorro/README.md).
+
+---
+
 # El Ahorrador — revisión descriptiva del 28 de septiembre de 2026
 
 A incorpora acceso al pack de 3 kg desde 01, 02 y Tienda. Se conservan el CTA y el precio individual de Amazonas en 01 y toda la interacción de 02; la selección de origen no configura el pack. 05 da protagonismo a El Ahorrador, mantiene Travel Line como segunda propuesta y Explorador/miel como complementos. El bloque repetido de Amazonas en 05 se sustituye por un enlace a los cinco orígenes.
