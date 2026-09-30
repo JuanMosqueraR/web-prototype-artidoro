@@ -353,7 +353,8 @@
       "script": "scripts/prepare-home-assets.py",
       "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
       "used_in": "A home scene 03, independent of scene 02 selection",
-      "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy."
+      "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy.",
+      "superseded": "L28 (2026-09-30): 03 now uses the cup03 stills; files retained in public/assets without use."
     },
     {
       "id": "scene03-desktop-start",
@@ -396,7 +397,8 @@
       "script": "scripts/prepare-home-assets.py",
       "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
       "used_in": "A home scene 03, independent of scene 02 selection",
-      "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy."
+      "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy.",
+      "superseded": "L28 (2026-09-30): 03 now uses the cup03 stills; files retained in public/assets without use."
     },
     {
       "id": "scene03-mobile-end",
@@ -439,7 +441,8 @@
       "script": "scripts/prepare-home-assets.py",
       "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
       "used_in": "A home scene 03, independent of scene 02 selection",
-      "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy."
+      "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy.",
+      "superseded": "L28 (2026-09-30): 03 now uses the cup03 stills; files retained in public/assets without use."
     },
     {
       "id": "scene03-mobile-start",
@@ -482,7 +485,8 @@
       "script": "scripts/prepare-home-assets.py",
       "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
       "used_in": "A home scene 03, independent of scene 02 selection",
-      "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy."
+      "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy.",
+      "superseded": "L28 (2026-09-30): 03 now uses the cup03 stills; files retained in public/assets without use."
     },
     {
       "id": "scene03-desktop-video",
@@ -520,7 +524,8 @@
       "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy.",
       "duration_seconds": 7.041667,
       "fps": 24,
-      "delivery": "Silent H.264 yuv420p, CRF21, GOP8, faststart; one responsive source; deferred until near viewport."
+      "delivery": "Silent H.264 yuv420p, CRF21, GOP8, faststart; one responsive source; deferred until near viewport.",
+      "superseded": "L28 (2026-09-30): 03 now uses the cup03 stills; files retained in public/assets without use."
     },
     {
       "id": "scene03-mobile-video",
@@ -558,7 +563,8 @@
       "not_evidence": "Conceptual coffee scene, not documentation of a particular origin, brewing process, café or official Artidoro cup. No generated product packaging, logo or factual copy.",
       "duration_seconds": 7.041667,
       "fps": 24,
-      "delivery": "Silent H.264 yuv420p, CRF21, GOP8, faststart; one responsive source; deferred until near viewport."
+      "delivery": "Silent H.264 yuv420p, CRF21, GOP8, faststart; one responsive source; deferred until near viewport.",
+      "superseded": "L28 (2026-09-30): 03 now uses the cup03 stills; files retained in public/assets without use."
     },
     {
       "id": "cafetal-home-desktop",
@@ -940,6 +946,405 @@
       ],
       "preparation": "Rectangular whitespace crop; proportional downsize (never upscale); WebP quality 90, method 6. No redraw or generative processing. Runtime CSS multiply on the light tile integrates the white photographic background.",
       "used_in": "A home closing band, Nanolotes tile only. Illustrates the collection with one of its three official tins; other nanolotes exist (cr95, cr97) and are not shown."
+    },
+    {
+      "id": "hero-video-desktop",
+      "status": "CONCEPTUAL_ASSET",
+      "decision": "L28",
+      "provider": "APIMart",
+      "model": "kling-v3",
+      "task_ids": [
+        "task_01M3STAMCSAHM33AK26ZQ0Y4XA",
+        "task_01M3STANF9J2MNTGVC2VM5901N"
+      ],
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.672,
+      "params": "audit/source/hero-generation.json (prompts, sizes, frame tasks, approval)",
+      "original": [
+        {
+          "file": "audit/source/hero-desktop-origin-original.mp4",
+          "bytes": 4938232,
+          "sha256": "3ed06657572eb5be9a61eb0975f35b5599ea4ebf1d284251125aa5d41ce33ea6"
+        },
+        {
+          "file": "audit/source/hero-desktop-beans-original.mp4",
+          "bytes": 4762457,
+          "sha256": "e7a28652fc868dedbd1aaca86de72a71791a2e42df8bfcb9db6fc5371997ea55"
+        }
+      ],
+      "prepared": [
+        {
+          "file": "public/assets/hero-desktop.mp4",
+          "bytes": 1599715,
+          "sha256": "1395bc425e07382745a282e75c93e8bbc96c628bc0a30b9329f6c8331242b58d"
+        },
+        {
+          "file": "public/assets/hero-desktop-start.webp",
+          "bytes": 28048,
+          "sha256": "ee0cdd2a78e639b8a8c4df2005c49d81e7641650adf80e02a1c0884717d28cf1",
+          "dimensions": [
+            1280,
+            714
+          ]
+        },
+        {
+          "file": "public/assets/hero-desktop-end.webp",
+          "bytes": 33340,
+          "sha256": "6a47556d56c5efdd0ee122b815b620c658c0f1410c4ae3c9bfebc4cdb6f2f826",
+          "dimensions": [
+            1280,
+            714
+          ]
+        }
+      ],
+      "script": "scripts/prepare-hero-video.py",
+      "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
+      "used_in": "A home hero (desktop): scroll-scrubbed 10 s video; start frame is the LCP poster, end frame the static composition.",
+      "frames": [
+        "hero-origin-desktop",
+        "hero-cherries-desktop",
+        "hero-beans-desktop"
+      ],
+      "frame_originals": [
+        {
+          "file": "audit/source/hero-origin-desktop.jpg",
+          "bytes": 3095330,
+          "sha256": "00a13654449e557a483e63fcf138ee3e1a5a57283189b05f8a3a19916fe2ce6d",
+          "dimensions": [
+            2752,
+            1536
+          ]
+        },
+        {
+          "file": "audit/source/hero-cherries-desktop.jpg",
+          "bytes": 2740380,
+          "sha256": "bdfe9469873a2b4cac03114a8fc1377e7a3ad72f864cd11386d07d21739946da",
+          "dimensions": [
+            2752,
+            1536
+          ]
+        },
+        {
+          "file": "audit/source/hero-beans-desktop.jpg",
+          "bytes": 2399702,
+          "sha256": "56febc15d5bd12f4f81da1d0296e67fc04879561625944a96b257463d870ee84",
+          "dimensions": [
+            2752,
+            1536
+          ]
+        }
+      ],
+      "not_evidence": "Conceptual scene, not documentation of the Amazonas farm, harvest, processing, roasting or brewing at Artidoro; the cherry-to-bean transformation is a visual metaphor. No generated packaging, logo or factual copy.",
+      "prepared_sequence": {
+        "dir": "public/assets/hero-seq/desktop/",
+        "frames": 60,
+        "bytes": 1288606,
+        "fps": 6,
+        "from": "public/assets/hero-desktop.mp4",
+        "script": "scripts/prepare-hero-video.py",
+        "use": "Mobile always; desktop only if the video is not ready within 4 s."
+      }
+    },
+    {
+      "id": "hero-video-mobile",
+      "status": "CONCEPTUAL_ASSET",
+      "decision": "L28",
+      "provider": "APIMart",
+      "model": "kling-v3",
+      "task_ids": [
+        "task_01M3STAPGS7NT9Y2BZTE0M0Q6J",
+        "task_01M3STAQHWWZZDCYR1S4EPH1P3"
+      ],
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.672,
+      "params": "audit/source/hero-generation.json (prompts, sizes, frame tasks, approval)",
+      "original": [
+        {
+          "file": "audit/source/hero-mobile-origin-original.mp4",
+          "bytes": 4421424,
+          "sha256": "c037a5221f126372aead5e053041f258cbb5edc24557807d4b31f2711525a06b"
+        },
+        {
+          "file": "audit/source/hero-mobile-beans-original.mp4",
+          "bytes": 4393314,
+          "sha256": "5df5ed6c0dd61033fb8eb1fa4832970c7109206b5e5d473a42b6c14f437e8c52"
+        }
+      ],
+      "prepared": [
+        {
+          "file": "public/assets/hero-mobile.mp4",
+          "bytes": 1336107,
+          "sha256": "d4876770a14960c4512b92c4916cbf6e568ebe3c3f74b2949bd7ca9b2907d1af"
+        },
+        {
+          "file": "public/assets/hero-mobile-start.webp",
+          "bytes": 28322,
+          "sha256": "ecb0145de2cab9d396cfc1c343f88c6708ccc5ddeb2be1a9184f1ff5377ed3ee",
+          "dimensions": [
+            714,
+            1280
+          ]
+        },
+        {
+          "file": "public/assets/hero-mobile-end.webp",
+          "bytes": 35742,
+          "sha256": "62c043665f7f5eda65769cfd25f170a08fc770298d4b5d079b0b06137a797a7f",
+          "dimensions": [
+            714,
+            1280
+          ]
+        }
+      ],
+      "script": "scripts/prepare-hero-video.py",
+      "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
+      "used_in": "A home hero (≤760 px): scroll-scrubbed 10 s vertical video; same roles as desktop.",
+      "frames": [
+        "hero-origin-mobile",
+        "hero-cherries-mobile",
+        "hero-beans-mobile"
+      ],
+      "frame_originals": [
+        {
+          "file": "audit/source/hero-origin-mobile.jpg",
+          "bytes": 2697773,
+          "sha256": "6162e3b0954d41e140b5937d0fec2db3e63e294990f060cf1944b934be9f50b0",
+          "dimensions": [
+            1536,
+            2752
+          ]
+        },
+        {
+          "file": "audit/source/hero-cherries-mobile.jpg",
+          "bytes": 1984687,
+          "sha256": "6164611a60144304ed6c4a87140fd0eff828e089168ce2f3d085359f09d81cfc",
+          "dimensions": [
+            1536,
+            2752
+          ]
+        },
+        {
+          "file": "audit/source/hero-beans-mobile.jpg",
+          "bytes": 2053466,
+          "sha256": "697c3b5c424710850fcb7ee29ea6a8f620e95adb5ce87bdd1247397a4864ca56",
+          "dimensions": [
+            1536,
+            2752
+          ]
+        }
+      ],
+      "note": "Vertical frames are gemini edits of the desktop frames (reference image), not crops.",
+      "not_evidence": "Conceptual scene, not documentation of the Amazonas farm, harvest, processing, roasting or brewing at Artidoro; the cherry-to-bean transformation is a visual metaphor. No generated packaging, logo or factual copy.",
+      "prepared_sequence": {
+        "dir": "public/assets/hero-seq/mobile/",
+        "frames": 60,
+        "bytes": 1227892,
+        "fps": 6,
+        "from": "public/assets/hero-mobile.mp4",
+        "script": "scripts/prepare-hero-video.py",
+        "use": "Mobile always; desktop only if the video is not ready within 4 s."
+      }
+    },
+    {
+      "id": "cup03-grind",
+      "status": "CONCEPTUAL_ASSET",
+      "decision": "L28",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "task_ids": [
+        "task_01M3SNGEFX0DZJF2GKMQ48Z4AZ"
+      ],
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": "audit/source/hero-generation.json (prompts, sizes, frame tasks, approval)",
+      "original": [
+        {
+          "file": "audit/source/cup03-grind.jpg",
+          "bytes": 2736212,
+          "sha256": "f2c5b18838c48de2e4ddb1642a92261009b624410343878a3161502e11903e5f",
+          "dimensions": [
+            2752,
+            1536
+          ]
+        }
+      ],
+      "prepared": [
+        {
+          "file": "public/assets/cup03-grind-desktop.webp",
+          "bytes": 72808,
+          "sha256": "0e95e2cd11316aa3c87d3998bcbbb7ff4428ebe4aef88a9bee1eee7d874b90e8",
+          "dimensions": [
+            1600,
+            893
+          ]
+        },
+        {
+          "file": "public/assets/cup03-grind-mobile.webp",
+          "bytes": 93780,
+          "sha256": "2365d2091cdf678e2ae280dc52b48d8ee7bc4e09e1e0b0814cf4a0d0a6f4b30a",
+          "dimensions": [
+            720,
+            1280
+          ]
+        }
+      ],
+      "script": "scripts/prepare-cup03.py",
+      "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
+      "used_in": "A home 03 «De la bolsa a tu taza», step 1, grinding. Mobile is a rectangular 9:16 crop of the same frame.",
+      "not_evidence": "Conceptual scene, not documentation of the Amazonas farm, harvest, processing, roasting or brewing at Artidoro; the cherry-to-bean transformation is a visual metaphor. No generated packaging, logo or factual copy."
+    },
+    {
+      "id": "cup03-bloom",
+      "status": "CONCEPTUAL_ASSET",
+      "decision": "L28",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "task_ids": [
+        "task_01M3SNGFHSZC02AYV9JRMS5VDH"
+      ],
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": "audit/source/hero-generation.json (prompts, sizes, frame tasks, approval)",
+      "original": [
+        {
+          "file": "audit/source/cup03-bloom.jpg",
+          "bytes": 2573400,
+          "sha256": "e56f9bdaceaeb1a25b791e70b8150cc49c5cbbb22a27707c70b8946441771572",
+          "dimensions": [
+            2752,
+            1536
+          ]
+        }
+      ],
+      "prepared": [
+        {
+          "file": "public/assets/cup03-bloom-desktop.webp",
+          "bytes": 70896,
+          "sha256": "04db25ac93520c3f31cebcae25f5c558f1c8b67a6848ded47a58532aac05ac60",
+          "dimensions": [
+            1600,
+            893
+          ]
+        },
+        {
+          "file": "public/assets/cup03-bloom-mobile.webp",
+          "bytes": 82872,
+          "sha256": "fc453a6ad96e557dd1977961d566320a7ab00858f90bb798d4baff9a9694821a",
+          "dimensions": [
+            720,
+            1280
+          ]
+        }
+      ],
+      "script": "scripts/prepare-cup03.py",
+      "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
+      "used_in": "A home 03 «De la bolsa a tu taza», step 2, first pour on V60. Mobile is a rectangular 9:16 crop of the same frame.",
+      "not_evidence": "Conceptual scene, not documentation of the Amazonas farm, harvest, processing, roasting or brewing at Artidoro; the cherry-to-bean transformation is a visual metaphor. No generated packaging, logo or factual copy."
+    },
+    {
+      "id": "cup03-drip",
+      "status": "CONCEPTUAL_ASSET",
+      "decision": "L28",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "task_ids": [
+        "task_01M3SNGGK23NMSZTC9CBEAVD0T"
+      ],
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": "audit/source/hero-generation.json (prompts, sizes, frame tasks, approval)",
+      "original": [
+        {
+          "file": "audit/source/cup03-drip.jpg",
+          "bytes": 2322136,
+          "sha256": "bec751636d7a028197f145cabf704cb7acbc52b2488a8ee490a13837930caf48",
+          "dimensions": [
+            2752,
+            1536
+          ]
+        }
+      ],
+      "prepared": [
+        {
+          "file": "public/assets/cup03-drip-desktop.webp",
+          "bytes": 42048,
+          "sha256": "c1f3d7a699d475a65883691b119f2b18b3548928792d7eae8fb7e69a55507ed7",
+          "dimensions": [
+            1600,
+            893
+          ]
+        },
+        {
+          "file": "public/assets/cup03-drip-mobile.webp",
+          "bytes": 42936,
+          "sha256": "97a0e3fa92f2930936196f49e11de3ed111d39cb3c1b0725e86dbf75b370baad",
+          "dimensions": [
+            720,
+            1280
+          ]
+        }
+      ],
+      "script": "scripts/prepare-cup03.py",
+      "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
+      "used_in": "A home 03 «De la bolsa a tu taza», step 2, drip into the server. Mobile is a rectangular 9:16 crop of the same frame.",
+      "not_evidence": "Conceptual scene, not documentation of the Amazonas farm, harvest, processing, roasting or brewing at Artidoro; the cherry-to-bean transformation is a visual metaphor. No generated packaging, logo or factual copy."
+    },
+    {
+      "id": "cup03-still",
+      "status": "CONCEPTUAL_ASSET",
+      "decision": "L28",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "task_ids": [
+        "task_01M3SQH3S6V4PARSXC8CPBXWM6",
+        "task_01M3STAD5VGMYE5B4W22YH5WVC"
+      ],
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.06,
+      "params": "audit/source/hero-generation.json (prompts, sizes, frame tasks, approval)",
+      "original": [
+        {
+          "file": "audit/source/cup03-still-desktop.jpg",
+          "bytes": 2194426,
+          "sha256": "c9cbb103a934f95597f2957e868f670b9e3274263a8512c11e9e7db51b5eb065",
+          "dimensions": [
+            2752,
+            1536
+          ]
+        },
+        {
+          "file": "audit/source/cup03-still-mobile.jpg",
+          "bytes": 2137921,
+          "sha256": "5d5e4e92fe91ae70a14f10ef6fe4583804b713cddd2c0cb00ec34f03e297c284",
+          "dimensions": [
+            1536,
+            2752
+          ]
+        }
+      ],
+      "prepared": [
+        {
+          "file": "public/assets/cup03-still-desktop.webp",
+          "bytes": 30852,
+          "sha256": "9d8ea3cfcaf721b8aa7162003699b10f68047529465c338d1935bc746a1d0531",
+          "dimensions": [
+            1600,
+            893
+          ]
+        },
+        {
+          "file": "public/assets/cup03-still-mobile.webp",
+          "bytes": 17536,
+          "sha256": "26b6891bbf5b6d8ab5329afab4b9f0ec4843a837d3f260b3107eb610122fe86b",
+          "dimensions": [
+            720,
+            1290
+          ]
+        }
+      ],
+      "script": "scripts/prepare-cup03.py",
+      "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
+      "used_in": "A home 03 final still life (double-walled glass cup). The real Amazonas bag photo (REAL_ASSET amazonas-250g) is composited at runtime by CSS behind the cup; no bag, logo or label was generated.",
+      "not_evidence": "Conceptual scene, not documentation of the Amazonas farm, harvest, processing, roasting or brewing at Artidoro; the cherry-to-bean transformation is a visual metaphor. No generated packaging, logo or factual copy."
     }
   ],
   "gaps": [
@@ -1098,6 +1503,50 @@
       "approval": "L23: user instruction 'muestra el ahorro' (2026-09-29).",
       "not_claimed": "No percentage badge, best seller, scarcity, campaign or margin claim. 01 hero and 02 pack entries keep S/ 280 only.",
       "limits": "Static snapshot; the official shop confirms current price and regular price at checkout."
+    },
+    "faq_brewing_2026_09_30": {
+      "source": "https://www.artidororodriguez.com/pages/preguntas-frecuentes",
+      "retrieved": "2026-09-30",
+      "decision": "L28",
+      "quotes": [
+        "Fino: espresso y cafetera italiana (moka).",
+        "Medio: V60, Chemex, Aeropress y cafetera eléctrica de filtro.",
+        "Grueso: prensa francesa y cold brew.",
+        "Grano entero: si tienes molino en casa. Es la forma en que el café se mantiene fresco por más tiempo.",
+        "Te recomendamos empezar con uno de nuestros cafés de origen en molienda media.",
+        "Calculando unos 15 g de café por taza: [...] Bolsa de 250 g: unas 16 tazas.",
+        "El café molido pierde aroma más rápido que el grano, por eso lo molemos justo antes de enviarlo."
+      ],
+      "used_as": [
+        "03: «Molienda media. La que recomendamos para empezar. Lo molemos justo antes de enviarlo.»",
+        "03: «Tu bolsa de 250 g: unas 16 tazas.» (no price per cup is shown)",
+        "Grinds band: Fina / Media «Para empezar» / Gruesa / Grano with the methods above; foot «Molemos tu café justo antes de enviarlo. Elige tu molienda al comprar.»"
+      ],
+      "note": "The existing home FAQ answer «¿Qué molienda elijo?» is an earlier condensed wording of the same source and was not changed."
+    },
+    "amazonas_description_2026_09_30": {
+      "source": "https://www.artidororodriguez.com/products/cafe-amazonas",
+      "retrieved": "2026-09-30",
+      "decision": "L28",
+      "quotes": [
+        "A entre 1,700 y 1,900 metros sobre el nivel del mar",
+        "tueste medio con notas vibrantes a naranjas y un fondo de melazas",
+        "Una taza cítrica, envolvente y con carácter"
+      ],
+      "used_as": [
+        "03 step 2: «Amazonas · tueste medio — Naranja y melaza — Una taza cítrica, envolvente y con carácter.»"
+      ]
+    },
+    "home_values_2026_09_30": {
+      "source": "Screenshot of the official home values band supplied by the user on 2026-09-30 (https://www.artidororodriguez.com/); corroborated by the official FAQ heading «¿Qué significa \"precio justo al caficultor\"?» read on the same date (https://www.artidororodriguez.com/pages/preguntas-frecuentes)",
+      "retrieved": "2026-09-30",
+      "decision": "L28",
+      "quotes": [
+        "PRECIO JUSTO AL CAFICULTOR — Compramos directo a familias caficultoras peruanas, sin intermediarios."
+      ],
+      "used_as": [
+        "05 trust band: «Precio justo al caficultor» (title only)"
+      ]
     }
   },
   "ai_generated_assets": [
@@ -1109,7 +1558,13 @@
     "scene03-mobile-start",
     "scene03-desktop-video",
     "scene03-mobile-video",
-    "tarata-home"
+    "tarata-home",
+    "hero-video-desktop",
+    "hero-video-mobile",
+    "cup03-grind",
+    "cup03-bloom",
+    "cup03-drip",
+    "cup03-still"
   ],
   "home_review_date": "2026-09-25",
   "home_scope": "Authorized A home 01-05; checkpoint 0a1da04 preserved, no final commit.",
@@ -1119,5 +1574,6 @@
   },
   "tarata_editorial_review_date": "2026-09-26",
   "catalog_pdp_review_date": "2026-09-28",
-  "ahorrador_review_date": "2026-09-28"
+  "ahorrador_review_date": "2026-09-28",
+  "l28_review_date": "2026-09-30"
 }

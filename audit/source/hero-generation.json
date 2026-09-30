@@ -1,0 +1,373 @@
+{
+  "date": "2026-09-30",
+  "decision": "L28",
+  "approval": "User explicitly approved generated images and video for the home hero and 03 (docs/DECISIONS.md, L28).",
+  "note": "Signed result URLs are deliberately not recorded. Exploratory storyboard frames generated before L28 on the same date (cherries, beans, grind, bloom, drip, cups) are the adopted desktop frames listed here.",
+  "actual_total_usd": 1.764,
+  "assets": [
+    {
+      "id": "hero-origin-desktop",
+      "file": "audit/source/hero-origin-desktop.jpg",
+      "use": "adopted: first frame of the desktop origin clip",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "operation": "generate-image",
+      "task_id": "task_01M3SKD8JHE7PG5AD8702ZNTNV",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Premium cinematic coffee campaign film still, landscape 16:9. Aerial drone view at dawn over steep Andean-Amazon cloud-forest mountains in northern Peru, layers of soft mist drifting between ridges, dense coffee plantations under tall shade trees on the slopes, deep forest-green tonality with a warm copper-gold sunrise glow on the far ridge. Moody, atmospheric, large-format cinematography, high photographic realism, natural color grading, gentle haze. Left third of the frame darker and quiet for editorial type added later. No people, no buildings in the foreground, no roads, no text, no logo, no watermark.",
+        "size": "16:9",
+        "resolution": "2K",
+        "reference_images": []
+      },
+      "human_approval": null
+    },
+    {
+      "id": "hero-cherries-desktop",
+      "file": "audit/source/hero-cherries-desktop.jpg",
+      "use": "adopted: last/first frame between desktop clips",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "operation": "generate-image",
+      "task_id": "task_01M3SKD9NJHCCWQQQ4B614GHJT",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Premium cinematic coffee campaign film still, landscape 16:9. Extreme close-up of an arabica coffee branch with glossy dark green leaves and a cluster of ripe deep-red coffee cherries, soft misty cloud-forest bokeh behind. Several cherries have detached and float in mid-air drifting to the right; as they float, they transform progressively into glossy medium-roasted coffee beans, a graceful sequence from red cherry to green bean to roasted brown bean, suspended in the air like a slow-motion levitation. Warm raking sunlight from upper left, deep forest-green shadows, copper-gold highlights, shallow depth of field, photorealistic, tactile. Left third darker and quiet for type. No hands, no people, no packaging, no text, no logo, no watermark.",
+        "size": "16:9",
+        "resolution": "2K",
+        "reference_images": []
+      },
+      "human_approval": null
+    },
+    {
+      "id": "hero-beans-desktop",
+      "file": "audit/source/hero-beans-desktop.jpg",
+      "use": "adopted: last frame of the desktop beans clip",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "operation": "generate-image",
+      "task_id": "task_01M3SKDAW86G6RWWRZP5XE3YYH",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Premium cinematic coffee campaign film still, landscape 16:9. Dark moody studio scene with deep forest-green gradient background (#102e25 feeling) and subtle mist. A cascade of glossy medium-roasted coffee beans floats and falls in slow motion from upper left toward the lower right, converging toward an empty clear space at 70 percent from the left and 55 percent from the top where a product will be composited later; that space must stay empty, only a few beans landing on a dark walnut surface at the bottom right. A few out-of-focus coffee leaves in the foreground corners. Warm copper-gold rim light, strong chiaroscuro, photorealistic, sculptural, expensive. Left 45 percent of the frame dark and quiet for editorial type. No package, no bag, no cup, no hands, no text, no logo, no watermark.",
+        "size": "16:9",
+        "resolution": "2K",
+        "reference_images": []
+      },
+      "human_approval": null
+    },
+    {
+      "id": "hero-origin-mobile",
+      "file": "audit/source/hero-origin-mobile.jpg",
+      "use": "adopted: vertical recomposition of hero-origin-desktop (reference image)",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "operation": "edit-image",
+      "task_id": "task_01M3SSQRNR8BSNK966VBR9B3PF",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Recompose the reference image as a VERTICAL 9:16 frame of the same dawn aerial view over misty Andean-Amazon cloud-forest mountains with coffee plantations on the slopes. Place the most interesting part of the landscape (ridges with drifting mist and the sunrise glow) in the upper 55 percent; the lower 45 percent darker, dense forest canopy in shadow, quiet enough for text overlaid later. Keep the same photographic style, lighting, color grading, lens look and realism as the reference image. Full-bleed vertical 9:16 frame, no border. No people, no hands, no text, no logo, no watermark, no packaging.",
+        "size": "9:16",
+        "resolution": "2K",
+        "reference_images": [
+          "audit/source/hero-origin-desktop.jpg, downscaled to 1600 px (JPEG q90) before upload"
+        ]
+      },
+      "human_approval": null
+    },
+    {
+      "id": "hero-cherries-mobile",
+      "file": "audit/source/hero-cherries-mobile.jpg",
+      "use": "adopted: vertical recomposition of hero-cherries-desktop",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "operation": "edit-image",
+      "task_id": "task_01M3SSRKE915Z4BZEGCANVV1V3",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Recompose the reference image as a VERTICAL 9:16 frame: the same arabica branch with ripe red cherries in the upper-left, and the same sequence of cherries floating to the right and transforming into green and then roasted beans, arranged diagonally across the upper 55 percent of the frame. The lower 45 percent is darker, out-of-focus foliage and mist, quiet for text. Keep the same photographic style, lighting, color grading, lens look and realism as the reference image. Full-bleed vertical 9:16 frame, no border. No people, no hands, no text, no logo, no watermark, no packaging.",
+        "size": "9:16",
+        "resolution": "2K",
+        "reference_images": [
+          "audit/source/hero-cherries-desktop.jpg, downscaled to 1600 px (JPEG q90) before upload"
+        ]
+      },
+      "human_approval": "L28: generacion aprobada por el usuario el 2026-09-30 (go!)"
+    },
+    {
+      "id": "hero-beans-mobile",
+      "file": "audit/source/hero-beans-mobile.jpg",
+      "use": "adopted: vertical recomposition of hero-beans-desktop",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "operation": "edit-image",
+      "task_id": "task_01M3SSRN8XBPRYBDNPD1WFPGVC",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Recompose the reference image as a VERTICAL 9:16 frame: the same cascade of glossy roasted coffee beans floating and falling in slow motion from the top-left, curving toward the right side, on the same deep forest-green dark background with a few out-of-focus leaves. Keep an EMPTY clear space in the upper-right area (around 72 percent from the left, 35 percent from the top) where a product will be composited later. The lower 45 percent darker and quiet for text. Keep the same photographic style, lighting, color grading, lens look and realism as the reference image. Full-bleed vertical 9:16 frame, no border. No people, no hands, no text, no logo, no watermark, no packaging.",
+        "size": "9:16",
+        "resolution": "2K",
+        "reference_images": [
+          "audit/source/hero-beans-desktop.jpg, downscaled to 1600 px (JPEG q90) before upload"
+        ]
+      },
+      "human_approval": "L28: generacion aprobada por el usuario el 2026-09-30 (go!)"
+    },
+    {
+      "id": "hero-desktop-origin",
+      "file": "audit/source/hero-desktop-origin-original.mp4",
+      "use": "adopted: desktop clip 1",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "kling-v3",
+      "operation": "generate-video",
+      "task_id": "task_01M3STAMCSAHM33AK26ZQ0Y4XA",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.336,
+      "params": {
+        "prompt": "One continuous premium coffee cinematography shot. Start exactly on the first image: dawn aerial drone view over misty cloud-forest mountains in northern Peru with coffee plantations on the slopes. The camera smoothly descends and glides forward through the drifting mist, down into the canopy of the coffee plantation, arriving in an intimate close-up of an arabica coffee branch with glossy leaves and ripe red cherries, exactly matching the final image, where a few cherries float in the air turning into coffee beans. One fluid graceful camera move, no cut; the landscape never morphs into objects: soft mist passes in front of the lens to bridge the change of scale. Natural dawn light, deep forest-green tones, copper-gold highlights, photorealistic. No people, no animals, no text, no logos, no sound. The camera eases to rest in the last half second.",
+        "size": "16:9",
+        "duration": 5,
+        "frame_task_ids": [
+          "task_01M3SKD8JHE7PG5AD8702ZNTNV",
+          "task_01M3SKD9NJHCCWQQQ4B614GHJT"
+        ],
+        "mode": "std (provider default), 720p, no audio"
+      },
+      "human_approval": "L28: user explicitly approved generated video for the home hero on 2026-09-30 («go!»; budget raised by the user to TOTAL_BUDGET_USD=8.00)."
+    },
+    {
+      "id": "hero-desktop-beans",
+      "file": "audit/source/hero-desktop-beans-original.mp4",
+      "use": "adopted: desktop clip 2",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "kling-v3",
+      "operation": "generate-video",
+      "task_id": "task_01M3STANF9J2MNTGVC2VM5901N",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.336,
+      "params": {
+        "prompt": "One continuous premium coffee cinematography shot. Start exactly on the first image: close-up of an arabica coffee branch with ripe red cherries, a few cherries floating in the air turning into beans. The floating cherries drift slowly to the right and toward the camera, turning into glossy medium-roasted coffee beans that multiply into a flowing slow-motion cascade, while the misty forest background gradually darkens into deep forest-green darkness, arriving exactly at the final image: a curved cascade of roasted beans falling toward a dark walnut surface. Smooth slow motion, physically plausible bean motion, no cut, no flicker. Warm copper-gold rim light. No packaging, no bag, no cup, no hands, no people, no text, no logos, no sound. The motion eases in the last half second.",
+        "size": "16:9",
+        "duration": 5,
+        "frame_task_ids": [
+          "task_01M3SKD9NJHCCWQQQ4B614GHJT",
+          "task_01M3SKDAW86G6RWWRZP5XE3YYH"
+        ],
+        "mode": "std (provider default), 720p, no audio"
+      },
+      "human_approval": "L28: user explicitly approved generated video for the home hero on 2026-09-30 («go!»; budget raised by the user to TOTAL_BUDGET_USD=8.00)."
+    },
+    {
+      "id": "hero-mobile-origin",
+      "file": "audit/source/hero-mobile-origin-original.mp4",
+      "use": "adopted: mobile clip 1",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "kling-v3",
+      "operation": "generate-video",
+      "task_id": "task_01M3STAPGS7NT9Y2BZTE0M0Q6J",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.336,
+      "params": {
+        "prompt": "One continuous premium coffee cinematography shot. Start exactly on the first image: dawn aerial drone view over misty cloud-forest mountains in northern Peru with coffee plantations on the slopes. The camera smoothly descends and glides forward through the drifting mist, down into the canopy of the coffee plantation, arriving in an intimate close-up of an arabica coffee branch with glossy leaves and ripe red cherries, exactly matching the final image, where a few cherries float in the air turning into coffee beans. One fluid graceful camera move, no cut; the landscape never morphs into objects: soft mist passes in front of the lens to bridge the change of scale. Natural dawn light, deep forest-green tones, copper-gold highlights, photorealistic. No people, no animals, no text, no logos, no sound. The camera eases to rest in the last half second.",
+        "size": "9:16",
+        "duration": 5,
+        "frame_task_ids": [
+          "task_01M3SSQRNR8BSNK966VBR9B3PF",
+          "task_01M3SSRKE915Z4BZEGCANVV1V3"
+        ],
+        "mode": "std (provider default), 720p, no audio"
+      },
+      "human_approval": "L28: user explicitly approved generated video for the home hero on 2026-09-30 («go!»; budget raised by the user to TOTAL_BUDGET_USD=8.00)."
+    },
+    {
+      "id": "hero-mobile-beans",
+      "file": "audit/source/hero-mobile-beans-original.mp4",
+      "use": "adopted: mobile clip 2",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "kling-v3",
+      "operation": "generate-video",
+      "task_id": "task_01M3STAQHWWZZDCYR1S4EPH1P3",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.336,
+      "params": {
+        "prompt": "One continuous premium coffee cinematography shot. Start exactly on the first image: close-up of an arabica coffee branch with ripe red cherries, a few cherries floating in the air turning into beans. The floating cherries drift slowly to the right and toward the camera, turning into glossy medium-roasted coffee beans that multiply into a flowing slow-motion cascade, while the misty forest background gradually darkens into deep forest-green darkness, arriving exactly at the final image: a curved cascade of roasted beans falling toward a dark walnut surface. Smooth slow motion, physically plausible bean motion, no cut, no flicker. Warm copper-gold rim light. No packaging, no bag, no cup, no hands, no people, no text, no logos, no sound. The motion eases in the last half second.",
+        "size": "9:16",
+        "duration": 5,
+        "frame_task_ids": [
+          "task_01M3SSRKE915Z4BZEGCANVV1V3",
+          "task_01M3SSRN8XBPRYBDNPD1WFPGVC"
+        ],
+        "mode": "std (provider default), 720p, no audio"
+      },
+      "human_approval": "L28: user explicitly approved generated video for the home hero on 2026-09-30 («go!»; budget raised by the user to TOTAL_BUDGET_USD=8.00)."
+    },
+    {
+      "id": "cup03-grind",
+      "file": "audit/source/cup03-grind.jpg",
+      "use": "adopted: 03 step 1",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "operation": "generate-image",
+      "task_id": "task_01M3SNGEFX0DZJF2GKMQ48Z4AZ",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Premium cinematic specialty-coffee campaign film still, landscape 16:9, same visual world as a dark moody set: deep forest-green shadows, dark walnut wood surface, warm copper-gold raking light from the right, strong chiaroscuro, high photographic realism, tactile, expensive. Left 40 percent of the frame dark and quiet for editorial type. No hands, no people, no logos, no brand marks, no text, no watermark. Extreme close-up: freshly ground coffee of MEDIUM grind (texture like coarse sand) cascading in a thin continuous stream into a white paper filter sitting in a clear glass cone pour-over dripper, fine particles and a little chaff floating in the light, rich brown tones. Subject placed at 65 percent from the left.",
+        "size": "16:9",
+        "resolution": "2K",
+        "reference_images": []
+      },
+      "human_approval": null
+    },
+    {
+      "id": "cup03-bloom",
+      "file": "audit/source/cup03-bloom.jpg",
+      "use": "adopted: 03 step 2 (first frame)",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "operation": "generate-image",
+      "task_id": "task_01M3SNGFHSZC02AYV9JRMS5VDH",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Premium cinematic specialty-coffee campaign film still, landscape 16:9, same visual world as a dark moody set: deep forest-green shadows, dark walnut wood surface, warm copper-gold raking light from the right, strong chiaroscuro, high photographic realism, tactile, expensive. Left 40 percent of the frame dark and quiet for editorial type. No hands, no people, no logos, no brand marks, no text, no watermark. Three-quarter top-down close-up of a clear glass cone pour-over dripper with a white paper filter full of medium-ground coffee: a thin gooseneck stream of hot water spirals onto the coffee bed and the coffee blooms, swelling and bubbling with tiny glossy bubbles, delicate steam rising and catching the warm light. Only the tip of a matte black gooseneck spout visible entering from the top right. Subject at 65 percent from the left.",
+        "size": "16:9",
+        "resolution": "2K",
+        "reference_images": []
+      },
+      "human_approval": null
+    },
+    {
+      "id": "cup03-drip",
+      "file": "audit/source/cup03-drip.jpg",
+      "use": "adopted: 03 step 2 (second frame)",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "operation": "generate-image",
+      "task_id": "task_01M3SNGGK23NMSZTC9CBEAVD0T",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Premium cinematic specialty-coffee campaign film still, landscape 16:9, same visual world as a dark moody set: deep forest-green shadows, dark walnut wood surface, warm copper-gold raking light from the right, strong chiaroscuro, high photographic realism, tactile, expensive. Left 40 percent of the frame dark and quiet for editorial type. No hands, no people, no logos, no brand marks, no text, no watermark. Close-up side view of the tip of a clear glass pour-over dripper releasing a slow thin stream and droplets of clear amber-mahogany filter coffee into a clear glass server below, the liquid glowing translucent amber as warm light passes through it, soft steam. Subject at 65 percent from the left.",
+        "size": "16:9",
+        "resolution": "2K",
+        "reference_images": []
+      },
+      "human_approval": null
+    },
+    {
+      "id": "cup03-still-desktop",
+      "file": "audit/source/cup03-still-desktop.jpg",
+      "use": "adopted: 03 final still life, desktop",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "operation": "generate-image",
+      "task_id": "task_01M3SQH3S6V4PARSXC8CPBXWM6",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Full-bleed premium cinematic specialty-coffee campaign still life, landscape 16:9, image fills the entire frame edge to edge, no border, no white frame. Wider shot than a close-up: camera pulled back at table height, slightly above. Dark moody set: deep forest-green background falling into near black, a long dark walnut wood table running across the lower third, warm copper-gold backlight from the upper right, strong chiaroscuro, high photographic realism, expensive. On the table, a single small double-walled borosilicate glass cup standing at 74 percent from the left in the foreground, the cup only about 20 percent of the image height, filled with freshly brewed black filter coffee: deep dark mahogany-black liquid, clearly coffee not tea, glowing translucent reddish-amber at the edges where the backlight passes through, a thin ring of fine light-brown foam at the surface, delicate wisps of steam catching the light. Directly to the left of the cup and slightly behind it, at 58 percent from the left, keep an EMPTY area of the table surface with a soft pool of light, where a tall product package about 2.5 times the height of the cup will be composited later; nothing is standing there. Left 42 percent of the frame dark and quiet for editorial type. Nothing else on the table: no dripper, no beans, no saucer, no spoon, no packaging, no hands, no logos, no text, no watermark.",
+        "size": "16:9",
+        "resolution": "2K",
+        "reference_images": []
+      },
+      "human_approval": null
+    },
+    {
+      "id": "cup03-still-mobile",
+      "file": "audit/source/cup03-still-mobile.jpg",
+      "use": "adopted: 03 final still life, mobile",
+      "status": "CONCEPTUAL_ASSET",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "operation": "generate-image",
+      "task_id": "task_01M3STAD5VGMYE5B4W22YH5WVC",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Full-bleed premium cinematic specialty-coffee still life, VERTICAL 9:16 frame, image fills the frame edge to edge, no border. Dark moody set: deep forest-green background falling into near black, a dark walnut wood table surface occupying the middle of the frame, warm copper-gold backlight from the upper right, strong chiaroscuro, high photographic realism. On the table, a small double-walled borosilicate glass cup standing at 70 percent from the left, its base at 60 percent from the top, the cup about 16 percent of the image height, filled with freshly brewed black filter coffee: deep dark mahogany-black liquid, clearly coffee not tea, glowing reddish-amber at the edges where backlight passes, thin ring of fine light-brown foam, delicate steam rising. To the left of the cup and slightly behind it, at 35 percent from the left, keep an EMPTY area of the table with a soft pool of light where a tall product package (about 2.2 times the cup height) will be composited later. The lower 35 percent of the frame dark and quiet for text. Nothing else on the table: no dripper, no beans, no saucer, no spoon, no packaging, no hands, no logos, no text, no watermark.",
+        "size": "9:16",
+        "resolution": "2K",
+        "reference_images": []
+      },
+      "human_approval": null
+    },
+    {
+      "id": "cup-v1",
+      "file": "not kept",
+      "use": "rejected: white border, coffee looked like tea",
+      "status": "REJECTED",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "operation": "generate-image",
+      "task_id": "task_01M3SNGHNAXV1WFWBR3TZJYGBS",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Premium cinematic specialty-coffee campaign film still, landscape 16:9, same visual world as a dark moody set: deep forest-green shadows, dark walnut wood surface, warm copper-gold raking light from the right, strong chiaroscuro, high photographic realism, tactile, expensive. Left 40 percent of the frame dark and quiet for editorial type. No hands, no people, no logos, no brand marks, no text, no watermark. A single double-walled borosilicate glass cup filled with clear, glowing amber-mahogany black filter coffee (no crema, no milk), the coffee appearing to float inside the transparent double wall, warm backlight making the liquid luminous, delicate steam, on the dark walnut table. Cup centered at 72 percent from the left and occupying about 45 percent of image height. Keep an EMPTY clear space on the table at 50 percent from the left where a product will be composited later. Nothing else on the table: no dripper, no beans, no saucer, no spoon, no packaging.",
+        "size": "16:9",
+        "resolution": "2K",
+        "reference_images": []
+      },
+      "human_approval": null
+    },
+    {
+      "id": "cup-v2",
+      "file": "not kept",
+      "use": "rejected: close-up cup, superseded by the wider still life (bag scale)",
+      "status": "REJECTED",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "operation": "generate-image",
+      "task_id": "task_01M3SNJVW0N7CRZFPGEP4PVQT9",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Full-bleed premium cinematic specialty-coffee campaign film still, landscape 16:9, image fills the entire frame edge to edge, no border, no white frame, no margins. Dark moody set: deep forest-green background falling into near black, dark walnut wood table, warm copper-gold backlight from the upper right, strong chiaroscuro, high photographic realism, tactile, expensive. A single double-walled borosilicate glass cup, large in frame (cup height about 55 percent of the image height), centered at 70 percent from the left, filled with freshly brewed BLACK filter coffee: deep dark mahogany-black liquid, clearly coffee not tea, glowing translucent reddish-amber only at the rim and edges where the backlight passes through, a thin ring of fine light-brown foam bubbles at the surface edge, the coffee appearing to float inside the transparent double wall, delicate wisps of steam catching the light. Keep an empty clear area of the table at 45 percent from the left for a product composited later. Left 35 percent dark and quiet for editorial type. Nothing else on the table: no dripper, no beans, no saucer, no spoon, no packaging, no hands, no logos, no text, no watermark.",
+        "size": "16:9",
+        "resolution": "2K",
+        "reference_images": []
+      },
+      "human_approval": null
+    },
+    {
+      "id": "cup-v3",
+      "file": "not kept",
+      "use": "rejected: close-up cup, superseded by the wider still life (bag scale)",
+      "status": "REJECTED",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "operation": "generate-image",
+      "task_id": "task_01M3SNV97BXSX6YVZMFS659XXQ",
+      "created": "2026-09-30",
+      "actual_cost_usd": 0.03,
+      "params": {
+        "prompt": "Full-bleed premium cinematic specialty-coffee campaign film still, landscape 16:9, image fills the entire frame edge to edge, no border, no white frame, no margins. Dark moody set: deep forest-green background falling into near black, dark walnut wood table, warm copper-gold backlight from the upper right, strong chiaroscuro, high photographic realism, tactile, expensive. A single double-walled borosilicate glass cup, large in frame (cup height about 55 percent of the image height), centered at 70 percent from the left, filled with freshly brewed BLACK filter coffee: deep dark mahogany-black liquid, clearly coffee not tea, glowing translucent reddish-amber only at the rim and edges where the backlight passes through, a thin ring of fine light-brown foam bubbles at the surface edge, the coffee appearing to float inside the transparent double wall, delicate wisps of steam catching the light. Keep an empty clear area of the table at 45 percent from the left for a product composited later. Left 35 percent dark and quiet for editorial type. Nothing else on the table: no dripper, no beans, no saucer, no spoon, no packaging, no hands, no logos, no text, no watermark.",
+        "size": "16:9",
+        "resolution": "2K",
+        "reference_images": []
+      },
+      "human_approval": null
+    }
+  ]
+}
