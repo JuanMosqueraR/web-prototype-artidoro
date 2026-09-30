@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Propuesta Artidoro Rodríguez</title>
+<!--
+  Presentación para la reunión con Artidoro Rodríguez. Escrita manualmente (29.09.2026).
+  Usa las fuentes y fotos de public/assets/ y las capturas de qa/2026-09-28-ahorrador/after/
+  mediante rutas relativas: abrir desde esta carpeta del repositorio.
+  Teclas: ← → (o espacio) navegar · F pantalla completa · N notas del orador.
+-->
+<style>
+@font-face{font-family:Chivo;src:url('../public/assets/chivo-regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:Chivo;src:url('../public/assets/chivo-bold.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:Barlow;src:url('../public/assets/barlow-condensed-800.woff2') format('woff2');font-weight:800;font-display:swap}
+:root{--green:#102e25;--green-deep:#0b211a;--cream:#f4f0e5;--sand:#ded7c9;--sage:#e1e4d5;--muted:#41594b;--gold:#d1af7e;font-family:Chivo,Arial,sans-serif;font-synthesis:none}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--green-deep);overflow:hidden}
+body{font:16px/normal Chivo,Arial,sans-serif}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:6px}
+
+/* Escenario fijo 1600 × 900, escalado para caber en cualquier pantalla */
+.stage{position:absolute;left:50%;top:50%;width:1600px;height:900px;transform-origin:center;transform:translate(-50%,-50%) scale(var(--fit,1))}
+.slide{position:absolute;inset:0;overflow:hidden;opacity:0;visibility:hidden;transition:opacity .35s ease,visibility 0s linear .35s;padding:72px 96px 64px}
+.slide.is-active{opacity:1;visibility:visible;transition:opacity .35s ease}
+.notes{display:none}
+
+.s-green{background:var(--green);color:var(--cream);--line:#f4f0e526;--soft:#f4f0e5b8}
+.s-cream{background:var(--cream);color:var(--green);--line:#102e2524;--soft:var(--muted)}
+.s-sage{background:var(--sage);color:var(--green);--line:#102e2524;--soft:var(--muted)}
+.s-sand{background:var(--sand);color:var(--green);--line:#102e2524;--soft:var(--muted)}
+
+.kicker{font-size:13px;line-height:1.6;letter-spacing:2px;text-transform:uppercase}
+.title{font-family:Barlow,'Arial Narrow',sans-serif;font-weight:800;text-transform:uppercase;line-height:.9;letter-spacing:-.02em}
+.gold{color:var(--gold)}
+.pageno{position:absolute;right:96px;bottom:30px;font-size:12px;letter-spacing:2px;color:var(--soft)}
+.brandline{position:absolute;left:96px;bottom:30px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--soft)}
+.demo-link{display:inline-flex;align-items:center;justify-content:space-between;gap:34px;min-height:44px;font-size:15px;font-weight:700;border-bottom:1px solid currentColor}
+.demo-link span{font-weight:400;font-size:18px}
+.demo-link:hover{opacity:.72}
+
+/* Portada */
+.cover-top{display:flex;justify-content:space-between;align-items:center}
+.cover-top img{width:150px;height:auto}
+.cover-copy{position:absolute;left:96px;top:250px;width:900px}
+.cover-copy .title{font-size:156px;margin-top:26px}
+.cover-copy p{font-size:22px;line-height:1.55;margin-top:34px;max-width:620px}
+.cover-bag{position:absolute;right:170px;top:118px;height:690px;width:auto;filter:drop-shadow(18px 30px 26px #06160e66)}
+.cover-meta{position:absolute;left:96px;bottom:72px;display:flex;gap:48px;font-size:14px;color:var(--soft)}
+
+/* La idea */
+.idea-head{display:grid;grid-template-columns:1fr 540px;gap:80px;align-items:end;margin-top:70px}
+.idea-head .title{font-size:124px}
+.idea-head p{font-size:22px;line-height:1.6;padding-bottom:10px}
+.moments{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;margin-top:128px}
+.moments li{border-top:1px solid var(--green);padding-top:18px}
+.moments strong{display:block;font-family:Barlow,'Arial Narrow',sans-serif;font-size:40px;line-height:1;text-transform:uppercase;letter-spacing:-.01em;margin:8px 0 10px}
+.moments span{font-size:16px;line-height:1.5;color:var(--muted)}
+.pack-strip{margin-top:56px;background:var(--sage);display:flex;align-items:center;gap:32px;padding:22px 28px;font-size:18px}
+.pack-strip .kicker{font-size:12px}
+
+/* Revisión de su tienda */
+.review-head .title{font-size:92px;margin-top:22px}
+.review-cols{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:48px}
+.review-cols li{font-size:19px;line-height:1.45;padding:13px 0;border-bottom:1px solid var(--line)}
+.review-cols li:last-child{border-bottom:0}
+.review-cols .muted-item{color:var(--muted);font-style:italic}
+.source{position:absolute;left:96px;right:96px;bottom:70px;font-size:13px;line-height:1.6;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+
+/* Estrategia de conversión */
+.strategy-head{display:flex;justify-content:space-between;align-items:end;gap:60px;margin-top:18px}
+.strategy-head .title{font-size:104px}
+.strategy-head p{font-size:18px;line-height:1.55;max-width:430px;color:var(--soft)}
+.lever-table{margin-top:40px;display:grid;grid-template-columns:300px 1fr 1fr;border-top:1px solid var(--cream)}
+.lever-table>div{padding:12px 20px 12px 0;font-size:16.5px;line-height:1.45;border-bottom:1px solid var(--line)}
+.lever-table .th{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--soft);padding-top:14px;padding-bottom:10px}
+.lever-table .row-name{font-family:Barlow,'Arial Narrow',sans-serif;font-size:27px;line-height:1.05;text-transform:uppercase;letter-spacing:-.01em}
+.lever-table .add{color:var(--gold)}
+.strategy-foot{position:absolute;left:96px;right:96px;bottom:70px;font-size:14px;color:var(--soft)}
+
+/* Paradas de la demo */
+.stop{display:grid;grid-template-columns:520px 1fr;gap:64px;height:100%}
+.stop-copy{display:flex;flex-direction:column}
+.stop-head{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.lever{font-size:11px;letter-spacing:1.6px;text-transform:uppercase;border:1px solid var(--line);padding:6px 10px;white-space:nowrap}
+.stop-copy .title{font-size:76px;margin-top:22px}
+.label{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--soft);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+.seen{margin-top:12px}
+.seen li{font-size:18px;line-height:1.5;padding:7px 0 7px 26px;position:relative}
+.seen li:before{content:"→";position:absolute;left:0;top:7px}
+.why{font-size:20px;line-height:1.5;margin-top:12px}
+.caveat{font-size:13px;line-height:1.6;color:var(--soft);margin-top:18px}
+.stop-copy .demo-link{margin-top:auto;align-self:flex-start;margin-bottom:26px}
+.visual{position:relative;height:100%}
+.visual-note{position:absolute;right:0;bottom:-8px;font-size:12px;color:var(--soft);letter-spacing:.3px}
+
+.device{position:absolute;background:var(--green-deep);box-shadow:0 34px 60px #06160e4d}
+.laptop{padding:12px;border-radius:14px}
+.phone{padding:10px;border-radius:34px}
+.browser{padding:12px;border-radius:10px}
+.screen{width:calc(var(--w) * 1px);height:calc(var(--h) * var(--w) / var(--sw) * 1px);overflow:hidden;background:#fff}
+.phone .screen{border-radius:25px}
+.laptop .screen,.browser .screen{border-radius:4px}
+.screen img{width:100%;max-width:none;margin-top:calc(var(--y, 0) * var(--w) / var(--sw) * -1px)}
+
+/* Cierre */
+.close-grid{display:grid;grid-template-columns:1fr 560px;gap:90px;margin-top:86px;align-items:start}
+.next-step{display:flex;align-items:center;justify-content:space-between;gap:34px;width:470px;min-height:62px;margin-top:64px;padding:0 24px;background:var(--cream);color:var(--green);font-size:17px;font-weight:700}
+.next-step span{font-size:24px;font-weight:400}
+.close-grid .title{font-size:140px}
+.steps{counter-reset:step;margin-top:14px}
+.steps li{counter-increment:step;display:grid;grid-template-columns:52px 1fr;gap:10px;font-size:22px;line-height:1.5;padding:22px 0;border-top:1px solid var(--line)}
+.steps li:before{content:"0" counter(step);font-size:13px;letter-spacing:2px;padding-top:8px;color:var(--gold)}
+.close-foot{position:absolute;left:96px;right:96px;bottom:72px;font-size:15px;color:var(--soft);border-top:1px solid var(--line);padding-top:18px}
+
+/* Etapa 1 */
+.stage1-head{display:flex;justify-content:space-between;align-items:end;margin-top:18px}
+.stage1-head .title{font-size:92px}
+.stage1-head p{font-size:17px;line-height:1.55;max-width:470px;text-align:right;color:var(--muted)}
+.columns{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:64px}
+.col{border-top:1px solid var(--green);padding-top:16px}
+.col ul{margin-top:10px}
+.col li{font-size:19px;line-height:1.45;padding:14px 0;border-bottom:1px solid var(--line)}
+.col li:last-child{border-bottom:0}
+.pay{background:var(--sage);margin-top:16px;padding:16px 20px;font-size:18px;line-height:1.6}
+.pay strong{font-weight:700}
+.stage1-foot{position:absolute;left:96px;right:96px;bottom:70px;font-size:14px;line-height:1.6;color:var(--muted)}
+
+/* La comanda */
+.order{display:grid;grid-template-columns:540px 1fr;gap:110px;align-items:center;height:100%}
+.ticket{background:#fbf9f3;color:var(--green);padding:40px 44px 36px;box-shadow:0 30px 60px #3b2f1f33;transform:rotate(-1.6deg);font-size:17px;line-height:1.5}
+.ticket img{width:118px;height:auto;margin:0 auto}
+.ticket .kicker{text-align:center;margin-top:14px;font-size:12px}
+.ticket hr{border:0;border-top:2px dashed #102e2540;margin:18px 0}
+.ticket ul li{display:flex;align-items:baseline;gap:8px;padding:4px 0}
+.ticket ul li b{font-weight:700;min-width:30px}
+.ticket .dots{flex:1;border-bottom:2px dotted #102e2540;transform:translateY(-4px)}
+.ticket .total{font-weight:700}
+.order-copy .title{font-size:150px;line-height:1.04;margin-top:22px}
+.order-copy .kicker{font-size:13px;margin-top:0;max-width:none}
+.order-copy p{font-size:22px;line-height:1.5;margin-top:30px;max-width:520px}
+.order-copy .demo-link{margin-top:26px;font-size:17px}
+.order-copy .by{font-size:15px;color:var(--muted);margin-top:22px}
+
+/* Controles y notas (fuera del escenario, no escalan) */
+.controls{position:fixed;left:16px;bottom:calc(14px + env(safe-area-inset-bottom, 0px));display:flex;flex-wrap:wrap;gap:6px;z-index:10;opacity:.0;transition:opacity .3s}
+.rotate-hint{display:none;position:fixed;left:16px;right:16px;top:calc(16px + env(safe-area-inset-top, 0px));margin:0;color:var(--cream);font-size:14px;line-height:1.5;text-align:center}
+body.narrow-portrait .rotate-hint{display:block}
+body:not(.idle) .controls,.controls:focus-within{opacity:.9}
+.controls button{font:12px/1 Chivo,Arial,sans-serif;background:#0b211acc;color:var(--cream);border:1px solid #f4f0e540;min-height:36px;padding:0 13px;cursor:pointer}
+.notes-panel{position:fixed;left:0;right:0;bottom:0;max-height:42vh;overflow:auto;background:#0b211af2;color:var(--cream);padding:18px 24px calc(64px + env(safe-area-inset-bottom, 0px));z-index:9;font-size:16px;line-height:1.6;border-top:1px solid #f4f0e540}
+.notes-panel h2{font-size:11px;letter-spacing:2px;text-transform:uppercase;opacity:.7;margin-bottom:8px;font-weight:400}
+.notes-panel p{max-width:980px;margin:0 0 8px}
+.notes-panel b{color:var(--gold);font-weight:700}
+
+@media (prefers-reduced-motion:reduce){.slide,.slide.is-active,.controls{transition:none}}
+
+/* Imprimir o guardar como PDF: una diapositiva por página, sin notas */
+@page{size:1600px 900px;margin:0}
+@media print{
+  html,body{height:auto;overflow:visible;background:none}
+  .stage{position:static;transform:none;width:1600px;height:auto}
+  .slide{position:relative;width:1600px;height:900px;opacity:1;visibility:visible;transition:none;break-after:page;page-break-after:always;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .controls,.notes-panel{display:none!important}
+}
+</style>
+</head>
+<body>
+<main class="stage" id="stage" aria-roledescription="presentación" aria-label="Artidoro — Perú, en profundidad">
+
+  <!-- 1 · Portada -->
+  <section class="slide s-green" aria-roledescription="diapositiva" aria-label="Portada">
+    <div class="cover-top">
+      <img src="../public/assets/logo-white.png" alt="Artidoro Rodríguez Peruvian Coffee">
+      <p class="kicker">Tienda online · Propuesta</p>
+    </div>
+    <div class="cover-copy">
+      <p class="kicker">Artidoro Rodríguez · Dirección A</p>
+      <h1 class="title">Perú, en<br>profundidad.</h1>
+      <p>Una propuesta para que la tienda online cuente el origen y venda al mismo tiempo.</p>
+    </div>
+    <img class="cover-bag" src="../public/assets/amazonas-250g.webp" alt="Bolsa de café Artidoro Rodríguez, origen Amazonas, 250 g">
+    <div class="cover-meta"><span>Demo navegable y siguiente paso</span><span>Juan Mosquera</span><span>Septiembre 2026</span></div>
+    <aside class="notes"><p>Presentarse en una frase y pasar a la idea.</p></aside>
+  </section>
+
+  <!-- 2 · La idea -->
+  <section class="slide s-cream" aria-roledescription="diapositiva" aria-label="La idea">
+    <p class="kicker">La idea</p>
+    <div class="idea-head">
+      <h2 class="title">Lo más difícil<br>ya lo tienen.</h2>
+      <p>Café de cinco orígenes peruanos, un empaque con personalidad y una cafetería de verdad en Tarata. La propuesta: que la tienda online cuente esa historia y venda al mismo tiempo.</p>
+    </div>
+    <ol class="moments">
+      <li><span class="kicker">01</span><strong>Presencia</strong><span>Café, precio y compra desde la primera pantalla.</span></li>
+      <li><span class="kicker">02</span><strong>Elección</strong><span>Cinco orígenes, de uno en uno.</span></li>
+      <li><span class="kicker">03</span><strong>Deseo</strong><span>Un momento para el antojo.</span></li>
+      <li><span class="kicker">04</span><strong>Cercanía</strong><span>Tarata, un lugar real.</span></li>
+      <li><span class="kicker">05</span><strong>Compra</strong><span>Un cierre ordenado.</span></li>
+    </ol>
+    <p class="pack-strip"><span class="kicker">Pack</span>El Ahorrador, a mano desde la primera pantalla, desde los orígenes y desde el cierre.</p>
+    <aside class="notes">
+      <p><b>Decir:</b> «Artidoro ya tiene lo más difícil: café peruano de cinco orígenes, un empaque con personalidad y una cafetería de verdad en Tarata. Esta propuesta busca que la tienda online cuente esa historia y venda al mismo tiempo. Desde la primera pantalla se ve un café, su precio y cómo comprarlo, y El Ahorrador aparece desde el inicio. Después, la página ayuda a elegir entre los cinco orígenes sin abrumar, se detiene un momento en la taza, recuerda que hay un lugar donde tomarla y cierra con una compra ordenada. No se trata de una página más bonita, sino de un recorrido donde el antojo y la compra van siempre juntos.»</p>
+    </aside>
+  </section>
+
+  <!-- 3 · Revisión de su tienda -->
+  <section class="slide s-cream" aria-roledescription="diapositiva" aria-label="Revisión de su tienda">
+    <div class="review-head">
+      <p class="kicker">Revisión de su tienda</p>
+      <h2 class="title">Buena base.<br>Espacio para crecer.</h2>
+    </div>
+    <div class="review-cols">
+      <div class="col">
+        <p class="kicker">Lo que ya tienen</p>
+        <ul>
+          <li>Envío gratis desde S/ 110, anunciado arriba de la página.</li>
+          <li>Precios con ahorro a la vista en colecciones y en la ficha del pack.</li>
+          <li>Mensajes claros: tostado cada semana, envíos a todo el Perú.</li>
+          <li>Reseñas de clientes y preguntas frecuentes en la home.</li>
+          <li>La ficha del pack explica cómo armarlo.</li>
+        </ul>
+      </div>
+      <div class="col">
+        <p class="kicker">Dónde hay espacio</p>
+        <ul>
+          <li>Primera pantalla: la marca se luce, pero producto, precio y compra llegan al desplazarse.</li>
+          <li>Colecciones: abren con imagen y texto; los productos empiezan más abajo.</li>
+          <li>Ficha del pack en celular: el botón de compra llega tras quince selectores, sin envío, cambios ni calificación al lado.</li>
+          <li class="muted-item">Velocidad en celular: la mediremos al empezar, como punto de partida.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="source">Revisión propia de su tienda el 29.09.2026, en computadora (1440 px) y celular (390 px), sin llegar al carrito.</p>
+    <aside class="notes">
+      <p><b>Decir:</b> «Revisamos su tienda en computadora y en celular. Tiene una base muy buena: envío gratis desde 110 soles, precios con ahorro a la vista, el tostado semanal, reseñas, preguntas frecuentes, y la ficha del pack ya explica cómo armarlo. Vimos espacio para crecer en tres momentos: la primera pantalla, donde la marca se luce pero el producto y el precio llegan después; las colecciones, que abren con texto antes de los productos; y la ficha del pack en celular, donde el botón de compra llega después de muchos selectores y sin información de envío al lado. La velocidad en celular la mediríamos al empezar.»</p>
+    </aside>
+  </section>
+
+  <!-- 4 · Estrategia de conversión -->
+  <section class="slide s-green" aria-roledescription="diapositiva" aria-label="Estrategia de conversión">
+    <p class="kicker">La estrategia · conversión: que más visitas terminen en compra</p>
+    <div class="strategy-head">
+      <h2 class="title">Del antojo<br><span class="gold">al carrito.</span></h2>
+      <p>Cada parte de la demo responde a un momento de la compra. Lo que falta, lo sumaríamos al llevarla a su tienda.</p>
+    </div>
+    <div class="lever-table" role="table" aria-label="Oportunidad, respuesta de la demo y lo que sumaríamos">
+      <div class="th" role="columnheader">Oportunidad</div><div class="th" role="columnheader">Lo que hace la demo</div><div class="th" role="columnheader">Lo que sumaríamos en su tienda</div>
+      <div class="row-name">Claridad</div><div>Café, precio y botón de compra en la primera pantalla.</div><div class="add">Medir cuántas visitas compran desde la portada.</div>
+      <div class="row-name">Elección</div><div>Cinco orígenes, de uno en uno, con nota en taza, precio y compra.</div><div class="add">El mismo orden en la ficha de cada café.</div>
+      <div class="row-name">El pack</div><div>El Ahorrador desde tres puntos; tres selectores y el total siempre visible.</div><div class="add">Mantener el ahorro a la vista (S/ 330 → S/ 280) y elegir la molienda con opciones.</div>
+      <div class="row-name">Confianza</div><div>Reseñas publicadas y preguntas frecuentes antes de comprar.</div><div class="add">Envíos, cambios y calificación junto al botón; botón fijo en celular.</div>
+      <div class="row-name">Catálogo</div><div>Accesos a categorías desde el cierre.</div><div class="add">Productos y precios desde la primera pantalla de cada colección.</div>
+      <div class="row-name">Velocidad</div><div>Video y fotos solo cuando hacen falta; versión sin movimiento.</div><div class="add">Medir al empezar y después de cada entrega.</div>
+    </div>
+    <p class="strategy-foot">Son decisiones de diseño que se miden, no resultados prometidos.</p>
+    <aside class="notes">
+      <p><b>Decir:</b> «Todo lo que van a ver responde a una idea: llevar a la persona del antojo al carrito con la menor fricción posible. En cada fila está el momento de la compra, lo que hace la demo y lo que sumaríamos al llevarla a su tienda. Son decisiones que se miden: no les prometo un número, les propongo medirlo desde el primer día.»</p>
+    </aside>
+  </section>
+
+  <!-- 5 · Parada 1: primera pantalla -->
+  <section class="slide s-green" aria-roledescription="diapositiva" aria-label="Parada 1: primera pantalla">
+    <div class="stop">
+      <div class="stop-copy">
+        <div class="stop-head"><p class="kicker">Parada 1 · 01 / Presencia</p><p class="lever">Palanca · Claridad</p></div>
+        <h2 class="title">Marca y compra en la misma pantalla.</h2>
+        <p class="label">Lo que se ve</p>
+        <ul class="seen">
+          <li>El café, su precio y el botón de compra desde el primer momento.</li>
+          <li>«Acercar origen» para quien quiere saber más.</li>
+          <li>El Ahorrador, visible debajo.</li>
+        </ul>
+        <p class="label">Por qué importa</p>
+        <p class="why">Quien llega desde un anuncio o desde Instagram necesita entender qué se vende y cuánto cuesta, sin buscar.</p>
+        <a class="demo-link" href="https://juanmosquerar.github.io/web-prototype-artidoro/" target="_blank" rel="noopener">Ver en la demo <span>↗</span></a>
+      </div>
+      <div class="visual">
+        <figure class="device laptop" style="left:0;top:191px;--w:540;--sw:1440;--h:900">
+          <div class="screen"><img src="../qa/2026-09-28-ahorrador/after/a-desktop-motion-initial.png" alt="Primera pantalla de la demo en computadora: titular El origen se siente, bolsa Amazonas, precio y botón de compra"></div>
+        </figure>
+        <figure class="device phone" style="right:0;top:124px;--w:220;--sw:390;--h:844">
+          <div class="screen"><img src="../qa/2026-09-28-ahorrador/after/a-mobile-motion-initial.png" alt="Primera pantalla de la demo en teléfono, con acceso a El Ahorrador"></div>
+        </figure>
+        <p class="visual-note">Capturas de la demo · 1440 y 390 px de ancho · 28.09.2026</p>
+      </div>
+    </div>
+    <aside class="notes">
+      <p><b>Mostrar:</b> la portada en el teléfono. Tocar «Acercar origen» y volver.</p>
+      <p><b>Decir:</b> «Lo primero que se siente es la marca: el origen, el empaque, la letra. Pero en la misma pantalla están el café, su precio y el botón para comprarlo. Quien llega desde un anuncio o desde Instagram no tiene que adivinar qué venden ni cuánto cuesta. Si quiere saber más, se acerca el origen. Y aquí abajo ya aparece El Ahorrador.»</p>
+    </aside>
+  </section>
+
+  <!-- 6 · Parada 2: El Ahorrador -->
+  <section class="slide s-sage" aria-roledescription="diapositiva" aria-label="Parada 2: El Ahorrador">
+    <div class="stop">
+      <div class="stop-copy">
+        <div class="stop-head"><p class="kicker">Parada 2 · El Ahorrador</p><p class="lever">Palanca · El pack</p></div>
+        <h2 class="title">Tres bolsas.<br>Tú eliges.</h2>
+        <p class="label">Lo que se ve</p>
+        <ul class="seen">
+          <li>Se abre desde la primera pantalla, desde los orígenes y desde el cierre.</li>
+          <li>Tres bolsas de 1 kg: mezclar orígenes o repetir el favorito.</li>
+          <li>La combinación y el total, siempre a la vista.</li>
+        </ul>
+        <p class="label">Por qué importa</p>
+        <p class="why">Es una compra de S/ 280: conviene que quede muy clara antes de pagar.</p>
+        <p class="caveat">La foto es un ejemplo de combinación, hecho con fotos reales de las bolsas de 1 kg.</p>
+        <a class="demo-link" href="https://juanmosquerar.github.io/web-prototype-artidoro/#producto-ahorrador" target="_blank" rel="noopener">Ver en la demo <span>↗</span></a>
+      </div>
+      <div class="visual">
+        <figure class="device laptop" style="left:0;top:191px;--w:540;--sw:1440;--h:900">
+          <div class="screen"><img src="../qa/2026-09-28-ahorrador/after/desktop-pack-top.png" alt="Ficha de El Ahorrador en computadora: tres selectores de bolsa, total y botón Continuar con mi pack"></div>
+        </figure>
+        <figure class="device phone" style="right:0;top:124px;--w:220;--sw:390;--h:844">
+          <div class="screen"><img src="../qa/2026-09-28-ahorrador/after/mobile-pack-top.png" alt="Ficha de El Ahorrador en teléfono"></div>
+        </figure>
+        <p class="visual-note">Capturas de la demo · 1440 y 390 px de ancho · 28.09.2026</p>
+      </div>
+    </div>
+    <aside class="notes">
+      <p><b>Mostrar:</b> tocar «Armar mi pack». Cambiar una bolsa y luego repetir un origen. Enseñar cómo se actualiza el resumen. Todavía no tocar «Continuar».</p>
+      <p><b>Decir:</b> «Entendemos que este es el pack que hoy están impulsando, así que no lo escondimos: se abre desde la primera pantalla. Armarlo es simple: tres bolsas de un kilo, mezclas orígenes o repites tu favorito, y siempre ves qué te llevas y cuánto es. Es una compra de 280 soles, así que conviene que quede muy clara antes de pagar. La foto es un ejemplo de combinación hecho con fotos reales de sus bolsas de un kilo.»</p>
+    </aside>
+  </section>
+
+  <!-- 7 · Parada 3: cinco orígenes -->
+  <section class="slide s-cream" aria-roledescription="diapositiva" aria-label="Parada 3: cinco orígenes">
+    <div class="stop">
+      <div class="stop-copy">
+        <div class="stop-head"><p class="kicker">Parada 3 · 02 / Elección</p><p class="lever">Palanca · Elección</p></div>
+        <h2 class="title">Cinco orígenes, sin abrumar.</h2>
+        <p class="label">Lo que se ve</p>
+        <ul class="seen">
+          <li>Un origen a la vez: región, nota en taza, precio y compra.</li>
+          <li>Elegir uno no cambia el resto de la página.</li>
+          <li>El pack sigue a mano.</li>
+        </ul>
+        <p class="label">Por qué importa</p>
+        <p class="why">Ayudar a elegir a quien no conoce las regiones, sin ponerle todas las opciones a la vez.</p>
+        <a class="demo-link" href="https://juanmosquerar.github.io/web-prototype-artidoro/#origin-scene" target="_blank" rel="noopener">Ver en la demo <span>↗</span></a>
+      </div>
+      <div class="visual">
+        <figure class="device laptop" style="left:0;top:223px;--w:540;--sw:1440;--h:781;--y:900">
+          <div class="screen"><img src="../qa/2026-09-28-ahorrador/after/desktop-home.png" alt="Sección de cinco orígenes en computadora: carrusel de bolsas, ficha de Amazonas con precio y compra"></div>
+        </figure>
+        <figure class="device phone" style="right:0;top:163px;--w:220;--sw:390;--h:740;--y:844">
+          <div class="screen"><img src="../qa/2026-09-28-ahorrador/after/mobile-home.png" alt="Sección de cinco orígenes en teléfono"></div>
+        </figure>
+        <p class="visual-note">Capturas de la demo · 1440 y 390 px de ancho · 28.09.2026</p>
+      </div>
+    </div>
+    <aside class="notes">
+      <p><b>Mostrar:</b> «Volver a la tienda» y bajar a 02. Deslizar entre orígenes y señalar la nota en taza, el precio, el botón y «Armar mi pack».</p>
+      <p><b>Decir:</b> «Cinco orígenes es una riqueza, pero puede ser mucho para quien no conoce las regiones. Aquí se ven de uno en uno: de dónde viene, cómo sabe, cuánto cuesta y cómo comprarlo. Elegir uno no cambia el resto de la página, así que nadie queda atrapado en un camino, y el pack sigue a la mano.»</p>
+    </aside>
+  </section>
+
+  <!-- 8 · Parada 4: la taza y Tarata -->
+  <section class="slide s-sand" aria-roledescription="diapositiva" aria-label="Parada 4: la taza y Tarata">
+    <div class="stop">
+      <div class="stop-copy">
+        <div class="stop-head"><p class="kicker">Parada 4 · 03 y 04 / Deseo y cercanía</p><p class="lever">Palanca · Velocidad</p></div>
+        <h2 class="title">La taza<br>y Tarata.</h2>
+        <p class="label">Lo que se ve</p>
+        <ul class="seen">
+          <li>Un momento para el antojo, lo que la foto de una bolsa sola no transmite. El video solo se carga al acercarse.</li>
+          <li>Tarata: un lugar real donde tomar este café.</li>
+        </ul>
+        <p class="label">Por qué importa</p>
+        <p class="why">Darle a la marca un carácter propio, sin quitarle protagonismo a la compra.</p>
+        <p class="caveat">La escena de la taza se creó para la demo, como referencia: no es de su origen ni de su local. Las fotos de Tarata son de referencia y su autoría está por confirmar.</p>
+        <a class="demo-link" href="https://juanmosquerar.github.io/web-prototype-artidoro/#sensory-scene" target="_blank" rel="noopener">Ver en la demo <span>↗</span></a>
+      </div>
+      <div class="visual">
+        <figure class="device phone" style="left:40px;top:24px;--w:300;--sw:390;--h:780;--y:1584">
+          <div class="screen"><img src="../qa/2026-09-28-ahorrador/after/mobile-home.png" alt="Escena de la taza en teléfono: titular Un mundo. Una taza."></div>
+        </figure>
+        <figure class="device phone" style="left:410px;top:96px;--w:300;--sw:390;--h:792;--y:2364">
+          <div class="screen"><img src="../qa/2026-09-28-ahorrador/after/mobile-home.png" alt="Sección Tarata en teléfono: fachada con moto e interior de la barra"></div>
+        </figure>
+        <p class="visual-note">Capturas de la demo · 390 px de ancho · 28.09.2026</p>
+      </div>
+    </div>
+    <aside class="notes">
+      <p><b>Mostrar:</b> bajar sin detenerse mucho por la escena de la taza hasta llegar a Tarata.</p>
+      <p><b>Decir:</b> «Aquí la página se toma un respiro. Es el momento del antojo, lo que la foto de una bolsa sola no transmite. Esta escena se creó para la demo como referencia: no es de su origen ni de su local. Si se usa, o si se hace con material propio, lo decidimos con ustedes. Luego viene Tarata, para recordar que detrás de la tienda hay un lugar real. (Y sí, la moto está.) Antes de usar estas fotos habría que confirmar quién las tomó.»</p>
+    </aside>
+  </section>
+
+  <!-- 9 · Parada 5: cierre de compra -->
+  <section class="slide s-cream" aria-roledescription="diapositiva" aria-label="Parada 5: cierre de compra">
+    <div class="stop">
+      <div class="stop-copy">
+        <div class="stop-head"><p class="kicker">Parada 5 · 05 / Compra</p><p class="lever">Palanca · Confianza</p></div>
+        <h2 class="title">Un cierre que ordena la decisión.</h2>
+        <p class="label">Lo que se ve</p>
+        <ul class="seen">
+          <li>Café siempre en casa: el pack. Para regalar o descubrir: Travel Line. Y complementos.</li>
+          <li>Reseñas publicadas en su tienda y preguntas frecuentes.</li>
+          <li>«Continuar con mi pack» lleva la combinación a su tienda: allí se elige la molienda y se paga.</li>
+        </ul>
+        <p class="label">Por qué importa</p>
+        <p class="why">Quien ya se decidió encuentra qué comprar sin salir a buscarlo.</p>
+        <a class="demo-link" href="https://juanmosquerar.github.io/web-prototype-artidoro/#shop" target="_blank" rel="noopener">Ver en la demo <span>↗</span></a>
+      </div>
+      <div class="visual">
+        <figure class="device browser" style="right:40px;top:0;--w:622;--sw:1440;--h:1667">
+          <div class="screen"><img src="../qa/2026-09-28-ahorrador/after/desktop-05.png" alt="Cierre de compra en computadora: El Ahorrador, Travel Line, El Explorador, miel, categorías, reseñas y preguntas frecuentes"></div>
+        </figure>
+        <p class="visual-note">Captura de la demo · 1440 px de ancho · 28.09.2026</p>
+      </div>
+    </div>
+    <aside class="notes">
+      <p><b>Mostrar:</b> el bloque 05 con el pack primero y después Travel Line, Explorador y miel. Luego las categorías, las reseñas y abrir «¿Qué molienda elijo?». Tocar «Armar mi pack» (la combinación sigue ahí) y después «Continuar con mi pack», que abre su tienda con esa combinación.</p>
+      <p><b>Decir:</b> «El final ordena la decisión: para tener café siempre en casa, el pack; para regalar o descubrir, Travel Line; y los complementos. Debajo están reseñas publicadas en su tienda y las preguntas que la gente se hace antes de comprar. Al volver al pack, la combinación que armé sigue ahí. Con un toque llego a su tienda actual con esos tres orígenes, y ahí se elige la molienda y se paga.»</p>
+    </aside>
+  </section>
+
+  <!-- 10 · El siguiente paso -->
+  <section class="slide s-green" aria-roledescription="diapositiva" aria-label="El siguiente paso">
+    <p class="kicker">El siguiente paso</p>
+    <div class="close-grid">
+      <h2 class="title">De la demo<br><span class="gold">a su tienda.</span></h2>
+      <ol class="steps">
+        <li>En una copia sin publicar de su tienda: nada cambia hasta que ustedes lo aprueben.</li>
+        <li>Conectado a su catálogo y a su carrito, con precios, stock y pago reales.</li>
+        <li>Medido desde el primer día, para decidir con datos.</li>
+      </ol>
+    </div>
+    <p class="next-step">Primer paso: revisar juntos su tienda <span>→</span></p>
+    <p class="close-foot">Hoy la demo funciona fuera de su tienda, con precios y variantes del 28 de septiembre de 2026. No es una promesa de ventas: es un recorrido listo para llevar a su tienda y medir.</p>
+    <aside class="notes">
+      <p><b>Decir (30 s):</b> «Esto es una demo: funciona, pero vive fuera de su tienda y usa los precios del 28 de septiembre. No voy a prometerles una cifra de ventas. Lo que propongo es llevar este recorrido a su tienda, en una copia sin publicar, conectado a su catálogo y a su carrito, y medido desde el primer día. Ustedes lo revisan con calma y deciden cuándo publicar. Les dejo la propuesta. Si les hace sentido, el primer paso es revisar juntos la tienda por dentro y cerrar el presupuesto.»</p>
+    </aside>
+  </section>
+
+  <!-- 11 · Etapa 1 en una mirada -->
+  <section class="slide s-cream" aria-roledescription="diapositiva" aria-label="Etapa 1 en una mirada">
+    <p class="kicker">La propuesta</p>
+    <div class="stage1-head">
+      <h2 class="title">Etapa 1 en una mirada.</h2>
+      <p>La nueva experiencia dentro de su tienda Shopify actual. Presupuesto y calendario se confirman después de revisar la tienda por dentro.</p>
+    </div>
+    <div class="columns">
+      <div class="col">
+        <p class="kicker">Qué incluye</p>
+        <ul>
+          <li>Home con cinco secciones editables</li>
+          <li>Fichas de café y de pack, hasta 9 productos</li>
+          <li>Envíos, cambios y calificación junto al botón</li>
+          <li>Colecciones con productos y precios a la vista</li>
+          <li>Carrito conectado al pago actual</li>
+          <li>Pruebas en iPhone y Android reales</li>
+          <li>Medición con punto de partida y publicación con respaldo</li>
+        </ul>
+      </div>
+      <div class="col">
+        <p class="kicker">Cómo trabajamos</p>
+        <ul>
+          <li>Revisión de su tienda: confirma alcance y presupuesto</li>
+          <li>Dos rondas de revisión sobre la vista previa</li>
+          <li>Publicación solo cuando ustedes lo autoricen</li>
+          <li>30 días de soporte sobre lo entregado</li>
+        </ul>
+        <p class="pay"><strong>Pagos:</strong> 20 % al aceptar · 40 % con la vista previa completa · 40 % al publicar</p>
+      </div>
+      <div class="col">
+        <p class="kicker">Para cotizar necesitamos</p>
+        <ul>
+          <li>Plan de Shopify, tema y apps instaladas</li>
+          <li>Cómo se configuran El Ahorrador y la molienda</li>
+          <li>A qué página llevan los anuncios del pack</li>
+          <li>Qué analítica usan hoy</li>
+          <li>Quién aprueba por parte de Artidoro</li>
+        </ul>
+      </div>
+    </div>
+    <p class="stage1-foot">Fuera de esta etapa: cambio de plataforma, cambios en el pago, fichas a medida para otros productos y producción de fotos o video.</p>
+    <aside class="notes">
+      <p>Entregar la propuesta completa. Si preguntan por precio o plazo: se confirman después de revisar la tienda por dentro, con los datos de la columna derecha.</p>
+    </aside>
+  </section>
+
+  <!-- 12 · La comanda -->
+  <section class="slide s-sand" aria-roledescription="diapositiva" aria-label="La comanda">
+    <div class="order">
+      <div class="ticket" role="img" aria-label="Comanda de la Etapa 1 para Artidoro Rodríguez">
+        <img src="../public/assets/logo-black.png" alt="">
+        <p class="kicker">Comanda · 29.09.2026</p>
+        <hr>
+        <ul>
+          <li>Mesa <span class="dots"></span> Artidoro Rodríguez</li>
+          <li>Pedido <span class="dots"></span> Etapa 1</li>
+        </ul>
+        <hr>
+        <ul>
+          <li><b>1 ×</b> Home, cinco secciones</li>
+          <li><b>2 ×</b> Fichas: café y pack</li>
+          <li><b>1 ×</b> Colecciones con precios a la vista</li>
+          <li><b>1 ×</b> Carrito conectado al pago actual</li>
+          <li><b>1 ×</b> Medición desde el primer día</li>
+          <li>Molienda <span class="dots"></span> a su medida</li>
+        </ul>
+        <hr>
+        <ul>
+          <li class="total">Total <span class="dots"></span> tras revisar su tienda</li>
+          <li>Pago <span class="dots"></span> 20 · 40 · 40</li>
+        </ul>
+      </div>
+      <div class="order-copy">
+        <p class="kicker">El pedido está listo</p>
+        <h2 class="title">¿Lo<br>servimos?</h2>
+        <p>Primer paso: revisar juntos su tienda por dentro y cerrar presupuesto y calendario.</p>
+        <a class="demo-link" href="https://juanmosquerar.github.io/web-prototype-artidoro/" target="_blank" rel="noopener">Ver la demo <span>↗</span></a>
+        <p class="by">Juan Mosquera</p>
+      </div>
+    </div>
+    <aside class="notes">
+      <p><b>Decir:</b> «Este sería el pedido: la home, las fichas de café y de pack, las colecciones, el carrito conectado y la medición desde el primer día. El total lo cerramos después de ver su tienda por dentro. ¿Lo servimos?» Pausa y conversación.</p>
+    </aside>
+  </section>
+
+</main>
+
+<nav class="controls" aria-label="Controles de la presentación">
+  <button type="button" id="prev" aria-label="Diapositiva anterior">←</button>
+  <button type="button" id="next" aria-label="Diapositiva siguiente">→</button>
+  <button type="button" id="toggle-notes" aria-pressed="false">Notas (N)</button>
+  <button type="button" id="fullscreen">Pantalla completa (F)</button>
+</nav>
+<section class="notes-panel" id="notes-panel" aria-live="polite" hidden></section>
+<p class="rotate-hint">Para verla mejor, gira el teléfono o ábrela en una pantalla grande. Desliza para avanzar.</p>
+
+<script>
+(() => {
+  const stage = document.getElementById('stage');
+  const slides = [...stage.querySelectorAll('.slide')];
+  const panel = document.getElementById('notes-panel');
+  const notesButton = document.getElementById('toggle-notes');
+  const total = slides.length;
+  const pad = n => String(n).padStart(2, '0');
+  let current = 0;
+
+  slides.forEach((slide, i) => {
+    const no = document.createElement('span');
+    no.className = 'pageno';
+    no.textContent = `${pad(i + 1)} / ${pad(total)}`;
+    slide.appendChild(no);
+  });
+
+  function fit() {
+    const w = window.innerWidth, h = window.innerHeight;
+    const gutter = w < 700 ? 16 : 0;
+    const scale = Math.min((w - gutter * 2) / 1600, (h - gutter * 2) / 900);
+    stage.style.setProperty('--fit', scale);
+    document.body.classList.toggle('narrow-portrait', w < 700 && h > w);
+  }
+
+  function renderNotes() {
+    const notes = slides[current].querySelector('.notes');
+    panel.innerHTML = `<h2>Notas · ${pad(current + 1)} / ${pad(total)} · ← → navegar · F pantalla completa · N ocultar</h2>` + (notes ? notes.innerHTML : '');
+  }
+
+  function go(index) {
+    current = Math.max(0, Math.min(total - 1, index));
+    slides.forEach((slide, i) => {
+      const active = i === current;
+      slide.classList.toggle('is-active', active);
+      slide.setAttribute('aria-hidden', active ? 'false' : 'true');
+      slide.inert = !active;
+    });
+    renderNotes();
+    try { history.replaceState(null, '', `#${current + 1}`); } catch (error) { /* el visor puede no permitirlo */ }
+  }
+
+  function toggleNotes() {
+    panel.hidden = !panel.hidden;
+    notesButton.setAttribute('aria-pressed', String(!panel.hidden));
+  }
+
+  function toggleFullscreen() {
+    try {
+      const request = document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen?.();
+      request?.catch?.(() => {});
+    } catch (error) { /* pantalla completa no disponible */ }
+  }
+
+  document.getElementById('prev').addEventListener('click', () => go(current - 1));
+  document.getElementById('next').addEventListener('click', () => go(current + 1));
+  notesButton.addEventListener('click', toggleNotes);
+  document.getElementById('fullscreen').addEventListener('click', toggleFullscreen);
+
+  document.addEventListener('keydown', event => {
+    if (event.altKey || event.ctrlKey || event.metaKey) return;
+    const key = event.key;
+    if (['ArrowRight', 'PageDown', ' '].includes(key)) { event.preventDefault(); go(current + 1); }
+    else if (['ArrowLeft', 'PageUp'].includes(key)) { event.preventDefault(); go(current - 1); }
+    else if (key === 'Home') go(0);
+    else if (key === 'End') go(total - 1);
+    else if (key === 'n' || key === 'N') toggleNotes();
+    else if (key === 'f' || key === 'F') toggleFullscreen();
+  });
+
+  let touchX = null;
+  document.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, {passive: true});
+  document.addEventListener('touchend', e => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) go(current + (dx < 0 ? 1 : -1));
+    touchX = null;
+  });
+
+  let idleTimer;
+  function wake() {
+    document.body.classList.remove('idle');
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(() => document.body.classList.add('idle'), 2500);
+  }
+  document.addEventListener('mousemove', wake);
+  wake();
+
+  window.addEventListener('resize', fit);
+  fit();
+  const start = parseInt(location.hash.slice(1), 10);
+  go(Number.isFinite(start) ? start - 1 : 0);
+})();
+</script>
+</body>
+</html>

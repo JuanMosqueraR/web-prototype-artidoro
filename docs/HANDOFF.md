@@ -70,3 +70,49 @@ Preview usado: `http://127.0.0.1:4175/`, rutas `#producto-amazonas` y `#producto
 ```
 
 El build escribe `dist/`, ignorado por Git. Para Pages existe `scripts/build-pages.py`; leer antes de ejecutar y publicar solo con autorización explícita. No incluir el build local anterior como evidencia de un despliegue nuevo.
+
+## Actualización, 29 de septiembre de 2026
+
+El usuario confirma que probó esta iteración del pack en un iPhone físico sin problemas y que la versión actual está publicada en GitHub Pages. Es confirmación del usuario: el agente no hizo la prueba en iPhone. Sobre Pages, el agente solo comprobó que `https://juanmosquerar.github.io/web-prototype-artidoro/` responde y que su HTML incluye `#producto-ahorrador`, `#producto-amazonas` y las secciones 02–05; no verificó su render ni su comportamiento. Las menciones anteriores a la prueba de iPhone pendiente y al enlace público desactualizado quedan superadas por esta actualización.
+
+Presentación para la reunión con el dueño: [`deliverables/presentacion-artidoro.html`](../deliverables/presentacion-artidoro.html), escrita manualmente, con notas del orador (tecla N) y enlaces a la demo publicada. Usa fuentes y fotos de `public/assets/` y capturas de `qa/2026-09-28-ahorrador/after/` por ruta relativa: abrir desde el repositorio. La propuesta comercial y su nota interna se entregaron en el chat y no están en el repo; la forma de pago que indicó el usuario es 20 % al aceptar, 40 % con la vista previa completa y 40 % al publicar. Tarifa, capacidad, condiciones fiscales y fecha objetivo siguen pendientes. Nada de esto es un alcance contratado ni autoriza trabajar en la tienda.
+
+## Revisión de la tienda actual y presentación de 12 diapositivas, 29 de septiembre de 2026
+
+A petición del usuario, la presentación incorpora hallazgos de conversión sin citar el informe CRO del PDF. Sus cifras (LCP, puntajes, notas) no se usan: no tienen fuente verificable y el informe está en parte desactualizado. Solo se presentan observaciones propias.
+
+- **Condiciones.** Revisión de la tienda pública del 29.09.2026 (home, `/collections/cafe`, `/products/pack-3kg-origenes-1`) con Playwright y Chromium 148, DPR 1, a 1440×900 y 390×844. Se bloquearon analítica, píxeles y Klaviyo, y no se llegó al carrito. Capturas y `captures.json` en `qa/draft-2026-09-29-tienda-actual/`, carpeta ignorada por Git. El filtro también bloqueó recursos del pago acelerado de Shopify, así que esos botones pueden faltar en las capturas.
+- **Ya presente en la tienda.**
+  - Envío gratis desde S/110, en la barra superior.
+  - Precios con ahorro en colecciones y en la ficha del pack (precio normal S/330, oferta S/280).
+  - Mensajes de tostado semanal y de envíos a todo el Perú.
+  - Reseñas y preguntas frecuentes en la home.
+  - Bloque «¿Cómo funciona?» en la ficha del pack.
+- **Oportunidades confirmadas.**
+  - La primera pantalla de la home muestra la marca, sin producto ni precio, y con un enlace de texto como llamada a la acción.
+  - La colección de cafés abre con imagen y texto antes de los productos, en computadora y celular.
+  - En la ficha del pack en celular, el botón de compra llega tras quince selectores, sin plazo de envío, cambios ni calificación a su lado.
+- **Contradicen el informe.** Las tarjetas de colección sí muestran precio, y la home sí tiene señales de confianza y preguntas frecuentes, aunque fuera de la primera pantalla.
+- **Para la implementación futura.** La molienda del pack se indica en un campo de texto libre, no mediante variantes. No se presenta como defecto.
+- **Velocidad.** La API de PageSpeed Insights sin clave devolvió 429 (cuota diaria agotada) en los dos intentos. En la presentación la velocidad figura sin cifra, como medición pendiente al empezar.
+
+Cambios en la presentación:
+- dos diapositivas nuevas: «Buena base. Espacio para crecer.» (revisión) y «Del antojo al carrito.» (oportunidad → lo que hace la demo → lo que se sumaría en la tienda);
+- una palanca de conversión en cada parada;
+- la Etapa 1 ampliada con envíos, cambios y calificación junto al botón, colecciones con precios a la vista y medición con punto de partida;
+- el cierre «La comanda» en lugar de «Gracias».
+
+Las mejoras sugeridas forman parte de la propuesta, no son cambios en la demo. La estimación de horas de la propuesta, entregada en el chat, se amplía en consecuencia.
+
+## Presentación publicada como Artifact, 29 de septiembre de 2026
+
+A petición explícita del usuario, la presentación se publicó como Artifact privado de claude.ai: https://claude.ai/artifact/NxqnsgrjQ4cvEoFVAaiTKJ (versión 1, título «Propuesta Artidoro Rodríguez»). Solo pueden abrirla el propietario y quienes él invite desde el menú Compartir de la página.
+
+- **Cómo se generó la copia.** Se parte de `deliverables/presentacion-artidoro.html` y se hacen tres transformaciones: se quita el esqueleto `html/head/body` (lo aporta el visor), se incrustan las tres fuentes como data URI y se aplanan las rutas a `assets/` (logos y bolsa Amazonas) y `capturas/` (siete capturas de `qa/2026-09-28-ahorrador/after/`), publicadas junto a la página. El script de transformación quedó en el scratchpad de la sesión, fuera del repo. Para actualizar el Artifact desde otra sesión, hay que repetir esas transformaciones y publicar con la URL anterior.
+- **Cambios que también quedan en el archivo del repo.**
+  - Título «Propuesta Artidoro Rodríguez».
+  - Fuente explícita en `body`, porque el visor fija `system-ui`.
+  - Márgenes de área segura en controles y notas.
+  - Aviso para girar el teléfono en vertical estrecho, con un margen lateral de 16 px.
+  - Tolerancia a fallos de pantalla completa y de `history.replaceState`.
+- **Qué se verificó.** Una sola vista previa local de la copia (Chromium 148, DPR 1, 1600×900 y 390×844, sin errores ni imágenes rotas), antes de corregir la fuente de `body`. No se revisó el render en el visor de claude.ai. Las notas del orador están dentro de la página (tecla N): cualquiera con acceso puede verlas.

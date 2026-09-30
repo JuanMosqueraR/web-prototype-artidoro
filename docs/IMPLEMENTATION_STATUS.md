@@ -11,6 +11,7 @@ Desarrollada en `feat/catalogo-pdp` desde checkpoint `87ea725`; versionada e int
 | `qa/2026-09-28-ahorrador/` | Regresión, pruebas de combinación, destinos oficiales y capturas directas |
 | `dist/ahorrador-pages/` | Build local ignorado, generado por `scripts/build-pages.py --allow-dirty --out dist/ahorrador-pages`; sin staging de rama ni publicación |
 | `docs/HANDOFF.md`, `docs/CLAUDE_PRESENTACION_PROMPT.md` | Handoff escrito manualmente y prompt para redactar presentación/propuesta; no son una cotización aprobada |
+| `deliverables/presentacion-artidoro.html` | Presentación de 12 diapositivas para la reunión con el dueño (29 de septiembre), escrita manualmente; incluye la revisión propia de la tienda (evidencia exploratoria en `qa/draft-2026-09-29-tienda-actual/`, ignorada por Git). Sin assets nuevos: usa `public/assets/` y capturas de `qa/2026-09-28-ahorrador/after/` por ruta relativa y recorte CSS; abrir desde el repositorio. Enlaza a la demo en GitHub Pages; imprimible a PDF (una diapositiva por página). Copia publicada como Artifact privado; enlace y transformación en `docs/HANDOFF.md` |
 
 Node aislado 22.23.1/Vite 7.1.3, sin cambio de tooling. Las entregas inferiores y sus evidencias se conservan como históricas.
 
