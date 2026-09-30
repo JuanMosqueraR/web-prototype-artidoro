@@ -19,18 +19,43 @@ new MutationObserver(syncMotionButton).observe(root, {attributes:true,attributeF
 reduced.addEventListener('change', syncMotionButton);
 syncMotionButton();
 
-// Let native anchors work without JS; improve focus and avoid smooth-scrolling through 03.
+// Let native anchors work without JS. Smooth scrolling only where the path does not cross 03, whose
+// scroll-driven video would otherwise play through; a crossing jump is instant with a short arrival fade.
+const sensory = document.querySelector('#sensory-scene');
+const motionOff = () => reduced.matches || root.classList.contains('no-motion');
+function crossesSensory(targetY) {
+  const box = sensory.getBoundingClientRect();
+  const from = scrollY, to = targetY;
+  return Math.min(from, to) < box.bottom + scrollY - 1 && Math.max(from, to) > box.top + scrollY + 1;
+}
 document.querySelectorAll('.home-only a[href^="#"], .hero-peru a[href^="#"]').forEach(link => {
   link.addEventListener('click', event => {
     const target = document.querySelector(link.getAttribute('href'));
     if (!target) return;
     event.preventDefault();
     history.replaceState(null, '', link.getAttribute('href'));
-    target.scrollIntoView({behavior:'instant',block:'start'});
+    const targetY = target.getBoundingClientRect().top + scrollY;
+    const smooth = !motionOff() && !crossesSensory(targetY);
+    target.scrollIntoView({behavior: smooth ? 'smooth' : 'instant', block: 'start'});
+    if (!smooth && !motionOff() && target.id !== 'sensory-scene') {
+      target.classList.remove('anchor-arrive');
+      void target.offsetWidth;
+      target.classList.add('anchor-arrive');
+      target.addEventListener('animationend', () => target.classList.remove('anchor-arrive'), {once: true});
+    }
     target.setAttribute('tabindex','-1');
     target.focus({preventScroll:true});
   });
 });
+
+// Header marker for the Tarata section while it is on screen.
+const seatLink = document.querySelector('.nav-cafe');
+if (seatLink && 'IntersectionObserver' in window) {
+  new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) seatLink.setAttribute('aria-current', 'location');
+    else seatLink.removeAttribute('aria-current');
+  }, {rootMargin:'-40% 0px -40% 0px'}).observe(document.querySelector('#seat-scene'));
+}
 
 // Tarata: a single entrance, then still photographs. Visible without JS; no scroll pinning.
 const seat = document.querySelector('#seat-scene');

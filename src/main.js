@@ -23,6 +23,8 @@ function setExpanded(key, expanded) {
   const scene = scenes[key];
   const button = scene.querySelector('[data-reveal]');
   scene.dataset.expanded = String(expanded);
+  // A shows its origin detail automatically and has no toggle.
+  if (!button) { updateIndicator(); return; }
   button.setAttribute('aria-expanded', String(expanded));
   button.querySelector('.origin-button-label').textContent = labels[key][Number(expanded)];
   scene.querySelector('#' + button.getAttribute('aria-controls')).setAttribute('aria-hidden', String(!expanded));

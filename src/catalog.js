@@ -19,7 +19,7 @@ const homeTitle = document.title;
 // Prepare catalog photos only as their section approaches the viewport.
 const catalog = document.querySelector('#shop');
 function loadCatalog() {
-  catalog.querySelectorAll('[data-catalog-src]').forEach(img => { img.src = img.dataset.catalogSrc; });
+  document.querySelectorAll('#shop [data-catalog-src], #close-bands [data-catalog-src]').forEach(img => { img.src = img.dataset.catalogSrc; });
 }
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver(entries => {

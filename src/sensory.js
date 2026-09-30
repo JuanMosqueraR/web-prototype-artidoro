@@ -1,7 +1,6 @@
 // One deferred video, one reversible scroll scene. The HTML poster is the base experience.
 const scene = document.querySelector('#sensory-scene');
 const video = scene.querySelector('video');
-const control = scene.querySelector('.sensory-control');
 const retry = scene.querySelector('.sensory-retry');
 const root = document.documentElement;
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
@@ -63,8 +62,6 @@ function checkReady() {
 }
 function update() {
   const off = disabled();
-  control.hidden = root.dataset.direction !== 'a';
-  control.textContent = root.classList.contains('no-motion') || reduced.matches ? 'Movimiento reducido' : 'Sin movimiento';
   if (off) {
     video.pause();
     clearLoadTimers();
@@ -128,10 +125,6 @@ window.addEventListener('resize', schedule, {passive:true});
 mobile.addEventListener('change', () => { failed = false; update(); });
 reduced.addEventListener('change', update);
 new MutationObserver(update).observe(root, {attributes:true,attributeFilter:['class','data-direction']});
-control.addEventListener('click', () => {
-  if (reduced.matches) return;
-  root.classList.toggle('no-motion');
-  document.querySelector('#reduce-motion').checked = root.classList.contains('no-motion');
-});
+
 document.addEventListener('visibilitychange', () => { if (document.hidden) video.pause(); else { checkReady(); update(); schedule(); } });
 update();
