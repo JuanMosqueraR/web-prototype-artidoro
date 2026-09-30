@@ -1,3 +1,9 @@
+# Medición de rendimiento de la home publicada — 30 de septiembre de 2026
+
+Clase 0/1, solo lectura. Script y resultados en `qa/2026-09-30-performance/` (`perf.py`, `perf.json`, README): mediana de 3 corridas, LCP 1,67 s en mobile con Slow 4G y CPU 4× (0,21 s en desktop), CLS 0, sin peticiones fallidas; la primera corrida en frío tarda ~4 s. Laboratorio, no de campo ni Lighthouse; no es comparable 1:1 con el 12,1 s del diagnóstico CRO (otra herramienta y otro sitio). Detalle y límites en el README de esa carpeta.
+
+---
+
 # Cierre gráfico de 05 — 30 de septiembre de 2026 (L27)
 
 `index.html` (nueva sección `#close-bands`), `src/catalog.css` (bloque de bandas; se retiran las reglas del bloque antiguo de reseñas/categorías), `src/catalog.js` (selector de carga diferida ampliado). Evidencia: `qa/2026-09-30-cierre-05/`. Un asset nuevo: `public/assets/nanolote-tin.webp` (derivado de `audit/source/nanolote-original.jpg` con `scripts/prepare-nanolotes.py`). Build de verificación con Vite 6.4.3 externo.

@@ -25,6 +25,10 @@ Autorización L24 sobre checkpoint `0b33580`, sin commit final de este cambio. A
 
 El tramo final pasa de una franja plana a cuatro bandas: confianza con iconos («Tostamos cada semana», «Cafeterías en Miraflores», «Envíos a Lima y provincias»), reseñas en banda oscura con estrellas y comilla, FAQ en dos columnas con controles circulares y mosaicos «Sigue explorando» con producto. Cuerpo ≥ 19 px en citas y ≥ 15 px en la FAQ; una sola mención de fuente. El mosaico de Nanolotes usa una foto oficial de la colección (`nanolote-tin`, registrada en `audit/assets.json`). Evidencia: [qa/2026-09-30-cierre-05](../qa/2026-09-30-cierre-05/checks.json) (49/49, B 0 px). FAQ de las PDP sin cambios.
 
+## Rendimiento medido (mismo día)
+
+Tras la publicación en Pages, medición de laboratorio en Chromium (3 corridas, mediana): LCP 1,67 s en mobile con Slow 4G y CPU 4×, 0,21 s en desktop, CLS 0, sin peticiones fallidas; el arranque en frío tarda ~4 s. Cambia el estado de rendimiento del informe CRO de «no medido» a «medido en laboratorio, sin datos de campo». [Método, resultados y límites](../qa/2026-09-30-performance/README.md).
+
 ## Iteración L25 (mismo día)
 
 Tras probar en iPhone físico, con autorización L25: el hero A deja de tener botón Acercar/Alejar; la aproximación y el detalle de origen se muestran solos y con texto puntual; el pack del hero es un botón secundario con borde; Travel Line pasa a tarjeta completa en 05 (mobile incluido); scroll suave solo donde no cruza 03 (salto instantáneo con fundido breve si lo cruza); el control de movimiento se reduce a uno, dentro de «Acerca de esta demo». Evidencia: [qa/2026-09-30-hero-auto](../qa/2026-09-30-hero-auto/checks.json) (51/51, B 0 px). El script de `qa/2026-09-30-home-audit/verify.py` hacía clic en el botón retirado y ya no aplica a A; su evidencia queda como histórico. Entorno de esta iteración: `node_modules/vite` del repo estaba incompleto; el build de verificación usó Vite 6.4.3 de otro proyecto local y Node 22.23.1, sin modificar el repo (Vite 7.1.3 no verificado en esta iteración).
