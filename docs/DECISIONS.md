@@ -97,3 +97,13 @@ El usuario elige «asumamos que el pack sera: https://www.artidororodriguez.com/
 Instrucción literal del usuario: «actualiza docs, commitea, has merge a master, has handoff y dame un prompt para hacer con claude la presentacion(Un argumento breve que conecte diseño y negocio. ), otro prompt(o incluyelo en el anterior si lo crees adecuado) para ropuesta concreta para contratar el siguiente trabajo(lcance, entregables, plazo, inversión y lo que necesitamos de Artidoro: materiales definitivos, información comercial y acceso a su tienda ...)».
 
 Autoriza actualizar documentación, versionar los cambios pendientes propios de la demo, integrarlos en `master`, cerrar el handoff y preparar el prompt para la presentación y propuesta. Sustituye para este cierre la prohibición de commit/merge de L20/L21; el alcance implementado no cambia. No autoriza push, publicación, trabajo en la tienda de producción ni una aceptación contractual de la futura propuesta. Se preservan fuera del commit los cambios ajenos de `tools/apimart/*`, `reference/` y el PDF CRO. No se infiere una nueva confirmación física de iPhone ni resultados de conversión. Ninguna fila histórica LOCKED/OPEN cambia de estado.
+
+## L23 — Ahorro visible, propuesta y script de publicación, 29 de septiembre de 2026
+
+Instrucción literal del usuario, en respuesta a la lista de pendientes propuesta por el agente: «guarda la propuesta en el repo / muestra el ahorro / script de publicacion en el repo / actualiza docs».
+
+- **Ahorro visible (Clase 3 y 4).** En la tarjeta de El Ahorrador de 05 y en su PDP se muestra el precio normal tachado S/ 330.00 y «Ahorras S/ 50» junto al precio de S/ 280.00; en la PDP también en la fila del total. El precio normal procede del snapshot oficial del 29 de septiembre (`audit/source/ahorrador-2026-09-29.json`; registro en `verified_copy.ahorrador_saving_2026_09_29`). 01 y 02 conservan solo S/ 280, sin cambios en el hero ni en el selector. Sustituye para la demo la exclusión de precio tachado registrada el 28 de septiembre. Checkpoint previo `41d0cf1`; QA en `qa/2026-09-29-ahorro/`.
+- **Script de publicación (Clase 2).** `scripts/build-presentation-artifact.py` genera la copia publicable de la presentación en `dist/` (ignorado por Git). No publica: la publicación del Artifact sigue siendo una acción manual.
+- **Propuesta.** Se guarda como borrador en `docs/PROPUESTA_ETAPA1.md`, con su nota interna en `docs/PROPUESTA_NOTA_INTERNA.md`. No es una cotización cerrada ni un alcance contratado; tarifa, capacidad, impuestos y fecha siguen pendientes del usuario.
+
+No autoriza push, publicación en GitHub Pages ni trabajo en la tienda de producción. Ninguna fila histórica LOCKED/OPEN cambia de estado.

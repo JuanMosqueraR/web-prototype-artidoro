@@ -1052,7 +1052,20 @@
       "excluded_claims": "No discount, crossed-out price, best seller, saving percentage, inventory scarcity or advertising-performance claim. Live JSON compare_at was 33000 while cached HTML showed 312; neither is used.",
       "advertising_context": "User selected this pack as the one with active ads. Campaign activity/performance not independently verified; no such claim in the interface.",
       "handoff_verification": "qa/2026-09-28-ahorrador/external-links.json: mixed origins and repeated Cusco return selected variant IDs in official purchase forms. Read-only, no cart or payment.",
-      "limits": "Static price/availability snapshot, not runtime stock. Official shop confirms current terms."
+      "limits": "Static price/availability snapshot, not runtime stock. Official shop confirms current terms.",
+      "superseded_note": "The crossed-out price exclusion above is superseded for the demo by L23 (2026-09-29): see ahorrador_saving_2026_09_29."
+    },
+    "ahorrador_saving_2026_09_29": {
+      "verified": "2026-09-29 (Lima; retrieved 2026-09-30T02:54:57Z)",
+      "source": "https://www.artidororodriguez.com/products/pack-3kg-origenes-1.js",
+      "html_source": "https://www.artidororodriguez.com/products/pack-3kg-origenes-1",
+      "snapshot": "audit/source/ahorrador-2026-09-29.json",
+      "copy": "Pack card in 05 and pack PDP: 'S/ 280.00', crossed-out regular price 'S/ 330.00' (screen-reader label 'Precio normal') and 'Ahorras S/ 50'. PDP total row: 'Tu pack · 3 kg · Ahorras S/ 50'.",
+      "evidence": "All 125 variants: price 28000, compare_at_price 33000. Product page HTML shows 'Precio de oferta S/. 280.00' and 'Precio normal S/. 330.00'. The 2026-09-28 JSON/HTML mismatch (33000 vs cached 312) was not present on 2026-09-29.",
+      "derivation": "Saving S/ 50 = 330.00 - 280.00, computed at runtime from data-compare-at=33000 and the selected variant price; hidden when no variant matches.",
+      "approval": "L23: user instruction 'muestra el ahorro' (2026-09-29).",
+      "not_claimed": "No percentage badge, best seller, scarcity, campaign or margin claim. 01 hero and 02 pack entries keep S/ 280 only.",
+      "limits": "Static snapshot; the official shop confirms current price and regular price at checkout."
     }
   },
   "ai_generated_assets": [
