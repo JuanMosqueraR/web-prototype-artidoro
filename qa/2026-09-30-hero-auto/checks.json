@@ -1,0 +1,283 @@
+{
+ "chromium": "148.0.7778.96",
+ "checks": [
+  {
+   "name": "desktop detail auto-visible",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop no hero toggle button",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop no 03 motion control",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop annotation overlaps nothing",
+   "passed": true,
+   "detail": {
+    "bag": false,
+    "price": false,
+    "copy": false,
+    "buy": false
+   }
+  },
+  {
+   "name": "desktop zoom reached 1.12",
+   "passed": true,
+   "detail": "matrix(1.12, 0, 0, 1.12, 0, 0)"
+  },
+  {
+   "name": "desktop pack button height >=48",
+   "passed": true,
+   "detail": 49
+  },
+  {
+   "name": "desktop no text <11px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop no overflow",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "desktop no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile detail auto-visible",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile no hero toggle button",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile no 03 motion control",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile annotation overlaps nothing",
+   "passed": true,
+   "detail": {
+    "bag": false,
+    "price": false,
+    "copy": false,
+    "buy": false
+   }
+  },
+  {
+   "name": "mobile zoom reached 1.12",
+   "passed": true,
+   "detail": "matrix(1.12, 0, 0, 1.12, 0, 0)"
+  },
+  {
+   "name": "mobile pack button height >=48",
+   "passed": true,
+   "detail": 49
+  },
+  {
+   "name": "mobile no text <11px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile no overflow",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "mobile CTA inside viewport",
+   "passed": true,
+   "detail": 639
+  },
+  {
+   "name": "mobile no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile664 detail auto-visible",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile664 no hero toggle button",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile664 no 03 motion control",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile664 annotation overlaps nothing",
+   "passed": true,
+   "detail": {
+    "bag": false,
+    "price": false,
+    "copy": false,
+    "buy": false
+   }
+  },
+  {
+   "name": "mobile664 zoom reached 1.12",
+   "passed": true,
+   "detail": "matrix(1.12, 0, 0, 1.12, 0, 0)"
+  },
+  {
+   "name": "mobile664 pack button height >=48",
+   "passed": true,
+   "detail": 49
+  },
+  {
+   "name": "mobile664 no text <11px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile664 no overflow",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "mobile664 CTA inside viewport",
+   "passed": true,
+   "detail": 639
+  },
+  {
+   "name": "mobile664 no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "tablet detail auto-visible",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "tablet no hero toggle button",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "tablet no 03 motion control",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "tablet annotation overlaps nothing",
+   "passed": true,
+   "detail": {
+    "bag": false,
+    "price": false,
+    "copy": false,
+    "buy": false
+   }
+  },
+  {
+   "name": "tablet zoom reached 1.12",
+   "passed": true,
+   "detail": "matrix(1.12, 0, 0, 1.12, 0, 0)"
+  },
+  {
+   "name": "tablet pack button height >=48",
+   "passed": true,
+   "detail": 49
+  },
+  {
+   "name": "tablet no text <11px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "tablet no overflow",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "tablet no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "reduced motion: detail visible, no zoom",
+   "passed": true,
+   "detail": "none"
+  },
+  {
+   "name": "anchor not crossing 03 scrolls smoothly",
+   "passed": true,
+   "detail": 204
+  },
+  {
+   "name": "anchor crossing 03 jumps instantly with arrival fade",
+   "passed": true,
+   "detail": 75.578125
+  },
+  {
+   "name": "motion toggle lives in Acerca de esta demo",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "Travel Line CTA is a button as large as the pack CTA",
+   "passed": true,
+   "detail": [
+    44,
+    44
+   ]
+  },
+  {
+   "name": "b-desktop-motion-initial B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-desktop-motion-expanded B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-desktop-reduced-initial B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-desktop-reduced-expanded B unchanged",
+   "passed": true,
+   "detail": 309
+  },
+  {
+   "name": "b-mobile-motion-initial B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-mobile-motion-expanded B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-mobile-reduced-initial B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-mobile-reduced-expanded B unchanged",
+   "passed": true,
+   "detail": 0
+  }
+ ]
+}

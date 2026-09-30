@@ -1,0 +1,324 @@
+{
+ "chromium": "148.0.7778.96",
+ "checks": [
+  {
+   "name": "desktop annotation/button gap >=12px",
+   "passed": true,
+   "detail": 98
+  },
+  {
+   "name": "desktop no under-11px text",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop no overflow-x",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "desktop icons render (nonzero size)",
+   "passed": true,
+   "detail": {
+    "overlapGap": 98,
+    "buyBottom": 715,
+    "under11": [],
+    "under44": [
+     {
+      "w": 118,
+      "h": 15,
+      "txt": ""
+     }
+    ],
+    "overflowX": 0,
+    "iconZeroSize": 0,
+    "iconCount": 16
+   }
+  },
+  {
+   "name": "desktop under44 (informational, see README)",
+   "passed": true,
+   "detail": [
+    {
+     "w": 118,
+     "h": 15,
+     "txt": ""
+    }
+   ]
+  },
+  {
+   "name": "desktop no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile annotation/button gap >=12px",
+   "passed": true,
+   "detail": 12
+  },
+  {
+   "name": "mobile no under-11px text",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile no overflow-x",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "mobile icons render (nonzero size)",
+   "passed": true,
+   "detail": {
+    "overlapGap": 12,
+    "buyBottom": 639,
+    "under11": [],
+    "under44": [
+     {
+      "w": 109,
+      "h": 14,
+      "txt": ""
+     }
+    ],
+    "overflowX": 0,
+    "iconZeroSize": 0,
+    "iconCount": 16
+   }
+  },
+  {
+   "name": "mobile hero CTA visible in viewport",
+   "passed": true,
+   "detail": 639
+  },
+  {
+   "name": "mobile under44 (informational, see README)",
+   "passed": true,
+   "detail": [
+    {
+     "w": 109,
+     "h": 14,
+     "txt": ""
+    }
+   ]
+  },
+  {
+   "name": "mobile no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile664 annotation/button gap >=12px",
+   "passed": true,
+   "detail": 12
+  },
+  {
+   "name": "mobile664 no under-11px text",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile664 no overflow-x",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "mobile664 icons render (nonzero size)",
+   "passed": true,
+   "detail": {
+    "overlapGap": 12,
+    "buyBottom": 639,
+    "under11": [],
+    "under44": [
+     {
+      "w": 42,
+      "h": 99,
+      "txt": ""
+     },
+     {
+      "w": 42,
+      "h": 99,
+      "txt": ""
+     },
+     {
+      "w": 109,
+      "h": 14,
+      "txt": ""
+     }
+    ],
+    "overflowX": 0,
+    "iconZeroSize": 0,
+    "iconCount": 16
+   }
+  },
+  {
+   "name": "mobile664 hero CTA visible in viewport",
+   "passed": true,
+   "detail": 639
+  },
+  {
+   "name": "mobile664 under44 (informational, see README)",
+   "passed": true,
+   "detail": [
+    {
+     "w": 42,
+     "h": 99,
+     "txt": ""
+    },
+    {
+     "w": 42,
+     "h": 99,
+     "txt": ""
+    },
+    {
+     "w": 109,
+     "h": 14,
+     "txt": ""
+    }
+   ]
+  },
+  {
+   "name": "mobile664 no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "tablet annotation/button gap >=12px",
+   "passed": true,
+   "detail": 140
+  },
+  {
+   "name": "tablet no under-11px text",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "tablet no overflow-x",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "tablet icons render (nonzero size)",
+   "passed": true,
+   "detail": {
+    "overlapGap": 140,
+    "buyBottom": 796,
+    "under11": [],
+    "under44": [
+     {
+      "w": 118,
+      "h": 15,
+      "txt": ""
+     }
+    ],
+    "overflowX": 0,
+    "iconZeroSize": 0,
+    "iconCount": 16
+   }
+  },
+  {
+   "name": "tablet under44 (informational, see README)",
+   "passed": true,
+   "detail": [
+    {
+     "w": 118,
+     "h": 15,
+     "txt": ""
+    }
+   ]
+  },
+  {
+   "name": "tablet no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "b-desktop-motion-initial B unchanged",
+   "passed": true,
+   "detail": {
+    "changed": 0,
+    "max": 0
+   }
+  },
+  {
+   "name": "b-desktop-motion-expanded B unchanged",
+   "passed": true,
+   "detail": {
+    "changed": 0,
+    "max": 0
+   }
+  },
+  {
+   "name": "b-desktop-reduced-initial B unchanged",
+   "passed": true,
+   "detail": {
+    "changed": 0,
+    "max": 0
+   }
+  },
+  {
+   "name": "b-desktop-reduced-expanded B unchanged",
+   "passed": true,
+   "detail": {
+    "changed": 0,
+    "max": 0
+   }
+  },
+  {
+   "name": "b-mobile-motion-initial B unchanged",
+   "passed": true,
+   "detail": {
+    "changed": 0,
+    "max": 0
+   }
+  },
+  {
+   "name": "b-mobile-motion-expanded B unchanged",
+   "passed": true,
+   "detail": {
+    "changed": 0,
+    "max": 0
+   }
+  },
+  {
+   "name": "b-mobile-reduced-initial B unchanged",
+   "passed": true,
+   "detail": {
+    "changed": 0,
+    "max": 0
+   }
+  },
+  {
+   "name": "b-mobile-reduced-expanded B unchanged",
+   "passed": true,
+   "detail": {
+    "changed": 0,
+    "max": 0
+   }
+  },
+  {
+   "name": "new origin card image decoded",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "origin selector cycles all 5",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "review -> Amazonas PDP opens",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "hero pack link -> Ahorrador PDP opens",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "no page errors on functional sweep",
+   "passed": true,
+   "detail": []
+  }
+ ]
+}

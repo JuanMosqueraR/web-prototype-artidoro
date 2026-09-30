@@ -1,0 +1,305 @@
+{
+ "chromium": "148.0.7778.96",
+ "checks": [
+  {
+   "name": "desktop no text <11px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop quote >=19px and FAQ question >=16px",
+   "passed": true,
+   "detail": [
+    22,
+    18
+   ]
+  },
+  {
+   "name": "desktop 2 review cards with 5 stars",
+   "passed": true,
+   "detail": [
+    2,
+    120
+   ]
+  },
+  {
+   "name": "desktop 4 tiles, images decoded",
+   "passed": true,
+   "detail": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "name": "desktop touch targets >=44px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop no overflow",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "desktop no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile no text <11px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile quote >=19px and FAQ question >=16px",
+   "passed": true,
+   "detail": [
+    19,
+    16
+   ]
+  },
+  {
+   "name": "mobile 2 review cards with 5 stars",
+   "passed": true,
+   "detail": [
+    2,
+    120
+   ]
+  },
+  {
+   "name": "mobile 4 tiles, images decoded",
+   "passed": true,
+   "detail": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "name": "mobile touch targets >=44px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile no overflow",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "mobile no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile664 no text <11px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile664 quote >=19px and FAQ question >=16px",
+   "passed": true,
+   "detail": [
+    19,
+    16
+   ]
+  },
+  {
+   "name": "mobile664 2 review cards with 5 stars",
+   "passed": true,
+   "detail": [
+    2,
+    120
+   ]
+  },
+  {
+   "name": "mobile664 4 tiles, images decoded",
+   "passed": true,
+   "detail": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "name": "mobile664 touch targets >=44px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile664 no overflow",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "mobile664 no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "tablet no text <11px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "tablet quote >=19px and FAQ question >=16px",
+   "passed": true,
+   "detail": [
+    19,
+    18
+   ]
+  },
+  {
+   "name": "tablet 2 review cards with 5 stars",
+   "passed": true,
+   "detail": [
+    2,
+    120
+   ]
+  },
+  {
+   "name": "tablet 4 tiles, images decoded",
+   "passed": true,
+   "detail": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "name": "tablet touch targets >=44px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "tablet no overflow",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "tablet no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "w320 no text <11px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "w320 quote >=19px and FAQ question >=16px",
+   "passed": true,
+   "detail": [
+    19,
+    16
+   ]
+  },
+  {
+   "name": "w320 2 review cards with 5 stars",
+   "passed": true,
+   "detail": [
+    2,
+    120
+   ]
+  },
+  {
+   "name": "w320 4 tiles, images decoded",
+   "passed": true,
+   "detail": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "name": "w320 touch targets >=44px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "w320 no overflow",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "w320 no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "FAQ opens by keyboard",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "FAQ shows visible focus",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "review product link opens Amazonas PDP",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "PDP FAQ keeps its own styling (no close-faq)",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "review pack link opens El Ahorrador PDP",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "no page errors in interactions",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "b-desktop-motion-initial B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-desktop-motion-expanded B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-desktop-reduced-initial B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-desktop-reduced-expanded B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-mobile-motion-initial B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-mobile-motion-expanded B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-mobile-reduced-initial B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-mobile-reduced-expanded B unchanged",
+   "passed": true,
+   "detail": 0
+  }
+ ]
+}
