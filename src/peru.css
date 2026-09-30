@@ -1,18 +1,67 @@
-.hero-peru{background:#102e25;color:var(--cream)}
-.landscape{position:absolute;inset:0;z-index:0;overflow:hidden;background:#102e25}.landscape-far{position:absolute;left:31%;top:0;width:78%;height:100%;max-width:none;object-fit:cover;object-position:52% 50%;filter:brightness(.69) saturate(.7);transform-origin:68% 48%;animation:peru-far 1400ms var(--motion-ease) 500ms forwards}
-.landscape-shade{position:absolute;inset:0;background:linear-gradient(90deg,#102e25 10%,#102e25f5 30%,#102e25b0 46%,#102e2524 70%,#102e2500 100%),linear-gradient(0deg,#102e25 0%,#102e2500 36%,#102e251c 82%,#102e25a6 100%)}
-.landscape-near{position:absolute;right:-7%;bottom:-22%;width:47%;max-width:none;opacity:.58;filter:brightness(.45) saturate(.7) blur(1px);transform:translate(0,0) scale(1);animation:peru-near 1400ms var(--motion-ease) 500ms forwards;mask-image:linear-gradient(125deg,transparent 5%,black 65%)}
-.peru-copy{position:absolute;z-index:6;left:var(--gutter);top:24%;width:43%}.peru-copy h1{font-family:Barlow,'Arial Narrow',sans-serif;font-size:clamp(90px,8.6vw,140px);line-height:.88;letter-spacing:-.02em;font-weight:800;margin-top:25px}.peru-copy .value-proposition{margin-top:28px}.product-peru{left:75%}.hero-peru .origin-caption{left:63%;top:87.5%;font-size:12px;gap:18px}
-.origin-annotation{position:absolute;left:49%;top:36.5%;z-index:4;animation:peru-note 1000ms var(--motion-ease) 900ms both;width:190px}.detail-kicker{font-size:11px;letter-spacing:1.2px}.origin-annotation h2{font-size:24px;line-height:1.1;letter-spacing:-.7px;font-weight:400;margin:12px 0 10px}.origin-annotation>p{font-size:12px;line-height:1.4}.annotation-line{width:145px;height:1px;background:#d7dbc799;margin:20px 0;position:relative}.annotation-line:after{content:"";width:5px;height:5px;background:var(--cream);border-radius:50%;position:absolute;right:0;top:-2px}.origin-annotation .notes{font-size:21px;line-height:1.18}.origin-annotation .notes span{display:block;font-size:11px;letter-spacing:1.2px;margin-bottom:7px}
-/* The approach plays once, automatically. Without motion (system preference, .no-motion, no CSS animation) the detail is simply visible and the photo stays at scale 1. */
-@keyframes peru-far{to{transform:scale(1.12)}}
-@keyframes peru-near{to{transform:translate(var(--near-x,20px),var(--near-y,38px)) scale(var(--near-s,1.1))}}
-@keyframes peru-note{from{clip-path:inset(0 100% 0 0);opacity:0;transform:translateX(-12px)}to{clip-path:inset(0);opacity:1;transform:none}}
-@media(max-width:1000px) and (min-width:761px){.peru-copy h1{font-size:9.8vw}.origin-annotation{left:47%;width:140px}.origin-annotation h2{font-size:18px}.hero-peru .origin-caption{left:60%;font-size:11px;gap:10px}.hero-peru .product-peru{left:85%;height:42%}}
+/* Hero A «Del cafetal a tu bolsa» (L28). A pinned stage whose scroll progress scrubs one generated video;
+   scenes.js writes the damped progress (--p) and derived values. Commerce is visible from the first frame.
+   Without motion (system preference, .no-motion, Save-Data) the final composition is shown statically. */
+.hero-peru{height:280svh;min-height:0;background:#0b2019;color:var(--cream);--p:0;--s1:1;--s2:0;--s3:0;--bag:0;--bagv:0;--end:0}
+html[data-direction="a"] .hero-peru{margin-top:-72px}
+.hs-stage{position:sticky;top:0;height:100svh;min-height:600px;overflow:hidden;overflow:clip}
+.hs-media,.hs-media picture,.hs-media img,.hs-video{position:absolute;inset:0;width:100%;height:100%}
+.hs-media img,.hs-video{object-fit:cover}
+.hs-end{opacity:var(--end)}
+.hs-video{opacity:0;transition:opacity 300ms ease;pointer-events:none}
+.has-video .hs-video{opacity:1}.has-video .hs-end{opacity:0}
+.hs-seq{position:absolute;inset:0;width:100%;height:100%;opacity:0;pointer-events:none}
+.has-seq .hs-seq{opacity:1}.has-seq .hs-end{opacity:0}
+.hs-shade{position:absolute;inset:0;background:radial-gradient(ellipse 26% 34% at 84% 30%,#0b20198c,#0b201900),linear-gradient(90deg,#0b2019eb 0%,#0b2019a6 32%,#0b201900 62%),linear-gradient(180deg,#0b2019b3 0%,#0b201900 22%),linear-gradient(0deg,#0b201999 0%,#0b201900 30%)}
+.film-grain{position:absolute;inset:0;opacity:.07;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hs-content{position:absolute;z-index:6;left:var(--gutter);top:72px;bottom:0;width:min(560px,44vw);display:flex;flex-direction:column;justify-content:center}
+.hero-peru .peru-copy h1{font-family:Barlow,'Arial Narrow',sans-serif;font-weight:800;font-size:clamp(72px,7.2vw,116px);line-height:.86;letter-spacing:-.015em;margin-top:18px}
+.hero-peru .peru-copy .value-proposition{margin-top:22px;max-width:430px}
+.hero-peru .commerce{position:static;margin-top:30px;max-width:390px}
+.hero-peru .product-peru{left:57%;top:50%;height:min(62vh,640px);z-index:5;opacity:var(--bagv);transform:translate(-50%,calc(-50% + (1 - var(--bag)) * 40vh)) rotate(calc((1 - var(--bag)) * -6deg))}
+.hero-peru .product-peru img{filter:drop-shadow(0 30px 40px #0009)}
+.hs-steps{position:absolute;z-index:6;right:8.5%;top:calc(72px + 13%);width:280px;margin:0;padding:0;list-style:none}
+.hs-step{position:absolute;inset:0 0 auto}
+.hs-step[data-step="1"]{opacity:var(--s1);transform:translateY(calc((1 - var(--s1)) * 16px))}
+.hs-step[data-step="2"]{opacity:var(--s2);transform:translateY(calc((1 - var(--s2)) * 16px))}
+.hs-step[data-step="3"]{opacity:var(--s3);transform:translateY(calc((1 - var(--s3)) * 16px))}
+.hs-kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#d1af7e;margin-bottom:12px}
+.hs-name{font-family:Barlow,'Arial Narrow',sans-serif;font-weight:800;font-size:42px;line-height:.92;text-transform:uppercase;margin-bottom:10px}
+.hs-detail{font-size:15px;line-height:1.45}
+.hs-alt{font-family:Barlow,'Arial Narrow',sans-serif;font-weight:800;font-size:30px;color:#d1af7e;margin-top:14px;padding-top:14px;border-top:1px solid #f4f0e566}
+.hs-one{display:none}
+.hs-rail{position:absolute;z-index:6;right:2.2%;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.hs-rail span{display:flex;align-items:center;gap:8px;opacity:.45;transition:opacity 300ms ease}
+.hs-rail span:before{content:'';width:14px;height:1px;background:currentColor;transition:width 300ms ease}
+.hero-peru[data-step="1"] .hs-rail span:nth-child(1),.hero-peru[data-step="2"] .hs-rail span:nth-child(2),.hero-peru[data-step="3"] .hs-rail span:nth-child(3){opacity:1}
+.hero-peru[data-step="1"] .hs-rail span:nth-child(1):before,.hero-peru[data-step="2"] .hs-rail span:nth-child(2):before,.hero-peru[data-step="3"] .hs-rail span:nth-child(3):before{width:28px}
+.hero-peru .home-scroll{z-index:6;opacity:calc(1 - var(--p) * 10)}
+.hero-peru .asset-status{z-index:7;right:var(--gutter);bottom:18px;text-shadow:0 1px 6px #000c}
+/* Static: final frame, bag in place, origin and notes as a short list. */
+.hero-peru.is-static{height:auto}
+.is-static .hs-stage{position:relative;height:100svh}
+.is-static .hs-step{position:static;opacity:1;transform:none;margin-bottom:26px}
+.is-static .hs-step[data-step="3"],.is-static .hs-rail,.is-static .home-scroll{display:none}
+@media(max-width:1000px) and (min-width:761px){
+ .hs-content{width:48vw}.hs-steps{right:4%;width:220px}.hs-name{font-size:32px}.hs-alt{font-size:24px}.hs-rail{display:none}.hero-peru .product-peru{left:74%;height:40vh}
+}
 @media(max-width:760px){
- .peru-copy{display:contents}.peru-copy .eyebrow{position:absolute;left:22px;top:75px;z-index:6;font-size:11px}.peru-copy h1{position:absolute;left:22px;top:102px;z-index:6;font-size:62px;line-height:.86;letter-spacing:-.02em;margin:0}.peru-copy .value-proposition{position:absolute;left:22px;right:24px;top:223px;z-index:6;margin:0;max-width:325px}
- .landscape{inset:260px 0 auto;height:305px;overflow:hidden}.landscape-far{left:0;top:0;width:120%;height:100%;object-position:50% 55%;filter:brightness(.7) saturate(.72);transform-origin:65% 50%}.landscape-shade{background:linear-gradient(90deg,#102e25b0,transparent 80%),linear-gradient(0deg,#102e25 0%,transparent 36%,transparent 55%,#102e25 100%)}.landscape-near{width:75%;right:-19%;bottom:-34%;opacity:.55}
- .product-peru{height:273px;top:273px;left:73%;z-index:5}.product-peru img{filter:drop-shadow(9px 16px 14px #001a1080)}.hero-peru .origin-caption{left:22px;top:711px}
- .origin-annotation{left:22px;top:288px;width:172px;z-index:6}.detail-kicker,.origin-annotation .altitude,.annotation-line{display:none}.origin-annotation h2{font-size:22px;line-height:1.1;margin:0}.origin-annotation .notes{font-size:17px;line-height:1.2;margin-top:12px}.origin-annotation .notes span{font-size:11px;letter-spacing:1px;margin-bottom:3px}
- .landscape-near{--near-x:10px;--near-y:17px;--near-s:1.08}
+ .hero-peru{height:250svh}
+ html[data-direction="a"] .hero-peru{margin-top:-64px}
+ .hs-stage{min-height:560px}
+ .hs-shade{background:linear-gradient(0deg,#0b2019f5 0%,#0b2019c7 40%,#0b201900 64%),linear-gradient(180deg,#0b2019a6 0%,#0b201900 24%)}
+ .hs-content{left:22px;right:22px;width:auto;top:auto;bottom:16px;display:block}
+ .hero-peru .peru-copy .eyebrow{font-size:11px}
+ .hero-peru .peru-copy h1{font-size:46px;margin-top:8px}
+ .hero-peru .peru-copy .value-proposition{font-size:14px;line-height:1.45;margin-top:10px}
+ .hero-peru .commerce{margin-top:14px;max-width:none}
+ .hero-peru .buy-button{min-height:52px}
+ .hs-steps{left:22px;right:22px;top:76px;width:auto}
+ .hs-step{background:#0b2019b8;padding:9px 12px;border-left:2px solid #d1af7e;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+ .hs-kicker{font-size:11px;letter-spacing:.14em;margin-bottom:3px}
+ .hs-name,.hs-detail,.hs-alt,.hs-rail,.hero-peru .home-scroll{display:none}
+ .hs-one{display:block;font-size:14px;line-height:1.35}
+ .hero-peru .product-peru{left:74%;top:42%;height:30svh}
+ .hero-peru .asset-status{left:22px;right:auto;top:136px;bottom:auto;font-size:11px;opacity:.75}
+ .is-static .hs-step{margin-bottom:8px}
+ .is-static .asset-status{top:196px}
 }

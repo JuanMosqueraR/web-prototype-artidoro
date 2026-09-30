@@ -21,7 +21,8 @@
   <script type="module" src="/src/main.js"></script>
   <script type="module" src="/src/origin.js"></script>
   <script type="module" src="/src/home.js"></script>
-  <script type="module" src="/src/sensory.js"></script>
+  <script type="module" src="/src/scenes.js"></script>
+  <script type="module" src="/src/inertia.js"></script>
   <script type="module" src="/src/catalog.js"></script>
   <noscript><style>[data-catalog-src]{display:none!important}.catalog-photo noscript{display:contents!important}</style></noscript>
 </head>
@@ -44,36 +45,40 @@
   </header>
   <main id="home-main">
     <section class="hero hero-peru" id="direction-a" aria-labelledby="title-a" data-expanded="false">
-      <div class="landscape" aria-hidden="true">
-        <picture><source media="(max-width:760px)" srcset="/assets/cafetal-home-mobile.webp" /><img class="landscape-far" src="/assets/cafetal-home-desktop.webp" alt="" width="1280" height="720" fetchpriority="high" /></picture>
-        <div class="landscape-shade"></div>
-        <img class="landscape-near" src="/assets/cafetal-foreground.webp" alt="" width="470" height="440" />
+      <div class="hs-stage">
+        <div class="hs-media" aria-hidden="true">
+          <picture class="hs-poster"><source media="(max-width:760px)" srcset="/assets/hero-mobile-start.webp" /><img src="/assets/hero-desktop-start.webp" alt="" width="1280" height="714" fetchpriority="high" /></picture>
+          <picture class="hs-end"><source media="(max-width:760px)" data-srcset="/assets/hero-mobile-end.webp" /><img data-src="/assets/hero-desktop-end.webp" alt="" width="1280" height="714" decoding="async" /></picture>
+          <video class="hs-video" muted playsinline preload="none" disablepictureinpicture tabindex="-1" data-desktop="/assets/hero-desktop.mp4" data-mobile="/assets/hero-mobile.mp4" data-seq-desktop="/assets/hero-seq/desktop/" data-seq-mobile="/assets/hero-seq/mobile/" data-seq-count="60"></video>
+          <canvas class="hs-seq"></canvas>
+          <div class="hs-shade"></div>
+          <div class="film-grain"></div>
+        </div>
+        <div class="product product-peru">
+          <img src="/assets/amazonas-250g.webp" alt="Bolsa habitual de café Amazonas de Artidoro Rodríguez, 250 g" width="326" height="761" decoding="async" />
+        </div>
+        <div class="hs-content">
+          <div class="peru-copy">
+            <p class="eyebrow">Café peruano de especialidad</p>
+            <h1 id="title-a" data-reveal-lines>EL ORIGEN<br />SE SIENTE.</h1>
+            <p class="value-proposition">Café recién tostado, del origen a tu casa.<br class="desktop-break" /> Cinco orígenes. En grano o molido.</p>
+          </div>
+          <div class="commerce">
+            <p class="hero-price"><strong>S/ 39.90</strong><span>Amazonas · 250 g</span></p>
+            <a class="buy-button" href="https://www.artidororodriguez.com/products/cafe-amazonas" target="_blank" rel="noopener">Comprar Amazonas <span class="icon icon-arrow" aria-hidden="true"></span></a>
+            <p class="trust"><svg viewBox="0 0 20 20" width="18" height="18" fill="none" aria-hidden="true"><path d="M10 1.8 16.7 5v5.4c0 3.4-4.4 6.8-6.7 7.8-2.3-1-6.7-4.4-6.7-7.8V5L10 1.8Z" stroke="currentColor" stroke-width="1.3"/><path d="m6.7 9.6 2.2 2.3 4.6-4.7" stroke="currentColor" stroke-width="1.3"/></svg><span>Tostamos cada semana<span class="trust-divider"> · </span><span class="trust-location">Cafeterías en Miraflores</span></span></p>
+            <a class="hero-explore hero-pack-entry" data-pack-pdp href="https://www.artidororodriguez.com/products/pack-3kg-origenes-1"><span class="pack-entry-label"><strong>Pack El Ahorrador · 3 kg</strong><small>3 bolsas de 1 kg, a tu elección</small></span><span class="pack-entry-price"><s><span class="visually-hidden">Precio normal </span>S/ 330</s><strong>S/ 280</strong><span class="icon icon-arrow" aria-hidden="true"></span></span></a>
+          </div>
+        </div>
+        <ol class="hs-steps" aria-label="Del cafetal a tu bolsa">
+          <li class="hs-step" data-step="1"><p class="hs-kicker">01 · Origen</p><p class="hs-name">Rodríguez<br />de Mendoza</p><p class="hs-detail">Amazonas, Perú</p><p class="hs-alt">1 700–1 900 m s. n. m.</p><p class="hs-one">Rodríguez de Mendoza · 1 700–1 900 m s. n. m.</p></li>
+          <li class="hs-step" data-step="2"><p class="hs-kicker">02 · De la cereza al grano</p><p class="hs-name">Notas<br />de sabor</p><p class="hs-detail">Naranja y melaza</p><p class="hs-one">Notas de sabor: naranja y melaza</p></li>
+          <li class="hs-step" data-step="3"><p class="hs-kicker">03 · Tu bolsa</p><p class="hs-name">Amazonas</p><p class="hs-detail">250 g · en grano o molido</p><p class="hs-one">Amazonas · 250 g, en grano o molido</p></li>
+        </ol>
+        <div class="hs-rail" aria-hidden="true"><span>01 Origen</span><span>02 Grano</span><span>03 Tu bolsa</span></div>
+        <a class="home-scroll" href="#origin-scene"><span aria-hidden="true">↓</span> SIGUE EL ORIGEN</a>
+        <p class="asset-status">Escena conceptual generada para esta demo.</p>
       </div>
-      <img class="brand-logo" src="/assets/logo-white.png" alt="Artidoro Rodríguez — Peruvian Coffee" width="358" height="127" />
-      <div class="peru-copy">
-        <p class="eyebrow">Café peruano de especialidad</p>
-        <h1 id="title-a">EL ORIGEN<br />SE SIENTE.</h1>
-        <p class="value-proposition">Café recién tostado, del origen a tu casa.<br class="desktop-break" /> Cinco orígenes. En grano o molido.</p>
-      </div>
-      <div class="commerce">
-        <p class="hero-price"><strong>S/ 39.90</strong><span>Amazonas · 250 g</span></p>
-        <a class="buy-button" href="https://www.artidororodriguez.com/products/cafe-amazonas" target="_blank" rel="noopener">Comprar Amazonas <span class="icon icon-arrow" aria-hidden="true"></span></a>
-        <p class="trust"><svg viewBox="0 0 20 20" width="18" height="18" fill="none" aria-hidden="true"><path d="M10 1.8 16.7 5v5.4c0 3.4-4.4 6.8-6.7 7.8-2.3-1-6.7-4.4-6.7-7.8V5L10 1.8Z" stroke="currentColor" stroke-width="1.3"/><path d="m6.7 9.6 2.2 2.3 4.6-4.7" stroke="currentColor" stroke-width="1.3"/></svg><span>Tostamos cada semana<span class="trust-divider"> · </span><span class="trust-location">Cafeterías en Miraflores</span></span></p>
-        <a class="hero-explore hero-pack-entry" data-pack-pdp href="https://www.artidororodriguez.com/products/pack-3kg-origenes-1"><span class="pack-entry-label"><strong>Pack El Ahorrador · 3 kg</strong><small>3 bolsas de 1 kg, a tu elección</small></span><span class="pack-entry-price"><s><span class="visually-hidden">Precio normal </span>S/ 330</s><strong>S/ 280</strong><span class="icon icon-arrow" aria-hidden="true"></span></span></a>
-      </div>
-      <div class="product product-peru">
-        <img src="/assets/amazonas-250g.webp" alt="Bolsa habitual de café Amazonas de Artidoro Rodríguez, 250 g" width="326" height="761" fetchpriority="high" />
-      </div>
-      <div class="origin-annotation" id="peru-detail">
-        <span class="detail-kicker">MÁS CERCA DEL ORIGEN</span>
-        <h2>Rodríguez<br />de Mendoza</h2>
-        <p class="altitude">1 700–1 900 m s. n. m.</p>
-        <div class="annotation-line" aria-hidden="true"></div>
-        <p class="notes"><span>Notas de sabor</span>Naranja<br class="desktop-break" /> y melaza</p>
-      </div>
-      <div class="origin-caption"><span>AMAZONAS</span><span>Rodríguez de Mendoza</span><span>250 g</span></div>
-      <a class="home-scroll" href="#origin-scene"><span aria-hidden="true">↓</span> SIGUE EL ORIGEN</a>
-      <p class="asset-status">Paisaje referencial · ubicación por confirmar</p>
     </section>
     <section class="hero hero-lata" id="direction-b" aria-labelledby="title-b" data-expanded="false" hidden>
       <img loading="lazy" class="brand-logo" src="/assets/logo-black.png" alt="Artidoro Rodríguez — Peruvian Coffee" width="358" height="127" />
@@ -96,7 +101,7 @@
       <div class="origin-inner">
         <header class="origin-head">
           <p class="origin-kicker">Cinco orígenes peruanos</p>
-          <h2 id="origin-title">Encuentra tu origen.</h2>
+          <h2 id="origin-title" data-reveal-lines>Encuentra tu origen.</h2>
         </header>
         <ul class="origin-index origin-controls" aria-label="Elige un origen">
           <li><button class="origin-row-main" type="button" data-origin="amazonas" data-name="Amazonas" data-href="https://www.artidororodriguez.com/products/cafe-amazonas" aria-pressed="true" aria-controls="origin-product" disabled>Amazonas</button></li>
@@ -155,27 +160,33 @@
       </div>
       <p class="origin-sr" aria-live="polite" aria-atomic="true"></p>
     </section>
-    <section class="sensory-scene home-only" id="sensory-scene" aria-labelledby="sensory-title">
-      <div class="sensory-stage">
-        <div class="sensory-media" aria-hidden="true">
-          <picture><source media="(max-width:760px)" srcset="/assets/scene03-mobile-end.webp" /><img src="/assets/scene03-desktop-end.webp" alt="" width="1600" height="893" loading="lazy" decoding="async" /></picture>
-          <video class="sensory-video" muted playsinline preload="none" disablepictureinpicture aria-hidden="true" tabindex="-1" data-desktop="/assets/scene03-desktop.mp4" data-mobile="/assets/scene03-mobile.mp4"></video>
-          <div class="sensory-shade"></div>
+    <section class="cup-scene home-only" id="sensory-scene" aria-labelledby="cup-title">
+      <div class="cs-stage">
+        <div class="cs-media" aria-hidden="true">
+          <picture class="cs-frame cs-base" data-frame="1"><source media="(max-width:760px)" data-srcset="/assets/cup03-grind-mobile.webp" /><img data-src="/assets/cup03-grind-desktop.webp" alt="" width="1600" height="893" decoding="async" /></picture>
+          <picture class="cs-frame cs-wipe" data-frame="2"><source media="(max-width:760px)" data-srcset="/assets/cup03-bloom-mobile.webp" /><img data-src="/assets/cup03-bloom-desktop.webp" alt="" width="1600" height="893" decoding="async" /></picture>
+          <picture class="cs-frame cs-circle" data-frame="3"><source media="(max-width:760px)" data-srcset="/assets/cup03-drip-mobile.webp" /><img data-src="/assets/cup03-drip-desktop.webp" alt="" width="1600" height="893" decoding="async" /></picture>
+          <picture class="cs-frame cs-fade" data-frame="4"><source media="(max-width:760px)" data-srcset="/assets/cup03-still-mobile.webp" /><img data-src="/assets/cup03-still-desktop.webp" alt="" width="1600" height="893" decoding="async" /></picture>
+          <div class="cs-shade"></div>
+          <div class="film-grain"></div>
+          <div class="cs-cover"><div class="cs-contact"></div><img class="cs-bag" data-src="/assets/amazonas-250g.webp" alt="" width="326" height="761" decoding="async" /></div>
         </div>
-        <div class="sensory-top"><img src="/assets/logo-white.png" alt="Artidoro Rodríguez" width="358" height="127" loading="lazy" /><a class="home-text-link" href="#shop">Llévalo a tu taza <span class="icon icon-arrow" aria-hidden="true"></span></a></div>
-        <div class="sensory-copy">
-          <p class="home-kicker">03 / El café, de cerca</p>
-          <h2 id="sensory-title"><span>Un mundo.</span><span>Una taza.</span></h2>
-          <p>Elige un origen.<br />Hazlo parte de tus mañanas.</p>
-        </div>
-        <div class="sensory-products" aria-hidden="true"><img src="/assets/cajamarca-250g.webp" alt="" width="326" height="761" loading="lazy" /><img src="/assets/amazonas-250g.webp" alt="" width="326" height="761" loading="lazy" /></div>
-        <div class="sensory-bottom">
-          <div><span class="sensory-scroll-hint">Sigue bajando. Acércate al café.</span><span class="sensory-static-hint">Cinco orígenes. Tu próxima taza.</span><div class="sensory-meter" aria-hidden="true"><span></span></div><p class="sensory-credit">Escena conceptual generada para esta demo.</p></div>
-          <div class="sensory-actions">
-            <button class="sensory-retry" type="button" hidden>Activar movimiento</button>
-          </div>
-        </div>
+        <div class="cs-step" data-step="1"><p class="home-kicker">03 / De la bolsa a tu taza</p><p class="cs-name">Molienda<br />media</p><p class="cs-text">La que recomendamos para empezar.<br />Lo molemos justo antes de enviarlo.</p></div>
+        <div class="cs-step" data-step="2"><p class="home-kicker">Amazonas · tueste medio</p><p class="cs-name">Naranja<br />y melaza</p><p class="cs-text">Una taza cítrica, envolvente y con carácter.</p></div>
+        <div class="cs-step cs-final" data-step="3"><p class="home-kicker">03 / El café, en tu casa</p><h2 id="cup-title"><span>Un mundo.</span><span>Una taza.</span></h2><p class="cs-cups">Tu bolsa de 250 g: unas 16 tazas.</p><a class="home-text-link" href="#shop">Llévalo a tu taza <span class="icon icon-arrow" aria-hidden="true"></span></a></div>
+        <div class="cs-rail" aria-hidden="true"><span>Moler</span><span>Preparar</span><span>Servir</span></div>
+        <p class="cs-credit">Escena conceptual generada para esta demo.</p>
       </div>
+    </section>
+    <section class="grinds home-only" aria-labelledby="grinds-title">
+      <h2 class="grinds-title" id="grinds-title" data-reveal-lines>Elige tu molienda.</h2>
+      <ul class="grinds-list">
+        <li><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 7h14l-2 12H18z"/><path d="M21 4h4"/><path d="M30 10h5v7h-3"/><path d="M19 19h10l1 3H18z"/><path d="M18 22h12l3 20H15z"/><path d="M13 42h22"/></svg><strong>Fina</strong><p>Espresso y cafetera italiana (moka).</p></li>
+        <li><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 12h28l-10 14h-8z"/><path d="M15 12l7 14M33 12l-7 14"/><path d="M14 28h20"/><path d="M38 14c3 0 3 6-2 7"/><path d="M24 30v2"/><path d="M17 34h14v5a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4z"/></svg><strong>Media <span class="grind-tag">Para empezar</span></strong><p>V60, Chemex, Aeropress y cafetera eléctrica de filtro.</p></li>
+        <li><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 12h16v28H15z"/><path d="M23 4v14"/><path d="M19 4h8"/><path d="M15 18h16"/><path d="M31 16h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M13 43h20"/><path d="M15 26c3 1.5 5 1.5 8 0s5-1.5 8 0"/></svg><strong>Gruesa</strong><p>Prensa francesa y cold brew.</p></li>
+        <li><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 22h14v19H17z"/><path d="M19 13h10l-2 9h-6z"/><path d="M24 13V8h11"/><circle cx="36" cy="8" r="2"/><path d="M14 43h20"/><path d="M21 30h6"/></svg><strong>Grano</strong><p>Si tienes molino en casa.</p></li>
+      </ul>
+      <p class="grinds-foot">Molemos tu café justo antes de enviarlo. Elige tu molienda al comprar.</p>
     </section>
     <section class="home-seat home-only" id="seat-scene" aria-labelledby="seat-title">
       <div class="seat-editorial">
@@ -206,7 +217,7 @@
       </div>
     </section>
     <section class="home-shop home-only catalog-shop" id="shop" aria-labelledby="shop-title">
-      <header class="catalog-heading"><div><p class="home-kicker">05 / Del origen a tu casa</p><h2 class="home-section-title" id="shop-title">Hazlo parte<br />de tus días.</h2></div><p>Para tus días. Para compartir.<br /> Elige cómo llevarte Artidoro.</p></header>
+      <header class="catalog-heading"><div><p class="home-kicker">05 / Del origen a tu casa</p><h2 class="home-section-title" id="shop-title" data-reveal-lines>Hazlo parte<br />de tus días.</h2></div><p>Para tus días. Para compartir.<br /> Elige cómo llevarte Artidoro.</p></header>
       <div class="catalog-edit pack-led">
         <article class="catalog-feature pack-feature">
           <div class="catalog-feature-head"><p class="catalog-label">Para tener siempre café en casa</p><span>3 × 1 kg</span></div>
@@ -239,9 +250,10 @@
           <li><span class="icon icon-cal" aria-hidden="true"></span><span>Tostamos cada semana</span></li>
           <li><span class="icon icon-pin" aria-hidden="true"></span><span>Cafeterías en Miraflores</span></li>
           <li><span class="icon icon-box" aria-hidden="true"></span><span>Envíos a Lima y provincias</span></li>
+          <li><span class="icon icon-fair" aria-hidden="true"></span><span>Precio justo al caficultor</span></li>
         </ul>
         <section class="close-band close-reviews" aria-labelledby="reviews-title">
-          <div class="close-inner"><header class="close-head"><p class="catalog-label">Reseñas de la tienda oficial</p><h3 class="close-title" id="reviews-title">Lo que dicen<br />de nuestro café.</h3></header>
+          <div class="close-inner"><header class="close-head"><p class="catalog-label">Reseñas de la tienda oficial</p><h3 class="close-title" id="reviews-title" data-reveal-lines>Lo que dicen<br />de nuestro café.</h3></header>
           <div class="review-grid">
           <figure class="review-card"><span class="stars" role="img" aria-label="5 de 5 estrellas"></span><blockquote>“Con cuerpo y acidez agradable. Incluso queda muy bien con un latte.”</blockquote><figcaption><strong>Jorge Terrones</strong><a data-pdp href="https://www.artidororodriguez.com/products/cafe-amazonas">Café Origen Amazonas</a></figcaption></figure>
           <figure class="review-card"><span class="stars" role="img" aria-label="5 de 5 estrellas"></span><blockquote>“Delicioso, taza a taza!!!!”</blockquote><figcaption><strong>Sandy Yris Fernandez Urrutia</strong><a data-pack-pdp href="https://www.artidororodriguez.com/products/pack-3kg-origenes-1">Pack «El Ahorrador» 3 kg</a></figcaption></figure>
@@ -249,7 +261,7 @@
           <a class="close-link" href="https://www.artidororodriguez.com/" target="_blank" rel="noopener">Ver todas las reseñas <span class="icon icon-ext" aria-hidden="true"></span></a></div>
         </section>
         <section class="close-band close-faq" aria-labelledby="faq-title">
-          <div class="close-inner faq-layout"><header class="close-head"><span class="icon icon-cup faq-icon" aria-hidden="true"></span><p class="catalog-label">Preguntas frecuentes</p><h3 class="close-title" id="faq-title">Antes de tu<br />primera taza.</h3><a class="close-link" href="https://www.artidororodriguez.com/pages/preguntas-frecuentes" target="_blank" rel="noopener">Más preguntas y respuestas <span class="icon icon-ext" aria-hidden="true"></span></a></header>
+          <div class="close-inner faq-layout"><header class="close-head"><span class="icon icon-cup faq-icon" aria-hidden="true"></span><p class="catalog-label">Preguntas frecuentes</p><h3 class="close-title" id="faq-title" data-reveal-lines>Antes de tu<br />primera taza.</h3><a class="close-link" href="https://www.artidororodriguez.com/pages/preguntas-frecuentes" target="_blank" rel="noopener">Más preguntas y respuestas <span class="icon icon-ext" aria-hidden="true"></span></a></header>
           <div class="catalog-faq">
           <details><summary>¿Qué molienda elijo?</summary><p>Grano si tienes molino. Fina para espresso o moka; media para filtro, V60, Chemex o Aeropress; gruesa para prensa francesa o cold brew.</p></details>
           <details><summary>¿Las notas son ingredientes?</summary><p>No. Describen aromas y sabores propios del café. Las notas de naranja y melaza de Amazonas no significan que se le añadan esos ingredientes.</p></details>
@@ -258,7 +270,7 @@
           </div></div>
         </section>
         <nav class="close-band close-explore" aria-labelledby="explore-title">
-          <div class="close-inner"><header class="close-head"><p class="catalog-label">Toda la tienda</p><h3 class="close-title" id="explore-title">Sigue explorando.</h3></header>
+          <div class="close-inner"><header class="close-head"><p class="catalog-label">Toda la tienda</p><h3 class="close-title" id="explore-title" data-reveal-lines>Sigue explorando.</h3></header>
           <ul class="tiles">
             <li><a class="tile" href="https://www.artidororodriguez.com/collections/cafe" target="_blank" rel="noopener"><span class="tile-name">Todos<br />los cafés</span><img data-catalog-src="/assets/amazonas-250g.webp" alt="" width="326" height="761" loading="lazy" decoding="async" /><noscript><img src="/assets/amazonas-250g.webp" alt="" width="326" height="761" loading="lazy" /></noscript><span class="icon icon-ext" aria-hidden="true"></span></a></li>
             <li><a class="tile" href="https://www.artidororodriguez.com/collections/packs-de-cafe" target="_blank" rel="noopener"><span class="tile-name">Packs</span><img data-catalog-src="/assets/ahorrador-amazonas-1kg.webp" alt="" width="410" height="840" loading="lazy" decoding="async" /><noscript><img src="/assets/ahorrador-amazonas-1kg.webp" alt="" width="410" height="840" loading="lazy" /></noscript><span class="icon icon-ext" aria-hidden="true"></span></a></li>
@@ -306,7 +318,7 @@
   <footer class="home-footer home-only">
     <div class="footer-top"><a href="#direction-a" aria-label="Volver al inicio"><img src="/assets/logo-white.png" alt="Artidoro Rodríguez Coffee" width="358" height="127" loading="lazy" /></a><p>El origen se siente.</p></div>
     <nav class="footer-links" aria-label="Enlaces del pie"><a href="#origin-scene">Los cinco orígenes</a><a href="https://www.artidororodriguez.com/collections/cafe" target="_blank" rel="noopener">Tienda <span class="icon icon-ext" aria-hidden="true"></span></a><a href="https://www.artidororodriguez.com/pages/locales" target="_blank" rel="noopener">Cafeterías <span class="icon icon-ext" aria-hidden="true"></span></a><span>Artidoro Rodríguez · Café peruano</span></nav>
-    <details class="review-details"><summary>Acerca de esta demo</summary><p>Prototipo independiente de la tienda. Precios de 250 g y opciones consultados en el catálogo oficial el 25 de septiembre de 2026. El paisaje tiene ubicación por confirmar. 03 es una escena conceptual generada. Tarata utiliza fotografías de referencia con autoría pendiente de confirmar. Amazonas y El Ahorrador disponen de fichas de demostración; el pago se realiza en la tienda oficial. Catálogo y variantes de esta revisión consultados el 28 de septiembre de 2026.</p><p><button type="button" class="motion-toggle" data-home-motion aria-pressed="false">Reducir movimiento</button></p></details>
+    <details class="review-details"><summary>Acerca de esta demo</summary><p>Prototipo independiente de la tienda. Precios de 250 g y opciones consultados en el catálogo oficial el 25 de septiembre de 2026. El hero y 03 son escenas conceptuales generadas para esta demo; la bolsa que aparece en ellas es la foto real del producto. Moliendas y datos de preparación según las preguntas frecuentes oficiales, consultadas el 30 de septiembre de 2026. Tarata utiliza fotografías de referencia con autoría pendiente de confirmar. Amazonas y El Ahorrador disponen de fichas de demostración; el pago se realiza en la tienda oficial. Catálogo y variantes de esta revisión consultados el 28 de septiembre de 2026.</p><p><button type="button" class="motion-toggle" data-home-motion aria-pressed="false">Reducir movimiento</button></p></details>
   </footer>
 </body>
 </html>
