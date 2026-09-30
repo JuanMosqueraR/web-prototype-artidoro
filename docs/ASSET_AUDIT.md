@@ -1,3 +1,9 @@
+# Aviso de procedencia — texto reescrito, 30 de septiembre de 2026
+
+Por aprobación explícita del usuario (L24, D1 opción a), los tres avisos visibles en la home A cambian de texto de laboratorio a redacción humana, sin retirarse ni cambiar de ubicación: el paisaje del hero pasa de «PROVISIONAL_ASSET · Cafetal de Artidoro · ubicación por confirmar» a «Paisaje referencial · ubicación por confirmar»; 03 pasa de «CONCEPTUAL_ASSET · Escena sensorial generada para esta demo.» a «Escena conceptual generada para esta demo.»; Tarata pasa de «PROVISIONAL_ASSET · Fotografías de referencia.» a «Fotografías de referencia · autoría por confirmar.». Los gaps que motivan cada aviso (ubicación del paisaje, autoría de Tarata, naturaleza generada de 03) siguen exactamente igual y se mantienen íntegros en «Acerca de esta demo» del pie. No cambia ninguna clasificación (`PROVISIONAL_ASSET`/`CONCEPTUAL_ASSET`) del registro estructurado en `audit/assets.json`; solo cambia el copy visible en la interfaz pública. [Detalle y evidencia](HOME_AUDIT_2026_09_30.md).
+
+---
+
 # Precio normal de El Ahorrador — 29 de septiembre de 2026
 
 El precio normal S/ 330.00 que la demo muestra tachado (L23) procede del JSON oficial del producto, guardado en `audit/source/ahorrador-2026-09-29.json`. Las 125 variantes tienen precio 28000 y `compare_at_price` 33000, y el HTML de la ficha muestra lo mismo. La discrepancia del 28 de septiembre (JSON 33000 frente a HTML en caché 312), que motivó excluir el precio tachado, ya no aparece. Registro en `verified_copy.ahorrador_saving_2026_09_29`. No se añade ningún asset ni se modifica ninguna imagen. La foto grupal oficial del pack sigue siendo la misma de etiquetas 454 g (`packelahorrador.jpg?v=1789062040`), por lo que se mantiene fuera de la interfaz.

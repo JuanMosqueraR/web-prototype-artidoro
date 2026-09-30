@@ -1,3 +1,29 @@
+# Cierre gráfico de 05 — 30 de septiembre de 2026 (L27)
+
+`index.html` (nueva sección `#close-bands`), `src/catalog.css` (bloque de bandas; se retiran las reglas del bloque antiguo de reseñas/categorías), `src/catalog.js` (selector de carga diferida ampliado). Evidencia: `qa/2026-09-30-cierre-05/`. Un asset nuevo: `public/assets/nanolote-tin.webp` (derivado de `audit/source/nanolote-original.jpg` con `scripts/prepare-nanolotes.py`). Build de verificación con Vite 6.4.3 externo.
+
+---
+
+# Hero automático y ajustes de 05 — 30 de septiembre de 2026 (L25)
+
+Cambia `index.html`, `src/peru.css`, `src/home.css`, `src/home.js`, `src/sensory.js`, `src/sensory.css`, `src/main.js` (guard sin botón), `src/ahorrador.css`; evidencia en `qa/2026-09-30-hero-auto/`. Sin assets nuevos. Build de verificación con Vite 6.4.3 externo (el `node_modules/vite` del repo está incompleto; sin reparar, Class 2).
+
+---
+
+# Auditoría y corrección de la home 01–05 — 30 de septiembre de 2026
+
+Autorización L24, sobre checkpoint `0b33580`. Sin commit final de este cambio. Solo dirección A; B, PDPs y assets sin tocar.
+
+| Ruta nueva o afectada | Función / producción |
+|---|---|
+| `index.html`, `src/common.css`, `src/home.css`, `src/peru.css`, `src/origin.css`, `src/sensory.css`, `src/catalog.css`, `src/ahorrador.css` | Iconos SVG por `mask` (sin fuente, corrige el emoji de iOS); corrección del solape y del CTA del hero mobile; suelo tipográfico y touch targets; retiro de etiquetas de laboratorio; reescritura de avisos de procedencia (mismo lugar, mismo gap, texto humano); tarjeta «Café de origen» en 05 en lugar de la fila huérfana; reseñas con nota de fuente y producto enlazado a su PDP |
+| `qa/2026-09-30-home-audit/` | Script Playwright, `checks.json` (39/39) y capturas; regresión de B (8/8 estados, 0 px) |
+| `docs/HOME_AUDIT_2026_09_30.md` | Entrega, alcance, validación y límites de esta revisión |
+
+Entorno: Node 22.23.1 aislado, Vite 7.1.3, Python 3.10, Playwright Chromium 148.0.7778.96, Windows. Sin cambios de dependencias ni de assets/`audit/source`.
+
+---
+
 # Ahorro visible, propuesta y script de publicación — 29 de septiembre de 2026
 
 Autorización L23. Checkpoint previo `41d0cf1`. El usuario confirma que la iteración del 28 de septiembre funciona en un iPhone físico y que la publicó en GitHub Pages; Pages no incluye estos cambios. Las menciones de las secciones inferiores a una prueba de iPhone pendiente o a que no hubo publicación quedan superadas.

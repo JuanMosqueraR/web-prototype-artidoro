@@ -1,3 +1,15 @@
+# Hero automático — 30 de septiembre de 2026 (L25)
+
+En A, 01 ya no ofrece Acercar/Alejar origen: al cargar, el cafetal se acerca una vez (misma animación de 1,4 s) y aparece el detalle de origen sin interacción. Mobile muestra solo procedencia y notas de sabor; desktop añade kicker y altitud. Con movimiento reducido el detalle es estático. El pack del hero es un botón secundario con borde; en 05 Travel Line iguala a El Ahorrador. La descripción de Acercar/Alejar más abajo queda como histórico de A y sigue vigente en B. [Detalle](HOME_AUDIT_2026_09_30.md).
+
+---
+
+# Auditoría y corrección de la home — 30 de septiembre de 2026
+
+Autorización L24. Alcance: solo A. **01** conserva la tesis, el paisaje, la bolsa y Acercar/Alejar origen sin cambios de composición desktop; en mobile se corrige el solape entre la anotación y el botón (≥12 px de separación), el CTA queda visible dentro del área real de un iPhone (390×664), la fila del pack pasa a una sola línea legible y desaparece la fila interna «01 / PERÚ, EN PROFUNDIDAD». El aviso de procedencia del paisaje cambia de texto (sin token de laboratorio) pero sigue en el mismo lugar y sigue señalando el mismo gap. **05** conserva El Ahorrador, Travel Line, El Explorador y Miel de abeja; la fila «¿Prefieres una sola bolsa?» se sustituye por una tarjeta «Café de origen» con el mismo formato que sus vecinas, y la fila de complementos pasa a 3 columnas desde 1024 px. Las reseñas añaden una nota de fuente antes de las citas y enlazan el producto a su PDP. En todo el resto de la home (icono/tipografía/touch targets) se elevan mínimos sin cambiar composición. Detalle completo, condiciones y evidencia: [HOME_AUDIT_2026_09_30.md](HOME_AUDIT_2026_09_30.md). Las descripciones inferiores de 01 y 05 quedan como snapshot del 26 de septiembre; sus composiciones generales no cambiaron, solo lo aquí descrito.
+
+---
+
 # Ahorro visible del pack — 29 de septiembre de 2026
 
 La tarjeta de El Ahorrador en 05 y su PDP muestran, bajo el precio de S/ 280.00, el precio normal tachado S/ 330.00 y «Ahorras S/ 50». En la PDP el ahorro también aparece en la fila del total y se oculta si la combinación no existe. Es una línea secundaria, más pequeña que el precio y en el verde apagado del texto de apoyo; en celular baja a 12 px para que «Continuar con mi pack» siga visible a 390 × 700. 01 y 02 conservan solo S/ 280, y el hero no cambia (0 píxeles distintos). Sin motion nuevo. Autorización L23; [QA](../qa/2026-09-29-ahorro/README.md).

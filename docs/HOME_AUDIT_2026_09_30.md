@@ -1,0 +1,52 @@
+# Auditoría y corrección de la home 01–05 — 30 de septiembre de 2026
+
+Autorización L24 sobre checkpoint `0b33580`, sin commit final de este cambio. Alcance: dirección A únicamente; B, PDPs y assets quedan fuera. Plan aprobado íntegro salvo dos opcionales explícitamente no aprobados (ahorro visible en el hero, estrellas en reseñas).
+
+## Qué cambió
+
+**Batch A — bugs, responsive, higiene de contenido.**
+
+- **Iconografía (todas las secciones de A).** Los glifos de texto `↗`/`⌄` se sustituyen por iconos SVG vía `mask` y `currentColor` (`.icon-ext`, `.icon-arrow`, `.icon-chevron` en `common.css`). Ninguna fuente local (Chivo, Barlow) contiene esos glifos; en iOS, `↗` se renderiza como emoji de color en vez de flecha de texto. Se distingue destino externo (tienda oficial, Maps) de destino interno (anclas de la propia demo, incluidas las que la interceptación de `catalog.js` convierte en navegación interna aunque el `href` estático apunte a la tienda). B y las dos PDP conservan sus glifos originales sin cambios.
+- **Solape hero mobile.** La anotación de origen y el botón «Alejar origen» dejaban 4 px de solape en 390 px de ancho (medido: notas terminaban en y=533, botón empezaba en y=529). Se reposicionó el botón (holgura existente antes de `.commerce`) y se recortaron márgenes de la anotación; ahora dejan ≥12 px de separación en 390×844, 390×664 y 360×740.
+- **CTA bajo el pliegue real.** A 390×664 (área visible real de un iPhone con barras, según la captura del usuario), «Comprar Amazonas» terminaba en y=691. Se recompuso la pila del hero mobile (aprovechando el espacio liberado al quitar la fila «01 / PERÚ, EN PROFUNDIDAD») para que el CTA termine en y=639.
+- **Fila del pack en el hero.** De dos líneas apiladas («El Ahorrador · 3 kg / S/280» y «Armar mi pack →» por separado) a una sola fila «Pack El Ahorrador · 3 × 1 kg — S/280 →», con tipografía ≥13 px.
+- **Etiquetas de laboratorio.** Se retira la fila «01 / PERÚ, EN PROFUNDIDAD · AMAZONAS, PERÚ» del hero y el enlace público «Ver dirección B del laboratorio» del pie (B sigue accesible por `/b/` o `#b`, solo deja de anunciarse en la demo pública).
+- **Avisos de procedencia (D1-a).** Mismo lugar, mismo aviso, texto humano sin token de laboratorio: «Paisaje referencial · ubicación por confirmar» (hero), «Escena conceptual generada para esta demo.» (03), «Fotografías de referencia · autoría por confirmar.» (Tarata). La divulgación completa se conserva íntegra en «Acerca de esta demo» del pie. Ninguna clasificación de `audit/assets.json` cambia.
+- **Suelo tipográfico.** Por precisión del usuario: 11 px queda para labels muy secundarios (kickers, créditos de procedencia, «EN TAZA»); el texto informativo (confianza, datos de origen, captions, atribuciones, pistas de 03, enlaces de fuente, fila del footer) sube a 12–14 px. Aplicado en `common.css`, `home.css`, `peru.css`, `origin.css`, `sensory.css`, `catalog.css`, `ahorrador.css`, siempre bajo selectores propios de A (`html[data-direction="a"]`, `.hero-peru`, o clases exclusivas de las secciones `home-only`) para no tocar B.
+- **Touch targets.** Se llevaron a ≥44 px el CTA del header mobile, «Llévalo a tu taza», los enlaces «Comprar pack/miel» de 05, el control «Sin movimiento»/«Activar movimiento» de 03, el resumen «Acerca de esta demo», el enlace «Sigue el origen» y el logo/«Tarata» del header. Quedan dos excepciones aceptadas (enlace dentro de una frase; bolsas lejanas del carrusel sin `pointer-events`), documentadas en el QA.
+- **Tablet exploratorio (761–1000 px).** El botón y la anotación del hero quedaban detrás de la bolsa (por ejemplo, a 768 px, el botón invadía 76 px del área de la bolsa). Se reubicó la bolsa (más pequeña y a la derecha) y el botón/anotación entre el bloque de texto y la bolsa, sin solape en 768, 900 y 1000 px.
+
+**Batch B — refactor acotado de 05.**
+
+- **Cola de 05.** Se elimina la fila huérfana «¿Prefieres una sola bolsa? · Elige entre cinco orígenes ↑» y se sustituye por una tarjeta «Café de origen» con el mismo formato que El Explorador y Miel de abeja (imagen, etiqueta, precio S/39.90, enlace «Elegir origen» a `#origin-scene`), usando el asset ya existente `amazonas-250g.webp`. La fila de complementos pasa de 2 a 3 columnas iguales desde 1024 px (2 columnas se conservan en la franja 761–1023, con la tercera tarjeta pasando a su propia fila).
+- **Reseñas.** Se añade «Reseñas de clientes en la tienda oficial» antes de las citas (antes, la fuente solo se indicaba en un enlace al final). El nombre del producto de cada reseña («Café Origen Amazonas», «Pack «El Ahorrador» 3 kg») pasa de texto plano a enlace: abre la PDP interna correspondiente (`#producto-amazonas` / `#producto-ahorrador`) reutilizando la interceptación ya existente de `catalog.js` (`[data-pdp]` / `[data-pack-pdp]`), sin JS nuevo. En mobile, las reseñas pasan de 2 columnas a 1, con la cita a 16 px (antes 12 px).
+
+## Iteración L27 (mismo día): cierre gráfico de 05
+
+El tramo final pasa de una franja plana a cuatro bandas: confianza con iconos («Tostamos cada semana», «Cafeterías en Miraflores», «Envíos a Lima y provincias»), reseñas en banda oscura con estrellas y comilla, FAQ en dos columnas con controles circulares y mosaicos «Sigue explorando» con producto. Cuerpo ≥ 19 px en citas y ≥ 15 px en la FAQ; una sola mención de fuente. El mosaico de Nanolotes usa una foto oficial de la colección (`nanolote-tin`, registrada en `audit/assets.json`). Evidencia: [qa/2026-09-30-cierre-05](../qa/2026-09-30-cierre-05/checks.json) (49/49, B 0 px). FAQ de las PDP sin cambios.
+
+## Iteración L25 (mismo día)
+
+Tras probar en iPhone físico, con autorización L25: el hero A deja de tener botón Acercar/Alejar; la aproximación y el detalle de origen se muestran solos y con texto puntual; el pack del hero es un botón secundario con borde; Travel Line pasa a tarjeta completa en 05 (mobile incluido); scroll suave solo donde no cruza 03 (salto instantáneo con fundido breve si lo cruza); el control de movimiento se reduce a uno, dentro de «Acerca de esta demo». Evidencia: [qa/2026-09-30-hero-auto](../qa/2026-09-30-hero-auto/checks.json) (51/51, B 0 px). El script de `qa/2026-09-30-home-audit/verify.py` hacía clic en el botón retirado y ya no aplica a A; su evidencia queda como histórico. Entorno de esta iteración: `node_modules/vite` del repo estaba incompleto; el build de verificación usó Vite 6.4.3 de otro proyecto local y Node 22.23.1, sin modificar el repo (Vite 7.1.3 no verificado en esta iteración).
+
+## No se tocó
+
+02 (carrusel, gestos, estados, compra) salvo tamaños mínimos de texto; 03 (video, scroll, sticky, reduced motion, recuperación) salvo tamaños e icono; 04 (composición editorial L19); las tarjetas de El Ahorrador (con su ahorro L23) y Travel Line; la FAQ; ningún archivo de `public/assets/`, `audit/source/` ni los scripts de preparación; la dirección B completa; las dos PDP (Amazonas, El Ahorrador) más allá de dos enlaces nuevos que abren PDPs ya existentes.
+
+## Validación
+
+Build Vite 7.1.3 con Node aislado 22.23.1, Python 3.10, Chromium 148.0.7778.96, DPR 1. `qa/2026-09-30-home-audit/verify.py` → **39/39**: separación anotación/botón ≥12 px, CTA dentro del viewport en 390×664, cero texto <11 px, cero desbordamiento horizontal, iconos con tamaño no nulo, cero errores de página, B sin diferencia de píxeles en los 8 estados de regresión (desktop/mobile × motion/reducido × inicial/expandido), y barrido funcional (nueva tarjeta decodifica, selector de 02 recorre los cinco orígenes, enlaces de reseña abren sus PDP y el retorno funciona). Detalle, excepciones aceptadas y capturas: [QA](../qa/2026-09-30-home-audit/README.md).
+
+## Pendiente / no cubierto
+
+Confirmación física en iOS del icono corregido (el hallazgo original vino de una captura de iPhone; Chromium no reproduce el bug de renderizado de emoji, así que la corrección se verifica por ausencia de la fuente del problema — ningún glifo de texto en las fuentes locales — no visualmente en el dispositivo). Android, lectores de pantalla, Core Web Vitals de campo o en GitHub Pages. Los gaps de paisaje, autoría de Tarata y naturaleza generada de 03 siguen abiertos (`docs/ASSET_AUDIT.md`); no se resolvió ninguna decisión OPEN. No se implementaron los dos opcionales no aprobados por el usuario (ahorro visible en el hero, estrellas en reseñas). Pages no se republicó.
+
+**Snapshots desactualizados por este cambio (no regenerados, requieren tu aprobación):** `deliverables/presentacion-artidoro.html` (usa capturas de `qa/2026-09-29-ahorro/after/`, que muestran el hero y 05 previos a esta revisión) y la propia evidencia de `qa/2026-09-29-ahorro/after/` para dirección A (no se sobrescribe; sigue siendo válida como historial y como línea base de comparación de B).
+
+## Archivos
+
+- Implementación: `index.html`, `src/common.css`, `src/home.css`, `src/peru.css`, `src/origin.css`, `src/sensory.css`, `src/catalog.css`, `src/ahorrador.css`.
+- QA: `qa/2026-09-30-home-audit/` (script, `checks.json`, capturas).
+- Documentación: este informe, `docs/ASSET_AUDIT.md` (nota de cambio de copy), `docs/CREATIVE_DIRECTIONS.md`, `docs/IMPLEMENTATION_STATUS.md`, autorización en `docs/DECISIONS.md` (L24).
+
+Los cambios preexistentes de `tools/apimart/*`, `reference/` y el PDF CRO quedan intactos y excluidos. No se resuelve ninguna decisión LOCKED/OPEN con este cambio.
