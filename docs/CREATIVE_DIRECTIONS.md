@@ -1,6 +1,20 @@
+# Hero «Del cafetal a tu bolsa» y 03 «De la bolsa a tu taza» — 30 de septiembre de 2026 (L28)
+
+Sustituye, para la home de A, el hero automático de L25 (sección siguiente, ahora histórica) y la escena de video de 03 descrita en la revisión del 26 de septiembre. B no cambia.
+
+- **01 — momento wow.** Escenario fijo (sticky) de 280 svh en desktop y 250 svh en mobile (~1,8 y ~1,5 pantallas de scroll) bajo un header transparente que se vuelve sólido al salir del hero. El scroll recorre un video generado de 10 s (dos clips de 5 s; en mobile, la misma toma como secuencia de 60 imágenes en un canvas, y en desktop la secuencia es el respaldo si el video no está listo): vista aérea del cafetal → cerezas que se vuelven granos → cascada de granos; la bolsa real de Amazonas sube al final como capa propia. Tres pasos con texto verificado (Rodríguez de Mendoza · 1 700–1 900 m s. n. m.; notas de naranja y melaza; Amazonas 250 g) y un índice 01–03 en desktop; en mobile cada paso es una línea compacta arriba. Titular, precio, CTA, confianza y pack quedan visibles durante todo el recorrido, también en 390 × 664. El avance está amortiguado (la escena sigue al scroll con un retardo corto). El póster es el primer fotograma del video; el video se pide tras la carga.
+- **03 — deseo y uso.** Cuatro imágenes fijas generadas (molido, primer chorro en V60, goteo, bodegón con vaso de doble pared y la bolsa real a escala) en un escenario fijo de 300/280 svh. El scroll solo dispara cada paso (moler, preparar, servir; a 20/40/60 % del recorrido) y la transición se reproduce en tiempo fijo (barrido, apertura circular, fundido), con un acercamiento lento que sigue al scroll. Cierre: «Un mundo. Una taza.» y «Tu bolsa de 250 g: unas 16 tazas». El motor admite pasar a video sin cambiar el diseño.
+- **Moliendas.** Franja informativa tras 03 con cuatro iconos propios y texto de las preguntas frecuentes oficiales.
+- **General.** Titulares de sección que suben línea a línea una vez; scroll con inercia solo con rueda en desktop; grano de película en las dos escenas; «Precio justo al caficultor» en la franja de confianza de 05.
+- **Sin movimiento** (preferencia del sistema, «Reducir movimiento», Save-Data): sin fijación ni video; hero en su composición final (último fotograma, bolsa, origen y notas) y 03 en el bodegón final; titulares visibles.
+
+Detalle y evidencia: [HOME_AUDIT_2026_09_30.md](HOME_AUDIT_2026_09_30.md#l28), `qa/2026-09-30-l28/`.
+
+---
+
 # Hero automático — 30 de septiembre de 2026 (L25)
 
-En A, 01 ya no ofrece Acercar/Alejar origen: al cargar, el cafetal se acerca una vez (misma animación de 1,4 s) y aparece el detalle de origen sin interacción. Mobile muestra solo procedencia y notas de sabor; desktop añade kicker y altitud. Con movimiento reducido el detalle es estático. El pack del hero es un botón secundario con borde; en 05 Travel Line iguala a El Ahorrador. La descripción de Acercar/Alejar más abajo queda como histórico de A y sigue vigente en B. [Detalle](HOME_AUDIT_2026_09_30.md).
+*Histórico desde L28 para el hero de A.* En A, 01 ya no ofrece Acercar/Alejar origen: al cargar, el cafetal se acerca una vez (misma animación de 1,4 s) y aparece el detalle de origen sin interacción. Mobile muestra solo procedencia y notas de sabor; desktop añade kicker y altitud. Con movimiento reducido el detalle es estático. El pack del hero es un botón secundario con borde; en 05 Travel Line iguala a El Ahorrador. La descripción de Acercar/Alejar más abajo queda como histórico de A y sigue vigente en B. [Detalle](HOME_AUDIT_2026_09_30.md).
 
 ---
 

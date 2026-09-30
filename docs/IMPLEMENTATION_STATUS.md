@@ -1,6 +1,24 @@
+# Hero «Del cafetal a tu bolsa», 03 «De la bolsa a tu taza» y mejoras generales — 30 de septiembre de 2026 (L28)
+
+| Archivo | Qué es / cómo se produce |
+|---|---|
+| `index.html` | Nuevo marcado del hero A (`#direction-a`, mismas clases e id), nueva 03 (`#sensory-scene`, se conserva el id por los enlaces externos), franja `.grinds`, cuarto punto de confianza en 05, `data-reveal-lines`, canvas `.hs-seq` en títulos, scripts `scenes.js` e `inertia.js`, texto de «Acerca de esta demo» |
+| `src/scenes.js` (nuevo) | Motor de las dos escenas: progreso amortiguado, video del hero por scroll en desktop (pedido tras la carga) y secuencia de imágenes en canvas en mobile o como respaldo, pasos de 03 disparados por scroll con transición de tiempo fijo, modo estático sin movimiento. Sustituye a `src/sensory.js` (eliminado) |
+| `src/inertia.js` (nuevo) | Scroll con inercia solo con rueda en desktop; cede ante teclado, barra, anclas y zonas con scroll propio; desactivado con movimiento reducido o táctil. Sin dependencias (no hay npm para el Node 22 aislado y no se tocó `node_modules`) |
+| `src/peru.css` (reescrito), `src/sensory.css` (reescrito), `src/home.css`, `src/catalog.css`, `src/home.js` | Estilos del hero y de 03/moliendas; header transparente, revelado de títulos; icono `icon-fair`; lógica de header, revelado y saltos que cruzan escenas (la barra de compra de mobile se retiró tras la prueba en iPhone) |
+| `scripts/produce-hero.cjs` | Orquesta los cuatro clips del hero con el cliente APIMart existente (primer y último fotograma por tarea); generar tiene coste, `status` no regenera |
+| `scripts/prepare-hero-video.py` | FFmpeg (imageio-ffmpeg): une los dos clips por formato, H.264 CRF 28/29, GOP 8, faststart; pósters inicial y final como WebP; secuencia de 60 WebP a 6 fps por formato. Salidas `public/assets/hero-{desktop,mobile}.mp4` (1,60 y 1,34 MB), `hero-*-{start,end}.webp` y `hero-seq/{desktop,mobile}/f000–f059.webp` (1,29 y 1,23 MB) |
+| `scripts/prepare-cup03.py` | Pillow: WebP desktop de 1600 px y recortes 9:16 mobile de los fotogramas de 03; el bodegón mobile tiene composición propia. Salidas `public/assets/cup03-*` |
+| `audit/source/hero-generation.json`, `hero-*`, `cup03-*` | Registro de las 18 tareas (15 adoptadas, 3 descartadas; US$ 1,76), prompts y parámetros sin URLs firmadas; originales de imágenes y clips |
+| `qa/2026-09-30-l28/` | `verify.py`, `checks.json` (100/100), capturas y README con condiciones y rendimiento de laboratorio |
+
+Build de verificación con la Vite 7.1.3 del repo y Node 22.23.1 aislado. Los assets de la 03 anterior (`scene03-*`) siguen en `public/assets/` sin uso.
+
+---
+
 # Medición de rendimiento de la home publicada — 30 de septiembre de 2026
 
-Clase 0/1, solo lectura. Script y resultados en `qa/2026-09-30-performance/` (`perf.py`, `perf.json`, README): mediana de 3 corridas, LCP 1,67 s en mobile con Slow 4G y CPU 4× (0,21 s en desktop), CLS 0, sin peticiones fallidas; la primera corrida en frío tarda ~4 s. Laboratorio, no de campo ni Lighthouse; no es comparable 1:1 con el 12,1 s del diagnóstico CRO (otra herramienta y otro sitio). Detalle y límites en el README de esa carpeta.
+*Describe la home publicada antes de L28; tras el próximo despliegue los valores quedan desactualizados.* Clase 0/1, solo lectura. Script y resultados en `qa/2026-09-30-performance/` (`perf.py`, `perf.json`, README): mediana de 3 corridas, LCP 1,67 s en mobile con Slow 4G y CPU 4× (0,21 s en desktop), CLS 0, sin peticiones fallidas; la primera corrida en frío tarda ~4 s. Laboratorio, no de campo ni Lighthouse; no es comparable 1:1 con el 12,1 s del diagnóstico CRO (otra herramienta y otro sitio). Detalle y límites en el README de esa carpeta.
 
 ---
 
