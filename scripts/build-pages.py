@@ -41,11 +41,17 @@ def rewrite_for_subpath(site):
     index = site / "index.html"
     html = read(index)
     html, n = re.subn(r"(?<![A-Za-z0-9_.\-])/assets/", "assets/", html)
-    # Footer links written for a site root; #b is the routing main.js already supports.
+    # Older footer links written for a site root; #b is the routing main.js already supports.
+    # Optional: newer pages may have dropped one or both. More than one is ambiguous (a
+    # rewrite could hit the wrong link), so that still stops the build for a manual look.
+    rewritten_links = []
     for old, new in (('href="/b/"', 'href="#b"'), ('href="/?motion=off"', 'href="?motion=off"')):
-        if html.count(old) != 1:
-            sys.exit(f"expected exactly one {old} in index.html; the page changed, update this script deliberately")
-        html = html.replace(old, new)
+        count = html.count(old)
+        if count > 1:
+            sys.exit(f"found {count} occurrences of {old} in index.html (expected 0 or 1); update this script deliberately")
+        if count == 1:
+            html = html.replace(old, new)
+            rewritten_links.append(old)
     left = re.findall(r"""(?:href|src|srcset|poster|data-[a-z-]+)=["']/[^"']*""", html)
     if left:
         sys.exit("root-absolute references remain in index.html: " + ", ".join(sorted(set(left))))
@@ -59,7 +65,7 @@ def rewrite_for_subpath(site):
         if "/assets/" in read(js):
             sys.exit("a hard-coded /assets/ path exists in the JS bundle: " + js)
     write(site / ".nojekyll", "")
-    return n
+    return n, rewritten_links
 
 
 def stage_branch(site, branch_dir, source_commit, node_version, vite_version, dirty):
@@ -111,14 +117,15 @@ def main():
     with tempfile.TemporaryDirectory() as tmp:
         raw = Path(tmp) / "site"
         run([a.node, str(vite_js), "build", "--outDir", str(raw), "--emptyOutDir"])
-        n = rewrite_for_subpath(raw)
+        n, rewritten_links = rewrite_for_subpath(raw)
         out.mkdir(parents=True, exist_ok=True)
         for child in out.iterdir():  # empty it rather than delete it: Windows refuses to remove a directory in use
             shutil.rmtree(child) if child.is_dir() else child.unlink()
         shutil.copytree(raw, out, dirs_exist_ok=True)
     files = [p for p in out.rglob("*") if p.is_file()]
     print(f"built {out} from {source_commit}{' (DIRTY inputs)' if dirty else ''}: {len(files)} files, "
-          f"{sum(p.stat().st_size for p in files)} bytes, {n} asset references made relative (Node {node_version}, Vite {vite_version})")
+          f"{sum(p.stat().st_size for p in files)} bytes, {n} asset references made relative, "
+          f"footer links rewritten: {rewritten_links or 'none found'} (Node {node_version}, Vite {vite_version})")
 
     if a.branch_dir:
         d = stage_branch(out, a.branch_dir, source_commit, node_version, vite_version, bool(dirty))
