@@ -1,0 +1,871 @@
+{
+ "chromium": "148.0.7778.96",
+ "url": "http://127.0.0.1:4192",
+ "checks": [
+  {
+   "name": "desktop hero CTA, trust and pack inside the first viewport",
+   "passed": true,
+   "detail": {
+    "buy": {
+     "top": 593.34375,
+     "bottom": 651.34375,
+     "left": 86.390625,
+     "right": 476.390625,
+     "w": 390,
+     "h": 58
+    },
+    "pack": {
+     "top": 695.734375,
+     "bottom": 744.734375,
+     "left": 86.390625,
+     "right": 476.390625,
+     "w": 390,
+     "h": 49
+    },
+    "h1": {
+     "top": 263.25,
+     "bottom": 449.84375,
+     "left": 86.390625,
+     "right": 646.390625,
+     "w": 560,
+     "h": 186.59375
+    },
+    "status": {
+     "top": 865.5,
+     "bottom": 882,
+     "left": 1114.734375,
+     "right": 1353.609375,
+     "w": 238.875,
+     "h": 16.5
+    }
+   }
+  },
+  {
+   "name": "desktop header transparent over the hero",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop no horizontal overflow at the top",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop hero media path is video",
+   "passed": true,
+   "detail": "video"
+  },
+  {
+   "name": "desktop hero loads only its own video",
+   "passed": true,
+   "detail": [
+    "http://127.0.0.1:4192/assets/hero-desktop.mp4"
+   ]
+  },
+  {
+   "name": "desktop video follows the scroll (mid ~5 s, end ~9.9 s)",
+   "passed": true,
+   "detail": [
+    4.947273,
+    9.92963
+   ]
+  },
+  {
+   "name": "desktop hero ends on step 3 with the bag in place",
+   "passed": true,
+   "detail": {
+    "s3": 1,
+    "bag": 1,
+    "step": "3"
+   }
+  },
+  {
+   "name": "desktop 03 steps 1 → 2 → 2 → 3",
+   "passed": true,
+   "detail": [
+    "1",
+    "2",
+    "2",
+    "3"
+   ]
+  },
+  {
+   "name": "desktop 03 final: frames decoded, bag shown, title on screen",
+   "passed": true,
+   "detail": {
+    "bag": 1,
+    "loaded": true,
+    "frames": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "title": true
+   }
+  },
+  {
+   "name": "desktop 03 fast flick settles on step 3",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop header solid after the hero",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop grinds band: 4 items, title revealed",
+   "passed": true,
+   "detail": {
+    "items": 4,
+    "revealed": true,
+    "visible": "none"
+   }
+  },
+  {
+   "name": "desktop no text < 11 px in the new sections",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop 05 trust has 4 items incl. Precio justo al caficultor",
+   "passed": true,
+   "detail": [
+    "Tostamos cada semana",
+    "Cafeterías en Miraflores",
+    "Envíos a Lima y provincias",
+    "Precio justo al caficultor"
+   ]
+  },
+  {
+   "name": "desktop no buy bar (removed at user request)",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop touch targets >= 44 px in hero and 03",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile hero CTA, trust and pack inside the first viewport",
+   "passed": true,
+   "detail": {
+    "buy": {
+     "top": 689.8125,
+     "bottom": 741.8125,
+     "left": 22,
+     "right": 368,
+     "w": 346,
+     "h": 52
+    },
+    "pack": {
+     "top": 779,
+     "bottom": 828,
+     "left": 22,
+     "right": 368,
+     "w": 346,
+     "h": 49
+    },
+    "h1": {
+     "top": 505.125,
+     "bottom": 587.890625,
+     "left": 22,
+     "right": 368,
+     "w": 346,
+     "h": 82.765625
+    },
+    "status": {
+     "top": 136,
+     "bottom": 155.796875,
+     "left": 22,
+     "right": 260.875,
+     "w": 238.875,
+     "h": 19.796875
+    }
+   }
+  },
+  {
+   "name": "mobile header transparent over the hero",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile no horizontal overflow at the top",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile hero media path is sequence",
+   "passed": true,
+   "detail": "sequence"
+  },
+  {
+   "name": "mobile mobile uses the image sequence only (60 frames, no MP4)",
+   "passed": true,
+   "detail": [
+    60,
+    []
+   ]
+  },
+  {
+   "name": "mobile sequence repaints with the scroll (different pixels mid vs end, not empty)",
+   "passed": true,
+   "detail": [
+    [
+     111,
+     112,
+     96
+    ],
+    [
+     42,
+     58,
+     43
+    ]
+   ]
+  },
+  {
+   "name": "mobile hero ends on step 3 with the bag in place",
+   "passed": true,
+   "detail": {
+    "s3": 1,
+    "bag": 1,
+    "step": "3"
+   }
+  },
+  {
+   "name": "mobile 03 steps 1 → 2 → 2 → 3",
+   "passed": true,
+   "detail": [
+    "1",
+    "2",
+    "2",
+    "3"
+   ]
+  },
+  {
+   "name": "mobile 03 final: frames decoded, bag shown, title on screen",
+   "passed": true,
+   "detail": {
+    "bag": 1,
+    "loaded": true,
+    "frames": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "title": true
+   }
+  },
+  {
+   "name": "mobile 03 fast flick settles on step 3",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile header solid after the hero",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile grinds band: 4 items, title revealed",
+   "passed": true,
+   "detail": {
+    "items": 4,
+    "revealed": true,
+    "visible": "none"
+   }
+  },
+  {
+   "name": "mobile no text < 11 px in the new sections",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile 05 trust has 4 items incl. Precio justo al caficultor",
+   "passed": true,
+   "detail": [
+    "Tostamos cada semana",
+    "Cafeterías en Miraflores",
+    "Envíos a Lima y provincias",
+    "Precio justo al caficultor"
+   ]
+  },
+  {
+   "name": "mobile no buy bar (removed at user request)",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile 03 final: title below the bag, kicker hidden",
+   "passed": true,
+   "detail": {
+    "bagBottom": 509,
+    "titleTop": 610,
+    "kicker": "none"
+   }
+  },
+  {
+   "name": "mobile touch targets >= 44 px in hero and 03",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile664 hero CTA, trust and pack inside the first viewport",
+   "passed": true,
+   "detail": {
+    "buy": {
+     "top": 509.8125,
+     "bottom": 561.8125,
+     "left": 22,
+     "right": 368,
+     "w": 346,
+     "h": 52
+    },
+    "pack": {
+     "top": 599,
+     "bottom": 648,
+     "left": 22,
+     "right": 368,
+     "w": 346,
+     "h": 49
+    },
+    "h1": {
+     "top": 325.125,
+     "bottom": 407.890625,
+     "left": 22,
+     "right": 368,
+     "w": 346,
+     "h": 82.765625
+    },
+    "status": {
+     "top": 136,
+     "bottom": 155.796875,
+     "left": 22,
+     "right": 260.875,
+     "w": 238.875,
+     "h": 19.796875
+    }
+   }
+  },
+  {
+   "name": "mobile664 header transparent over the hero",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile664 no horizontal overflow at the top",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile664 hero media path is sequence",
+   "passed": true,
+   "detail": "sequence"
+  },
+  {
+   "name": "mobile664 mobile uses the image sequence only (60 frames, no MP4)",
+   "passed": true,
+   "detail": [
+    60,
+    []
+   ]
+  },
+  {
+   "name": "mobile664 sequence repaints with the scroll (different pixels mid vs end, not empty)",
+   "passed": true,
+   "detail": [
+    [
+     105,
+     107,
+     97
+    ],
+    [
+     42,
+     58,
+     43
+    ]
+   ]
+  },
+  {
+   "name": "mobile664 hero ends on step 3 with the bag in place",
+   "passed": true,
+   "detail": {
+    "s3": 1,
+    "bag": 1,
+    "step": "3"
+   }
+  },
+  {
+   "name": "mobile664 03 steps 1 → 2 → 2 → 3",
+   "passed": true,
+   "detail": [
+    "1",
+    "2",
+    "2",
+    "3"
+   ]
+  },
+  {
+   "name": "mobile664 03 final: frames decoded, bag shown, title on screen",
+   "passed": true,
+   "detail": {
+    "bag": 1,
+    "loaded": true,
+    "frames": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "title": true
+   }
+  },
+  {
+   "name": "mobile664 03 fast flick settles on step 3",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile664 header solid after the hero",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile664 grinds band: 4 items, title revealed",
+   "passed": true,
+   "detail": {
+    "items": 4,
+    "revealed": true,
+    "visible": "none"
+   }
+  },
+  {
+   "name": "mobile664 no text < 11 px in the new sections",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile664 05 trust has 4 items incl. Precio justo al caficultor",
+   "passed": true,
+   "detail": [
+    "Tostamos cada semana",
+    "Cafeterías en Miraflores",
+    "Envíos a Lima y provincias",
+    "Precio justo al caficultor"
+   ]
+  },
+  {
+   "name": "mobile664 no buy bar (removed at user request)",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile664 03 final: title below the bag, kicker hidden",
+   "passed": true,
+   "detail": {
+    "bagBottom": 413,
+    "titleTop": 430,
+    "kicker": "none"
+   }
+  },
+  {
+   "name": "mobile664 touch targets >= 44 px in hero and 03",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile664 no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "tablet hero CTA, trust and pack inside the first viewport",
+   "passed": true,
+   "detail": {
+    "buy": {
+     "top": 628.09375,
+     "bottom": 686.09375,
+     "left": 30.71875,
+     "right": 399.34375,
+     "w": 368.625,
+     "h": 58
+    },
+    "pack": {
+     "top": 730.484375,
+     "bottom": 779.484375,
+     "left": 30.71875,
+     "right": 399.34375,
+     "w": 368.625,
+     "h": 49
+    },
+    "h1": {
+     "top": 352.5,
+     "bottom": 482.0625,
+     "left": 30.71875,
+     "right": 399.34375,
+     "w": 368.625,
+     "h": 129.5625
+    },
+    "status": {
+     "top": 989.5,
+     "bottom": 1006,
+     "left": 498.40625,
+     "right": 737.28125,
+     "w": 238.875,
+     "h": 16.5
+    }
+   }
+  },
+  {
+   "name": "tablet header transparent over the hero",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "tablet no horizontal overflow at the top",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "tablet hero media path is video",
+   "passed": true,
+   "detail": "video"
+  },
+  {
+   "name": "tablet hero loads only its own video",
+   "passed": true,
+   "detail": [
+    "http://127.0.0.1:4192/assets/hero-desktop.mp4"
+   ]
+  },
+  {
+   "name": "tablet video follows the scroll (mid ~5 s, end ~9.9 s)",
+   "passed": true,
+   "detail": [
+    4.962322,
+    9.929632
+   ]
+  },
+  {
+   "name": "tablet hero ends on step 3 with the bag in place",
+   "passed": true,
+   "detail": {
+    "s3": 1,
+    "bag": 1,
+    "step": "3"
+   }
+  },
+  {
+   "name": "tablet 03 steps 1 → 2 → 2 → 3",
+   "passed": true,
+   "detail": [
+    "1",
+    "2",
+    "2",
+    "3"
+   ]
+  },
+  {
+   "name": "tablet 03 final: frames decoded, bag shown, title on screen",
+   "passed": true,
+   "detail": {
+    "bag": 1,
+    "loaded": true,
+    "frames": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "title": true
+   }
+  },
+  {
+   "name": "tablet 03 fast flick settles on step 3",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "tablet header solid after the hero",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "tablet grinds band: 4 items, title revealed",
+   "passed": true,
+   "detail": {
+    "items": 4,
+    "revealed": true,
+    "visible": "none"
+   }
+  },
+  {
+   "name": "tablet no text < 11 px in the new sections",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "tablet 05 trust has 4 items incl. Precio justo al caficultor",
+   "passed": true,
+   "detail": [
+    "Tostamos cada semana",
+    "Cafeterías en Miraflores",
+    "Envíos a Lima y provincias",
+    "Precio justo al caficultor"
+   ]
+  },
+  {
+   "name": "tablet no buy bar (removed at user request)",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "tablet touch targets >= 44 px in hero and 03",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "tablet no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop motion-off: both scenes static, final state, no video requested",
+   "passed": true,
+   "detail": {
+    "heroStatic": true,
+    "cupStatic": true,
+    "heroPinned": false,
+    "cupPinned": false,
+    "end": true,
+    "endOpacity": 1,
+    "bag": 1,
+    "cupStep": "3",
+    "titles": true,
+    "media": []
+   }
+  },
+  {
+   "name": "desktop motion-off: titles visible without animation",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop motion-off: CTA and pack in the first viewport",
+   "passed": true,
+   "detail": {
+    "top": 695.734375,
+    "bottom": 744.734375,
+    "left": 86.390625,
+    "right": 476.390625,
+    "w": 390,
+    "h": 49
+   }
+  },
+  {
+   "name": "desktop motion-off: no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop reduced: both scenes static, final state, no video requested",
+   "passed": true,
+   "detail": {
+    "heroStatic": true,
+    "cupStatic": true,
+    "heroPinned": false,
+    "cupPinned": false,
+    "end": true,
+    "endOpacity": 1,
+    "bag": 1,
+    "cupStep": "3",
+    "titles": true,
+    "media": []
+   }
+  },
+  {
+   "name": "desktop reduced: titles visible without animation",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop reduced: CTA and pack in the first viewport",
+   "passed": true,
+   "detail": {
+    "top": 695.734375,
+    "bottom": 744.734375,
+    "left": 86.390625,
+    "right": 476.390625,
+    "w": 390,
+    "h": 49
+   }
+  },
+  {
+   "name": "desktop reduced: no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile motion-off: both scenes static, final state, no video requested",
+   "passed": true,
+   "detail": {
+    "heroStatic": true,
+    "cupStatic": true,
+    "heroPinned": false,
+    "cupPinned": false,
+    "end": true,
+    "endOpacity": 1,
+    "bag": 1,
+    "cupStep": "3",
+    "titles": true,
+    "media": []
+   }
+  },
+  {
+   "name": "mobile motion-off: titles visible without animation",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile motion-off: CTA and pack in the first viewport",
+   "passed": true,
+   "detail": {
+    "top": 779,
+    "bottom": 828,
+    "left": 22,
+    "right": 368,
+    "w": 346,
+    "h": 49
+   }
+  },
+  {
+   "name": "mobile motion-off: no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile reduced: both scenes static, final state, no video requested",
+   "passed": true,
+   "detail": {
+    "heroStatic": true,
+    "cupStatic": true,
+    "heroPinned": false,
+    "cupPinned": false,
+    "end": true,
+    "endOpacity": 1,
+    "bag": 1,
+    "cupStep": "3",
+    "titles": true,
+    "media": []
+   }
+  },
+  {
+   "name": "mobile reduced: titles visible without animation",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile reduced: CTA and pack in the first viewport",
+   "passed": true,
+   "detail": {
+    "top": 779,
+    "bottom": 828,
+    "left": 22,
+    "right": 368,
+    "w": 346,
+    "h": 49
+   }
+  },
+  {
+   "name": "mobile reduced: no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop inertia: wheel glides to its target",
+   "passed": true,
+   "detail": [
+    3216,
+    3600
+   ]
+  },
+  {
+   "name": "desktop inertia: keyboard still reaches the end",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop reduced motion: wheel is native (no glide)",
+   "passed": true,
+   "detail": 3600
+  },
+  {
+   "name": "hero CTA opens the Amazonas PDP",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "hero pack entry opens the El Ahorrador PDP",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "PDP interactions without page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "b-desktop-motion-initial B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-desktop-motion-expanded B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-desktop-reduced-initial B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-desktop-reduced-expanded B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-mobile-motion-initial B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-mobile-motion-expanded B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-mobile-reduced-initial B unchanged",
+   "passed": true,
+   "detail": 0
+  },
+  {
+   "name": "b-mobile-reduced-expanded B unchanged",
+   "passed": true,
+   "detail": 0
+  }
+ ]
+}
