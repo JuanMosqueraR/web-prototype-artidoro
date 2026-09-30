@@ -1,0 +1,1703 @@
+{
+  "browser": "148.0.7778.96",
+  "dpr": 1,
+  "date": "2026-09-29",
+  "checks": [
+    {
+      "name": "desktop no initial pack images/video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop pack entry first viewport",
+      "passed": true,
+      "detail": {
+        "x": 86.390625,
+        "y": 757.875,
+        "width": 330,
+        "height": 52
+      }
+    },
+    {
+      "name": "desktop hero pack route",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop return focuses hero pack",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop 02 does not configure pack",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop pack roundtrip retains Cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop menu opens pack",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579005683",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579497203",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578655650035",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578655682803",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579333363",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579071219",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579562739",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578655781107",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578655813875",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579398899",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579103987",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579595507",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578655846643",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578655879411",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579431667",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579136755",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579628275",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578655912179",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578655944947",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579464435",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579038451",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579529971",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578655715571",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578655748339",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579366131",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580316403",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580807923",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656305395",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656338163",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580644083",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580381939",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580873459",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656436467",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656469235",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580709619",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580414707",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580906227",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656502003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656534771",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580742387",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580447475",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580938995",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656567539",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656600307",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580775155",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580349171",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580840691",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656370931",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656403699",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580676851",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580971763",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581463283",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656633075",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656665843",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581299443",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581037299",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581528819",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656764147",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656796915",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581364979",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581070067",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581561587",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656829683",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656862451",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581397747",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581102835",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581594355",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656895219",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656927987",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581430515",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581004531",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581496051",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656698611",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656731379",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581332211",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581627123",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578582118643",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656960755",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656993523",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581954803",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581692659",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578582184179",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578657091827",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578657124595",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578582020339",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581725427",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578582216947",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578657157363",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578657190131",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578582053107",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581758195",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578582249715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578657222899",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578657255667",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578582085875",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581659891",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578582151411",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578657026291",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578657059059",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578581987571",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579661043",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580152563",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578655977715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656010483",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579988723",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579726579",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580218099",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656108787",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656141555",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580054259",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579759347",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580250867",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656174323",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656207091",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580087027",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579792115",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580283635",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656239859",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656272627",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580119795",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578579693811",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580185331",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656043251",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578656076019",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop variant 48578580021491",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop native select keyboard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop missing combination blocks purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop valid selection recovers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop 05 opens pack",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop no script errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "mobile no initial pack images/video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile pack entry first viewport",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 725,
+        "width": 346,
+        "height": 49
+      }
+    },
+    {
+      "name": "mobile hero pack route",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile return focuses hero pack",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile 02 does not configure pack",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile pack roundtrip retains Cusco",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile menu opens pack",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579005683",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579497203",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578655650035",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578655682803",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579333363",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579071219",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579562739",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578655781107",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578655813875",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579398899",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579103987",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579595507",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578655846643",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578655879411",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579431667",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579136755",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579628275",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578655912179",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578655944947",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579464435",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579038451",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579529971",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578655715571",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578655748339",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579366131",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580316403",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580807923",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656305395",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656338163",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580644083",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580381939",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580873459",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656436467",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656469235",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580709619",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580414707",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580906227",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656502003",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656534771",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580742387",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580447475",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580938995",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656567539",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656600307",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580775155",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580349171",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580840691",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656370931",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656403699",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580676851",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580971763",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581463283",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656633075",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656665843",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581299443",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581037299",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581528819",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656764147",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656796915",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581364979",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581070067",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581561587",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656829683",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656862451",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581397747",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581102835",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581594355",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656895219",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656927987",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581430515",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581004531",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581496051",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656698611",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656731379",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581332211",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581627123",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578582118643",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656960755",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656993523",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581954803",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581692659",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578582184179",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578657091827",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578657124595",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578582020339",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581725427",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578582216947",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578657157363",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578657190131",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578582053107",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581758195",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578582249715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578657222899",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578657255667",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578582085875",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581659891",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578582151411",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578657026291",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578657059059",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578581987571",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579661043",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580152563",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578655977715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656010483",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579988723",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579726579",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580218099",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656108787",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656141555",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580054259",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579759347",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580250867",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656174323",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656207091",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580087027",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579792115",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580283635",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656239859",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656272627",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580119795",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578579693811",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580185331",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656043251",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578656076019",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile variant 48578580021491",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile native select keyboard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile missing combination blocks purchase",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile valid selection recovers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile 05 opens pack",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile no script errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "1440x900 pack CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 805.453125,
+        "y": 643.796875,
+        "width": 548.140625,
+        "height": 56
+      }
+    },
+    {
+      "name": "1440x900 no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 direct pack no video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 example caption visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 reload default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900 direct return 05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 pack CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 675.71875,
+        "width": 346,
+        "height": 52
+      }
+    },
+    {
+      "name": "390x844 no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 direct pack no video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 example caption visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 reload default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x844 direct return 05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "#shop 200% text no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "#producto-ahorrador 200% text no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 pack CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 22,
+        "y": 645.484375,
+        "width": 346,
+        "height": 52
+      }
+    },
+    {
+      "name": "390x700 no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 direct pack no video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 example caption visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 reload default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "390x700 direct return 05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 pack CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 18,
+        "y": 648.875,
+        "width": 324,
+        "height": 52
+      }
+    },
+    {
+      "name": "360x740 no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 direct pack no video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 example caption visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 reload default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "360x740 direct return 05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 pack CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 423.28125,
+        "y": 637.390625,
+        "width": 298.625,
+        "height": 56
+      }
+    },
+    {
+      "name": "768x1024 no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 direct pack no video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 example caption visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 reload default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "768x1024 direct return 05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x900 pack CTA visible",
+      "passed": true,
+      "detail": {
+        "x": 572.765625,
+        "y": 637.390625,
+        "width": 389.78125,
+        "height": 56
+      }
+    },
+    {
+      "name": "1024x900 no overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x900 direct pack no video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x900 example caption visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x900 reload default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "1024x900 direct return 05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No JS pack entries official",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No JS PDP hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Video failure poster remains",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Video failure still permits pack purchase",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "geometry": [
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "cta": {
+        "x": 805.453125,
+        "y": 643.796875,
+        "width": 548.140625,
+        "height": 56
+      }
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "cta": {
+        "x": 22,
+        "y": 675.71875,
+        "width": 346,
+        "height": 52
+      }
+    },
+    {
+      "viewport": [
+        390,
+        700
+      ],
+      "cta": {
+        "x": 22,
+        "y": 645.484375,
+        "width": 346,
+        "height": 52
+      }
+    },
+    {
+      "viewport": [
+        360,
+        740
+      ],
+      "cta": {
+        "x": 18,
+        "y": 648.875,
+        "width": 324,
+        "height": 52
+      }
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "cta": {
+        "x": 423.28125,
+        "y": 637.390625,
+        "width": 298.625,
+        "height": 56
+      }
+    },
+    {
+      "viewport": [
+        1024,
+        900
+      ],
+      "cta": {
+        "x": 572.765625,
+        "y": 637.390625,
+        "width": 389.78125,
+        "height": 56
+      }
+    }
+  ],
+  "passed": 316,
+  "failed": 0
+}

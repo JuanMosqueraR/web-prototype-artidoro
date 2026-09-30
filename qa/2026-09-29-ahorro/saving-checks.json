@@ -1,0 +1,110 @@
+{
+  "date": "2026-09-29",
+  "browser": "148.0.7778.96",
+  "dpr": 1,
+  "url": "http://127.0.0.1:4175/",
+  "checks": [
+    {
+      "name": "desktop 05 saving text",
+      "passed": true,
+      "detail": "Precio normal S/ 330.00 · Ahorras S/ 50"
+    },
+    {
+      "name": "desktop 05 saving visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop 05 regular price struck",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop 05 screen-reader label",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop PDP saving initial",
+      "passed": true,
+      "detail": "Precio normal S/ 330.00 · Ahorras S/ 50"
+    },
+    {
+      "name": "desktop PDP total saving initial",
+      "passed": true,
+      "detail": " · Ahorras S/ 50"
+    },
+    {
+      "name": "desktop PDP saving Puno/Puno/Puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop PDP saving Cusco/Villa Rica/Amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop PDP saving hidden for unavailable combination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop no JS errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "mobile 05 saving text",
+      "passed": true,
+      "detail": "Precio normal S/ 330.00 · Ahorras S/ 50"
+    },
+    {
+      "name": "mobile 05 saving visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile 05 regular price struck",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile 05 screen-reader label",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile PDP saving initial",
+      "passed": true,
+      "detail": "Precio normal S/ 330.00 · Ahorras S/ 50"
+    },
+    {
+      "name": "mobile PDP total saving initial",
+      "passed": true,
+      "detail": " · Ahorras S/ 50"
+    },
+    {
+      "name": "mobile PDP saving Puno/Puno/Puno",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile PDP saving Cusco/Villa Rica/Amazonas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile PDP saving hidden for unavailable combination",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile no JS errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "passed": 20,
+  "failed": 0
+}
