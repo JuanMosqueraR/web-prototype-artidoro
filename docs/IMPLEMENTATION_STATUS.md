@@ -23,13 +23,13 @@ Cambios en `index.html`, `src/home.css`, `src/catalog.css`, `src/catalog.js` (P4
 | `audit/source/hero-generation.json`, `hero-*`, `cup03-*` | Registro de las 18 tareas (15 adoptadas, 3 descartadas; US$ 1,76), prompts y parámetros sin URLs firmadas; originales de imágenes y clips |
 | `qa/2026-09-30-l28/` | `verify.py`, `checks.json` (107/107), capturas y README con condiciones y rendimiento de laboratorio |
 
-Estado de publicación (1 de octubre, tras L29): `master` va 7 commits por delante de `origin/master` (`f27473b`, L28 publicada en Pages); L29 (`dbd0e59`…) aún no está publicada. Build de verificación con la Vite 7.1.3 del repo y Node 22.23.1 aislado. Los assets de la 03 anterior (`scene03-*`) siguen en `public/assets/` sin uso.
+Estado de publicación (1 de octubre, tras L29): `master` y `origin/master` en `cf45646`: L29 publicada en Pages por el usuario. Build de verificación con la Vite 7.1.3 del repo y Node 22.23.1 aislado. Los assets de la 03 anterior (`scene03-*`) siguen en `public/assets/` sin uso.
 
 ---
 
 # Medición de rendimiento de la home publicada — 30 de septiembre de 2026
 
-*Describe la home publicada antes de L28; tras el próximo despliegue los valores quedan desactualizados.* Clase 0/1, solo lectura. Script y resultados en `qa/2026-09-30-performance/` (`perf.py`, `perf.json`, README): mediana de 3 corridas, LCP 1,67 s en mobile con Slow 4G y CPU 4× (0,21 s en desktop), CLS 0, sin peticiones fallidas; la primera corrida en frío tarda ~4 s. Laboratorio, no de campo ni Lighthouse; no es comparable 1:1 con el 12,1 s del diagnóstico CRO (otra herramienta y otro sitio). Detalle y límites en el README de esa carpeta.
+*Describe la home publicada antes de L28; histórico. Por L30 no se vuelve a medir hasta la fase de Shopify.* Clase 0/1, solo lectura. Script y resultados en `qa/2026-09-30-performance/` (`perf.py`, `perf.json`, README): mediana de 3 corridas, LCP 1,67 s en mobile con Slow 4G y CPU 4× (0,21 s en desktop), CLS 0, sin peticiones fallidas; la primera corrida en frío tarda ~4 s. Laboratorio, no de campo ni Lighthouse; no es comparable 1:1 con el 12,1 s del diagnóstico CRO (otra herramienta y otro sitio). Detalle y límites en el README de esa carpeta.
 
 ---
 

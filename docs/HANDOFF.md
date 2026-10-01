@@ -2,7 +2,7 @@
 
 ## Actualización del 1 de octubre de 2026 (L29)
 
-**Estado recuperable:** `master` va 7 commits por delante de `origin/master` (`f27473b`, L28 publicada en Pages); L29 (`dbd0e59`…) aún no está publicada. Árbol limpio salvo los cambios ajenos de siempre (`tools/apimart/*`, `reference/`, el PDF CRO, `.mcp.json`).
+**Estado recuperable:** `master` y `origin/master` en `cf45646`: L29 publicada en Pages por el usuario. Árbol limpio salvo los cambios ajenos de siempre (`tools/apimart/*`, `reference/`, el PDF CRO, `.mcp.json`).
 
 | Commit | Contenido |
 |---|---|
@@ -16,7 +16,7 @@
 
 **Qué hay y cómo se verificó:** detalle en [HOME_AUDIT_2026_09_30.md](HOME_AUDIT_2026_09_30.md#l29). El usuario probó P1–P3 y P4 en su iPhone («todo ok»); QA en Chromium en `qa/2026-10-01-revision/` y `qa/2026-10-01-orden/`. Sin Safari/iOS instrumental ni Firefox.
 
-**Pendiente / decisiones del usuario:** `git push` a `master` para publicar L29; tras publicar quedan desactualizados la medición de rendimiento de la web publicada, `deliverables/presentacion-artidoro.html` y las capturas de A de QA anteriores. No implementados (no se nombraron): más reseñas publicadas, foto de La Mar, «Abierto ahora», enlace a cafeterías en el menú mobile. Lo demás pendiente de L28 (abajo) sigue igual.
+**Pendiente / decisiones del usuario:** L29 ya está publicada. Quedan desactualizados `deliverables/presentacion-artidoro.html` y las capturas de A de QA anteriores. El rendimiento no se vuelve a medir hasta la fase de Shopify (L30). Fase abierta: revisión y propuestas de PDP (L30). No implementados (no se nombraron): más reseñas publicadas, foto de La Mar, «Abierto ahora», enlace a cafeterías en el menú mobile. Lo demás pendiente de L28 (abajo) sigue igual.
 
 ## Actualización del 1 de octubre de 2026 (L28)
 
