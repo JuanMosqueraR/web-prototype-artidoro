@@ -1,0 +1,426 @@
+{
+ "chromium": "148.0.7778.96",
+ "url": "http://127.0.0.1:4192",
+ "checks": [
+  {
+   "name": "desktop amazonas: card icons by the button match the official list and load",
+   "passed": true,
+   "detail": [
+    [
+     [
+      "Visa",
+      true
+     ],
+     [
+      "Mastercard",
+      true
+     ],
+     [
+      "American Express",
+      true
+     ],
+     [
+      "Diners Club",
+      true
+     ]
+    ],
+    [
+     [
+      "american_express",
+      "American Express"
+     ],
+     [
+      "diners_club",
+      "Diners Club"
+     ],
+     [
+      "master",
+      "Mastercard"
+     ],
+     [
+      "visa",
+      "Visa"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "desktop amazonas: slides, thumbnails, zoom buttons (not on the video) and conceptual notices",
+   "passed": true,
+   "detail": [
+    [
+     7,
+     7,
+     6,
+     4,
+     "1 / 7"
+    ],
+    [
+     7,
+     7,
+     6,
+     4,
+     "1 / 7"
+    ]
+   ]
+  },
+  {
+   "name": "desktop amazonas: the clip is requested only on reaching its slide, plays muted in a loop there and pauses when leaving",
+   "passed": true,
+   "detail": [
+    [
+     null,
+     true
+    ],
+    [
+     false,
+     true,
+     4
+    ],
+    true,
+    0
+   ]
+  },
+  {
+   "name": "desktop amazonas: the zoom view skips the video slide",
+   "passed": true,
+   "detail": [
+    "3 / 7",
+    false
+   ]
+  },
+  {
+   "name": "desktop amazonas: thumbnails are not cut",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop amazonas: no horizontal overflow and no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop ahorrador: card icons by the button match the official list and load",
+   "passed": true,
+   "detail": [
+    [
+     [
+      "Visa",
+      true
+     ],
+     [
+      "Mastercard",
+      true
+     ],
+     [
+      "American Express",
+      true
+     ],
+     [
+      "Diners Club",
+      true
+     ]
+    ],
+    [
+     [
+      "american_express",
+      "American Express"
+     ],
+     [
+      "diners_club",
+      "Diners Club"
+     ],
+     [
+      "master",
+      "Mastercard"
+     ],
+     [
+      "visa",
+      "Visa"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "desktop ahorrador: slides, thumbnails, zoom buttons (not on the video) and conceptual notices",
+   "passed": true,
+   "detail": [
+    [
+     5,
+     5,
+     4,
+     3,
+     "1 / 5"
+    ],
+    [
+     5,
+     5,
+     4,
+     3,
+     "1 / 5"
+    ]
+   ]
+  },
+  {
+   "name": "desktop ahorrador: the clip is requested only on reaching its slide, plays muted in a loop there and pauses when leaving",
+   "passed": true,
+   "detail": [
+    [
+     null,
+     true
+    ],
+    [
+     false,
+     true,
+     4
+    ],
+    true,
+    0
+   ]
+  },
+  {
+   "name": "desktop ahorrador: the zoom view skips the video slide",
+   "passed": true,
+   "detail": [
+    "3 / 5",
+    false
+   ]
+  },
+  {
+   "name": "desktop pack shortcut: «Las tres bolsas de Cusco» fills the three bags, updates variant and picture, then hides",
+   "passed": true,
+   "detail": [
+    "Las tres bolsas de Cusco",
+    [
+     [
+      "Cusco",
+      "Cusco",
+      "Cusco"
+     ],
+     true,
+     "https://www.artidororodriguez.com/products/pack-3kg-origenes-1?variant=48578657255667",
+     "Tu combinación: Cusco, Cusco y Cusco."
+    ]
+   ]
+  },
+  {
+   "name": "desktop ahorrador: thumbnails are not cut",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop ahorrador: no horizontal overflow and no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile amazonas: card icons by the button match the official list and load",
+   "passed": true,
+   "detail": [
+    [
+     [
+      "Visa",
+      true
+     ],
+     [
+      "Mastercard",
+      true
+     ],
+     [
+      "American Express",
+      true
+     ],
+     [
+      "Diners Club",
+      true
+     ]
+    ],
+    [
+     [
+      "american_express",
+      "American Express"
+     ],
+     [
+      "diners_club",
+      "Diners Club"
+     ],
+     [
+      "master",
+      "Mastercard"
+     ],
+     [
+      "visa",
+      "Visa"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "mobile amazonas: slides, thumbnails, zoom buttons (not on the video) and conceptual notices",
+   "passed": true,
+   "detail": [
+    [
+     7,
+     7,
+     6,
+     4,
+     "1 / 7"
+    ],
+    [
+     7,
+     7,
+     6,
+     4,
+     "1 / 7"
+    ]
+   ]
+  },
+  {
+   "name": "mobile amazonas: the clip is requested only on reaching its slide, plays muted in a loop there and pauses when leaving",
+   "passed": true,
+   "detail": [
+    [
+     null,
+     true
+    ],
+    [
+     false,
+     true,
+     4
+    ],
+    true,
+    1
+   ]
+  },
+  {
+   "name": "mobile amazonas: the zoom view skips the video slide",
+   "passed": true,
+   "detail": [
+    "3 / 7",
+    false
+   ]
+  },
+  {
+   "name": "mobile amazonas: no horizontal overflow and no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile ahorrador: card icons by the button match the official list and load",
+   "passed": true,
+   "detail": [
+    [
+     [
+      "Visa",
+      true
+     ],
+     [
+      "Mastercard",
+      true
+     ],
+     [
+      "American Express",
+      true
+     ],
+     [
+      "Diners Club",
+      true
+     ]
+    ],
+    [
+     [
+      "american_express",
+      "American Express"
+     ],
+     [
+      "diners_club",
+      "Diners Club"
+     ],
+     [
+      "master",
+      "Mastercard"
+     ],
+     [
+      "visa",
+      "Visa"
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "mobile ahorrador: slides, thumbnails, zoom buttons (not on the video) and conceptual notices",
+   "passed": true,
+   "detail": [
+    [
+     5,
+     5,
+     4,
+     3,
+     "1 / 5"
+    ],
+    [
+     5,
+     5,
+     4,
+     3,
+     "1 / 5"
+    ]
+   ]
+  },
+  {
+   "name": "mobile ahorrador: the clip is requested only on reaching its slide, plays muted in a loop there and pauses when leaving",
+   "passed": true,
+   "detail": [
+    [
+     null,
+     true
+    ],
+    [
+     false,
+     true,
+     4
+    ],
+    true,
+    1
+   ]
+  },
+  {
+   "name": "mobile ahorrador: the zoom view skips the video slide",
+   "passed": true,
+   "detail": [
+    "3 / 5",
+    false
+   ]
+  },
+  {
+   "name": "mobile pack shortcut: «Las tres bolsas de Cusco» fills the three bags, updates variant and picture, then hides",
+   "passed": true,
+   "detail": [
+    "Las tres bolsas de Cusco",
+    [
+     [
+      "Cusco",
+      "Cusco",
+      "Cusco"
+     ],
+     true,
+     "https://www.artidororodriguez.com/products/pack-3kg-origenes-1?variant=48578657255667",
+     "Tu combinación: Cusco, Cusco y Cusco."
+    ]
+   ]
+  },
+  {
+   "name": "mobile ahorrador: no horizontal overflow and no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "reduced motion: the clip stays paused with native controls",
+   "passed": true,
+   "detail": [
+    true,
+    true
+   ]
+  }
+ ]
+}
