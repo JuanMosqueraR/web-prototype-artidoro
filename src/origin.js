@@ -140,41 +140,51 @@ if (scene) {
     if (event.target.closest('.origin-index')) buttons[index].focus({ preventScroll: true });
   });
 
-  stage.addEventListener('pointerdown', event => {
-    if (!event.isPrimary || event.button !== 0 || event.target.closest('.origin-arrow')) return;
-    gesture = { id: event.pointerId, x: event.clientX, y: event.clientY, dx: 0, horizontal: false };
-  });
-  stage.addEventListener('pointermove', event => {
+  // Swipe, built like a Framer-style drag: listeners on the window, no pointer capture, the strip follows the finger,
+  // and release decides by distance or by speed. The previous version captured the pointer on the stage, dropped the
+  // gesture at the first sign of vertical drift and moved the strip at most 48 px, which on iOS felt unresponsive.
+  const COMMIT = 40, FLICK_MIN = 18, FLICK_SPEED = .35, FOLLOW = .55, FOLLOW_MAX = 110;
+  const clampTo = (value, limit) => Math.max(-limit, Math.min(limit, value));
+  function endGesture(event) {
+    if (!gesture || (event && gesture.id !== event.pointerId)) return;
+    const finished = gesture;
+    gesture = null;
+    window.removeEventListener('pointermove', dragMove);
+    window.removeEventListener('pointerup', endGesture);
+    window.removeEventListener('pointercancel', endGesture);
+    stage.classList.remove('is-dragging');
+    stage.style.removeProperty('--o-drag');
+    if (!finished.horizontal) return;
+    suppressClickUntil = performance.now() + 350;
+    const far = Math.abs(finished.dx) >= COMMIT;
+    const flick = Math.abs(finished.dx) >= FLICK_MIN && Math.abs(finished.speed) >= FLICK_SPEED && Math.sign(finished.speed) === Math.sign(finished.dx);
+    // Also on pointercancel: iOS can cancel a fast flick as the finger lifts, after the horizontal move was already clear.
+    if (far || flick) move(finished.dx < 0 ? 1 : -1);
+  }
+  function dragMove(event) {
     if (!gesture || gesture.id !== event.pointerId) return;
     const dx = event.clientX - gesture.x, dy = event.clientY - gesture.y;
     if (!gesture.horizontal) {
-      if (Math.abs(dy) > 10 && Math.abs(dy) > Math.abs(dx)) { gesture = null; return; }
-      if (Math.abs(dx) < 10 || Math.abs(dx) < Math.abs(dy) * 1.2) return;
+      // Clearly vertical: leave it to the page scroll.
+      if (Math.abs(dy) > 12 && Math.abs(dy) > Math.abs(dx) * 1.6) { endGesture(event); return; }
+      if (Math.abs(dx) < 4 || Math.abs(dx) < Math.abs(dy) * .8) return;
       gesture.horizontal = true;
-      stage.setPointerCapture(event.pointerId);
       stage.classList.add('is-dragging');
     }
+    const dt = event.timeStamp - gesture.lastT;
+    if (dt > 0) gesture.speed = ((event.clientX - gesture.lastX) / dt) * .6 + gesture.speed * .4;   // smoothed px/ms
+    gesture.lastX = event.clientX;
+    gesture.lastT = event.timeStamp;
     gesture.dx = dx;
-    if (!instant()) stage.style.setProperty('--o-drag', Math.max(-48, Math.min(48, dx * .3)) + 'px');
-  });
-  function endGesture(event) {
-    // Touch starts with implicit capture on a child. Its lost-capture event
-    // bubbles when the stage takes over; that is not the end of the gesture.
-    if (event.type === 'lostpointercapture' && event.target !== stage) return;
-    if (!gesture || gesture.id !== event.pointerId) return;
-    const finished = gesture;
-    gesture = null;
-    stage.classList.remove('is-dragging');
-    stage.style.removeProperty('--o-drag');
-    if (finished.horizontal) {
-      suppressClickUntil = performance.now() + 350;
-      if (event.type === 'pointerup' && Math.abs(finished.dx) >= 40) move(finished.dx < 0 ? 1 : -1);
-    }
-    if (stage.hasPointerCapture(event.pointerId)) stage.releasePointerCapture(event.pointerId);
+    if (!instant()) stage.style.setProperty('--o-drag', clampTo(dx * FOLLOW, FOLLOW_MAX) + 'px');
   }
-  stage.addEventListener('pointerup', endGesture);
-  stage.addEventListener('pointercancel', endGesture);
-  stage.addEventListener('lostpointercapture', endGesture);
+  stage.addEventListener('pointerdown', event => {
+    if (!event.isPrimary || event.button !== 0 || event.target.closest('.origin-arrow')) return;
+    gesture = { id: event.pointerId, x: event.clientX, y: event.clientY, dx: 0, horizontal: false, lastX: event.clientX, lastT: event.timeStamp, speed: 0 };
+    window.addEventListener('pointermove', dragMove);
+    window.addEventListener('pointerup', endGesture);
+    window.addEventListener('pointercancel', endGesture);
+  });
 
   buttons.forEach(button => { button.disabled = false; });
   scene.querySelectorAll('.origin-arrow').forEach(button => { button.disabled = false; });

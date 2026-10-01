@@ -24,7 +24,8 @@ function tick(time) {
   if (running && current !== target) requestAnimationFrame(tick);
   else { running = false; last = 0; }
 }
-addEventListener('wheel', event => {
+// Registered only where a fine pointer with hover exists: phones and tablets never carry a non-passive wheel listener.
+if (pointer.matches) addEventListener('wheel', event => {
   if (!enabled() || event.ctrlKey || event.defaultPrevented || Math.abs(event.deltaX) > Math.abs(event.deltaY)) return;
   if (nestedScroll(event.target, event.deltaY)) return;
   event.preventDefault();

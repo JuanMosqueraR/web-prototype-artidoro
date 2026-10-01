@@ -32,3 +32,6 @@
 
 /* The B route paints its own first frame before the enhancement script loads. */
 html[data-direction="b"] #direction-a{display:none!important}html[data-direction="b"] #direction-b{display:block!important}
+/* Extra height of the viewport once a mobile browser hides its toolbars (lvh - svh); 0 where unsupported or fixed. */
+:root{--bars:0px}
+@supports (height:100lvh){:root{--bars:calc(100lvh - 100svh)}}
