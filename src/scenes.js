@@ -190,8 +190,11 @@ function markReady() {
 }
 // Video first, on every device: it is the sharpest and smoothest path. If it is not usable in time the same shot
 // is drawn from an image sequence instead (iOS in Low Power Mode, or any browser that will not prepare the video).
+// A direct visit to a PDP (#producto-…) hides the home: its hero media wait until the home is shown.
+const homeMain = document.querySelector('#home-main');
+const away = () => homeMain.hidden;
 function requestVideo() {
-  if (still() || navigator.connection?.saveData || ready || requested) return;
+  if (away() || still() || navigator.connection?.saveData || ready || requested) return;
   requested = mobile.matches ? video.dataset.mobile : video.dataset.desktop;
   hero.dataset.media = 'loading';
   video.src = requested;
@@ -265,12 +268,16 @@ new MutationObserver(update).observe(root, {attributes: true, attributeFilter: [
 document.addEventListener('visibilitychange', () => { if (!document.hidden) { markReady(); seek(); } });
 
 // The first frame is the LCP poster: the video, the end frame and 03 wait until after load.
+let loaded = false;
 function afterLoad() {
+  loaded = true;
+  if (away()) return;
   loadDeferred(hero);
   const idle = window.requestIdleCallback || (fn => setTimeout(fn, 600));
   idle(requestVideo, {timeout: 1500});
 }
 if (document.readyState === 'complete') afterLoad(); else addEventListener('load', afterLoad, {once: true});
+new MutationObserver(() => { if (loaded && !away()) afterLoad(); }).observe(homeMain, {attributes: true, attributeFilter: ['hidden']});
 addEventListener('scroll', requestVideo, {passive: true, once: true});
 if ('IntersectionObserver' in window) {
   const near = new IntersectionObserver(entries => {
