@@ -1,5 +1,11 @@
 # Artidoro — demo de la home 01–05
 
+**Actualización — 1 de octubre de 2026 (L28):** la home de A estrena el hero «Del cafetal a tu bolsa» (video generado que avanza con el scroll, 24 fps constantes, con la misma toma como secuencia de imágenes AVIF/WebP de respaldo si el video no está listo), la sección 03 «De la bolsa a tu taza» (cuatro imágenes con cruces ligados al scroll, bolsa real a escala en el cierre), la franja «Elige tu molienda», «Precio justo al caficultor» en la confianza de 05, titulares que suben línea a línea, scroll con inercia solo con rueda en desktop, un swipe de 02 reescrito y etiquetas para compartir el enlace (título «Demo»). El usuario lo probó en un iPhone físico (hero, 03 y swipe). B y las PDP no cambian.
+- Detalle y límites: [docs/HOME_AUDIT_2026_09_30.md](docs/HOME_AUDIT_2026_09_30.md#l28) · decisiones L28 y sus ocho complementos: [docs/DECISIONS.md](docs/DECISIONS.md) · evidencia: [qa/2026-09-30-l28](qa/2026-09-30-l28/README.md) (107 controles en Chromium; sin Safari/iOS instrumental).
+- **Publicación:** `master` va 7 commits por delante de `origin/master`; GitHub Pages muestra todavía la versión anterior a L28. Un `git push` a `master` dispara el despliegue.
+- Regenerar assets de L28 (requieren ffmpeg vía `imageio-ffmpeg` y Pillow con AVIF): `python scripts/prepare-hero-video.py` (`--video-only` para solo video y pósters), `python scripts/prepare-cup03.py`, `python scripts/prepare-og-image.py <url del build servido>`; la generación con APIMart está en `scripts/produce-hero.cjs` y cuesta dinero.
+- Las menciones de más abajo al video de 03, a «Reintentar movimiento» o al hero con Acercar/Alejar origen están **superadas** para A.
+
 **Actualización — 29 de septiembre:**
 - La tarjeta del pack en 05 y la ficha de El Ahorrador muestran el precio normal tachado S/ 330.00 y «Ahorras S/ 50» (L23). QA: [qa/2026-09-29-ahorro](qa/2026-09-29-ahorro/README.md).
 - El usuario confirmó la iteración anterior del pack en un iPhone físico y la publicó en GitHub Pages. Pages **no** incluye todavía el cambio del ahorro.

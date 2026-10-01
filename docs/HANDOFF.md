@@ -1,4 +1,30 @@
-# Handoff — demo Artidoro, 28 de septiembre de 2026
+# Handoff — demo Artidoro
+
+## Actualización del 1 de octubre de 2026 (L28)
+
+**Estado recuperable:** `master` en `f5bb542`, 7 commits por delante de `origin/master` (`4beaf0d` es el último publicado). Árbol limpio salvo los cambios ajenos de siempre (`tools/apimart/*`, `reference/`, el PDF CRO, `.mcp.json`). Sin push desde estos commits: GitHub Pages sigue en la versión anterior a L28.
+
+| Commit | Contenido |
+|---|---|
+| `fd19e35` | Assets del hero: videos de 24 fps constantes con limpieza de ruido, secuencias AVIF/WebP de respaldo, imagen de previsualización |
+| `045e4c9` | Home: hero con video primero, swipe de 02, etiquetas para compartir, escenarios con viewport alto |
+| `ed1fe7a` | QA de L28 tras las rondas de iPhone |
+| `145fc5d` | Docs: complementos 1–7 de L28 y revisión de Forno |
+| `73b0292` | 03 vuelve a su primera configuración ligada al scroll |
+| `75a08db` | QA: ritmo legible por paso en 03 |
+| `f5bb542` | Docs: octavo complemento |
+
+**Qué hay y cómo se verificó:** hero, 03, franja de moliendas, swipe de 02 y etiquetas para compartir; el usuario los probó en un iPhone físico (Chrome iOS) y confirmó hero, 03 y swipe. QA automático de 107 controles en Chromium: [qa/2026-09-30-l28](../qa/2026-09-30-l28/README.md). Nada se probó en Safari/iOS instrumental ni en Firefox. Detalle: [HOME_AUDIT_2026_09_30.md](HOME_AUDIT_2026_09_30.md#l28).
+
+**Pendiente / decisiones del usuario:**
+- `git push` a `master` (dispara el despliegue en Pages); tras publicar, la medición de rendimiento de la web publicada y `deliverables/presentacion-artidoro.html` quedan desactualizados y no se regeneraron.
+- Mejorar la nitidez de fondo exige regenerar los cuatro clips en 1080p (≈ US$ 1,80 por pasada; presupuesto APIMart restante ≈ US$ 4,6 de un tope de US$ 8). Sin aprobar.
+- Hallazgos sin acción: KI-92 (horizontal), KI-93 (peso de Pages), KI-94 (respaldos sin probar en iPhone) en [KNOWN_ISSUES.md](KNOWN_ISSUES.md).
+- La fase de PDP no se ha iniciado («aún no empecemos con PDP»).
+
+---
+
+# Handoff — 28 de septiembre de 2026 (histórico)
 
 ## Estado recuperable
 

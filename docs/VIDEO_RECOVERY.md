@@ -1,5 +1,7 @@
 # Recuperación de video 03 — 26 de septiembre de 2026
 
+**Nota — 1 de octubre de 2026 (L28):** este documento describe la escena 03 anterior (video por scroll). Esa escena fue sustituida por imágenes con cruces ligados al scroll y el video por scroll pasó al hero; la adaptación `fetch → Blob` no se adoptó (retrasa la disponibilidad hasta bajar el archivo entero). La causa de que un video no se prepare en el iPhone del usuario se aisló después con el hero: ver la actualización de KI-61 en [KNOWN_ISSUES.md](KNOWN_ISSUES.md).
+
 **Versionado autorizado por el usuario («commitea»):** corrección funcional en `891bbc4`; evidencia QA en `94fa987`. No se hizo push ni despliegue desde esta sesión. La adaptación `fetch → Blob` descrita por Claude no está en el repo y no forma parte de estos commits.
 
 **Actualización del Artifact, según el informe compartido por el usuario:** Claude publicó una v4 que intercepta la asignación de `src` y descarga el MP4 mediante `fetch → Blob`, solo en el build del Artifact, con fallback a la URL original. El usuario confirma que en Chrome iPhone funciona tras tocar «Activar movimiento». No se confirmó arranque automático ni la causa exacta. Una respuesta403 a una petición anónima no demuestra fallo de la petición contextual del reproductor; el mismo informe indica que la sonda con `src` normal sí reproducía. Estos datos son reportados por el usuario/Claude, no una prueba independiente realizada aquí.
