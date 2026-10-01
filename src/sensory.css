@@ -1,24 +1,23 @@
-/* 03 «De la bolsa a tu taza» (L28). Still frames: the scroll only triggers each step and every transition
-   plays in fixed time, so a fast flick never skips it; the slow push-in follows the damped progress (--p).
+/* 03 «De la bolsa a tu taza» (L28). Still frames crossfaded by the scroll position: scenes.js writes damped CSS variables
+   (--f2..4 crossfades, --z1..4 push-in, --t1..3 texts, --cbag bag) so every transition moves at the visitor's own pace.
    The same stage can take a video later without changing the layout. */
-.cup-scene{position:relative;height:calc(380svh + var(--bars));background:#0b1712;color:#f4f0e5;scroll-margin-top:72px;--p:0;--H:calc(100svh + var(--bars) - 72px);--cs-ease:cubic-bezier(.2,.7,.22,1);--cs-soft:cubic-bezier(.55,0,.25,1)}
+.cup-scene{position:relative;height:calc(400svh + var(--bars));background:#0b1712;color:#f4f0e5;scroll-margin-top:72px;--p:0;--H:calc(100svh + var(--bars) - 72px);--cs-ease:cubic-bezier(.2,.7,.22,1);--cs-soft:cubic-bezier(.55,0,.25,1)}
 .cs-stage{position:sticky;top:72px;height:var(--H);min-height:560px;overflow:hidden;overflow:clip}
 .cs-media,.cs-frame,.cs-frame img{position:absolute;inset:0;width:100%;height:100%}
-.cs-frame img{object-fit:cover;object-position:60% 50%;transform:scale(calc(1.1 - var(--p) * .1));transform-origin:65% 50%}
-.cs-wipe{clip-path:inset(0 0 100% 0);transition:clip-path 1400ms var(--cs-soft)}
-.cs-circle{clip-path:circle(0% at 62% 36%);transition:clip-path 1500ms var(--cs-soft)}
-.cs-fade{opacity:0;transition:opacity 850ms ease}
-.cs-wipe.is-shown{clip-path:inset(0)}.cs-circle.is-shown{clip-path:circle(150% at 62% 36%)}.cs-fade.is-shown{opacity:1}
+.cs-frame img{object-fit:cover;object-position:60% 50%;transform-origin:65% 50%}
+.cs-frame[data-frame="1"] img{transform:scale(var(--z1,1.1))}.cs-frame[data-frame="2"] img{transform:scale(var(--z2,1.1))}.cs-frame[data-frame="3"] img{transform:scale(var(--z3,1.1))}.cs-frame[data-frame="4"] img{transform:scale(var(--z4,1.1))}
+.cs-frame[data-frame="2"]{opacity:var(--f2,0)}.cs-frame[data-frame="3"]{opacity:var(--f3,0)}.cs-frame[data-frame="4"]{opacity:var(--f4,0)}
 .cs-shade{position:absolute;inset:0;background:linear-gradient(90deg,#08130fe6 0%,#08130fa6 30%,#08130f00 58%),linear-gradient(0deg,#08130f80 0%,#08130f00 26%)}
 /* Final still life: the real bag behind the cup at a believable scale. .cs-cover reproduces the box of the
    covering frame (object-fit:cover, object-position 60% 50%), so the bag stays on the table at any viewport. */
 .cs-cover{position:absolute;z-index:2;--w:max(100%,calc(var(--H) * 1.7917));--h:max(100%,calc(100vw / 1.7917));width:var(--w);height:var(--h);left:calc((100% - var(--w)) * .6);top:calc((100% - var(--h)) * .5);pointer-events:none}
-.cs-bag{position:absolute;left:47%;bottom:31%;height:58%;width:auto;max-width:none;transform:translate(-50%,8%);opacity:0;transition:opacity 150ms ease,transform 150ms ease;filter:drop-shadow(-18px 10px 22px #000c) brightness(.93)}
-.cs-contact{position:absolute;left:47%;bottom:29.5%;width:17%;height:4%;transform:translateX(-50%);border-radius:50%;background:radial-gradient(#000c,#0000 70%);opacity:0;transition:opacity 150ms ease}
-/* Entering the final frame the bag arrives after the still life; leaving it, it goes at once. */
-.cup-scene[data-step="3"] .cs-bag{opacity:1;transform:translate(-50%,0);transition:opacity 450ms ease 250ms,transform 800ms var(--cs-ease) 250ms}.cup-scene[data-step="3"] .cs-contact{opacity:1;transition:opacity 450ms ease 350ms}
-.cs-step{position:absolute;z-index:5;left:6%;top:50%;width:min(470px,40vw);opacity:0;transform:translateY(calc(-50% + 18px));transition:opacity 160ms ease,transform 160ms ease;pointer-events:none}
-.cup-scene[data-step="1"] .cs-step[data-step="1"],.cup-scene[data-step="2"] .cs-step[data-step="2"],.cup-scene[data-step="3"] .cs-step[data-step="3"]{opacity:1;transform:translateY(-50%);transition:opacity 450ms ease 300ms,transform 800ms var(--cs-ease) 300ms;pointer-events:auto}
+.cs-bag{position:absolute;left:47%;bottom:31%;height:58%;width:auto;max-width:none;opacity:var(--cbagv,0);transform:translate(-50%,calc((1 - var(--cbag,0)) * 8%));filter:drop-shadow(-18px 10px 22px #000c) brightness(.93)}
+.cs-contact{position:absolute;left:47%;bottom:29.5%;width:17%;height:4%;transform:translateX(-50%);border-radius:50%;background:radial-gradient(#000c,#0000 70%);opacity:var(--ccontact,0)}
+.cs-step{position:absolute;z-index:5;left:6%;top:50%;width:min(470px,40vw);opacity:0;pointer-events:none}
+.cs-step[data-step="1"]{opacity:var(--t1,0);transform:translateY(calc(-50% + (1 - var(--t1,0)) * 18px))}
+.cs-step[data-step="2"]{opacity:var(--t2,0);transform:translateY(calc(-50% + (1 - var(--t2,0)) * 18px))}
+.cs-step[data-step="3"]{opacity:var(--t3,0);transform:translateY(calc(-50% + (1 - var(--t3,0)) * 18px))}
+.cup-scene[data-step="3"] .cs-step[data-step="3"]{pointer-events:auto}
 .cs-step .home-kicker{color:#d1af7e}
 .cs-name{font-family:Barlow,'Arial Narrow',sans-serif;font-weight:800;font-size:clamp(56px,5.4vw,84px);line-height:.9;text-transform:uppercase;margin:14px 0 18px}
 .cs-text{font-size:17px;line-height:1.55;max-width:380px}
@@ -44,15 +43,15 @@
 .grinds-list p{font-size:14px;line-height:1.5;max-width:230px;opacity:.9}
 .grinds-foot{margin-top:30px;font-size:14px;opacity:.9}
 @media(max-width:760px){
- .cup-scene{height:calc(360svh + var(--bars));scroll-margin-top:64px;--H:calc(100svh + var(--bars) - 64px)}
+ .cup-scene{height:calc(340svh + var(--bars));scroll-margin-top:64px;--H:calc(100svh + var(--bars) - 64px)}
  .cs-stage{top:64px}
  .cs-frame img{object-position:50% 50%;transform-origin:50% 50%}
  .cs-shade{background:linear-gradient(0deg,#08130ff2 0%,#08130fb0 40%,#08130f00 65%)}
  .cs-cover{--w:max(100%,calc(var(--H) * .5581));--h:max(100%,calc(100vw / .5581));left:calc((100% - var(--w)) * .5)}
  .cs-bag{left:30%;bottom:43%;height:38%}
  .cs-contact{display:none}
- .cs-step{left:22px;right:22px;width:auto;top:auto;bottom:calc(44px + var(--bars));transform:translateY(18px)}
- .cup-scene[data-step="1"] .cs-step[data-step="1"],.cup-scene[data-step="2"] .cs-step[data-step="2"],.cup-scene[data-step="3"] .cs-step[data-step="3"]{transform:none}
+ .cs-step{left:22px;right:22px;width:auto;top:auto;bottom:calc(44px + var(--bars))}
+ .cs-step[data-step="1"]{transform:translateY(calc((1 - var(--t1,0)) * 18px))}.cs-step[data-step="2"]{transform:translateY(calc((1 - var(--t2,0)) * 18px))}.cs-step[data-step="3"]{transform:translateY(calc((1 - var(--t3,0)) * 18px))}
  .cs-name{font-size:44px;margin:10px 0 12px}.cs-text{font-size:15px}
  .cs-final .home-kicker{display:none}.cs-final h2{font-size:52px;margin-top:0}
  .cs-cups{font-size:15px;margin-top:16px}

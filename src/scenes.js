@@ -213,40 +213,28 @@ video.addEventListener('error', () => { if (video.getAttribute('src') && !ready)
 addEventListener('resize', () => { if (sequence.active) drawSequence(lastP); }, {passive: true});
 
 // --- 03: «De la bolsa a tu taza» ---------------------------------------------------------
+// The first configuration of the scene, restored: every crossfade, text and the bag are driven by the scroll position
+// (through a damped progress), so the pace is the visitor's own and a transition never runs ahead of the finger.
+// Time-based transitions triggered at a cut were tried and felt rushed, with the middle step readable for ~0.4 s.
 const cup = document.querySelector('#sensory-scene');
-const frames = [...cup.querySelectorAll('.cs-frame')];
-let shownFrame = 0;
-function showFrame(n) {
-  if (n === shownFrame) return;
-  shownFrame = n;
-  frames.forEach((frame, i) => frame.classList.toggle('is-shown', i < n));
-  cup.dataset.step = n === 1 ? '1' : n < 4 ? '2' : '3';
-}
-// Frames follow the scroll position and overlap in time; STEP_DWELL (ms) is only a short guard against flicker. A longer
-// hold cannot coexist with fast scrolling: the pinned range lasts ~2 s at 1000 px/s, so a queue of holds would show the
-// final frame only after the scene had already left the screen.
-const STEP_DWELL = [450, 450, 450];
-let stepAt = 0, stepTimer = 0, wantFrame = 1;
-function advanceFrame() {
-  stepTimer = 0;
-  if (wantFrame === shownFrame) return;
-  const wait = STEP_DWELL[Math.max(0, shownFrame - 1)] - (performance.now() - stepAt);
-  if (shownFrame && wait > 0) { stepTimer = setTimeout(advanceFrame, wait); return; }
-  stepAt = performance.now();
-  showFrame(shownFrame + Math.sign(wantFrame - shownFrame));
-  if (wantFrame !== shownFrame) stepTimer = setTimeout(advanceFrame, STEP_DWELL[Math.max(0, shownFrame - 1)]);
-}
+const CUTS = [.2, .45, .7];                       // where frames 2, 3 and 4 arrive
+const TEXTS = [[-1, 0, .12, .18], [.2, .26, .62, .68], [.74, .82, 2, 3]];   // in-start, in-end, out-start, out-end
 function paintCup(p) {
   set(cup, '--p', p);
-  // Small hysteresis so a resting scroll position never flickers between two steps.
-  const edges = [.12, .3, .46], margin = .01;
-  let n = wantFrame;
-  while (n < 4 && p > edges[n - 1] + margin) n++;
-  while (n > 1 && p < edges[n - 2] - margin) n--;
-  wantFrame = n;
-  if (!stepTimer) advanceFrame();
+  // Each later frame crosses over the previous one across 10 % of the scene, centred a little before its cut.
+  CUTS.forEach((cut, i) => set(cup, `--f${i + 2}`, seg(p, cut - .06, cut + .04)));
+  // Slow push-in of each frame while it is on screen.
+  [0, ...CUTS].forEach((cut, i) => {
+    const from = i ? CUTS[i - 1] - .06 : 0, to = i < CUTS.length ? CUTS[i] + .04 : 1;
+    set(cup, `--z${i + 1}`, 1.1 - .1 * ease(seg(p, from, to)));
+  });
+  TEXTS.forEach(([a, b, c, d], i) => set(cup, `--t${i + 1}`, Math.min(seg(p, a, b), 1 - seg(p, c, d))));
+  set(cup, '--cbag', ease(seg(p, .78, .95)));
+  set(cup, '--cbagv', seg(p, .76, .82));
+  set(cup, '--ccontact', seg(p, .8, .9));
+  cup.dataset.step = p < .28 ? '1' : p < .7 ? '2' : '3';
 }
-const cupMotion = damped(() => progressOf(cup), paintCup, 130);
+const cupMotion = damped(() => progressOf(cup), paintCup, 170);
 
 // --- Shared lifecycle ---------------------------------------------------------------------
 function update() {
@@ -258,9 +246,7 @@ function update() {
     loadDeferred(cup);
     video.pause();
     paintHero(1);
-    clearTimeout(stepTimer); stepTimer = 0; wantFrame = 4;
-    showFrame(4);
-    set(cup, '--p', 1);
+    paintCup(1);
     return;
   }
   heroMotion.jump();
