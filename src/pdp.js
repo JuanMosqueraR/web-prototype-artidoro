@@ -23,7 +23,22 @@ document.querySelectorAll('[data-gallery]').forEach(gallery => {
     slides.forEach((slide, i) => slide.setAttribute('aria-hidden', String(i !== index)));
     prev.disabled = index === 0;
     next.disabled = index === slides.length - 1;
+    playVideos();
   }
+  // Video slide (the hero clip): requested only when it is reached, plays muted in a loop while it is the current slide.
+  // Without motion it stays on its poster with native controls. If autoplay is refused (iOS Low Power Mode), controls appear.
+  function playVideos() {
+    slides.forEach((slide, i) => {
+      const video = slide.querySelector('video');
+      if (!video) return;
+      const visible = i === current && !gallery.closest('.product-page').hidden;
+      if (!visible) { video.pause(); return; }
+      if (!video.getAttribute('src')) video.src = slide.dataset.video;
+      if (reduced()) { video.controls = true; return; }
+      video.play().then(() => slide.classList.add('is-playing')).catch(() => { video.controls = true; });
+    });
+  }
+  new MutationObserver(playVideos).observe(gallery.closest('.product-page'), {attributes: true, attributeFilter: ['hidden']});
   let frame = 0;
   track.addEventListener('scroll', () => {
     cancelAnimationFrame(frame);
@@ -81,7 +96,9 @@ function zoom(gallery, slides, getCurrent, go) {
       stage.scrollTop = y * canvas.offsetHeight - stage.clientHeight / 2;
     }
   }
-  function show(i) {
+  const zoomable = i => !slides[(i + slides.length) % slides.length].dataset.video;
+  function show(i, step = 1) {
+    while (!zoomable(i)) i += step;
     index = (i + slides.length) % slides.length;
     const slide = slides[index];
     // A single photo opens in its own proportions; the bag and pack compositions go portrait on a phone.
@@ -120,14 +137,18 @@ function zoom(gallery, slides, getCurrent, go) {
   });
   zoomButton.addEventListener('click', () => setZoom(!zoomed));
   dialog.querySelector('.pdp-lb-close').addEventListener('click', () => dialog.close());
-  dialog.querySelector('.pdp-lb-prev').addEventListener('click', () => show(index - 1));
+  dialog.querySelector('.pdp-lb-prev').addEventListener('click', () => show(index - 1, -1));
   dialog.querySelector('.pdp-lb-next').addEventListener('click', () => show(index + 1));
   dialog.addEventListener('keydown', event => {
-    if (event.key === 'ArrowLeft') show(index - 1);
+    if (event.key === 'ArrowLeft') show(index - 1, -1);
     else if (event.key === 'ArrowRight') show(index + 1);
   });
   addEventListener('resize', () => { if (dialog.open) layout(); });
   slides.forEach((slide, i) => {
+    if (slide.dataset.video) {
+      slide.addEventListener('click', () => { const v = slide.querySelector('video'); if (v.paused) v.play().catch(() => {}); else v.pause(); });
+      return;
+    }
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'pdp-zoom';

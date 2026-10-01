@@ -135,6 +135,8 @@ function updatePack() {
     if (img.getAttribute('src')) img.src = next; else img.dataset.packSrc = next;
     img.alt = `Bolsa ${index + 1}: café ${chosen[index]} de 1 kg`;
   });
+  repeatButton.querySelector('[data-repeat-origin]').textContent = chosen[0];
+  repeatButton.hidden = chosen.every(origin => origin === chosen[0]);
   const caption = pack.querySelector('[data-pack-caption]');
   if (caption) caption.textContent = `Tu combinación: ${chosen[0]}, ${chosen[1]} y ${chosen[2]}.`;
   const variant = packSnapshot.variants.find(v => v.options.every((origin, index) => origin === chosen[index]));
@@ -161,6 +163,13 @@ function updatePack() {
   syncBar(pack, variant ? chosen.join(' · ') : 'No disponible', price, available ? link.href : '');
 }
 packForm.addEventListener('change', updatePack);
+// Shortcut: the origin of bag 1 in all three bags.
+const repeatButton = packForm.querySelector('[data-repeat-bag]');
+repeatButton.addEventListener('click', () => {
+  const origin = new FormData(packForm).get('bag1');
+  [2, 3].forEach(n => { packForm.querySelector(`input[name=bag${n}][value="${origin}"]`).checked = true; });
+  updatePack();
+});
 packForm.addEventListener('submit', event => event.preventDefault());
 
 function closeMenu(focus = false) {

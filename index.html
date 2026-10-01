@@ -306,6 +306,7 @@
       <div class="pdp-gallery" data-gallery>
         <div class="pdp-track" tabindex="0" role="region" aria-roledescription="galería" aria-label="Fotos de Amazonas">
           <figure class="pdp-slide pdp-slide-bag"><span class="pdp-word" aria-hidden="true">AMAZONAS</span><img src="/assets/amazonas-250g.webp" alt="Bolsa Artidoro de café Amazonas de 250 g" width="326" height="761" /><figcaption>Bolsa de 250 g</figcaption></figure>
+          <figure class="pdp-slide pdp-slide-video" data-video="/assets/hero-desktop.mp4"><img class="pdp-video-poster" data-pdp-src="/assets/hero-desktop-start.webp" alt="" width="1280" height="714" decoding="async" /><video muted loop playsinline preload="none" disablepictureinpicture aria-label="Del cafetal a la bolsa: vista del cafetal, cerezas que se vuelven granos y cascada de granos."></video><figcaption class="pdp-ai">Escena conceptual generada para esta demo.</figcaption></figure>
           <figure class="pdp-slide"><img data-pdp-src="/assets/pdp-amazonas-lifestyle.webp" alt="La bolsa de Amazonas sostenida en la mano, con montañas al fondo." width="1080" height="1080" decoding="async" /></figure>
           <figure class="pdp-slide pdp-slide-map"><img data-pdp-src="/assets/pdp-amazonas-map.webp" alt="Mapa de la región Amazonas con Rodríguez de Mendoza resaltado." width="1200" height="1200" decoding="async" /></figure>
           <figure class="pdp-slide"><img data-pdp-src="/assets/pdp-beans.webp" alt="Granos de café tostado en primer plano." width="1080" height="1080" decoding="async" /><figcaption class="pdp-ai">Imagen conceptual generada para esta demo.</figcaption></figure>
@@ -314,14 +315,15 @@
         </div>
         <button class="pdp-arrow pdp-prev" type="button" aria-label="Foto anterior" data-gallery-prev><span class="icon icon-arrow" aria-hidden="true"></span></button>
         <button class="pdp-arrow pdp-next" type="button" aria-label="Foto siguiente" data-gallery-next><span class="icon icon-arrow" aria-hidden="true"></span></button>
-        <p class="pdp-count" aria-hidden="true"><span data-gallery-index>1</span> / 6</p>
+        <p class="pdp-count" aria-hidden="true"><span data-gallery-index>1</span> / 7</p>
         <div class="pdp-thumbs" role="group" aria-label="Elegir foto">
           <button type="button" aria-label="Foto 1: la bolsa" aria-current="true"><img src="/assets/amazonas-250g.webp" alt="" width="326" height="761" /></button>
-          <button type="button" aria-label="Foto 2: en la montaña"><img data-pdp-src="/assets/pdp-amazonas-lifestyle.webp" alt="" width="1080" height="1080" /></button>
-          <button type="button" aria-label="Foto 3: mapa de origen"><img data-pdp-src="/assets/pdp-amazonas-map.webp" alt="" width="1200" height="1200" /></button>
-          <button type="button" aria-label="Foto 4: los granos"><img data-pdp-src="/assets/pdp-beans.webp" alt="" width="1080" height="1080" /></button>
-          <button type="button" aria-label="Foto 5: en la mesa"><img data-pdp-src="/assets/cup03-still-mobile.webp" alt="" width="720" height="1290" /></button>
-          <button type="button" aria-label="Foto 6: las moliendas"><img data-pdp-src="/assets/pdp-grinds.webp" alt="" width="1400" height="714" /></button>
+          <button type="button" class="pdp-thumb-video" aria-label="Foto 2: video del cafetal a la bolsa"><img data-pdp-src="/assets/hero-desktop-start.webp" alt="" width="1280" height="714" /></button>
+          <button type="button" aria-label="Foto 3: en la montaña"><img data-pdp-src="/assets/pdp-amazonas-lifestyle.webp" alt="" width="1080" height="1080" /></button>
+          <button type="button" aria-label="Foto 4: mapa de origen"><img data-pdp-src="/assets/pdp-amazonas-map.webp" alt="" width="1200" height="1200" /></button>
+          <button type="button" aria-label="Foto 5: los granos"><img data-pdp-src="/assets/pdp-beans.webp" alt="" width="1080" height="1080" /></button>
+          <button type="button" aria-label="Foto 6: en la mesa"><img data-pdp-src="/assets/cup03-still-mobile.webp" alt="" width="720" height="1290" /></button>
+          <button type="button" aria-label="Foto 7: las moliendas"><img data-pdp-src="/assets/pdp-grinds.webp" alt="" width="1400" height="714" /></button>
         </div>
       </div>
       <div class="pdp-decision">
@@ -350,6 +352,7 @@
         </form>
         <p class="product-selection" role="status" aria-live="polite" aria-atomic="true">250 g · En grano · S/ 39.90</p>
         <a class="catalog-button product-continue pdp-cta" href="https://www.artidororodriguez.com/products/cafe-amazonas?variant=48502437282035" target="_blank" rel="noopener">Continuar en la tienda <span class="icon icon-ext" aria-hidden="true"></span></a>
+        <div class="pdp-pay"><span>Pagas con tarjeta en la tienda oficial</span><ul aria-label="Tarjetas que acepta la tienda oficial"><li><img data-pdp-src="/assets/pay-visa.svg" alt="Visa" width="38" height="24" /></li><li><img data-pdp-src="/assets/pay-master.svg" alt="Mastercard" width="38" height="24" /></li><li><img data-pdp-src="/assets/pay-american-express.svg" alt="American Express" width="38" height="24" /></li><li><img data-pdp-src="/assets/pay-diners-club.svg" alt="Diners Club" width="38" height="24" /></li></ul></div>
         <p class="product-handoff">Abriremos la tienda oficial con tu selección: allí añades al carrito y pagas.</p>
         <ul class="pdp-assure">
           <li><span class="icon icon-box" aria-hidden="true"></span><span><b>Envío en Lima desde S/ 10 · provincias S/ 30</b>Despachamos de lunes a viernes. <a href="https://www.artidororodriguez.com/policies/shipping-policy" target="_blank" rel="noopener">Ver tarifas <span class="icon icon-ext" aria-hidden="true"></span></a></span></li>
@@ -416,18 +419,20 @@
       <div class="pdp-gallery" data-gallery>
         <div class="pdp-track" tabindex="0" role="region" aria-roledescription="galería" aria-label="Fotos de El Ahorrador">
           <figure class="pdp-slide pdp-slide-pack"><span class="pdp-pack-label" aria-hidden="true">Tres kilos. A tu gusto.</span><div class="pack-bags" data-pack-visual><img data-pack-src="/assets/ahorrador-amazonas-1kg.webp" alt="Bolsa 1: café Amazonas de 1 kg" width="410" height="840" decoding="async" /><img data-pack-src="/assets/ahorrador-cajamarca-1kg.webp" alt="Bolsa 2: café Cajamarca de 1 kg" width="410" height="840" decoding="async" /><img data-pack-src="/assets/ahorrador-puno-1kg.webp" alt="Bolsa 3: café Puno de 1 kg" width="410" height="840" decoding="async" /></div><figcaption data-pack-caption>Tu combinación: Amazonas, Cajamarca y Puno.</figcaption></figure>
+          <figure class="pdp-slide pdp-slide-video" data-video="/assets/hero-desktop.mp4"><img class="pdp-video-poster" data-pack-src="/assets/hero-desktop-start.webp" alt="" width="1280" height="714" decoding="async" /><video muted loop playsinline preload="none" disablepictureinpicture aria-label="Del cafetal a la bolsa: vista del cafetal, cerezas que se vuelven granos y cascada de granos."></video><figcaption class="pdp-ai">Escena conceptual generada para esta demo.</figcaption></figure>
           <figure class="pdp-slide"><img data-pack-src="/assets/pdp-beans.webp" alt="Granos de café tostado en primer plano." width="1080" height="1080" decoding="async" /><figcaption class="pdp-ai">Imagen conceptual generada para esta demo.</figcaption></figure>
           <figure class="pdp-slide pdp-slide-five"><div class="pdp-five"><img data-pack-src="/assets/ahorrador-amazonas-1kg.webp" alt="" width="410" height="840" /><img data-pack-src="/assets/ahorrador-cajamarca-1kg.webp" alt="" width="410" height="840" /><img data-pack-src="/assets/ahorrador-villa-rica-1kg.webp" alt="" width="410" height="840" /><img data-pack-src="/assets/ahorrador-cusco-1kg.webp" alt="" width="410" height="840" /><img data-pack-src="/assets/ahorrador-puno-1kg.webp" alt="" width="410" height="840" /></div><figcaption>Los cinco orígenes en bolsa de 1 kg.</figcaption></figure>
           <figure class="pdp-slide"><img data-pack-src="/assets/pdp-grinds.webp" alt="Café en grano y molido grueso, medio y fino, de izquierda a derecha." width="1400" height="714" decoding="async" /><figcaption class="pdp-ai">Imagen conceptual generada para esta demo.</figcaption></figure>
         </div>
         <button class="pdp-arrow pdp-prev" type="button" aria-label="Foto anterior" data-gallery-prev><span class="icon icon-arrow" aria-hidden="true"></span></button>
         <button class="pdp-arrow pdp-next" type="button" aria-label="Foto siguiente" data-gallery-next><span class="icon icon-arrow" aria-hidden="true"></span></button>
-        <p class="pdp-count" aria-hidden="true"><span data-gallery-index>1</span> / 4</p>
+        <p class="pdp-count" aria-hidden="true"><span data-gallery-index>1</span> / 5</p>
         <div class="pdp-thumbs" role="group" aria-label="Elegir foto">
           <button type="button" aria-label="Foto 1: tu pack" aria-current="true"><img data-pack-src="/assets/ahorrador-amazonas-1kg.webp" alt="" width="410" height="840" /></button>
-          <button type="button" aria-label="Foto 2: los granos"><img data-pack-src="/assets/pdp-beans.webp" alt="" width="1080" height="1080" /></button>
-          <button type="button" aria-label="Foto 3: los cinco orígenes"><img data-pack-src="/assets/ahorrador-villa-rica-1kg.webp" alt="" width="410" height="840" /></button>
-          <button type="button" aria-label="Foto 4: las moliendas"><img data-pack-src="/assets/pdp-grinds.webp" alt="" width="1400" height="714" /></button>
+          <button type="button" class="pdp-thumb-video" aria-label="Foto 2: video del cafetal a la bolsa"><img data-pack-src="/assets/hero-desktop-start.webp" alt="" width="1280" height="714" /></button>
+          <button type="button" aria-label="Foto 3: los granos"><img data-pack-src="/assets/pdp-beans.webp" alt="" width="1080" height="1080" /></button>
+          <button type="button" aria-label="Foto 4: los cinco orígenes"><img data-pack-src="/assets/ahorrador-villa-rica-1kg.webp" alt="" width="410" height="840" /></button>
+          <button type="button" aria-label="Foto 5: las moliendas"><img data-pack-src="/assets/pdp-grinds.webp" alt="" width="1400" height="714" /></button>
         </div>
       </div>
       <div class="pdp-decision">
@@ -437,13 +442,14 @@
         <p class="pdp-price-row"><strong class="product-price">S/ 310.00</strong><span class="pack-saving" data-pack-saving><s><span class="visually-hidden">Precio normal </span>S/ 330.00</s> · Ahorras S/ 20</span></p>
         <p class="pdp-yield">3 bolsas de 1 kg · unas 195 tazas</p>
         <form class="pack-options pdp-pack-options" aria-label="Elige el origen de cada bolsa">
-          <fieldset class="pdp-bag"><legend>Bolsa 1 <small>1 kg</small></legend><div class="pdp-chips" data-bag="1"></div></fieldset>
+          <fieldset class="pdp-bag"><legend>Bolsa 1 <small>1 kg</small></legend><div class="pdp-chips" data-bag="1"></div><button type="button" class="pdp-repeat" data-repeat-bag>Las tres bolsas de <span data-repeat-origin>Amazonas</span></button></fieldset>
           <fieldset class="pdp-bag"><legend>Bolsa 2 <small>1 kg</small></legend><div class="pdp-chips" data-bag="2"></div></fieldset>
           <fieldset class="pdp-bag"><legend>Bolsa 3 <small>1 kg</small></legend><div class="pdp-chips" data-bag="3"></div></fieldset>
         </form>
         <p class="pack-total"><span>Tu pack · 3 kg<span class="pack-total-saving" data-pack-total-saving> · Ahorras S/ 20</span></span><strong>S/ 310.00</strong></p>
         <p class="product-selection pack-selection" role="status" aria-live="polite" aria-atomic="true">Amazonas · Cajamarca · Puno</p>
         <a class="catalog-button product-continue pack-continue pdp-cta" href="https://www.artidororodriguez.com/products/pack-3kg-origenes-1?variant=48578579431667" target="_blank" rel="noopener">Continuar con mi pack <span class="icon icon-ext" aria-hidden="true"></span></a>
+        <div class="pdp-pay"><span>Pagas con tarjeta en la tienda oficial</span><ul aria-label="Tarjetas que acepta la tienda oficial"><li><img data-pack-src="/assets/pay-visa.svg" alt="Visa" width="38" height="24" /></li><li><img data-pack-src="/assets/pay-master.svg" alt="Mastercard" width="38" height="24" /></li><li><img data-pack-src="/assets/pay-american-express.svg" alt="American Express" width="38" height="24" /></li><li><img data-pack-src="/assets/pay-diners-club.svg" alt="Diners Club" width="38" height="24" /></li></ul></div>
         <p class="product-handoff">Tus tres orígenes se conservarán en la tienda oficial. Allí indicarás la molienda y finalizarás la compra.</p>
         <ul class="pdp-assure">
           <li><span class="icon icon-box" aria-hidden="true"></span><span><b>Envío en Lima desde S/ 10 · provincias S/ 30</b>Despachamos de lunes a viernes. <a href="https://www.artidororodriguez.com/policies/shipping-policy" target="_blank" rel="noopener">Ver tarifas <span class="icon icon-ext" aria-hidden="true"></span></a></span></li>
