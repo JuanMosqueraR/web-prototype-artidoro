@@ -5,7 +5,8 @@ const root = document.documentElement;
 const pointer = matchMedia('(hover: hover) and (pointer: fine)');
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 let target = 0, current = 0, running = false, last = 0;
-const enabled = () => pointer.matches && !reduced.matches && !root.classList.contains('no-motion') && root.dataset.direction === 'a';
+// .lb-open: a PDP photo is open full screen; the wheel then belongs to the zoomed photo, not to the page.
+const enabled = () => pointer.matches && !reduced.matches && !root.classList.contains('no-motion') && !root.classList.contains('lb-open') && root.dataset.direction === 'a';
 
 function nestedScroll(element, dy) {
   for (let el = element; el && el !== document.body && el !== root; el = el.parentElement) {

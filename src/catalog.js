@@ -30,6 +30,21 @@ if ('IntersectionObserver' in window) {
   document.querySelectorAll('#shop, .close-bands').forEach(section => observer.observe(section));
 } else loadCatalog();
 const sizeLabels = { '250g': '250 g', '454gr': '454 g', '1kg': '1 kg' };
+const soles = cents => `S/ ${(cents / 100).toFixed(2)}`;
+// Sticky buy bar (mobile): mirrors the selection, price and link of the main button.
+function syncBar(page, selection, price, href) {
+  const bar = page.querySelector('[data-pdp-bar]');
+  if (!bar) return;
+  bar.querySelector('[data-bar-selection]').textContent = selection;
+  bar.querySelector('[data-bar-price]').textContent = price;
+  const link = bar.querySelector('a');
+  if (href) link.href = href; else link.removeAttribute('href');
+}
+// Each size button shows its official price (lowest variant of that size in the snapshot).
+form.querySelectorAll('input[name=size]').forEach(input => {
+  const prices = snapshot.variants.filter(v => v.option1 === input.value).map(v => v.price);
+  if (prices.length) input.closest('label').querySelector('[data-size-price]').textContent = soles(Math.min(...prices));
+});
 let opener = null;
 let wasProduct = false;
 let viewToken = 0;
@@ -47,12 +62,32 @@ function updateVariant() {
   cta.setAttribute('aria-disabled', String(!available));
   if (available) cta.href = `${official}?variant=${variant.id}`;
   else cta.removeAttribute('href');
+  // Cups per bag: official FAQ (about 15 g per cup), carried on each size input.
+  const size = form.querySelector('input[name=size]:checked');
+  product.querySelector('[data-yield]').textContent = `Bolsa de ${size.dataset.label} · unas ${size.dataset.cups} tazas`;
+  syncBar(product, variant ? `${sizeLabels[variant.option1]} · ${variant.option2 === 'Grano' ? 'En grano' : variant.option2}` : 'No disponible', price, available ? cta.href : '');
 }
 form.addEventListener('change', updateVariant);
 form.addEventListener('submit', event => event.preventDefault());
 
+// Origin chips for each bag, in the official option order; the pack picture follows the choice.
+const packOrigins = packSnapshot.options[0].values;
+const slug = origin => origin.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, '-');
+const packDefaults = ['Amazonas', 'Cajamarca', 'Puno'];
+packForm.querySelectorAll('[data-bag]').forEach(group => {
+  const n = Number(group.dataset.bag);
+  group.innerHTML = packOrigins.map(origin => `<label class="pdp-chip"><input type="radio" name="bag${n}" value="${origin}"${origin === packDefaults[n - 1] ? ' checked' : ''} /><span><img data-pack-src="/assets/ahorrador-${slug(origin)}-1kg.webp" alt="" width="410" height="840" /><b>${origin}</b></span></label>`).join('');
+});
 function updatePack() {
-  const chosen = [...packForm.querySelectorAll('select')].map(select => select.value);
+  const values = new FormData(packForm);
+  const chosen = [1, 2, 3].map(n => values.get(`bag${n}`));
+  pack.querySelectorAll('[data-pack-visual] img').forEach((img, index) => {
+    const next = `/assets/ahorrador-${slug(chosen[index])}-1kg.webp`;
+    if (img.getAttribute('src')) img.src = next; else img.dataset.packSrc = next;
+    img.alt = `Bolsa ${index + 1}: café ${chosen[index]} de 1 kg`;
+  });
+  const caption = pack.querySelector('[data-pack-caption]');
+  if (caption) caption.textContent = `Tu combinación: ${chosen[0]}, ${chosen[1]} y ${chosen[2]}.`;
   const variant = packSnapshot.variants.find(v => v.options.every((origin, index) => origin === chosen[index]));
   const available = Boolean(variant?.available);
   const price = variant ? `S/ ${(variant.price / 100).toFixed(2)}` : 'No disponible';
@@ -74,6 +109,7 @@ function updatePack() {
   link.setAttribute('aria-disabled', String(!available));
   if (available) link.href = `${packOfficial}?variant=${variant.id}`;
   else link.removeAttribute('href');
+  syncBar(pack, variant ? chosen.join(' · ') : 'No disponible', price, available ? link.href : '');
 }
 packForm.addEventListener('change', updatePack);
 packForm.addEventListener('submit', event => event.preventDefault());
@@ -98,12 +134,14 @@ function render() {
   const active = pages[location.hash];
   const show = Boolean(active);
   home.hidden = show;
+  root.classList.toggle('on-pdp', show);
   Object.values(pages).forEach(page => { page.hidden = page !== active; });
   document.title = show ? `${active === pack ? 'Pack El Ahorrador' : 'Café Amazonas'} — Artidoro Rodríguez` : homeTitle;
   if (show) {
     root.dataset.direction = 'a';
-    if (active === pack) pack.querySelectorAll('[data-pack-src]').forEach(img => {
-      if (!img.getAttribute('src')) img.src = img.dataset.packSrc;
+    // PDP pictures are requested only when their page opens (the pages are hidden on the home).
+    active.querySelectorAll('[data-pack-src], [data-pdp-src]').forEach(img => {
+      if (!img.getAttribute('src')) img.src = img.dataset.packSrc || img.dataset.pdpSrc;
     });
     // Hidden home retains 02 state. Its media never intersects on a direct PDP visit.
     requestAnimationFrame(() => {
