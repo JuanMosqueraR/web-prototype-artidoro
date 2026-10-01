@@ -45,7 +45,7 @@ Cambios en `index.html`, `src/home.css`, `src/catalog.css`, `src/catalog.js` (P4
 | `audit/source/hero-generation.json`, `hero-*`, `cup03-*` | Registro de las 18 tareas (15 adoptadas, 3 descartadas; US$ 1,76), prompts y parámetros sin URLs firmadas; originales de imágenes y clips |
 | `qa/2026-09-30-l28/` | `verify.py`, `checks.json` (107/107), capturas y README con condiciones y rendimiento de laboratorio |
 
-Estado de publicación (1 de octubre, tras L29): `master` y `origin/master` en `cf45646`: L29 publicada en Pages por el usuario. Build de verificación con la Vite 7.1.3 del repo y Node 22.23.1 aislado. Los assets de la 03 anterior (`scene03-*`) siguen en `public/assets/` sin uso.
+Estado de publicación (1 de octubre, tras L29): `master` va 9 commits por delante de `origin/master` (`cf45646`, L29 publicada en Pages); L30 y L31 (precios al día y PDP renovadas) aún no están publicadas. Build de verificación con la Vite 7.1.3 del repo y Node 22.23.1 aislado. Los assets de la 03 anterior (`scene03-*`) siguen en `public/assets/` sin uso.
 
 ---
 
