@@ -69,8 +69,8 @@
    "name": "desktop video follows the scroll (mid ~5 s, end ~9.9 s)",
    "passed": true,
    "detail": [
-    4.968025,
-    9.958858
+    4.980421,
+    9.958845
    ]
   },
   {
@@ -257,28 +257,26 @@
    }
   },
   {
-   "name": "mobile 03 at 0.95 screens/s (802 px/s): all steps shown and the final frame complete >= 1200 ms before the scene leaves",
+   "name": "mobile 03 at 0.95 screens/s (802 px/s): each step readable >= (1500, 800, 900) ms (first, middle, final)",
    "passed": true,
    "detail": [
     802,
-    1497,
     [
-     "1",
-     "2",
-     "3"
+     1980,
+     960,
+     1110
     ]
    ]
   },
   {
-   "name": "mobile 03 at 1.18 screens/s (996 px/s): all steps shown and the final frame complete >= 800 ms before the scene leaves",
+   "name": "mobile 03 at 1.18 screens/s (996 px/s): each step readable >= (1200, 600, 600) ms (first, middle, final)",
    "passed": true,
    "detail": [
     996,
-    949,
     [
-     "1",
-     "2",
-     "3"
+     1710,
+     780,
+     870
     ]
    ]
   },
@@ -320,8 +318,8 @@
    "name": "mobile 03 final: title below the bag, kicker hidden",
    "passed": true,
    "detail": {
-    "bagBottom": 509,
-    "titleTop": 610,
+    "bagBottom": 508,
+    "titleTop": 609,
     "kicker": "none"
    }
   },
@@ -402,8 +400,8 @@
    "name": "mobile664 video follows the scroll (mid ~5 s, end ~9.9 s)",
    "passed": true,
    "detail": [
-    4.968011,
-    9.958858
+    4.980423,
+    9.97125
    ]
   },
   {
@@ -441,28 +439,26 @@
    }
   },
   {
-   "name": "mobile664 03 at 0.95 screens/s (631 px/s): all steps shown and the final frame complete >= 1200 ms before the scene leaves",
+   "name": "mobile664 03 at 0.95 screens/s (631 px/s): each step readable >= (1500, 800, 900) ms (first, middle, final)",
    "passed": true,
    "detail": [
     631,
-    1448,
     [
-     "1",
-     "2",
-     "3"
+     2250,
+     990,
+     1020
     ]
    ]
   },
   {
-   "name": "mobile664 03 at 1.18 screens/s (784 px/s): all steps shown and the final frame complete >= 800 ms before the scene leaves",
+   "name": "mobile664 03 at 1.18 screens/s (784 px/s): each step readable >= (1200, 600, 600) ms (first, middle, final)",
    "passed": true,
    "detail": [
     784,
-    898,
     [
-     "1",
-     "2",
-     "3"
+     1920,
+     780,
+     810
     ]
    ]
   },
@@ -504,8 +500,8 @@
    "name": "mobile664 03 final: title below the bag, kicker hidden",
    "passed": true,
    "detail": {
-    "bagBottom": 413,
-    "titleTop": 430,
+    "bagBottom": 412,
+    "titleTop": 429,
     "kicker": "none"
    }
   },
@@ -586,8 +582,8 @@
    "name": "tablet video follows the scroll (mid ~5 s, end ~9.9 s)",
    "passed": true,
    "detail": [
-    4.97072,
-    9.958871
+    4.983123,
+    9.958857
    ]
   },
   {
@@ -824,7 +820,7 @@
    "name": "desktop inertia: wheel glides to its target",
    "passed": true,
    "detail": [
-    3270,
+    3271,
     3600
    ]
   },

@@ -77,22 +77,23 @@ with sync_playwright() as p:
         check(f'{name} hero ends on step 3 with the bag in place', state['step'] == '3' and state['s3'] > .99 and state['bag'] > .99, state)
         # 03
         steps = []
-        for i, f in enumerate([.07, .2, .38, .9]):
-            scene_scroll(pg, '#sensory-scene', f); pg.wait_for_timeout(2700)
+        for i, f in enumerate([.1, .35, .6, .95]):
+            scene_scroll(pg, '#sensory-scene', f); pg.wait_for_timeout(1700)
             steps.append(pg.evaluate("document.querySelector('#sensory-scene').dataset.step"))
             pg.screenshot(path=str(CAP / f'{name}-cup-{i}.png'))
         check(f'{name} 03 steps 1 → 2 → 2 → 3', steps == ['1', '2', '2', '3'], steps)
         final = pg.evaluate("(() => { const bag = document.querySelector('.cs-bag'); const t = document.querySelector('#cup-title').getBoundingClientRect(); return {bag: +getComputedStyle(bag).opacity, loaded: bag.complete && bag.naturalWidth > 0, frames: [...document.querySelectorAll('.cs-frame img')].map(i => i.complete && i.naturalWidth > 0), title: t.top >= 0 && t.bottom <= innerHeight}; })()")
         check(f'{name} 03 final: frames decoded, bag shown, title on screen', final['bag'] > .95 and final['loaded'] and all(final['frames']) and final['title'], final)
-        # Fast flick: a big jump still lands on a settled step, never a half transition, after the fixed-time transition.
-        # Scrolling through 03 at human speeds: the final frame must be complete while the scene is still on screen.
-        # Regression for the bug where a queue of per-frame holds showed it only after the scene had left (~1000 px/s).
+        # Pace of 03 (scroll-linked, first configuration): how long each text stays fully readable while the scene is on screen,
+        # scrolling at human speeds. Regression for the middle step being readable for only ~0.4 s when transitions were
+        # time-based and triggered at a cut. Speeds are in screen heights per second so they scale with the viewport.
         if mob:
-            for factor, need in [(.95, 1200), (1.18, 800)]:
-                speed = round(factor * h)   # speed in screen heights per second, so it scales with the viewport
+            for factor, need in [(.95, (1500, 800, 900)), (1.18, (1200, 600, 600))]:
+                speed = round(factor * h)
                 pg.goto(URL + '/'); pg.wait_for_timeout(2000)
                 meta = pg.evaluate("""() => { const s = document.querySelector('#sensory-scene'); window.__log = [];
-                  window.__iv = setInterval(() => { const c = document.querySelector('#sensory-scene'), r = c.getBoundingClientRect(); window.__log.push({t: performance.now(), step: c.dataset.step, fin: +getComputedStyle(document.querySelector('.cs-final')).opacity, bag: +getComputedStyle(document.querySelector('.cs-bag')).opacity, bottom: r.bottom}); }, 50);
+                  window.__iv = setInterval(() => { const c = document.querySelector('#sensory-scene'), r = c.getBoundingClientRect(); const op = e => +getComputedStyle(e).opacity;
+                    window.__log.push({t: performance.now(), texts: [...c.querySelectorAll('.cs-step')].map(op), bag: op(c.querySelector('.cs-bag')), bottom: r.bottom}); }, 30);
                   return {top: s.getBoundingClientRect().top + scrollY - 64, range: s.offsetHeight - s.firstElementChild.offsetHeight}; }""")
                 pg.evaluate(f"scrollTo(0, {meta['top']} - 780)"); pg.wait_for_timeout(500)
                 import time
@@ -101,10 +102,10 @@ with sync_playwright() as p:
                     y = meta['top'] - 780 + (time.time() - t0) * speed; pg.evaluate(f"scrollTo(0, {y})"); pg.wait_for_timeout(16)
                 pg.wait_for_timeout(400)
                 log = pg.evaluate("(() => { clearInterval(window.__iv); return window.__log; })()")
-                full = next((e for e in log if e['fin'] > .95 and e['bag'] > .95), None); gone = next((e for e in log if e['bottom'] < 220), None)
-                shown = round(gone['t'] - full['t']) if full and gone else None
-                seen_steps = {e['step'] for e in log}
-                check(f'{name} 03 at {factor} screens/s ({speed} px/s): all steps shown and the final frame complete >= {need} ms before the scene leaves', {'1', '2', '3'} <= seen_steps and shown is not None and shown >= need, [speed, shown, sorted(seen_steps)])
+                on = [e for e in log if e['bottom'] > 220]
+                dt = (log[-1]['t'] - log[0]['t']) / max(1, len(log) - 1)
+                readable = [round(sum(1 for e in on if e['texts'][i] > .9) * dt) for i in range(3)]
+                check(f'{name} 03 at {factor} screens/s ({speed} px/s): each step readable >= {need} ms (first, middle, final)', all(r >= n for r, n in zip(readable, need)), [speed, readable])
             pg.goto(URL + '/'); pg.wait_for_timeout(1500)
             scene_scroll(pg, '#sensory-scene', 1); pg.wait_for_timeout(2500)
         check(f'{name} header solid after the hero', not pg.evaluate("document.documentElement.classList.contains('nav-over-hero')"))
