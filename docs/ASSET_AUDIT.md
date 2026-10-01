@@ -1,3 +1,7 @@
+# Copy de las cafeterías — 1 de octubre de 2026 (L29)
+
+La 04 muestra ahora Tarata y La Mar con dirección, horario y enlace «Cómo llegar» copiados de la [página oficial de locales](https://www.artidororodriguez.com/pages/locales) el 1 de octubre de 2026 (extracto literal en `audit/source/locales-2026-10-01.txt`; registro en `audit/assets.json`, `verified_copy.cafes_2026_10_01`). Es un snapshot: los horarios pueden cambiar en la tienda. No hay fotografías de La Mar en el repo; las dos fotos de la sección son de Tarata (referencia, autoría por confirmar), y el aviso visible lo dice. Ningún asset nuevo ni cambio de clasificación.
+
 # Hero y 03 generados — 30 de septiembre de 2026 (L28)
 
 Con aprobación explícita del usuario (L28), el hero y 03 de la home A usan material generado con APIMart: cuatro clips de video de 5 s (dos por formato) y sus fotogramas de inicio y fin para el hero, y cinco imágenes fijas para 03 (molido, primer chorro en V60, goteo y bodegón horizontal y vertical). Todo es `CONCEPTUAL_ASSET`: no documenta la finca, la cosecha, el proceso, el tueste ni la preparación de Artidoro, y la transformación de cerezas en granos es una metáfora visual. **No se generó la bolsa, el logo ni texto de etiqueta**: la bolsa que aparece en ambas escenas es la foto real `amazonas-250g` compuesta encima por CSS. Aviso visible en las dos escenas: «Escena conceptual generada para esta demo.»; divulgación completa en «Acerca de esta demo».

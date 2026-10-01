@@ -21,6 +21,17 @@ Autorización L24 sobre checkpoint `0b33580`, sin commit final de este cambio. A
 - **Cola de 05.** Se elimina la fila huérfana «¿Prefieres una sola bolsa? · Elige entre cinco orígenes ↑» y se sustituye por una tarjeta «Café de origen» con el mismo formato que El Explorador y Miel de abeja (imagen, etiqueta, precio S/39.90, enlace «Elegir origen» a `#origin-scene`), usando el asset ya existente `amazonas-250g.webp`. La fila de complementos pasa de 2 a 3 columnas iguales desde 1024 px (2 columnas se conservan en la franja 761–1023, con la tercera tarjeta pasando a su propia fila).
 - **Reseñas.** Se añade «Reseñas de clientes en la tienda oficial» antes de las citas (antes, la fuente solo se indicaba en un enlace al final). El nombre del producto de cada reseña («Café Origen Amazonas», «Pack «El Ahorrador» 3 kg») pasa de texto plano a enlace: abre la PDP interna correspondiente (`#producto-amazonas` / `#producto-ahorrador`) reutilizando la interceptación ya existente de `catalog.js` (`[data-pdp]` / `[data-pack-pdp]`), sin JS nuevo. En mobile, las reseñas pasan de 2 columnas a 1, con la cita a 16 px (antes 12 px).
 
+<a id="l29"></a>
+## Revisión del 1 de octubre (L29)
+
+Revisión completa de la home en Chromium (1440 × 900 y 390 × 844, con movimiento). Siete bugs, repeticiones de texto y la propuesta de la 04 con las dos cafeterías; el usuario aprobó P1–P3 (y el reordenamiento, para después). Implementado:
+
+- **Bugs.** Iconos del pie mobile separados del texto (la regla `.footer-links span` también alcanzaba a los iconos); texto de 10 px («Sigue el origen», pie, menú Tienda); texto del paso 3 del hero cruzado por los granos; icono interno en el CTA de 02 para orígenes que abren la tienda oficial; «asiento.» tapado por la foto de la fachada en desktop (y por el interior en tablet); títulos de nivel 3 sin nivel 2 en el cierre; «Ver todas las reseñas» llevaba a la portada.
+- **Textos.** Sin numeración de secciones; 05 sin el párrafo redundante («Para tus días…») y con el subtítulo «Tienda»; «justo antes de enviarlo» una sola vez; la pregunta «¿Qué molienda elijo?» se conserva por decisión del usuario.
+- **04.** «Nos vemos en Miraflores» con Tarata y La Mar (dirección, horario y mapa de la página oficial de locales, 1 de octubre de 2026).
+
+**Validación.** [qa/2026-10-01-revision](../qa/2026-10-01-revision/README.md): 143/143 en Chromium DPR 1 (regresión de L28 y controles nuevos; B sin cambios). El usuario lo probó en su iPhone: «ya probe en iphone, todo ok» (user-reported). **No cubierto:** Safari/iOS instrumental, Firefox. **Pendiente:** P4 (reordenar secciones).
+
 <a id="l28"></a>
 ## Iteración L28 (mismo día): hero «Del cafetal a tu bolsa», 03 «De la bolsa a tu taza» y mejoras generales
 

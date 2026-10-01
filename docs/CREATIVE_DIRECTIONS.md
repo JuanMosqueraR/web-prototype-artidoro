@@ -1,3 +1,15 @@
+# Revisión de la home — 1 de octubre de 2026 (L29)
+
+Sobre L28 (sección siguiente), solo en A:
+
+- **01.** Dos textos de paso (origen, de la cereza al grano); el momento de la bolsa no lleva texto, para que los granos no crucen letras y no se repita el «Amazonas · 250 g» del precio. El índice 01–03 de desktop se conserva.
+- **Sin numeración de secciones.** Los subtítulos quedan como etiquetas («De la bolsa a tu taza», «Nos vemos en Miraflores», «Tienda»); el contador «01 / 05» del carrusel de 02 sigue.
+- **04 «Nos vemos en Miraflores».** «Toma asiento.», las dos fotos de Tarata (la fachada empieza después del titular) y dos fichas, Tarata y La Mar, con dirección, horario oficial y «Cómo llegar»; en mobile y tablet el enlace va debajo del horario. Header: «Cafeterías».
+- **05.** Encabezado solo con «Tienda» y «Hazlo parte de tus días.»; reseñas, FAQ y «Sigue explorando» son `h2`; el enlace de reseñas lleva a la ficha oficial de Amazonas.
+- **02.** El CTA usa la flecha interna para Amazonas (ficha de la demo) y el icono externo para el resto (tienda oficial).
+
+Evidencia: `qa/2026-10-01-revision/`; decisión: L29.
+
 # Hero «Del cafetal a tu bolsa» y 03 «De la bolsa a tu taza» — 30 de septiembre de 2026 (L28)
 
 Sustituye, para la home de A, el hero automático de L25 (sección siguiente, ahora histórica) y la escena de video de 03 descrita en la revisión del 26 de septiembre. B no cambia.

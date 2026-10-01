@@ -1,3 +1,12 @@
+# Revisión de la home — 1 de octubre de 2026 (L29)
+
+| Ruta | Contenido |
+|---|---|
+| `qa/2026-10-01-revision/` | `verify.py` (regresión de L28 adaptada más los controles de esta ronda), `checks.json` (143/143), capturas y README |
+| `audit/source/locales-2026-10-01.txt` | Extracto literal de la página oficial de locales (direcciones, horarios y enlaces de mapa de Tarata y La Mar) |
+
+Cambios en `index.html`, `src/home.css`, `src/catalog.css`, `src/origin.css`, `src/origin.js`, `src/peru.css` y `src/scenes.js`; sin assets nuevos ni dependencias. Sin commit ni publicación al cierre de esta ronda.
+
 # Hero «Del cafetal a tu bolsa», 03 «De la bolsa a tu taza» y mejoras generales — 30 de septiembre de 2026 (L28)
 
 | Archivo | Qué es / cómo se produce |
