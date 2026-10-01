@@ -1,0 +1,404 @@
+{
+ "chromium": "148.0.7778.96",
+ "url": "http://127.0.0.1:4192",
+ "checks": [
+  {
+   "name": "desktop home load requests no PDP-only picture",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop header «Comprar café» visible on the home",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop hero CTA opens the Amazonas PDP, title focused, header buy link hidden",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop Amazonas: every picture loaded once the PDP opens",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop Amazonas: rating next to the price (5,0 · 3 reseñas) linking to the reviews block",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop Amazonas: each size button shows its official price",
+   "passed": true,
+   "detail": [
+    [
+     "S/ 39.90",
+     "S/ 60.00",
+     "S/ 110.00"
+    ],
+    [
+     "S/ 39.90",
+     "S/ 60.00",
+     "S/ 110.00"
+    ]
+   ]
+  },
+  {
+   "name": "desktop Amazonas 1 kg molido medio: price, cups (FAQ: unas 65), CTA variant and sticky bar in sync",
+   "passed": true,
+   "detail": {
+    "price": "S/ 110.00",
+    "yield": "Bolsa de 1 kg · unas 65 tazas",
+    "href": "https://www.artidororodriguez.com/products/cafe-amazonas?variant=48572414525683",
+    "bar": "S/ 110.00",
+    "barHref": "https://www.artidororodriguez.com/products/cafe-amazonas?variant=48572414525683",
+    "barSel": "1 kg · Molido Medio"
+   }
+  },
+  {
+   "name": "desktop Amazonas: conceptual pictures carry their notice (3 slides) and the process band its credit",
+   "passed": true,
+   "detail": 3
+  },
+  {
+   "name": "desktop gallery: arrow and thumbnails move the slide and mark the thumbnail",
+   "passed": true,
+   "detail": [
+    "2",
+    "3",
+    "true"
+   ]
+  },
+  {
+   "name": "desktop zoom: button on every slide, opens full screen, zooms in at the tap, browses, Escape closes and the gallery follows",
+   "passed": true,
+   "detail": [
+    [
+     6,
+     6
+    ],
+    [
+     true,
+     true
+    ],
+    [
+     true,
+     true
+    ],
+    "3 / 6",
+    [
+     false,
+     false,
+     "3"
+    ]
+   ]
+  },
+  {
+   "name": "desktop sticky bar: hidden with the main button on screen, shown after it",
+   "passed": true,
+   "detail": [
+    false,
+    true
+   ]
+  },
+  {
+   "name": "desktop Amazonas: no visible text < 11 px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop Amazonas: no horizontal overflow",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop back link returns to the home with the header buy link again",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop pack: 3 × 5 origin chips in the official order, defaults Amazonas / Cajamarca / Puno",
+   "passed": true,
+   "detail": [
+    "bag1:Amazonas*",
+    "bag1:Villa Rica",
+    "bag1:Cajamarca",
+    "bag1:Cusco",
+    "bag1:Puno",
+    "bag2:Amazonas",
+    "bag2:Villa Rica",
+    "bag2:Cajamarca*",
+    "bag2:Cusco",
+    "bag2:Puno",
+    "bag3:Amazonas",
+    "bag3:Villa Rica",
+    "bag3:Cajamarca",
+    "bag3:Cusco",
+    "bag3:Puno*"
+   ]
+  },
+  {
+   "name": "desktop pack Villa Rica · Cusco · Cusco: picture, caption, price, saving, CTA variant and bar follow the choice",
+   "passed": true,
+   "detail": {
+    "imgs": [
+     "/assets/ahorrador-villa-rica-1kg.webp",
+     "/assets/ahorrador-cusco-1kg.webp",
+     "/assets/ahorrador-cusco-1kg.webp"
+    ],
+    "cap": "Tu combinación: Villa Rica, Cusco y Cusco.",
+    "price": "S/ 310.00",
+    "total": "S/ 310.00",
+    "saving": "Precio normal S/ 330.00 · Ahorras S/ 20",
+    "href": "https://www.artidororodriguez.com/products/pack-3kg-origenes-1?variant=48578656600307",
+    "bar": "Villa Rica · Cusco · Cusco"
+   }
+  },
+  {
+   "name": "desktop pack: every picture loaded",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop pack: no visible text < 11 px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop pack: no horizontal overflow",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop pack zoom shows the chosen combination",
+   "passed": true,
+   "detail": [
+    "/assets/ahorrador-villa-rica-1kg.webp",
+    "/assets/ahorrador-cusco-1kg.webp",
+    "/assets/ahorrador-cusco-1kg.webp"
+   ]
+  },
+  {
+   "name": "desktop no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile home load requests no PDP-only picture",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile header «Comprar café» visible on the home",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile hero CTA opens the Amazonas PDP, title focused, header buy link hidden",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile Amazonas: every picture loaded once the PDP opens",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile Amazonas: rating next to the price (5,0 · 3 reseñas) linking to the reviews block",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile Amazonas: each size button shows its official price",
+   "passed": true,
+   "detail": [
+    [
+     "S/ 39.90",
+     "S/ 60.00",
+     "S/ 110.00"
+    ],
+    [
+     "S/ 39.90",
+     "S/ 60.00",
+     "S/ 110.00"
+    ]
+   ]
+  },
+  {
+   "name": "mobile Amazonas 1 kg molido medio: price, cups (FAQ: unas 65), CTA variant and sticky bar in sync",
+   "passed": true,
+   "detail": {
+    "price": "S/ 110.00",
+    "yield": "Bolsa de 1 kg · unas 65 tazas",
+    "href": "https://www.artidororodriguez.com/products/cafe-amazonas?variant=48572414525683",
+    "bar": "S/ 110.00",
+    "barHref": "https://www.artidororodriguez.com/products/cafe-amazonas?variant=48572414525683",
+    "barSel": "1 kg · Molido Medio"
+   }
+  },
+  {
+   "name": "mobile Amazonas: conceptual pictures carry their notice (3 slides) and the process band its credit",
+   "passed": true,
+   "detail": 3
+  },
+  {
+   "name": "mobile gallery: swiping (horizontal scroll) moves the counter",
+   "passed": true,
+   "detail": "3"
+  },
+  {
+   "name": "mobile zoom: button on every slide, opens full screen, zooms in at the tap, browses, Escape closes and the gallery follows",
+   "passed": true,
+   "detail": [
+    [
+     6,
+     6
+    ],
+    [
+     true,
+     true
+    ],
+    [
+     true,
+     true
+    ],
+    "3 / 6",
+    [
+     false,
+     false,
+     "3"
+    ]
+   ]
+  },
+  {
+   "name": "mobile sticky bar: hidden with the main button on screen, shown after it",
+   "passed": true,
+   "detail": [
+    false,
+    true
+   ]
+  },
+  {
+   "name": "mobile Amazonas: no visible text < 11 px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile Amazonas: no horizontal overflow",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile back link returns to the home with the header buy link again",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile pack: 3 × 5 origin chips in the official order, defaults Amazonas / Cajamarca / Puno",
+   "passed": true,
+   "detail": [
+    "bag1:Amazonas*",
+    "bag1:Villa Rica",
+    "bag1:Cajamarca",
+    "bag1:Cusco",
+    "bag1:Puno",
+    "bag2:Amazonas",
+    "bag2:Villa Rica",
+    "bag2:Cajamarca*",
+    "bag2:Cusco",
+    "bag2:Puno",
+    "bag3:Amazonas",
+    "bag3:Villa Rica",
+    "bag3:Cajamarca",
+    "bag3:Cusco",
+    "bag3:Puno*"
+   ]
+  },
+  {
+   "name": "mobile pack Villa Rica · Cusco · Cusco: picture, caption, price, saving, CTA variant and bar follow the choice",
+   "passed": true,
+   "detail": {
+    "imgs": [
+     "/assets/ahorrador-villa-rica-1kg.webp",
+     "/assets/ahorrador-cusco-1kg.webp",
+     "/assets/ahorrador-cusco-1kg.webp"
+    ],
+    "cap": "Tu combinación: Villa Rica, Cusco y Cusco.",
+    "price": "S/ 310.00",
+    "total": "S/ 310.00",
+    "saving": "Precio normal S/ 330.00 · Ahorras S/ 20",
+    "href": "https://www.artidororodriguez.com/products/pack-3kg-origenes-1?variant=48578656600307",
+    "bar": "Villa Rica · Cusco · Cusco"
+   }
+  },
+  {
+   "name": "mobile pack: every picture loaded",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile pack: no visible text < 11 px",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile pack: no horizontal overflow",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile pack zoom shows the chosen combination",
+   "passed": true,
+   "detail": [
+    "/assets/ahorrador-villa-rica-1kg.webp",
+    "/assets/ahorrador-cusco-1kg.webp",
+    "/assets/ahorrador-cusco-1kg.webp"
+   ]
+  },
+  {
+   "name": "mobile no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "320x640 #producto-amazonas: no horizontal overflow",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "320x640 #producto-ahorrador: no horizontal overflow",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "768x1024 #producto-amazonas: no horizontal overflow",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "768x1024 #producto-ahorrador: no horizontal overflow",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "1024x768 #producto-amazonas: no horizontal overflow",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "1024x768 #producto-ahorrador: no horizontal overflow",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "1920x1080 #producto-amazonas: no horizontal overflow",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "1920x1080 #producto-ahorrador: no horizontal overflow",
+   "passed": true,
+   "detail": null
+  }
+ ]
+}
