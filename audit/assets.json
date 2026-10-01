@@ -1464,7 +1464,8 @@
         "Domingo: 09:00 a.m. – 03:00 p.m."
       ],
       "como_llegar_href": "https://maps.app.goo.gl/8obmU6zC2Uh49pyy8",
-      "note": "Strings copied verbatim from the Tarata card. The link is the href of that card’s “Cómo llegar” button; it was not followed or resolved here. The page also lists Cafetería La Mar (out of scope; not used). Hours and address can change on the official page; this is the state on the verification date."
+      "note": "Strings copied verbatim from the Tarata card. The link is the href of that card’s “Cómo llegar” button; it was not followed or resolved here. The page also lists Cafetería La Mar (out of scope; not used). Hours and address can change on the official page; this is the state on the verification date.",
+      "superseded_note": "Re-verified on 2026-10-01 together with Cafetería La Mar, which the home now shows (L29): see cafes_2026_10_01."
     },
     "home_2026_09_25": {
       "source_snapshot": "audit/source/home-catalog-2026-09-25.json",
@@ -1571,7 +1572,8 @@
         "03: «Tu bolsa de 250 g: unas 16 tazas.» (no price per cup is shown)",
         "Grinds band: Fina / Media «Para empezar» / Gruesa / Grano with the methods above; foot «Molemos tu café justo antes de enviarlo. Elige tu molienda al comprar.»"
       ],
-      "note": "The existing home FAQ answer «¿Qué molienda elijo?» is an earlier condensed wording of the same source and was not changed."
+      "note": "The existing home FAQ answer «¿Qué molienda elijo?» is an earlier condensed wording of the same source and was not changed.",
+      "used_as_update_2026_10_01": "L29: the 03 step 1 text is now «Molienda media. La que recomendamos para empezar.»; «justo antes de enviarlo» stays only in the grinds band foot. The home FAQ «¿Qué molienda elijo?» is kept on purpose (user: «prefiero que sea redundante»)."
     },
     "amazonas_description_2026_09_30": {
       "source": "https://www.artidororodriguez.com/products/cafe-amazonas",
@@ -1596,6 +1598,33 @@
       "used_as": [
         "05 trust band: «Precio justo al caficultor» (title only)"
       ]
+    },
+    "cafes_2026_10_01": {
+      "source": "https://www.artidororodriguez.com/pages/locales",
+      "retrieved": "2026-10-01",
+      "method": "Server-rendered HTML fetched over HTTP; visible text of both store cards and the href of each «Cómo llegar» button. Literal extract: audit/source/locales-2026-10-01.txt",
+      "decision": "L29",
+      "quotes": {
+        "Cafetería Tarata": [
+          "Calle Tarata 285, Miraflores",
+          "Lunes a Sábado: 08:00 a.m. – 09:00 p.m.",
+          "Domingo: 09:00 a.m. – 03:00 p.m.",
+          "https://maps.app.goo.gl/8obmU6zC2Uh49pyy8"
+        ],
+        "Cafetería La Mar": [
+          "Av. Mariscal La Mar 342, Miraflores",
+          "Lunes a Sábado: 07:30 a.m. – 09:00 p.m.",
+          "Domingo: Cerrado",
+          "https://maps.app.goo.gl/SBhmFixmTuRCkyPt8"
+        ]
+      },
+      "used_as": [
+        "04: kicker «Nos vemos en Miraflores»; two cards «Tarata» and «La Mar» with the address, the hours (labels «Lunes a sábado» / «Domingo») and «Cómo llegar» to the official map link of each card",
+        "04 credit: «Fotografías de Tarata, de referencia · autoría por confirmar. Horarios según la tienda oficial, consultados el 1 de octubre de 2026.»",
+        "Footer «Acerca de esta demo»: addresses and hours according to the official stores page, read on 2026-10-01"
+      ],
+      "not_claimed": "No «abierto ahora» state, phone, services or photos of La Mar (none in the repo).",
+      "limits": "Static snapshot; hours and addresses can change on the official page. The map links were not followed or resolved."
     }
   },
   "ai_generated_assets": [
