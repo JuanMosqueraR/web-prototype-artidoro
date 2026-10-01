@@ -1843,7 +1843,8 @@
       ],
       "unchanged": "Five origins 250 g S/ 39.90 and 454 g S/ 60.00; Travel Line S/ 260.00; Miel Perfil Frutal 300 g S/ 25.00. Variant ids and availability unchanged (all available).",
       "not_shown": "The official store now also has compare_at prices for El Explorador (S/ 199.50) and Travel Line (S/ 300.00); the demo shows only their prices, as before.",
-      "limits": "Static snapshot; the official shop confirms the current price at checkout."
+      "limits": "Static snapshot; the official shop confirms the current price at checkout.",
+      "derived_2026_10_01": "Amazonas PDP pack option (L31): «S/ 103.33 el kilo» = S/ 310.00 / 3 kg; «El kilo más barato» shown only while that is below the 1 kg bag (S/ 110.00); «ahorras S/ 20» = S/ 330.00 regular - S/ 310.00. All computed at runtime from src/ahorrador-variants.json, src/amazonas-variants.json and data-compare-at; no new source."
     },
     "pdp_2026_10_01": {
       "decision": "L31",
