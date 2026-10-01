@@ -1,0 +1,66 @@
+{
+ "chromium": "148.0.7778.96",
+ "url": "http://127.0.0.1:4192",
+ "checks": [
+  {
+   "name": "desktop #producto-amazonas: no hero video or image sequence requested while on the PDP",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop #producto-amazonas: back on the home, the hero requests its own video and plays it",
+   "passed": true,
+   "detail": [
+    [
+     "hero-desktop.mp4"
+    ],
+    []
+   ]
+  },
+  {
+   "name": "desktop #producto-ahorrador: no hero video or image sequence requested while on the PDP",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop #producto-ahorrador: back on the home, the hero requests its own video and plays it",
+   "passed": true,
+   "detail": [
+    [
+     "hero-desktop.mp4"
+    ],
+    []
+   ]
+  },
+  {
+   "name": "mobile #producto-amazonas: no hero video or image sequence requested while on the PDP",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile #producto-amazonas: back on the home, the hero requests its own video and plays it",
+   "passed": true,
+   "detail": [
+    [
+     "hero-mobile.mp4"
+    ],
+    []
+   ]
+  },
+  {
+   "name": "mobile #producto-ahorrador: no hero video or image sequence requested while on the PDP",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile #producto-ahorrador: back on the home, the hero requests its own video and plays it",
+   "passed": true,
+   "detail": [
+    [
+     "hero-mobile.mp4"
+    ],
+    []
+   ]
+  }
+ ]
+}
