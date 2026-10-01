@@ -1,0 +1,142 @@
+{
+ "chromium": "148.0.7778.96",
+ "url": "http://127.0.0.1:4192",
+ "snapshot": "audit/source/prices-2026-10-01.json",
+ "checks": [
+  {
+   "name": "desktop hero: Amazonas 250 g and pack (crossed normal price, pack price)",
+   "passed": true,
+   "detail": [
+    "S/ 39.90Amazonas · 250 g",
+    "Precio normal S/ 330S/ 310"
+   ]
+  },
+  {
+   "name": "desktop 02: every origin S/ 39.90 and pack link price",
+   "passed": true,
+   "detail": [
+    "Combina tus favoritos · Pack 3 kgArmar mi pack · S/ 310 →"
+   ]
+  },
+  {
+   "name": "desktop 05: pack, Travel Line, café de origen, El Explorador, miel 300 g",
+   "passed": true,
+   "detail": [
+    [
+     "S/ 310.00",
+     "S/ 260.00",
+     "S/ 39.90",
+     "S/ 185.00",
+     "S/ 25.00"
+    ],
+    "Precio normal S/ 330.00 · Ahorras S/ 20"
+   ]
+  },
+  {
+   "name": "desktop no old price left anywhere in the document (home and hidden PDPs)",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop Amazonas PDP: 250 g / 454 g / 1 kg prices",
+   "passed": true,
+   "detail": [
+    [
+     "S/ 39.90",
+     "S/ 60.00",
+     "S/ 110.00"
+    ],
+    [
+     "S/ 39.90",
+     "S/ 60.00",
+     "S/ 110.00"
+    ]
+   ]
+  },
+  {
+   "name": "desktop pack PDP: price, total and saving",
+   "passed": true,
+   "detail": [
+    "S/ 310.00",
+    "S/ 310.00",
+    "Precio normal S/ 330.00 · Ahorras S/ 20",
+    "· Ahorras S/ 20"
+   ]
+  },
+  {
+   "name": "desktop no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile hero: Amazonas 250 g and pack (crossed normal price, pack price)",
+   "passed": true,
+   "detail": [
+    "S/ 39.90Amazonas · 250 g",
+    "Precio normal S/ 330S/ 310"
+   ]
+  },
+  {
+   "name": "mobile 02: every origin S/ 39.90 and pack link price",
+   "passed": true,
+   "detail": [
+    "Combina tus favoritos · Pack 3 kgArmar mi pack · S/ 310 →"
+   ]
+  },
+  {
+   "name": "mobile 05: pack, Travel Line, café de origen, El Explorador, miel 300 g",
+   "passed": true,
+   "detail": [
+    [
+     "S/ 310.00",
+     "S/ 260.00",
+     "S/ 39.90",
+     "S/ 185.00",
+     "S/ 25.00"
+    ],
+    "Precio normal S/ 330.00 · Ahorras S/ 20"
+   ]
+  },
+  {
+   "name": "mobile no old price left anywhere in the document (home and hidden PDPs)",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile Amazonas PDP: 250 g / 454 g / 1 kg prices",
+   "passed": true,
+   "detail": [
+    [
+     "S/ 39.90",
+     "S/ 60.00",
+     "S/ 110.00"
+    ],
+    [
+     "S/ 39.90",
+     "S/ 60.00",
+     "S/ 110.00"
+    ]
+   ]
+  },
+  {
+   "name": "mobile pack PDP: price, total and saving",
+   "passed": true,
+   "detail": [
+    "S/ 310.00",
+    "S/ 310.00",
+    "Precio normal S/ 330.00 · Ahorras S/ 20",
+    "· Ahorras S/ 20"
+   ]
+  },
+  {
+   "name": "mobile no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "share image exists (regenerated with the new hero pack price; visual check in after/ is manual)",
+   "passed": true,
+   "detail": null
+  }
+ ]
+}
