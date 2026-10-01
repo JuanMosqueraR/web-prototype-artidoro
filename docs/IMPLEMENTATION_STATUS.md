@@ -6,6 +6,8 @@
 | `src/pdp.js` | Galería (scroll-snap, flechas, miniaturas, contador), zoom a pantalla completa (`<dialog>` por galería) y aparición del botón fijo; variantes, precios y rutas siguen en `src/catalog.js`. `src/inertia.js` deja la rueda a la foto ampliada (`.lb-open`) |
 | `scripts/prepare-pdp-assets.py` | Prepara desde `audit/source/`: mapa oficial con la paleta de la demo, foto oficial en la montaña, bolsas de 1 kg de Villa Rica y Cusco, y las dos imágenes generadas |
 | `audit/source/pdp-*-original.*`, `audit/source/ahorrador-{villa-rica,cusco}-1kg-original.jpg`, `audit/source/pdp-generation.json` | Originales oficiales y generados; registro de generación con prompts, costes y el descarte |
+| `qa/2026-10-01-pdp-pack/` | El Ahorrador como cuarta opción de tamaño en Amazonas, la línea de 1 kg y la sección inferior de descubrimiento; `checks.json` (20/20) |
+| `qa/2026-10-01-pdp-ajustes/` | Ajustes tras la prueba en iPhone: título sin recuadro de foco y margen del carrusel mobile; `checks.json` (4/4) |
 | `qa/2026-10-01-pdp/` | `verify.py`, `checks.json` (50/50) y capturas de las dos PDP, con el zoom |
 
 `src/catalog.js` añade el precio por tamaño, las tazas por bolsa, los selectores por bolsa del pack, la sincronización del botón fijo, la carga de las imágenes de cada PDP al abrirla y la clase `on-pdp`. Regresiones ejecutadas fuera del repo: home 154/154 y precios 15/15.
@@ -45,7 +47,7 @@ Cambios en `index.html`, `src/home.css`, `src/catalog.css`, `src/catalog.js` (P4
 | `audit/source/hero-generation.json`, `hero-*`, `cup03-*` | Registro de las 18 tareas (15 adoptadas, 3 descartadas; US$ 1,76), prompts y parámetros sin URLs firmadas; originales de imágenes y clips |
 | `qa/2026-09-30-l28/` | `verify.py`, `checks.json` (107/107), capturas y README con condiciones y rendimiento de laboratorio |
 
-Estado de publicación (1 de octubre, tras L29): `master` va 9 commits por delante de `origin/master` (`cf45646`, L29 publicada en Pages); L30 y L31 (precios al día y PDP renovadas) aún no están publicadas. Build de verificación con la Vite 7.1.3 del repo y Node 22.23.1 aislado. Los assets de la 03 anterior (`scene03-*`) siguen en `public/assets/` sin uso.
+Estado de publicación (1 de octubre, tras L29): `master` va 13 commits por delante de `origin/master` (`cf45646`, L29 publicada en Pages); L30 y L31 (precios al día, PDP renovadas y el pack en la decisión de Amazonas) aún no están publicadas. Build de verificación con la Vite 7.1.3 del repo y Node 22.23.1 aislado. Los assets de la 03 anterior (`scene03-*`) siguen en `public/assets/` sin uso.
 
 ---
 

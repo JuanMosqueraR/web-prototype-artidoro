@@ -2,11 +2,11 @@
 
 ## Actualización del 1 de octubre de 2026 (L31)
 
-Precios corregidos al snapshot oficial del 1 de octubre (`3ce15fc`, QA `13f451f`, docs `5ed6875`) y PDP renovadas con galería, zoom, botón fijo y los seis bloques (`ff31d6c` assets, `9e00e44` código, `9f44123` QA 50/50, `530a35a` docs). Pendiente: prueba del usuario en iPhone de las PDP y `git push`. Detalle en [DECISIONS.md](DECISIONS.md) (L31) y [CREATIVE_DIRECTIONS.md](CREATIVE_DIRECTIONS.md).
+Precios corregidos al snapshot oficial del 1 de octubre (`3ce15fc`, QA `13f451f`, docs `5ed6875`) y PDP renovadas con galería, zoom, botón fijo y los seis bloques (`ff31d6c` assets, `9e00e44` código, `9f44123` QA 50/50, `530a35a` docs). Después: El Ahorrador como cuarta opción de tamaño en Amazonas y ajustes de foco y carrusel (código, registro y QA en los tres commits siguientes), probados por el usuario en iOS. Pendiente: `git push`. Detalle en [DECISIONS.md](DECISIONS.md) (L31) y [CREATIVE_DIRECTIONS.md](CREATIVE_DIRECTIONS.md).
 
 ## Actualización del 1 de octubre de 2026 (L29)
 
-**Estado recuperable:** `master` va 9 commits por delante de `origin/master` (`cf45646`, L29 publicada en Pages); L30 y L31 (precios al día y PDP renovadas) aún no están publicadas. Árbol limpio salvo los cambios ajenos de siempre (`tools/apimart/*`, `reference/`, el PDF CRO, `.mcp.json`).
+**Estado recuperable:** `master` va 13 commits por delante de `origin/master` (`cf45646`, L29 publicada en Pages); L30 y L31 (precios al día, PDP renovadas y el pack en la decisión de Amazonas) aún no están publicadas. Árbol limpio salvo los cambios ajenos de siempre (`tools/apimart/*`, `reference/`, el PDF CRO, `.mcp.json`).
 
 | Commit | Contenido |
 |---|---|

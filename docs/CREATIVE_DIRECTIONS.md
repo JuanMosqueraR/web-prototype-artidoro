@@ -4,6 +4,7 @@ Las PDP de Amazonas y El Ahorrador adoptan el lenguaje de la home (Barlow en may
 
 - **Galería.** Swipe nativo con scroll-snap, contador, flechas y miniaturas en desktop (la galería queda fija mientras se recorre la decisión); 1:1 en desktop y 5:4 en mobile. Lo generado lleva su aviso en la propia foto. **Zoom:** botón «Ampliar foto» en cada foto (o toque/clic sobre ella), vista a pantalla completa con acercamiento 2,2× en el punto tocado, desplazamiento, flechas y Escape.
 - **Decisión.** Rating junto al precio (Amazonas), precio por tamaño, tazas por bolsa (FAQ oficial), molienda con iconos, selectores visuales por bolsa en el pack con la imagen que sigue la elección, botón de 64 px y tres líneas de confianza (envío, tostado/molido, pedidos dañados).
+- **El Ahorrador en la decisión de Amazonas.** Cuarta opción de «Tamaño» con precio tachado, precio por kilo y «El kilo más barato»; al elegirla, el botón lleva a armar el pack (bolsa 1 en Amazonas). Con 1 kg aparece una línea con el ahorro del pack. La sección inferior queda para descubrir (El Explorador y los otros orígenes).
 - **Botón fijo.** Barra inferior con selección, precio y «Continuar» cuando el botón principal no está en pantalla (en mobile, desde la primera pantalla); dentro de las PDP el header no muestra «Comprar café».
 - Evidencia: `qa/2026-10-01-pdp/`; decisión: L31.
 
