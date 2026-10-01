@@ -1,3 +1,15 @@
+# PDP renovadas — 1 de octubre de 2026 (L31)
+
+| Ruta | Contenido |
+|---|---|
+| `src/pdp.css` | Estilos de las dos PDP (las reglas antiguas de PDP se retiraron de `src/catalog.css` y `src/ahorrador.css`) |
+| `src/pdp.js` | Galería (scroll-snap, flechas, miniaturas, contador), zoom a pantalla completa (`<dialog>` por galería) y aparición del botón fijo; variantes, precios y rutas siguen en `src/catalog.js`. `src/inertia.js` deja la rueda a la foto ampliada (`.lb-open`) |
+| `scripts/prepare-pdp-assets.py` | Prepara desde `audit/source/`: mapa oficial con la paleta de la demo, foto oficial en la montaña, bolsas de 1 kg de Villa Rica y Cusco, y las dos imágenes generadas |
+| `audit/source/pdp-*-original.*`, `audit/source/ahorrador-{villa-rica,cusco}-1kg-original.jpg`, `audit/source/pdp-generation.json` | Originales oficiales y generados; registro de generación con prompts, costes y el descarte |
+| `qa/2026-10-01-pdp/` | `verify.py`, `checks.json` (50/50) y capturas de las dos PDP, con el zoom |
+
+`src/catalog.js` añade el precio por tamaño, las tazas por bolsa, los selectores por bolsa del pack, la sincronización del botón fijo, la carga de las imágenes de cada PDP al abrirla y la clase `on-pdp`. Regresiones ejecutadas fuera del repo: home 154/154 y precios 15/15.
+
 # Precios al día — 1 de octubre de 2026 (L31)
 
 | Ruta | Contenido |

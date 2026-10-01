@@ -1,3 +1,12 @@
+# PDP renovadas — 1 de octubre de 2026 (L31)
+
+Las PDP de Amazonas y El Ahorrador adoptan el lenguaje de la home (Barlow en mayúsculas, bandas oscuras con grano, iconos propios, títulos que suben línea a línea) y se ordenan para decidir: galería y decisión en la primera pantalla, después «Del cafetal a tu taza», origen, reseñas, venta cruzada y preguntas frecuentes.
+
+- **Galería.** Swipe nativo con scroll-snap, contador, flechas y miniaturas en desktop (la galería queda fija mientras se recorre la decisión); 1:1 en desktop y 5:4 en mobile. Lo generado lleva su aviso en la propia foto. **Zoom:** botón «Ampliar foto» en cada foto (o toque/clic sobre ella), vista a pantalla completa con acercamiento 2,2× en el punto tocado, desplazamiento, flechas y Escape.
+- **Decisión.** Rating junto al precio (Amazonas), precio por tamaño, tazas por bolsa (FAQ oficial), molienda con iconos, selectores visuales por bolsa en el pack con la imagen que sigue la elección, botón de 64 px y tres líneas de confianza (envío, tostado/molido, pedidos dañados).
+- **Botón fijo.** Barra inferior con selección, precio y «Continuar» cuando el botón principal no está en pantalla (en mobile, desde la primera pantalla); dentro de las PDP el header no muestra «Comprar café».
+- Evidencia: `qa/2026-10-01-pdp/`; decisión: L31.
+
 # Revisión de la home — 1 de octubre de 2026 (L29)
 
 Sobre L28 (sección siguiente), solo en A:

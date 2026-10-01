@@ -1,3 +1,10 @@
+# Imágenes de las PDP — 1 de octubre de 2026 (L31)
+
+- **Oficiales (`REAL_ASSET`):** foto de la bolsa de Amazonas en la mano frente a montañas (la tienda no dice dónde se tomó y la demo no lo nombra); mapa de origen de Amazonas, con solo el fondo y los tonos menta pasados a la paleta de la demo (formas, texto y sello negro sin redibujar); bolsas de 1 kg de Villa Rica y Cusco (`1KVILLARICA.jpg`, `1KCUSCO.jpg`), con el mismo recorte que las otras tres.
+- **Generadas (`CONCEPTUAL_ASSET`):** primer plano de granos tostados y cuatro moliendas sobre madera (APIMart, Nano Banana Pro; US$ 0,09 con un descarte por cristales blancos). Sin bolsa, logo, texto ni personas; aviso visible en cada foto.
+- **Reutilizadas de la home:** frames del hero y de la 03 en la galería y en «Del cafetal a tu taza», con su aviso.
+- Registro: `audit/assets.json` (entradas `decision: "L31"`, `verified_copy.pdp_2026_10_01`) y `audit/source/pdp-generation.json`.
+
 # Precios — 1 de octubre de 2026 (L31)
 
 Los precios de la demo se actualizan al snapshot oficial del 1 de octubre (`audit/source/prices-2026-10-01.json`; registro `verified_copy.prices_2026_10_01`): El Ahorrador S/ 310 (precio normal S/ 330, ahorro S/ 20), Amazonas 1 kg S/ 110, El Explorador S/ 185. Es un snapshot: la tienda confirma el precio vigente al pagar. `og-share.jpg` se regeneró con el mismo script porque mostraba el precio anterior del pack.

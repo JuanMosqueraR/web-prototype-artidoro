@@ -1,3 +1,5 @@
+> **Actualización — 1 de octubre de 2026 (L31):** las dos PDP descritas aquí fueron sustituidas por la versión renovada (galería, seis bloques, botón fijo). Estado actual: [CREATIVE_DIRECTIONS.md](CREATIVE_DIRECTIONS.md) y `qa/2026-10-01-pdp/`. Lo que sigue es histórico.
+
 # Catálogo y PDP — revisión del 28 de septiembre de 2026
 
 Implementado por instrucción del usuario «mejor encargate tu de implementar el plan», en `feat/catalogo-pdp` desde `38a209f`. Versionado por petición posterior del usuario: «se ve bien en iphone, commitea». Sin merge ni publicación desde esta revisión. Los cambios ajenos de `tools/apimart/*`, `reference/` y el PDF CRO permanecen intactos.
