@@ -1,0 +1,45 @@
+{
+ "chromium": "148.0.7778.96",
+ "url": "http://127.0.0.1:4192",
+ "checks": [
+  {
+   "name": "PDP title receives focus on open (screen readers) without a focus ring",
+   "passed": true,
+   "detail": [
+    "product-title",
+    "none"
+   ]
+  },
+  {
+   "name": "the next control keeps its keyboard focus ring",
+   "passed": true,
+   "detail": "solid"
+  },
+  {
+   "name": "#producto-amazonas mobile steps: first card at the 22 px margin and snapping aligns to it",
+   "passed": true,
+   "detail": [
+    22,
+    [
+     -262,
+     22,
+     306,
+     590
+    ]
+   ]
+  },
+  {
+   "name": "#producto-ahorrador mobile steps: first card at the 22 px margin and snapping aligns to it",
+   "passed": true,
+   "detail": [
+    22,
+    [
+     -262,
+     22,
+     306,
+     590
+    ]
+   ]
+  }
+ ]
+}

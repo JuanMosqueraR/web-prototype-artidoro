@@ -1,0 +1,196 @@
+{
+ "chromium": "148.0.7778.96",
+ "url": "http://127.0.0.1:4192",
+ "checks": [
+  {
+   "name": "desktop pack tier inside «Tamaño»: price, crossed normal price, price per kilo and «El kilo más barato» from the snapshots",
+   "passed": true,
+   "detail": [
+    [
+     "S/ 310",
+     "S/ 330",
+     "S/ 103.33 el kilo",
+     true
+    ],
+    [
+     "S/ 310",
+     "S/ 330",
+     "S/ 103.33 el kilo",
+     true
+    ]
+   ]
+  },
+  {
+   "name": "desktop 1 kg nudge appears only with 1 kg and states the official saving",
+   "passed": true,
+   "detail": [
+    true,
+    false,
+    "S/ 20"
+   ]
+  },
+  {
+   "name": "desktop choosing the pack: price, cups, grind hidden with its note, «Armar mi pack», internal route, bar and handoff text",
+   "passed": true,
+   "detail": {
+    "checked": true,
+    "price": "S/ 310.00",
+    "yield": "3 bolsas de 1 kg · unas 195 tazas",
+    "grind": true,
+    "note": true,
+    "cta": "Armar mi pack · S/ 310",
+    "internal": true,
+    "icon": "icon icon-arrow",
+    "bar": [
+     "El Ahorrador · 3 kg",
+     "S/ 310.00",
+     true
+    ],
+    "handoff": "Te llevamos a armar tu pack; desde allí continúas en la tienda oficial."
+   }
+  },
+  {
+   "name": "desktop no visible text < 11 px in the Amazonas PDP with the pack chosen",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "desktop no horizontal overflow",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop «Armar mi pack» opens the pack PDP with Amazonas in bag 1",
+   "passed": true,
+   "detail": "Amazonas"
+  },
+  {
+   "name": "desktop back from the pack returns to the Amazonas PDP with the pack still chosen",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "desktop back to 250 g: external CTA to the official variant, grind visible, bar restored",
+   "passed": true,
+   "detail": [
+    "Continuar en la tienda",
+    "_blank",
+    false,
+    "https://www.artidororodriguez.com/products/cafe-amazonas?variant=48502437282035",
+    false,
+    "Amazonas",
+    "_blank"
+   ]
+  },
+  {
+   "name": "desktop lower section is discovery only: no pack card, El Explorador and the four other origins",
+   "passed": true,
+   "detail": [
+    null,
+    1,
+    4,
+    "Prueba loscinco orígenes."
+   ]
+  },
+  {
+   "name": "desktop no page errors",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile pack tier inside «Tamaño»: price, crossed normal price, price per kilo and «El kilo más barato» from the snapshots",
+   "passed": true,
+   "detail": [
+    [
+     "S/ 310",
+     "S/ 330",
+     "S/ 103.33 el kilo",
+     true
+    ],
+    [
+     "S/ 310",
+     "S/ 330",
+     "S/ 103.33 el kilo",
+     true
+    ]
+   ]
+  },
+  {
+   "name": "mobile 1 kg nudge appears only with 1 kg and states the official saving",
+   "passed": true,
+   "detail": [
+    true,
+    false,
+    "S/ 20"
+   ]
+  },
+  {
+   "name": "mobile choosing the pack: price, cups, grind hidden with its note, «Armar mi pack», internal route, bar and handoff text",
+   "passed": true,
+   "detail": {
+    "checked": true,
+    "price": "S/ 310.00",
+    "yield": "3 bolsas de 1 kg · unas 195 tazas",
+    "grind": true,
+    "note": true,
+    "cta": "Armar mi pack · S/ 310",
+    "internal": true,
+    "icon": "icon icon-arrow",
+    "bar": [
+     "El Ahorrador · 3 kg",
+     "S/ 310.00",
+     true
+    ],
+    "handoff": "Te llevamos a armar tu pack; desde allí continúas en la tienda oficial."
+   }
+  },
+  {
+   "name": "mobile no visible text < 11 px in the Amazonas PDP with the pack chosen",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "name": "mobile no horizontal overflow",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile «Armar mi pack» opens the pack PDP with Amazonas in bag 1",
+   "passed": true,
+   "detail": "Amazonas"
+  },
+  {
+   "name": "mobile back from the pack returns to the Amazonas PDP with the pack still chosen",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "mobile back to 250 g: external CTA to the official variant, grind visible, bar restored",
+   "passed": true,
+   "detail": [
+    "Continuar en la tienda",
+    "_blank",
+    false,
+    "https://www.artidororodriguez.com/products/cafe-amazonas?variant=48502437282035",
+    false,
+    "Amazonas",
+    "_blank"
+   ]
+  },
+  {
+   "name": "mobile lower section is discovery only: no pack card, El Explorador and the four other origins",
+   "passed": true,
+   "detail": [
+    null,
+    1,
+    4,
+    "Prueba loscinco orígenes."
+   ]
+  },
+  {
+   "name": "mobile no page errors",
+   "passed": true,
+   "detail": []
+  }
+ ]
+}
