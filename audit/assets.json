@@ -1382,8 +1382,8 @@
       "prepared": [
         {
           "file": "public/assets/og-share.jpg",
-          "bytes": 135035,
-          "sha256": "5fa7250702cdede1fe4be489b263022db90524ac4893a70550a8f7deee4bc488",
+          "bytes": 135259,
+          "sha256": "b770775582a8ccb19827048f4bec6795fdb70d6b38ea5b4b2d424a4d0bc67573",
           "dimensions": [
             1200,
             630
@@ -1393,7 +1393,8 @@
       "script": "scripts/prepare-og-image.py",
       "reproducibility": "Deterministic given the same build, browser and fonts; the underlying generated footage is not.",
       "used_in": "Open Graph / Twitter link preview in the head of index.html (absolute URL on the GitHub Pages host). Not rendered in the page.",
-      "not_evidence": "A page screenshot, not an official brand image; the preview is titled «Demo» so it is not mistaken for the store."
+      "not_evidence": "A page screenshot, not an official brand image; the preview is titled «Demo» so it is not mistaken for the store.",
+      "regenerated": "2026-10-01 (L31): same script, so the pack price in the hero reads S/ 310."
     }
   ],
   "gaps": [
@@ -1552,7 +1553,8 @@
       "derivation": "Saving S/ 50 = 330.00 - 280.00, computed at runtime from data-compare-at=33000 and the selected variant price; hidden when no variant matches.",
       "approval": "L23: user instruction 'muestra el ahorro' (2026-09-29).",
       "not_claimed": "No percentage badge, best seller, scarcity, campaign or margin claim. 01 hero and 02 pack entries keep S/ 280 only.",
-      "limits": "Static snapshot; the official shop confirms current price and regular price at checkout."
+      "limits": "Static snapshot; the official shop confirms current price and regular price at checkout.",
+      "superseded_note": "Price and saving superseded on 2026-10-01 (L31): S/ 310.00, saving S/ 20. See prices_2026_10_01."
     },
     "faq_brewing_2026_09_30": {
       "source": "https://www.artidororodriguez.com/pages/preguntas-frecuentes",
@@ -1625,6 +1627,21 @@
       ],
       "not_claimed": "No «abierto ahora» state, phone, services or photos of La Mar (none in the repo).",
       "limits": "Static snapshot; hours and addresses can change on the official page. The map links were not followed or resolved."
+    },
+    "prices_2026_10_01": {
+      "source": "https://www.artidororodriguez.com/products/<handle>.js for the nine products the home and PDPs price",
+      "retrieved": "2026-10-01T18:20:06Z",
+      "snapshot": "audit/source/prices-2026-10-01.json",
+      "script": "scripts/prepare-prices.py (writes src/amazonas-variants.json and src/ahorrador-variants.json; no network)",
+      "decision": "L31",
+      "changes": [
+        "Pack El Ahorrador 3 kg: S/ 280.00 -> S/ 310.00; compare_at still S/ 330.00; saving S/ 50 -> S/ 20 (hero, 02, 05, PDP)",
+        "Amazonas 1 kg: S/ 99.00 -> S/ 110.00 (PDP, read from the variant snapshot)",
+        "Pack El Explorador: S/ 180.00 -> S/ 185.00 (05)"
+      ],
+      "unchanged": "Five origins 250 g S/ 39.90 and 454 g S/ 60.00; Travel Line S/ 260.00; Miel Perfil Frutal 300 g S/ 25.00. Variant ids and availability unchanged (all available).",
+      "not_shown": "The official store now also has compare_at prices for El Explorador (S/ 199.50) and Travel Line (S/ 300.00); the demo shows only their prices, as before.",
+      "limits": "Static snapshot; the official shop confirms the current price at checkout."
     }
   },
   "ai_generated_assets": [
