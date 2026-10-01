@@ -170,7 +170,6 @@ function paintHero(p) {
   set(hero, '--p', p);
   set(hero, '--s1', 1 - seg(p, .28, .34));
   set(hero, '--s2', Math.min(seg(p, .36, .42), 1 - seg(p, .66, .72)));
-  set(hero, '--s3', seg(p, .8, .88));
   set(hero, '--bag', ease(seg(p, .8, .96)));
   set(hero, '--bagv', seg(p, .8, .86));
   set(hero, '--end', seg(p, .62, .8));

@@ -11,6 +11,7 @@ if (scene) {
   const stage = scene.querySelector('.origin-stage');
   const cta = scene.querySelector('.origin-buy');
   const ctaName = cta.querySelector('[data-cta-name]');
+  const ctaIcon = cta.querySelector('.icon');
   const status = scene.querySelector('.origin-status');
   const live = scene.querySelector('.origin-sr');
   const count = scene.querySelector('.origin-count');
@@ -80,6 +81,9 @@ if (scene) {
     buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.origin === key)));
     records.forEach(record => record.setAttribute('aria-hidden', String(record.dataset.origin !== key)));
     cta.href = origins[key].href;
+    // Only Amazonas opens the demo PDP (catalog.js); the other origins go straight to the official store.
+    ctaIcon.classList.toggle('icon-arrow', key === 'amazonas');
+    ctaIcon.classList.toggle('icon-ext', key !== 'amazonas');
     ctaName.textContent = origins[key].name;
     count.textContent = String(keys.indexOf(key) + 1).padStart(2, '0') + ' / 05';
     live.textContent = 'Origen seleccionado: ' + origins[key].name;
