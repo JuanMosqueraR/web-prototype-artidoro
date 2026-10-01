@@ -72,6 +72,21 @@
 .pdp-options input:checked+span,.pdp-chip input:checked+span{background:#102e25;border-color:#102e25;color:#f4f0e5}
 .pdp-options input:checked+span small{color:#f4f0e5c8}
 .pdp-options input:focus-visible+span,.pdp-chip input:focus-visible+span{outline:2px solid #102e25;outline-offset:3px}
+.pdp-pack-tier{display:block;margin-top:14px}
+.pdp-options .pdp-pack-tier>span{flex-direction:row;align-items:center;justify-content:space-between;gap:16px;min-height:78px;padding:16px 18px 14px;border:2px solid #d1af7e;background:#fbf6ea;text-align:left}
+.pdp-pack-tier .pdp-tag{left:16px;transform:none}
+.pdp-tier-copy{display:flex;flex-direction:column;gap:3px;min-width:0}
+[data-pack-kilo]{white-space:nowrap}
+.pdp-tier-price{display:flex;flex-direction:column;align-items:flex-end;gap:1px;white-space:nowrap}
+.pdp-tier-price s{font-size:13px;color:#41594b}
+.pdp-tier-price strong{font-size:22px;font-weight:700}
+.pdp-options .pdp-pack-tier input:checked+span{border-color:#102e25}
+.pdp-options .pdp-pack-tier input:checked+span s{color:#f4f0e5c8}
+.pdp-nudge{margin-top:10px;font-size:14px;line-height:1.5;color:#41594b}
+.pdp-nudge button{padding:12px 0;margin:-12px 0;border:0;background:none;color:#102e25;font:inherit;font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.pdp-pack-note{margin:0 0 18px;padding:14px 16px;background:#e3e4d6;font-size:14px;line-height:1.55}
+.pdp-more-single{grid-template-columns:minmax(0,1fr)}
+.pdp-more-single .pdp-card{grid-template-columns:minmax(0,38%) minmax(0,1fr)}
 .pdp-chips{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
 .pdp-chip>span{min-height:96px;padding:8px 4px}
 .pdp-chip img{height:48px;width:auto;mix-blend-mode:multiply}
@@ -224,11 +239,13 @@
  .pdp-options b{font-size:15px}.pdp-grinds b{font-size:14px}
  .pdp-options small{font-size:11px}
  .pdp-tag{font-size:11px;padding:1px 6px}
+ .pdp-options .pdp-pack-tier>span{padding:16px 14px 12px;gap:10px;min-height:84px}.pdp-tier-price strong{font-size:20px}.pdp-tier-copy b{font-size:15px}
  .pdp-chips{gap:4px}.pdp-chip>span{min-height:88px;padding:6px 2px}.pdp-chip img{height:42px}.pdp-chip b{font-size:11px}
  .pdp-cta{min-height:58px;font-size:15px}
  .pdp-assure li{font-size:13px;gap:12px}.pdp-assure b{font-size:14px}
  .pdp-process,.pdp-reviews,.pdp-more{padding:64px 22px 56px}
- .pdp-steps{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;gap:14px;margin:32px -22px 0;padding:0 22px}
+ .pdp-steps{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:22px;scrollbar-width:none;gap:14px;margin:32px -22px 0;padding:0 22px}
+ .pdp-steps:after{content:"";flex:0 0 8px} /* end gap: Safari drops the right padding of a scroller */
  .pdp-steps::-webkit-scrollbar{display:none}
  .pdp-steps li{flex:0 0 78%;scroll-snap-align:start}
  .pdp-steps h3{font-size:25px}.pdp-steps p{font-size:14px}

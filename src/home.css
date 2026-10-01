@@ -14,6 +14,9 @@ html[data-direction="b"] .home-only{display:none!important}
 .anchor-arrive{animation:anchor-arrive 380ms ease-out}
 .skip-link{position:fixed;left:20px;top:-100px;z-index:100;background:var(--cream);color:#102e25;padding:16px}
 .skip-link:focus{top:12px}
+/* Titles and sections that receive focus by script (PDP title on open, anchor targets) announce the change to screen readers;
+   they are not controls, so they show no focus ring (iOS draws one even after a tap). Links and buttons keep theirs. */
+html[data-direction="a"] [tabindex="-1"]:focus{outline:none}
 /* Transparent over the pinned hero (L28); solid from the moment the hero is left behind. */
 .home-nav{transition:background-color 300ms ease,border-color 300ms ease}
 html[data-direction="a"].nav-over-hero .home-nav{background:transparent;border-bottom-color:transparent}

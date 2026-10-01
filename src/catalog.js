@@ -32,14 +32,37 @@ if ('IntersectionObserver' in window) {
 const sizeLabels = { '250g': '250 g', '454gr': '454 g', '1kg': '1 kg' };
 const soles = cents => `S/ ${(cents / 100).toFixed(2)}`;
 // Sticky buy bar (mobile): mirrors the selection, price and link of the main button.
-function syncBar(page, selection, price, href) {
+function syncBar(page, selection, price, href, name, internal = false) {
   const bar = page.querySelector('[data-pdp-bar]');
   if (!bar) return;
   bar.querySelector('[data-bar-selection]').textContent = selection;
   bar.querySelector('[data-bar-price]').textContent = price;
+  if (name) bar.querySelector('.pdp-bar-info b').textContent = name;
   const link = bar.querySelector('a');
   if (href) link.href = href; else link.removeAttribute('href');
+  setRoute(link, internal);
 }
+// A product link either leaves for the official store (new tab, external icon) or opens the pack PDP of the demo.
+function setRoute(link, internal) {
+  link.toggleAttribute('data-pack-pdp', internal);
+  if (internal) link.removeAttribute('target'); else link.target = '_blank';
+  const icon = link.querySelector('.icon');
+  if (icon) { icon.classList.toggle('icon-arrow', internal); icon.classList.toggle('icon-ext', !internal); }
+}
+// El Ahorrador as the fourth size of the Amazonas PDP (L31): figures from the pack snapshot and its regular price.
+const packCents = Math.min(...packSnapshot.variants.map(v => v.price));
+const packCompare = Number(document.querySelector('#producto-ahorrador').dataset.compareAt);
+const wholeSoles = cents => `S/ ${Number.isInteger(cents / 100) ? cents / 100 : (cents / 100).toFixed(2)}`;
+product.querySelector('[data-pack-price]').textContent = wholeSoles(packCents);
+product.querySelector('[data-pack-compare]').textContent = wholeSoles(packCompare);
+product.querySelector('[data-pack-kilo]').textContent = `${soles(Math.round(packCents / 3))} el kilo`;
+product.querySelector('[data-pack-saving-amount]').textContent = wholeSoles(packCompare - packCents);
+// The badge holds only while the pack's kilo is cheaper than the 1 kg bag's.
+const kiloCents = Math.min(...snapshot.variants.filter(v => v.option1 === '1kg').map(v => v.price));
+product.querySelector('[data-pack-badge]').hidden = !(packCents / 3 < kiloCents);
+const ctaLabel = cta.firstChild;
+const handoff = product.querySelector('.product-handoff');
+const handoffText = handoff.textContent;
 // Each size button shows its official price (lowest variant of that size in the snapshot).
 form.querySelectorAll('input[name=size]').forEach(input => {
   const prices = snapshot.variants.filter(v => v.option1 === input.value).map(v => v.price);
@@ -52,6 +75,26 @@ history.scrollRestoration = 'manual';
 
 function updateVariant() {
   const values = new FormData(form);
+  const packMode = values.get('size') === 'pack';
+  form.querySelector('.pdp-grind-field').hidden = packMode;
+  form.querySelector('[data-pack-note]').hidden = !packMode;
+  form.querySelector('[data-pack-nudge]').hidden = values.get('size') !== '1kg' || packCompare <= packCents;
+  if (packMode) {
+    const price = soles(packCents);
+    product.querySelector('.product-price').textContent = price;
+    product.querySelector('[data-yield]').textContent = '3 bolsas de 1 kg · unas 195 tazas';
+    product.querySelector('.product-selection').textContent = `Pack El Ahorrador · 3 kg · ${price}`;
+    ctaLabel.textContent = `Armar mi pack · ${wholeSoles(packCents)} `;
+    cta.href = packOfficial;
+    cta.setAttribute('aria-disabled', 'false');
+    setRoute(cta, true);
+    syncBar(product, '3 bolsas de 1 kg', price, packOfficial, 'El Ahorrador · 3 kg', true);
+    handoff.textContent = 'Te llevamos a armar tu pack; desde allí continúas en la tienda oficial.';
+    return;
+  }
+  handoff.textContent = handoffText;
+  ctaLabel.textContent = 'Continuar en la tienda ';
+  setRoute(cta, false);
   const variant = snapshot.variants.find(v => v.option1 === values.get('size') && v.option2 === values.get('grind'));
   const available = Boolean(variant?.available);
   const price = variant ? `S/ ${(variant.price / 100).toFixed(2)}` : 'No disponible';
@@ -65,9 +108,15 @@ function updateVariant() {
   // Cups per bag: official FAQ (about 15 g per cup), carried on each size input.
   const size = form.querySelector('input[name=size]:checked');
   product.querySelector('[data-yield]').textContent = `Bolsa de ${size.dataset.label} · unas ${size.dataset.cups} tazas`;
-  syncBar(product, variant ? `${sizeLabels[variant.option1]} · ${variant.option2 === 'Grano' ? 'En grano' : variant.option2}` : 'No disponible', price, available ? cta.href : '');
+  syncBar(product, variant ? `${sizeLabels[variant.option1]} · ${variant.option2 === 'Grano' ? 'En grano' : variant.option2}` : 'No disponible', price, available ? cta.href : '', 'Amazonas');
 }
 form.addEventListener('change', updateVariant);
+form.querySelector('[data-pick-pack]').addEventListener('click', () => {
+  const tier = form.querySelector('input[name=size][value=pack]');
+  tier.checked = true;
+  updateVariant();
+  tier.focus();
+});
 form.addEventListener('submit', event => event.preventDefault());
 
 // Origin chips for each bag, in the official option order; the pack picture follows the choice.
@@ -180,6 +229,10 @@ document.addEventListener('click', event => {
   if (coffeeEntry || packEntry) {
     event.preventDefault();
     event.stopImmediatePropagation();
+    if (packEntry && link.closest('#producto-amazonas')) {
+      const first = packForm.querySelector('input[name=bag1][value="Amazonas"]');
+      if (first && !first.checked) { first.checked = true; updatePack(); }
+    }
     opener = link;
     if (!inProduct) history.replaceState({...history.state, catalogHomeY: scrollY}, '', location.href);
     history.pushState({catalogProduct: true, catalogReturn: true}, '', packEntry ? '#producto-ahorrador' : route);
