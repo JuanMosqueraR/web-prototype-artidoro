@@ -975,13 +975,13 @@
       "prepared": [
         {
           "file": "public/assets/hero-desktop.mp4",
-          "bytes": 1599715,
-          "sha256": "1395bc425e07382745a282e75c93e8bbc96c628bc0a30b9329f6c8331242b58d"
+          "bytes": 3262386,
+          "sha256": "9ec19b0006150c84e47c97aa338843ca0df829456a5d91407eb34b472b882eba"
         },
         {
           "file": "public/assets/hero-desktop-start.webp",
-          "bytes": 28048,
-          "sha256": "ee0cdd2a78e639b8a8c4df2005c49d81e7641650adf80e02a1c0884717d28cf1",
+          "bytes": 49460,
+          "sha256": "2c249294dc301ef8560298372e9c8693f765697edc8ce2532973ee0b7ee4d961",
           "dimensions": [
             1280,
             714
@@ -989,8 +989,8 @@
         },
         {
           "file": "public/assets/hero-desktop-end.webp",
-          "bytes": 33340,
-          "sha256": "6a47556d56c5efdd0ee122b815b620c658c0f1410c4ae3c9bfebc4cdb6f2f826",
+          "bytes": 47688,
+          "sha256": "ffedd29854dfa6246eba121159a56d8d263909f2ed699c8e1662032a3c2cd5a6",
           "dimensions": [
             1280,
             714
@@ -999,7 +999,7 @@
       ],
       "script": "scripts/prepare-hero-video.py",
       "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
-      "used_in": "A home hero (desktop): scroll-scrubbed 10 s video; start frame is the LCP poster, end frame the static composition.",
+      "used_in": "A home hero (desktop): scroll-scrubbed 10 s video (constant 24 fps, H.264, GOP 4 without B-frames); start frame is the LCP poster, end frame the static composition.",
       "frames": [
         "hero-origin-desktop",
         "hero-cherries-desktop",
@@ -1036,14 +1036,25 @@
       ],
       "not_evidence": "Conceptual scene, not documentation of the Amazonas farm, harvest, processing, roasting or brewing at Artidoro; the cherry-to-bean transformation is a visual metaphor. No generated packaging, logo or factual copy.",
       "prepared_sequence": {
-        "dir": "public/assets/hero-seq/desktop/",
-        "frames": 60,
-        "bytes": 1288606,
-        "fps": 6,
-        "from": "public/assets/hero-desktop.mp4",
-        "script": "scripts/prepare-hero-video.py",
-        "use": "Mobile always; desktop only if the video is not ready within 4 s."
-      }
+        "avif": {
+          "dir": "public/assets/hero-seq/desktop-avif/",
+          "frames": 121,
+          "fps": 12,
+          "bytes": 2215999,
+          "from": "original clips in audit/source (not the compressed video)",
+          "use": "Fallback only (video not usable within 3.5 s, e.g. iOS Low Power Mode)."
+        },
+        "webp": {
+          "dir": "public/assets/hero-seq/desktop-webp/",
+          "frames": 61,
+          "fps": 6,
+          "bytes": 1566406,
+          "use": "Fallback of the fallback: browsers that cannot decode AVIF (iOS < 16)."
+        },
+        "script": "scripts/prepare-hero-video.py"
+      },
+      "note_posters": "Posters are cut from the original clips, not from the compressed video.",
+      "preparation_note": "Frames pass through a light denoise (hqdn3d 3:2.5:4:4), Lanczos scaling and a mild unsharp before encoding; this is a generic picture clean-up of the generated footage, not a retouch or reconstruction of any artwork."
     },
     {
       "id": "hero-video-mobile",
@@ -1073,13 +1084,13 @@
       "prepared": [
         {
           "file": "public/assets/hero-mobile.mp4",
-          "bytes": 1336107,
-          "sha256": "d4876770a14960c4512b92c4916cbf6e568ebe3c3f74b2949bd7ca9b2907d1af"
+          "bytes": 3436691,
+          "sha256": "0b65baf2676b58bb0f570325eda4ae05b2cda5b04d0f60a520a09d7269614748"
         },
         {
           "file": "public/assets/hero-mobile-start.webp",
-          "bytes": 28322,
-          "sha256": "ecb0145de2cab9d396cfc1c343f88c6708ccc5ddeb2be1a9184f1ff5377ed3ee",
+          "bytes": 49942,
+          "sha256": "09905b053d32230cc87ab372616933046ade1262436396292f1d765dd4f5b86e",
           "dimensions": [
             714,
             1280
@@ -1087,8 +1098,8 @@
         },
         {
           "file": "public/assets/hero-mobile-end.webp",
-          "bytes": 35742,
-          "sha256": "62c043665f7f5eda65769cfd25f170a08fc770298d4b5d079b0b06137a797a7f",
+          "bytes": 51978,
+          "sha256": "446aa2d06af50740832b5e3914d3bfd6ea27e3d99045a48b544dbf23fc45d40b",
           "dimensions": [
             714,
             1280
@@ -1135,14 +1146,25 @@
       "note": "Vertical frames are gemini edits of the desktop frames (reference image), not crops.",
       "not_evidence": "Conceptual scene, not documentation of the Amazonas farm, harvest, processing, roasting or brewing at Artidoro; the cherry-to-bean transformation is a visual metaphor. No generated packaging, logo or factual copy.",
       "prepared_sequence": {
-        "dir": "public/assets/hero-seq/mobile/",
-        "frames": 60,
-        "bytes": 1227892,
-        "fps": 6,
-        "from": "public/assets/hero-mobile.mp4",
-        "script": "scripts/prepare-hero-video.py",
-        "use": "Mobile always; desktop only if the video is not ready within 4 s."
-      }
+        "avif": {
+          "dir": "public/assets/hero-seq/mobile-avif/",
+          "frames": 121,
+          "fps": 12,
+          "bytes": 1410643,
+          "from": "original clips in audit/source (not the compressed video)",
+          "use": "Fallback only (video not usable within 3.5 s, e.g. iOS Low Power Mode)."
+        },
+        "webp": {
+          "dir": "public/assets/hero-seq/mobile-webp/",
+          "frames": 61,
+          "fps": 6,
+          "bytes": 1510354,
+          "use": "Fallback of the fallback: browsers that cannot decode AVIF (iOS < 16)."
+        },
+        "script": "scripts/prepare-hero-video.py"
+      },
+      "note_posters": "Posters are cut from the original clips, not from the compressed video.",
+      "preparation_note": "Frames pass through a light denoise (hqdn3d 3:2.5:4:4), Lanczos scaling and a mild unsharp before encoding; this is a generic picture clean-up of the generated footage, not a retouch or reconstruction of any artwork."
     },
     {
       "id": "cup03-grind",
@@ -1345,6 +1367,33 @@
       "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
       "used_in": "A home 03 final still life (double-walled glass cup). The real Amazonas bag photo (REAL_ASSET amazonas-250g) is composited at runtime by CSS behind the cup; no bag, logo or label was generated.",
       "not_evidence": "Conceptual scene, not documentation of the Amazonas farm, harvest, processing, roasting or brewing at Artidoro; the cherry-to-bean transformation is a visual metaphor. No generated packaging, logo or factual copy."
+    },
+    {
+      "id": "og-share",
+      "status": "CONCEPTUAL_ASSET",
+      "decision": "L28",
+      "derived_from": "Screenshot of the home hero in its final static state (?motion=off) at 1200 x 630, taken from a served production build.",
+      "contains": [
+        "generated hero footage (CONCEPTUAL_ASSET hero-video-*)",
+        "real product photo amazonas-250g (REAL_ASSET)",
+        "Artidoro logo as used by the page",
+        "the visible notice «Escena conceptual generada para esta demo.»"
+      ],
+      "prepared": [
+        {
+          "file": "public/assets/og-share.jpg",
+          "bytes": 135035,
+          "sha256": "5fa7250702cdede1fe4be489b263022db90524ac4893a70550a8f7deee4bc488",
+          "dimensions": [
+            1200,
+            630
+          ]
+        }
+      ],
+      "script": "scripts/prepare-og-image.py",
+      "reproducibility": "Deterministic given the same build, browser and fonts; the underlying generated footage is not.",
+      "used_in": "Open Graph / Twitter link preview in the head of index.html (absolute URL on the GitHub Pages host). Not rendered in the page.",
+      "not_evidence": "A page screenshot, not an official brand image; the preview is titled «Demo» so it is not mistaken for the store."
     }
   ],
   "gaps": [
