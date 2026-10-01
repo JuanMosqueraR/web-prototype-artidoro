@@ -797,7 +797,8 @@
         870
       ],
       "preparation": "Rectangular whitespace crop; proportional downsize (never upscale); WebP quality 90, method 6. No redraw or generative processing. Runtime CSS multiply on an isolated cream surface integrates the white photographic background; source colors are unchanged in the asset.",
-      "used_in": "A home 05 only"
+      "used_in": "A home 05 only",
+      "also_used_in_L31": "Renewed PDPs (gallery, «Del cafetal a tu taza» band or cross-sell cards). Conceptual items keep their visible notice there."
     },
     {
       "id": "catalog-miel",
@@ -851,7 +852,8 @@
       "prepared_sha256": "87e1938d83bb6ed64d1449c3929e95ad929126e413f5708ba33b7c9e9a1fce4f",
       "script": "scripts/prepare-ahorrador.py",
       "preparation": "Crop [325,140,735,980]; WebP quality90 method6. No redrawing, retouching, synthetic image or upscale. HTML/CSS places three independent real 1kg photos on one surface.",
-      "used_in": "A 05 and Ahorrador PDP. Representative combination, explicitly captioned on PDP; photo does not change with the selectors."
+      "used_in": "A 05 and Ahorrador PDP. Representative combination, explicitly captioned on PDP; photo does not change with the selectors.",
+      "also_used_in_L31": "Renewed PDPs (gallery, «Del cafetal a tu taza» band or cross-sell cards). Conceptual items keep their visible notice there."
     },
     {
       "id": "ahorrador-cajamarca-1kg",
@@ -875,7 +877,8 @@
       "prepared_sha256": "97c62b9fda668f8a1b4b2e134162fa52c6afde261d4f8149b5637430b2885686",
       "script": "scripts/prepare-ahorrador.py",
       "preparation": "Crop [325,140,735,980]; WebP quality90 method6. No redrawing, retouching, synthetic image or upscale. HTML/CSS places three independent real 1kg photos on one surface.",
-      "used_in": "A 05 and Ahorrador PDP. Representative combination, explicitly captioned on PDP; photo does not change with the selectors."
+      "used_in": "A 05 and Ahorrador PDP. Representative combination, explicitly captioned on PDP; photo does not change with the selectors.",
+      "also_used_in_L31": "Renewed PDPs (gallery, «Del cafetal a tu taza» band or cross-sell cards). Conceptual items keep their visible notice there."
     },
     {
       "id": "ahorrador-puno-1kg",
@@ -899,7 +902,8 @@
       "prepared_sha256": "dc0098890696558a1ce40e02920bde3bea57cc9facac71b1640ec242fc988d27",
       "script": "scripts/prepare-ahorrador.py",
       "preparation": "Crop [325,140,735,980]; WebP quality90 method6. No redrawing, retouching, synthetic image or upscale. HTML/CSS places three independent real 1kg photos on one surface.",
-      "used_in": "A 05 and Ahorrador PDP. Representative combination, explicitly captioned on PDP; photo does not change with the selectors."
+      "used_in": "A 05 and Ahorrador PDP. Representative combination, explicitly captioned on PDP; photo does not change with the selectors.",
+      "also_used_in_L31": "Renewed PDPs (gallery, «Del cafetal a tu taza» band or cross-sell cards). Conceptual items keep their visible notice there."
     },
     {
       "id": "ahorrador-group-unused",
@@ -1054,7 +1058,8 @@
         "script": "scripts/prepare-hero-video.py"
       },
       "note_posters": "Posters are cut from the original clips, not from the compressed video.",
-      "preparation_note": "Frames pass through a light denoise (hqdn3d 3:2.5:4:4), Lanczos scaling and a mild unsharp before encoding; this is a generic picture clean-up of the generated footage, not a retouch or reconstruction of any artwork."
+      "preparation_note": "Frames pass through a light denoise (hqdn3d 3:2.5:4:4), Lanczos scaling and a mild unsharp before encoding; this is a generic picture clean-up of the generated footage, not a retouch or reconstruction of any artwork.",
+      "also_used_in_L31": "Renewed PDPs (gallery, «Del cafetal a tu taza» band or cross-sell cards). Conceptual items keep their visible notice there."
     },
     {
       "id": "hero-video-mobile",
@@ -1212,7 +1217,8 @@
       "script": "scripts/prepare-cup03.py",
       "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
       "used_in": "A home 03 «De la bolsa a tu taza», step 1, grinding. Mobile is a rectangular 9:16 crop of the same frame.",
-      "not_evidence": "Conceptual scene, not documentation of the Amazonas farm, harvest, processing, roasting or brewing at Artidoro; the cherry-to-bean transformation is a visual metaphor. No generated packaging, logo or factual copy."
+      "not_evidence": "Conceptual scene, not documentation of the Amazonas farm, harvest, processing, roasting or brewing at Artidoro; the cherry-to-bean transformation is a visual metaphor. No generated packaging, logo or factual copy.",
+      "also_used_in_L31": "Renewed PDPs (gallery, «Del cafetal a tu taza» band or cross-sell cards). Conceptual items keep their visible notice there."
     },
     {
       "id": "cup03-bloom",
@@ -1366,7 +1372,8 @@
       "script": "scripts/prepare-cup03.py",
       "reproducibility": "Generation non-deterministic; exact prompt, task and saved original retained. Delivery encoding is reproducible.",
       "used_in": "A home 03 final still life (double-walled glass cup). The real Amazonas bag photo (REAL_ASSET amazonas-250g) is composited at runtime by CSS behind the cup; no bag, logo or label was generated.",
-      "not_evidence": "Conceptual scene, not documentation of the Amazonas farm, harvest, processing, roasting or brewing at Artidoro; the cherry-to-bean transformation is a visual metaphor. No generated packaging, logo or factual copy."
+      "not_evidence": "Conceptual scene, not documentation of the Amazonas farm, harvest, processing, roasting or brewing at Artidoro; the cherry-to-bean transformation is a visual metaphor. No generated packaging, logo or factual copy.",
+      "also_used_in_L31": "Renewed PDPs (gallery, «Del cafetal a tu taza» band or cross-sell cards). Conceptual items keep their visible notice there."
     },
     {
       "id": "og-share",
@@ -1395,6 +1402,201 @@
       "used_in": "Open Graph / Twitter link preview in the head of index.html (absolute URL on the GitHub Pages host). Not rendered in the page.",
       "not_evidence": "A page screenshot, not an official brand image; the preview is titled «Demo» so it is not mistaken for the store.",
       "regenerated": "2026-10-01 (L31): same script, so the pack price in the hero reads S/ 310."
+    },
+    {
+      "id": "ahorrador-villa-rica-1kg",
+      "status": "REAL_ASSET",
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "decision": "L31",
+      "source": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KVILLARICA.jpg",
+      "source_page": "https://www.artidororodriguez.com/products/cafe-villa-rica",
+      "retrieved": "2026-10-01",
+      "identified_by": "official file name 1KVILLARICA.jpg (1 kg bag)",
+      "original_file": "audit/source/ahorrador-villa-rica-1kg-original.jpg",
+      "original_size": [
+        1080,
+        1080
+      ],
+      "original_sha256": "25396f9d806371a9721bf38f227c5f81549279fc6b8fe78c665c7e9fbc49a09d",
+      "prepared": [
+        {
+          "file": "public/assets/ahorrador-villa-rica-1kg.webp",
+          "bytes": 51298,
+          "sha256": "9762ffbcf1638076c8562a20f203a36b6f925d67c0034165a9dab58cacaca86a",
+          "dimensions": [
+            410,
+            840
+          ]
+        }
+      ],
+      "script": "scripts/prepare-pdp-assets.py",
+      "preparation": "Same crop [325,140,735,980] as scripts/prepare-ahorrador.py; WebP quality 90. No redrawing, retouching or upscale.",
+      "used_in": "Pack PDP: origin chips, the picture that follows the selection, the five-origin slide and list. Completes the five 1 kg bags (Amazonas, Cajamarca and Puno were already in the repo)."
+    },
+    {
+      "id": "ahorrador-cusco-1kg",
+      "status": "REAL_ASSET",
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "decision": "L31",
+      "source": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/1KCUSCO.jpg",
+      "source_page": "https://www.artidororodriguez.com/products/cafe-cusco",
+      "retrieved": "2026-10-01",
+      "identified_by": "official file name 1KCUSCO.jpg (1 kg bag)",
+      "original_file": "audit/source/ahorrador-cusco-1kg-original.jpg",
+      "original_size": [
+        1080,
+        1080
+      ],
+      "original_sha256": "c6fed5c08eba8994174f84436a7d370b461708a6e92a9eb6d8dcce7bb64c7cf0",
+      "prepared": [
+        {
+          "file": "public/assets/ahorrador-cusco-1kg.webp",
+          "bytes": 51908,
+          "sha256": "37f191a4905da57896f089b671615295ba47702922f8ae9c54f3ea4a8b74fc7b",
+          "dimensions": [
+            410,
+            840
+          ]
+        }
+      ],
+      "script": "scripts/prepare-pdp-assets.py",
+      "preparation": "Same crop [325,140,735,980] as scripts/prepare-ahorrador.py; WebP quality 90. No redrawing, retouching or upscale.",
+      "used_in": "Pack PDP: origin chips, the picture that follows the selection, the five-origin slide and list. Completes the five 1 kg bags (Amazonas, Cajamarca and Puno were already in the repo)."
+    },
+    {
+      "id": "pdp-amazonas-lifestyle",
+      "status": "REAL_ASSET",
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "decision": "L31",
+      "source": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/AMAZONAS.png",
+      "source_page": "https://www.artidororodriguez.com/products/cafe-amazonas",
+      "retrieved": "2026-10-01",
+      "original_file": "audit/source/pdp-amazonas-lifestyle-original.png",
+      "original_size": [
+        1080,
+        1080
+      ],
+      "original_sha256": "8083fe888c49be4c27f6cf7fb04c53bc3f24af4b63c98f45c0372e914c7cadcd",
+      "prepared": [
+        {
+          "file": "public/assets/pdp-amazonas-lifestyle.webp",
+          "bytes": 113002,
+          "sha256": "a1ddb633fa79814124c71667d11e086b65f8127cd14046dd30187ac1084c77fe",
+          "dimensions": [
+            1080,
+            1080
+          ]
+        }
+      ],
+      "script": "scripts/prepare-pdp-assets.py",
+      "preparation": "Resize and WebP encode only.",
+      "used_in": "Amazonas PDP gallery, slide 2.",
+      "uncertainty": "The official gallery does not say where the photo was taken; the demo does not name the place (alt: «con montañas al fondo»)."
+    },
+    {
+      "id": "pdp-amazonas-map",
+      "status": "REAL_ASSET",
+      "prepared_status": "USABLE_WITH_PREPARATION",
+      "decision": "L31",
+      "source": "https://cdn.shopify.com/s/files/1/0718/7395/4035/files/Copia_de_Mapas_ee227914-4e73-4484-9fda-758d740295e5.png",
+      "source_page": "https://www.artidororodriguez.com/products/cafe-amazonas",
+      "retrieved": "2026-10-01",
+      "original_file": "audit/source/pdp-amazonas-map-original.png",
+      "original_size": [
+        2000,
+        2000
+      ],
+      "original_sha256": "6b455a1fa5bca1d15ad09f189ec7647782b5ef7654853f5cd998e1500f35837d",
+      "prepared": [
+        {
+          "file": "public/assets/pdp-amazonas-map.webp",
+          "bytes": 32212,
+          "sha256": "f1948ae73c515612059974845af4607d248904759f44545620fc7e91fc476ef2",
+          "dimensions": [
+            1200,
+            1200
+          ]
+        }
+      ],
+      "script": "scripts/prepare-pdp-assets.py",
+      "preparation": "Palette change only (user: «si puedes mejorar las existentes de la web actual, mejor»): light grey background to cream, the three mint tones to sage, gold and dark gold, by a per-colour lookup that keeps anti-aliasing. Shapes, borders, text and the black «100% en pro de la caficultura peruana» badge are not redrawn; dark pixels keep their original colour.",
+      "used_in": "Amazonas PDP gallery (slide 3) and origin block.",
+      "not_evidence": "An official map in the demo palette, not a new map; no boundary was edited."
+    },
+    {
+      "id": "pdp-beans",
+      "status": "CONCEPTUAL_ASSET",
+      "decision": "L31",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "task_ids": [
+        "task_01M3WBP46DKF7DDXEJHDEY67HM"
+      ],
+      "created": "2026-10-01",
+      "params": "audit/source/pdp-generation.json",
+      "original": [
+        {
+          "file": "audit/source/pdp-beans-original.jpg",
+          "bytes": 2864398,
+          "sha256": "f911e795ad0772663f46857f6957c2be4a39e6a9438a636043579982e83689f7",
+          "dimensions": [
+            2048,
+            2048
+          ]
+        }
+      ],
+      "prepared": [
+        {
+          "file": "public/assets/pdp-beans.webp",
+          "bytes": 87908,
+          "sha256": "e4c8c80531afe9b85954bab342123bff99a6d26da21111ec5af4781b3b7283d9",
+          "dimensions": [
+            1080,
+            1080
+          ]
+        }
+      ],
+      "script": "scripts/prepare-pdp-assets.py",
+      "used_in": "Amazonas and pack PDP galleries, with the visible notice «Imagen conceptual generada para esta demo.»",
+      "not_evidence": "Generated illustration of roasted coffee; not Artidoro coffee, not a product photo."
+    },
+    {
+      "id": "pdp-grinds",
+      "status": "CONCEPTUAL_ASSET",
+      "decision": "L31",
+      "provider": "APIMart",
+      "model": "gemini-3-pro-image-preview",
+      "task_ids": [
+        "task_01M3WBR636FC85F1MNKG3PQM5K",
+        "task_01M3WBP58EER363AMKCTE78KDY (discarded)"
+      ],
+      "created": "2026-10-01",
+      "params": "audit/source/pdp-generation.json",
+      "original": [
+        {
+          "file": "audit/source/pdp-grinds-original.jpg",
+          "bytes": 3617481,
+          "sha256": "09910151c1ff55796742994a579bead404151fefff492943b019ccc6096ebdcb",
+          "dimensions": [
+            2752,
+            1536
+          ]
+        }
+      ],
+      "prepared": [
+        {
+          "file": "public/assets/pdp-grinds.webp",
+          "bytes": 218860,
+          "sha256": "01f8d26314c1427ed68b4bf45ad3e89bee36454b51dcab4d353d0cf638962b6d",
+          "dimensions": [
+            1400,
+            714
+          ]
+        }
+      ],
+      "script": "scripts/prepare-pdp-assets.py",
+      "used_in": "Amazonas and pack PDP galleries, with the visible notice «Imagen conceptual generada para esta demo.»",
+      "not_evidence": "Generated illustration of roasted coffee and grind sizes; not Artidoro coffee, not a product photo."
     }
   ],
   "gaps": [
@@ -1642,6 +1844,54 @@
       "unchanged": "Five origins 250 g S/ 39.90 and 454 g S/ 60.00; Travel Line S/ 260.00; Miel Perfil Frutal 300 g S/ 25.00. Variant ids and availability unchanged (all available).",
       "not_shown": "The official store now also has compare_at prices for El Explorador (S/ 199.50) and Travel Line (S/ 300.00); the demo shows only their prices, as before.",
       "limits": "Static snapshot; the official shop confirms the current price at checkout."
+    },
+    "pdp_2026_10_01": {
+      "decision": "L31",
+      "retrieved": "2026-10-01",
+      "rating": {
+        "source": "https://www.artidororodriguez.com/products/cafe-amazonas",
+        "evidence": "Judge.me badge in the official page HTML: data-average-rating='5.00', data-number-of-reviews='3'; rendered page shows «★★★★★ 3 reseñas».",
+        "used_as": "Amazonas PDP: «5,0 · 3 reseñas en la tienda oficial» next to the price and «5,0 / 3 reseñas» in the reviews block. The texts of the other two reviews were not retrievable (widget loaded by script) and are not shown.",
+        "not_claimed": "No rating for the pack (its product page has no reviews); no review count beyond the badge."
+      },
+      "shipping": {
+        "source": "https://www.artidororodriguez.com/policies/shipping-policy",
+        "quotes": [
+          "Realizamos despachos para Lima Metropolitana y provincias de lunes a viernes de 09:00 AM a 05:00 PM.",
+          "Zona Cercana [...] S/10",
+          "Zona Intermedia [...] S/15",
+          "Zona Lejana [...] S/19",
+          "Provincias vía Shalom u Olva: S/30",
+          "Te notificaremos cuando tu pedido esté en camino por correo electrónico y por WhatsApp si registraste tu número al realizar tu compra.",
+          "Los tiempos de entrega en su domicilio varían según cada operador logístico y su destino."
+        ],
+        "used_as": "«Envío en Lima desde S/ 10 · provincias S/ 30», «Despachamos de lunes a viernes» and the two FAQ answers on cost and timing."
+      },
+      "damaged_orders": {
+        "source": "https://www.artidororodriguez.com/policies/refund-policy",
+        "quotes": [
+          "Por favor, revisa tu pedido en cuanto lo recibas y ponte en contacto con nosotros de inmediato si el artículo está defectuoso, dañado o si recibes un artículo equivocado, para que podamos evaluar el problema y solucionarlo.",
+          "info@artidororodriguez.com"
+        ],
+        "used_as": "«¿Llegó dañado o equivocado? Escríbenos y lo revisamos para solucionarlo.» and the FAQ answer.",
+        "not_claimed": "No «devolución en 15 días»: the same policy excludes perishable goods such as food."
+      },
+      "faq": {
+        "source": "https://www.artidororodriguez.com/pages/preguntas-frecuentes",
+        "quotes": [
+          "Calculando unos 15 g de café por taza:",
+          "Bolsa de 250 g: unas 16 tazas.",
+          "Bolsa de 454 g: unas 30 tazas.",
+          "Bolsa de 1 kg: unas 65 tazas.",
+          "Guárdalo en su bolsa bien cerrada o en un envase hermético, en un lugar fresco, seco y sin luz directa. Evita la refrigeradora: la humedad y los olores afectan su sabor.",
+          "Compramos directo a familias caficultoras peruanas, sin intermediarios."
+        ],
+        "used_as": "Cups per size in the Amazonas PDP; «3 bolsas de 1 kg · unas 195 tazas» (3 × 65, derived) in the pack; storage answer; step 01 of «Del cafetal a tu taza» and the pack trust line «Precio justo al caficultor»."
+      },
+      "description": {
+        "source": "https://www.artidororodriguez.com/products/cafe-amazonas",
+        "used_as": "Origin block lead: a shortened wording of the official first paragraph (nororiente peruano, cordillera y selva, Caturra, Típica y Catimor, 1.700–1.900 m), marked «Descripción y datos de la ficha oficial de Amazonas»."
+      }
     }
   },
   "ai_generated_assets": [

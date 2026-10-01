@@ -1,0 +1,41 @@
+{
+ "decision": "L31",
+ "provider": "APIMart",
+ "model": "gemini-3-pro-image-preview",
+ "created": "2026-10-01",
+ "approval": "«si puedes usar imagenes conceptuales de la home dentro de la PDP, traer fotos oficiales y TAMBIEN PUEDES GENERAR CON IA con tal de mejorar la propuesta actual»",
+ "rules": "No bag, logo, label, text or people generated; the bag that appears next to generated imagery is the real product photo composited by CSS.",
+ "tasks": {
+  "beans": {
+   "task_id": "task_01M3WBP46DKF7DDXEJHDEY67HM",
+   "prompt": "Extreme close-up macro photograph of freshly roasted medium-roast specialty coffee beans filling the whole frame. Rich chestnut-brown beans with a subtle natural sheen, the centre crease clearly visible, a few beans in razor-sharp focus in the middle and the rest falling into soft shallow depth of field. Warm low side light from the left, deep shadows that fall into a very dark forest-green tone (#102e25) at the edges. Editorial food photography, natural colour, fine detail. No text, no packaging, no bag, no logos, no people, no props.",
+   "size": "1:1",
+   "resolution": "2K",
+   "estimated_usd": 0.03,
+   "actual_usd": 0.03
+  },
+  "grinds_discarded": {
+   "task_id": "task_01M3WBP58EER363AMKCTE78KDY",
+   "prompt": "Overhead editorial photograph on a dark walnut wooden board: four small, neat, evenly spaced mounds in one horizontal row, left to right: whole medium-roast coffee beans, coarse ground coffee (like sea salt), medium ground coffee (like sand), fine ground coffee (like powdered sugar). Each mound the same size, clearly different textures, generous negative space around them, soft warm daylight from the top left, subtle grain, deep forest-green (#102e25) and warm brown palette. Realistic, natural colour, sharp detail. No text, no labels, no numbers, no packaging, no bag, no logos, no utensils, no people.",
+   "size": "16:9",
+   "resolution": "2K",
+   "estimated_usd": 0.03,
+   "actual_usd": 0.03,
+   "discarded": "The coarse mound showed white crystals (the prompt compared it to sea salt); regenerated with a prompt that excludes white grains."
+  },
+  "grinds": {
+   "task_id": "task_01M3WBR636FC85F1MNKG3PQM5K",
+   "prompt": "Overhead editorial photograph on a dark walnut wooden board: four small, neat, evenly spaced mounds of coffee in one horizontal row, left to right: whole medium-roast coffee beans; coarsely ground coffee with large brown particles; medium ground coffee with an even sandy brown texture; finely ground coffee, soft brown powder. Everything is coffee and only brown tones: no white grains, no salt, no sugar. Each mound the same size, clearly different textures, generous negative space, soft warm daylight from the top left, deep forest-green (#102e25) and warm brown palette at the edges. Realistic, natural colour, sharp detail. No text, no labels, no numbers, no packaging, no bag, no logos, no utensils, no people.",
+   "size": "16:9",
+   "resolution": "2K",
+   "estimated_usd": 0.03,
+   "actual_usd": 0.03,
+   "crop": [
+    150,
+    130,
+    2600,
+    1380
+   ]
+  }
+ }
+}
