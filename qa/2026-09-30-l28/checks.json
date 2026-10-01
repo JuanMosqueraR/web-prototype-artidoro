@@ -51,23 +51,26 @@
    "detail": null
   },
   {
-   "name": "desktop hero media path is video",
+   "name": "desktop hero media path is the video",
    "passed": true,
    "detail": "video"
   },
   {
-   "name": "desktop hero loads only its own video",
+   "name": "desktop hero loads only its own video and no image sequence",
    "passed": true,
    "detail": [
-    "http://127.0.0.1:4192/assets/hero-desktop.mp4"
+    [
+     "http://127.0.0.1:4192/assets/hero-desktop.mp4"
+    ],
+    0
    ]
   },
   {
    "name": "desktop video follows the scroll (mid ~5 s, end ~9.9 s)",
    "passed": true,
    "detail": [
-    4.947273,
-    9.92963
+    4.968025,
+    9.958858
    ]
   },
   {
@@ -103,11 +106,6 @@
     ],
     "title": true
    }
-  },
-  {
-   "name": "desktop 03 fast flick settles on step 3",
-   "passed": true,
-   "detail": null
   },
   {
    "name": "desktop header solid after the hero",
@@ -202,32 +200,26 @@
    "detail": null
   },
   {
-   "name": "mobile hero media path is sequence",
+   "name": "mobile hero media path is the video",
    "passed": true,
-   "detail": "sequence"
+   "detail": "video"
   },
   {
-   "name": "mobile mobile uses the image sequence only (60 frames, no MP4)",
+   "name": "mobile hero loads only its own video and no image sequence",
    "passed": true,
    "detail": [
-    60,
-    []
+    [
+     "http://127.0.0.1:4192/assets/hero-mobile.mp4"
+    ],
+    0
    ]
   },
   {
-   "name": "mobile sequence repaints with the scroll (different pixels mid vs end, not empty)",
+   "name": "mobile video follows the scroll (mid ~5 s, end ~9.9 s)",
    "passed": true,
    "detail": [
-    [
-     111,
-     112,
-     96
-    ],
-    [
-     42,
-     58,
-     43
-    ]
+    4.968025,
+    9.958858
    ]
   },
   {
@@ -265,9 +257,30 @@
    }
   },
   {
-   "name": "mobile 03 fast flick settles on step 3",
+   "name": "mobile 03 at 0.95 screens/s (802 px/s): all steps shown and the final frame complete >= 1200 ms before the scene leaves",
    "passed": true,
-   "detail": null
+   "detail": [
+    802,
+    1497,
+    [
+     "1",
+     "2",
+     "3"
+    ]
+   ]
+  },
+  {
+   "name": "mobile 03 at 1.18 screens/s (996 px/s): all steps shown and the final frame complete >= 800 ms before the scene leaves",
+   "passed": true,
+   "detail": [
+    996,
+    949,
+    [
+     "1",
+     "2",
+     "3"
+    ]
+   ]
   },
   {
    "name": "mobile header solid after the hero",
@@ -371,32 +384,26 @@
    "detail": null
   },
   {
-   "name": "mobile664 hero media path is sequence",
+   "name": "mobile664 hero media path is the video",
    "passed": true,
-   "detail": "sequence"
+   "detail": "video"
   },
   {
-   "name": "mobile664 mobile uses the image sequence only (60 frames, no MP4)",
+   "name": "mobile664 hero loads only its own video and no image sequence",
    "passed": true,
    "detail": [
-    60,
-    []
+    [
+     "http://127.0.0.1:4192/assets/hero-mobile.mp4"
+    ],
+    0
    ]
   },
   {
-   "name": "mobile664 sequence repaints with the scroll (different pixels mid vs end, not empty)",
+   "name": "mobile664 video follows the scroll (mid ~5 s, end ~9.9 s)",
    "passed": true,
    "detail": [
-    [
-     105,
-     107,
-     97
-    ],
-    [
-     42,
-     58,
-     43
-    ]
+    4.968011,
+    9.958858
    ]
   },
   {
@@ -434,9 +441,30 @@
    }
   },
   {
-   "name": "mobile664 03 fast flick settles on step 3",
+   "name": "mobile664 03 at 0.95 screens/s (631 px/s): all steps shown and the final frame complete >= 1200 ms before the scene leaves",
    "passed": true,
-   "detail": null
+   "detail": [
+    631,
+    1448,
+    [
+     "1",
+     "2",
+     "3"
+    ]
+   ]
+  },
+  {
+   "name": "mobile664 03 at 1.18 screens/s (784 px/s): all steps shown and the final frame complete >= 800 ms before the scene leaves",
+   "passed": true,
+   "detail": [
+    784,
+    898,
+    [
+     "1",
+     "2",
+     "3"
+    ]
+   ]
   },
   {
    "name": "mobile664 header solid after the hero",
@@ -540,23 +568,26 @@
    "detail": null
   },
   {
-   "name": "tablet hero media path is video",
+   "name": "tablet hero media path is the video",
    "passed": true,
    "detail": "video"
   },
   {
-   "name": "tablet hero loads only its own video",
+   "name": "tablet hero loads only its own video and no image sequence",
    "passed": true,
    "detail": [
-    "http://127.0.0.1:4192/assets/hero-desktop.mp4"
+    [
+     "http://127.0.0.1:4192/assets/hero-desktop.mp4"
+    ],
+    0
    ]
   },
   {
    "name": "tablet video follows the scroll (mid ~5 s, end ~9.9 s)",
    "passed": true,
    "detail": [
-    4.962322,
-    9.929632
+    4.97072,
+    9.958871
    ]
   },
   {
@@ -592,11 +623,6 @@
     ],
     "title": true
    }
-  },
-  {
-   "name": "tablet 03 fast flick settles on step 3",
-   "passed": true,
-   "detail": null
   },
   {
    "name": "tablet header solid after the hero",
@@ -798,7 +824,7 @@
    "name": "desktop inertia: wheel glides to its target",
    "passed": true,
    "detail": [
-    3216,
+    3270,
     3600
    ]
   },
@@ -811,6 +837,79 @@
    "name": "desktop reduced motion: wheel is native (no glide)",
    "passed": true,
    "detail": 3600
+  },
+  {
+   "name": "toolbars hidden (--bars 110 px): stage is 110 px taller and the pack stays inside the small viewport",
+   "passed": true,
+   "detail": {
+    "stage": 774,
+    "packBottom": 648,
+    "small": 664
+   }
+  },
+  {
+   "name": "02 carousel: horizontal swipe changes the origin",
+   "passed": true,
+   "detail": "cajamarca"
+  },
+  {
+   "name": "02 carousel: a short fast flick (34 px / 50 ms) changes the origin",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "02 carousel: a 90 px swipe cancelled by the OS as the finger lifts still counts",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "name": "video blocked (AVIF): sequence takes over, loads 121 avif frames and repaints with the scroll",
+   "passed": true,
+   "detail": [
+    "sequence hero hero-peru has-seq",
+    121,
+    [
+     [
+      110,
+      111,
+      95
+     ],
+     [
+      43,
+      57,
+      40
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "video blocked (WebP (no AVIF either)): sequence takes over, loads 61 webp frames and repaints with the scroll",
+   "passed": true,
+   "detail": [
+    "sequence hero hero-peru has-seq",
+    182,
+    [
+     [
+      111,
+      111,
+      95
+     ],
+     [
+      40,
+      57,
+      42
+     ]
+    ]
+   ]
+  },
+  {
+   "name": "share tags: demo-marked title, absolute 1200x630 JPEG image that exists, large-image card",
+   "passed": true,
+   "detail": [
+    "Demo · Artidoro Rodríguez — Café peruano de especialidad",
+    "https://juanmosquerar.github.io/web-prototype-artidoro/assets/og-share.jpg",
+    true
+   ]
   },
   {
    "name": "hero CTA opens the Amazonas PDP",

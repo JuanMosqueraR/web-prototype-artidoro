@@ -56,43 +56,57 @@ with sync_playwright() as p:
         check(f'{name} hero CTA, trust and pack inside the first viewport', first['pack']['bottom'] <= h and first['buy']['top'] > 0, first)
         check(f'{name} header transparent over the hero', pg.evaluate("document.documentElement.classList.contains('nav-over-hero')"))
         check(f'{name} no horizontal overflow at the top', pg.evaluate('document.documentElement.scrollWidth - innerWidth') == 0)
-        want = 'sequence' if mob else 'video'
         try:
-            pg.wait_for_function(f"document.querySelector('#direction-a').dataset.media === '{want}' && document.querySelector('#direction-a').classList.contains('{'has-seq' if mob else 'has-video'}')", timeout=20000); ok = True
+            pg.wait_for_function("document.querySelector('#direction-a').dataset.media === 'video' && document.querySelector('#direction-a').classList.contains('has-video')", timeout=20000); ok = True
         except Exception:
             ok = False
-        check(f'{name} hero media path is {want}', ok, pg.evaluate("document.querySelector('#direction-a').dataset.media"))
+        check(f'{name} hero media path is the video', ok, pg.evaluate("document.querySelector('#direction-a').dataset.media"))
         seq = [u for u in media if 'hero-seq' in u]
         mp4 = [u for u in media if u.endswith('.mp4')]
-        if mob:
-            check(f'{name} mobile uses the image sequence only (60 frames, no MP4)', not mp4 and len(seq) == 60, [len(seq), mp4])
-        else:
-            check(f'{name} hero loads only its own video', mp4 and all(u.endswith('hero-desktop.mp4') for u in mp4) and not seq, mp4)
+        expected = 'hero-mobile.mp4' if mob else 'hero-desktop.mp4'
+        check(f'{name} hero loads only its own video and no image sequence', mp4 and all(u.endswith(expected) for u in mp4) and not seq, [mp4, len(seq)])
         pg.wait_for_timeout(800)
         pg.screenshot(path=str(CAP / f'{name}-hero-0.png'))
         marks = []
         for i, f in enumerate([.5, 1.0]):
             scene_scroll(pg, '#direction-a', f); pg.wait_for_timeout(1600)
-            marks.append(pg.evaluate("document.querySelector('.hs-video').currentTime") if not mob else pg.evaluate("(() => { const c = document.querySelector('.hs-seq'); const d = c.getContext('2d').getImageData(c.width / 2, c.height / 3, 1, 1).data; return [...d].slice(0, 3); })()"))
+            marks.append(pg.evaluate("document.querySelector('.hs-video').currentTime"))
             pg.screenshot(path=str(CAP / f'{name}-hero-{i + 1}.png'))
-        if mob:
-            check(f'{name} sequence repaints with the scroll (different pixels mid vs end, not empty)', marks[0] != marks[1] and sum(marks[1]) > 0, marks)
-        else:
-            check(f'{name} video follows the scroll (mid ~5 s, end ~9.9 s)', 4.2 < marks[0] < 5.8 and marks[1] > 9.6, marks)
+        check(f'{name} video follows the scroll (mid ~5 s, end ~9.9 s)', 4.2 < marks[0] < 5.8 and marks[1] > 9.6, marks)
         state = pg.evaluate("(() => { const s = getComputedStyle(document.querySelector('#direction-a')); return {s3: +s.getPropertyValue('--s3'), bag: +s.getPropertyValue('--bag'), step: document.querySelector('#direction-a').dataset.step}; })()")
         check(f'{name} hero ends on step 3 with the bag in place', state['step'] == '3' and state['s3'] > .99 and state['bag'] > .99, state)
         # 03
         steps = []
-        for i, f in enumerate([.1, .3, .5, .9]):
-            scene_scroll(pg, '#sensory-scene', f); pg.wait_for_timeout(1700)
+        for i, f in enumerate([.07, .2, .38, .9]):
+            scene_scroll(pg, '#sensory-scene', f); pg.wait_for_timeout(2700)
             steps.append(pg.evaluate("document.querySelector('#sensory-scene').dataset.step"))
             pg.screenshot(path=str(CAP / f'{name}-cup-{i}.png'))
         check(f'{name} 03 steps 1 → 2 → 2 → 3', steps == ['1', '2', '2', '3'], steps)
         final = pg.evaluate("(() => { const bag = document.querySelector('.cs-bag'); const t = document.querySelector('#cup-title').getBoundingClientRect(); return {bag: +getComputedStyle(bag).opacity, loaded: bag.complete && bag.naturalWidth > 0, frames: [...document.querySelectorAll('.cs-frame img')].map(i => i.complete && i.naturalWidth > 0), title: t.top >= 0 && t.bottom <= innerHeight}; })()")
         check(f'{name} 03 final: frames decoded, bag shown, title on screen', final['bag'] > .95 and final['loaded'] and all(final['frames']) and final['title'], final)
         # Fast flick: a big jump still lands on a settled step, never a half transition, after the fixed-time transition.
-        scene_scroll(pg, '#sensory-scene', 0); pg.wait_for_timeout(600); scene_scroll(pg, '#sensory-scene', .95); pg.wait_for_timeout(1800)
-        check(f'{name} 03 fast flick settles on step 3', pg.evaluate("document.querySelector('#sensory-scene').dataset.step") == '3')
+        # Scrolling through 03 at human speeds: the final frame must be complete while the scene is still on screen.
+        # Regression for the bug where a queue of per-frame holds showed it only after the scene had left (~1000 px/s).
+        if mob:
+            for factor, need in [(.95, 1200), (1.18, 800)]:
+                speed = round(factor * h)   # speed in screen heights per second, so it scales with the viewport
+                pg.goto(URL + '/'); pg.wait_for_timeout(2000)
+                meta = pg.evaluate("""() => { const s = document.querySelector('#sensory-scene'); window.__log = [];
+                  window.__iv = setInterval(() => { const c = document.querySelector('#sensory-scene'), r = c.getBoundingClientRect(); window.__log.push({t: performance.now(), step: c.dataset.step, fin: +getComputedStyle(document.querySelector('.cs-final')).opacity, bag: +getComputedStyle(document.querySelector('.cs-bag')).opacity, bottom: r.bottom}); }, 50);
+                  return {top: s.getBoundingClientRect().top + scrollY - 64, range: s.offsetHeight - s.firstElementChild.offsetHeight}; }""")
+                pg.evaluate(f"scrollTo(0, {meta['top']} - 780)"); pg.wait_for_timeout(500)
+                import time
+                t0 = time.time(); y = meta['top'] - 780
+                while y < meta['top'] + meta['range'] + 900:
+                    y = meta['top'] - 780 + (time.time() - t0) * speed; pg.evaluate(f"scrollTo(0, {y})"); pg.wait_for_timeout(16)
+                pg.wait_for_timeout(400)
+                log = pg.evaluate("(() => { clearInterval(window.__iv); return window.__log; })()")
+                full = next((e for e in log if e['fin'] > .95 and e['bag'] > .95), None); gone = next((e for e in log if e['bottom'] < 220), None)
+                shown = round(gone['t'] - full['t']) if full and gone else None
+                seen_steps = {e['step'] for e in log}
+                check(f'{name} 03 at {factor} screens/s ({speed} px/s): all steps shown and the final frame complete >= {need} ms before the scene leaves', {'1', '2', '3'} <= seen_steps and shown is not None and shown >= need, [speed, shown, sorted(seen_steps)])
+            pg.goto(URL + '/'); pg.wait_for_timeout(1500)
+            scene_scroll(pg, '#sensory-scene', 1); pg.wait_for_timeout(2500)
         check(f'{name} header solid after the hero', not pg.evaluate("document.documentElement.classList.contains('nav-over-hero')"))
         # Bands
         pg.evaluate("document.querySelector('.grinds').scrollIntoView({block: 'center'})"); pg.wait_for_timeout(1300)
@@ -150,6 +164,60 @@ with sync_playwright() as p:
     pg.evaluate("scrollTo(0, 3000)"); pg.mouse.move(700, 450); pg.mouse.wheel(0, 600); pg.wait_for_timeout(60)
     check('desktop reduced motion: wheel is native (no glide)', abs(pg.evaluate('scrollY') - 3600) <= 2, pg.evaluate('scrollY'))
     ctx.close()
+
+    # --- Mobile browser toolbars: media stage uses the tall viewport, content stays in the small one ---------------
+    ctx = b.new_context(viewport={'width': 390, 'height': 664}, device_scale_factor=1, is_mobile=True, has_touch=True); pg = ctx.new_page(); goto(pg)
+    pg.wait_for_timeout(1500)
+    pg.evaluate("document.documentElement.style.setProperty('--bars', '110px')"); pg.wait_for_timeout(300)
+    geo = pg.evaluate("(() => { const st = document.querySelector('.hs-stage').getBoundingClientRect(), pk = document.querySelector('.hero-pack-entry').getBoundingClientRect(); return {stage: Math.round(st.height), packBottom: Math.round(pk.bottom), small: innerHeight}; })()")
+    check('toolbars hidden (--bars 110 px): stage is 110 px taller and the pack stays inside the small viewport', geo['stage'] == 664 + 110 and geo['packBottom'] <= geo['small'], geo)
+    ctx.close()
+    # --- 02 carousel swipe (touch) ------------------------------------------------------------------------------------
+    ctx = b.new_context(viewport={'width': 390, 'height': 844}, device_scale_factor=1, is_mobile=True, has_touch=True); pg = ctx.new_page(); goto(pg); pg.wait_for_timeout(1500)
+    pg.evaluate("document.querySelector('#origin-scene').scrollIntoView()"); pg.wait_for_timeout(600)
+    cdp = ctx.new_cdp_session(pg)
+    cx, cy = pg.evaluate("(() => { const r = document.querySelector('.origin-stage').getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; })()")
+    def touch(t, px, py): cdp.send('Input.dispatchTouchEvent', {'type': t, 'touchPoints': ([{'x': px, 'y': py}] if t not in ('touchEnd', 'touchCancel') else [])})
+    before = pg.evaluate("document.querySelector('#origin-scene').dataset.origin")
+    touch('touchStart', cx + 90, cy)
+    for i in range(1, 10): touch('touchMove', cx + 90 - i * 20, cy + (i % 3)); pg.wait_for_timeout(16)
+    touch('touchEnd', 0, 0); pg.wait_for_timeout(1400)
+    check('02 carousel: horizontal swipe changes the origin', before == 'amazonas' and pg.evaluate("document.querySelector('#origin-scene').dataset.origin") == 'cajamarca', pg.evaluate("document.querySelector('#origin-scene').dataset.origin"))
+    # A short fast flick (34 px in 50 ms) back to the right, and a swipe the OS cancels as the finger lifts (iOS does this).
+    def swipe(dx, dur, end):
+        touch('touchStart', cx - dx / 2, cy)
+        n = max(3, round(dur / 16))
+        for i in range(1, n + 1): touch('touchMove', cx - dx / 2 + dx * i / n, cy + (i % 3)); pg.wait_for_timeout(dur / n)
+        touch(end, 0, 0); pg.wait_for_timeout(1000)
+        return pg.evaluate("document.querySelector('#origin-scene').dataset.origin")
+    check('02 carousel: a short fast flick (34 px / 50 ms) changes the origin', swipe(34, 50, 'touchEnd') == 'amazonas')
+    check('02 carousel: a 90 px swipe cancelled by the OS as the finger lifts still counts', swipe(-90, 150, 'touchCancel') == 'cajamarca')
+    ctx.close()
+    # --- Video not usable (blocked): the same shot is drawn from the image sequence -------------------------------------
+    for label, blocked, want_ext, want_n in [('AVIF', ['**/*.mp4'], 'avif', 121), ('WebP (no AVIF either)', ['**/*.mp4', '**/*.avif'], 'webp', 61)]:
+        ctx = b.new_context(viewport={'width': 390, 'height': 844}, device_scale_factor=1, is_mobile=True, has_touch=True)
+        for pattern in blocked:
+            ctx.route(pattern, lambda route: route.abort())
+        pg = ctx.new_page(); sq = []
+        pg.on('request', lambda r: sq.append(r.url) if 'hero-seq' in r.url and r.url.endswith(('.avif', '.webp')) else None)
+        goto(pg); pg.wait_for_timeout(8000)
+        mid = []
+        for f in [.5, 1.0]:
+            scene_scroll(pg, '#direction-a', f); pg.wait_for_timeout(1500)
+            mid.append(pg.evaluate("(() => { const c = document.querySelector('.hs-seq'); const d = c.getContext('2d').getImageData(c.width / 2, c.height / 3, 1, 1).data; return [...d].slice(0, 3); })()"))
+        media_state = pg.evaluate("document.querySelector('#direction-a').dataset.media + ' ' + document.querySelector('#direction-a').className")
+        check(f'video blocked ({label}): sequence takes over, loads {want_n} {want_ext} frames and repaints with the scroll',
+              'sequence' in media_state and 'has-seq' in media_state and len({u for u in sq if u.endswith('.' + want_ext)}) == want_n and mid[0] != mid[1] and sum(mid[1]) > 0, [media_state, len(sq), mid])
+        ctx.close()
+
+    # --- Link-preview tags (Open Graph / Twitter) and the share image ------------------------------------------------------
+    pg = b.new_page(viewport={'width': 1440, 'height': 900}); goto(pg)
+    og = pg.evaluate("Object.fromEntries([...document.querySelectorAll('meta[property^=\"og:\"], meta[name^=\"twitter:\"]')].map(m => [m.getAttribute('property') || m.name, m.content]))")
+    img_ok = pg.evaluate("fetch((document.querySelector('meta[property=\"og:image\"]').content).replace(/^https:\/\/[^/]+\/[^/]+\//, '/')).then(r => r.ok && r.headers.get('content-type').includes('image/jpeg'))")
+    check('share tags: demo-marked title, absolute 1200x630 JPEG image that exists, large-image card',
+          og.get('og:title', '').startswith('Demo') and og.get('og:image', '').startswith('https://') and og.get('og:image', '').endswith('/assets/og-share.jpg')
+          and og.get('og:image:width') == '1200' and og.get('og:image:height') == '630' and og.get('twitter:card') == 'summary_large_image' and img_ok, [og.get('og:title'), og.get('og:image'), img_ok])
+    pg.close()
 
     # --- PDP entries from the hero -----------------------------------------------------------------------
     ctx = b.new_context(viewport={'width': 1440, 'height': 900}, device_scale_factor=1); pg = ctx.new_page(); errs = []
