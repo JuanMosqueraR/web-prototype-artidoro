@@ -16,18 +16,18 @@ const packForm = pack.querySelector('form');
 const pages = { [route]: product, '#producto-ahorrador': pack };
 const homeTitle = document.title;
 // Native lazy loading can fetch 05 while the visitor is still at the hero.
-// Prepare catalog photos only as their section approaches the viewport.
-const catalog = document.querySelector('#shop');
+// Prepare catalog photos only as their section approaches the viewport. The closing bands are watched too:
+// an anchor jump (header «Cafeterías») can land past the shop without the shop ever intersecting.
 function loadCatalog() {
-  document.querySelectorAll('#shop [data-catalog-src], #close-bands [data-catalog-src]').forEach(img => { img.src = img.dataset.catalogSrc; });
+  document.querySelectorAll('#shop [data-catalog-src], .close-bands [data-catalog-src]').forEach(img => { img.src = img.dataset.catalogSrc; });
 }
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver(entries => {
-    if (!entries[0].isIntersecting || root.dataset.direction !== 'a') return;
+    if (!entries.some(entry => entry.isIntersecting) || root.dataset.direction !== 'a') return;
     loadCatalog();
     observer.disconnect();
   }, {rootMargin: '600px 0px'});
-  observer.observe(catalog);
+  document.querySelectorAll('#shop, .close-bands').forEach(section => observer.observe(section));
 } else loadCatalog();
 const sizeLabels = { '250g': '250 g', '454gr': '454 g', '1kg': '1 kg' };
 let opener = null;
