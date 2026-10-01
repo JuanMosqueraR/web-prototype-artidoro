@@ -1,3 +1,13 @@
+# Precios al día — 1 de octubre de 2026 (L31)
+
+| Ruta | Contenido |
+|---|---|
+| `audit/source/prices-2026-10-01.json` | Snapshot de `/products/<handle>.js` de los nueve productos con precio en la home y las PDP |
+| `scripts/prepare-prices.py` | Reescribe `src/amazonas-variants.json` y `src/ahorrador-variants.json` desde ese snapshot, sin red |
+| `qa/2026-10-01-precios/` | `verify.py`, `checks.json` (15/15) y capturas: cada precio mostrado frente al snapshot; sin precios anteriores en el documento |
+
+Precios fijos en `index.html` (hero, 02, 05, PDP del pack) corregidos a mano contra el snapshot; `public/assets/og-share.jpg` regenerado con `scripts/prepare-og-image.py`. Regresión completa de `qa/2026-10-01-orden/verify.py` ejecutada en una copia fuera del repo: 154/154.
+
 # Revisión de la home — 1 de octubre de 2026 (L29)
 
 | Ruta | Contenido |

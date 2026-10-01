@@ -1,3 +1,7 @@
+# Precios — 1 de octubre de 2026 (L31)
+
+Los precios de la demo se actualizan al snapshot oficial del 1 de octubre (`audit/source/prices-2026-10-01.json`; registro `verified_copy.prices_2026_10_01`): El Ahorrador S/ 310 (precio normal S/ 330, ahorro S/ 20), Amazonas 1 kg S/ 110, El Explorador S/ 185. Es un snapshot: la tienda confirma el precio vigente al pagar. `og-share.jpg` se regeneró con el mismo script porque mostraba el precio anterior del pack.
+
 # Copy de las cafeterías — 1 de octubre de 2026 (L29)
 
 La 04 muestra ahora Tarata y La Mar con dirección, horario y enlace «Cómo llegar» copiados de la [página oficial de locales](https://www.artidororodriguez.com/pages/locales) el 1 de octubre de 2026 (extracto literal en `audit/source/locales-2026-10-01.txt`; registro en `audit/assets.json`, `verified_copy.cafes_2026_10_01`). Es un snapshot: los horarios pueden cambiar en la tienda. No hay fotografías de La Mar en el repo; las dos fotos de la sección son de Tarata (referencia, autoría por confirmar), y el aviso visible lo dice. Ningún asset nuevo ni cambio de clasificación.
