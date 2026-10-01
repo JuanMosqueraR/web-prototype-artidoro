@@ -1,3 +1,8 @@
+# Medios de pago y video en las PDP — 1 de octubre de 2026 (L31)
+
+- **Iconos de pago (`REAL_ASSET`):** los cuatro que la tienda publica en su pie (Visa, Mastercard, American Express, Diners Club), copiados tal cual de su HTML. No se muestran otros métodos porque la tienda no los lista.
+- **Clip del hero en la galería:** el mismo `hero-desktop.mp4` (`CONCEPTUAL_ASSET`), con su aviso; no es un activo nuevo.
+
 # Imágenes de las PDP — 1 de octubre de 2026 (L31)
 
 - **Oficiales (`REAL_ASSET`):** foto de la bolsa de Amazonas en la mano frente a montañas (la tienda no dice dónde se tomó y la demo no lo nombra); mapa de origen de Amazonas, con solo el fondo y los tonos menta pasados a la paleta de la demo (formas, texto y sello negro sin redibujar); bolsas de 1 kg de Villa Rica y Cusco (`1KVILLARICA.jpg`, `1KCUSCO.jpg`), con el mismo recorte que las otras tres.

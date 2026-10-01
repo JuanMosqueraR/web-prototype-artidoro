@@ -6,7 +6,7 @@ Precios corregidos al snapshot oficial del 1 de octubre (`3ce15fc`, QA `13f451f`
 
 ## Actualización del 1 de octubre de 2026 (L29)
 
-**Estado recuperable:** `master` va 13 commits por delante de `origin/master` (`cf45646`, L29 publicada en Pages); L30 y L31 (precios al día, PDP renovadas y el pack en la decisión de Amazonas) aún no están publicadas. Árbol limpio salvo los cambios ajenos de siempre (`tools/apimart/*`, `reference/`, el PDF CRO, `.mcp.json`).
+**Estado recuperable:** `master` va 18 commits por delante de `origin/master` (`cf45646`, L29 publicada en Pages); L30 y L31 (precios al día, PDP renovadas, el pack en la decisión de Amazonas, medios de pago, clip en la galería y atajo del pack) aún no están publicadas. Árbol limpio salvo los cambios ajenos de siempre (`tools/apimart/*`, `reference/`, el PDF CRO, `.mcp.json`).
 
 | Commit | Contenido |
 |---|---|

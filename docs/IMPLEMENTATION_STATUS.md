@@ -6,6 +6,9 @@
 | `src/pdp.js` | Galería (scroll-snap, flechas, miniaturas, contador), zoom a pantalla completa (`<dialog>` por galería) y aparición del botón fijo; variantes, precios y rutas siguen en `src/catalog.js`. `src/inertia.js` deja la rueda a la foto ampliada (`.lb-open`) |
 | `scripts/prepare-pdp-assets.py` | Prepara desde `audit/source/`: mapa oficial con la paleta de la demo, foto oficial en la montaña, bolsas de 1 kg de Villa Rica y Cusco, y las dos imágenes generadas |
 | `audit/source/pdp-*-original.*`, `audit/source/ahorrador-{villa-rica,cusco}-1kg-original.jpg`, `audit/source/pdp-generation.json` | Originales oficiales y generados; registro de generación con prompts, costes y el descarte |
+| `qa/2026-10-01-pdp-extras/` | Medios de pago, clip del hero en la galería y atajo del pack; `checks.json` (25/25). Sustituye los recuentos de fotos de `qa/2026-10-01-pdp/` (ahora 7 en Amazonas y 5 en el pack) |
+| `public/assets/pay-*.svg`, `audit/source/payment-methods-2026-10-01.html` | Iconos de pago copiados del pie oficial (Visa, Mastercard, American Express, Diners Club) |
+| `docs/SHOPIFY_MIGRATION.md` | Mapa de migración de la demo a Shopify: secciones, datos, apps, qué edita el equipo y qué necesita desarrollo |
 | `qa/2026-10-01-pdp-pack/` | El Ahorrador como cuarta opción de tamaño en Amazonas, la línea de 1 kg y la sección inferior de descubrimiento; `checks.json` (20/20) |
 | `qa/2026-10-01-pdp-ajustes/` | Ajustes tras la prueba en iPhone: título sin recuadro de foco y margen del carrusel mobile; `checks.json` (4/4) |
 | `qa/2026-10-01-pdp/` | `verify.py`, `checks.json` (50/50) y capturas de las dos PDP, con el zoom |
@@ -47,7 +50,7 @@ Cambios en `index.html`, `src/home.css`, `src/catalog.css`, `src/catalog.js` (P4
 | `audit/source/hero-generation.json`, `hero-*`, `cup03-*` | Registro de las 18 tareas (15 adoptadas, 3 descartadas; US$ 1,76), prompts y parámetros sin URLs firmadas; originales de imágenes y clips |
 | `qa/2026-09-30-l28/` | `verify.py`, `checks.json` (107/107), capturas y README con condiciones y rendimiento de laboratorio |
 
-Estado de publicación (1 de octubre, tras L29): `master` va 13 commits por delante de `origin/master` (`cf45646`, L29 publicada en Pages); L30 y L31 (precios al día, PDP renovadas y el pack en la decisión de Amazonas) aún no están publicadas. Build de verificación con la Vite 7.1.3 del repo y Node 22.23.1 aislado. Los assets de la 03 anterior (`scene03-*`) siguen en `public/assets/` sin uso.
+Estado de publicación (1 de octubre, tras L29): `master` va 18 commits por delante de `origin/master` (`cf45646`, L29 publicada en Pages); L30 y L31 (precios al día, PDP renovadas, el pack en la decisión de Amazonas, medios de pago, clip en la galería y atajo del pack) aún no están publicadas. Build de verificación con la Vite 7.1.3 del repo y Node 22.23.1 aislado. Los assets de la 03 anterior (`scene03-*`) siguen en `public/assets/` sin uso.
 
 ---
 
