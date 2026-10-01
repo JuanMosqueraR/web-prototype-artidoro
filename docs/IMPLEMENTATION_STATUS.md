@@ -3,9 +3,10 @@
 | Ruta | Contenido |
 |---|---|
 | `qa/2026-10-01-revision/` | `verify.py` (regresión de L28 adaptada más los controles de esta ronda), `checks.json` (143/143), capturas y README |
+| `qa/2026-10-01-orden/` | P4: la misma verificación más orden de secciones, anclas y carga de fotos de los bloques de cierre; `checks.json` (154/154), capturas y README |
 | `audit/source/locales-2026-10-01.txt` | Extracto literal de la página oficial de locales (direcciones, horarios y enlaces de mapa de Tarata y La Mar) |
 
-Cambios en `index.html`, `src/home.css`, `src/catalog.css`, `src/origin.css`, `src/origin.js`, `src/peru.css` y `src/scenes.js`; sin assets nuevos ni dependencias. Sin commit ni publicación al cierre de esta ronda.
+Cambios en `index.html`, `src/home.css`, `src/catalog.css`, `src/catalog.js` (P4: las fotos de 05 y de los mosaicos también se piden al acercarse a los bloques de cierre), `src/origin.css`, `src/origin.js`, `src/peru.css` y `src/scenes.js`; sin assets nuevos ni dependencias.
 
 # Hero «Del cafetal a tu bolsa», 03 «De la bolsa a tu taza» y mejoras generales — 30 de septiembre de 2026 (L28)
 
@@ -22,7 +23,7 @@ Cambios en `index.html`, `src/home.css`, `src/catalog.css`, `src/origin.css`, `s
 | `audit/source/hero-generation.json`, `hero-*`, `cup03-*` | Registro de las 18 tareas (15 adoptadas, 3 descartadas; US$ 1,76), prompts y parámetros sin URLs firmadas; originales de imágenes y clips |
 | `qa/2026-09-30-l28/` | `verify.py`, `checks.json` (107/107), capturas y README con condiciones y rendimiento de laboratorio |
 
-Estado de publicación (1 de octubre): `master` va 7 commits por delante de `origin/master`; Pages muestra la versión anterior a L28 hasta el próximo push. Build de verificación con la Vite 7.1.3 del repo y Node 22.23.1 aislado. Los assets de la 03 anterior (`scene03-*`) siguen en `public/assets/` sin uso.
+Estado de publicación (1 de octubre, tras L29): `master` va 7 commits por delante de `origin/master` (`f27473b`, L28 publicada en Pages); L29 (`dbd0e59`…) aún no está publicada. Build de verificación con la Vite 7.1.3 del repo y Node 22.23.1 aislado. Los assets de la 03 anterior (`scene03-*`) siguen en `public/assets/` sin uso.
 
 ---
 

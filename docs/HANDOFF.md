@@ -1,8 +1,26 @@
 # Handoff — demo Artidoro
 
+## Actualización del 1 de octubre de 2026 (L29)
+
+**Estado recuperable:** `master` va 7 commits por delante de `origin/master` (`f27473b`, L28 publicada en Pages); L29 (`dbd0e59`…) aún no está publicada. Árbol limpio salvo los cambios ajenos de siempre (`tools/apimart/*`, `reference/`, el PDF CRO, `.mcp.json`).
+
+| Commit | Contenido |
+|---|---|
+| `dbd0e59` | Home: correcciones de la revisión, limpieza de textos, 04 «Nos vemos en Miraflores» con Tarata y La Mar |
+| `ac1ab1d` | Registro de direcciones y horarios oficiales de las dos cafeterías |
+| `6de9b6e` | QA de P1–P3 (143/143) |
+| `f6a2b17` | Docs de L29 (rehecho sin el PDF CRO, que se había incluido por error en un commit local nunca publicado) |
+| `cf13a83` | Nuevo orden de secciones (P4) y carga de fotos de los bloques de cierre |
+| `496a097` | QA de P4 (154/154) |
+| (siguiente) | Docs de P4 y estado de publicación |
+
+**Qué hay y cómo se verificó:** detalle en [HOME_AUDIT_2026_09_30.md](HOME_AUDIT_2026_09_30.md#l29). El usuario probó P1–P3 y P4 en su iPhone («todo ok»); QA en Chromium en `qa/2026-10-01-revision/` y `qa/2026-10-01-orden/`. Sin Safari/iOS instrumental ni Firefox.
+
+**Pendiente / decisiones del usuario:** `git push` a `master` para publicar L29; tras publicar quedan desactualizados la medición de rendimiento de la web publicada, `deliverables/presentacion-artidoro.html` y las capturas de A de QA anteriores. No implementados (no se nombraron): más reseñas publicadas, foto de La Mar, «Abierto ahora», enlace a cafeterías en el menú mobile. Lo demás pendiente de L28 (abajo) sigue igual.
+
 ## Actualización del 1 de octubre de 2026 (L28)
 
-**Estado recuperable:** `master` en `f5bb542`, 7 commits por delante de `origin/master` (`4beaf0d` es el último publicado). Árbol limpio salvo los cambios ajenos de siempre (`tools/apimart/*`, `reference/`, el PDF CRO, `.mcp.json`). Sin push desde estos commits: GitHub Pages sigue en la versión anterior a L28.
+**Estado al cerrar L28:** `master` en `f5bb542`, entonces 7 commits por delante de `origin/master` (`4beaf0d`); L28 se publicó después con `f27473b`.
 
 | Commit | Contenido |
 |---|---|

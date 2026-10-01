@@ -24,13 +24,15 @@ Autorización L24 sobre checkpoint `0b33580`, sin commit final de este cambio. A
 <a id="l29"></a>
 ## Revisión del 1 de octubre (L29)
 
-Revisión completa de la home en Chromium (1440 × 900 y 390 × 844, con movimiento). Siete bugs, repeticiones de texto y la propuesta de la 04 con las dos cafeterías; el usuario aprobó P1–P3 (y el reordenamiento, para después). Implementado:
+Revisión completa de la home en Chromium (1440 × 900 y 390 × 844, con movimiento). Siete bugs, repeticiones de texto y la propuesta de la 04 con las dos cafeterías; el usuario aprobó P1–P3 y, después, el reordenamiento (P4). Implementado:
 
 - **Bugs.** Iconos del pie mobile separados del texto (la regla `.footer-links span` también alcanzaba a los iconos); texto de 10 px («Sigue el origen», pie, menú Tienda); texto del paso 3 del hero cruzado por los granos; icono interno en el CTA de 02 para orígenes que abren la tienda oficial; «asiento.» tapado por la foto de la fachada en desktop (y por el interior en tablet); títulos de nivel 3 sin nivel 2 en el cierre; «Ver todas las reseñas» llevaba a la portada.
 - **Textos.** Sin numeración de secciones; 05 sin el párrafo redundante («Para tus días…») y con el subtítulo «Tienda»; «justo antes de enviarlo» una sola vez; la pregunta «¿Qué molienda elijo?» se conserva por decisión del usuario.
 - **04.** «Nos vemos en Miraflores» con Tarata y La Mar (dirección, horario y mapa de la página oficial de locales, 1 de octubre de 2026).
 
-**Validación.** [qa/2026-10-01-revision](../qa/2026-10-01-revision/README.md): 143/143 en Chromium DPR 1 (regresión de L28 y controles nuevos; B sin cambios). El usuario lo probó en su iPhone: «ya probe en iphone, todo ok» (user-reported). **No cubierto:** Safari/iOS instrumental, Firefox. **Pendiente:** P4 (reordenar secciones).
+**Validación.** [qa/2026-10-01-revision](../qa/2026-10-01-revision/README.md): 143/143 en Chromium DPR 1 (regresión de L28 y controles nuevos; B sin cambios). El usuario lo probó en su iPhone: «ya probe en iphone, todo ok» (user-reported). **No cubierto:** Safari/iOS instrumental, Firefox.
+
+**P4 (mismo día).** Nuevo orden: tienda, confianza y reseñas antes de las cafeterías; FAQ y «Sigue explorando» después. Las bandas de cierre quedan en dos bloques. Al reordenar apareció un bug latente: las fotos de 05 y de los mosaicos solo se pedían cuando la tienda entraba en pantalla, y el enlace «Cafeterías» del header ahora salta por encima de ella (los mosaicos quedaban en blanco); se corrigió observando también los bloques de cierre. [qa/2026-10-01-orden](../qa/2026-10-01-orden/README.md): 154/154. El usuario probó P4 en su iPhone: «ya probe, todo ok» (user-reported).
 
 <a id="l28"></a>
 ## Iteración L28 (mismo día): hero «Del cafetal a tu bolsa», 03 «De la bolsa a tu taza» y mejoras generales

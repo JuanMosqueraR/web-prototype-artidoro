@@ -20,5 +20,5 @@
 
 **No cubre.**
 - Safari/iOS instrumental, Firefox, Android.
-- iPhone físico de P4.
+- iPhone físico solo según el usuario («ya probe, todo ok»), sin registro instrumental.
 - Lectores de pantalla más allá de la estructura de títulos.

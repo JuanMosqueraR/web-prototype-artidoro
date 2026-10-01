@@ -8,7 +8,9 @@ Sobre L28 (sección siguiente), solo en A:
 - **05.** Encabezado solo con «Tienda» y «Hazlo parte de tus días.»; reseñas, FAQ y «Sigue explorando» son `h2`; el enlace de reseñas lleva a la ficha oficial de Amazonas.
 - **02.** El CTA usa la flecha interna para Amazonas (ficha de la demo) y el icono externo para el resto (tienda oficial).
 
-Evidencia: `qa/2026-10-01-revision/`; decisión: L29.
+- **Orden (P4).** Hero → 02 → 03 → moliendas → tienda → confianza → reseñas → cafeterías (04) → preguntas frecuentes → «Sigue explorando» → pie.
+
+Evidencia: `qa/2026-10-01-revision/` y `qa/2026-10-01-orden/` (P4); decisión: L29.
 
 # Hero «Del cafetal a tu bolsa» y 03 «De la bolsa a tu taza» — 30 de septiembre de 2026 (L28)
 
