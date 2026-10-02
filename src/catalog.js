@@ -123,15 +123,19 @@ form.addEventListener('submit', event => event.preventDefault());
 const packOrigins = packSnapshot.options[0].values;
 const slug = origin => origin.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, '-');
 const packDefaults = ['Amazonas', 'Cajamarca', 'Puno'];
+// Bag photos live next to the ones already in the pack PDP markup. Taking the folder from that attribute (the Pages build rewrites
+// it to a relative path) keeps this file free of a root-absolute asset path, which breaks under a URL prefix.
+const packPhotoDir = pack.querySelector('[data-pack-src]').dataset.packSrc.replace(/[^/]*$/, '');
+const packPhoto = origin => `${packPhotoDir}ahorrador-${slug(origin)}-1kg.webp`;
 packForm.querySelectorAll('[data-bag]').forEach(group => {
   const n = Number(group.dataset.bag);
-  group.innerHTML = packOrigins.map(origin => `<label class="pdp-chip"><input type="radio" name="bag${n}" value="${origin}"${origin === packDefaults[n - 1] ? ' checked' : ''} /><span><img data-pack-src="/assets/ahorrador-${slug(origin)}-1kg.webp" alt="" width="410" height="840" /><b>${origin}</b></span></label>`).join('');
+  group.innerHTML = packOrigins.map(origin => `<label class="pdp-chip"><input type="radio" name="bag${n}" value="${origin}"${origin === packDefaults[n - 1] ? ' checked' : ''} /><span><img data-pack-src="${packPhoto(origin)}" alt="" width="410" height="840" /><b>${origin}</b></span></label>`).join('');
 });
 function updatePack() {
   const values = new FormData(packForm);
   const chosen = [1, 2, 3].map(n => values.get(`bag${n}`));
   pack.querySelectorAll('[data-pack-visual] img').forEach((img, index) => {
-    const next = `/assets/ahorrador-${slug(chosen[index])}-1kg.webp`;
+    const next = packPhoto(chosen[index]);
     if (img.getAttribute('src')) img.src = next; else img.dataset.packSrc = next;
     img.alt = `Bolsa ${index + 1}: café ${chosen[index]} de 1 kg`;
   });
