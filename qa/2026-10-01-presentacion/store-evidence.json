@@ -1,0 +1,182 @@
+{
+ "mobile-home": {
+  "url": "/",
+  "foldTexts": [
+   "DELIVERY GRATIS PARA COMPRAS ARRIBA DE S/. 280",
+   "Artidoro Rodriguez Café"
+  ],
+  "foldPrices": [],
+  "foldButtons": [
+   "EXPLORAR LOS ORÍGENES →"
+  ],
+  "atcTop": 1765,
+  "atcText": "Añadir a la cesta",
+  "starsTop": 3256,
+  "starsText": "Nuestros Clientes dicen...\n\nLa infusión ",
+  "bodyHas": {
+   "envio": true,
+   "devol": false,
+   "garant": false,
+   "cuotas": false
+  },
+  "pageH": 6161
+ },
+ "mobile-coleccion": {
+  "url": "/collections/cafe",
+  "foldTexts": [
+   "DELIVERY GRATIS PARA COMPRAS ARRIBA DE S/. 280",
+   "CADA GRANO CUENTA.",
+   "FILTRAR",
+   "ORDENAR POR"
+  ],
+  "foldPrices": [],
+  "foldButtons": [],
+  "atcTop": 1325,
+  "atcText": "Añadir a la cesta",
+  "starsTop": null,
+  "starsText": null,
+  "bodyHas": {
+   "envio": true,
+   "devol": false,
+   "garant": false,
+   "cuotas": false
+  },
+  "pageH": 5891
+ },
+ "mobile-pdp": {
+  "url": "/products/cafe-amazonas",
+  "foldTexts": [
+   "AMAZONAS | CAJAMARCA | VILLA RICA | CUSCO | PUNO",
+   "CAFÉ ORIGEN AMAZONAS"
+  ],
+  "foldPrices": [
+   "PRECIO DE OFERTA\nS/. 39.90",
+   "PRECIO DE OFERTA\nS/. 39.90"
+  ],
+  "foldButtons": [],
+  "atcTop": 1522,
+  "atcText": "AÑADIR A LA CESTA",
+  "starsTop": 659,
+  "starsText": "3 reseñas",
+  "bodyHas": {
+   "envio": true,
+   "devol": false,
+   "garant": false,
+   "cuotas": false
+  },
+  "pageH": 3756
+ },
+ "mobile-pack": {
+  "url": "/products/pack-3kg-origenes-1",
+  "foldTexts": [
+   "AMAZONAS | CAJAMARCA | VILLA RICA | CUSCO | PUNO",
+   "PACK \"EL AHORRADOR\" 3KG"
+  ],
+  "foldPrices": [
+   "PRECIO DE OFERTA\nS/. 310.00\nPRECIO NORMAL\nS/. 330.00",
+   "PRECIO DE OFERTA\nS/. 310.00"
+  ],
+  "foldButtons": [],
+  "atcTop": 1717,
+  "atcText": "AÑADIR A LA CESTA",
+  "starsTop": null,
+  "starsText": null,
+  "bodyHas": {
+   "envio": true,
+   "devol": false,
+   "garant": false,
+   "cuotas": false
+  },
+  "pageH": 3769
+ },
+ "desktop-home": {
+  "url": "/",
+  "foldTexts": [
+   "DELIVERY GRATIS PARA COMPRAS ARRIBA DE S/. 280",
+   "Artidoro Rodriguez Café"
+  ],
+  "foldPrices": [],
+  "foldButtons": [
+   "EXPLORAR LOS ORÍGENES →"
+  ],
+  "atcTop": 1866,
+  "atcText": "Añadir a la cesta",
+  "starsTop": 3270,
+  "starsText": "Nuestros Clientes dicen...\n\nLa infusión ",
+  "bodyHas": {
+   "envio": true,
+   "devol": false,
+   "garant": true,
+   "cuotas": false
+  },
+  "pageH": 5571
+ },
+ "desktop-coleccion": {
+  "url": "/collections/cafe",
+  "foldTexts": [
+   "AMAZONAS | CAJAMARCA | VILLA RICA | CUSCO | PUNO",
+   "CADA GRANO CUENTA.",
+   "FILTRAR",
+   "ORDENAR POR"
+  ],
+  "foldPrices": [],
+  "foldButtons": [],
+  "atcTop": 1357,
+  "atcText": "Añadir a la cesta",
+  "starsTop": null,
+  "starsText": null,
+  "bodyHas": {
+   "envio": true,
+   "devol": false,
+   "garant": false,
+   "cuotas": false
+  },
+  "pageH": 5921
+ },
+ "desktop-pdp": {
+  "url": "/products/cafe-amazonas",
+  "foldTexts": [
+   "AMAZONAS | CAJAMARCA | VILLA RICA | CUSCO | PUNO",
+   "CAFÉ ORIGEN AMAZONAS"
+  ],
+  "foldPrices": [
+   "PRECIO DE OFERTA\nS/. 39.90",
+   "PRECIO DE OFERTA\nS/. 39.90"
+  ],
+  "foldButtons": [],
+  "atcTop": 1026,
+  "atcText": "AÑADIR A LA CESTA",
+  "starsTop": 247,
+  "starsText": "3 reseñas",
+  "bodyHas": {
+   "envio": true,
+   "devol": false,
+   "garant": false,
+   "cuotas": false
+  },
+  "pageH": 2616
+ },
+ "desktop-pack": {
+  "url": "/products/pack-3kg-origenes-1",
+  "foldTexts": [
+   "AMAZONAS | CAJAMARCA | VILLA RICA | CUSCO | PUNO",
+   "PACK \"EL AHORRADOR\" 3KG"
+  ],
+  "foldPrices": [
+   "PRECIO DE OFERTA\nS/. 310.00\nPRECIO NORMAL\nS/. 330.00",
+   "PRECIO DE OFERTA\nS/. 310.00"
+  ],
+  "foldButtons": [],
+  "atcTop": 1179,
+  "atcText": "AÑADIR A LA CESTA",
+  "starsTop": null,
+  "starsText": null,
+  "bodyHas": {
+   "envio": true,
+   "devol": false,
+   "garant": false,
+   "cuotas": false
+  },
+  "pageH": 2588
+ }
+}

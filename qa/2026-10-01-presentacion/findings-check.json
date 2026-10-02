@@ -1,0 +1,85 @@
+{
+ "home": {
+  "questions": [
+   "¿Qué tipo de molienda debo escoger?",
+   "¿Qué significa que sea café con propósito?",
+   "¿Qué significan las notas de cata?",
+   "¿Cómo conservar mejor mi café?",
+   "¿Hacen envíos a todo el Perú?"
+  ],
+  "accordions": [
+   "TIENDA",
+   "TOSTADURÍA",
+   "EXPLORA CON NOSOTROS",
+   "TIENDA",
+   "TOSTADURÍA",
+   "EXPLORA CON NOSOTROS",
+   "¿Qué tipo de molienda debo escoger?",
+   "¿Qué significa que sea café con propósito?",
+   "¿Qué significan las notas de cata?",
+   "¿Cómo conservar mejor mi café?",
+   "¿Hacen envíos a todo el Perú?"
+  ],
+  "howItWorks": false,
+  "cta": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "solid 0px 0px 1px",
+   "h": 22
+  },
+  "heroVideo": true,
+  "sca": true
+ },
+ "collection": {
+  "cards": 104,
+  "firstCardTop": 832,
+  "withPrice": 32,
+  "sample": [
+   "PACK 6% OFF Elige opciones PACK \"EL AHORRADOR\" 3KG PRECIO DE OFERTA S/. 310.00 PRECIO NORM",
+   "PACK 6% OFF Elige opciones",
+   ""
+  ],
+  "badges": [
+   "PACK 6% OFF",
+   "PACK 4% OFF",
+   "PACK 18% OFF",
+   "PACK 7% OFF",
+   "PACK 3% OFF",
+   "PACK 13% OFF"
+  ],
+  "stars": false
+ },
+ "cafe-amazonas": {
+  "atcTop": 1522,
+  "stickyBuy": false,
+  "zoneMentions": {
+   "envio": false,
+   "devolucion": false,
+   "garantia": false,
+   "pago": false,
+   "cuotas": false
+  },
+  "starsNearPrice": true,
+  "compareAt": true,
+  "video": false,
+  "thumbs": 10,
+  "related": true,
+  "molienda": true
+ },
+ "pack-3kg-origenes-1": {
+  "atcTop": 1717,
+  "stickyBuy": false,
+  "zoneMentions": {
+   "envio": false,
+   "devolucion": false,
+   "garantia": false,
+   "pago": false,
+   "cuotas": false
+  },
+  "starsNearPrice": false,
+  "compareAt": true,
+  "video": false,
+  "thumbs": 0,
+  "related": false,
+  "molienda": true
+ }
+}
