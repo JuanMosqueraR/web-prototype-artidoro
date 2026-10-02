@@ -46,6 +46,7 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .tag-loss{background:#d9583b26;color:var(--loss)}
 .tag-gold{background:#d1af7e2e;color:var(--gold)}
 .s-cream .tag-gold,.s-sage .tag-gold,.s-sand .tag-gold{background:#102e25;color:var(--gold)}
+.demo-link-slide{margin-top:26px;font-size:17px}
 .demo-link{display:inline-flex;align-items:center;gap:22px;min-height:44px;font-size:16px;font-weight:700;border-bottom:1px solid currentColor}
 
 /* Phones */
@@ -224,13 +225,13 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .stage1-head{display:flex;justify-content:space-between;align-items:end;margin-top:14px}
 .stage1-head .title{font-size:92px}
 .stage1-head p{font-size:17px;line-height:1.55;max-width:480px;text-align:right;color:var(--muted)}
-.columns{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;margin-top:46px}
+.columns{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;margin-top:34px}
 .col{border-top:1px solid var(--green);padding-top:14px}
 .col ul{margin-top:8px}
 .col li{font-size:18px;line-height:1.4;padding:11px 0;border-bottom:1px solid var(--line)}
 .col li:last-child{border-bottom:0}
 .pay{background:var(--sage);margin-top:14px;padding:16px 20px;font-size:18px;line-height:1.6}
-.stage1-foot{position:absolute;left:96px;right:220px;bottom:58px;font-size:14px;line-height:1.6;color:var(--muted)}
+.stage1-foot{position:absolute;left:96px;right:220px;bottom:46px;font-size:14px;line-height:1.6;color:var(--muted)}
 
 /* 16 · Order */
 .order{display:grid;grid-template-columns:540px 1fr;gap:110px;align-items:center;height:100%}
@@ -494,6 +495,7 @@ body:not(.idle) .controls,.controls:focus-within{opacity:.9}
           <li>Confianza visible: tostado semanal y cafeterías en Miraflores.</li>
           <li>El Ahorrador a un toque, desde la primera pantalla.</li>
         </ul>
+        <a class="demo-link demo-link-slide" href="https://juanmosquerar.github.io/web-prototype-artidoro/" target="_blank" rel="noopener">Ver la home en la demo <span aria-hidden="true">↗</span></a>
       </div>
       <div class="pair">
         <figure class="phone" style="--w:330px"><img src="presentacion/hoy-home.webp" alt="Home actual en celular"><figcaption class="phone-label" style="color:var(--soft)">Hoy</figcaption></figure>
@@ -501,7 +503,7 @@ body:not(.idle) .controls,.controls:focus-within{opacity:.9}
         <figure class="phone" style="--w:330px"><img src="presentacion/demo-home-m.webp" alt="Home propuesta en celular: titular El origen se siente, precio S/ 39.90, botón Comprar Amazonas, confianza y pack El Ahorrador"><figcaption class="phone-label gold">Propuesta</figcaption></figure>
       </div>
     </div>
-    <aside class="notes"><p><b>Mostrar:</b> abrir la demo en el teléfono. <b>Decir:</b> «La marca sigue luciéndose, pero ahora en la misma pantalla están el café, su precio, el botón y las razones para confiar. Quien llega desde un anuncio puede comprar sin buscar, y El Ahorrador queda a un toque.»</p></aside>
+    <aside class="notes"><p><b>Mostrar:</b> abrir la demo en el teléfono (enlace en la diapositiva). <b>Decir:</b> «La marca sigue luciéndose, pero ahora en la misma pantalla están el café, su precio, el botón y las razones para confiar. Quien llega desde un anuncio puede comprar sin buscar, y El Ahorrador queda a un toque.»</p></aside>
   </section>
 
   <!-- 6 · Antojo -->
@@ -532,6 +534,7 @@ body:not(.idle) .controls,.controls:focus-within{opacity:.9}
           <li><b class="n">5</b><span>Envío, pedidos dañados y tarjetas junto al botón<small>Lima desde S/ 10 · provincias S/ 30</small></span></li>
           <li><b class="n">6</b><span>Botón fijo en el celular: comprar siempre está a un toque</span></li>
         </ol>
+        <a class="demo-link demo-link-slide" href="https://juanmosquerar.github.io/web-prototype-artidoro/#producto-amazonas" target="_blank" rel="noopener">Ver la ficha en la demo <span aria-hidden="true">↗</span></a>
       </div>
       <div class="pdp-phones">
         <figure class="phone" style="--w:290px"><img src="presentacion/demo-ficha-m.webp" alt="Ficha propuesta en celular: galería, título, estrellas y botón fijo"><b class="pin ok" style="left:82%;top:22%">1</b><b class="pin ok" style="left:4%;top:73%">2</b><b class="pin ok" style="left:82%;top:93%">6</b></figure>
@@ -690,8 +693,8 @@ body:not(.idle) .controls,.controls:focus-within{opacity:.9}
         <li>Dos rondas de revisión sobre la vista previa</li>
         <li>Publicación solo cuando el equipo de Artidoro lo autorice</li>
         <li>30 días de soporte sobre lo entregado</li>
-        <li>Imágenes y video: se trabaja con el material que aporte Artidoro, con retoques con IA si hacen falta</li></ul>
-        <p class="pay"><strong>Pago:</strong> al cerrar cada sprint (ver las siguientes diapositivas)</p></div>
+        <li>Imágenes y video: material de Artidoro, con retoques con IA</li></ul>
+        <p class="pay"><strong>Pago:</strong> al cerrar cada sprint</p></div>
       <div class="col"><p class="kicker">Para cotizar se necesita</p><ul>
         <li>Acceso de colaborador al Shopify</li>
         <li>A qué páginas llevan hoy los anuncios</li>
@@ -699,7 +702,7 @@ body:not(.idle) .controls,.controls:focus-within{opacity:.9}
         <li>Fotos y videos disponibles</li>
         <li>Quién aprueba por parte de Artidoro</li></ul></div>
     </div>
-    <p class="stage1-foot">No incluye: cambio de plataforma, cambios en el pago, fichas a medida para otros productos (mieles, Travel Line, nanolotes) y sesiones de foto o video.</p>
+    <p class="stage1-foot">No incluye: fichas a medida para el resto del catálogo (otros packs, Travel Line, microlotes y nanolotes, mieles, infusiones y merch), páginas informativas y blog, cambio de plataforma, cambios en el pago y sesiones de foto o video.</p>
     <aside class="notes"><p>Entregar la propuesta completa. Si preguntan por precio o plazo: ver las siguientes diapositivas (sprints e inversión); la inversión es referencial y se confirma después de revisar la tienda por dentro, con los datos de la columna derecha.</p></aside>
   </section>
 
@@ -710,16 +713,16 @@ body:not(.idle) .controls,.controls:focus-within{opacity:.9}
     <div class="sprints">
       <article class="sprint"><p class="sprint-n">Sprint 1</p><h3>La ficha de producto</h3>
         <ul><li>Base del tema y datos de cada origen</li><li>Ficha de café, una plantilla para los 5 orígenes</li><li>Ficha de El Ahorrador con armado visual</li></ul>
-        <span class="tag tag-gold">Atiende la oportunidad #1</span><p class="sprint-days">7 a 10 días hábiles</p><p class="sprint-amount">S/ 2 700</p></article>
+        <span class="tag tag-gold">Atiende la oportunidad #1</span><p class="sprint-days">7 a 10 días</p><p class="sprint-amount">S/ 2 700</p></article>
       <article class="sprint"><p class="sprint-n">Sprint 2</p><h3>La home y la tienda</h3>
         <ul><li>Home editable, con el hero y el recorrido</li><li>Tienda con productos y precios desde la primera pantalla</li><li>Reseñas, medios de pago y cafeterías</li></ul>
-        <span class="tag tag-gold">Atiende la oportunidad #2</span><p class="sprint-days">7 a 10 días hábiles</p><p class="sprint-amount">S/ 2 200</p></article>
+        <span class="tag tag-gold">Atiende la oportunidad #2</span><p class="sprint-days">7 a 10 días</p><p class="sprint-amount">S/ 2 200</p></article>
       <article class="sprint"><p class="sprint-n">Sprint 3</p><h3>Pruebas y puesta en marcha</h3>
         <ul><li>Pruebas en iPhone y Android reales</li><li>Medición antes y después</li><li>Dos rondas de revisión y 30 días de soporte</li></ul>
-        <span class="tag tag-gold">Cierre y publicación</span><p class="sprint-days">6 a 8 días hábiles</p><p class="sprint-amount">S/ 1 100</p></article>
+        <span class="tag tag-gold">Cierre y publicación</span><p class="sprint-days">6 a 8 días</p><p class="sprint-amount">S/ 1 100</p></article>
     </div>
-    <p class="sprint-close">Cada sprint se entrega, se revisa y se paga al cerrarlo, antes de pasar al siguiente. Los tres suman S/ 6 000, sin IGV, y se completan en unas 4 a 6 semanas. Los plazos corren desde que se aprueba cada sprint y se reciben los materiales y accesos necesarios.</p>
-    <aside class="notes"><p><b>Decir:</b> «El proyecto se hace en tres sprints cortos. El primero es la ficha de producto, que es donde más margen hay; se puede empezar solo por ese. Cada sprint se entrega, se revisa y se paga al cerrarlo, antes de pasar al siguiente. Si después del primero se prefiere pausar, se pausa. Los plazos son de 7 a 10 días hábiles el primero, 7 a 10 el segundo y 6 a 8 el tercero, contados desde que se aprueba cada sprint y se reciben los materiales y accesos.»</p></aside>
+    <p class="sprint-close">Cada sprint se entrega, se revisa y se paga al cerrarlo, antes de pasar al siguiente. Los tres suman S/ 6 000, sin IGV, y se completan en unas 3 a 4 semanas. Los plazos corren desde que se aprueba cada sprint y se reciben los materiales y accesos necesarios.</p>
+    <aside class="notes"><p><b>Decir:</b> «El proyecto se hace en tres sprints cortos. El primero es la ficha de producto, que es donde más margen hay; se puede empezar solo por ese. Cada sprint se entrega, se revisa y se paga al cerrarlo, antes de pasar al siguiente. Si después del primero se prefiere pausar, se pausa. Los plazos son de 7 a 10 días el primero, 7 a 10 el segundo y 6 a 8 el tercero (días corridos), contados desde que se aprueba cada sprint y se reciben los materiales y accesos.»</p></aside>
   </section>
 
   <!-- 13b · Inversión, opción A -->
