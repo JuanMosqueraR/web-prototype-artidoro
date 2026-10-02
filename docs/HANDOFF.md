@@ -6,7 +6,7 @@ Precios corregidos al snapshot oficial del 1 de octubre (`3ce15fc`, QA `13f451f`
 
 ## Actualización del 1 de octubre de 2026 (L29)
 
-**Estado recuperable:** L30 y L31 (precios al día, PDP renovadas, pack en la decisión de Amazonas, medios de pago, clip en la galería y atajo del pack) publicadas en Pages por el usuario (`origin/master` en `dc533a4`); la corrección del video del hero en visitas directas a una PDP va en los commits siguientes, sin publicar. Árbol limpio salvo los cambios ajenos de siempre (`tools/apimart/*`, `reference/`, el PDF CRO, `.mcp.json`).
+**Estado recuperable:** el despliegue en Pages falló en `dc533a4` y `b80e09d` (rutas `/assets/` fijas en `src/catalog.js`, que `scripts/build-pages.py` rechaza) y el sitio publicado se quedó en L29 (`cf45646`); corregido en `b3581ae`. Con ese commit entran en Pages L30 y L31 (precios al día, PDP renovadas, pack en la decisión de Amazonas, medios de pago, clip en la galería y atajo del pack) y la corrección del video del hero en visitas directas a una PDP. Árbol limpio salvo los cambios ajenos de siempre (`tools/apimart/*`, `reference/`, el PDF CRO, `.mcp.json`).
 
 | Commit | Contenido |
 |---|---|

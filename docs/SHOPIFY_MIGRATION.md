@@ -137,3 +137,47 @@ Los píxeles y las apps detectados (sección 1) suelen pesar más que todo eso; 
 2. **PDP:** plantilla `product.origen` y `product.pack`, Judge.me, iconos de pago y botón fijo. Es la parte con más peso de conversión según el informe CRO.
 3. **Home:** secciones en el orden de la demo, empezando por las de menor complejidad (moliendas, tienda, cafeterías, FAQ) y dejando para el final el hero y 03.
 4. **Cierre:** carga de los cinco orígenes, medición de rendimiento con apps, QA en iPhone y Android, y retiro de los avisos de demo.
+
+## 11. Cobertura del catálogo y de la web actual (revisión del 2 de octubre de 2026)
+
+Fuente: `products.json`, `collections.json` y el mapa del sitio públicos de la tienda, y una visita de solo lectura a la home (computadora). Es una foto de esa fecha.
+
+**Catálogo: 32 productos publicados. La propuesta diseña la ficha de 6 (19 %).**
+
+| Grupo | Productos | Ficha propia en la propuesta |
+|---|---|---|
+| Cafés de origen | 5 (Amazonas, Cajamarca, Villa Rica, Cusco, Puno) | Sí, una plantilla para los cinco |
+| Packs de café | 8 (El Ahorrador, El Explorador, El Curioso, La Dupla, La Despensa, El Dulce Trato, El Cafetalero, Pack Regalo con taza) | Solo El Ahorrador |
+| Packs de miel | 2 (El MelOSO, La GenerOSA) | No |
+| Packs de microlotes | 2 (La Selección, Rupa Rupa) | No |
+| Microlotes | 4 (Yanesha, Mazamari, Longar, Quilmaná) | No |
+| Nanolotes | 3 | No |
+| Travel Line y tote bags | 4 | No (Travel Line aparece como tarjeta en la home) |
+| Infusiones | 2 | No |
+| Mieles | 2 | No (la miel Perfil Frutal aparece como tarjeta en la home) |
+
+Los 26 productos restantes conservarían la ficha actual del tema. Una plantilla de pack con número variable de bolsas (2 o 3) podría cubrir La Dupla, El Curioso, El Dulce Trato y La Despensa; es una decisión de alcance pendiente.
+
+**Colecciones: 15** (`cafe`, `cafes-de-origen`, `packs-de-cafe`, `microlotes`, `nanolotes`, `mieles`, `infusiones`, `merch`, `cafeteras`, `los-mas-buscados`, `nuevos-ingresos`, `mes-del-cafe-peruano`, `para-el-papa-que-lo-merece`, `presentacion-250gr`, `cafe-peruano-artidoro-rodriguez`). La propuesta diseña una página Tienda; una plantilla de colección puede servir a las demás.
+
+**Páginas: 14 y un blog con 3 historias**, sin diseño en la propuesta: contacto, cafetería, maquila, sobre nosotros, tostaduría, tueste, contacto empresas, locales, nuestra historia, socios e inversionistas, libro de reclamaciones, términos de servicio, HORECA y preguntas frecuentes; blogs `news`, `blog` e `historia`.
+
+**Home actual frente a la home de la demo**
+
+| Home actual | En la demo |
+|---|---|
+| Barra de anuncio «Delivery gratis para compras arriba de S/. 280» | No |
+| Hero con video del campo | Sí, rediseñado |
+| Franja «+83 pts SCA · Tostado cada semana · Envío gratis en Lima» | En parte (falta «+83 pts SCA», dato propio de la tienda) |
+| Texto «Café fresco de verdad» y «Café fresco garantizado» | En parte (franja de confianza) |
+| «Los más buscados» (colección con 45 productos) | En parte: selección fija de 5 en la sección Tienda |
+| Preguntas frecuentes | Sí |
+| «Nuestros clientes dicen…» (carrusel de reseñas) | En parte: 2 reseñas |
+| «Trabajamos en pro de los caficultores peruanos…» | En parte: «Precio justo al caficultor» |
+| Newsletter (Klaviyo) | No |
+| Pie: quiénes somos, blog, preguntas frecuentes, política de envíos, términos y privacidad, **libro de reclamaciones**, café de origen, nuevos ingresos, más vendidos, encuéntranos, menú, eventos, venta al por mayor, capacitaciones | No: el pie de la demo es mínimo |
+| Menú: Tienda, Tostaduría, Cafeterías, Explora con nosotros, Diario de viaje; cuenta, búsqueda y cesta | No: la demo solo tiene Tienda, Cafeterías y comprar |
+| Enlaces a WhatsApp (3) | No |
+| Ventana «Ganaste un café 250 g gratis» | No (a decidir) |
+
+Para producción hay que conservar lo que ya existe en el pie y el menú actuales (libro de reclamaciones, términos y privacidad, búsqueda, cuenta y cesta) y el newsletter; hoy la demo no los muestra.

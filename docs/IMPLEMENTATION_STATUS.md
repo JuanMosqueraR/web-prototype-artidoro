@@ -53,7 +53,7 @@ Cambios en `index.html`, `src/home.css`, `src/catalog.css`, `src/catalog.js` (P4
 | `audit/source/hero-generation.json`, `hero-*`, `cup03-*` | Registro de las 18 tareas (15 adoptadas, 3 descartadas; US$ 1,76), prompts y parámetros sin URLs firmadas; originales de imágenes y clips |
 | `qa/2026-09-30-l28/` | `verify.py`, `checks.json` (107/107), capturas y README con condiciones y rendimiento de laboratorio |
 
-Estado de publicación (1 de octubre, tras L29): L30 y L31 (precios al día, PDP renovadas, pack en la decisión de Amazonas, medios de pago, clip en la galería y atajo del pack) publicadas en Pages por el usuario (`origin/master` en `dc533a4`); la corrección del video del hero en visitas directas a una PDP va en los commits siguientes, sin publicar. Build de verificación con la Vite 7.1.3 del repo y Node 22.23.1 aislado. Los assets de la 03 anterior (`scene03-*`) siguen en `public/assets/` sin uso.
+Estado de publicación (1 de octubre, tras L29): el despliegue en Pages falló en `dc533a4` y `b80e09d` (rutas `/assets/` fijas en `src/catalog.js`, que `scripts/build-pages.py` rechaza) y el sitio publicado se quedó en L29 (`cf45646`); corregido en `b3581ae`. Con ese commit entran en Pages L30 y L31 (precios al día, PDP renovadas, pack en la decisión de Amazonas, medios de pago, clip en la galería y atajo del pack) y la corrección del video del hero en visitas directas a una PDP. Build de verificación con la Vite 7.1.3 del repo y Node 22.23.1 aislado. Los assets de la 03 anterior (`scene03-*`) siguen en `public/assets/` sin uso.
 
 ---
 
